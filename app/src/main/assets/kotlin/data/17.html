@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin break expression</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rLJlJN1Jve" id="content1-cx" data-rv-view="5470">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin break expression</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/d">web software</a></section><section class="mbr-section article content1 cid-rLJlRHMBFd" id="content1-cy" data-rv-view="5471">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Suppose you are working with loops. It is sometimes desirable to terminate the loop immediately without checking the test expression.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLJlVjpUXw" id="content1-cz" data-rv-view="5472">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In such case, break is used. It terminates the nearest enclosing loop when encountered (without checking the test expression). This is similar to <strong><a href="https://play.google.com/store/apps/details?id=com.apkzube.learnjavaprogramming" target="_blank">how break statement works in Java</a></strong>.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLJmgeDkP7" id="content1-d0" data-rv-view="5473">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>How break works?</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLJmjE1LFr" id="content1-d1" data-rv-view="5474">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">It is almost always used with if..else construct. For example,</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">for (...) {
+    if (testExpression) {
+        break
+    }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLJmyeDA0k" id="content1-d3" data-rv-view="5476">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">If testExpression is evaluated to <strong>true</strong>, break is executed which <strong>terminates</strong> the for loop.</div>
+        </div>
+    </div>
+</section>
+
+<section class="cid-rLJmHc8P5b" id="image2-d4" data-rv-view="5477">
+
+    
+
+    <figure class="mbr-figure container">
+        <div class="image-block" style="width: 53%;">
+            <img src="assets/images/kotlin-break-600x395.jpg" alt="Mobirise" title="" media-simple="true">
+            <figcaption class="mbr-figure-caption mbr-figure-caption-over">
+                <div class="container pb-5 mbr-white align-center mbr-fonts-style display-1"></div>
+            </figcaption>
+        </div>
+    </figure>
+</section>
+
+<section class="mbr-section article content12 cid-rLJmQ78q0e" id="content12-d5" data-rv-view="5479">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example: Kotlin break</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    for (i in 1..10) {
+        if (i == 5) {
+            break
+        }
+        println(i)
+    }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLJmWFSzxz" id="content1-d7" data-rv-view="5481">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">1
+2
+3
+4
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLJn2yrKDY" id="content1-d9" data-rv-view="5483">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">When the value of i is equal to 5, expression <strong>i == 5</strong> inside if is evaluated to true, and break is executed. This terminates the for loop.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLJn9U3Gyq" id="content1-da" data-rv-view="5484">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">let see one more example : <strong>calculate sum until user enters 0.</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    var sum = 0
+    var number: Int
+    while (true) {
+        print("Enter a number: ")
+        number = readLine()!!.toInt()
+        if (number == 0)
+            break
+        sum += number
+    }
+    print("sum = $sum")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLJnqUAD24" id="content1-dc" data-rv-view="5486">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Enter a number: 4
+Enter a number: 12
+Enter a number: 6
+Enter a number: -9
+Enter a number: 0
+sum = 13
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLJnvHg6PO" id="content1-de" data-rv-view="5488">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In the above program, the test expression of the while loop is always true.
+<div>
+</div><div>Here, the while loop runs until user enters 0. When user inputs 0, break is executed which <strong>terminates the while loop</strong>.</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLJnDCWq3I" id="content1-df" data-rv-view="5489">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Kotlin Labeled break
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLJnHIySeY" id="content1-dg" data-rv-view="5490">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">What you have learned till now is unlabeled form of break, which terminates the <strong>nearest enclosing loop</strong>. There is another way break can be used (labeled form) to terminate the <strong>desired loop (can be outer loop).</strong></div>
+        </div>
+    </div>
+</section>
+
+<section class="cid-rLJnYkXpVl" id="image2-dh" data-rv-view="5491">
+
+    
+
+    <figure class="mbr-figure container">
+        <div class="image-block" style="width: 40%;">
+            <img src="assets/images/kotlin-labeled-break-360x271.jpg" alt="Mobirise" title="" media-simple="true">
+            <figcaption class="mbr-figure-caption mbr-figure-caption-over">
+                <div class="container pb-5 mbr-white align-center mbr-fonts-style display-1"></div>
+            </figcaption>
+        </div>
+    </figure>
+</section>
+
+<section class="mbr-section article content1 cid-rLJnYFBPvx" id="content1-di" data-rv-view="5493">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Label in Kotlin starts with an identifier which is followed by <strong>@</strong>.
+<div>
+</div><div>Here, <strong>test@</strong> is a label marked at the outer while loop. Now, by using break with a label (break@test in this case), you can break the <strong>specific loop</strong>.
+</div><div>
+</div><div>Here's an example:</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    first@ for (i in 1..4) {
+        second@ for (j in 1..2) {
+            println("i = $i; j = $j")
+            if (i == 2)
+                break@first
+        }
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rLJo0bdoO0" id="content1-dk" data-rv-view="5495">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">i = 1; j = 1
+i = 1; j = 2
+i = 2; j = 1
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLJo0Xbm1u" id="content1-dm" data-rv-view="5497">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Here, when <strong>i == 2</strong> expression is evaluated to true, break@first is executed which terminates the loop marked with label first@.
+</div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/* </span>
+    <span style="color: #999999; font-style: italic"> * C Program To Find the Highest Frequency Character in a String</span>
+    <span style="color: #999999; font-style: italic"> */</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdio.h&gt;</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;string.h&gt;</span>
+     
+    <span style="color: #6ab825; font-weight: bold">char</span> <span style="color: #d0d0d0">string1[</span><span style="color: #3677a9">100</span><span style="color: #d0d0d0">],</span> <span style="color: #d0d0d0">visited[</span><span style="color: #3677a9">100</span><span style="color: #d0d0d0">];</span>
+    <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">count[</span><span style="color: #3677a9">100</span><span style="color: #d0d0d0">]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">{</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">},</span> <span style="color: #d0d0d0">flag</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+     
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">main</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">i,</span> <span style="color: #d0d0d0">j</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">k</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">l,</span> <span style="color: #d0d0d0">max,</span> <span style="color: #d0d0d0">index;</span>
+     
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter a string : &quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%[^\n]s&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">string1);</span>
+     
+        <span style="color: #d0d0d0">l</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">strlen(string1);</span>
+     
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">l;</span> <span style="color: #d0d0d0">i++)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">==</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #d0d0d0">visited[j++]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">string1[i];</span>
+                <span style="color: #d0d0d0">count[j</span> <span style="color: #d0d0d0">-</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">]++;</span>
+            <span style="color: #d0d0d0">}</span>
+            <span style="color: #6ab825; font-weight: bold">else</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(k</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">k</span>  <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">j;</span> <span style="color: #d0d0d0">k++)</span>
+                <span style="color: #d0d0d0">{</span>
+                    <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(string1[i]</span> <span style="color: #d0d0d0">==</span> <span style="color: #d0d0d0">visited[k])</span>
+                    <span style="color: #d0d0d0">{</span>
+                        <span style="color: #d0d0d0">count[k]++;</span>
+                        <span style="color: #d0d0d0">flag</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+                    <span style="color: #d0d0d0">}</span>
+                <span style="color: #d0d0d0">}</span>
+                <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(flag</span> <span style="color: #d0d0d0">==</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">)</span>
+                <span style="color: #d0d0d0">{</span>
+                    <span style="color: #d0d0d0">visited[j++]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">string1[i];</span>
+                    <span style="color: #d0d0d0">count[j</span> <span style="color: #d0d0d0">-</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">]++;</span>
+                <span style="color: #d0d0d0">}</span>
+                <span style="color: #d0d0d0">flag</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">}</span>    
+     
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">j;</span> <span style="color: #d0d0d0">i++)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">((i</span> <span style="color: #d0d0d0">==</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">&amp;&amp;</span> <span style="color: #d0d0d0">(visited[i]</span> <span style="color: #d0d0d0">!=</span> <span style="color: #ed9d13">&#39; &#39;</span><span style="color: #d0d0d0">))</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #d0d0d0">max</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">count[i];</span>
+                <span style="color: #6ab825; font-weight: bold">continue</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #d0d0d0">}</span>
+            <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">((max</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">count[i])</span> <span style="color: #d0d0d0">&amp;&amp;</span> <span style="color: #d0d0d0">(visited[i]</span> <span style="color: #d0d0d0">!=</span> <span style="color: #ed9d13">&#39; &#39;</span><span style="color: #d0d0d0">))</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #d0d0d0">max</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">count[i];</span>
+                <span style="color: #d0d0d0">index</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">i;</span>
+            <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">}</span>
+     
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\nMax repeated character in the string = %c &quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">visited[index]);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\nIt occurs %d times&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">count[index]);</span>
+    <span style="color: #d0d0d0">}</span>
+    
+    
+    <span style="color: #d0d0d0">&gt;&gt;Output:</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">a</span> <span style="color: #d0d0d0">string</span> <span style="color: #d0d0d0">:</span> <span style="color: #d0d0d0">Welcome</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">Sanfoundry</span><span style="color: #a61717; background-color: #e3d2d2">&#39;</span><span style="color: #d0d0d0">s</span> <span style="color: #d0d0d0">C</span> <span style="color: #d0d0d0">Programming</span> <span style="color: #d0d0d0">Class</span> <span style="color: #d0d0d0">!</span>
+     
+    <span style="color: #d0d0d0">Max</span> <span style="color: #d0d0d0">repeated</span> <span style="color: #d0d0d0">character</span> <span style="color: #d0d0d0">in</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">string</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">o</span> 
+    <span style="color: #d0d0d0">It</span> <span style="color: #d0d0d0">occurs</span> <span style="color: #3677a9">4</span> <span style="color: #d0d0d0">times</span>
+    </pre></div>

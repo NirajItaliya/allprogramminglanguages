@@ -1,0 +1,30 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic"> * C Program to Illustrate Pass by Value.</span>
+    <span style="color: #999999; font-style: italic"> */</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdio.h&gt;</span>
+     
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">swap</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">a,</span> <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">b)</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">temp;</span>
+        <span style="color: #d0d0d0">temp</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">a;</span>
+        <span style="color: #d0d0d0">a</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">b;</span>
+        <span style="color: #d0d0d0">b</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp;</span>
+    <span style="color: #d0d0d0">}</span>
+     
+    <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #447fcf">main</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">num1</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">10</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">num2</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">20</span><span style="color: #d0d0d0">;</span>
+     
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Before swapping num1 = %d num2 = %d\n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">num1,</span> <span style="color: #d0d0d0">num2);</span>
+        <span style="color: #d0d0d0">swap(num1,</span> <span style="color: #d0d0d0">num2);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;After swapping num1 = %d num2 = %d \n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">num1,</span> <span style="color: #d0d0d0">num2);</span>
+        <span style="color: #6ab825; font-weight: bold">return</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #d0d0d0">}</span>
+    
+    
+    <span style="color: #d0d0d0">&gt;&gt;Runtime</span> <span style="color: #d0d0d0">Test</span> <span style="color: #d0d0d0">Cases</span>
+     
+    <span style="color: #d0d0d0">Before</span> <span style="color: #d0d0d0">swapping</span> <span style="color: #d0d0d0">num1</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">10</span> <span style="color: #d0d0d0">num2</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">20</span>
+    <span style="color: #d0d0d0">After</span> <span style="color: #d0d0d0">swapping</span> <span style="color: #d0d0d0">num1</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">10</span> <span style="color: #d0d0d0">num2</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">20</span>
+    </pre></div>

@@ -1,0 +1,19 @@
+<!-- HTML generated using hilite.me --><div style="background: #111111; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #fb660a; font-weight: bold">fun</span> <span style="color: #ff0086; font-weight: bold">main</span><span style="color: #ffffff">(args:</span> <span style="color: #ffffff">Array&lt;String&gt;)</span> <span style="color: #ffffff">{</span>
+    <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">n1</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">81</span>
+    <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">n2</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">153</span>
+    <span style="color: #fb660a; font-weight: bold">var</span> <span style="color: #ffffff">gcd</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">1</span>
+    <span style="color: #fb660a; font-weight: bold">var</span> <span style="color: #ffffff">i</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">1</span>
+    <span style="color: #fb660a; font-weight: bold">while</span> <span style="color: #ffffff">(i</span> <span style="color: #ffffff">&lt;=</span> <span style="color: #ffffff">n1</span> <span style="color: #ffffff">&amp;&amp;</span> <span style="color: #ffffff">i</span> <span style="color: #ffffff">&lt;=</span> <span style="color: #ffffff">n2)</span> <span style="color: #ffffff">{</span>
+        <span style="color: #008800; font-style: italic; background-color: #0f140f">// Checks if i is factor of both integers</span>
+        <span style="color: #fb660a; font-weight: bold">if</span> <span style="color: #ffffff">(n1</span> <span style="color: #ffffff">%</span> <span style="color: #ffffff">i</span> <span style="color: #ffffff">==</span> <span style="color: #0086f7; font-weight: bold">0</span> <span style="color: #ffffff">&amp;&amp;</span> <span style="color: #ffffff">n2</span> <span style="color: #ffffff">%</span> <span style="color: #ffffff">i</span> <span style="color: #ffffff">==</span> <span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">)</span>
+            <span style="color: #ffffff">gcd</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">i</span>
+        <span style="color: #ffffff">++i</span>
+    <span style="color: #ffffff">}</span>
+    <span style="color: #ffffff">println(</span><span style="color: #0086d2">&quot;G.C.D of $n1 and $n2 is $gcd&quot;</span><span style="color: #ffffff">)</span>
+<span style="color: #ffffff">}</span>
+
+
+<span style="color: #ffffff">&gt;&gt;</span> <span style="color: #ffffff">output</span> <span style="color: #ffffff">will</span> <span style="color: #ffffff">be:</span>
+
+<span style="color: #ffffff">G.C.D</span> <span style="color: #ffffff">of</span> <span style="color: #0086f7; font-weight: bold">81</span> <span style="color: #ffffff">and</span> <span style="color: #0086f7; font-weight: bold">153</span> <span style="color: #fb660a; font-weight: bold">is</span> <span style="color: #0086f7; font-weight: bold">9</span>
+</pre></div>

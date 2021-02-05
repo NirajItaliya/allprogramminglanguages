@@ -1,0 +1,40 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #cd2828; font-weight: bold">#include &lt;stdio.h&gt;</span>
+ 
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">main</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">num,</span> <span style="color: #d0d0d0">temp,</span> <span style="color: #d0d0d0">remainder,</span> <span style="color: #d0d0d0">reverse</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+     
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter an integer \n&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;num);</span>
+        <span style="color: #999999; font-style: italic">/*  original number is stored at temp */</span>
+        <span style="color: #d0d0d0">temp</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">num;</span>
+        <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(num</span> <span style="color: #d0d0d0">&gt;</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">remainder</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">num</span> <span style="color: #d0d0d0">%</span> <span style="color: #3677a9">10</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #d0d0d0">reverse</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">reverse</span> <span style="color: #d0d0d0">*</span> <span style="color: #3677a9">10</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">remainder;</span>
+            <span style="color: #d0d0d0">num</span> <span style="color: #d0d0d0">/=</span> <span style="color: #3677a9">10</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Given number is = %d\n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">temp);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Its reverse is  = %d\n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">reverse);</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(temp</span> <span style="color: #d0d0d0">==</span> <span style="color: #d0d0d0">reverse)</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Number is a palindrome \n&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #6ab825; font-weight: bold">else</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Number is not a palindrome \n&quot;</span><span style="color: #d0d0d0">);</span>
+    <span style="color: #d0d0d0">}</span>
+    
+    <span style="color: #d0d0d0">&gt;&gt;Runtime</span> <span style="color: #d0d0d0">Test</span> <span style="color: #d0d0d0">Cases</span>
+    <span style="color: #d0d0d0">Case:</span><span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">an</span> <span style="color: #d0d0d0">integer</span>
+    <span style="color: #3677a9">6789</span>
+    <span style="color: #d0d0d0">Given</span> <span style="color: #d0d0d0">number</span> <span style="color: #d0d0d0">is</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">6789</span>
+    <span style="color: #d0d0d0">Its</span> <span style="color: #d0d0d0">reverse</span> <span style="color: #d0d0d0">is</span>  <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">9876</span>
+    <span style="color: #d0d0d0">Number</span> <span style="color: #d0d0d0">is</span> <span style="color: #d0d0d0">not</span> <span style="color: #d0d0d0">a</span> <span style="color: #d0d0d0">palindrome</span>
+     
+    <span style="color: #d0d0d0">Case:</span><span style="color: #3677a9">2</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">an</span> <span style="color: #d0d0d0">integer</span>
+    <span style="color: #3677a9">58085</span>
+    <span style="color: #d0d0d0">Given</span> <span style="color: #d0d0d0">number</span> <span style="color: #d0d0d0">is</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">58085</span>
+    <span style="color: #d0d0d0">Its</span> <span style="color: #d0d0d0">reverse</span> <span style="color: #d0d0d0">is</span>  <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">58085</span>
+    <span style="color: #d0d0d0">Number</span> <span style="color: #d0d0d0">is</span> <span style="color: #d0d0d0">a</span> <span style="color: #d0d0d0">palindrome</span>
+    </pre></div>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code Editor</title>
+    <link rel='stylesheet' href='lib/codemirror.css'/>
+    <link rel='stylesheet'  href='theme/tomorrow-night-bright.css'/>
+
+
+    <script src='lib/codemirror.js'></script>
+    <script src='mode/clike/clike.js'></script>
+    <script src='addon/edit/closebrackets.js'></script>
+    <script src='addon/edit/matchbrackets.js'></script>
+    
+
+</head>
+<body style="background-color:black">
+    <textarea id="editor">
+/*
+ Type Your Code Here and Long Press on JAVA Code Area to Compile.............
+ 
+ This Code Copy and past to java comiler...
+ 
+ and run Code
+*/
+import java.util.*;
+
+class Rextester {
+  public static void main(String[] args) {
+      //write your code here
+  }
+}
+    </textarea>
+    <!--<button onclick="getCode()">Click me</button>-->
+
+    <script>
+    
+        var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
+        lineNumbers: true,
+        theme: 'tomorrow-night-bright',
+        lineWrapping: false,
+        mode:'text/x-java',
+        scanForBracket:true,
+        autoCloseBrackets:true,
+        matchBrackets:true,
+        findMatchingBracket:true,
+        foldGutter: true,
+        lineWiseCopyCut:true
+
+     });
+
+     editor.setSize("100%","100%");
+
+
+     function getCode(){
+        //alert(editor.getValue());
+        var code=editor.getValue();
+        JsInterface.getCode(code);
+     }
+
+       function copyCode(){
+        //alert(editor.getValue());
+        var code=editor.getValue();
+        JsInterface.copyCode(code);
+     }
+
+    function addSymbol(symbol) {
+          editor.save();
+          insertTextAtCursor(editor,symbol);
+    }
+
+    function insertTextAtCursor(editor, str) {
+       var doc = editor.getDoc();
+       var cursor = doc.getCursor();
+       doc.replaceRange(text, cursor);
+    }
+
+    </script>
+</body>
+</html>

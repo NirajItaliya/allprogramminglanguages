@@ -1,0 +1,56 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #999999; font-style: italic">/*</span>
+
+    <span style="color: #999999; font-style: italic">     * C program to accept an integer &amp; find the sum of its digits</span>
+
+    <span style="color: #999999; font-style: italic">     */</span>
+    
+        <span style="color: #a61717; background-color: #e3d2d2">#</span><span style="color: #d0d0d0">include</span> <span style="color: #d0d0d0">&lt;stdio.h&gt;</span>
+    
+         
+    
+        <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #d0d0d0">main()</span>
+    
+        <span style="color: #d0d0d0">{</span>
+    
+            <span style="color: #6ab825; font-weight: bold">long</span> <span style="color: #d0d0d0">num,</span> <span style="color: #d0d0d0">temp,</span> <span style="color: #d0d0d0">digit,</span> <span style="color: #d0d0d0">sum</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+    
+         
+    
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter the number \n&quot;</span><span style="color: #d0d0d0">);</span>
+    
+            <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%ld&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;num);</span>
+    
+            <span style="color: #d0d0d0">temp</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">num;</span>
+    
+            <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(num</span> <span style="color: #d0d0d0">&gt;</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">)</span>
+    
+            <span style="color: #d0d0d0">{</span>
+    
+                <span style="color: #d0d0d0">digit</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">num</span> <span style="color: #d0d0d0">%</span> <span style="color: #3677a9">10</span><span style="color: #d0d0d0">;</span>
+    
+                <span style="color: #d0d0d0">sum</span>  <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">sum</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">digit;</span>
+    
+                <span style="color: #d0d0d0">num</span> <span style="color: #d0d0d0">/=</span> <span style="color: #3677a9">10</span><span style="color: #d0d0d0">;</span>
+    
+            <span style="color: #d0d0d0">}</span>
+    
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Given number = %ld\n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">temp);</span>
+    
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Sum of the digits %ld = %ld\n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">temp,</span> <span style="color: #d0d0d0">sum);</span>
+    
+        <span style="color: #d0d0d0">}</span>
+    
+    <span style="color: #d0d0d0">&gt;&gt;Runtime</span> <span style="color: #d0d0d0">Test</span> <span style="color: #d0d0d0">Cases</span>
+    
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">number</span>
+    <span style="color: #3677a9">300</span>
+    <span style="color: #d0d0d0">Given</span> <span style="color: #d0d0d0">number</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">300</span>
+    <span style="color: #d0d0d0">Sum</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">digits</span> <span style="color: #3677a9">300</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">3</span>
+     
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">number</span>
+    <span style="color: #3677a9">16789</span>
+    <span style="color: #d0d0d0">Given</span> <span style="color: #d0d0d0">number</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">16789</span>
+    <span style="color: #d0d0d0">Sum</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">digits</span> <span style="color: #3677a9">16789</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">31</span>
+    </pre></div>

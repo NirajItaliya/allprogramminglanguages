@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin MutableSet Interface
+</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPSF6Dmcq7" id="content1-11a" data-rv-view="7431">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>MutableSet Interface
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/p">bootstrap menu</a></section><section class="mbr-section article content1 cid-rPSFbAVS7J" id="content1-11b" data-rv-view="7432">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p>Kotlin <strong>MutableSet interface</strong> is a generic unordered collection of elements. MutableSet interface does not support duplicate elements. This interface is mutable so its methods support read-write functionality supports adding and removing elements.
+</p><p>Set interface uses <strong>mutableSetOf()</strong> function to create the list of object of set interface which contains list of elements.
+</p><p><strong>MutableSet Interface declaration
+:</strong></p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">interface MutableSet&lt;E&gt; : Set&lt;E&gt;, MutableCollection&lt;E&gt; (source)
+</code></pre></div>
+
+<section class="section-table cid-rPSFxzCTSv" id="table1-11d" data-rv-view="7434">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5"><strong>Inherited Properties of MutableSet Interface
+</strong></h2>
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Functions</th><th class="head-item mbr-fonts-style display-7">Descriptions</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract val size: Int&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns the size of collection.
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="section-table cid-rPSFGNpMpS" id="table1-11e" data-rv-view="7450">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5"><strong>Functions of MutableSet Interface
+</strong></h2>
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Functions</th><th class="head-item mbr-fonts-style display-7">Descriptions</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun add(element: E): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It adds the given element to the collection.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun addAll(elements: Collection&lt;E&gt;): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It adds all the elements given collection to the current collection.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun clear()&nbsp;</td><td class="body-item mbr-fonts-style display-7">It removes all the elements from this collection.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun iterator(): MutableIterator&lt;E&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns an iterator over the elements of this object.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun remove(element: E): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It removes a single specified element from this collection, if it is present in collection.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun removeAll(elements: Collection&lt;E&gt;): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It removes all the elements from current collection which are given in collection.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun retainAll(elements: Collection&lt;E&gt;): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It retains only those elements in current collection which are present in specified collection.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun contains(element: E): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It checks the specified element is contained in current collection.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun containsAll(elements: Collection&lt;E&gt;): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It checks all the elements of specified collection are present in current collection.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun isEmpty(): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">If collection is empty (not containing any element) it returns true, otherwise it returns false.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;T&gt; Iterable&lt;T&gt;.any(): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns true if collection contains at least one element.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;T&gt; Iterable&lt;T&gt;.any(predicate: (T) -&gt; Boolean): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns true if at least element matches the given the given predicate.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;T&gt; Iterable&lt;T&gt;.distinct(): List&lt;T&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns a list which contains only distinct elements from the given collection.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;T&gt; Iterable&lt;T&gt;.drop(n: Int): List&lt;T&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns a list which contains all elements except first n elements.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;T&gt; Iterable&lt;T&gt;.elementAt(index: Int): T&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns an element at given index or throw an IndexOutOfBoundException if given index is not present in collection.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;T&gt; Iterable&lt;T&gt;.elementAtOrElse(
+<br>index: Int,
+<br>defaultValue: (Int) -&gt; T
+<br>): T&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns an element at given index or result of calling the defaultValue function if the index is out bounds in current collection.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;T : Comparable&lt;T&gt;&gt; Iterable&lt;T&gt;.max(): T?&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns the largest element or null if there is no element in the collection.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;T : Comparable&lt;T&gt;&gt; Iterable&lt;T&gt;.min(): T?&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns the smallest element or null if there is no element in the collection.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;T&gt; MutableCollection&lt;out T&gt;.remove(element: T): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It removes the single specified element if it in present in current collection.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;T&gt; MutableCollection&lt;out T&gt;.removeAll(
+<br>elements: Collection&lt;T&gt;
+<br>): Boolean</td><td class="body-item mbr-fonts-style display-7">It removes all the elements of current collection which are contained in specified collection.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;T&gt; MutableCollection&lt;out T&gt;.retainAll(
+<br>elements: Collection&lt;T&gt;
+<br>): Boolean</td><td class="body-item mbr-fonts-style display-7">It retains all the elements in current collection which are contained in specified collection.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;T&gt; Iterable&lt;T&gt;.reversed(): List&lt;T&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns the elements in reversed order.
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPSI4ge75U" id="content12-11g" data-rv-view="7613">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 1
+ :&nbsp;</strong>Let's create an example of MutableSet declaring and traversing its elements.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val intmutableSet = mutableSetOf&lt;Int&gt;(2, 6, 4, 29, 4, 5)
+    val anymutableSet: Set&lt;Any&gt; = setOf(2, 6, 4, 29, 4, 5, "Ajay", "Ashu", "Ajay")
+    println("....intmutableSet....")
+    for(element in intmutableSet){
+        println(element)
+    }
+    println("....anymutableSet......")
+    for(element in anymutableSet){
+        println(element)
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSI6BCXEX" id="content1-11i" data-rv-view="7615">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">....intmutableSet....
+2
+6
+4
+29
+5
+....anymutableSet......
+2
+6
+4
+29
+5
+Ajay
+Ashu
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSIAtzWuM" id="content1-124" data-rv-view="7617">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In the above example, elements "4" and "Ajay" are declared twice. But while traversing these MutableSet they are printed only once, this is because MutableSet interface does not support duplicate elements.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPSI7r52c9" id="content12-11k" data-rv-view="7618">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example - 2 : add() and addAll()</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val intmutableSet = mutableSetOf&lt;Int&gt;(2, 6, 4, 29, 4, 5)
+    val mutableSet: MutableSet&lt;Int&gt; = mutableSetOf&lt;Int&gt;(6,8,11,22)
+
+    println("....intmutableSet....")
+    for(element in intmutableSet){
+        println(element)
+    }
+    intmutableSet.add(10)
+    println("....intmutableSet.add(10)....")
+    for(element in intmutableSet){
+        println(element)
+    }
+
+    intmutableSet.addAll(mutableSet)
+    println("....intmutableSet.addAll(mutableSet)....")
+    for(element in intmutableSet){
+        println(element)
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSI8AJs2F" id="content1-11m" data-rv-view="7620">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">....intmutableSet....
+2
+6
+4
+29
+5
+....intmutableSet.add(10)....
+2
+6
+4
+29
+5
+10
+....intmutableSet.addAll(mutableSet)....
+2
+6
+4
+29
+5
+10
+8
+11
+22
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPSI9EYXs9" id="content12-11o" data-rv-view="7622">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example - 3 : remove() and removeAll()</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val intmutableSet = mutableSetOf&lt;Int&gt;(2, 6, 4, 29, 4, 5)
+    val mutableSet: MutableSet&lt;Int&gt; = mutableSetOf&lt;Int&gt;(6,8,11,22)
+
+    println("....intmutableSet....")
+    for(element in intmutableSet){
+        println(element)
+    }
+    intmutableSet.remove(29)
+    println("....intmutableSet.remove(29)....")
+    for(element in intmutableSet){
+        println(element)
+    }
+    intmutableSet.removeAll(mutableSet)
+    println("....intmutableSet.removeAll(mutableSet)....")
+    for(element in intmutableSet){
+        println(element)
+    }
+}
+</code></pre></div>
+<section class="mbr-section article content1 cid-rPSIaArFOs" id="content1-11q" data-rv-view="7624">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">....intmutableSet....
+2
+6
+4
+29
+5
+....intmutableSet.remove(29)....
+2
+6
+4
+5
+....intmutableSet.removeAll(mutableSet)....
+2
+4
+5
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPSIbrNGnU" id="content12-11s" data-rv-view="7626">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example - 4 : contains() and containsAll()</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val mutableSet1 = mutableSetOf&lt;Int&gt;(2, 6, 4, 29, 4, 5)
+    val mutableSet2: MutableSet&lt;Int&gt; = mutableSetOf&lt;Int&gt;(6,8,11,22)
+    val mutableSet3: MutableSet&lt;Int&gt; = mutableSetOf&lt;Int&gt;(2,4,6)
+
+    println("....mutableSet1....")
+    for(element in mutableSet1){
+        println(element)
+    }
+    println("....mutableSet2....")
+        println(mutableSet2)
+    println("....mutableSet3....")
+        println(mutableSet3)
+    println("....mutableSet1.contains(29)....")
+    println(mutableSet1.contains(29))
+
+    println("....mutableSet1.containsAll(mutableSet2))....")
+    println(mutableSet1.containsAll(mutableSet2))
+    println("....mutableSet1.containsAll(mutableSet3))....")
+    println(mutableSet1.containsAll(mutableSet3))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSIco5PqS" id="content1-11u" data-rv-view="7628">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">....mutableSet1....
+2
+6
+4
+29
+5
+....mutableSet2....
+[6, 8, 11, 22]
+....mutableSet3....
+[2, 4, 6]
+....mutableSet1.contains(29)....
+true
+....mutableSet1.containsAll(mutableSet2))....
+false
+....mutableSet1.containsAll(mutableSet3))....
+true
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPSIdaQZAQ" id="content12-11w" data-rv-view="7630">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example - 5 : isEmpty() and any()</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val mutableSet1 = mutableSetOf&lt;Int&gt;(2, 6, 4, 29, 4, 5)
+
+    println("....mutableSet1....")
+    for(element in mutableSet1){
+        println(element)
+    }
+    println("....mutableSet1.isEmpty()....")
+    if(mutableSet1.isEmpty())
+        println("mutableSet1 is empty, not contain any element")
+    else
+        println("mutableSet1 is not empty, contains element")
+
+    println("....mutableSet1.any()....")
+    if(mutableSet1.any())
+        println("mutableSet1 contain at least one or more elements")
+    else
+        println("mutableSet1 not contain any element")
+}
+</code></pre></div>
+<section class="mbr-section article content1 cid-rPSIewGaAn" id="content1-11y" data-rv-view="7632">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">....mutableSet1....
+2
+6
+4
+29
+5
+....mutableSet1.isEmpty()....
+mutableSet1 is not empty, contains element
+....mutableSet1.any()....
+mutableSet1 contain at least one or more elements
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPSIfe8s1P" id="content12-120" data-rv-view="7634">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 6 - first(), indexOf() and drop()</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val mutableSet1 = mutableSetOf&lt;Int&gt;(2, 6, 4, 29, 4, 5)
+
+    println("....mutableSet1....")
+    for(element in mutableSet1){
+        println(element)
+    }
+    println("....mutableSet1.first()....")
+    println(mutableSet1.first())
+
+    println("...mutableSet1.indexOf(4)...")
+    println(mutableSet1.indexOf(4))
+
+    println("...mutableSet1.drop(3)...")
+    println(mutableSet1.drop(3))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSIg3WZN5" id="content1-122" data-rv-view="7636">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">....mutableSet1....
+2
+6
+4
+29
+5
+....mutableSet1.first()....
+2
+...mutableSet1.indexOf(4)...
+2
+...mutableSet1.drop(3)...
+[29, 5]
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/datatables/jquery.data-tables.min.js"></script>
+  <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

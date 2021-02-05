@@ -1,0 +1,92 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #272822; overflow:auto;width:auto;font-size:10px">
+    <table>
+        <tr>
+            <td><pre style="margin: 0; line-height: 125%"><span style="color: #75715e">/*</span>
+   <span style="color: #75715e">Printing Triangle</span>
+   <span style="color: #75715e">    * </span>
+   <span style="color: #75715e">   * * </span>
+   <span style="color: #75715e">  * * * </span>
+   <span style="color: #75715e"> * * * * </span>
+   <span style="color: #75715e">* * * * * </span>
+   <span style="color: #75715e">*/</span>
+   <span style="color: #f92672">import</span> <span style="color: #f8f8f2">java.io.*</span><span style="color: #f92672">;</span> 
+     
+   <span style="color: #75715e">// Java code to demonstrate star pattern </span>
+   <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">class</span> <span style="color: #a6e22e">Test</span> 
+   <span style="color: #f92672">{</span> 
+       <span style="color: #75715e">// Function to demonstrate printing pattern </span>
+       <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">printTriagle</span><span style="color: #f92672">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">n</span><span style="color: #f92672">)</span> 
+       <span style="color: #f92672">{</span> 
+           <span style="color: #75715e">// outer loop to handle number of rows </span>
+           <span style="color: #75715e">//  n in this case </span>
+           <span style="color: #66d9ef">for</span> <span style="color: #f92672">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">i</span><span style="color: #f92672">=</span><span style="color: #ae81ff">0</span><span style="color: #f92672">;</span> <span style="color: #f8f8f2">i</span><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">n</span><span style="color: #f92672">;</span> <span style="color: #f8f8f2">i</span><span style="color: #f92672">++)</span> 
+           <span style="color: #f92672">{</span> 
+     
+               <span style="color: #75715e">// inner loop to handle number spaces </span>
+               <span style="color: #75715e">// values changing acc. to requirement </span>
+               <span style="color: #66d9ef">for</span> <span style="color: #f92672">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">j</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">n</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">i</span><span style="color: #f92672">;</span> <span style="color: #f8f8f2">j</span><span style="color: #f92672">&gt;</span><span style="color: #ae81ff">1</span><span style="color: #f92672">;</span> <span style="color: #f8f8f2">j</span><span style="color: #f92672">--)</span> 
+               <span style="color: #f92672">{</span> 
+                   <span style="color: #75715e">// printing spaces </span>
+                   <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">print</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot; &quot;</span><span style="color: #f92672">);</span> 
+               <span style="color: #f92672">}</span> 
+      
+               <span style="color: #75715e">//  inner loop to handle number of columns </span>
+               <span style="color: #75715e">//  values changing acc. to outer loop </span>
+               <span style="color: #66d9ef">for</span> <span style="color: #f92672">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">j</span><span style="color: #f92672">=</span><span style="color: #ae81ff">0</span><span style="color: #f92672">;</span> <span style="color: #f8f8f2">j</span><span style="color: #f92672">&lt;=</span><span style="color: #f8f8f2">i</span><span style="color: #f92672">;</span> <span style="color: #f8f8f2">j</span><span style="color: #f92672">++</span> <span style="color: #f92672">)</span> 
+               <span style="color: #f92672">{</span> 
+                   <span style="color: #75715e">// printing stars </span>
+                   <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">print</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;* &quot;</span><span style="color: #f92672">);</span> 
+               <span style="color: #f92672">}</span> 
+      
+               <span style="color: #75715e">// ending line after each row </span>
+               <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">();</span> 
+           <span style="color: #f92672">}</span> 
+       <span style="color: #f92672">}</span> 
+         
+       <span style="color: #75715e">// Driver Function </span>
+       <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">main</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">args</span><span style="color: #f92672">[])</span> 
+       <span style="color: #f92672">{</span> 
+           <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">n</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">5</span><span style="color: #f92672">;</span> 
+           <span style="color: #f8f8f2">printTriagle</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">n</span><span style="color: #f92672">);</span> 
+       <span style="color: #f92672">}</span> 
+   <span style="color: #f92672">}</span> 
+   <span style="color: #f92672">import</span> <span style="color: #f8f8f2">java.io.*</span><span style="color: #f92672">;</span> 
+     
+   <span style="color: #75715e">// Java code to demonstrate star patterns </span>
+   <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">class</span> <span style="color: #a6e22e">Demo</span> 
+   <span style="color: #f92672">{</span> 
+       <span style="color: #75715e">// Function to demonstrate printing pattern </span>
+       <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">printStars</span><span style="color: #f92672">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">n</span><span style="color: #f92672">)</span> 
+       <span style="color: #f92672">{</span> 
+           <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">i</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">j</span><span style="color: #f92672">;</span> 
+     
+           <span style="color: #75715e">// outer loop to handle number of rows </span>
+           <span style="color: #75715e">//  n in this case </span>
+           <span style="color: #66d9ef">for</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">i</span><span style="color: #f92672">=</span><span style="color: #ae81ff">0</span><span style="color: #f92672">;</span> <span style="color: #f8f8f2">i</span><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">n</span><span style="color: #f92672">;</span> <span style="color: #f8f8f2">i</span><span style="color: #f92672">++)</span> 
+           <span style="color: #f92672">{</span> 
+     
+               <span style="color: #75715e">//  inner loop to handle number of columns </span>
+               <span style="color: #75715e">//  values changing acc. to outer loop     </span>
+               <span style="color: #66d9ef">for</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">j</span><span style="color: #f92672">=</span><span style="color: #ae81ff">0</span><span style="color: #f92672">;</span> <span style="color: #f8f8f2">j</span><span style="color: #f92672">&lt;=</span><span style="color: #f8f8f2">i</span><span style="color: #f92672">;</span> <span style="color: #f8f8f2">j</span><span style="color: #f92672">++)</span> 
+               <span style="color: #f92672">{</span> 
+                   <span style="color: #75715e">// printing stars </span>
+                   <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">print</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;* &quot;</span><span style="color: #f92672">);</span> 
+               <span style="color: #f92672">}</span> 
+     
+               <span style="color: #75715e">// ending line after each row </span>
+               <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">();</span> 
+           <span style="color: #f92672">}</span> 
+      <span style="color: #f92672">}</span> 
+     
+       <span style="color: #75715e">// Driver Function </span>
+       <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">main</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">args</span><span style="color: #f92672">[])</span> 
+       <span style="color: #f92672">{</span> 
+           <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">n</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">5</span><span style="color: #f92672">;</span> 
+           <span style="color: #f8f8f2">printStars</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">n</span><span style="color: #f92672">);</span> 
+       <span style="color: #f92672">}</span> 
+   <span style="color: #f92672">}</span> 
+   </pre></td>
+        </tr>
+    </table>
+</div>

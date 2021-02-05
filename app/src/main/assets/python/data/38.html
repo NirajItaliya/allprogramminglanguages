@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Site made with Mobirise Website Builder v4.10.5, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.10.5, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/ic-logo-new-128x128.png" type="image/x-icon">
+    <meta name="description" content="ApkZube">
+
+    <title>Python Multiple Inheritance</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="plugin/prism.css">
+
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
+
+</head>
+
+<body class="line-numbers">
+    <section class="mbr-section content4 cid-rwsUbtNJVA" id="content4-q7">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-2"><strong>Python Multiple Inheritance</strong>
+                    </h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="engine"><a href="https://mobirise.info/e">make a website for free</a></section>
+    <section class="mbr-section article content1 cid-rwsUik7a5f" id="content1-q9">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Like C++, a class can be derived from more than one base classes in Python. This is called
+                        multiple inheritance.
+                        <span style="font-size: 1rem;">In multiple inheritance, the features of all the base classes are
+                            inherited into the derived class. The syntax for <strong>multiple inheritance </strong>is
+                            similar to single inheritance.</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwsUyqdNxQ" id="content1-qb">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cid-rwsVJRHsf9" id="image2-qc">
+
+
+
+        <figure class="mbr-figure container">
+            <div class="image-block" style="width: 64%;">
+                <img src="assets/images/multiple-660x320.png" alt="Mobirise" title="">
+
+            </div>
+        </figure>
+    </section>
+
+ <div class="container">
+ <pre><code class="language-python">
+class ClassA:
+    pass
+
+class ClassB:
+    pass
+
+class ClassC(ClassA,ClassB):
+    pass
+ </code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwsWLQUwSj" id="content1-qd">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>let's see example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+    <pre><code class="language-python">
+      class First(object):
+        def __init__(self): 
+          super(First, self).__init__() 
+          print("first") 
+      
+      class Second(object): 
+        def __init__(self): 
+          super(Second, self).__init__()
+          print("second") 
+      
+      class Third(Second, First): 
+        def __init__(self): 
+          super(Third, self).__init__()       
+          print("third") 
+
+      Third(); #call Third class constructor
+    </code></pre></div>
+    <section class="mbr-section article content1 cid-rwsWShbSid" id="content1-qf">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    first
+    second
+    third 
+</code></pre></div>
+
+    <section class="mbr-section content4 cid-rwsX8q31qd" id="content4-qh">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Why super () keyword</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwsX9Mii3t" id="content1-qi">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>The <strong>super()</strong> method is most commonly used with <strong>__init__ </strong>function
+                        in base class. This is usually the only place where we need to do some things in a child then
+                        complete the <strong>initialization </strong>in the <strong>parent</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+class Child(Parent):
+    def __init__(self, stuff)
+        self.stuff = stuff 
+        super(Child, self).__init__()  
+</code></pre></div>
+
+
+    <section class="mbr-section content4 cid-rwsXTnDvaJ" id="content4-qk">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Private members of parent
+                            class</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwsXVTPeo7" id="content1-ql">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>We don’t always want the instance variables of the parent class to be inherited by the child
+                        class i.e. we can make some of the instance variables of the parent class private, which won’t
+                        be available to the child class.
+                        &nbsp;<span style="font-size: 1rem;">We can make an instance variable by adding double
+                            underscores before its name. For example,</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    # Python program to demonstrate private members 
+    # of the parent class 
+    class C(object): 
+        def __init__(self): 
+                self.c = 21
+                # d is private instance variable  
+                self.__d = 42    
+    
+    class D(C): 
+        def __init__(self): 
+                self.e = 84
+                C.__init__(self) 
+    
+    object1 = D() 
+    # produces an error as d is private instance variable 
+    print(D.d)  
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwsY1RprxF" id="content1-qq">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+    <pre><code class="language-python">
+        Traceback (most recent call last):
+          File "main.py", line 16, in &lt;module&gt;
+          print(D.d)
+        AttributeError: type object 'D' has no attribute 'd'
+    </code></pre></div>
+ 
+    <script src="plugin/prism.js"></script>
+
+    <script src="assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="assets/popper/popper.min.js"></script>
+    <script src="assets/tether/tether.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+    <script src="assets/theme/js/script.js"></script>
+
+
+    <input name="animation" type="hidden">
+</body>
+
+</html>

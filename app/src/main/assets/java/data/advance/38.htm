@@ -1,0 +1,616 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Century",serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Century",serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Century",serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Century",serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Century",serif;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.alt, li.alt, div.alt
+	{mso-style-name:alt;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.comment
+	{mso-style-name:comment;}
+span.keyword
+	{mso-style-name:keyword;}
+span.string
+	{mso-style-name:string;}
+span.number
+	{mso-style-name:number;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Century",serif;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='line-height:200%'><span style='font-size:9.0pt;
+line-height:200%;color:#385723'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-top:3.75pt;text-align:center;
+line-height:200%;background:white'><span style='font-size:18.0pt;line-height:
+200%;font-family:"Helvetica",sans-serif;color:#385723'>Difference between
+StringBuffer and StringBuilder</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:4.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Java provides three classes to represent a sequence of characters:
+String, StringBuffer, and StringBuilder. The String class is an immutable class
+whereas StringBuffer and StringBuilder classes are mutable. There are many
+differences between StringBuffer and StringBuilder. The StringBuilder class is
+introduced since JDK 1.5.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>A list of differences between StringBuffer and StringBuilder are
+given below:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div align=center>
+
+<table class=MsoTable15Grid4Accent6 border=1 cellspacing=0 cellpadding=0
+ width=309 style='width:231.85pt;border-collapse:collapse;border:none'>
+ <tr style='height:37.1pt'>
+  <td width=130 valign=top style='width:97.2pt;border:solid #70AD47 1.0pt;
+  border-right:none;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:37.1pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Verdana",sans-serif;
+  color:white'>StringBuffer</span></p>
+  </td>
+  <td width=180 valign=top style='width:134.65pt;border:solid #70AD47 1.0pt;
+  border-left:none;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:37.1pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Verdana",sans-serif;
+  color:white'>StringBuilder</span></p>
+  </td>
+ </tr>
+ <tr style='height:91.2pt'>
+  <td width=130 valign=top style='width:97.2pt;border:solid #A8D08D 1.0pt;
+  border-top:none;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:91.2pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Verdana",sans-serif'>StringBuffer
+  is&nbsp;synchronized&nbsp;i.e. thread safe. It means two threads can't call
+  the methods of StringBuffer simultaneously.</span></p>
+  </td>
+  <td width=180 valign=top style='width:134.65pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:91.2pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Verdana",sans-serif'>StringBuilder
+  is&nbsp;non-synchronized&nbsp;i.e. not thread safe. It means two threads can
+  call the methods of StringBuilder simultaneously.</span></p>
+  </td>
+ </tr>
+ <tr style='height:32.4pt'>
+  <td width=130 valign=top style='width:97.2pt;border:solid #A8D08D 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:32.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Verdana",sans-serif'>StringBuffer
+  is&nbsp;less efficient&nbsp;than StringBuilder.</span></p>
+  </td>
+  <td width=180 valign=top style='width:134.65pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:32.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><span
+  style='font-size:8.0pt;line-height:150%;font-family:"Verdana",sans-serif'>StringBuilder
+  is&nbsp;more efficient&nbsp;than StringBuffer.</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'><br>
+<br>
+</span></p>
+
+<p class=MsoListParagraph style='text-align:justify;text-indent:-18.0pt;
+line-height:200%'><span style='font-size:12.0pt;line-height:200%;font-family:
+"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>StringBuffer Example</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:white'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>//Java&nbsp;Program&nbsp;to&nbsp;demonstrate&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>   the&nbsp;use&nbsp;of&nbsp;StringBuffer&nbsp;class.</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>public</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;BufferTest{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>public</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><b><span style='line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>static</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>void</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;main(String[]&nbsp;args){&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StringBuffer&nbsp;buffer=</span><b><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>new</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;StringBuffer(</span><span style='font-size:9.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:blue'>&quot;hello&quot;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;buffer.append(</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;java&quot;</span><span style='font-size:9.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:black'>);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(buffer);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Courier New";color:black'>Hellojava</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:19.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-indent:-18.0pt;
+line-height:200%;background:white'><span style='font-size:14.0pt;line-height:
+200%;font-family:"Courier New";color:#610B38'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>StringBuilder Example </span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;line-height:200%;
+background:white'><span style='font-size:14.0pt;line-height:200%;font-family:
+"Helvetica",sans-serif;color:#610B38'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:white'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>//Java&nbsp;Program&nbsp;to&nbsp;demonstrate&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>   the&nbsp;use&nbsp;of&nbsp;StringBuilder&nbsp;class.</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>public</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;BuilderTest{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>public</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><b><span style='line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>static</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>void</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;main(String[]&nbsp;args){&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StringBuilder&nbsp;builder=</span><b><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>new</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;StringBuilder(</span><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:blue'>&quot;hello&quot;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;builder.append(</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;java&quot;</span><span style='font-size:9.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:black'>);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(builder);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Courier New";color:black'>hellojava</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:19.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>Performance Test of StringBuffer and StringBuilder</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Let's see the code to check the performance of StringBuffer and
+StringBuilder classes.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:white'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>//Java&nbsp;Program&nbsp;to&nbsp;demonstrate&nbsp;the&nbsp;performance&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>of&nbsp;StringBuffer&nbsp;and&nbsp;StringBuilder&nbsp;classes.</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>public</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;ConcatTest{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>public</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><b><span style='line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>static</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>void</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;main(String[]&nbsp;args){&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>long</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;startTime&nbsp;=&nbsp;System.currentTimeMillis();&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StringBuffer&nbsp;sb&nbsp;=&nbsp;</span><b><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>new</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;StringBuffer(</span><span style='font-size:9.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:blue'>&quot;Java&quot;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>for</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;(</span><b><span style='line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>int</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;i=</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#C00000'>0</span><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>;&nbsp;i&lt;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#C00000'>10000</span><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>;&nbsp;i++){&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sb.append(</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Tpoint&quot;</span><span style='font-size:9.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:black'>);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Time&nbsp;taken&nbsp;by&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:blue'>StringBuffer:&nbsp;&quot;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;+&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>  (System.currentTimeMillis()&nbsp;-&nbsp;startTime)&nbsp;+&nbsp;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;ms&quot;</span><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;startTime&nbsp;=&nbsp;System.currentTimeMillis();&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StringBuilder&nbsp;sb2&nbsp;=&nbsp;</span><b><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>new</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;StringBuilder(</span><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:blue'>&quot;Java&quot;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>for</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;(</span><b><span style='line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>int</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;i=</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#C00000'>0</span><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>;&nbsp;i&lt;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#C00000'>10000</span><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>;&nbsp;i++){&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sb2.append(</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Tpoint&quot;</span><span style='font-size:9.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:black'>);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Time&nbsp;taken&nbsp;by&nbsp;StringBuilder:&nbsp;&quot;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>       &nbsp;+&nbsp;(System.currentTimeMillis()&nbsp;-&nbsp;startTime)&nbsp;+&nbsp;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;ms&quot;</span><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Courier New";color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Courier New";color:black'>Time
+taken by StringBuffer: 16ms</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Courier New";color:black'>Time
+taken by StringBuilder: 0ms</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

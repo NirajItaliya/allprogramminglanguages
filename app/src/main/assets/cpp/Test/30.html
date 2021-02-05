@@ -1,0 +1,48 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #272822; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #75715e">#include &lt;iostream&gt;</span>
+    <span style="color: #75715e">#include &lt;cmath&gt;</span>
+
+    <span style="color: #66d9ef">using</span> <span style="color: #66d9ef">namespace</span> <span style="color: #f8f8f2">std;</span>
+    
+    <span style="color: #66d9ef">int</span> <span style="color: #a6e22e">convertBinarytoOctal</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">long</span> <span style="color: #66d9ef">long</span><span style="color: #f8f8f2">);</span>
+    <span style="color: #66d9ef">int</span> <span style="color: #a6e22e">main</span><span style="color: #f8f8f2">()</span>
+    <span style="color: #f8f8f2">{</span>
+        <span style="color: #66d9ef">long</span> <span style="color: #66d9ef">long</span> <span style="color: #f8f8f2">binaryNumber;</span>
+    
+        <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;Enter a binary number: &quot;</span><span style="color: #f8f8f2">;</span>
+        <span style="color: #f8f8f2">cin</span> <span style="color: #f92672">&gt;&gt;</span> <span style="color: #f8f8f2">binaryNumber;</span>
+    
+        <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">binaryNumber</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot; in binary = &quot;</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">convertBinarytoOctal(binaryNumber)</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot; in octal &quot;</span><span style="color: #f8f8f2">;</span>
+    
+        <span style="color: #66d9ef">return</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span>
+    <span style="color: #f8f8f2">}</span>
+    
+    <span style="color: #66d9ef">int</span> <span style="color: #a6e22e">convertBinarytoOctal</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">long</span> <span style="color: #66d9ef">long</span> <span style="color: #f8f8f2">binaryNumber)</span>
+    <span style="color: #f8f8f2">{</span>
+        <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">octalNumber</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">decimalNumber</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span>
+    
+        <span style="color: #66d9ef">while</span><span style="color: #f8f8f2">(binaryNumber</span> <span style="color: #f92672">!=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">)</span>
+        <span style="color: #f8f8f2">{</span>
+            <span style="color: #f8f8f2">decimalNumber</span> <span style="color: #f92672">+=</span> <span style="color: #f8f8f2">(binaryNumber</span><span style="color: #f92672">%</span><span style="color: #ae81ff">10</span><span style="color: #f8f8f2">)</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">pow(</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">,i);</span>
+            <span style="color: #f92672">++</span><span style="color: #f8f8f2">i;</span>
+            <span style="color: #f8f8f2">binaryNumber</span><span style="color: #f92672">/=</span><span style="color: #ae81ff">10</span><span style="color: #f8f8f2">;</span>
+        <span style="color: #f8f8f2">}</span>
+    
+        <span style="color: #f8f8f2">i</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">;</span>
+    
+        <span style="color: #66d9ef">while</span> <span style="color: #f8f8f2">(decimalNumber</span> <span style="color: #f92672">!=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">)</span>
+        <span style="color: #f8f8f2">{</span>
+            <span style="color: #f8f8f2">octalNumber</span> <span style="color: #f92672">+=</span> <span style="color: #f8f8f2">(decimalNumber</span> <span style="color: #f92672">%</span> <span style="color: #ae81ff">8</span><span style="color: #f8f8f2">)</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">i;</span>
+            <span style="color: #f8f8f2">decimalNumber</span> <span style="color: #f92672">/=</span> <span style="color: #ae81ff">8</span><span style="color: #f8f8f2">;</span>
+            <span style="color: #f8f8f2">i</span> <span style="color: #f92672">*=</span> <span style="color: #ae81ff">10</span><span style="color: #f8f8f2">;</span>
+        <span style="color: #f8f8f2">}</span>
+    
+        <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">octalNumber;</span>
+    <span style="color: #f8f8f2">}</span>
+    
+    
+    <span style="color: #f92672">&gt;&gt;</span><span style="color: #f8f8f2">Output</span>
+    
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">a</span> <span style="color: #f8f8f2">binary</span> <span style="color: #f8f8f2">number</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">10001</span>
+    <span style="color: #ae81ff">10001</span> <span style="color: #f8f8f2">in</span> <span style="color: #f8f8f2">binary</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">21</span> <span style="color: #f8f8f2">in</span> <span style="color: #f8f8f2">octal</span>
+    </pre></div>

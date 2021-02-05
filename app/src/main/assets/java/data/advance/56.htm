@@ -1,0 +1,1180 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Century",serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.alt, li.alt, div.alt
+	{mso-style-name:alt;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Century",serif;}
+span.keyword
+	{mso-style-name:keyword;}
+span.string
+	{mso-style-name:string;}
+span.comment
+	{mso-style-name:comment;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Century",serif;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB link=blue vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'><span
+style='font-size:8.0pt;line-height:200%'>&nbsp;</span></p>
+
+<h1 align=center style='margin-top:3.75pt;text-align:center;line-height:200%;
+background:white'><span style='font-size:18.0pt;line-height:200%;font-family:
+"Helvetica",sans-serif;color:#C00000;font-weight:normal'>Java File Class</span></h1>
+
+<h1 align=center style='margin-top:3.75pt;text-align:center;line-height:200%;
+background:white'><span style='font-size:11.0pt;line-height:200%;font-family:
+"Helvetica",sans-serif;color:#C00000;font-weight:normal'>&nbsp;</span></h1>
+
+<p style='text-align:justify;line-height:200%;background:white;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-style: initial;text-decoration-color: initial;word-spacing:
+0px'><span style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>The File class is an abstract representation of file and directory
+pathname. A pathname can be either absolute or relative.The File class have
+several methods for working with directories and files such as creating new directories
+or files, deleting and renaming directories or files, listing the contents of a
+directory etc.</span></p>
+
+<p style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<h3 style='margin-left:36.0pt;text-align:justify;text-indent:-18.0pt;
+line-height:200%;background:white;font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-style: initial;text-decoration-color: initial;word-spacing:
+0px'><span style='font-size:14.0pt;line-height:200%;font-family:"Courier New";
+color:#610B4B;font-weight:normal'>o</span><span style='font-size:7.0pt;
+line-height:200%;color:#610B4B;font-weight:normal'>&nbsp;&nbsp; </span><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B;font-weight:normal'>Fields</span></h3>
+
+<div align=center>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=340
+ style='width:254.9pt;border-collapse:collapse'>
+ <tr style='height:17.5pt'>
+  <td valign=top style='border:solid #FFC000 1.0pt;border-right:none;
+  background:#FFC000;padding:0cm 5.4pt 0cm 5.4pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:200%'><b><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:white'>Modifier</span></b></p>
+  </td>
+  <td valign=top style='border-top:solid #FFC000 1.0pt;border-left:none;
+  border-bottom:solid #FFC000 1.0pt;border-right:none;background:#FFC000;
+  padding:0cm 5.4pt 0cm 5.4pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:200%'><b><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:white'>Type</span></b></p>
+  </td>
+  <td width=88 valign=top style='width:65.85pt;border-top:solid #FFC000 1.0pt;
+  border-left:none;border-bottom:solid #FFC000 1.0pt;border-right:none;
+  background:#FFC000;padding:0cm 5.4pt 0cm 5.4pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:200%'><b><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:white'>Field</span></b></p>
+  </td>
+  <td width=142 valign=top style='width:106.3pt;border:solid #FFC000 1.0pt;
+  border-left:none;background:#FFC000;padding:0cm 5.4pt 0cm 5.4pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:200%'><b><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:white'>Description</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:36.25pt'>
+  <td valign=top style='border:solid #FFD966 1.0pt;border-top:none;background:
+  #FFF2CC;padding:0cm 5.4pt 0cm 5.4pt;height:36.25pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>static</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #FFD966 1.0pt;
+  border-right:solid #FFD966 1.0pt;background:#FFF2CC;padding:0cm 5.4pt 0cm 5.4pt;
+  height:36.25pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>String</span></p>
+  </td>
+  <td width=88 valign=top style='width:65.85pt;border-top:none;border-left:
+  none;border-bottom:solid #FFD966 1.0pt;border-right:solid #FFD966 1.0pt;
+  background:#FFF2CC;padding:0cm 5.4pt 0cm 5.4pt;height:36.25pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>pathSeparator</span></p>
+  </td>
+  <td width=142 valign=top style='width:106.3pt;border-top:none;border-left:
+  none;border-bottom:solid #FFD966 1.0pt;border-right:solid #FFD966 1.0pt;
+  background:#FFF2CC;padding:0cm 5.4pt 0cm 5.4pt;height:36.25pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>It is system-dependent
+  path-separator character, represented as a&nbsp;string&nbsp;for convenience.</span></p>
+  </td>
+ </tr>
+ <tr style='height:18.15pt'>
+  <td valign=top style='border:solid #FFD966 1.0pt;border-top:none;padding:
+  0cm 5.4pt 0cm 5.4pt;height:18.15pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>static</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #FFD966 1.0pt;
+  border-right:solid #FFD966 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.15pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>char</span></p>
+  </td>
+  <td width=88 valign=top style='width:65.85pt;border-top:none;border-left:
+  none;border-bottom:solid #FFD966 1.0pt;border-right:solid #FFD966 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:18.15pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>pathSeparatorChar</span></p>
+  </td>
+  <td width=142 valign=top style='width:106.3pt;border-top:none;border-left:
+  none;border-bottom:solid #FFD966 1.0pt;border-right:solid #FFD966 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:18.15pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>It is system-dependent
+  path-separator character.</span></p>
+  </td>
+ </tr>
+ <tr style='height:35.6pt'>
+  <td valign=top style='border:solid #FFD966 1.0pt;border-top:none;background:
+  #FFF2CC;padding:0cm 5.4pt 0cm 5.4pt;height:35.6pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>static</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #FFD966 1.0pt;
+  border-right:solid #FFD966 1.0pt;background:#FFF2CC;padding:0cm 5.4pt 0cm 5.4pt;
+  height:35.6pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>String</span></p>
+  </td>
+  <td width=88 valign=top style='width:65.85pt;border-top:none;border-left:
+  none;border-bottom:solid #FFD966 1.0pt;border-right:solid #FFD966 1.0pt;
+  background:#FFF2CC;padding:0cm 5.4pt 0cm 5.4pt;height:35.6pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>separator</span></p>
+  </td>
+  <td width=142 valign=top style='width:106.3pt;border-top:none;border-left:
+  none;border-bottom:solid #FFD966 1.0pt;border-right:solid #FFD966 1.0pt;
+  background:#FFF2CC;padding:0cm 5.4pt 0cm 5.4pt;height:35.6pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>It is system-dependent
+  default name-separator character, represented as a string for convenience.</span></p>
+  </td>
+ </tr>
+ <tr style='height:17.5pt'>
+  <td valign=top style='border:solid #FFD966 1.0pt;border-top:none;padding:
+  0cm 5.4pt 0cm 5.4pt;height:17.5pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>static</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #FFD966 1.0pt;
+  border-right:solid #FFD966 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.5pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>char</span></p>
+  </td>
+  <td width=88 valign=top style='width:65.85pt;border-top:none;border-left:
+  none;border-bottom:solid #FFD966 1.0pt;border-right:solid #FFD966 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:17.5pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>separatorChar</span></p>
+  </td>
+  <td width=142 valign=top style='width:106.3pt;border-top:none;border-left:
+  none;border-bottom:solid #FFD966 1.0pt;border-right:solid #FFD966 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:17.5pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>It is system-dependent
+  default name-separator character.</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<h3 style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:16.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B;font-weight:normal'>&nbsp;</span></h3>
+
+<h3 style='margin-left:36.0pt;text-align:justify;text-indent:-18.0pt;
+line-height:200%;background:white'><span style='font-size:14.0pt;line-height:
+200%;font-family:"Courier New";color:#610B4B;font-weight:normal'>o</span><span
+style='font-size:7.0pt;line-height:200%;color:#610B4B;font-weight:normal'>&nbsp;&nbsp;
+</span><span style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B;font-weight:normal'>Constructors</span></h3>
+
+<div align=center>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=321
+ style='width:240.75pt;border-collapse:collapse'>
+ <tr style='height:48.25pt'>
+  <td valign=top style='border:solid #5B9BD5 1.0pt;border-right:none;
+  background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:48.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:200%'><b><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:white'>Constructor</span></b></p>
+  </td>
+  <td width=175 valign=top style='width:130.95pt;border:solid #5B9BD5 1.0pt;
+  border-left:none;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:48.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:200%'><b><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:white'>Description</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:75.85pt'>
+  <td valign=top style='border:solid #9CC2E5 1.0pt;border-top:none;background:
+  #DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:75.85pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>File(File parent, String
+  child)</span></b></p>
+  </td>
+  <td width=175 valign=top style='width:130.95pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:75.85pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>It creates a new File
+  instance from a parent abstract pathname and a child pathname string.</span></p>
+  </td>
+ </tr>
+ <tr style='height:75.85pt'>
+  <td valign=top style='border:solid #9CC2E5 1.0pt;border-top:none;padding:
+  0cm 5.4pt 0cm 5.4pt;height:75.85pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>File(String pathname)</span></b></p>
+  </td>
+  <td width=175 valign=top style='width:130.95pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:75.85pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>It creates a new File
+  instance by converting the given pathname string into an abstract pathname.</span></p>
+  </td>
+ </tr>
+ <tr style='height:75.85pt'>
+  <td valign=top style='border:solid #9CC2E5 1.0pt;border-top:none;background:
+  #DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:75.85pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>File(String parent, String
+  child)</span></b></p>
+  </td>
+  <td width=175 valign=top style='width:130.95pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:75.85pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>It creates a new File
+  instance from a parent pathname string and a child pathname string.</span></p>
+  </td>
+ </tr>
+ <tr style='height:75.85pt'>
+  <td valign=top style='border:solid #9CC2E5 1.0pt;border-top:none;padding:
+  0cm 5.4pt 0cm 5.4pt;height:75.85pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>File(URI uri)</span></b></p>
+  </td>
+  <td width=175 valign=top style='width:130.95pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:75.85pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>It creates a new File
+  instance by converting the given file: URI into an abstract pathname.</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<h3 style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:16.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B;font-weight:normal'>&nbsp;</span></h3>
+
+<h3 style='margin-left:36.0pt;text-align:justify;text-indent:-18.0pt;
+line-height:200%;background:white'><span style='font-size:14.0pt;line-height:
+200%;font-family:"Courier New";color:#610B4B;font-weight:normal'>o</span><span
+style='font-size:7.0pt;line-height:200%;color:#610B4B;font-weight:normal'>&nbsp;&nbsp;
+</span><span style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B;font-weight:normal'>Useful Methods</span></h3>
+
+<div align=center>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=312
+ style='width:233.65pt;border-collapse:collapse'>
+ <tr style='height:63.75pt'>
+  <td valign=top style='border:solid #70AD47 1.0pt;border-right:none;
+  background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:63.75pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:200%'><b><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:white'>Modifier and Type</span></b></p>
+  </td>
+  <td valign=top style='border-top:solid #70AD47 1.0pt;border-left:none;
+  border-bottom:solid #70AD47 1.0pt;border-right:none;background:#70AD47;
+  padding:0cm 5.4pt 0cm 5.4pt;height:63.75pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:200%'><b><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:white'>Method</span></b></p>
+  </td>
+  <td width=82 valign=top style='width:61.75pt;border:solid #70AD47 1.0pt;
+  border-left:none;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:63.75pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:200%'><b><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:white'>Description</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:50.1pt'>
+  <td valign=top style='border:solid #A8D08D 1.0pt;border-top:none;background:
+  #E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:50.1pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>static File</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:50.1pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>createTempFile(String
+  prefix, String suffix)</span></p>
+  </td>
+  <td width=82 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:50.1pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif'>It creates
+  an empty file in the default temporary-file directory, using the given prefix
+  and suffix to generate its name.</span></p>
+  </td>
+ </tr>
+ <tr style='height:48.6pt'>
+  <td valign=top style='border:solid #A8D08D 1.0pt;border-top:none;padding:
+  0cm 5.4pt 0cm 5.4pt;height:48.6pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>boolean</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:48.6pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>createNewFile()</span></p>
+  </td>
+  <td width=82 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:48.6pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif'>It
+  atomically creates a new, empty file named by this abstract pathname if and only
+  if a file with this name does not yet exist.</span></p>
+  </td>
+ </tr>
+ <tr style='height:50.1pt'>
+  <td valign=top style='border:solid #A8D08D 1.0pt;border-top:none;background:
+  #E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:50.1pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>boolean</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:50.1pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>canWrite()</span></p>
+  </td>
+  <td width=82 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:50.1pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif'>It
+  tests whether the application can modify the file denoted by this abstract
+  pathname.String[]</span></p>
+  </td>
+ </tr>
+ <tr style='height:50.1pt'>
+  <td valign=top style='border:solid #A8D08D 1.0pt;border-top:none;padding:
+  0cm 5.4pt 0cm 5.4pt;height:50.1pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>boolean</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:50.1pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>canExecute()</span></p>
+  </td>
+  <td width=82 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:50.1pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif'>It
+  tests whether the application can execute the file denoted by this abstract
+  pathname.</span></p>
+  </td>
+ </tr>
+ <tr style='height:50.1pt'>
+  <td valign=top style='border:solid #A8D08D 1.0pt;border-top:none;background:
+  #E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:50.1pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>boolean</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:50.1pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>canRead()</span></p>
+  </td>
+  <td width=82 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:50.1pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif'>It
+  tests whether the application can read the file denoted by this abstract
+  pathname.</span></p>
+  </td>
+ </tr>
+ <tr style='height:24.3pt'>
+  <td valign=top style='border:solid #A8D08D 1.0pt;border-top:none;padding:
+  0cm 5.4pt 0cm 5.4pt;height:24.3pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>boolean</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:24.3pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>isAbsolute()</span></p>
+  </td>
+  <td width=82 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:24.3pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif'>It
+  tests whether this abstract pathname is absolute.</span></p>
+  </td>
+ </tr>
+ <tr style='height:50.1pt'>
+  <td valign=top style='border:solid #A8D08D 1.0pt;border-top:none;background:
+  #E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:50.1pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>boolean</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:50.1pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>isDirectory()</span></p>
+  </td>
+  <td width=82 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:50.1pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif'>It tests
+  whether the file denoted by this abstract pathname is a directory.</span></p>
+  </td>
+ </tr>
+ <tr style='height:50.1pt'>
+  <td valign=top style='border:solid #A8D08D 1.0pt;border-top:none;padding:
+  0cm 5.4pt 0cm 5.4pt;height:50.1pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>boolean</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:50.1pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>isFile()</span></p>
+  </td>
+  <td width=82 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:50.1pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif'>It
+  tests whether the file denoted by this abstract pathname is a normal file.</span></p>
+  </td>
+ </tr>
+ <tr style='height:50.1pt'>
+  <td valign=top style='border:solid #A8D08D 1.0pt;border-top:none;background:
+  #E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:50.1pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>String</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:50.1pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>getName()</span></p>
+  </td>
+  <td width=82 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:50.1pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif'>It returns
+  the name of the file or directory denoted by this abstract pathname.</span></p>
+  </td>
+ </tr>
+ <tr style='height:48.6pt'>
+  <td valign=top style='border:solid #A8D08D 1.0pt;border-top:none;padding:
+  0cm 5.4pt 0cm 5.4pt;height:48.6pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>String</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:48.6pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>getParent()</span></p>
+  </td>
+  <td width=82 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:48.6pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif'>It
+  returns the pathname string of this abstract pathname's parent, or null if
+  this pathname does not name a parent directory.</span></p>
+  </td>
+ </tr>
+ <tr style='height:50.1pt'>
+  <td valign=top style='border:solid #A8D08D 1.0pt;border-top:none;background:
+  #E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:50.1pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>Path</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:50.1pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>toPath()</span></p>
+  </td>
+  <td width=82 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:50.1pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif'>It
+  returns a java.nio.file.Path object constructed from the this abstract path.</span></p>
+  </td>
+ </tr>
+ <tr style='height:25.8pt'>
+  <td valign=top style='border:solid #A8D08D 1.0pt;border-top:none;padding:
+  0cm 5.4pt 0cm 5.4pt;height:25.8pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>URI</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:25.8pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>toURI()</span></p>
+  </td>
+  <td width=82 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:25.8pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif'>It
+  constructs a file: URI that represents this abstract pathname.</span></p>
+  </td>
+ </tr>
+ <tr style='height:48.6pt'>
+  <td valign=top style='border:solid #A8D08D 1.0pt;border-top:none;background:
+  #E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:48.6pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>File[]</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:48.6pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>listFiles()</span></p>
+  </td>
+  <td width=82 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:48.6pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif'>It
+  returns an&nbsp;array&nbsp;of abstract pathnames denoting the files in the
+  directory denoted by this abstract pathname</span></p>
+  </td>
+ </tr>
+ <tr style='height:50.1pt'>
+  <td valign=top style='border:solid #A8D08D 1.0pt;border-top:none;padding:
+  0cm 5.4pt 0cm 5.4pt;height:50.1pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>long</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:50.1pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>getFreeSpace()</span></p>
+  </td>
+  <td width=82 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:50.1pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif'>It
+  returns the number of unallocated bytes in the partition named by this
+  abstract path name.</span></p>
+  </td>
+ </tr>
+ <tr style='height:74.4pt'>
+  <td valign=top style='border:solid #A8D08D 1.0pt;border-top:none;background:
+  #E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:74.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>String[]</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;
+  height:74.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>list(FilenameFilter
+  filter)</span></p>
+  </td>
+  <td width=82 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:74.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif'>It
+  returns an array of strings naming the files and directories in the directory
+  denoted by this abstract pathname that satisfy the specified filter.</span></p>
+  </td>
+ </tr>
+ <tr style='height:25.8pt'>
+  <td valign=top style='border:solid #A8D08D 1.0pt;border-top:none;padding:
+  0cm 5.4pt 0cm 5.4pt;height:25.8pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>boolean</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #A8D08D 1.0pt;
+  border-right:solid #A8D08D 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:25.8pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%;font-family:"Verdana",sans-serif'>mkdir()</span></p>
+  </td>
+  <td width=82 valign=top style='width:61.75pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:25.8pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif'>It
+  creates the directory named by this abstract pathname.</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:200%'>
+
+<hr size=1 width="100%" noshade style='color:#D4D4D4' align=center>
+
+</div>
+
+<h2 style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38;font-weight:normal'>Java File Example 1</span></h2>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=keyword><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>import</span></span></b><span style='background-color:inherit'></span><span
+class=keyword></span><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;java.io.*;&nbsp;&nbsp;</span></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=keyword><span style='background-color:inherit'><b><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:#006699'><span
+style='background-color:inherit'>public</span></span></b><span
+style='background-color:inherit'></span><span class=keyword></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></span><span style='background-color:inherit'></span><span
+class=keyword></span><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>class<span style='background-color:
+inherit'></span></b></span><span class=keyword></span><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;FileDemo&nbsp;{&nbsp;&nbsp;</span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=keyword><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;<span style='background-color:inherit'></span></span><span
+class=keyword></span><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>public<span style='background-color:
+inherit'></span></b></span><span class=keyword></span><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></span></span><span
+class=keyword><span style='background-color:inherit'><b><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>static<span
+style='background-color:inherit'></span></b></span><span class=keyword></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'></span>&nbsp;<b><span style='background-color:inherit'>void<span
+style='background-color:inherit'></b></span></span>&nbsp;main(String[]&nbsp;args)&nbsp;{&nbsp;&nbsp;</span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=keyword><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span></span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=keyword><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+style='background-color:inherit'></span></span><span class=keyword></span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>try<span style='background-color:inherit'></span></b></span><span
+class=keyword></span><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;{&nbsp;&nbsp;</span></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=keyword><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;File&nbsp;file&nbsp;=&nbsp;<span
+style='background-color:inherit'></span></span><span class=keyword></span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>new<span style='background-color:inherit'></span></b></span><span
+class=keyword></span><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;File(</span></span></span><span
+class=string><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:blue'>&quot;javaFile123.txt&quot;</span>);&nbsp;&nbsp;</span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=keyword><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+style='background-color:inherit'></span></span><span class=keyword></span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>if<span style='background-color:inherit'></span></b></span><span
+class=keyword></span><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;(file.createNewFile())&nbsp;{&nbsp;&nbsp;</span></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=keyword><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<span
+style='background-color:inherit'></span></span><span class=keyword></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;New&nbsp;File&nbsp;is&nbsp;created!&quot;<span
+style='background-color:inherit'></span></span><span class=keyword></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>);&nbsp;&nbsp;</span></span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=keyword><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<span
+style='background-color:inherit'></span></span><span class=keyword></span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>else<span style='background-color:inherit'></span></b></span><span
+class=keyword></span><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;{&nbsp;&nbsp;</span></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=keyword><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<span
+style='background-color:inherit'></span></span><span class=keyword></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;File&nbsp;already&nbsp;exists.&quot;<span style='background-color:
+inherit'></span></span><span class=keyword></span><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>);&nbsp;&nbsp;</span></span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=keyword><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=keyword><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<span
+style='background-color:inherit'></span></span><span class=keyword></span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>catch<span style='background-color:inherit'></span></b></span><span
+class=keyword></span><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;(IOException&nbsp;e)&nbsp;{&nbsp;&nbsp;</span></span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=keyword><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.printStackTrace();&nbsp;&nbsp;</span></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=keyword><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=keyword><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=keyword><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=keyword><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>}&nbsp;&nbsp;</span></span></span></p>
+
+</div>
+
+<p style='text-align:justify;line-height:200%;background:white'><span
+class=keyword><span style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Output:</span></span></p>
+
+<pre style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+class=keyword><span style='color:black'>New File is created!</span></span></pre>
+
+<h2 style='text-align:justify;line-height:200%;background:white;font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-style: initial;text-decoration-color: initial;word-spacing:
+0px'><span class=keyword><span style='font-size:19.0pt;line-height:200%;
+font-family:"Helvetica",sans-serif;color:#610B38;font-weight:normal'>&nbsp;</span></span></h2>
+
+<h2 style='text-align:justify;line-height:200%;background:white'><span
+class=keyword><span style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38;font-weight:normal'>Java File Example 2</span></span></h2>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=keyword><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>import</span></span></b><span style='background-color:inherit'></span><span
+class=keyword></span><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;java.io.*;&nbsp;&nbsp;</span></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=keyword><span style='background-color:inherit'><b><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:#006699'><span
+style='background-color:inherit'>public</span></span></b><span
+style='background-color:inherit'></span><span class=keyword></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></span><span style='background-color:inherit'></span><span
+class=keyword></span><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>class<span style='background-color:
+inherit'></span></b></span><span class=keyword></span><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;FileDemo2&nbsp;{&nbsp;&nbsp;</span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=keyword><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;<span style='background-color:inherit'></span></span><span
+class=keyword></span><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>public<span style='background-color:
+inherit'></span></b></span><span class=keyword></span><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></span></span><span
+class=keyword><span style='background-color:inherit'><b><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>static<span
+style='background-color:inherit'></span></b></span><span class=keyword></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'></span>&nbsp;<b><span style='background-color:inherit'>void<span
+style='background-color:inherit'></b></span></span>&nbsp;main(String[]&nbsp;args)&nbsp;{&nbsp;&nbsp;</span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=keyword><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span></span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=keyword><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;path&nbsp;=&nbsp;<span
+style='background-color:inherit'></span></span><span class=keyword></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;&quot;<span style='background-color:inherit'></span></span><span
+class=keyword></span><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>;&nbsp;&nbsp;</span></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=keyword><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+style='background-color:inherit'></span></span><span class=keyword></span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>boolean<span style='background-color:inherit'></span></b></span><span
+class=keyword></span><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;bool&nbsp;=&nbsp;</span></span></span><span
+class=keyword><span style='background-color:inherit'><b><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>false<span
+style='background-color:inherit'></span></b></span><span class=keyword></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'></span>;&nbsp;&nbsp;</span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=keyword><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+style='background-color:inherit'></span></span><span class=keyword></span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>try<span style='background-color:inherit'></span></b></span><span
+class=keyword></span><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;{&nbsp;&nbsp;</span></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=keyword><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+style='background-color:inherit'></span></span><span class=keyword></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#008200'>//&nbsp;createing&nbsp;&nbsp;new&nbsp;files<span
+style='background-color:inherit'></span></span><span class=keyword></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=keyword><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;File&nbsp;file&nbsp;&nbsp;=&nbsp;<span
+style='background-color:inherit'></span></span><span class=keyword></span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>new<span style='background-color:inherit'></span></b></span><span
+class=keyword></span><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;File(</span></span></span><span
+class=string><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:blue'>&quot;testFile1.txt&quot;</span>);&nbsp;&nbsp;</span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=string><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;file.createNewFile();&nbsp;&nbsp;</span></span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=string><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(file);&nbsp;&nbsp;</span></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=string><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+style='background-color:inherit'></span></span><span class=string></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#008200'>//&nbsp;createing&nbsp;new&nbsp;canonical&nbsp;from&nbsp;file&nbsp;object<span
+style='background-color:inherit'></span></span><span class=string></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=string><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;File&nbsp;file2&nbsp;=&nbsp;file.getCanonicalFile();&nbsp;&nbsp;</span></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=string><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+style='background-color:inherit'></span></span><span class=string></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#008200'>//&nbsp;returns&nbsp;true&nbsp;if&nbsp;the&nbsp;file&nbsp;exists<span
+style='background-color:inherit'></span></span><span class=string></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=string><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(file2);&nbsp;&nbsp;</span></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=string><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bool&nbsp;=&nbsp;file2.exists();&nbsp;&nbsp;</span></span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=string><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+style='background-color:inherit'></span></span><span class=string></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#008200'>//&nbsp;returns&nbsp;absolute&nbsp;pathname<span
+style='background-color:inherit'></span></span><span class=string></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=string><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;path&nbsp;=&nbsp;file2.getAbsolutePath();&nbsp;&nbsp;</span></span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=string><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(bool);&nbsp;&nbsp;</span></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=string><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+style='background-color:inherit'></span></span><span class=string></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#008200'>//&nbsp;if&nbsp;file&nbsp;exists<span style='background-color:
+inherit'></span></span><span class=string></span><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span></span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=string><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+style='background-color:inherit'></span></span><span class=string></span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>if<span style='background-color:inherit'></span></b></span><span
+class=string></span><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;(bool)&nbsp;{&nbsp;&nbsp;</span></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=string><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+style='background-color:inherit'></span></span><span class=string></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#008200'>//&nbsp;prints<span style='background-color:inherit'></span></span><span
+class=string></span><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span></span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=string><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.print(path&nbsp;+&nbsp;<span
+style='background-color:inherit'></span></span><span class=string></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;&nbsp;Exists?&nbsp;&quot;<span style='background-color:inherit'></span></span><span
+class=string></span><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;+&nbsp;bool);&nbsp;&nbsp;</span></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=string><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=string><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<span
+style='background-color:inherit'></span></span><span class=string></span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>catch<span style='background-color:inherit'></span></b></span><span
+class=string></span><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;(Exception&nbsp;e)&nbsp;{&nbsp;&nbsp;</span></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=string><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+style='background-color:inherit'></span></span><span class=string></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#008200'>//&nbsp;if&nbsp;any&nbsp;error&nbsp;occurs<span
+style='background-color:inherit'></span></span><span class=string></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=string><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.printStackTrace();&nbsp;&nbsp;</span></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=string><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></span></span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white'><span class=string><span style='background-color:
+inherit'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+class=string><span style='background-color:inherit'><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></span></span></p>
+
+</div>
+
+<p style='text-align:justify;line-height:200%;background:white'><span
+class=string><span style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></span></p>
+
+<p style='text-align:justify;line-height:200%;background:white'><span
+class=string><span style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Output:</span></span></p>
+
+<pre style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+class=string><span style='color:black'>testFile1.txt</span></span></pre><pre
+style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+class=string><span style='color:black'>/home/Work/Project/File/testFile1.txt</span></span></pre><pre
+style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+class=string><span style='color:black'>true</span></span></pre><pre
+style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+class=string><span style='color:black'>/home/Work/Project/File/testFile1.txt </span></span></pre><pre
+style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+class=string><span style='color:black'>Exists? true</span></span></pre></div>
+
+</body>
+
+</html>

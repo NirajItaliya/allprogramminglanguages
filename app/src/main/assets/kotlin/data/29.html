@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin Multiple catch Block</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPv2nbiJhD" id="content1-n4" data-rv-view="5959">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin Multiple catch Block</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/f">free bootstrap builder</a></section><section class="mbr-section article content1 cid-rPv2rjDOav" id="content1-n5" data-rv-view="5960">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p>We can use <strong>multiple catch block</strong> in our code. Kotlin multiple catch blocks are used when we are using different types of operation in try block which may causes different exceptions in try block.</p><p>Let's see an example of multiple catch blocks. In this example we will are performing different types of operation. These different types of operation may generate different types of exceptions.</p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    try {
+        val a = IntArray(5)
+        a[5] = 10 / 0
+    } catch (e: ArithmeticException) {
+        println("arithmetic exception catch")
+    } catch (e: ArrayIndexOutOfBoundsException) {
+        println("array index outofbounds exception")
+    } catch (e: Exception) {
+        println("parent exception class")
+    }
+    println("code after try catch...")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPv2R1Nj0a" id="content1-n7" data-rv-view="5962">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">arithmetic exception catch
+code after try catch...
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPv2Zahs3k" id="content1-n9" data-rv-view="5964">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Note: </strong>At a time only one exception is occured and at a time only one catch block is executed.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPv34rJ0EX" id="content1-na" data-rv-view="5965">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Rule:</strong> All catch blocks must be placed from most specific to general i.e. catch for ArithmeticException must come before catch for Exception.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPv38C48tf" id="content1-nb" data-rv-view="5966">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p><strong>What happen when we catch from general exception to specific exception?</strong></p><p>It will generate warning. For example:
+&nbsp;<span style="font-size: 1rem;">Let's modify above code and place catch block from general exception to specific exception.</span></p></div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    try {
+        val a = IntArray(5)
+        a[5] = 10 / 0
+    }
+    catch (e: Exception) {
+        println("parent exception catch")
+    }
+    catch (e: ArithmeticException) {
+        println("arithmetic exception catch")
+    } catch (e: ArrayIndexOutOfBoundsException) {
+        println("array index outofbounds exception")
+    }
+
+    println("code after try catch...")
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPv3rigYch" id="content1-nd" data-rv-view="5968">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output at compile time</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">warning : division by zero
+a[5] = 10/0
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPv3s7YMvm" id="content1-nf" data-rv-view="5970">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output at run time</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">parent exception catch
+code after try catch...
+</code></pre></div>
+
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

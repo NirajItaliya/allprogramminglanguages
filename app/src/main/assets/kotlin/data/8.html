@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin Type Conversion</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rLDii3YRte" id="content1-68" data-rv-view="4771">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Type Conversion</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/n">bootstrap modal popup</a></section><section class="mbr-section article content1 cid-rLDiTSwMWQ" id="content1-69" data-rv-view="4772">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Type conversion is a process in which one data type variable is converted into another <strong>data type</strong>. In Kotlin, implicit conversion of smaller data type into larger data type is not supported (as it supports in java). For example Int cannot be assigned into Long or Double.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rLDj9e6okV" id="content12-6a" data-rv-view="4773">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>In Java</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">int value1 = 10;
+long value2 = value1; //Valid code
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rLDjexCDoN" id="content12-6c" data-rv-view="4775">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>In Kotlin
+</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">var value1 = 10
+val value2: Long = value1 //Compile error, type mismatch
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLDjqLmytD" id="content1-6e" data-rv-view="4777">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">However in Kotlin, conversion is done by explicit in which <strong>smaller data type </strong>is converted into larger data type and vice-versa. This is done by using helper function.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">var value1 = 10
+val value2: Long = value1.toLong()
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLDjBUgvKF" id="content1-6g" data-rv-view="4779">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The list of <strong>helper</strong> <strong>functions</strong> used for numeric conversion in Kotlin is given below:</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rLDjCjzmu9" id="content12-6h" data-rv-view="4780">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li>toByte()
+</li><li>toShort()
+</li><li>toInt()
+</li><li>toLong()
+</li><li>toFloat()
+</li><li>toDouble()
+</li><li>toChar()</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLDjM71yuJ" id="content1-6j" data-rv-view="4781">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin Type Conversion Example</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args : Array&lt;String&gt;) {
+    var value1 = 100
+    val value2: Long =value1.toLong()
+    println(value2)
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLDjQE6EoL" id="content1-6l" data-rv-view="4783">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">We can also converse from larger data type to smaller data type.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args : Array&lt;String&gt;) {
+    var value1: Long = 200
+    val value2: Int =value1.toInt()
+    println(value2)
+}
+</code></pre></div>
+
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

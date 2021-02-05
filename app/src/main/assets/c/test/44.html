@@ -1,0 +1,41 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic"> * C program to read an English sentence and replace</span>
+    <span style="color: #999999; font-style: italic"> * lowercase characters by uppercase and vice-versa.</span>
+    <span style="color: #999999; font-style: italic"> * Output the given sentence as well as the converted</span>
+    <span style="color: #999999; font-style: italic"> * sentence on two different lines.</span>
+    <span style="color: #999999; font-style: italic"> */</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdio.h&gt;</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;ctype.h&gt;</span>
+     
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">main</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">char</span> <span style="color: #d0d0d0">sentence[</span><span style="color: #3677a9">100</span><span style="color: #d0d0d0">];</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">count,</span> <span style="color: #d0d0d0">ch,</span> <span style="color: #d0d0d0">i;</span>
+     
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter a sentence \n&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;(sentence[i]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">getchar())</span> <span style="color: #d0d0d0">!=</span> <span style="color: #ed9d13">&#39;\n&#39;</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i++)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">sentence[i]</span> <span style="color: #d0d0d0">=</span> <span style="color: #ed9d13">&#39;\0&#39;</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #999999; font-style: italic">/*  shows the number of chars accepted in a sentence */</span>
+        <span style="color: #d0d0d0">count</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">i;</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;The given sentence is   : %s&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">sentence);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Case changed sentence is: &quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">count;</span> <span style="color: #d0d0d0">i++)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">ch</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">islower(sentence[i])?</span> <span style="color: #d0d0d0">toupper(sentence[i])</span> <span style="color: #d0d0d0">:</span>
+    <span style="color: #d0d0d0">tolower(sentence[i]);</span>
+            <span style="color: #d0d0d0">putchar(ch);</span>
+        <span style="color: #d0d0d0">}</span>
+    <span style="color: #d0d0d0">}</span>
+    
+    
+    <span style="color: #d0d0d0">&gt;&gt;output:</span>
+    <span style="color: #d0d0d0">Runtime</span> <span style="color: #d0d0d0">Test</span> <span style="color: #d0d0d0">Cases</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">a</span> <span style="color: #d0d0d0">sentence</span>
+    <span style="color: #d0d0d0">wELCOME</span> <span style="color: #d0d0d0">tO</span> <span style="color: #d0d0d0">sANFOUNDRY</span>
+    <span style="color: #d0d0d0">The</span> <span style="color: #d0d0d0">given</span> <span style="color: #d0d0d0">sentence</span> <span style="color: #d0d0d0">is</span>   <span style="color: #d0d0d0">:</span> <span style="color: #d0d0d0">wELCOME</span> <span style="color: #d0d0d0">tO</span> <span style="color: #d0d0d0">sANFOUNDRY</span>
+    <span style="color: #d0d0d0">Case</span> <span style="color: #d0d0d0">changed</span> <span style="color: #d0d0d0">sentence</span> <span style="color: #d0d0d0">is:</span> <span style="color: #d0d0d0">Welcome</span> <span style="color: #d0d0d0">To</span> <span style="color: #d0d0d0">Sanfoundry</span>
+    </pre></div>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin Array</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rP7vNbJD96" id="content1-if" data-rv-view="5663">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin Array</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/p">bootstrap menu</a></section><section class="mbr-section article content1 cid-rP7vRclbAy" id="content1-ig" data-rv-view="5664">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Array is collection of <strong>similar data types</strong> either of Int, String etc. Array in Kotlinis <strong>mutable</strong> in nature with fixed size which means we can perform both read and write operations on elements of array.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP7w2byTkF" id="content1-ih" data-rv-view="5665">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Constructor of array</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP7w8oGN8G" id="content1-ii" data-rv-view="5666">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Array constructor is declared with <strong>specified size</strong> and <strong>init function.</strong> The init function is used to returns the elements of array with their index.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Array(size: Int, init: (Int) -> T)
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP7wmAHl9x" id="content1-ik" data-rv-view="5668">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin Array can be created using <strong>arrayOf(),</strong> <strong>intArrayOf(),</strong> <strong>charArrayOf(),</strong> <strong>booleanArrayOf(),</strong> <strong>longArrayOf(), shortArrayOf(), byteArrayOf()</strong> functions.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP7wDYAdEn" id="content1-il" data-rv-view="5669">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>1. arrayOf() function</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">var myArray1 = arrayOf(1,10,4,6,15)
+var myArray2 = arrayOf&lt;Int&gt;(1,10,4,6,15)
+val myArray3 = arrayOf&lt;String&gt;("Ajay","Prakesh","Michel","John","Sumit")
+var myArray4= arrayOf(1,10,4, "Ajay","Prakesh")
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP7wP04UqI" id="content1-in" data-rv-view="5671">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>2. intArrayOf() function</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">var myArray5: IntArray = intArrayOf(5,10,20,12,15)
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rP7wYd7Ab5" id="content1-ip" data-rv-view="5673">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>3. Modify and access elements of array</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP7x3xGEN0" id="content1-iq" data-rv-view="5674">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin has <strong>set()</strong> and <strong>get()</strong> functions that can direct modify and access the particular element of array respectively.
+<div>
+</div><div>The set() function is used to set element at particular index location. This is also done with assigning element at array index. Array get() function is used to get element from specified index.</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP7xeYtqmQ" id="content1-is" data-rv-view="5675">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">array set() function example:</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val array1 = arrayOf(1,2,3,4)
+    val array2 = arrayOf&lt;Long&gt;(11,12,13,14)
+    array1.set(0,5)
+    array1[2] = 6
+
+    array2.set(2,10)
+    array2[3] = 8
+
+    for(element in array1){
+        println(element)
+    }
+    println()
+
+    for(element in array2){
+        println(element)
+    }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP7xfRUF2b" id="content1-iu" data-rv-view="5677">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">5
+2
+6
+4
+11
+12
+10
+8
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP7xvPqgdR" id="content1-iw" data-rv-view="5679">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>array get() function example</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val array1 = arrayOf(1,2,3,4)
+    val array2 = arrayOf&lt;Long&gt;(11,12,13,14)
+    println(array1.get(0))
+    println(array1[2])
+    println()
+    println(array2.get(2))
+    println(array2[3])
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP7xwKRyeT" id="content1-iy" data-rv-view="5681">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">1
+3
+13
+14
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rP7xMgPS4r" id="content12-j0" data-rv-view="5683">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example &nbsp;1 :</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP7xSZNL1f" id="content1-j1" data-rv-view="5684">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In this example, we are simply initialize an array of size 5 with default value as 0 and traverse its elements. The index value of array starts from 0. First element of array is placed at index value 0 and last element at one less than the size of array.</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var myArray = Array&lt;Int&gt;(5){0}
+    for(element in myArray){
+        println(element)
+    }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP7y0OsSxL" id="content1-j3" data-rv-view="5686">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">0
+0
+0
+0
+0
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rP7y6KRwUC" id="content12-j5" data-rv-view="5688">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 2:</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP7ycv6dD6" id="content1-j6" data-rv-view="5689">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">
+<div>We can also rewrite the value of array using its index value. Since, we can able to modify the value of array, so array is called as <strong>mutable</strong> <strong>property.</strong></div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var myArray = Array&lt;Int&gt;(5){0}
+
+    myArray[1]= 10
+    myArray[3]= 15
+
+    for(element in myArray){
+        println(element)
+    }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP7ydVxT8k" id="content1-j8" data-rv-view="5691">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">0
+10
+0
+15
+0
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rP7yCvmLQT" id="content12-ja" data-rv-view="5693">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 3: using arrayOf() and intArrayOf() function:</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP7yNGQ02F" id="content1-jb" data-rv-view="5694">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Array in Kotlin can also be declared using library functions such as arrayOf(), intArrayOf(), etc. Let's see the example of array using <strong>arrayOf() </strong>and <strong>intArrayOf() </strong>function.</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val name = arrayOf&lt;String&gt;("Ajay", "Prakesh", "Michel", "John", "Sumit")
+    var myArray2 = arrayOf&lt;Int&gt;(1, 10, 4, 6, 15)
+    var myArray3 = arrayOf(5, 10, 20, 12, 15)
+    var myArray4 = arrayOf(1, 10, 4, "Ajay", "Prakesh")
+    var myArray5: IntArray = intArrayOf(5, 10, 20, 12, 15)
+
+    for (element in name) {
+        println(element)
+    }
+
+    println()
+    for (element in myArray2) {
+        println(element)
+    }
+    println()
+    for (element in myArray3) {
+        println(element)
+    }
+    println()
+    for (element in myArray4) {
+        println(element)
+    }
+    println()
+    for (element in myArray5) {
+        println(element)
+    }
+
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP7yOYSIP3" id="content1-jd" data-rv-view="5696">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Ajay
+Prakesh
+Michel
+John
+Sumit
+1
+10
+4
+6
+15
+5
+10
+20
+12
+15
+1
+10
+4
+Ajay
+Prakesh
+5
+10
+15
+20
+25
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rP7yQTlqbr" id="content12-jg" data-rv-view="5698">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 4:</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP7zkWG3BJ" id="content1-jh" data-rv-view="5699">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Suppose when we try to insert an element at index position greater than array size then what will happen?
+<div>
+</div><div>It will throw an <strong>ArrayIndexOutOfBoundException</strong>. This is because the index value is not present at which we tried to insert element. Due to this, array is called fixed size length. For example:</div></div>
+        </div>
+    </div>
+</section>
+
+<<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    var myArray5: IntArray = intArrayOf(5, 10, 20, 12, 15)
+
+    myArray5[6] = 18 // ArrayIndexOutOfBoundsException
+    for (element in myArray5) {
+        println(element)
+    }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP7zlZJkxX" id="content1-jj" data-rv-view="5701">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
+ at ArrayListKt.main(Array.kt:4)
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rP7zxcKCzB" id="content12-jl" data-rv-view="5703">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 5: traversing using range:</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP7zC20qpL" id="content1-jn" data-rv-view="5704">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The Kotlin's array elements are also traversed using index range (minValue..maxValue) or (maxValue..minValue). Let's see an example of array traversing using range.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    var myArray5: IntArray = intArrayOf(5, 10, 20, 12, 15)
+
+    for (index in 0..4) {
+        println(myArray5[index])
+    }
+    println()
+    for (index in 0..myArray5.size - 1) {
+        println(myArray5[index])
+    }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP7zDcYJiy" id="content1-jp" data-rv-view="5706">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">5
+10
+20
+12
+15
+5
+10
+20
+12
+15
+</code></pre></div>
+
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

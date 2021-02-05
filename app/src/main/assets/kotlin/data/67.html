@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+    <title>Java Interoperability: Calling Kotlin code from Java</title>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rQ4fgVFSbc" id="content1-1hy" data-rv-view="8600">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Java Interoperability: Calling Kotlin code from Java</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/m">bootstrap table</a></section><section class="mbr-section article content1 cid-rQ4fldoNLw" id="content1-1hz" data-rv-view="8601">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">As <strong>Kotlin </strong>is completely compatible with <strong>Java language. </strong>It means the application written in Java code can be easily called from Kotlin. In the similar way ,Kotlin code is also called from Java code.
+<div>
+</div><div>Before discussing how to call Kotlin code from Java code, let's see how Kotlin file internally looks like.</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rQ4fsd3m4j" id="content12-1i0" data-rv-view="8602">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>How a simple Kotlin program internally looks like. : </strong>Let's create a simple main function in a MyKotlin.kt file.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+//code
+}
+fun area(l: Int,b: Int):Int{
+    return l*b
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ4fAAHdPQ" id="content1-1i2" data-rv-view="8604">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">After compiling the above Kotlin file MyKotlin.kt which internally looks like:
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">public class MyKotlinKt{
+    public static void main(String[] args){
+                         //code
+    }
+    public static int area(int l, int b){
+            return l*b;
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ4fHLue1d" id="content1-1i4" data-rv-view="8606">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The Kotlin compiler internally adds a wrapper class with naming convention MyKotlinKt. The Kotlin file MyKotlin.kt is converted into MyKotlinKt and it is public in default. The default modifier of high level function is public and function is converted into static as default. As the return type is Unit in MyKotlin.kt, it is converted into void in MyKotlinKt.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ4fLpnBoI" id="content1-1i5" data-rv-view="8607">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Calling Kotlin code from Java code
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ4fPvfnyq" id="content1-1i6" data-rv-view="8608">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>MyKotlin.kt
+</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    //code
+}
+fun area(l: Int,b: Int):Int{
+    return l*b
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ4fQyXnej" id="content1-1i8" data-rv-view="8610">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>MyJava.java
+</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">public class MyJava {
+    public static void main(String[] args) {
+    int area = MyKotlinKt.area(4,5);
+    System.out.print("printing area inside Java class returning from Kotlin file: "+area);
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ4fRr0EQj" id="content1-1ia" data-rv-view="8612">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">printing area inside Java class returning from Kotlin file: 20
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rQ4hN0SpVM" id="content12-1j2" data-rv-view="8614">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Java code calling Kotlin file present inside package
+ :</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ4ghiLZVD" id="content1-1id" data-rv-view="8615">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin was developed by JetBrains team. A project was started in 2010 to develop the language and officially, first released in February 2016. Kotlin was developed under the <strong>Apache 2.0 license</strong>.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ4giC3hhC" id="content1-1ie" data-rv-view="8616">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>MyKotlin.kt
+</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">package mykotlinpackage
+
+fun main(args: Array&lt;String&gt;) {
+
+}
+fun area(l: Int,b: Int):Int{
+       return l*b
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ4gjnpaRq" id="content1-1ig" data-rv-view="8618">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>MyJava.java
+</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-java">package myjavapackage;
+import mykotlinpackage.MyKotlinFileKt;
+
+public class MyJavaClass {
+    public static void main(String[] args){
+        int area = MyKotlinKt.area(4,5);
+        System.out.println("printing area inside Java class returning from Kotlin file: "+area);
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ4gkj7g24" id="content1-1ii" data-rv-view="8620">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">printing area inside Java class returning from Kotlin file: 20
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rQ4gKFapz4" id="content12-1ik" data-rv-view="8622">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Calling method of multiple file having same generated Java class name using@JvmMultifileClass</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ4gNVWUTd" id="content1-1il" data-rv-view="8623">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">If the Kotlin's multiple files having same generated Java file name using <strong>@JvmName </strong>annotation, normally give error while calling from Java file. However, Kotlin compiler generates single Java façade class which contains generated Java file and all the declarations of the files which have same names. To active this generation façade, we use <strong>@JvmMultifileClass </strong>annotation in all the files.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ4gWeMp01" id="content1-1im" data-rv-view="8624">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>MyKotlin2.kt
+</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">@file: JvmName("MyKotlinFileName")
+@file:JvmMultifileClass
+package mykotlinpackage
+
+fun main(args: Array&lt;String&gt;) {
+
+}
+fun area(l: Int,b: Int):Int{
+    return l*b
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ4gX6coF8" id="content1-1io" data-rv-view="8626">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>MyKotlin2.kt
+</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">@file: JvmName("MyKotlinFileName")
+@file:JvmMultifileClass
+package mykotlinpackage
+
+
+fun volume(l: Int,b: Int,h: Int):Int{
+    return l*b*h
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ4gXWSbj2" id="content1-1iq" data-rv-view="8628">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>MyJava.java
+</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">package myjavapackage;
+import mykotlinpackage.MyKotlinFileName;
+
+public class MyJavaClass {
+    public static void main(String[] args){
+        int area = MyKotlinFileName.area(4,5);
+        System.out.println("printing area inside Java class returning from Kotlin file: "+area);
+        int vol = MyKotlinFileName.volume(4,5,6);
+        System.out.println("printing volume inside Java class returning from Kotlin file: "+vol);
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ4hcYNEZI" id="content1-1is" data-rv-view="8630">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">printing area inside Java class returning from Kotlin file: 20
+printing volume inside Java class returning from Kotlin file: 120
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rQ4hgrUaZy" id="content12-1iu" data-rv-view="8632">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Kotlin property access throughconst modifier :</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ4hhTgmFk" id="content1-1iv" data-rv-view="8633">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The Kotlin properties which are annotated with const modifier in the top level as well as in class are converted into static fields in Java. These properties are access from Java file as static properties called. For example:
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ4hjNNqgT" id="content1-1iw" data-rv-view="8634">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>MyKotlin.kt</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">constval MAX = 239
+    object Obj {
+        constval CONST = 1
+    }
+    class C {
+        companion object {
+            constval VERSION = 9
+        }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ4hkQ4ME9" id="content1-1iy" data-rv-view="8636">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>MyJava.java
+</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-java">public class MyJava {
+    public static void main(String[] args) {
+        int c = Obj.CONST;
+        int m = MyKotlinKt.MAX;
+        int v = C.VERSION;
+        System.out.println("const "+c+"\nmax "+m+"\nversion "+v);
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ4hlEFWpm" id="content1-1j0" data-rv-view="8638">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">const 1
+max 239
+version 9
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

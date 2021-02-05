@@ -1,0 +1,363 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Century",serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.alt, li.alt, div.alt
+	{mso-style-name:alt;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.keyword
+	{mso-style-name:keyword;}
+span.string
+	{mso-style-name:string;}
+span.comment
+	{mso-style-name:comment;}
+span.testit
+	{mso-style-name:testit;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Century",serif;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB link=blue vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'><span
+style='font-size:3.0pt;line-height:200%'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-top:3.75pt;text-align:center;
+line-height:200%;background:white'><span style='font-size:20.0pt;line-height:
+200%;font-family:"Helvetica",sans-serif;color:#843C0C'>Immutable String in Java</span></p>
+
+<p class=MsoNormal align=center style='margin-top:3.75pt;text-align:center;
+line-height:200%;background:white'><span style='font-size:12.0pt;line-height:
+200%;font-family:"Helvetica",sans-serif;color:#843C0C'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>In java,&nbsp;</span><b><span style='font-size:10.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:darkslategray'>string objects are
+immutable</span></b><span style='font-size:10.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>. Immutable simply means unmodifiable or
+unchangeable.Once string object is created its data or state can't be changed
+but a new string object is created.Let's try to understand the immutability
+concept by the example given below:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:white'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Testimmutablestring{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>public</span></b><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>static</span></b><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>void</span></b><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;main(String&nbsp;args[]){&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;String&nbsp;s=</span><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Sachin&quot;</span><span style='font-size:10.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:black'>;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;s.concat(</span><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;&nbsp;Tendulkar&quot;</span><span style='font-size:10.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>);</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>//concat()&nbsp;method&nbsp;appends&nbsp;the&nbsp;string&nbsp;at&nbsp;the&nbsp;end</span><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;System.out.println(s);</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>//will&nbsp;print&nbsp;Sachin&nbsp;because&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>   strings&nbsp;are&nbsp;immutable&nbsp;objects</span><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black;background:white'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Courier New";color:black'>Output:Sachin</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Now it can be understood by the diagram given below. Here Sachin
+is not changed but a new object is created with sachintendulkar. That is why
+string is known as immutable.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman",serif'><img
+width=291 height=239 id="Picture 1" src="30_files/image001.jpg"
+alt="Heap diagram"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>As you can see in the above figure that two objects are created
+but s reference variable still refers to &quot;Sachin&quot; not to &quot;Sachin
+Tendulkar&quot;.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>But if we explicitely assign it to the reference variable, it will
+refer to &quot;Sachin Tendulkar&quot; object.For example:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:white'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Testimmutablestring1{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>public</span></b><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>static</span></b><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>void</span></b><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;main(String&nbsp;args[]){&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;String&nbsp;s=</span><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Sachin&quot;</span><span style='font-size:10.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:black'>;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;s=s.concat(</span><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;&nbsp;Tendulkar&quot;</span><span style='font-size:10.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;System.out.println(s);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black;background:white'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Courier New";color:black'>Output:Sachin
+Tendulkar</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>In such case, s points to the &quot;Sachin Tendulkar&quot;. Please
+notice that still sachin object is not modified.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman",serif'>
+
+<hr size=1 width="100%" noshade style='color:#D4D4D4' align=center>
+
+</span></div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B'>Why string objects are immutable in java?</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Because java uses the concept of string literal.Suppose there are
+5 reference variables,all referes to one object &quot;sachin&quot;.If one
+reference variable changes the value of the object, it will be affected to all
+the reference variables. That is why string objects are immutable in java</span></p>
+
+</div>
+
+</body>
+
+</html>

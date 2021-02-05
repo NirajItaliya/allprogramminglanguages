@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>MutableMap Interface</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPPPJq7Q9w" id="content1-z5" data-rv-view="7128">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>MutableMap Interface</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/i">build a website</a></section><section class="mbr-section article content1 cid-rPPPQlHOnV" id="content1-z6" data-rv-view="7129">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin <strong>MutableMap</strong> is an interface of collection framework that holds the object in the form of key and value pair. The values of MutableMap interface are retrieved by using their corresponding keys. The key and value may be of different pairs such as &lt;Int, Int&gt;,&lt;Int, String&gt;, &lt;Char, String&gt; etc. Each key of MutableMap holds only one value.
+<div>
+</div><div>To use the MutableMap interface we need to use its function called <strong>mutableMapOf() </strong>or <strong>mutableMapOf &lt;k,v&gt;().</strong></div><div><strong><br></strong></div><div>MutableMap Interface Declaration:</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">interface MutableMap&lt;K, V&gt; : Map&lt;K, V&gt; (source)
+</code></pre></div>
+
+<section class="section-table cid-rPPQaBMOcJ" id="table1-z8" data-rv-view="7131">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5"><strong>Properties of MutableMap
+</strong></h2>
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Functions</th><th class="head-item mbr-fonts-style display-7">Descriptions</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract val entries: MutableSet&lt;MutableEntry&lt;K, V&gt;&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">This returns a MutableSet of all its key and value pairs in the map.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract val keys: MutableSet&lt;K&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">This returns all the keys of MutableSet in this map.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract val values: MutableCollection&lt;V&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">This returns all the values of MutableCollection in the current map. This collection may contain duplicate values.
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="section-table cid-rPPQs60C8R" id="table1-z9" data-rv-view="7161">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5"><strong>Function of MutableMap
+</strong></h2>
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Functions</th><th class="head-item mbr-fonts-style display-7">Descriptions</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun put(key: K, value: V): V?&nbsp;</td><td class="body-item mbr-fonts-style display-7">It adds the given value with the specified key in the map.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun putAll(from: Map&lt;out K, V&gt;)&nbsp;</td><td class="body-item mbr-fonts-style display-7">This updates the current map with key/value pairs from the mentioned map.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun remove(key: K): V?&nbsp;</td><td class="body-item mbr-fonts-style display-7">It removes the specified key with its corresponding value from the map.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun remove(key: K, value: V): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It removes the key and value entities from the map only if it exist in the map.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun clear()&nbsp;</td><td class="body-item mbr-fonts-style display-7">This function is used to removes all the elements from the map.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">operator fun &lt;K, V&gt; Map&lt;out K, V&gt;.contains(key: K): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It checks the given key in the map.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;K&gt; Map&lt;out K, *&gt;.containsKey(key: K): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns the true if map contains the specified key.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun containsValue(value: V): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns true if the map maps one or more keys for the given value.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;K, V&gt; Map&lt;K, V&gt;.containsValue(value: V): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns true if the map maps one or more keys for the given value.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;K, V&gt; Map&lt;out K, V&gt;.count(): Int&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns the total number of entities of the map
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">operator fun &lt;K, V&gt; Map&lt;out K, V&gt;.get(key: K): V?&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns the value corresponding to mention key, or null if no such key found in the map.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;K, V&gt; Map&lt;out K, V&gt;.getOrDefault(
+<br>key: K,
+<br>defaultValue: V
+<br>): V</td><td class="body-item mbr-fonts-style display-7">It returns the value with corresponding mention key, or it returns default value if no such mapping for the key in the map.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;K, V&gt; Map&lt;K, V&gt;.getOrElse(
+<br>key: K,
+<br>defaultValue: () -&gt; V
+<br>): V</td><td class="body-item mbr-fonts-style display-7">It returns the value for the mention key in the map, or it returns the default value function if no such entry found for the given key.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;K, V&gt; Map&lt;K, V&gt;.getValue(key: K): V&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns the value corresponding to given key, or it throws an exception if no key found in the map.
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPPRY4uI2O" id="content12-za" data-rv-view="7268">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example - 1 &nbsp;traversing MutableMap
+:&nbsp;</strong>Let's create an example to create a MutableMap using mutablemapOf() function and traverse it. In this example we create three different types (MutableMap&lt;Int, String&gt;, MutableMap&lt;String, String&gt; and MutableMap&lt;Any, Any&gt;) of MutableMap with different ways.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val mutableMap1: MutableMap&lt;Int, String&gt; = mutableMapOf&lt;Int, String&gt;(1 to "Ashu", 4 to "Rohan", 2 to "Ajeet", 3 to "Vijay")
+
+    val mutableMap2: MutableMap&lt;String, String&gt; = mutableMapOf&lt;String, String&gt;()
+    mutableMap2.put("name", "Ashu")
+    mutableMap2.put("city", "Delhi")
+    mutableMap2.put("department", "Development")
+    mutableMap2.put("hobby", "Playing")
+    val mutableMap3: MutableMap&lt;Any, Any> = mutableMapOf&lt;Any, Any>(1 to "Ashu", "name" to "Rohsan", 2 to 200)
+    println(".....traverse mutableMap1........")
+    for (key in mutableMap1.keys) {
+        println("Key = ${key}, Value = ${mutableMap1[key]}")
+    }
+    println("......traverse mutableMap2.......")
+    for (key in mutableMap2.keys) {
+        println("Key = "+key +", "+"Value = "+mutableMap2[key])
+    }
+    println("......traverse mutableMap3......")
+    for (key in mutableMap3.keys) {
+        println("Key = ${key}, Value = ${mutableMap3[key]}")
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPPSaEIEZS" id="content1-zc" data-rv-view="7270">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">.....traverse mutableMap1........
+Key = 1, Value = Ashu
+Key = 4, Value = Rohan
+Key = 2, Value = Ajeet
+Key = 3, Value = Vijay
+......traverse mutableMap2.......
+Key = name, Value = Ashu
+Key = city, Value = Delhi
+Key = department, Value = Development
+Key = hobby, Value = Playing
+......traverse mutableMap3......
+Key = 1, Value = Ashu
+Key = name, Value = Rohsan
+Key = 2, Value = 200
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPPSgdRbwJ" id="content12-ze" data-rv-view="7272">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 2 - put() and putAll()
+ :&nbsp;</strong>The function put() and putAll() are used to add the elements in the MutableMap. put() function adds the single element at a time where as putAll() function adds the collection type elements in the MutableMap. For example:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val mutableMap: MutableMap&lt;String, String&gt; = mutableMapOf&lt;String, String&gt;()
+    mutableMap.put("name", "Ashu")
+    mutableMap.put("city", "Delhi")
+
+
+    val hashMap: HashMap&lt;String,String&gt; = hashMapOf&lt;String,String&gt;()
+    hashMap.put("department", "Development")
+    hashMap.put("hobby", "Playing")
+
+    println("......traverse mutableMap.......")
+    for (key in mutableMap.keys) {
+        println("Key = "+key +", "+"Value = "+mutableMap[key])
+    }
+    mutableMap.putAll(hashMap)
+    println("......traverse mutableMap after mutableMap.putAll(hashMap).......")
+    for (key in mutableMap.keys) {
+        println("Key = "+key +", "+"Value = "+mutableMap[key])
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPPSgHaENH" id="content1-zf" data-rv-view="7274">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traverse mutableMap.......
+Key = name, Value = Ashu
+Key = city, Value = Delhi
+......traverse mutableMap after mutableMap.putAll(hashMap).......
+Key = name, Value = Ashu
+Key = city, Value = Delhi
+Key = department, Value = Development
+Key = hobby, Value = Playing
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPPSjWGz3Y" id="content12-zi" data-rv-view="7276">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 3 - &nbsp;containsKey()
+ :&nbsp;</strong>The containsKey() function is used to check the specified key is present in MutableMap or not. If it contains the specified key, it returns true otherwise it returns false. For example:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val mutableMap: MutableMap&lt;String, String&gt; = mutableMapOf&lt;String, String&gt;()
+    mutableMap.put("name", "Ashu")
+    mutableMap.put("city", "Delhi")
+    mutableMap.put("department", "Development")
+    mutableMap.put("hobby", "Playing")
+
+    println("......traverse mutableMap.......")
+
+   for (key in mutableMap.keys) {
+        println("Key = "+key +", "+"Value = "+mutableMap[key])
+    }
+
+    println("......mutableMap.containsKey(\"city\").......")
+    println(mutableMap.containsKey("city"))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPPSkEwAl9" id="content1-zk" data-rv-view="7278">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traverse mutableMap.......
+Key = name, Value = Ashu
+Key = city, Value = Delhi
+Key = department, Value = Development
+Key = hobby, Value = Playing
+......mutableMap.containsKey("city").......
+true
+</code></pre></div>
+<section class="mbr-section article content12 cid-rPPSlZb7nQ" id="content12-zm" data-rv-view="7280">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example &nbsp;4- &nbsp;containsValue()
+:&nbsp;</strong>The containsValue() function is used to check the specified value is present in MutableMap or not. This function returns true if the map maps one or more keys for the given value else it returns false. For example:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val mutableMap: MutableMap&lt;String, String&gt; = mutableMapOf&lt;String, String&gt;()
+    mutableMap.put("name", "Ashu")
+    mutableMap.put("city", "Delhi")
+    mutableMap.put("department", "Development")
+    mutableMap.put("hobby", "Playing")
+
+    println("......traverse mutableMap.......")
+
+   for (key in mutableMap.keys) {
+        println("Key = "+key +", "+"Value = "+mutableMap[key])
+    }
+
+    println(".......mutableMap.containsValue(\"Delhi\")......")
+    println(mutableMap.containsValue("Delhi"))
+    println(".......mutableMap.containsValue(\"Mumbai\")......")
+    println(mutableMap.containsValue("Mumbai"))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPPSmTvJDP" id="content1-zo" data-rv-view="7282">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traverse mutableMap.......
+Key = name, Value = Ashu
+Key = city, Value = Delhi
+Key = department, Value = Development
+Key = hobby, Value = Playing
+.......mutableMap.containsValue("Delhi")......
+true
+.......mutableMap.containsValue("Mumbai")......
+false
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPPSnxHp9O" id="content12-zq" data-rv-view="7284">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 5 - contains()
+ :</strong>The contains() function is used to check either specified key of value is present in the MutableMap or not. If the specified key or value is present in the MutableMap then it will returns true else it returns false. For example:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val mutableMap: MutableMap&lt;String, String&gt; = mutableMapOf&lt;String, String&gt;()
+    mutableMap.put("name", "Ashu")
+    mutableMap.put("city", "Delhi")
+    mutableMap.put("department", "Development")
+    mutableMap.put("hobby", "Playing")
+
+    println("......traverse mutableMap.......")
+
+   for (key in mutableMap.keys) {
+        println("Key = "+key +", "+"Value = "+mutableMap[key])
+    }
+
+    println("......mutableMap.contains(\"city\").......")
+    println(mutableMap.contains("city"))
+
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPPSoNNM5C" id="content1-zs" data-rv-view="7286">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traverse mutableMap.......
+Key = name, Value = Ashu
+Key = city, Value = Delhi
+Key = department, Value = Development
+Key = hobby, Value = Playing
+......mutableMap.contains("city").......
+true
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPPSq121Pj" id="content12-zu" data-rv-view="7288">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 6 - get(key)
+:</strong>The get(key) function is used to retrieve the corresponding value of specified key in the MutableMap. If no such key is present in the MutableMap it returns null. For example:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val mutableMap: MutableMap&lt;String, String&gt; = mutableMapOf&lt;String, String&gt;()
+    mutableMap.put("name", "Ashu")
+    mutableMap.put("city", "Delhi")
+    mutableMap.put("department", "Development")
+    mutableMap.put("hobby", "Playing")
+
+    println("......traverse mutableMap.......")
+
+   for (key in mutableMap.keys) {
+        println("Key = "+key +", "+"Value = "+mutableMap[key])
+    }
+
+    println(".......mutableMap.get(\"department\")......")
+    println(mutableMap.get("department"))
+
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPPSqQmdTX" id="content1-zw" data-rv-view="7290">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traverse mutableMap.......
+Key = name, Value = Ashu
+Key = city, Value = Delhi
+Key = department, Value = Development
+Key = hobby, Value = Playing
+.......mutableMap.get("department")......
+Development
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPPSs9K4nn" id="content12-zy" data-rv-view="7292">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 7 - &nbsp;getValue(key) 
+:&nbsp;</strong>The getValue() function used to returns corresponding value of specified key of the MutableMap or it throws an exception if no key found in map. For example:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val mutableMap: MutableMap&lt;String, String&gt; = mutableMapOf&lt;String, String&gt;()
+    mutableMap.put("name", "Ashu")
+    mutableMap.put("city", "Delhi")
+    mutableMap.put("department", "Development")
+    mutableMap.put("hobby", "Playing")
+
+    println("......traverse mutableMap.......")
+
+   for (key in mutableMap.keys) {
+         println("Key = ${key}, Value = ${mutableMap[key]}")
+    }
+
+    println(".......mutableMap.getValue(\"department\")......")
+    println(mutableMap.getValue("department"))
+
+}
+</code></pre></div>
+<section class="mbr-section article content1 cid-rPPStdDBHW" id="content1-100" data-rv-view="7294">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traverse mutableMap.......
+Key = name, Value = Ashu
+Key = city, Value = Delhi
+Key = department, Value = Development
+Key = hobby, Value = Playing
+.......mutableMap.getValue("department")......
+Development
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPPSu5xg1p" id="content12-102" data-rv-view="7296">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 8 - getOrDefault()
+:&nbsp;</strong>The getOrDefault() function returns corresponding value of specified key of MutableMap. If no such key exists in the MutableMap then it returns default mention value. For example:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val mutableMap: MutableMap&lt;String, String&gt; = mutableMapOf&lt;String, String&gt;()
+    mutableMap.put("name", "Ashu")
+    mutableMap.put("city", "Delhi")
+    mutableMap.put("department", "Development")
+    mutableMap.put("hobby", "Playing")
+
+    println("......traverse mutableMap.......")
+
+   for (key in mutableMap.keys) {
+       println("Key = ${key}, Value = ${mutableMap[key]}")
+    }
+
+    println(".......mutableMap.getOrDefault(\"name\", \"Default Value\")......")
+    println(mutableMap.getOrDefault("name", "default value"))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPPSuLaGcL" id="content1-104" data-rv-view="7298">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">......traverse mutableMap.......
+Key = name, Value = Ashu
+Key = city, Value = Delhi
+Key = department, Value = Development
+Key = hobby, Value = Playing
+.......mutableMap.getOrDefault("name", "Default Value")......
+Ashu
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPPUpViUnG" id="content12-106" data-rv-view="7300">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 9 : count() - </strong>The count() function is used to returns the total number of elements present in the MutableMap. For example:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val mutableMap: MutableMap&lt;String, String&gt; = mutableMapOf&lt;String, String&gt;()
+    mutableMap.put("name", "Ashu")
+    mutableMap.put("city", "Delhi")
+    mutableMap.put("department", "Development")
+    mutableMap.put("hobby", "Playing")
+
+    println("......traverse mutableMap.......")
+
+   for (key in mutableMap.keys) {
+       println("Key = ${key}, Value = ${mutableMap[key]}")
+    }
+
+    println(".....mutableMap.count()........")
+    println(mutableMap.count())
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPPUqGZENu" id="content1-108" data-rv-view="7302">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traverse mutableMap.......
+Key = name, Value = Ashu
+Key = city, Value = Delhi
+Key = department, Value = Development
+Key = hobby, Value = Playing
+.....mutableMap.count()........
+4
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPPULkapTd" id="content12-10b" data-rv-view="7304">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example &nbsp;10 - remove(key) and remove(key, value)
+:&nbsp;</strong>The remove(key) function is used to remove value corresponding to its mention key. Whereas remove(key,value) function removes element containing key and value. The remove(key, value) function returns true if it remove the specified key along with its value else it returns false. For example:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val mutableMap: MutableMap&lt;String, String&gt; = mutableMapOf&lt;String, String&gt;()
+    mutableMap.put("name", "Ashu")
+    mutableMap.put("city", "Delhi")
+    mutableMap.put("department", "Development")
+    mutableMap.put("hobby", "Playing")
+
+    println("......traverse mutableMap.......")
+
+   for (key in mutableMap.keys) {
+       println("Key = ${key}, Value = ${mutableMap[key]}")
+    }
+
+    println("......mutableMap.remove(\"city\").......")
+    println(mutableMap.remove("city"))
+
+    println(".......mutableMap.remove(\"hobby\",\"Playing\")......")
+    println(mutableMap.remove("hobby","Playing"))
+
+    println("......traverse mutableMap.......")
+    for (key in mutableMap.keys) {
+        println("Key = ${key}, Value = ${mutableMap[key]}")
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPPUMjgmgc" id="content1-10d" data-rv-view="7306">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traverse mutableMap.......
+Key = name, Value = Ashu
+Key = city, Value = Delhi
+Key = department, Value = Development
+Key = hobby, Value = Playing
+......mutableMap.remove("city").......
+Delhi
+.......mutableMap.remove("hobby","Playing")......
+true
+......traverse mutableMap after remove.......
+Key = name, Value = Ashu
+Key = department, Value = Development
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPPV0WV7oV" id="content12-10f" data-rv-view="7308">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 11 - clear()
+:&nbsp;</strong>The clear() function is used to removes all the elements from the MutableMap. For example:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val mutableMap: MutableMap&lt;String, String&gt; = mutableMapOf&lt;String, String&gt;()
+    mutableMap.put("name", "Ashu")
+    mutableMap.put("city", "Delhi")
+    mutableMap.put("department", "Development")
+    mutableMap.put("hobby", "Playing")
+
+    println("......traverse mutableMap.......")
+
+   for (key in mutableMap.keys) {
+       println("Key = ${key}, Value = ${mutableMap[key]}")
+    }
+
+    println("......mutableMap.clear().......")
+    println(mutableMap.clear())
+    println(mutableMap)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPPV1D8RtT" id="content1-10h" data-rv-view="7310">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traverse mutableMap.......
+Key = name, Value = Ashu
+Key = city, Value = Delhi
+Key = department, Value = Development
+Key = hobby, Value = Playing
+......mutableMap.clear().......
+kotlin.Unit
+{}
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/datatables/jquery.data-tables.min.js"></script>
+  <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

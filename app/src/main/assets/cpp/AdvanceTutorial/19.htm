@@ -1,0 +1,1523 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Century",serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.alt, li.alt, div.alt
+	{mso-style-name:alt;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.preprocessor
+	{mso-style-name:preprocessor;}
+span.keyword
+	{mso-style-name:keyword;}
+span.datatypes
+	{mso-style-name:datatypes;}
+span.string
+	{mso-style-name:string;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB link=blue vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='margin-top:3.75pt;text-align:center;
+line-height:200%;background:white'><span style='font-size:18.0pt;line-height:
+200%;font-family:"Helvetica",sans-serif;color:#610B38'>C++ Strings</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:5.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>In C++, string is an object of&nbsp;</span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:darkslategray'>std::string</span></b><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;class that
+represents sequence of characters. We can perform many operations on strings
+such as concatenation, comparison, conversion etc.</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='line-height:200%;font-family:"Times New Roman",serif'>
+
+<hr size=1 width="100%" noshade style='color:#D4D4D4' align=center>
+
+</span></div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>C++ String Example</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:6.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Let's see the simple example of C++ string.-</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:white'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:blue'>#include&nbsp;&lt;iostream&gt;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>using</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>namespace</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;std;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:seagreen'>int</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;main(&nbsp;)&nbsp;{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;s1&nbsp;=&nbsp;</span><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Hello&quot;</span><span style='font-size:8.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:black'>;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:seagreen'>char</span></b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;ch[]&nbsp;=&nbsp;{&nbsp;</span><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>'C'</span><span style='font-size:8.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>,&nbsp;</span><span style='font-size:10.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:blue'>'+'</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>,&nbsp;</span><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:blue'>'+'</span><span style='font-size:
+8.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>};&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;s2&nbsp;=&nbsp;string(ch);&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;s1&lt;&lt;endl;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;s2&lt;&lt;endl;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#A6A6A6'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#A6A6A6;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>Output:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#A6A6A6;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Courier New";color:black'>Hello</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#A6A6A6;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Courier New";color:black'>C++</span></p>
+
+</div>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='line-height:200%;font-family:"Times New Roman",serif'>
+
+<hr size=1 width="100%" noshade style='color:#D4D4D4' align=center>
+
+</span></div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>C++ String Compare Example</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Let's see the simple example of string comparison using strcmp()
+function.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:5.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:white'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:blue'>#include&nbsp;&lt;iostream&gt;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:blue'>#include&nbsp;&lt;cstring&gt;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>using</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>namespace</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;std;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:seagreen'>int</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;main&nbsp;()&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:seagreen'>char</span></b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;key[]&nbsp;=&nbsp;</span><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;mango&quot;</span><span style='font-size:8.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:black'>;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:seagreen'>char</span></b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;buffer[50];&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>do</span></b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;</span><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;What&nbsp;is&nbsp;my&nbsp;favourite&nbsp;fruit?&nbsp;&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cin&gt;&gt;buffer;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;}&nbsp;</span><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>while</span></b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;(strcmp&nbsp;(key,buffer)&nbsp;!=&nbsp;0);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;cout&lt;&lt;</span><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Answer&nbsp;is&nbsp;correct!!&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&lt;&lt;endl;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>return</span></b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;0;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#A6A6A6'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#A6A6A6;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>Output:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#A6A6A6;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Courier New";color:black'>What is my favourite fruit? apple</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#A6A6A6;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Courier New";color:black'>What is my favourite fruit? banana</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#A6A6A6;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Courier New";color:black'>What is my favourite fruit? mango</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#A6A6A6;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Courier New";color:black'>Answer is correct!!</span></p>
+
+</div>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='line-height:200%;font-family:"Times New Roman",serif'>
+
+<hr size=1 width="100%" noshade style='color:#D4D4D4' align=center>
+
+</span></div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:6.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>C++ String Concat Example</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:6.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Let's see the simple example of string concatenation using
+strcat() function.-</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:4.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:white'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:blue'>#include&nbsp;&lt;iostream&gt;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:blue'>#include&nbsp;&lt;cstring&gt;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>using</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>namespace</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;std;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:seagreen'>int</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;main()&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:seagreen'>char</span></b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;key[25],&nbsp;buffer[25];&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;cout&nbsp;&lt;&lt;&nbsp;</span><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Enter&nbsp;the&nbsp;key&nbsp;string:&nbsp;&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;cin.getline(key,&nbsp;25);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;cout&nbsp;&lt;&lt;&nbsp;</span><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Enter&nbsp;the&nbsp;buffer&nbsp;string:&nbsp;&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cin.getline(buffer,&nbsp;25);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;strcat(key,&nbsp;buffer);&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;cout&nbsp;&lt;&lt;&nbsp;</span><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Key&nbsp;=&nbsp;&quot;</span><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&lt;&lt;&nbsp;key&nbsp;&lt;&lt;&nbsp;endl;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;cout&nbsp;&lt;&lt;&nbsp;</span><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Buffer&nbsp;=&nbsp;&quot;</span><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&lt;&lt;&nbsp;buffer&lt;&lt;endl;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>return</span></b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;0;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#A6A6A6'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#A6A6A6;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>Output:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#A6A6A6;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Courier New";color:black'>Enter the key string: Welcome to</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#A6A6A6;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Courier New";color:black'>Enter the buffer string:  C++
+Programming.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#A6A6A6;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Courier New";color:black'>Key = Welcome to C++ Programming.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#A6A6A6;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Courier New";color:black'>Buffer =  C++ Programming.</span></p>
+
+</div>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='line-height:200%;font-family:"Times New Roman",serif'>
+
+<hr size=1 width="100%" noshade style='color:#D4D4D4' align=center>
+
+</span></div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>C++ String Copy Example</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:6.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Let's see the simple example of copy the string using strcpy()
+function.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:6.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:white'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:blue'>#include&nbsp;&lt;iostream&gt;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:blue'>#include&nbsp;&lt;cstring&gt;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>using</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>namespace</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;std;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:seagreen'>int</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;main()&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:seagreen'>char</span></b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;key[25],&nbsp;buffer[25];&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;cout&nbsp;&lt;&lt;&nbsp;</span><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Enter&nbsp;the&nbsp;key&nbsp;string:&nbsp;&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;cin.getline(key,&nbsp;25);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;strcpy(buffer,&nbsp;key);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;cout&nbsp;&lt;&lt;&nbsp;</span><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Key&nbsp;=&nbsp;&quot;</span><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&lt;&lt;&nbsp;key&nbsp;&lt;&lt;&nbsp;endl;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;cout&nbsp;&lt;&lt;&nbsp;</span><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Buffer&nbsp;=&nbsp;&quot;</span><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&lt;&lt;&nbsp;buffer&lt;&lt;endl;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>return</span></b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;0;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#A6A6A6'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#A6A6A6;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>Output:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#A6A6A6;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Courier New";color:black'>Enter the key string: C++ Tutorial</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#A6A6A6;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Courier New";color:black'>Key = C++ Tutorial</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#A6A6A6;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Courier New";color:black'>Buffer = C++ Tutorial</span></p>
+
+</div>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='line-height:200%;font-family:"Times New Roman",serif'>
+
+<hr size=1 width="100%" noshade style='color:#D4D4D4' align=center>
+
+</span></div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>C++ String Length Example</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:5.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Let's see the simple example of finding the string length using
+strlen() function.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:5.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:white'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:blue'>#include&nbsp;&lt;iostream&gt;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:blue'>#include&nbsp;&lt;cstring&gt;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>using</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>namespace</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;std;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:seagreen'>int</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;main()&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:seagreen'>char</span></b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;ary[]&nbsp;=&nbsp;</span><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Welcome&nbsp;to&nbsp;C++&nbsp;Programming&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;cout&nbsp;&lt;&lt;&nbsp;</span><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Length&nbsp;of&nbsp;String&nbsp;=&nbsp;&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&lt;&lt;&nbsp;strlen(ary)&lt;&lt;endl;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>return</span></b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;0;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#A6A6A6'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#A6A6A6;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>Output:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#A6A6A6;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Courier New";color:black'>Length of String = 26</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:18.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>C++ String Functions</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=292
+ style='width:219.35pt;background:white;border-collapse:collapse;border:none'>
+ <tr style='height:26.8pt'>
+  <td width=141 valign=top style='width:105.95pt;border-top:solid #C7CCBE 1.0pt;
+  border-left:solid #C7CCBE 1.0pt;border-bottom:none;border-right:none;
+  background:#C7CCBE;padding:9.0pt 9.0pt 9.0pt 9.0pt;height:26.8pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:200%'><b><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Times New Roman",serif;
+  color:black'>Function</span></b></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:solid #C7CCBE 1.0pt;
+  border-left:none;border-bottom:none;border-right:solid #C7CCBE 1.0pt;
+  background:#C7CCBE;padding:9.0pt 9.0pt 9.0pt 9.0pt;height:26.8pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:200%'><b><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Times New Roman",serif;
+  color:black'>Description</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>int compare(const string&amp; str)</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border:solid #C7CCBE 1.0pt;
+  border-left:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It is used to compare two string objects.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;
+  height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>int length()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It is used to find the length of the string.</span></p>
+  </td>
+ </tr>
+ <tr style='height:19.45pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:19.45pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>void swap(string&amp; str)</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:19.45pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It is used to swap the values of two string objects.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;
+  height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>string substr(int pos,int n)</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It creates a new string object of n characters.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>int size()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It returns the length of the string in terms of bytes.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;
+  height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>void resize(int n)</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It is used to resize the length of the string up to n
+  characters.</span></p>
+  </td>
+ </tr>
+ <tr style='height:43.9pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:43.9pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>string&amp; replace(int pos,int len,string&amp; str)</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:43.9pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It replaces portion of the string that begins at character
+  position pos and spans len characters.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;
+  height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>string&amp; append(const string&amp; str)</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It adds new characters at the end of another string object.</span></p>
+  </td>
+ </tr>
+ <tr style='height:19.45pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:19.45pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>char&amp; at(int pos)</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:19.45pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It is used to access an individual character at specified
+  position pos.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;
+  height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>int find(string&amp; str,int pos,int n)</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It is used to find the string specified in the parameter.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>int find_first_of(string&amp; str,int pos,int n)</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It is used to find the first occurrence of the specified
+  sequence.</span></p>
+  </td>
+ </tr>
+ <tr style='height:43.9pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;
+  height:43.9pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>int find_first_not_of(string&amp; str,int pos,int n )</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:43.9pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It is used to search the string for the first character that
+  does not match with any of the characters specified in the string.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>int find_last_of(string&amp; str,int pos,int n)</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It is used to search the string for the last character of
+  specified sequence.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;
+  height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>int find_last_not_of(string&amp; str,int pos)</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It searches for the last character that does not match with the
+  specified sequence.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>string&amp; insert()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It inserts a new character before the character indicated by the
+  position pos.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;
+  height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>int max_size()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It finds the maximum length of the string.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>void push_back(char ch)</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It adds a new character ch at the end of the string.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;
+  height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>void pop_back()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It removes a last character of the string.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>string&amp; assign()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It assigns new value to the string.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;
+  height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>int copy(string&amp; str)</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It copies the contents of string into another.</span></p>
+  </td>
+ </tr>
+ <tr style='height:19.45pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:19.45pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>char&amp; back()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:19.45pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It returns the reference of last character.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;
+  height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>Iterator begin()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It returns the reference of first character.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>int capacity()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It returns the allocated space for the string.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;
+  height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>const_iterator cbegin()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It points to the first element of the string.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>const_iterator cend()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It points to the last element of the string.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;
+  height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>void clear()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It removes all the elements from the string.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>const_reverse_iterator crbegin()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It points to the last character of the string.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;
+  height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>const_char* data()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It copies the characters of string into an array.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>bool empty()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It checks whether the string is empty or not.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;
+  height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>string&amp; erase()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It removes the characters as specified.</span></p>
+  </td>
+ </tr>
+ <tr style='height:19.45pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:19.45pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>char&amp; front()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:19.45pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It returns a reference of the first character.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;
+  height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>string&amp;&nbsp; operator+=()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It appends a new character at the end of the string.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>string&amp; operator=()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It assigns a new value to the string.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;
+  height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>char operator[](pos)</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It retrieves a character at specified position pos.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>int rfind()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It searches for the last occurrence of the string.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;
+  height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>iterator end()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It references the last character of the string.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>reverse_iterator rend()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It points to the first character of the string.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;
+  height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>void shrink_to_fit()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It reduces the capacity and makes it equal to the size of the
+  string.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>char* c_str()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It returns pointer to an array that contains null terminated
+  sequence of characters.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;
+  height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>const_reverse_iterator crend()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It references the first character of the string.</span></p>
+  </td>
+ </tr>
+ <tr style='height:19.45pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:19.45pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:green'>reverse_iterator rbegin()</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:19.45pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It reference the last character of the string.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.95pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;
+  height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>void reserve(inr len)</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  background:#EFF1EB;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:21.95pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It requests a change in capacity.</span></p>
+  </td>
+ </tr>
+ <tr style='height:19.45pt'>
+  <td width=141 valign=top style='width:105.95pt;border:solid #C7CCBE 1.0pt;
+  border-top:none;padding:6.0pt 6.0pt 6.0pt 6.0pt;height:19.45pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;line-height:200%'><span
+  style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>allocator_type get_allocator();</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #C7CCBE 1.0pt;border-right:solid #C7CCBE 1.0pt;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt;height:19.45pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It returns the allocated object associated with the string.</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

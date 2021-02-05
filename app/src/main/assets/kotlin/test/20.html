@@ -1,0 +1,21 @@
+<!-- HTML generated using hilite.me --><div style="background: #111111; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #fb660a; font-weight: bold">fun</span> <span style="color: #ff0086; font-weight: bold">main</span><span style="color: #ffffff">(args:</span> <span style="color: #ffffff">Array&lt;String&gt;)</span> <span style="color: #ffffff">{</span>
+    <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">n1</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">72</span>
+    <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">n2</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">120</span>
+    <span style="color: #fb660a; font-weight: bold">var</span> <span style="color: #ffffff">lcm:</span> <span style="color: #ffffff">Int</span>
+    <span style="color: #008800; font-style: italic; background-color: #0f140f">// maximum number between n1 and n2 is stored in lcm</span>
+    <span style="color: #ffffff">lcm</span> <span style="color: #ffffff">=</span> <span style="color: #fb660a; font-weight: bold">if</span> <span style="color: #ffffff">(n1</span> <span style="color: #ffffff">&gt;</span> <span style="color: #ffffff">n2)</span> <span style="color: #ffffff">n1</span> <span style="color: #fb660a; font-weight: bold">else</span> <span style="color: #ffffff">n2</span>
+    <span style="color: #008800; font-style: italic; background-color: #0f140f">// Always true</span>
+    <span style="color: #fb660a; font-weight: bold">while</span> <span style="color: #ffffff">(</span><span style="color: #fb660a; font-weight: bold">true</span><span style="color: #ffffff">)</span> <span style="color: #ffffff">{</span>
+        <span style="color: #fb660a; font-weight: bold">if</span> <span style="color: #ffffff">(lcm</span> <span style="color: #ffffff">%</span> <span style="color: #ffffff">n1</span> <span style="color: #ffffff">==</span> <span style="color: #0086f7; font-weight: bold">0</span> <span style="color: #ffffff">&amp;&amp;</span> <span style="color: #ffffff">lcm</span> <span style="color: #ffffff">%</span> <span style="color: #ffffff">n2</span> <span style="color: #ffffff">==</span> <span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">)</span> <span style="color: #ffffff">{</span>
+            <span style="color: #ffffff">println(</span><span style="color: #0086d2">&quot;The LCM of $n1 and $n2 is $lcm.&quot;</span><span style="color: #ffffff">)</span>
+            <span style="color: #fb660a; font-weight: bold">break</span>
+        <span style="color: #ffffff">}</span>
+        <span style="color: #ffffff">++lcm</span>
+    <span style="color: #ffffff">}</span>
+<span style="color: #ffffff">}</span>
+
+
+<span style="color: #ffffff">&gt;&gt;</span> <span style="color: #ffffff">output</span> <span style="color: #ffffff">will</span> <span style="color: #ffffff">be:</span>
+
+<span style="color: #ffffff">The</span> <span style="color: #ffffff">LCM</span> <span style="color: #ffffff">of</span> <span style="color: #0086f7; font-weight: bold">72</span> <span style="color: #ffffff">and</span> <span style="color: #0086f7; font-weight: bold">120</span> <span style="color: #fb660a; font-weight: bold">is</span> <span style="color: #0086f7; font-weight: bold">360.</span>
+</pre></div>

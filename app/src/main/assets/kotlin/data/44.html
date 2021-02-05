@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>HashMap class</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPEyd0RpoR" id="content1-wy" data-rv-view="6921">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>HashMap class</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/n">bootstrap modal</a></section><section class="mbr-section article content1 cid-rPEyhEWNj7" id="content1-wz" data-rv-view="6922">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin <strong>HashMap</strong> is class of collection based on <strong>MutableMap</strong> <strong>interface.</strong> Kotlin HashMap class implements the MutableMap interface using Hash table. It store the data in the form of key and value pair. It is represented as <strong>HashMap&lt;key, value&gt;</strong> or <strong>HashMap&lt;K, V&gt;.
+</strong><div><strong>
+</strong></div><div>The implementation of HashMap class does <strong>not make</strong> <strong>guarantees</strong> about the order of data of key, value and entries of collections.</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="section-table cid-rPEyij1esw" id="table1-x0" data-rv-view="6923">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5"><strong>Constructor of &nbsp;HashMap</strong></h2>
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Functions</th><th class="head-item mbr-fonts-style display-7">Descriptions</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">HashMap()&nbsp;</td><td class="body-item mbr-fonts-style display-7">It constructs an empty HashMap instance
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">HashMap(initialCapacity: Int, loadFactor: Float = 0f)&nbsp;</td><td class="body-item mbr-fonts-style display-7">It is used to constructs a HashMap of specified capacity.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">HashMap(original: Map&lt;out K, V&gt;)&nbsp;</td><td class="body-item mbr-fonts-style display-7">It constructs a HashMap instance filled with contents of specified original map.
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="section-table cid-rPEyiXf1JR" id="table1-x1" data-rv-view="6953">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5"><strong>Functions of HashMap</strong></h2>
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Functions</th><th class="head-item mbr-fonts-style display-7">Descriptions</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun put(key: K, value: V): V?&nbsp;</td><td class="body-item mbr-fonts-style display-7">It puts the specified key and value in the map
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open operator fun get(key: K): V?&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns the value of specified key, or null if no such specified key is available in map.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun containsKey(key: K): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns true if map contains specifies key.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun containsValue(value: V): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns true if map maps one of more keys to specified value.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun clear()&nbsp;</td><td class="body-item mbr-fonts-style display-7">It removes all elements from map.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun remove(key: K): V?&nbsp;</td><td class="body-item mbr-fonts-style display-7">It removes the specified key and its corresponding value from map
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPEyo2pwFq" id="content12-x2" data-rv-view="7004">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 1- empty HashMap
+:&nbsp;</strong>Let's create a simple example of HashMap class define with empty HashMap of &lt;Int, String&gt; and add elements later. To print the value of HashMap we will either use HashMap[key] or HashMap.get(key).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val hashMap:HashMap&lt;Int,String> = HashMap&lt;Int,String>() //define empty hashmap
+    hashMap.put(1,"Ajay")
+    hashMap.put(3,"Vijay")
+    hashMap.put(4,"Praveen")
+    hashMap.put(2,"Ajay")
+    println(".....traversing hashmap.......")
+    for(key in hashMap.keys){
+        println("Element at key $key = ${hashMap[key]}")
+    }}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPEyoYusmC" id="content1-x4" data-rv-view="7006">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">.....traversing hashmap.......
+Element at key 1 = Ajay
+Element at key 2 = Ajay
+Element at key 3 = Vijay
+Element at key 4 = Praveen
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPEypR9z6O" id="content12-x6" data-rv-view="7008">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 2- HashMap initial capacity
+:&nbsp;</strong>HashMap can also be initialize with its initial capacity. The capacity can be changed by adding and replacing its element.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val hashMap:HashMap&lt;String,String&gt; = HashMap&lt;String,String&gt;(3)
+    hashMap.put("name","Ajay")
+    hashMap.put("city","Delhi")
+    hashMap.put("department","Software Development")
+    println(".....traversing hashmap.......")
+    for(key in hashMap.keys){
+        println("Element at key $key = ${hashMap[key]}")
+    }
+    println(".....hashMap.size.......")
+    println(hashMap.size)
+    hashMap.put("hobby","Travelling")
+    println(".....hashMap.size after adding hobby.......")
+    println(hashMap.size)
+    println(".....traversing hashmap.......")
+    for(key in hashMap.keys){
+        println("Element at key $key = ${hashMap.get(key)}")
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPEyqH0M35" id="content1-x8" data-rv-view="7010">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">.....traversing hashmap.......
+Element at key name = Ajay
+Element at key department = Software Development
+Element at key city = Delhi
+.....hashMap.size.......
+3
+.....hashMap.size after adding hobby.......
+4
+.....traversing hashmap.......
+Element at key name = Ajay
+Element at key department = Software Development
+Element at key city = Delhi
+Element at key hobby = Travelling
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPEyrDKZCT" id="content12-xa" data-rv-view="7012">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 3- remove() and put()
+:&nbsp;</strong>The function remove() is used to replace the existing value at specified key with specified value. The put() function add a new value at specified key and replace the old value. If put() function does not found any specified key, it put a new value at specified key.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val hashMap:HashMap&lt;Int,String> = HashMap&lt;Int,String>()
+    hashMap.put(1,"Ajay")
+    hashMap.put(3,"Vijay")
+    hashMap.put(4,"Prakash")
+    hashMap.put(2,"Rohan")
+
+    println(".....traversing hashmap.......")
+    for(key in hashMap.keys){
+        println("Element at key $key = ${hashMap[key]}")
+    }
+
+    hashMap.replace(3,"Ashu")
+    hashMap.put(2,"Raj")
+    println(".....hashMap.replace(3,\"Ashu\")... hashMap.replace(2,\"Raj\").......")....")
+    for(key in hashMap.keys){
+        println("Element at key $key = ${hashMap[key]}")
+    }
+}
+
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPEysu5ZrO" id="content1-xc" data-rv-view="7014">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">.....traversing hashmap.......
+Element at key 1 = Ajay
+Element at key 2 = Rohan
+Element at key 3 = Vijay
+Element at key 4 = Prakash
+.....hashMap.replace(3,"Ashu")...hashMap.put(2,"Raj")....
+Element at key 1 = Ajay
+Element at key 2 = Raj
+Element at key 3 = Ashu
+Element at key 4 = Prakash
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPEytgc0O6" id="content12-xe" data-rv-view="7016">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 4 - containsKey(key) and containsValue(value):&nbsp;</strong></li><li><span style="font-size: 1rem;">The Function <strong>containsKey()</strong> returns true if the specified key is present in HashMap or returns false if no such key exist.&nbsp;</span></li><li>The Function <strong>containsValue() </strong>is used to check whether the specified value is exist in HashMap or not. If value exists in HashMap, it will returns true else returns false.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val hashMap:HashMap&lt;Int,String> = HashMap&lt;Int,String>()
+    hashMap.put(1,"Ajay")
+    hashMap.put(3,"Vijay")
+    hashMap.put(4,"Prakash")
+    hashMap.put(2,"Rohan")
+
+    println(".....traversing hashmap.......")
+    for(key in hashMap.keys){
+        println("Element at key $key = ${hashMap[key]}")
+    }
+
+    println(".....hashMap.containsKey(3).......")
+    println(hashMap.containsKey(3))
+    println(".....hashMap.containsValue(\"Rohan\").......")
+    println(hashMap.containsValue("Rohan"))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPEytWHBVh" id="content1-xg" data-rv-view="7018">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">.....traversing hashmap.......
+Element at key 1 = Ajay
+Element at key 2 = Rohan
+Element at key 3 = Vijay
+Element at key 4 = Prakash
+.....hashMap.containsKey(3).......
+true
+.....hashMap.containsValue("Rohan").......
+true
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPEyuwZSid" id="content12-xi" data-rv-view="7020">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 5 - clear()
+:&nbsp;</strong>The clear() function is used to clear all the data from the HashMap.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val hashMap:HashMap&lt;Int,String> = HashMap&lt;Int,String>()
+    hashMap.put(1,"Ajay")
+    hashMap.put(3,"Vijay")
+    hashMap.put(4,"Prakash")
+    hashMap.put(2,"Rohan")
+    println(".....traversing hashmap.......")
+    for(key in hashMap.keys){
+        println("Element at key $key = ${hashMap[key]}")
+    }
+    println(".....hashMap.clear().......")
+    hashMap.clear()
+    println(".....print hashMap after clear().......")
+    println(hashMap)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPEyvlXUZ8" id="content1-xk" data-rv-view="7022">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">.....traversing hashmap.......
+Element at key 1 = Ajay
+Element at key 2 = Rohan
+Element at key 3 = Vijay
+Element at key 4 = Prakash
+.....hashMap.clear().......
+.....print hashMap after clear().......
+{}
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/datatables/jquery.data-tables.min.js"></script>
+  <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

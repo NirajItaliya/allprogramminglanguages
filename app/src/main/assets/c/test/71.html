@@ -1,0 +1,83 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic"> * C program to create a linked list and display the elements in the list</span>
+    <span style="color: #999999; font-style: italic"> */</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdio.h&gt;</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;malloc.h&gt;</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdlib.h&gt;</span>
+     
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">main</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">node</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">num;</span>
+            <span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">*ptr;</span>
+        <span style="color: #d0d0d0">};</span>
+        <span style="color: #6ab825; font-weight: bold">typedef</span> <span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">NODE;</span>
+     
+        <span style="color: #d0d0d0">NODE</span> <span style="color: #d0d0d0">*head,</span> <span style="color: #d0d0d0">*first,</span> <span style="color: #d0d0d0">*temp</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">count</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">first</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+     
+        <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(choice)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">head</span>  <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">(NODE</span> <span style="color: #d0d0d0">*)malloc(</span><span style="color: #6ab825; font-weight: bold">sizeof</span><span style="color: #d0d0d0">(NODE));</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter the data item\n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;head-&gt;</span> <span style="color: #d0d0d0">num);</span>
+            <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(first</span> <span style="color: #d0d0d0">!=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #d0d0d0">temp-&gt;ptr</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">head;</span>
+                <span style="color: #d0d0d0">temp</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">head;</span>
+            <span style="color: #d0d0d0">}</span>
+            <span style="color: #6ab825; font-weight: bold">else</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #d0d0d0">first</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">head;</span>
+            <span style="color: #d0d0d0">}</span>
+            <span style="color: #d0d0d0">fflush(stdin);</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Do you want to continue(Type 0 or 1)?\n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;choice);</span>
+     
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">temp-&gt;ptr</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #999999; font-style: italic">/*  reset temp to the beginning */</span>
+        <span style="color: #d0d0d0">temp</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">first;</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n status of the linked list is\n&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(temp</span> <span style="color: #d0d0d0">!=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;%d=&gt;&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">temp-&gt;num);</span>
+            <span style="color: #d0d0d0">count++;</span>
+            <span style="color: #d0d0d0">temp</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp</span> <span style="color: #d0d0d0">-&gt;</span> <span style="color: #d0d0d0">ptr;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;NULL\n&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;No. of nodes in the list = %d\n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">count);</span>
+    <span style="color: #d0d0d0">}</span>
+    
+    <span style="color: #d0d0d0">&gt;&gt;Output:</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">data</span> <span style="color: #d0d0d0">item</span>
+    <span style="color: #3677a9">5</span>
+    <span style="color: #d0d0d0">Do</span> <span style="color: #d0d0d0">you</span> <span style="color: #d0d0d0">want</span> <span style="color: #d0d0d0">to</span> <span style="color: #6ab825; font-weight: bold">continue</span><span style="color: #d0d0d0">(Type</span> <span style="color: #3677a9">0</span> <span style="color: #d0d0d0">or</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)?</span>
+    <span style="color: #3677a9">0</span>
+     
+    <span style="color: #d0d0d0">status</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">linked</span> <span style="color: #d0d0d0">list</span> <span style="color: #d0d0d0">is</span>
+    <span style="color: #3677a9">5</span><span style="color: #d0d0d0">=&gt;</span><span style="color: #24909d">NULL</span>
+    <span style="color: #d0d0d0">No.</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">nodes</span> <span style="color: #d0d0d0">in</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">list</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">1</span>
+     
+    <span style="color: #a61717; background-color: #e3d2d2">$</span> <span style="color: #d0d0d0">a.out</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">data</span> <span style="color: #d0d0d0">item</span>
+    <span style="color: #3677a9">5</span>
+    <span style="color: #d0d0d0">Do</span> <span style="color: #d0d0d0">you</span> <span style="color: #d0d0d0">want</span> <span style="color: #d0d0d0">to</span> <span style="color: #6ab825; font-weight: bold">continue</span><span style="color: #d0d0d0">(Type</span> <span style="color: #3677a9">0</span> <span style="color: #d0d0d0">or</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)?</span>
+    <span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">data</span> <span style="color: #d0d0d0">item</span>
+    <span style="color: #3677a9">9</span>
+    <span style="color: #d0d0d0">Do</span> <span style="color: #d0d0d0">you</span> <span style="color: #d0d0d0">want</span> <span style="color: #d0d0d0">to</span> <span style="color: #6ab825; font-weight: bold">continue</span><span style="color: #d0d0d0">(Type</span> <span style="color: #3677a9">0</span> <span style="color: #d0d0d0">or</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)?</span>
+    <span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">data</span> <span style="color: #d0d0d0">item</span>
+    <span style="color: #3677a9">3</span>
+    <span style="color: #d0d0d0">Do</span> <span style="color: #d0d0d0">you</span> <span style="color: #d0d0d0">want</span> <span style="color: #d0d0d0">to</span> <span style="color: #6ab825; font-weight: bold">continue</span><span style="color: #d0d0d0">(Type</span> <span style="color: #3677a9">0</span> <span style="color: #d0d0d0">or</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)?</span>
+    <span style="color: #3677a9">0</span>
+     
+    <span style="color: #d0d0d0">status</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">linked</span> <span style="color: #d0d0d0">list</span> <span style="color: #d0d0d0">is</span>
+    <span style="color: #3677a9">5</span><span style="color: #d0d0d0">=&gt;</span><span style="color: #3677a9">9</span><span style="color: #d0d0d0">=&gt;</span><span style="color: #3677a9">3</span><span style="color: #d0d0d0">=&gt;</span><span style="color: #24909d">NULL</span>
+    <span style="color: #d0d0d0">No.</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">nodes</span> <span style="color: #d0d0d0">in</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">list</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">3</span>
+    </pre></div>

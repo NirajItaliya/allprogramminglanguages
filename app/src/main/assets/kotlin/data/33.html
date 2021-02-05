@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin Null Safety</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPycAdPGtl" id="content1-oe" data-rv-view="6004">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin Null Safety</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/i">build a website for free</a></section><section class="mbr-section article content1 cid-rPydmYk0Up" id="content1-of" data-rv-view="6005">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin null safety is a procedure to eliminate the risk of <strong>null reference</strong> from the code. Kotlin compiler throws NullPointerException immediately if it found any null argument is passed without executing any other statements.
+<div>
+</div><div>Kotlin's type system is aimed to eliminate <strong>NullPointerException</strong> form the code. NullPointerException can only possible on following causes:</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content11 cid-rPydvufN8l" id="content11-og" data-rv-view="6006">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ol>
+                    <li>An forcefully call to throw <strong>NullPointerException()</strong>;
+</li><li>An uninitialized of this operator which is available in a constructor passed and used somewhere.
+</li><li>Use of external java code as Kotlin is <strong>Java</strong> <strong>interoperability</strong>.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPyeaOrsuu" id="content1-oh" data-rv-view="6007">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Nullable Types and Non-Nullable Types</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPyee7OsjC" id="content1-oi" data-rv-view="6008">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin types system differentiates between references which can hold null (nullable reference) and which cannot hold null (non null reference). Normally, types of String are not nullable. To make string which holds null value, we have to explicitly define them by putting a ? behind the String as: <strong>String?</strong></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPyelyKISe" id="content12-oj" data-rv-view="6009">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Nullable Types</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPyemNSoyW" id="content1-ok" data-rv-view="6010">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Nullable types are declared by putting a ? behind the String as:</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">var str1: String? = "hello"
+str1 = null // ok
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPyet8nxIu" id="content1-om" data-rv-view="6012">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin example of nullable types</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array<String>){
+    var str: String? = "Hello" // variable is declared as nullable
+    str = null
+    print(str)
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPyetPBlqK" id="content1-oo" data-rv-view="6014">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">null
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rPyeGLfAxc" id="content12-oq" data-rv-view="6016">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Non Nullable Types</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPyeMKqLvO" id="content1-or" data-rv-view="6017">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Non nullable types are normal strings which are declared as String types as:</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">val str: String = null // compile error
+str = "hello" // compile error Val cannot be reassign
+var str2: String = "hello"
+str2 = null // compile error
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPyePzmvH8" id="content1-ot" data-rv-view="6019">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">What happens when we assign null value to non nullable string?</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array<String>){
+    var str: String = "Hello"
+    str = null // compile error
+    print(str)
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPyeQdCuiA" id="content1-ov" data-rv-view="6021">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><span style="font-size: 1rem;">It will generate a compile time error.</span></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Error:(3, 11) Kotlin: Null can not be a value of a non-null type String
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPyfdMURYb" id="content1-ox" data-rv-view="6023">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Checking for null in conditions</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPyfhML2vB" id="content1-oy" data-rv-view="6024">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin's If expression is used for checking condition and returns value.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array<String>){
+    var str: String? = "Hello" // variable is declared as nullable
+    var len = if(str!=null) str.length else -1
+    println("str is : $str")
+    println("str length is : $len")
+
+    str = null
+    println("str is : $str")
+    len = if(str!=null) str.length else -1
+    println("b length is : $len")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPyfBNNXbi" id="content1-p0" data-rv-view="6026">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">str is : Hello
+str length is : 5
+str is : null
+b length is : -1
+</code></pre></div>
+
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

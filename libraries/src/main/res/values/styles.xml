@@ -1,0 +1,18 @@
+
+<resources>
+
+    <style name="LinearLayout">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="SubtitleCollapsingToolbar"
+        parent="@style/Widget.Design.CollapsingToolbar">
+    </style>
+    <style name="CollapsedSubtitleAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="ExpandedSubtitleAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>

@@ -1,0 +1,368 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:21.3pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB>
+
+<div class=WordSection1>
+
+<h1 align=center style='text-align:center;line-height:150%'>24. HEADER FILES</h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'>&nbsp;</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>A header file is a file with extension
+<b>.h </b>which contains C function declarations and macro definitions to be
+shared between several source files. There are two types of header files: the
+files that the programmer writes and the files that comes with your compiler. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>You request to use a header file in
+your program by including it with the C preprocessing directive <b>#include</b>,
+like you have seen inclusion of <b>stdio.h </b>header file, which comes along
+with your compiler. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Including a header file is equal to
+copying the content of the header file but we do not do it because it will be
+error-prone and it is not a good idea to copy the content of a header file in
+the source files, especially if we have multiple source files in a program. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>A simple practice in C or C++ programs
+is that we keep all the constants, macros, system wide global variables, and
+function prototypes in the header files and include that header file wherever
+it is required. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>Include Syntax</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Both the user and the system header
+files are included using the preprocessing directive <b>#include</b>. It has
+the following two forms: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif;color:#00B0F0'>#include
+&lt;file&gt; </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>This form is used for system header
+files. It searches for a file named ‘file’ in a standard list of system
+directories. You can prepend directories to this list with the -I option while
+compiling your source code. </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif;color:#00B0F0'>#include
+&quot;file&quot; </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>This form is used for header files of
+your own program. It searches for a file named ‘file’ in the directory
+containing the current file. You can prepend directories to this list with the
+-I option while compiling your source code. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>Include Operation</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The <b>#include </b>directive works by
+directing the C preprocessor to scan the specified file as input before
+continuing with the rest of the current source file. The output from the
+preprocessor contains the output already generated, followed by the output
+resulting from the included file, followed by the output that comes from the
+text after the <b>#include </b>directive. For example, if you have a header
+file header.h as follows:</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif;color:#00B0F0'>char
+*test (void); </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>and a main program called <i>program.c
+</i>that uses the header file, like this: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#1F3864'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>int x; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>#include &quot;header.h&quot; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>int main (void) </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>{ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>puts (test ()); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>the compiler will see the same token
+stream as it would if program.c read. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#1F3864'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>int x; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>char *test (void); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>int main (void) </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>{ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>puts (test ()); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>Once-Only Headers</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>If a header file happens to be
+included twice, the compiler will process its contents twice and it will result
+in an error. The standard way to prevent this is to enclose the entire real
+contents of the file in a conditional, like this: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#1F3864'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>#ifndef HEADER_FILE </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>#define HEADER_FILE </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>the entire header file file </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>#endif </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>This construct is commonly known as a
+wrapper <b>#ifndef</b>. When the header is included again, the conditional will
+be false, because HEADER_FILE is defined. The preprocessor will skip over the
+entire contents of the file, and the compiler will not see it twice.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>Computed Includes</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Sometimes it is necessary to select
+one of the several different header files to be included into your program. For
+instance, they might specify configuration parameters to be used on different
+sorts of operating systems. You could do this with a series of conditionals as
+follows: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#1F3864'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>#if SYSTEM_1 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'># include &quot;system_1.h&quot; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>#elif SYSTEM_2 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'># include &quot;system_2.h&quot; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>#elif SYSTEM_3 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>... </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>#endif </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>But as it grows, it becomes tedious,
+instead the preprocessor offers the ability to use a macro for the header name.
+This is called a <b>computed include</b>. Instead of writing a header name as
+the direct argument of <b>#include</b>, you simply put a macro name there: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#1F3864'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>#define SYSTEM_H &quot;system_1.h&quot; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>... </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>#include SYSTEM_H </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>SYSTEM_H will be expanded, and the
+preprocessor will look for system_1.h as if the <b>#include </b>had been
+written that way originally. SYSTEM_H could be defined by your Makefile with a
+-D option.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic">* C Program to Perform Quick Sort on a set of Entries from a File </span>
+    <span style="color: #999999; font-style: italic">* using Recursion</span>
+    <span style="color: #999999; font-style: italic">*/</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdio.h&gt;</span>
+     
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">quicksort</span> <span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">[],</span> <span style="color: #6ab825; font-weight: bold">int</span><span style="color: #d0d0d0">,</span> <span style="color: #6ab825; font-weight: bold">int</span><span style="color: #d0d0d0">);</span>
+     
+    <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #447fcf">main</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">list[</span><span style="color: #3677a9">50</span><span style="color: #d0d0d0">];</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">size,</span> <span style="color: #d0d0d0">i;</span>
+     
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter the number of elements: &quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;size);</span> 
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter the elements to be sorted:\n&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">size;</span> <span style="color: #d0d0d0">i++)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;list[i]);</span>
+        <span style="color: #d0d0d0">}</span> 
+        <span style="color: #d0d0d0">quicksort(list,</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">size</span> <span style="color: #d0d0d0">-</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;After applying quick sort\n&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">size;</span> <span style="color: #d0d0d0">i++)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;%d &quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">list[i]);</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n&quot;</span><span style="color: #d0d0d0">);</span>
+     
+        <span style="color: #6ab825; font-weight: bold">return</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #d0d0d0">}</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">quicksort</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">list[],</span> <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">low,</span> <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">high)</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">pivot,</span> <span style="color: #d0d0d0">i,</span> <span style="color: #d0d0d0">j,</span> <span style="color: #d0d0d0">temp;</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(low</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">high)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">pivot</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">low;</span>
+            <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">low;</span>
+            <span style="color: #d0d0d0">j</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">high;</span>
+            <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">j)</span> 
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(list[i]</span> <span style="color: #d0d0d0">&lt;=</span> <span style="color: #d0d0d0">list[pivot]</span> <span style="color: #d0d0d0">&amp;&amp;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&lt;=</span> <span style="color: #d0d0d0">high)</span>
+                <span style="color: #d0d0d0">{</span>
+                    <span style="color: #d0d0d0">i++;</span>
+                <span style="color: #d0d0d0">}</span>
+                <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(list[j]</span> <span style="color: #d0d0d0">&gt;</span> <span style="color: #d0d0d0">list[pivot]</span> <span style="color: #d0d0d0">&amp;&amp;</span> <span style="color: #d0d0d0">j</span> <span style="color: #d0d0d0">&gt;=</span> <span style="color: #d0d0d0">low)</span>
+                <span style="color: #d0d0d0">{</span>
+                    <span style="color: #d0d0d0">j--;</span>
+                <span style="color: #d0d0d0">}</span>
+                <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">j)</span>
+                <span style="color: #d0d0d0">{</span>
+                    <span style="color: #d0d0d0">temp</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">list[i];</span>
+                    <span style="color: #d0d0d0">list[i]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">list[j];</span>
+                    <span style="color: #d0d0d0">list[j]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp;</span>
+                <span style="color: #d0d0d0">}</span>
+            <span style="color: #d0d0d0">}</span>
+            <span style="color: #d0d0d0">temp</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">list[j];</span>
+            <span style="color: #d0d0d0">list[j]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">list[pivot];</span>
+            <span style="color: #d0d0d0">list[pivot]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp;</span>
+            <span style="color: #d0d0d0">quicksort(list,</span> <span style="color: #d0d0d0">low,</span> <span style="color: #d0d0d0">j</span> <span style="color: #d0d0d0">-</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">quicksort(list,</span> <span style="color: #d0d0d0">j</span> <span style="color: #d0d0d0">+</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">high);</span>
+        <span style="color: #d0d0d0">}</span>
+    <span style="color: #d0d0d0">}</span>
+    
+    
+    <span style="color: #d0d0d0">&gt;&gt;Output:</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">number</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">elements:</span> <span style="color: #3677a9">6</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">elements</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">be</span> <span style="color: #d0d0d0">sorted:</span>
+    <span style="color: #3677a9">67</span>
+    <span style="color: #3677a9">45</span>
+    <span style="color: #3677a9">24</span>
+    <span style="color: #3677a9">98</span>
+    <span style="color: #3677a9">12</span>
+    <span style="color: #3677a9">38</span>
+    <span style="color: #d0d0d0">After</span> <span style="color: #d0d0d0">applying</span> <span style="color: #d0d0d0">quick</span> <span style="color: #d0d0d0">sort</span>
+    <span style="color: #3677a9">12</span> <span style="color: #3677a9">24</span> <span style="color: #3677a9">38</span> <span style="color: #3677a9">45</span> <span style="color: #3677a9">67</span> <span style="color: #3677a9">98</span>
+    </pre></div>

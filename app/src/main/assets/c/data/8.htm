@@ -1,0 +1,505 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Verdana",sans-serif;
+	color:black;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:7.1pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB>
+
+<div class=WordSection1>
+
+<h1 align=center style='text-align:center;line-height:150%'>8. STORAGE CLASSES</h1>
+
+<p class=MsoNormal style='line-height:150%'>&nbsp;</p>
+
+<p class=Default style='text-align:justify;line-height:150%'><span
+style='font-size:11.0pt;line-height:150%;font-family:"Book Antiqua",serif'>A
+storage class defines the scope (visibility) and life-time of variables and/or
+functions within a C Program. They precede the type that they modify. We have
+four different storage classes in a C program: </span></p>
+
+<p class=Default style='line-height:150%'><span style='font-size:11.0pt;
+line-height:150%;font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:8.05pt;
+margin-left:36.0pt;text-indent:-18.0pt;line-height:150%'><span
+style='font-size:11.0pt;line-height:150%;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:11.0pt;line-height:150%;font-family:"Book Antiqua",serif'>auto
+</span></p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:8.05pt;
+margin-left:36.0pt;text-indent:-18.0pt;line-height:150%'><span
+style='font-size:11.0pt;line-height:150%;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:11.0pt;line-height:150%;font-family:"Book Antiqua",serif'>register
+</span></p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:8.05pt;
+margin-left:36.0pt;text-indent:-18.0pt;line-height:150%'><span
+style='font-size:11.0pt;line-height:150%;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:11.0pt;line-height:150%;font-family:"Book Antiqua",serif'>static
+</span></p>
+
+<p class=Default style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+150%'><span style='font-size:11.0pt;line-height:150%;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:11.0pt;line-height:150%;font-family:"Book Antiqua",serif'>extern
+</span></p>
+
+<p class=Default style='line-height:150%'><span style='font-size:11.0pt;
+line-height:150%;font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=Default style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>The auto Storage Class</span></b></p>
+
+<p class=Default style='line-height:150%'><span style='font-size:18.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>&nbsp;</span></p>
+
+<p class=Default style='line-height:150%'><span style='font-size:11.0pt;
+line-height:150%;font-family:"Book Antiqua",serif'>The <b>auto </b>storage
+class is the default storage class for all local variables. </span></p>
+
+<p class=Default style='line-height:150%'><span style='font-size:11.0pt;
+line-height:150%;font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
+background:#222A35'>
+
+<p class=Default style='line-height:150%;background:#222A35;border:none;
+padding:0cm'><span style='font-size:11.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:white'>{ </span></p>
+
+<p class=Default style='line-height:150%;background:#222A35;border:none;
+padding:0cm'><span style='font-size:11.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:white'>int mount; </span></p>
+
+<p class=Default style='line-height:150%;background:#222A35;border:none;
+padding:0cm'><span style='font-size:11.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:white'>auto int month; </span></p>
+
+<p class=Default style='line-height:150%;background:#222A35;border:none;
+padding:0cm'><span style='font-size:11.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:white'>}</span></p>
+
+</div>
+
+<p class=Default style='line-height:150%'><span style='font-size:11.0pt;
+line-height:150%;font-family:"Book Antiqua",serif'> </span></p>
+
+<p class=Default style='line-height:150%'><span style='font-size:11.0pt;
+line-height:150%;font-family:"Book Antiqua",serif'>The example above defines
+two variables within the same storage class. ‘auto’ can only be used within
+functions, i.e., local variables. </span></p>
+
+<p class=Default style='line-height:150%'><span style='font-size:11.0pt;
+line-height:150%;font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=Default style='line-height:150%'><b><span style='font-size:18.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>The register
+Storage Class           </span></b></p>
+
+<p class=Default style='line-height:150%'><span style='font-size:18.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>&nbsp;</span></p>
+
+<p class=Default style='line-height:150%'><span style='font-size:11.0pt;
+line-height:150%;font-family:"Book Antiqua",serif'>The <b>register </b>storage
+class is used to define local variables that should be stored in a register
+instead of RAM. This means that the variable has a maximum size equal to the
+register size (usually one word) and can't have the unary '&amp;' operator
+applied to it (as it does not have a memory location). </span></p>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
+background:#222A35'>
+
+<p class=Default style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-size:11.0pt;line-height:150%;
+font-family:"Book Antiqua",serif;color:white'>&nbsp;</span></p>
+
+<p class=Default style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-size:11.0pt;line-height:150%;
+font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=Default style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-size:11.0pt;line-height:150%;
+font-family:"Book Antiqua",serif;color:white'>register int miles; </span></p>
+
+<p class=Default style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-size:11.0pt;line-height:150%;
+font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-family:"Book Antiqua",serif'>The
+register should only be used for variables that require quick access such as
+counters. It should also be noted that defining 'register' does not mean that
+the variable will be stored in a register. It means that it MIGHT be stored in
+a register depending on hardware and implementation restrictions.</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;font-family:"Arial",sans-serif;
+color:red'>The static Storage Class</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The static storage class instructs the
+compiler to keep a local variable in existence during the life-time of the program
+instead of creating and destroying it each time it comes into and goes out of
+scope. Therefore, making local variables static allows them to maintain their
+values between function calls.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The static modifier may also be
+applied to global variables. When this is done, it causes that variable's scope
+to be restricted to the file in which it is declared.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>In C programming, when static is used
+on a class data member, it causes only one copy of that member to be shared by
+all the objects of its class.</span></p>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
+background:#222A35'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;stdio.h&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* function declaration */</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>void func(void);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>static int count = 5; /*
+global variable */</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>main()</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>while(count--)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>func();</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>return 0;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* function definition */</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>void func( void )</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>static int i = 5; /* local
+static variable */</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>i++;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>printf(&quot;i is %d and count is %d\n&quot;, i, count);</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-size:10.0pt;
+line-height:150%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:180.0pt;text-align:justify;text-indent:
+-180.0pt;line-height:150%'><span style='font-family:"Book Antiqua",serif'>When
+the above code is compiled and executed, it produces the following result:</span></p>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm;
+background:#222A35'>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:180.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:-180.0pt;
+line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>i is 6 and count is 4</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:180.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:-180.0pt;
+line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>i is 7 and count is 3</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:180.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:-180.0pt;
+line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>i is 8 and count is 2</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:180.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:-180.0pt;
+line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>i is 9 and count is 1</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:180.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:-180.0pt;
+line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>i is 10 and count is 0</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'> </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;color:red'>The extern Storage Class</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The extern storage class is used to
+give a reference of a global variable that is visible to ALL the program files.
+When you use 'extern', the variable cannot be initialized, however, it points
+the variable name at a storage location that has been previously defined.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When you have multiple files and you
+define a global variable or function, which will also be used in other files,
+then extern will be used in another file to provide the reference of defined
+variable or function. Just for understanding, extern is used to declare a
+global variable or function in another file.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The extern modifier is most commonly
+used when there are two or more files sharing the same global variables or
+functions as explained below.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>First File: main.c</span></b></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;stdio.h&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int count;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>extern void
+write_extern();</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>main()</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>count = 5;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>write_extern();</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>Second File: support.c</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;stdio.h&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>extern int count;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>void write_extern(void)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf(&quot;count is
+%d\n&quot;, count);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>Here,
+extern is being used to declare count in the second file, whereas it has its
+definition in the first file, main.c. Now, compile these two files as follows:</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>$gcc main.c support.c</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>It
+will produce the executable program a.out. When this program is executed, it
+produces the following result:</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif'>5</span></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

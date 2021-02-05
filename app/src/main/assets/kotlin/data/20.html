@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin Recursion Function</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rP5reg1R0C" id="content1-fa" data-rv-view="5555">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Recursion Function</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/b">web creator</a></section><section class="mbr-section article content1 cid-rP5rlFjOL4" id="content1-fb" data-rv-view="5556">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Recursion function is a function which calls <strong>itself continuously</strong>. This technique is called recursion.</div>
+        </div>
+    </div>
+</section>
+
+<section class="cid-rP5ufflN0N" id="image2-g8" data-rv-view="5557">
+
+    
+
+    <figure class="mbr-figure container">
+        <div class="image-block" style="width: 33%;">
+            <img src="assets/images/recursive-call-kotlin-363x247.jpg" alt="Mobirise" title="" media-simple="true">
+            <figcaption class="mbr-figure-caption mbr-figure-caption-over">
+                <div class="container pb-5 mbr-white align-center mbr-fonts-style display-1"></div>
+            </figcaption>
+        </div>
+    </figure>
+</section>
+
+<section class="mbr-section article content12 cid-rP5rvS2I1V" id="content12-fc" data-rv-view="5559">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7"><strong>Sysntax:</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun functionName(){
+.. .. ..
+functionName() //calling same function
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5rNBc6Py" id="content1-fg" data-rv-view="5561">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin recursion function example: <strong>Finite times</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">var count = 0
+fun rec(){
+    count++;
+    if(count<=5){
+        println("hello "+count);
+        rec();
+    }
+}
+fun main(args: Array&lt;String&gt;) {
+    rec();
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5rY4k9r3" id="content1-fi" data-rv-view="5563">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">hello 1
+hello 2
+hello 3
+hello 4
+hello 5
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5s3DUqM2" id="content1-fk" data-rv-view="5565">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p>Kotlin recursion function example: <strong>Factorial Number</strong></p><p>Let's see an example of recursion function calculating factorial of number.</p></div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val number = 5
+    val result: Long
+    result = factorial(number)
+    println("Factorial of $number = $result")
+}
+
+fun factorial(n: Int): Long {
+    return if(n == 1){
+          n.toLong()
+    }
+    else{
+        n*factorial(n-1)
+    }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5siThbiM" id="content1-fm" data-rv-view="5567">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP5sjnL6uM" id="content1-fn" data-rv-view="5568">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Factorial of 5 = 120</strong></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP5smCbc2C" id="content1-fo" data-rv-view="5569">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Working process of above factorial example</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">factorial(5)
+   factorial(4)
+      factorial(3)
+         factorial(2)
+            factorial(1)
+               return 1
+            return 2*1 = 2
+         return 3*2 = 6
+      return 4*6 = 24
+   return 5*24 = 120
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5sw0n60L" id="content1-fq" data-rv-view="5571">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Kotlin Tail Recursion</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP5szM5i0k" id="content1-fr" data-rv-view="5572">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Before we will discuss about the tail recursion, let's try to make an example which calculate sum of nth (100000 larger number) using general (normal) <strong>recursion</strong>.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP5sFasOs3" id="content1-fs" data-rv-view="5573">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>General Recursion</strong></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP5sKbgiXE" id="content1-ft" data-rv-view="5574">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Let's see an example of calculating sum of nth (100000 larger number) using general (normal) recursion.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    var result = recursiveSum(100000)
+    println(result)
+}
+fun recursiveSum(n: Long) : Long {
+    return if (n <= 1) {
+        n
+    } else {
+        n + recursiveSum(n - 1)
+    }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rP5sXLdJ11" id="content12-fv" data-rv-view="5576">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">output:</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Exception in thread "main" java.lang.StackOverflowError
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5t3r02fp" id="content1-fx" data-rv-view="5578">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The above example throws an exception of <strong>"java.lang.StackOverflowError"</strong>. This is because the compiler is unable to call large number of recursive function call.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP5tbQbcXe" id="content1-fy" data-rv-view="5579">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Tail Recursion</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP5tgzZsSx" id="content1-fz" data-rv-view="5580">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Tail recursion</strong> is a recursion which performs the calculation first, then makes the recursive call. The result of current step is passed into the next recursive call.
+<div>
+</div><div>Tail recursion follows one rule for implementation. This rule is as follow:
+</div><div>
+</div><div><strong>The recursive call must be the last call of the method</strong>. To declare a recursion as tail recursion we need to use tailrec modifier before the recursive function.</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rP5tp0m9VW" id="content12-g0" data-rv-view="5581">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li>Calculating sun of nth(100000) number</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    var number = 100000.toLong()
+    var result = recursiveSum(number)
+    println("sun of upto $number number = $result")
+}
+tailrec fun recursiveSum(n: Long, semiresult: Long = 0) : Long {
+    return if (n <= 0) {
+        semiresult
+    } else {
+        recursiveSum( (n - 1), n+semiresult)
+    }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rP5txPNIoV" id="content12-g2" data-rv-view="5583">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">output:</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">sun of upto 100000 number = 5000050000
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rP5tEWrqxU" id="content12-g4" data-rv-view="5585">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li>Calculating factorial of number</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val number = 4
+    val result: Long
+    result = factorial(number)
+    println("Factorial of $number = $result")
+}
+
+tailrec fun factorial(n: Int, run: Int = 1): Long {
+    return if (n == 1){
+        run.toLong()
+    } else {
+        factorial(n-1, run*n)
+    }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5tPZn3Va" id="content1-g6" data-rv-view="5587">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Factorial of 4 = 24
+</code></pre></div>
+
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

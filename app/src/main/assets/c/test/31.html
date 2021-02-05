@@ -1,0 +1,79 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic">     * C program to read in four integer numbers into an array and find the</span>
+    <span style="color: #999999; font-style: italic">     * average of largest two of the given numbers without sorting the array.</span>
+    <span style="color: #999999; font-style: italic">     * The program should output the given four numbers and the average.</span>
+    <span style="color: #999999; font-style: italic">    */</span>
+     
+        <span style="color: #a61717; background-color: #e3d2d2">#</span><span style="color: #d0d0d0">include</span> <span style="color: #d0d0d0">&lt;stdio.h&gt;</span>
+        <span style="color: #a61717; background-color: #e3d2d2">#</span><span style="color: #d0d0d0">define</span> <span style="color: #d0d0d0">MAX</span> <span style="color: #3677a9">4</span>
+     
+        <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #d0d0d0">main()</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">array[MAX],</span> <span style="color: #d0d0d0">i,</span> <span style="color: #d0d0d0">largest1,</span> <span style="color: #d0d0d0">largest2,</span> <span style="color: #d0d0d0">temp;</span>
+     
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter %d integer numbers \n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">MAX);</span>
+            <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">MAX;</span> <span style="color: #d0d0d0">i++)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;array[i]);</span>
+            <span style="color: #d0d0d0">}</span>
+     
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Input integer are \n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">MAX;</span> <span style="color: #d0d0d0">i++)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;%5d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">array[i]);</span>
+            <span style="color: #d0d0d0">}</span>
+     
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #999999; font-style: italic">/*  assume first element of array is the first larges t*/</span>
+     
+            <span style="color: #d0d0d0">largest1</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">array[</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">];</span>
+            <span style="color: #999999; font-style: italic">/*  assume first element of array is the second largest */</span>
+     
+            <span style="color: #d0d0d0">largest2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">array[</span><span style="color: #3677a9">1</span><span style="color: #d0d0d0">];</span>
+            <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(largest1</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">largest2)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #d0d0d0">temp</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">largest1;</span>
+                <span style="color: #d0d0d0">largest1</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">largest2;</span>
+                <span style="color: #d0d0d0">largest2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp;</span>
+            <span style="color: #d0d0d0">}</span>
+     
+            <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">2</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #3677a9">4</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i++)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(array[i]</span> <span style="color: #d0d0d0">&gt;=</span> <span style="color: #d0d0d0">largest1)</span>
+                <span style="color: #d0d0d0">{</span>
+                    <span style="color: #d0d0d0">largest2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">largest1;</span>
+                    <span style="color: #d0d0d0">largest1</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">array[i];</span>
+                <span style="color: #d0d0d0">}</span>
+                <span style="color: #6ab825; font-weight: bold">else</span> <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(array[i]</span> <span style="color: #d0d0d0">&gt;</span> <span style="color: #d0d0d0">largest2)</span>
+                <span style="color: #d0d0d0">{</span>
+                    <span style="color: #d0d0d0">largest2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">array[i];</span>
+                <span style="color: #d0d0d0">}</span>
+            <span style="color: #d0d0d0">}</span>
+     
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;n%d is the first largest \n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">largest1);</span>
+     
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;%d is the second largest \n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">largest2);</span>
+     
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Average of %d and %d = %d \n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">largest1,</span> <span style="color: #d0d0d0">largest2,</span>
+     
+            <span style="color: #d0d0d0">(largest1</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">largest2)</span> <span style="color: #d0d0d0">/</span> <span style="color: #3677a9">2</span><span style="color: #d0d0d0">);</span>
+     
+        <span style="color: #d0d0d0">}</span>
+    
+    
+    
+    <span style="color: #d0d0d0">&gt;&gt;Output:</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #3677a9">4</span> <span style="color: #d0d0d0">integer</span> <span style="color: #d0d0d0">numbers</span>
+    <span style="color: #3677a9">80</span>
+    <span style="color: #3677a9">23</span>
+    <span style="color: #3677a9">79</span>
+    <span style="color: #3677a9">58</span>
+    <span style="color: #d0d0d0">Input</span> <span style="color: #d0d0d0">interer</span> <span style="color: #d0d0d0">are</span>
+    <span style="color: #3677a9">80</span>   <span style="color: #3677a9">23</span>   <span style="color: #3677a9">79</span>   <span style="color: #3677a9">58</span>
+     
+    <span style="color: #3677a9">80</span> <span style="color: #d0d0d0">is</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">first</span> <span style="color: #d0d0d0">largest</span>
+    <span style="color: #3677a9">79</span> <span style="color: #d0d0d0">is</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">second</span> <span style="color: #d0d0d0">largest</span>
+     
+    <span style="color: #d0d0d0">Average</span> <span style="color: #d0d0d0">of</span> <span style="color: #3677a9">80</span> <span style="color: #d0d0d0">and</span> <span style="color: #3677a9">79</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">79</span>
+    </pre></div>

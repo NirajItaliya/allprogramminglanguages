@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Site made with Mobirise Website Builder v4.10.5, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.10.5, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/ic-logo-new-128x128.png" type="image/x-icon">
+    <meta name="description" content="ApkZube">
+
+    <title>Python Constructors</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="plugin/prism.css">
+
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
+
+</head>
+
+<body class="line-numbers">
+    <section class="mbr-section content4 cid-rwsJ0MjvSI" id="content4-oe">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-2"><strong>Python Constructors</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="engine"><a href="https://mobirise.info/v">html templates</a></section>
+    <section class="mbr-section article content1 cid-rwsJ5kSMcf" id="content1-of">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>A <strong>constructor </strong>is a special type of <strong>method
+                        </strong>(<strong>function</strong>) which is used to <strong>initialize </strong>the
+                        <strong>instance members </strong>of the class. Constructor can be <strong>parameterized
+                        </strong>and <strong>non-parameterized </strong>as well. Constructor definition executes when we
+                        create object of the class. Constructors also verify that there are enough resources for the
+                        object to perform any <strong>start-up task</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="step3 cid-rwsJqGL7ML" id="step3-oi">
+
+
+
+
+
+        <div class="container">
+            <h2 class="mbr-section-title pb-3 mbr-fonts-style align-center display-7"><strong>Creating a
+                    Constructor</strong></h2>
+
+            <div class="media-container-row">
+
+                <div class="step-container">
+                    <div class="card separline pb-4">
+                        <div class="step-element d-flex">
+                            <div class="step-wrapper pr-3">
+                                <div class="step d-flex align-items-center justify-content-center">
+                                    1
+                                </div>
+                            </div>
+                            <div class="step-text-content">
+
+                                <p class="mbr-step-text mbr-fonts-style display-7">
+                                    A constructor is a class function that begins with double underscore (_). The name
+                                    of the constructor is always the same <strong>__init__()</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card separline pb-4">
+                        <div class="step-element d-flex">
+                            <div class="step-wrapper pr-3">
+                                <div class="step d-flex align-items-center justify-content-center">
+                                    2
+                                </div>
+                            </div>
+                            <div class="step-text-content">
+
+                                <p class="mbr-step-text mbr-fonts-style display-7">
+                                    While creating an object, a constructor can accept arguments if
+                                    <strong>necessary</strong>. When we create a class without a constructor, Python
+                                    automatically creates a default constructor that doesn't do anything</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="step-element d-flex">
+                            <div class="step-wrapper pr-3">
+                                <div class="step d-flex align-items-center justify-content-center">
+                                    3
+                                </div>
+                            </div>
+                            <div class="step-text-content">
+
+                                <p class="mbr-step-text mbr-fonts-style display-7">
+                                    Every class must have a constructor, even if it simply relies on the <strong>default
+                                        constructor</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwsJG743H4" id="content1-oj">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwsJGLldXe" id="content1-ok">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Let's create a class named ComplexNumber, having two functions <strong>__init__()
+                        </strong>function to initialize the variable and getData() to display the number properly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+class ComplexNumber:
+    def __init__(self,r=0,i=1):
+        self.real=r;
+        self.imag=i;
+
+    def getData(self):
+        print('{0}+{1}j'.format(self.real,self.imag))
+     
+
+c1=ComplexNumber(5,6)
+c1.getData()
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwsKLCBmTt" id="content1-on">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    5+6j
+</code></pre></div>
+
+    <section class="mbr-section content4 cid-rwsMoVw0NQ" id="content4-op">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Parameterized Constructor</strong>
+                    </h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwsMrIrm16" id="content1-oq">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>constructor with <strong>parameters </strong>is known as <strong>parameterized
+                        </strong>constructor.The parameterized constructor take its first argument as a reference to the
+                        instance being constructed known as self and the rest of the arguments are provided by the
+                        programmer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+class Student:  
+    # Constructor - parameterized  
+    def __init__(self, name):  
+        print("This is parametrized constructor")  
+        self.name = name  
+
+    def show(self):  
+        print("Hello",self.name)  
+
+student = Student("vishal") 
+student.show() 
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwsMu031Mg" id="content1-os">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    This is parametrized constructor                                                                                                                                 
+    Hello vishal 
+</code></pre></div>
+
+
+    <script src="plugin/prism.js"></script>
+    <script src="assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="assets/popper/popper.min.js"></script>
+    <script src="assets/tether/tether.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+    <script src="assets/theme/js/script.js"></script>
+
+
+    <input name="animation" type="hidden">
+</body>
+
+</html>

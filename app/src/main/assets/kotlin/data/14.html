@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin for Loop</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rLHbdkiI3a" id="content1-br" data-rv-view="5430">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin for Loop</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/i">how to build your own website</a></section><section class="mbr-section article content1 cid-rLHbgsXVGC" id="content1-bs" data-rv-view="5431">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin for loop is used to <strong>iterate a part of program </strong>several times. It iterates through arrays, ranges, collections, or anything that provides for iterate. Kotlin for loop is equivalent to the <strong>foreach</strong> loop in languages like C#.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLHbo7CTsC" id="content1-bt" data-rv-view="5432">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Syntax of for loop in Kotlin:</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">for (item in collection){
+//body of loop
+}
+</code></pre></div>
+
+
+<section class="cid-rLHefKSGjT" id="image2-ce" data-rv-view="5434">
+
+    
+
+    <figure class="mbr-figure container">
+        <div class="image-block" style="width: 53%;">
+            <img src="assets/images/java-for-loop-916x1080.png" alt="Mobirise" title="" media-simple="true">
+            <figcaption class="mbr-figure-caption mbr-figure-caption-over">
+                <div class="container pb-5 mbr-white align-center mbr-fonts-style display-1"></div>
+            </figcaption>
+        </div>
+    </figure>
+</section>
+
+<section class="mbr-section article content1 cid-rLHbA2yQNf" id="content1-bw" data-rv-view="5436">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Iterate through array</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLHbE95Spp" id="content1-bx" data-rv-view="5437">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Let's see a simple example of iterating the elements of array.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args : Array&lt;String&gt;) {
+    val marks = arrayOf(80,85,60,90,70)
+    for(item in marks){
+        println(item)
+    }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLHbEO8F2m" id="content1-bz" data-rv-view="5439">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">80
+85
+60
+90
+70
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLHbNoHNTN" id="content1-c1" data-rv-view="5441">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">If the body of for loop contains only one single line of statement, it is not necessary to enclose within <strong>curly braces {}</strong>.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args : Array&lt;String&gt;) {
+    val marks = arrayOf(80,85,60,90,70)
+    for(item in marks)
+        println(item)
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLHbNYYkW5" id="content1-c3" data-rv-view="5443">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The elements of an array are iterated on the basis of indices (index) of array. For example:</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args : Array&lt;String&gt;) {
+    val marks = arrayOf(80,85,60,90,70)
+    for(item in marks.indices)
+    println("marks[$item]: "+ marks[item])
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLHbYANp7B" id="content1-c5" data-rv-view="5445">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">marks[0]: 80
+marks[1]: 85
+marks[2]: 60
+marks[3]: 90
+marks[4]: 70
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLHc3BcMwS" id="content1-c7" data-rv-view="5447">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Iterate through range</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLHc4E9Vb6" id="content1-c8" data-rv-view="5448">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Let's see an example of iterating the elements of range.</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args : Array&lt;String&gt;) {
+    print("for (i in 1..5) print(i) = ")
+    for (i in 1..5) print(i)
+    println()
+    print("for (i in 5..1) print(i) = ")
+    for (i in 5..1) print(i) // prints nothing
+    println()
+    print("for (i in 5 downTo 1) print(i) = ")
+    for (i in 5 downTo 1) print(i)
+    println()
+    print("for (i in 5 downTo 2) print(i) = ")
+    for (i in 5 downTo 2) print(i)
+    println()
+    print("for (i in 1..5 step 2) print(i) = ")
+    for (i in 1..5 step 2) print(i)
+    println()
+    print("for (i in 5 downTo 1 step 2) print(i) = ")
+    for (i in 5 downTo 1 step 2) print(i)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rLHc5YuERy" id="content1-ca" data-rv-view="5450">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">for (i in 1..5) print(i) = 12345
+for (i in 5..1) print(i) =
+for (i in 5 downTo 1) print(i) = 54321
+for (i in 5 downTo 2) print(i) = 5432
+for (i in 1..5 step 2) print(i) = 135
+for (i in 5 downTo 1 step 2) print(i) = 531
+</code></pre></div>
+
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin Variables</title>
+  <link rel="stylesheet" href="plugin/prism.css">
+<script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rLvrTBEoCw" id="content1-27" data-rv-view="4642">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin Variables</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/q">bootstrap carousel</a></section><section class="mbr-section article content1 cid-rLvs2bstmV" id="content1-28" data-rv-view="4643">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Variable refers to a <strong>memory location</strong>. It is used to store data. The data of variable can be changed and reused depending on condition or on information passed to the program.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLvs8XkiQP" id="content1-29" data-rv-view="4644">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Variable Declaration</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLvscEmE9S" id="content1-2a" data-rv-view="4645">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin variable is declared using keyword <strong>var</strong> and <strong>val</strong>.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <pre><code class="language-kotlin">var name ="apkzube"
+val payment = 25</code></pre></div>  
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The difference between var and val is specified later on this page.
+<div>
+</div><br/><div>Here, variable name is <strong>String</strong> type and variable payment is <strong>Int</strong> type. We don't require specifying the type of variable explicitly. Kotlin complier knows this by initilizer expression ("apkzube" is a String and 25 is an Int value). This is called type inference in programming.
+</div><div>
+</div><div>We can also explicitly specify the type of variable while declaring it.</div></div>
+        </div>
+    </div>
+    <br/>
+</section>
+
+<div class="container">
+    <pre><code class="language-kotlin">var name: String ="apkzube"
+val payment: Int = 25 </code></pre></div>  
+     
+
+    <div class="container">
+        <br/>
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">It is not necessary to initialize variable at the time of its declaration. Variable can be initialized later on when the program is executed.</div>
+        </div>
+    </div>
+    <br/>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">
+var name: String
+... ... ...
+name = "Java"
+val payment: Int
+... ... ...
+payment = 25
+</code></pre></div>  
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <br/>
+                <ul>
+                    <li><strong>Here are few examples that results into error.</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">var name // Error
+name = "apkzube"
+</code></pre></div>
+
+
+
+<br/>
+<div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Here, the type of <strong>name</strong> variable is not explicitly specified, nor the variable is initialized during declaration.</div>
+        </div>
+</div>
+</section>
+<br/>
+
+<div class="container">
+<pre><code class="language-kotlin">
+var payment: String
+payment = 14 // Error
+</code></pre></div>
+
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Here, we are trying to assign 14 (<strong>integer value</strong>) to variable of different type (<strong>String</strong>).</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLvu9pjVCh" id="content1-2m" data-rv-view="4656">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Difference Between var and val</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content11 cid-rLvufnvJlQ" id="content11-2n" data-rv-view="4657">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ol>
+                    <li><strong>val (Immutable reference)</strong> <strong>-</strong> The variable declared using val keyword cannot be changed once the value is assigned. It is similar to final variable in Java.
+</li><li><strong>var (Mutable reference)</strong> <strong>-</strong> The variable declared using var keyword can be changed later in the program. It corresponds to regular Java variable.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLvuRB2G8p" id="content1-2o" data-rv-view="4658">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Here are few examples:</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">var userName = "Vishal"
+userName = "Rahul"
+</code></pre></div>
+
+<br/>
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Here, <strong>userName</strong> variable is reassigned to Rahul. Since, the variable is declared using var, this code work perfectly.</div>
+        </div>
+    </div>
+</section>
+<br/>
+<div class="container">
+<pre><code class="language-kotlin">
+val userName = "Vishal"
+userName = "Rahul" // Error
+</code></pre></div>
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">You cannot reassign language variable to German in the above example because the variable is declared using <strong>val</strong>.</div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

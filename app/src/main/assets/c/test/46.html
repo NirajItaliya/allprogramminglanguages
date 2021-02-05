@@ -1,0 +1,76 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic"> * Recursive C program to find length of a linked list</span>
+    <span style="color: #999999; font-style: italic"> */</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdio.h&gt;</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdlib.h&gt;</span>
+     
+    <span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">node</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">a;</span>
+        <span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">*next;</span>
+    <span style="color: #d0d0d0">};</span>
+     
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">generate</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">**);</span>
+    <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #447fcf">length</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">node*);</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">delete</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">**);</span>
+     
+    <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #447fcf">main</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">*head</span> <span style="color: #d0d0d0">=</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">count;</span>
+     
+        <span style="color: #d0d0d0">generate(&amp;head);</span>
+        <span style="color: #d0d0d0">count</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">length(head);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;The number of nodes are: %d\n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">count);</span>
+        <span style="color: #d0d0d0">delete(&amp;head);</span>
+        <span style="color: #6ab825; font-weight: bold">return</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #d0d0d0">}</span>
+     
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">generate</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">**head)</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #999999; font-style: italic">/* for unknown number of nodes use num = rand() % 20; */</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">num</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">10</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">i;</span>
+        <span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">*temp;</span>
+     
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">num;</span> <span style="color: #d0d0d0">i++)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">temp</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">*)malloc(</span><span style="color: #6ab825; font-weight: bold">sizeof</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">node));</span>
+            <span style="color: #d0d0d0">temp-&gt;a</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">i;</span>
+            <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(*head</span> <span style="color: #d0d0d0">==</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #d0d0d0">*head</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp;</span>
+                <span style="color: #d0d0d0">(*head)-&gt;next</span> <span style="color: #d0d0d0">=</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #d0d0d0">}</span>
+            <span style="color: #6ab825; font-weight: bold">else</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #d0d0d0">temp-&gt;next</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">*head;</span>
+                <span style="color: #d0d0d0">*head</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp;</span>
+            <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">}</span>
+    <span style="color: #d0d0d0">}</span>
+     
+    <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #447fcf">length</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">*head)</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(head-&gt;next</span> <span style="color: #d0d0d0">==</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #6ab825; font-weight: bold">return</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">return</span> <span style="color: #d0d0d0">(</span><span style="color: #3677a9">1</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">length(head-&gt;next));</span>
+    <span style="color: #d0d0d0">}</span>
+     
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">delete</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">**head)</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">*temp;</span>
+        <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(*head</span> <span style="color: #d0d0d0">!=</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">temp</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">*head;</span>
+            <span style="color: #d0d0d0">*head</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">(*head)-&gt;next;</span>
+            <span style="color: #d0d0d0">free(temp);</span>
+        <span style="color: #d0d0d0">}</span>
+    <span style="color: #d0d0d0">}</span>
+    
+    
+    <span style="color: #d0d0d0">&gt;&gt;Output:</span>
+    <span style="color: #d0d0d0">The</span> <span style="color: #d0d0d0">number</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">nodes</span> <span style="color: #d0d0d0">are:</span> <span style="color: #3677a9">10</span>
+    </pre></div>

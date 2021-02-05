@@ -1,0 +1,290 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic"> * C Program to find the possible subsets of the String</span>
+    <span style="color: #999999; font-style: italic"> */</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdio.h&gt;</span>
+     
+    <span style="color: #6ab825; font-weight: bold">char</span> <span style="color: #d0d0d0">string[</span><span style="color: #3677a9">50</span><span style="color: #d0d0d0">],</span> <span style="color: #d0d0d0">n;</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">subset</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">int</span><span style="color: #d0d0d0">,</span> <span style="color: #6ab825; font-weight: bold">int</span><span style="color: #d0d0d0">,</span> <span style="color: #6ab825; font-weight: bold">int</span><span style="color: #d0d0d0">);</span>
+     
+    <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #447fcf">main</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">i,</span> <span style="color: #d0d0d0">len;</span>
+     
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter the len of main set : &quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;len);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter the elements of main set : &quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%s&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">string);</span>
+        <span style="color: #d0d0d0">n</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">len;</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;The subsets are :\n&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;i</span> <span style="color: #d0d0d0">&lt;=</span> <span style="color: #d0d0d0">n;i++)</span>
+            <span style="color: #d0d0d0">subset(</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">i);</span>
+    <span style="color: #d0d0d0">}</span>
+     
+    <span style="color: #999999; font-style: italic">/*Function to find the number of subsets in the given string*/</span>
+     
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">subset</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">start,</span> <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">index,</span> <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">num_sub)</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">i,</span> <span style="color: #d0d0d0">j;</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(index</span> <span style="color: #d0d0d0">-</span> <span style="color: #d0d0d0">start</span> <span style="color: #d0d0d0">+</span> <span style="color: #3677a9">1</span>  <span style="color: #d0d0d0">==</span>  <span style="color: #d0d0d0">num_sub)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(num_sub</span>  <span style="color: #d0d0d0">==</span>  <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">n;i++)</span>
+                    <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;%c\n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">string[i]);</span>
+            <span style="color: #d0d0d0">}</span>
+            <span style="color: #6ab825; font-weight: bold">else</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(j</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">index;j</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">n;j++)</span>
+                <span style="color: #d0d0d0">{</span>
+                    <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">start;i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">index;i++)</span>
+                        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;%c&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">string[i]);</span>
+                    <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;%c\n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">string[j]);</span>
+                <span style="color: #d0d0d0">}</span>
+                <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(start</span> <span style="color: #d0d0d0">!=</span> <span style="color: #d0d0d0">n</span> <span style="color: #d0d0d0">-</span> <span style="color: #d0d0d0">num_sub)</span>
+                    <span style="color: #d0d0d0">subset(start</span> <span style="color: #d0d0d0">+</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">start</span> <span style="color: #d0d0d0">+</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">num_sub);</span>
+            <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">else</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">subset(start,</span> <span style="color: #d0d0d0">index</span> <span style="color: #d0d0d0">+</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">num_sub);</span>
+        <span style="color: #d0d0d0">}</span>
+    <span style="color: #d0d0d0">}</span>
+    
+    
+    <span style="color: #d0d0d0">&gt;&gt;output:</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">len</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">main</span> <span style="color: #d0d0d0">set</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">11</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">elements</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">main</span> <span style="color: #d0d0d0">set</span> <span style="color: #d0d0d0">:</span> <span style="color: #d0d0d0">programming</span>
+    <span style="color: #d0d0d0">The</span> <span style="color: #d0d0d0">subsets</span> <span style="color: #d0d0d0">are</span> <span style="color: #d0d0d0">:</span>
+    <span style="color: #d0d0d0">p</span>
+    <span style="color: #d0d0d0">r</span>
+    <span style="color: #d0d0d0">o</span>
+    <span style="color: #d0d0d0">g</span>
+    <span style="color: #d0d0d0">r</span>
+    <span style="color: #d0d0d0">a</span>
+    <span style="color: #d0d0d0">m</span>
+    <span style="color: #d0d0d0">m</span>
+    <span style="color: #d0d0d0">i</span>
+    <span style="color: #d0d0d0">n</span>
+    <span style="color: #d0d0d0">g</span>
+    <span style="color: #d0d0d0">pr</span>
+    <span style="color: #d0d0d0">po</span>
+    <span style="color: #d0d0d0">pg</span>
+    <span style="color: #d0d0d0">pr</span>
+    <span style="color: #d0d0d0">pa</span>
+    <span style="color: #d0d0d0">pm</span>
+    <span style="color: #d0d0d0">pm</span>
+    <span style="color: #d0d0d0">pi</span>
+    <span style="color: #d0d0d0">pn</span>
+    <span style="color: #d0d0d0">pg</span>
+    <span style="color: #d0d0d0">ro</span>
+    <span style="color: #d0d0d0">rg</span>
+    <span style="color: #d0d0d0">rr</span>
+    <span style="color: #d0d0d0">ra</span>
+    <span style="color: #d0d0d0">rm</span>
+    <span style="color: #d0d0d0">rm</span>
+    <span style="color: #d0d0d0">ri</span>
+    <span style="color: #d0d0d0">rn</span>
+    <span style="color: #d0d0d0">rg</span>
+    <span style="color: #d0d0d0">og</span>
+    <span style="color: #d0d0d0">or</span>
+    <span style="color: #d0d0d0">oa</span>
+    <span style="color: #d0d0d0">om</span>
+    <span style="color: #d0d0d0">om</span>
+    <span style="color: #d0d0d0">oi</span>
+    <span style="color: #d0d0d0">on</span>
+    <span style="color: #d0d0d0">og</span>
+    <span style="color: #d0d0d0">gr</span>
+    <span style="color: #d0d0d0">ga</span>
+    <span style="color: #d0d0d0">gm</span>
+    <span style="color: #d0d0d0">gm</span>
+    <span style="color: #d0d0d0">gi</span>
+    <span style="color: #d0d0d0">gn</span>
+    <span style="color: #d0d0d0">gg</span>
+    <span style="color: #d0d0d0">ra</span>
+    <span style="color: #d0d0d0">rm</span>
+    <span style="color: #d0d0d0">rm</span>
+    <span style="color: #d0d0d0">ri</span>
+    <span style="color: #d0d0d0">rn</span>
+    <span style="color: #d0d0d0">rg</span>
+    <span style="color: #d0d0d0">am</span>
+    <span style="color: #d0d0d0">am</span>
+    <span style="color: #d0d0d0">ai</span>
+    <span style="color: #d0d0d0">an</span>
+    <span style="color: #d0d0d0">ag</span>
+    <span style="color: #d0d0d0">mm</span>
+    <span style="color: #d0d0d0">mi</span>
+    <span style="color: #d0d0d0">mn</span>
+    <span style="color: #d0d0d0">mg</span>
+    <span style="color: #d0d0d0">mi</span>
+    <span style="color: #d0d0d0">mn</span>
+    <span style="color: #d0d0d0">mg</span>
+    <span style="color: #d0d0d0">in</span>
+    <span style="color: #d0d0d0">ig</span>
+    <span style="color: #d0d0d0">ng</span>
+    <span style="color: #d0d0d0">pro</span>
+    <span style="color: #d0d0d0">prg</span>
+    <span style="color: #d0d0d0">prr</span>
+    <span style="color: #d0d0d0">pra</span>
+    <span style="color: #d0d0d0">prm</span>
+    <span style="color: #d0d0d0">prm</span>
+    <span style="color: #d0d0d0">pri</span>
+    <span style="color: #d0d0d0">prn</span>
+    <span style="color: #d0d0d0">prg</span>
+    <span style="color: #d0d0d0">rog</span>
+    <span style="color: #d0d0d0">ror</span>
+    <span style="color: #d0d0d0">roa</span>
+    <span style="color: #d0d0d0">rom</span>
+    <span style="color: #d0d0d0">rom</span>
+    <span style="color: #d0d0d0">roi</span>
+    <span style="color: #d0d0d0">ron</span>
+    <span style="color: #d0d0d0">rog</span>
+    <span style="color: #d0d0d0">ogr</span>
+    <span style="color: #d0d0d0">oga</span>
+    <span style="color: #d0d0d0">ogm</span>
+    <span style="color: #d0d0d0">ogm</span>
+    <span style="color: #d0d0d0">ogi</span>
+    <span style="color: #d0d0d0">ogn</span>
+    <span style="color: #d0d0d0">ogg</span>
+    <span style="color: #d0d0d0">gra</span>
+    <span style="color: #d0d0d0">grm</span>
+    <span style="color: #d0d0d0">grm</span>
+    <span style="color: #d0d0d0">gri</span>
+    <span style="color: #d0d0d0">grn</span>
+    <span style="color: #d0d0d0">grg</span>
+    <span style="color: #d0d0d0">ram</span>
+    <span style="color: #d0d0d0">ram</span>
+    <span style="color: #d0d0d0">rai</span>
+    <span style="color: #d0d0d0">ran</span>
+    <span style="color: #d0d0d0">rag</span>
+    <span style="color: #d0d0d0">amm</span>
+    <span style="color: #d0d0d0">ami</span>
+    <span style="color: #d0d0d0">amn</span>
+    <span style="color: #d0d0d0">amg</span>
+    <span style="color: #d0d0d0">mmi</span>
+    <span style="color: #d0d0d0">mmn</span>
+    <span style="color: #d0d0d0">mmg</span>
+    <span style="color: #d0d0d0">min</span>
+    <span style="color: #d0d0d0">mig</span>
+    <span style="color: #d0d0d0">ing</span>
+    <span style="color: #d0d0d0">prog</span>
+    <span style="color: #d0d0d0">pror</span>
+    <span style="color: #d0d0d0">proa</span>
+    <span style="color: #d0d0d0">prom</span>
+    <span style="color: #d0d0d0">prom</span>
+    <span style="color: #d0d0d0">proi</span>
+    <span style="color: #d0d0d0">pron</span>
+    <span style="color: #d0d0d0">prog</span>
+    <span style="color: #d0d0d0">rogr</span>
+    <span style="color: #d0d0d0">roga</span>
+    <span style="color: #d0d0d0">rogm</span>
+    <span style="color: #d0d0d0">rogm</span>
+    <span style="color: #d0d0d0">rogi</span>
+    <span style="color: #d0d0d0">rogn</span>
+    <span style="color: #d0d0d0">rogg</span>
+    <span style="color: #d0d0d0">ogra</span>
+    <span style="color: #d0d0d0">ogrm</span>
+    <span style="color: #d0d0d0">ogrm</span>
+    <span style="color: #d0d0d0">ogri</span>
+    <span style="color: #d0d0d0">ogrn</span>
+    <span style="color: #d0d0d0">ogrg</span>
+    <span style="color: #d0d0d0">gram</span>
+    <span style="color: #d0d0d0">gram</span>
+    <span style="color: #d0d0d0">grai</span>
+    <span style="color: #d0d0d0">gran</span>
+    <span style="color: #d0d0d0">grag</span>
+    <span style="color: #d0d0d0">ramm</span>
+    <span style="color: #d0d0d0">rami</span>
+    <span style="color: #d0d0d0">ramn</span>
+    <span style="color: #d0d0d0">ramg</span>
+    <span style="color: #d0d0d0">ammi</span>
+    <span style="color: #d0d0d0">ammn</span>
+    <span style="color: #d0d0d0">ammg</span>
+    <span style="color: #d0d0d0">mmin</span>
+    <span style="color: #d0d0d0">mmig</span>
+    <span style="color: #d0d0d0">ming</span>
+    <span style="color: #d0d0d0">progr</span>
+    <span style="color: #d0d0d0">proga</span>
+    <span style="color: #d0d0d0">progm</span>
+    <span style="color: #d0d0d0">progm</span>
+    <span style="color: #d0d0d0">progi</span>
+    <span style="color: #d0d0d0">progn</span>
+    <span style="color: #d0d0d0">progg</span>
+    <span style="color: #d0d0d0">rogra</span>
+    <span style="color: #d0d0d0">rogrm</span>
+    <span style="color: #d0d0d0">rogrm</span>
+    <span style="color: #d0d0d0">rogri</span>
+    <span style="color: #d0d0d0">rogrn</span>
+    <span style="color: #d0d0d0">rogrg</span>
+    <span style="color: #d0d0d0">ogram</span>
+    <span style="color: #d0d0d0">ogram</span>
+    <span style="color: #d0d0d0">ograi</span>
+    <span style="color: #d0d0d0">ogran</span>
+    <span style="color: #d0d0d0">ograg</span>
+    <span style="color: #d0d0d0">gramm</span>
+    <span style="color: #d0d0d0">grami</span>
+    <span style="color: #d0d0d0">gramn</span>
+    <span style="color: #d0d0d0">gramg</span>
+    <span style="color: #d0d0d0">rammi</span>
+    <span style="color: #d0d0d0">rammn</span>
+    <span style="color: #d0d0d0">rammg</span>
+    <span style="color: #d0d0d0">ammin</span>
+    <span style="color: #d0d0d0">ammig</span>
+    <span style="color: #d0d0d0">mming</span>
+    <span style="color: #d0d0d0">progra</span>
+    <span style="color: #d0d0d0">progrm</span>
+    <span style="color: #d0d0d0">progrm</span>
+    <span style="color: #d0d0d0">progri</span>
+    <span style="color: #d0d0d0">progrn</span>
+    <span style="color: #d0d0d0">progrg</span>
+    <span style="color: #d0d0d0">rogram</span>
+    <span style="color: #d0d0d0">rogram</span>
+    <span style="color: #d0d0d0">rograi</span>
+    <span style="color: #d0d0d0">rogran</span>
+    <span style="color: #d0d0d0">rograg</span>
+    <span style="color: #d0d0d0">ogramm</span>
+    <span style="color: #d0d0d0">ogrami</span>
+    <span style="color: #d0d0d0">ogramn</span>
+    <span style="color: #d0d0d0">ogramg</span>
+    <span style="color: #d0d0d0">grammi</span>
+    <span style="color: #d0d0d0">grammn</span>
+    <span style="color: #d0d0d0">grammg</span>
+    <span style="color: #d0d0d0">rammin</span>
+    <span style="color: #d0d0d0">rammig</span>
+    <span style="color: #d0d0d0">amming</span>
+    <span style="color: #d0d0d0">program</span>
+    <span style="color: #d0d0d0">program</span>
+    <span style="color: #d0d0d0">prograi</span>
+    <span style="color: #d0d0d0">progran</span>
+    <span style="color: #d0d0d0">prograg</span>
+    <span style="color: #d0d0d0">rogramm</span>
+    <span style="color: #d0d0d0">rogrami</span>
+    <span style="color: #d0d0d0">rogramn</span>
+    <span style="color: #d0d0d0">rogramg</span>
+    <span style="color: #d0d0d0">ogrammi</span>
+    <span style="color: #d0d0d0">ogrammn</span>
+    <span style="color: #d0d0d0">ogrammg</span>
+    <span style="color: #d0d0d0">grammin</span>
+    <span style="color: #d0d0d0">grammig</span>
+    <span style="color: #d0d0d0">ramming</span>
+    <span style="color: #d0d0d0">programm</span>
+    <span style="color: #d0d0d0">programi</span>
+    <span style="color: #d0d0d0">programn</span>
+    <span style="color: #d0d0d0">programg</span>
+    <span style="color: #d0d0d0">rogrammi</span>
+    <span style="color: #d0d0d0">rogrammn</span>
+    <span style="color: #d0d0d0">rogrammg</span>
+    <span style="color: #d0d0d0">ogrammin</span>
+    <span style="color: #d0d0d0">ogrammig</span>
+    <span style="color: #d0d0d0">gramming</span>
+    <span style="color: #d0d0d0">programmi</span>
+    <span style="color: #d0d0d0">programmn</span>
+    <span style="color: #d0d0d0">programmg</span>
+    <span style="color: #d0d0d0">rogrammin</span>
+    <span style="color: #d0d0d0">rogrammig</span>
+    <span style="color: #d0d0d0">ogramming</span>
+    <span style="color: #d0d0d0">programmin</span>
+    <span style="color: #d0d0d0">programmig</span>
+    <span style="color: #d0d0d0">rogramming</span>
+    <span style="color: #d0d0d0">programming</span>
+    </pre></div>

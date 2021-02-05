@@ -1,0 +1,85 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #272822; overflow:auto;width:auto;font-size:10px">
+    <table>
+        <tr>
+
+            <td><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">java.util.Scanner</span><span style="color: #f92672">;</span>
+   <span style="color: #66d9ef">class</span> <span style="color: #a6e22e">BinarySearchExample</span>
+   <span style="color: #f92672">{</span>
+      <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">main</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">args</span><span style="color: #f92672">[])</span>
+      <span style="color: #f92672">{</span>
+         <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">counter</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">num</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">item</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">array</span><span style="color: #f92672">[],</span> <span style="color: #f8f8f2">first</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">last</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">middle</span><span style="color: #f92672">;</span>
+         <span style="color: #75715e">//To capture user input</span>
+         <span style="color: #f8f8f2">Scanner</span> <span style="color: #f8f8f2">input</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #f8f8f2">Scanner</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">in</span><span style="color: #f92672">);</span>
+         <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;Enter number of elements:&quot;</span><span style="color: #f92672">);</span>
+         <span style="color: #f8f8f2">num</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">input</span><span style="color: #f92672">.</span><span style="color: #a6e22e">nextInt</span><span style="color: #f92672">();</span> 
+   
+         <span style="color: #75715e">//Creating array to store the all the numbers</span>
+         <span style="color: #f8f8f2">array</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #66d9ef">int</span><span style="color: #f92672">[</span><span style="color: #f8f8f2">num</span><span style="color: #f92672">];</span>
+   
+         <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;Enter &quot;</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">num</span> <span style="color: #f92672">+</span> <span style="color: #e6db74">&quot; integers&quot;</span><span style="color: #f92672">);</span>
+         <span style="color: #75715e">//Loop to store each numbers in array</span>
+         <span style="color: #66d9ef">for</span> <span style="color: #f92672">(</span><span style="color: #f8f8f2">counter</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f92672">;</span> <span style="color: #f8f8f2">counter</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">num</span><span style="color: #f92672">;</span> <span style="color: #f8f8f2">counter</span><span style="color: #f92672">++)</span>
+             <span style="color: #f8f8f2">array</span><span style="color: #f92672">[</span><span style="color: #f8f8f2">counter</span><span style="color: #f92672">]</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">input</span><span style="color: #f92672">.</span><span style="color: #a6e22e">nextInt</span><span style="color: #f92672">();</span>
+   
+         <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;Enter the search value:&quot;</span><span style="color: #f92672">);</span>
+         <span style="color: #f8f8f2">item</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">input</span><span style="color: #f92672">.</span><span style="color: #a6e22e">nextInt</span><span style="color: #f92672">();</span>
+         <span style="color: #f8f8f2">first</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f92672">;</span>
+         <span style="color: #f8f8f2">last</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">num</span> <span style="color: #f92672">-</span> <span style="color: #ae81ff">1</span><span style="color: #f92672">;</span>
+         <span style="color: #f8f8f2">middle</span> <span style="color: #f92672">=</span> <span style="color: #f92672">(</span><span style="color: #f8f8f2">first</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">last</span><span style="color: #f92672">)/</span><span style="color: #ae81ff">2</span><span style="color: #f92672">;</span>
+   
+         <span style="color: #66d9ef">while</span><span style="color: #f92672">(</span> <span style="color: #f8f8f2">first</span> <span style="color: #f92672">&lt;=</span> <span style="color: #f8f8f2">last</span> <span style="color: #f92672">)</span>
+         <span style="color: #f92672">{</span>
+            <span style="color: #66d9ef">if</span> <span style="color: #f92672">(</span> <span style="color: #f8f8f2">array</span><span style="color: #f92672">[</span><span style="color: #f8f8f2">middle</span><span style="color: #f92672">]</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">item</span> <span style="color: #f92672">)</span>
+              <span style="color: #f8f8f2">first</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">middle</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">1</span><span style="color: #f92672">;</span>
+            <span style="color: #66d9ef">else</span> <span style="color: #a6e22e">if</span> <span style="color: #f92672">(</span> <span style="color: #f8f8f2">array</span><span style="color: #f92672">[</span><span style="color: #f8f8f2">middle</span><span style="color: #f92672">]</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">item</span> <span style="color: #f92672">)</span>
+            <span style="color: #f92672">{</span>
+              <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">item</span> <span style="color: #f92672">+</span> <span style="color: #e6db74">&quot; found at location &quot;</span> <span style="color: #f92672">+</span> <span style="color: #f92672">(</span><span style="color: #f8f8f2">middle</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">1</span><span style="color: #f92672">)</span> <span style="color: #f92672">+</span> <span style="color: #e6db74">&quot;.&quot;</span><span style="color: #f92672">);</span>
+              <span style="color: #66d9ef">break</span><span style="color: #f92672">;</span>
+            <span style="color: #f92672">}</span>
+            <span style="color: #66d9ef">else</span>
+            <span style="color: #f92672">{</span>
+                <span style="color: #f8f8f2">last</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">middle</span> <span style="color: #f92672">-</span> <span style="color: #ae81ff">1</span><span style="color: #f92672">;</span>
+            <span style="color: #f92672">}</span>
+            <span style="color: #f8f8f2">middle</span> <span style="color: #f92672">=</span> <span style="color: #f92672">(</span><span style="color: #f8f8f2">first</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">last</span><span style="color: #f92672">)/</span><span style="color: #ae81ff">2</span><span style="color: #f92672">;</span>
+         <span style="color: #f92672">}</span>
+         <span style="color: #66d9ef">if</span> <span style="color: #f92672">(</span> <span style="color: #f8f8f2">first</span> <span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">last</span> <span style="color: #f92672">)</span>
+             <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">item</span> <span style="color: #f92672">+</span> <span style="color: #e6db74">&quot; is not found.\n&quot;</span><span style="color: #f92672">);</span>
+      <span style="color: #f92672">}</span>
+   <span style="color: #f92672">}</span>
+   
+   
+   <span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">Output</span> <span style="color: #ae81ff">1</span><span style="color: #f92672">:</span>
+   
+   <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">number</span> <span style="color: #f8f8f2">of</span> <span style="color: #f8f8f2">elements:</span>
+   <span style="color: #ae81ff">7</span>
+   <span style="color: #f8f8f2">Enter</span> <span style="color: #ae81ff">7</span> <span style="color: #f8f8f2">integers</span>
+   <span style="color: #ae81ff">4</span>
+   <span style="color: #ae81ff">5</span>
+   <span style="color: #ae81ff">66</span>
+   <span style="color: #ae81ff">77</span>
+   <span style="color: #ae81ff">8</span>
+   <span style="color: #ae81ff">99</span>
+   <span style="color: #ae81ff">0</span>
+   <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">search</span> <span style="color: #f8f8f2">value:</span>
+   <span style="color: #ae81ff">77</span>
+   <span style="color: #ae81ff">77</span> <span style="color: #f8f8f2">found</span> <span style="color: #f8f8f2">at</span> <span style="color: #f8f8f2">location</span> <span style="color: #ae81ff">4</span><span style="color: #f92672">.</span>
+   
+   
+   <span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">Output</span> <span style="color: #ae81ff">2</span><span style="color: #f92672">:</span>
+   
+   <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">number</span> <span style="color: #f8f8f2">of</span> <span style="color: #f8f8f2">elements:</span>
+   <span style="color: #ae81ff">5</span>
+   <span style="color: #f8f8f2">Enter</span> <span style="color: #ae81ff">5</span> <span style="color: #f8f8f2">integers</span>
+   <span style="color: #ae81ff">12</span>
+   <span style="color: #ae81ff">3</span>
+   <span style="color: #ae81ff">77</span>
+   <span style="color: #ae81ff">890</span>
+   <span style="color: #ae81ff">23</span>
+   <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">search</span> <span style="color: #f8f8f2">value:</span>
+   <span style="color: #ae81ff">99</span>
+   <span style="color: #ae81ff">99</span> <span style="color: #f8f8f2">is</span> <span style="color: #f8f8f2">not</span> <span style="color: #f8f8f2">found</span><span style="color: #f92672">.</span>
+   </pre></td>
+        </tr>
+    </table>
+</div>

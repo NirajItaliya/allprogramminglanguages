@@ -1,0 +1,37 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic"> * C Program to Print Armstrong Number from 1 to 1000</span>
+    <span style="color: #999999; font-style: italic"> */</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdio.h&gt;</span>
+     
+    <span style="color: #d0d0d0">main()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">number,</span> <span style="color: #d0d0d0">temp,</span> <span style="color: #d0d0d0">digit1,</span> <span style="color: #d0d0d0">digit2,</span> <span style="color: #d0d0d0">digit3;</span>
+     
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Print all Armstrong numbers between 1 and 1000:\n&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">number</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">001</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(number</span> <span style="color: #d0d0d0">&lt;=</span> <span style="color: #3677a9">900</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">digit1</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">number</span> <span style="color: #d0d0d0">-</span> <span style="color: #d0d0d0">((number</span> <span style="color: #d0d0d0">/</span> <span style="color: #3677a9">10</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">*</span> <span style="color: #3677a9">10</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">digit2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">(number</span> <span style="color: #d0d0d0">/</span> <span style="color: #3677a9">10</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">-</span> <span style="color: #d0d0d0">((number</span> <span style="color: #d0d0d0">/</span> <span style="color: #3677a9">100</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">*</span> <span style="color: #3677a9">10</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">digit3</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">(number</span> <span style="color: #d0d0d0">/</span> <span style="color: #3677a9">100</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">-</span> <span style="color: #d0d0d0">((number</span> <span style="color: #d0d0d0">/</span> <span style="color: #3677a9">1000</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">*</span> <span style="color: #3677a9">10</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">temp</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">(digit1</span> <span style="color: #d0d0d0">*</span> <span style="color: #d0d0d0">digit1</span> <span style="color: #d0d0d0">*</span> <span style="color: #d0d0d0">digit1)</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">(digit2</span> <span style="color: #d0d0d0">*</span> <span style="color: #d0d0d0">digit2</span> <span style="color: #d0d0d0">*</span> <span style="color: #d0d0d0">digit2)</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">(digit3</span> <span style="color: #d0d0d0">*</span> <span style="color: #d0d0d0">digit3</span> <span style="color: #d0d0d0">*</span> <span style="color: #d0d0d0">digit3);</span>
+            <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(temp</span> <span style="color: #d0d0d0">==</span> <span style="color: #d0d0d0">number)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Armstrong no is:%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">temp);</span>
+            <span style="color: #d0d0d0">}</span>
+            <span style="color: #d0d0d0">number++;</span>
+        <span style="color: #d0d0d0">}</span>
+    <span style="color: #d0d0d0">}</span>
+    
+    <span style="color: #d0d0d0">&gt;&gt;Output:</span>
+    <span style="color: #a61717; background-color: #e3d2d2">$</span> <span style="color: #d0d0d0">cc</span> <span style="color: #d0d0d0">pgm44.c</span>
+    <span style="color: #a61717; background-color: #e3d2d2">$</span> <span style="color: #d0d0d0">a.out</span>
+    <span style="color: #d0d0d0">Print</span> <span style="color: #d0d0d0">all</span> <span style="color: #d0d0d0">Armstrong</span> <span style="color: #d0d0d0">numbers</span> <span style="color: #d0d0d0">between</span> <span style="color: #3677a9">1</span> <span style="color: #d0d0d0">and</span> <span style="color: #3677a9">1000</span><span style="color: #d0d0d0">:</span>
+     
+    <span style="color: #d0d0d0">Amstrong</span> <span style="color: #d0d0d0">no</span> <span style="color: #d0d0d0">is:</span><span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">Amstrong</span> <span style="color: #d0d0d0">no</span> <span style="color: #d0d0d0">is:</span><span style="color: #3677a9">153</span>
+    <span style="color: #d0d0d0">Amstrong</span> <span style="color: #d0d0d0">no</span> <span style="color: #d0d0d0">is:</span><span style="color: #3677a9">370</span>
+    <span style="color: #d0d0d0">Amstrong</span> <span style="color: #d0d0d0">no</span> <span style="color: #d0d0d0">is:</span><span style="color: #3677a9">371</span>
+    <span style="color: #d0d0d0">Amstrong</span> <span style="color: #d0d0d0">no</span> <span style="color: #d0d0d0">is:</span><span style="color: #3677a9">407</span>
+    </pre></div>

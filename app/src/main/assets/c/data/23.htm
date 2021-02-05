@@ -1,0 +1,909 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:1.0cm 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB>
+
+<div class=WordSection1>
+
+<h1 align=center style='text-align:center;line-height:150%'>23. PREPROCESSORS</h1>
+
+<p class=MsoNormal style='line-height:150%'>&nbsp;</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The <b>C Preprocessor </b>is not a
+part of the compiler, but is a separate step in the compilation process. In
+simple terms, a C Preprocessor is just a text substitution tool and it
+instructs the compiler to do required preprocessing before the actual
+compilation. We'll refer to the C Preprocessor as CPP. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>All preprocessor commands begin with a
+hash symbol (#). It must be the first nonblank character, and for readability,
+a preprocessor directive should begin in the first column. The following
+section lists down all the important preprocessor directives:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div align=center>
+
+<table class=MsoTable15Grid4Accent2 border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:4.8pt'>
+  <td width=160 valign=top style='width:119.65pt;border:solid #ED7D31 1.0pt;
+  border-right:none;background:#ED7D31;padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+  line-height:150%'><b><span style='font-family:"Book Antiqua",serif;
+  color:white'>Directive</span></b></p>
+  </td>
+  <td width=160 valign=top style='width:119.65pt;border:solid #ED7D31 1.0pt;
+  border-left:none;background:#ED7D31;padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+  line-height:150%'><b><span style='font-family:"Book Antiqua",serif;
+  color:white'>Description</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:4.8pt'>
+  <td width=160 valign=top style='width:119.65pt;border:solid #F4B083 1.0pt;
+  border-top:none;background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><b><span
+  style='font-family:"Book Antiqua",serif'>#define </span></b></p>
+  </td>
+  <td width=160 valign=top style='width:119.65pt;border-top:none;border-left:
+  none;border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><span
+  style='font-family:"Book Antiqua",serif'>Substitutes a preprocessor macro. </span></p>
+  </td>
+ </tr>
+ <tr style='height:4.8pt'>
+  <td width=160 valign=top style='width:119.65pt;border:solid #F4B083 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><b><span
+  style='font-family:"Book Antiqua",serif'>#include </span></b></p>
+  </td>
+  <td width=160 valign=top style='width:119.65pt;border-top:none;border-left:
+  none;border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><span
+  style='font-family:"Book Antiqua",serif'>Inserts a particular header from
+  another file. </span></p>
+  </td>
+ </tr>
+ <tr style='height:4.8pt'>
+  <td width=160 valign=top style='width:119.65pt;border:solid #F4B083 1.0pt;
+  border-top:none;background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><b><span
+  style='font-family:"Book Antiqua",serif'>#undef </span></b></p>
+  </td>
+  <td width=160 valign=top style='width:119.65pt;border-top:none;border-left:
+  none;border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><span
+  style='font-family:"Book Antiqua",serif'>Undefines a preprocessor macro. </span></p>
+  </td>
+ </tr>
+ <tr style='height:4.8pt'>
+  <td width=160 valign=top style='width:119.65pt;border:solid #F4B083 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><b><span
+  style='font-family:"Book Antiqua",serif'>#ifdef </span></b></p>
+  </td>
+  <td width=160 valign=top style='width:119.65pt;border-top:none;border-left:
+  none;border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><span
+  style='font-family:"Book Antiqua",serif'>Returns true if this macro is
+  defined. </span></p>
+  </td>
+ </tr>
+ <tr style='height:4.8pt'>
+  <td width=160 valign=top style='width:119.65pt;border:solid #F4B083 1.0pt;
+  border-top:none;background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><b><span
+  style='font-family:"Book Antiqua",serif'>#ifndef </span></b></p>
+  </td>
+  <td width=160 valign=top style='width:119.65pt;border-top:none;border-left:
+  none;border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><span
+  style='font-family:"Book Antiqua",serif'>Returns true if this macro is not
+  defined. </span></p>
+  </td>
+ </tr>
+ <tr style='height:4.8pt'>
+  <td width=160 valign=top style='width:119.65pt;border:solid #F4B083 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><b><span
+  style='font-family:"Book Antiqua",serif'>#if </span></b></p>
+  </td>
+  <td width=160 valign=top style='width:119.65pt;border-top:none;border-left:
+  none;border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><span
+  style='font-family:"Book Antiqua",serif'>Tests if a compile time condition is
+  true. </span></p>
+  </td>
+ </tr>
+ <tr style='height:4.8pt'>
+  <td width=160 valign=top style='width:119.65pt;border:solid #F4B083 1.0pt;
+  border-top:none;background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><b><span
+  style='font-family:"Book Antiqua",serif'>#else </span></b></p>
+  </td>
+  <td width=160 valign=top style='width:119.65pt;border-top:none;border-left:
+  none;border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><span
+  style='font-family:"Book Antiqua",serif'>The alternative for #if. </span></p>
+  </td>
+ </tr>
+ <tr style='height:4.8pt'>
+  <td width=160 valign=top style='width:119.65pt;border:solid #F4B083 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><b><span
+  style='font-family:"Book Antiqua",serif'>#elif </span></b></p>
+  </td>
+  <td width=160 valign=top style='width:119.65pt;border-top:none;border-left:
+  none;border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><span
+  style='font-family:"Book Antiqua",serif'>#else and #if in one statement. </span></p>
+  </td>
+ </tr>
+ <tr style='height:4.8pt'>
+  <td width=160 valign=top style='width:119.65pt;border:solid #F4B083 1.0pt;
+  border-top:none;background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><b><span
+  style='font-family:"Book Antiqua",serif'>#endif </span></b></p>
+  </td>
+  <td width=160 valign=top style='width:119.65pt;border-top:none;border-left:
+  none;border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><span
+  style='font-family:"Book Antiqua",serif'>Ends preprocessor conditional. </span></p>
+  </td>
+ </tr>
+ <tr style='height:4.8pt'>
+  <td width=160 valign=top style='width:119.65pt;border:solid #F4B083 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><b><span
+  style='font-family:"Book Antiqua",serif'>#error </span></b></p>
+  </td>
+  <td width=160 valign=top style='width:119.65pt;border-top:none;border-left:
+  none;border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><span
+  style='font-family:"Book Antiqua",serif'>Prints error message on stderr. </span></p>
+  </td>
+ </tr>
+ <tr style='height:4.8pt'>
+  <td width=160 valign=top style='width:119.65pt;border:solid #F4B083 1.0pt;
+  border-top:none;background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><b><span
+  style='font-family:"Book Antiqua",serif'>#pragma </span></b></p>
+  </td>
+  <td width=160 valign=top style='width:119.65pt;border-top:none;border-left:
+  none;border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:4.8pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:150%'><span
+  style='font-family:"Book Antiqua",serif'>Issues special commands to the
+  compiler, using a standardized method.</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>Preprocessors Examples</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Analyze the following examples to
+understand various directives. </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>#define
+MAX_ARRAY_LENGTH 20 </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>This directive tells the CPP to
+replace instances of MAX_ARRAY_LENGTH with 20. Use <i>#define </i>for constants
+to increase readability. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>#include
+&lt;stdio.h&gt; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>#include
+&quot;myheader.h&quot; </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>These directives tell the CPP to get
+stdio.h from <b>System Libraries </b>and add the text to the current source
+file. The next line tells CPP to get <b>myheader.h </b>from the local directory
+and add the content to the current source file. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>#undef FILE_SIZE </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>#define FILE_SIZE
+42 </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>It tells the CPP to undefine existing
+FILE_SIZE and define it as 42. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>#ifndef MESSAGE </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>#define MESSAGE
+&quot;You wish!&quot; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>#endif </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>It tells the CPP to define MESSAGE
+only if MESSAGE isn't already defined. </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>#ifdef DEBUG </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>/* Your debugging
+statements here */ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>#endif </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>It tells the CPP to process the
+statements enclosed if DEBUG is defined. This is useful if you pass the <i>-DDEBUG
+</i>flag to the gcc compiler at the time of compilation. This will define
+DEBUG, so you can turn debugging on and off on-the-fly during compilation. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>Predefined Macros</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>ANSI C defines a number of macros.
+Although each one is available for use in programming, the predefined macros
+should not be directly modified.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div align=center>
+
+<table class=MsoTable15Grid4Accent6 border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:4.25pt'>
+  <td width=158 valign=top style='width:118.4pt;border:solid #70AD47 1.0pt;
+  border-right:none;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:4.25pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;text-align:justify;line-height:
+  150%'><b><span style='font-family:"Book Antiqua",serif;color:white'>Macro </span></b></p>
+  </td>
+  <td width=158 valign=top style='width:118.4pt;border:solid #70AD47 1.0pt;
+  border-left:none;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:4.25pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;text-align:justify;line-height:
+  150%'><b><span style='font-family:"Book Antiqua",serif;color:white'>Description
+  </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:9.95pt'>
+  <td width=158 valign=top style='width:118.4pt;border:solid #A8D08D 1.0pt;
+  border-top:none;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:9.95pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;text-align:justify;line-height:
+  150%'><b><span style='font-family:"Book Antiqua",serif'>__DATE__ </span></b></p>
+  </td>
+  <td width=158 valign=top style='width:118.4pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:9.95pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;text-align:justify;line-height:
+  150%'><span style='font-family:"Book Antiqua",serif'>The current date as a
+  character literal in &quot;MMM DD YYYY&quot; format. </span></p>
+  </td>
+ </tr>
+ <tr style='height:4.25pt'>
+  <td width=158 valign=top style='width:118.4pt;border:solid #A8D08D 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:4.25pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;text-align:justify;line-height:
+  150%'><b><span style='font-family:"Book Antiqua",serif'>__TIME__ </span></b></p>
+  </td>
+  <td width=158 valign=top style='width:118.4pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:4.25pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;text-align:justify;line-height:
+  150%'><span style='font-family:"Book Antiqua",serif'>The current time as a
+  character literal in &quot;HH:MM:SS&quot; format. </span></p>
+  </td>
+ </tr>
+ <tr style='height:4.25pt'>
+  <td width=158 valign=top style='width:118.4pt;border:solid #A8D08D 1.0pt;
+  border-top:none;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:4.25pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;text-align:justify;line-height:
+  150%'><b><span style='font-family:"Book Antiqua",serif'>__FILE__ </span></b></p>
+  </td>
+  <td width=158 valign=top style='width:118.4pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:4.25pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;text-align:justify;line-height:
+  150%'><span style='font-family:"Book Antiqua",serif'>This contains the
+  current filename as a string literal. </span></p>
+  </td>
+ </tr>
+ <tr style='height:4.25pt'>
+  <td width=158 valign=top style='width:118.4pt;border:solid #A8D08D 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:4.25pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;text-align:justify;line-height:
+  150%'><b><span style='font-family:"Book Antiqua",serif'>__LINE__ </span></b></p>
+  </td>
+  <td width=158 valign=top style='width:118.4pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:4.25pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;text-align:justify;line-height:
+  150%'><span style='font-family:"Book Antiqua",serif'>This contains the
+  current line number as a decimal constant. </span></p>
+  </td>
+ </tr>
+ <tr style='height:9.95pt'>
+  <td width=158 valign=top style='width:118.4pt;border:solid #A8D08D 1.0pt;
+  border-top:none;background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:9.95pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;text-align:justify;line-height:
+  150%'><b><span style='font-family:"Book Antiqua",serif'>__STDC__ </span></b></p>
+  </td>
+  <td width=158 valign=top style='width:118.4pt;border-top:none;border-left:
+  none;border-bottom:solid #A8D08D 1.0pt;border-right:solid #A8D08D 1.0pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:9.95pt'>
+  <p class=MsoNormal style='margin-bottom:8.0pt;text-align:justify;line-height:
+  150%'><span style='font-family:"Book Antiqua",serif'>Defined as 1 when the
+  compiler complies with the ANSI standard. </span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Let's try the following example: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>#include &lt;stdio.h&gt; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>main() </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>{ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>printf(&quot;File :%s\n&quot;, __FILE__ ); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>printf(&quot;Date :%s\n&quot;, __DATE__ ); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>printf(&quot;Time :%s\n&quot;, __TIME__ ); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>printf(&quot;Line :%d\n&quot;, __LINE__ ); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>printf(&quot;ANSI :%d\n&quot;, __STDC__ ); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When the above code in a file <b>test.c
+</b>is compiled and executed, it produces the following result: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>File :test.c </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Date :Jun 2 2012 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Time :03:36:24 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Line :8 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>ANSI :1</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>Preprocessor Operators</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The C preprocessor offers the
+following operators to help create macros: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif;color:#7030A0'>The Macro Continuation
+(\)Operator</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>A macro is normally confined to a
+single line. The macro continuation operator (\) is used to continue a macro
+that is too long for a single line. For example: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif;color:#00B0F0'>#define
+message_for(a, b) \ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif;color:#00B0F0'>printf(#a
+&quot; and &quot; #b &quot;: We love you!\n&quot;) </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif;color:#7030A0'>The Stringize (#)Operator</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The stringize or number-sign operator
+(#), when used within a macro definition, converts a macro parameter into a
+string constant. This operator may be used only in a macro having a specified
+argument or parameter list. For example: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>#include &lt;stdio.h&gt; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>#define message_for(a, b) \ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>printf(#a &quot; and &quot; #b &quot;: We love you!\n&quot;) </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>int main(void) </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>{ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>message_for(Carole, Debra); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>return 0; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When the above code is compiled and
+executed, it produces the following result: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Carole and Debra:
+We love you! </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif;color:#7030A0'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif;color:#7030A0'>The Token Pasting
+(##)Operator</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The token-pasting operator (##) within
+a macro definition combines two arguments. It permits two separate tokens in
+the macro definition to be joined into a single token. For example: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>#include &lt;stdio.h&gt;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>#define tokenpaster(n) printf (&quot;token&quot; #n &quot; =
+%d&quot;, token##n) </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>int main(void) </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>{ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>int token34 = 40; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>tokenpaster(34); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>return 0; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When the above code is compiled and
+executed, it produces the following result: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>token34 = 40 </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>It happened so because this example
+results in the following actual output from the preprocessor: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>printf
+(&quot;token34 = %d&quot;, token34); </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>This example shows the concatenation
+of token##n into token34 and here we have used both <b>stringize </b>and <b>token-pasting</b>.
+</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif;color:#7030A0'>The Defined() Operator</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The preprocessor <b>defined </b>operator
+is used in constant expressions to determine if an identifier is defined using
+#define. If the specified identifier is defined, the value is true (non-zero).
+If the symbol is not defined, the value is false (zero). The defined operator
+is specified as follows: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>#include &lt;stdio.h&gt; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>#if !defined (MESSAGE) </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>#define MESSAGE &quot;You wish!&quot; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>#endif </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>int main(void) </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>{ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>printf(&quot;Here is the message: %s\n&quot;, MESSAGE); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>return 0; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When the above code is compiled and
+executed, it produces the following result: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Here is the
+message: You wish! </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif;color:#7030A0'>Parameterized Macros</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>One of the powerful functions of the
+CPP is the ability to simulate functions using parameterized macros. For
+example, we might have some code to square a number as follows: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>int square(int x) {
+</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>return x * x; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>We can rewrite the above code using a
+macro as follows: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>#define square(x)
+((x) * (x)) </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Macros with arguments must be defined
+using the <b>#define </b>directive before they can be used. The argument list
+is enclosed in parentheses and must immediately follow the macro name. Spaces
+are not allowed between the macro name and open parenthesis. For example: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#0070C0'>#include &lt;stdio.h&gt; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#0070C0'>#define MAX(x,y) ((x) &gt; (y) ? (x) : (y)) </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#0070C0'>int main(void) </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#0070C0'>{ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#0070C0'>printf(&quot;Max between 20 and 10 is %d\n&quot;, MAX(10, 20)); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#0070C0'>return 0; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#0070C0'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When the above code is compiled and
+executed, it produces the following result: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Max between 20 and
+10 is 20</span></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,807 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Century",serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.alt, li.alt, div.alt
+	{mso-style-name:alt;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.preprocessor
+	{mso-style-name:preprocessor;}
+span.keyword
+	{mso-style-name:keyword;}
+span.datatypes
+	{mso-style-name:datatypes;}
+span.string
+	{mso-style-name:string;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+.MsoChpDefault
+	{font-family:"Century",serif;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB>
+
+<div class=WordSection1>
+
+<h1 align=center style='margin-top:3.75pt;text-align:center;line-height:200%;
+background:white'><span style='font-size:18.0pt;line-height:200%;font-family:
+"Helvetica",sans-serif;color:#610B38;font-weight:normal'>C++ Files and Streams</span></h1>
+
+<p style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:4.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>In C++ programming we are using the&nbsp;</span><strong><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:darkslategray'>iostream</span></strong><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;standard
+library, it provides&nbsp;</span><strong><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:darkslategray'>cin</span></strong><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;and&nbsp;</span><strong><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:darkslategray'>cout</span></strong><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;methods for reading from input and writing to output
+respectively.</span></p>
+
+<p style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:5.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>To read and write from a file we are using the standard C++
+library called&nbsp;</span><strong><span style='font-size:9.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:darkslategray'>fstream</span></strong><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>. Let us see the data types define in fstream library is:</span></p>
+
+<p style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:6.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div align=center>
+
+<table class=MsoTable15Grid4Accent2 border=1 cellspacing=0 cellpadding=0
+ width=261 style='width:195.4pt;border-collapse:collapse;border:none'>
+ <tr style='height:19.75pt'>
+  <td valign=top style='border:solid #ED7D31 1.0pt;border-right:none;
+  background:#ED7D31;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:200%'><b><span
+  style='font-size:7.0pt;line-height:200%;color:black'>Data Type</span></b></p>
+  </td>
+  <td valign=top style='border:solid #ED7D31 1.0pt;border-left:none;background:
+  #ED7D31;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:200%'><b><span
+  style='font-size:7.0pt;line-height:200%;color:black'>Description</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:15.3pt'>
+  <td valign=top style='border:solid #F4B083 1.0pt;border-top:none;background:
+  #FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:15.3pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><b><span style='font-size:7.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>fstream</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #F4B083 1.0pt;
+  border-right:solid #F4B083 1.0pt;background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.3pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:7.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It is used to create files, write information to files, and read
+  information from files.</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.3pt'>
+  <td valign=top style='border:solid #F4B083 1.0pt;border-top:none;padding:
+  0cm 5.4pt 0cm 5.4pt;height:15.3pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><b><span style='font-size:7.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>ifstream</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #F4B083 1.0pt;
+  border-right:solid #F4B083 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.3pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:7.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It is used to read information from files.</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.3pt'>
+  <td valign=top style='border:solid #F4B083 1.0pt;border-top:none;background:
+  #FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:15.3pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><b><span style='font-size:7.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>ofstream</span></b></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #F4B083 1.0pt;
+  border-right:solid #F4B083 1.0pt;background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.3pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify;line-height:
+  200%'><span style='font-size:7.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+  color:black'>It is used to create files and write information to the files.</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%'>
+
+<hr size=1 width="100%" noshade style='color:#D4D4D4' align=center>
+
+</span></div>
+
+<h2 style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38;font-weight:normal'>&nbsp;</span></h2>
+
+<h2 style='line-height:200%;background:white'><span style='font-size:14.0pt;
+line-height:200%;font-family:"Helvetica",sans-serif;color:#610B38;font-weight:
+normal'>C++ FileStream example: writing to a file</span></h2>
+
+<p style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:6.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Let's see the simple example of writing to a text file&nbsp;</span><strong><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:darkslategray'>testout.txt</span></strong><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;using C++
+FileStream programming.</span></p>
+
+<p style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:white'>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+class=preprocessor><span style='font-size:8.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:blue'>#include&nbsp;&lt;iostream&gt;</span></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span class=preprocessor><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:blue'>#include&nbsp;&lt;fstream&gt;</span></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span class=keyword><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>using</span></b></span><span style='font-size:8.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><span
+class=keyword><b><span style='font-size:8.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:#006699'>namespace</span></b></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;std;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span class=datatypes><b><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:seagreen'>int</span></b></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;main&nbsp;()&nbsp;{&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;ofstream&nbsp;filestream(</span><span class=string><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;testout.txt&quot;</span></span><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span><span
+class=keyword><b><span style='font-size:8.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:#006699'>if</span></b></span><span style='font-size:
+8.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;(filestream.is_open())&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;filestream&nbsp;&lt;&lt;&nbsp;</span><span
+class=string><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Welcome&nbsp;to&nbsp;ApkZube.\n&quot;</span></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>;&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;filestream&nbsp;&lt;&lt;&nbsp;</span><span
+class=string><span style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;C++&nbsp;Tutorial.\n&quot;</span></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;filestream.close();&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span><span
+class=keyword><b><span style='font-size:8.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:#006699'>else</span></b></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;cout&nbsp;&lt;&lt;</span><span class=string><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;File&nbsp;opening&nbsp;is&nbsp;fail.&quot;</span></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>;&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span><span class=keyword><b><span style='font-size:
+8.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>return</span></b></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;0;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></p>
+
+</div>
+
+<p style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#A6A6A6'>
+
+<p style='text-align:justify;line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Output:</span></p>
+
+<pre style='text-align:justify;line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;color:black'>The content of a text file </span></pre><pre
+style='text-align:justify;line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><strong><span style='font-size:9.0pt;line-height:200%;font-family:
+"Courier New";color:darkslategray'>testout.txt</span></strong><span
+style='font-size:9.0pt;line-height:200%;color:black'> is set with the data:</span></pre><pre
+style='text-align:justify;line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;color:black'>Welcome to ApkZube.</span></pre><pre
+style='text-align:justify;line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;color:black'>C++ Tutorial.</span></pre></div>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%'>
+
+<hr size=1 width="100%" noshade style='color:#D4D4D4' align=center>
+
+</span></div>
+
+<h2 style='line-height:200%;background:white'><span style='font-size:12.0pt;
+line-height:200%;font-family:"Helvetica",sans-serif;color:#610B38;font-weight:
+normal'>&nbsp;</span></h2>
+
+<h2 style='line-height:200%;background:white'><span style='font-size:14.0pt;
+line-height:200%;font-family:"Helvetica",sans-serif;color:#610B38;font-weight:
+normal'>C++ FileStream example: reading from a file</span></h2>
+
+<p style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:3.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Let's see the simple example of reading from a text file&nbsp;</span><strong><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:darkslategray'>testout.txt</span></strong><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;using C++
+FileStream programming.</span></p>
+
+<p style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:4.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:white'>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+class=preprocessor><span style='font-size:8.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:blue'>#include&nbsp;&lt;iostream&gt;</span></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span class=preprocessor><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:blue'>#include&nbsp;&lt;fstream&gt;</span></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span class=keyword><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>using</span></b></span><span style='font-size:8.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><span
+class=keyword><b><span style='font-size:8.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:#006699'>namespace</span></b></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;std;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span class=datatypes><b><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:seagreen'>int</span></b></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;main&nbsp;()&nbsp;{&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;string&nbsp;srg;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;ifstream&nbsp;filestream(</span><span
+class=string><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;testout.txt&quot;</span></span><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>);&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span><span class=keyword><b><span style='font-size:
+8.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>if</span></b></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;(filestream.is_open())&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;{&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class=keyword><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>while</span></b></span><span style='font-size:8.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;(&nbsp;getline&nbsp;(filestream,srg)&nbsp;)&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&nbsp;&lt;&lt;&nbsp;srg&nbsp;&lt;&lt;endl;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;filestream.close();&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;}&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span><span class=keyword><b><span style='font-size:
+8.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>else</span></b></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&nbsp;&lt;&lt;&nbsp;</span><span
+class=string><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;File&nbsp;opening&nbsp;is&nbsp;fail.&quot;</span></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&lt;&lt;endl;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span><span
+class=keyword><b><span style='font-size:8.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:#006699'>return</span></b></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;0;&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>}&nbsp;&nbsp;</span></p>
+
+</div>
+
+<p style='text-align:justify;line-height:200%;background:white'><strong><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:darkslategray'>&nbsp;</span></strong></p>
+
+<p style='text-align:justify;line-height:200%;background:white'><strong><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:darkslategray'>Note:</span></strong><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;Before
+running the code a text file named as&nbsp;</span><strong><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:darkslategray'>&quot;testout.txt&quot;</span></strong><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;is need to be created and the content of a text file is
+given below:</span></p>
+
+<p style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:yellow'>
+
+<p style='text-align:justify;line-height:200%;background:yellow;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Welcome to ApkZube.</span></p>
+
+<p style='text-align:justify;line-height:200%;background:yellow;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>C++ Tutorial.</span></p>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#A6A6A6'>
+
+<p style='text-align:justify;line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Output:</span></p>
+
+<pre style='text-align:justify;line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;color:black'>Welcome to ApkZube.</span></pre><pre
+style='text-align:justify;line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;color:black'>C++ Tutorial.</span></pre></div>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%'>
+
+<hr size=1 width="100%" noshade style='color:#D4D4D4' align=center>
+
+</span></div>
+
+<h2 style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38;font-weight:normal'>&nbsp;</span></h2>
+
+<h2 style='line-height:200%;background:white'><span style='font-size:14.0pt;
+line-height:200%;font-family:"Helvetica",sans-serif;color:#610B38;font-weight:
+normal'>C++ Read and Write Example</span></h2>
+
+<h2 style='line-height:200%;background:white'><span style='font-size:7.0pt;
+line-height:200%;font-family:"Helvetica",sans-serif;color:#610B38;font-weight:
+normal'>&nbsp;</span></h2>
+
+<p style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Let's see the simple example of writing the data to a text
+file&nbsp;</span><strong><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:darkslategray'>testout.txt</span></strong><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;and then reading the data from the file using C++ FileStream
+programming.</span></p>
+
+<p style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:4.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:white'>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+class=preprocessor><span style='font-size:8.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:blue'>#include&nbsp;&lt;fstream&gt;</span></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span class=preprocessor><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:blue'>#include&nbsp;&lt;iostream&gt;</span></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span class=keyword><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>using</span></b></span><span style='font-size:8.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><span
+class=keyword><b><span style='font-size:8.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:#006699'>namespace</span></b></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;std;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span class=datatypes><b><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:seagreen'>int</span></b></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;main&nbsp;()&nbsp;{&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;</span><span class=datatypes><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:seagreen'>char</span></b></span><span style='font-size:8.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;input[75];&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;ofstream&nbsp;os;&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;os.open(</span><span class=string><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;testout.txt&quot;</span></span><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;cout&nbsp;&lt;&lt;</span><span
+class=string><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Writing&nbsp;to&nbsp;a&nbsp;text&nbsp;file:&quot;</span></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&lt;&lt;&nbsp;endl;&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;cout&nbsp;&lt;&lt;&nbsp;</span><span
+class=string><span style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Please&nbsp;Enter&nbsp;your&nbsp;name:&nbsp;&quot;</span></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;cin.getline(input,&nbsp;100);&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;os&nbsp;&lt;&lt;&nbsp;input&nbsp;&lt;&lt;&nbsp;endl;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;cout&nbsp;&lt;&lt;&nbsp;</span><span
+class=string><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Please&nbsp;Enter&nbsp;your&nbsp;age:&nbsp;&quot;</span></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;cin&nbsp;&gt;&gt;&nbsp;input;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;cin.ignore();&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;os&nbsp;&lt;&lt;&nbsp;input&nbsp;&lt;&lt;&nbsp;endl;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;os.close();&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;ifstream&nbsp;is;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;string&nbsp;line;&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;is.open(</span><span class=string><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;testout.txt&quot;</span></span><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>);&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;cout&nbsp;&lt;&lt;&nbsp;</span><span
+class=string><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Reading&nbsp;from&nbsp;a&nbsp;text&nbsp;file:&quot;</span></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&lt;&lt;&nbsp;endl;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;</span><span class=keyword><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>while</span></b></span><span style='font-size:8.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;(getline&nbsp;(is,line))&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;cout&nbsp;&lt;&lt;&nbsp;line&nbsp;&lt;&lt;&nbsp;endl;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;is.close();&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;</span><span
+class=keyword><b><span style='font-size:8.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:#006699'>return</span></b></span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;0;&nbsp;&nbsp;</span></p>
+
+<p class=alt style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+line-height:200%;background:white;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>}&nbsp;&nbsp;</span></p>
+
+</div>
+
+<p style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#A6A6A6'>
+
+<p style='text-align:justify;line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Output:</span></p>
+
+<pre style='text-align:justify;line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;color:black'>Writing to a text file:  </span></pre><pre
+style='text-align:justify;line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;color:black'> Please Enter your name: Nakul Jain    </span></pre><pre
+style='text-align:justify;line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;color:black'>Please Enter your age: 22  </span></pre><pre
+style='text-align:justify;line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;color:black'> Reading from a text file:   Nakul Jain  </span></pre><pre
+style='text-align:justify;line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;color:black'> 22</span></pre></div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

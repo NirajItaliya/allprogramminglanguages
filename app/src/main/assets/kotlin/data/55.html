@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Visibility Modifier
+</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPTL9qzVmc" id="content1-16s" data-rv-view="7933">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Visibility Modifier
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/d">web page software</a></section><section class="mbr-section article content1 cid-rPTLgrzJrV" id="content1-16t" data-rv-view="7934">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p><strong>Visibility modifiers</strong> are the keywords which are used to restrict the use of class, interface, methods, and property of Kotlin in the application. These modifiers are used at multiple places such as class header or method body.</p><p>In Kotlin, visibility modifiers are categorized into four different types:
+</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPTLqYwHza" id="content12-16w" data-rv-view="7935">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li>public&nbsp;<br></li><li>protected
+</li><li>internal
+</li><li>private</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPTLFgGfvT" id="content1-16y" data-rv-view="7936">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>1 . Public modifier
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPTLDB69bO" id="content1-16x" data-rv-view="7937">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">A <strong>public modifier</strong> is accessible from everywhere in the project. It is a default modifier in Kotlin. If any class, interface etc. are not specified with any access modifier then that class, interface etc. are used in public scope.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">public class Example{
+}
+class Demo{
+}
+public fun hello()
+fun demo()
+public val x = 5
+val y = 10
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPTLWbhsC1" id="content1-170" data-rv-view="7939">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">All public declaration can be placed at top of the file. If a member of class is not specified then it is by default public.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPTM2JU8B7" id="content1-171" data-rv-view="7940">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>2. Protected modifier
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPTM7pCfNG" id="content1-172" data-rv-view="7941">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">A <strong>protected modifier</strong> with class or interface allows visibility to its class or subclass only. A protected declaration (when overridden) in its subclass is also protected modifier unless it is explicitly changed.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">open class Base{
+    protected val i = 0
+}
+
+class Derived : Base(){
+    fun getValue() : Int{
+        return i
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPTMcHoEQx" id="content1-174" data-rv-view="7943">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p>In Kotlin, protected modifier cannot be declared at top level.
+</p><p><strong>-&gt; Overriding of protected types
+</strong></p></div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">open class Base {
+    open protected val i = 5
+}
+
+class Another : Base() {
+    fun getValue(): Int {
+        return i
+    }
+
+    override val i = 10
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPTMpR80W7" id="content1-176" data-rv-view="7945">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>3. Internal modifier
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPTMwuQVLD" id="content1-177" data-rv-view="7946">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The <strong>internal modifiers</strong> are newly added in Kotlin, it is not available in Java. Declaring anything makes that field marked as internal field. The internal modifier makes the field visible only inside the module in which it is implemented.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">internal class Example{
+    internal val x = 5
+    internal fun getValue(){
+    }
+}
+internal val y = 10
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPTMy2OrRC" id="content1-179" data-rv-view="7948">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In above, all the fields are declared as internal which are accessible only inside the module in which they are implemented.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPTMHXfNzA" id="content1-17a" data-rv-view="7949">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>4. Private modifier
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPTMN4gWpR" id="content1-17b" data-rv-view="7950">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">A <strong>private modifier</strong> allows the declaration to be accessible only within the block in which properties, fields, etc. are declare. The private modifier declaration does not allow to access the outside the scope. A private package can be accessible within that specific file.
+</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">private class Example {
+    private val x = 1
+     private valdoSomething() {
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPTMNSIx3R" id="content1-17d" data-rv-view="7952">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In above class Example,val x and function doSomthing() are declared as private. The class "Example" is accessible from the same source file, "val x" and "fun doSomthing()" are accessible within Example class.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPTMOA1PlW" id="content1-17e" data-rv-view="7953">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Example of Visibility Modifier
+ :</strong></font></div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">open class Base() {
+    var a = 1 // public by default
+    private var b = 2 // private to Base class
+    protected open val c = 3 // visible to the Base and the Derived class
+    internal val d = 4 // visible inside the same module
+    protected fun e() {} // visible to the Base and the Derived class
+}
+
+class Derived : Base() {
+    // a, c, d, and e() of the Base class are visible
+    // b is not visible
+    override val c = 9 // c is protected
+}
+
+fun main(args: Array&lt;String&gt;) {
+    val base = Base()
+    // base.a and base.d are visible
+    // base.b, base.c and base.e() are not visible
+    val derived = Derived()
+    // derived.c is not visible
+} 
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

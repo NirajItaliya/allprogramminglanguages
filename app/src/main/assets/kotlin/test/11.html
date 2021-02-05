@@ -1,0 +1,35 @@
+<!-- HTML generated using hilite.me --><div style="background: #111111; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #fb660a; font-weight: bold">fun</span> <span style="color: #ff0086; font-weight: bold">main</span><span style="color: #ffffff">(args:</span> <span style="color: #ffffff">Array&lt;String&gt;)</span> <span style="color: #ffffff">{</span>
+    <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">a</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">2.3</span>
+    <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">b</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">4</span>
+    <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">c</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">5.6</span>
+    <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">root1:</span> <span style="color: #ffffff">Double</span>
+    <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">root2:</span> <span style="color: #ffffff">Double</span>
+    <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">output:</span> <span style="color: #ffffff">String</span>
+    <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">determinant</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">b</span> <span style="color: #ffffff">*</span> <span style="color: #ffffff">b</span> <span style="color: #ffffff">-</span> <span style="color: #0086f7; font-weight: bold">4.0</span> <span style="color: #ffffff">*</span> <span style="color: #ffffff">a</span> <span style="color: #ffffff">*</span> <span style="color: #ffffff">c</span>
+    <span style="color: #008800; font-style: italic; background-color: #0f140f">// condition for real and different roots</span>
+    <span style="color: #fb660a; font-weight: bold">if</span> <span style="color: #ffffff">(determinant</span> <span style="color: #ffffff">&gt;</span> <span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">)</span> <span style="color: #ffffff">{</span>
+        <span style="color: #ffffff">root1</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">(-b</span> <span style="color: #ffffff">+</span> <span style="color: #ffffff">Math.sqrt(determinant))</span> <span style="color: #ffffff">/</span> <span style="color: #ffffff">(</span><span style="color: #0086f7; font-weight: bold">2</span> <span style="color: #ffffff">*</span> <span style="color: #ffffff">a)</span>
+        <span style="color: #ffffff">root2</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">(-b</span> <span style="color: #ffffff">-</span> <span style="color: #ffffff">Math.sqrt(determinant))</span> <span style="color: #ffffff">/</span> <span style="color: #ffffff">(</span><span style="color: #0086f7; font-weight: bold">2</span> <span style="color: #ffffff">*</span> <span style="color: #ffffff">a)</span>
+        <span style="color: #ffffff">output</span> <span style="color: #ffffff">=</span> <span style="color: #0086d2">&quot;root1 = %.2f and root2 = %.2f&quot;</span><span style="color: #ffffff">.format(root1,</span> <span style="color: #ffffff">root2)</span>
+    <span style="color: #ffffff">}</span>
+    <span style="color: #008800; font-style: italic; background-color: #0f140f">// Condition for real and equal roots</span>
+    <span style="color: #fb660a; font-weight: bold">else</span> <span style="color: #ff0086; font-weight: bold">if</span> <span style="color: #ffffff">(determinant</span> <span style="color: #ffffff">==</span> <span style="color: #0086f7; font-weight: bold">0.0</span><span style="color: #ffffff">)</span> <span style="color: #ffffff">{</span>
+        <span style="color: #ffffff">root2</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">-b</span> <span style="color: #ffffff">/</span> <span style="color: #ffffff">(</span><span style="color: #0086f7; font-weight: bold">2</span> <span style="color: #ffffff">*</span> <span style="color: #ffffff">a)</span>
+        <span style="color: #ffffff">root1</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">root2</span>
+        <span style="color: #ffffff">output</span> <span style="color: #ffffff">=</span> <span style="color: #0086d2">&quot;root1 = root2 = %.2f;&quot;</span><span style="color: #ffffff">.format(root1)</span>
+    <span style="color: #ffffff">}</span>
+    <span style="color: #008800; font-style: italic; background-color: #0f140f">// If roots are not real</span>
+    <span style="color: #fb660a; font-weight: bold">else</span> <span style="color: #ffffff">{</span>
+        <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">realPart</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">-b</span> <span style="color: #ffffff">/</span> <span style="color: #ffffff">(</span><span style="color: #0086f7; font-weight: bold">2</span> <span style="color: #ffffff">*</span> <span style="color: #ffffff">a)</span>
+        <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">imaginaryPart</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">Math.sqrt(-determinant)</span> <span style="color: #ffffff">/</span> <span style="color: #ffffff">(</span><span style="color: #0086f7; font-weight: bold">2</span> <span style="color: #ffffff">*</span> <span style="color: #ffffff">a)</span>
+        <span style="color: #ffffff">output</span> <span style="color: #ffffff">=</span> <span style="color: #0086d2">&quot;root1 = %.2f+%.2fi and root2 = %.2f-%.2fi&quot;</span><span style="color: #ffffff">.format(realPart,</span> <span style="color: #ffffff">imaginaryPart,</span> <span style="color: #ffffff">realPart,</span> <span style="color: #ffffff">imaginaryPart)</span>
+    <span style="color: #ffffff">}</span>
+    <span style="color: #ffffff">println(output)</span>
+<span style="color: #ffffff">}</span>
+
+
+
+<span style="color: #ffffff">&gt;&gt;</span> <span style="color: #ffffff">output</span> <span style="color: #ffffff">will</span> <span style="color: #ffffff">be:</span>
+
+<span style="color: #ffffff">root1</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">-</span><span style="color: #0086f7; font-weight: bold">0.87</span><span style="color: #ffffff">+</span><span style="color: #0086f7; font-weight: bold">1.30</span><span style="color: #ffffff">i</span> <span style="color: #ffffff">and</span> <span style="color: #ffffff">root2</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">-</span><span style="color: #0086f7; font-weight: bold">0.87</span><span style="color: #ffffff">-</span><span style="color: #0086f7; font-weight: bold">1.30</span><span style="color: #ffffff">i</span>
+</pre></div>

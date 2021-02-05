@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Site made with Mobirise Website Builder v4.10.5, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.10.5, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/ic-logo-new-128x128.png" type="image/x-icon">
+    <meta name="description" content="Input and Output">
+
+    <title>Input and Output</title>
+
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="plugin/prism.css">
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+    <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
+
+</head>
+
+<body class="line-numbers">
+    <section class="mbr-section content4 cid-rwmQUza7Uy" id="content4-h1">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-2"><strong>Python Input And Output</strong>
+                    </h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="engine"><a href="https://mobirise.info/v">html templates</a></section>
+    <section class="mbr-section article content1 cid-rwmQYT7jYP" id="content1-h2">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Python provides methods that can be used to read and write data. Python also provides supports of
+                        reading and writing data to Files.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section content4 cid-rwmRbw3xAR" id="content4-h3">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>print()</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwmRmIjg8R" id="content1-h4">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>The simplest way to produce output is using the print statement where you can pass zero or more
+                        expressions separated by commas. This function converts the expressions you pass into a string
+                        and writes the result to standard output as follows −</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    print("Hello ApkZube")
+    x=150
+    print(x)
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwmS7RShQI" id="content1-h6">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    Hello ApkZube
+    150
+</code></pre></div>
+
+    <section class="mbr-section content4 cid-rwnwjfnPJv" id="content4-h8">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Input from Keyboard :</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwnwnoDuon" id="content1-h9">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>In Python 3, <strong>raw_input()</strong> function is <strong>deprecated</strong>. Moreover,
+                        <strong>input()</strong> functions read data from keyboard as string, irrespective of whether it
+                        is enclosed with quotes ('' or "" ) or not.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwnwpAFxaa" id="content12-ha">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>input() - </strong>The input([prompt]) function is equivalent to raw_input, except
+                            that it assumes that the input is a valid Python expression and returns the evaluated result
+                            to you.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+def cube(x):
+    return x*x*x
+
+a=int(input("Enter number :"))
+print("cube of ",a," is ",cube(a))
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwnyEql2Qw" id="content1-hc">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    Enter number :10
+    cube of 10 is 1000 
+</code></pre></div>
+
+    <section class="mbr-section content4 cid-rwnyU0PacC" id="content4-he">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Python File Handling</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwnyVUqxYX" id="content1-hf">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Python provides the facility of working on <strong>Files</strong>. A File is an external storage
+                        on hard disk from where data can be stored and retrieved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwnzyAF2jM" id="content12-hh">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>Opening a File - </strong>Before working with Files you have to open the File. To
+                            open a File, Python built in function <strong>open()</strong> is used. It returns an object
+                            of File which is used with other functions. Having opened the file now you can perform read,
+                            write, etc. operations on the File.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwnEKbrLBi" id="content12-hs">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>closing file - </strong>The <strong>close()</strong> method of a file object flushes
+                            any unwritten information and closes the file object, after which no more writing can be
+                            done.
+                            Python <strong>automatically </strong>closes a file when the reference object of a file is
+                            reassigned to another file. It is a <strong>good practice</strong> to use the close() method
+                            to close a file.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    file_object = open(file_name [, access_mode][, buffering])
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwnAgmVjlG" id="content1-hj">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Here are parameter details −</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwnAjpveex" id="content12-hk">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>file_name − </strong><span style="font-size: 1rem;">The file_name argument is a
+                                string value that contains the name of the file that you want to
+                                access.&nbsp;</span><br></li>
+                        <li><strong>access_mode − </strong><span style="font-size: 1rem;">The access_mode determines the
+                                mode in which the file has to be opened, i.e., read, write, append, etc. A complete list
+                                of possible values is given below in the table. This is an optional parameter and the
+                                default file access mode is read (r).&nbsp;</span></li>
+                        <li><strong>buffering −</strong><span style="font-size: 1rem;"> If the buffering value is set to
+                                0, no buffering takes place. If the buffering value is 1, line buffering is performed
+                                while accessing a file. If you specify the buffering value as an integer greater than 1,
+                                then buffering action is performed with the indicated buffer size. If negative, the
+                                buffer size is the system default(default behavior).</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-table cid-rwnADfuVww" id="table1-hl">
+
+
+
+        <div class="container container-table">
+            <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-7"><strong>Comparision operators in
+                    Python</strong></h2>
+
+         
+
+                <div class="container scroll">
+                    <table class="table" cellspacing="0">
+                        <thead>
+                            <tr class="table-heads ">
+
+
+
+
+                                <th class="head-item mbr-fonts-style display-7">
+                                    mode</th>
+                                <th class="head-item mbr-fonts-style display-7">
+                                    description</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+
+
+
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">r</td>
+                                <td class="body-item mbr-fonts-style display-7">Opens a file for reading only. The file
+                                    pointer is placed at the beginning of the file. This is the default mode.</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">rb</td>
+                                <td class="body-item mbr-fonts-style display-7">Opens a file for reading only in binary
+                                    format. The file pointer is placed at the beginning of the file. This is the default
+                                    mode.</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">r+</td>
+                                <td class="body-item mbr-fonts-style display-7">Opens a file for both reading and
+                                    writing. The file pointer placed at the beginning of the file.</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">rb+</td>
+                                <td class="body-item mbr-fonts-style display-7">Opens a file for both reading and
+                                    writing in binary format. The file pointer placed at the beginning of the file.</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">w</td>
+                                <td class="body-item mbr-fonts-style display-7">Opens a file for writing only.
+                                    Overwrites the file if the file exists. If the file does not exist, creates a new
+                                    file for writing.</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">wb</td>
+                                <td class="body-item mbr-fonts-style display-7">Opens a file for writing only in binary
+                                    format. Overwrites the file if the file exists. If the file does not exist, creates
+                                    a new file for writing.</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">w+</td>
+                                <td class="body-item mbr-fonts-style display-7">Opens a file for both writing and
+                                    reading. Overwrites the existing file if the file exists. If the file does not
+                                    exist, creates a new file for reading and writing.</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">wb+</td>
+                                <td class="body-item mbr-fonts-style display-7">Opens a file for both writing and
+                                    reading in binary format. Overwrites the existing file if the file exists. If the
+                                    file does not exist, creates a new file for reading and writing.</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">a</td>
+                                <td class="body-item mbr-fonts-style display-7">Opens a file for appending. The file
+                                    pointer is at the end of the file if the file exists. That is, the file is in the
+                                    append mode. If the file does not exist, it creates a new file for writing.</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">ab</td>
+                                <td class="body-item mbr-fonts-style display-7">Opens a file for appending in binary
+                                    format. The file pointer is at the end of the file if the file exists. That is, the
+                                    file is in the append mode. If the file does not exist, it creates a new file for
+                                    writing.</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">a+</td>
+                                <td class="body-item mbr-fonts-style display-7">Opens a file for both appending and
+                                    reading. The file pointer is at the end of the file if the file exists. The file
+                                    opens in the append mode. If the file does not exist, it creates a new file for
+                                    reading and writing.</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">ab+</td>
+                                <td class="body-item mbr-fonts-style display-7">Opens a file for both appending and
+                                    reading in binary format. The file pointer is at the end of the file if the file
+                                    exists. The file opens in the append mode. If the file does not exist, it creates a
+                                    new file for reading and writing.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container table-info-container">
+
+                </div>
+            </div>
+        
+    </section>
+
+    <section class="mbr-section content4 cid-rwnCpQ9YGh" id="content4-hm">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-7"><strong>The file Object Attributes</strong>
+                    </h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwnCtbuUWK" id="content12-hn">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>file.closed
+                            </strong> - Returns true if file is closed, false otherwise.</li>
+                        <li><strong>file.mode -
+                            </strong><span style="font-size: 1rem;">Returns access mode with which file was
+                                opened.</span></li>
+                        <li><span style="font-size: 1rem;"><strong>file.name - </strong>Returns name of the file.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwnEnpK3Kd" id="content1-ho">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    # Open a file
+    data = open("data.txt", "wb")
+    print ("Name of the file: ", data.name)
+    print ("Closed or not : ", data.closed)
+    print ("Opening mode : ", data.mode)
+    data.close()  #closed data.txt file
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwnEp7iiYd" id="content1-hq">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    Name of the file: data.txt
+    Closed or not : False
+    Opening mode : wb 
+</code></pre></div>
+
+    <section class="mbr-section content4 cid-rwnFafb86Y" id="content4-ht">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Reading and Writing Files</strong>
+                    </h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwnFe8sO80" id="content1-hu">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>The file object provides a set of access methods to make our lives easier. We would see how to
+                        use <strong>read()</strong> and <strong>write()</strong> methods to read and write files.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwnFGbi5WQ" id="content12-hv">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>write() - </strong>The write() method writes any string to an <strong>open
+                                file</strong>. It is important to note that Python strings can have binary data and not
+                            just text.
+                            The write() method does not add a <strong>newline character </strong>('\n') to the end of
+                            the string .</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+    file_object.write(string)
+</code></pre></div>
+    <section class="mbr-section article content1 cid-rwnHkSD5c1" id="content1-hx">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+    # Open a file
+    data = open("data.txt", "w")
+    data.write("Welcome to ApkZube's Python Tutorial")
+    print("done")
+    data.close()
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwnHoGYtiV" id="content1-hz">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+done
+</code></pre></div>
+
+    <section class="cid-rwnHQH3oPo" id="image2-i2">
+
+
+
+        <figure class="mbr-figure container">
+            <div class="image-block" style="width: 64%;">
+                <img src="assets/images/capture-417x152.jpg" alt="Mobirise" title="">
+
+            </div>
+        </figure>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwnHpNJVvz" id="content12-i1">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>read() -</strong> The read() method reads a string from an open file. It is
+                            important to note that Python strings can have binary data. apart from text data.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    file_object.read([count])
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwnIXKGA7W" id="content1-i4">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Here, passed parameter is the number of bytes to be read from the opened file. This method starts
+                        reading from the beginning of the file and if count is missing, then it tries to read as much as
+                        possible, maybe until the end of file.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    # Open a file
+    data = open("data.txt", "r+")
+    file_data = data.read(18) # read 18 byte only
+    full_data = data.read() #read all byte into file from last cursor
+    print(file_data)
+    print(full_data)
+    data.close()
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwnJbJLILM" id="content1-i6">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+    Welcome to ApkZube
+    's Python Tutorial  
+</code></pre></div>
+    <section class="mbr-section content4 cid-rwnKyFGEH4" id="content4-i8">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>File Positions</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwnME2QUzC" id="content1-i9">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>The <strong>tell()</strong> method tells you the current position within the file; in other
+                        words, the next read or write will occur at that many bytes from the beginning of the file.
+                    </p>
+                    <p><br></p>
+                    <p>The <strong>seek(offset[, from])</strong> method changes the current file position. The offset
+                        argument indicates the number of bytes to be moved. The from argument specifies the reference
+                        position from where the bytes are to be moved.
+                    </p>
+                    <p><br></p>
+                    <p>If from is set to 0, the beginning of the file is used as the reference position. If it is set to
+                        1, the current position is used as the reference position. If it is set to 2 then the end of the
+                        file would be taken as the reference position.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    # Open a file
+    data = open("data.txt", "r+")
+    file_data = data.read(18) # read 18 byte only
+    print("current position after reading 18 byte :",data.tell()) 
+    data.seek(0) #here current position set to 0 (starting of file)
+    full_data = data.read() #read all byte 
+    print(file_data)
+    print(full_data)
+    print("position after reading file : ",data.tell())
+    data.close()
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwnNx7xnsp" id="content1-ib">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    current position after reading 18 byte : 18
+    Welcome to ApkZube
+    Welcome to ApkZube's Python Tutorial
+    position after reading file : 36  
+</code></pre></div>
+
+    <section class="mbr-section content4 cid-rwnOkWsT3s" id="content4-id">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Renaming and Deleting Files</strong>
+                    </h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwnOpG9sSz" id="content1-ie">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Python os module provides methods that help you perform file-processing operations, such as
+                        renaming and <strong>deleting </strong>files.
+                    </p>
+                    <p><span style="font-size: 1rem;"><br></span></p>
+                    <p><span style="font-size: 1rem;">To use this module, you need to import it first and then you can
+                            call any related functions.</span><br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwnOAcdgfh" id="content12-if">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>rename() - </strong>The rename() method takes two arguments, the current filename
+                            and the new filename.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwnOI22I2M" id="content1-ig">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>syntax ;</p>
+                    <p><strong>os.rename(current_file_name, new_file_name)</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+    import os
+    os.rename('data.txt','my_data.txt')
+</code></pre></div>
+    <section class="mbr-section article content1 cid-rwnPaoLXE3" id="content1-ii">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cid-rwnPN3dZ0z" id="image2-ik">
+
+
+
+        <figure class="mbr-figure container">
+            <div class="image-block" style="width: 64%;">
+                <img src="assets/images/my-data-396x115.jpg" alt="Mobirise" title="">
+
+            </div>
+        </figure>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwnPYkDzfD" id="content12-il">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>remove() - </strong>You can use the remove() method to delete files by supplying the
+                            name of the file to be deleted as the argument.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwnQ7tcyw8" id="content1-im">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>syntax :</p>
+                    <p><strong>os.remove(file_name)</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <div class="container">
+  <pre><code class="language-python">
+    import os
+    os.remove('my_data.txt')
+  </code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwnQfJBCG1" id="content1-io">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">my_data.txt file was deleted</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section content4 cid-rwnVANtRO0" id="content4-ip">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Directories in Python</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwnVG7LWq7" id="content1-iq">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>All files are contained within various directories, and Python has no problem handling these too.
+                        The <strong>os </strong>module has several methods that help you create, remove, and change
+                        directories</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwnVQmFwue" id="content12-ir">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>mkdir() - </strong>You can use the mkdir() method of the os module to create
+                            directories in the current directory. You need to supply an argument to this method, which
+                            contains the name of the directory to be created.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwnW1TXaZ7" id="content1-is">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>syntax ;&nbsp;</p>
+                    <p><strong>os.mkdir("dir_name")</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    import os
+    os.mkdir('apkzube')
+</code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwnZpYLoyj" id="content12-iu">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>chdir() - </strong>You can use the chdir() method to change the current directory.
+                            The chdir() method takes an argument, which is the name of the directory that you want to
+                            make the current directory.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwnZyeUAGz" id="content1-iv">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>syntax :&nbsp;</p>
+                    <p><strong>os.chdir("newdir")</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    import os
+
+    # Changing a directory to "/home/newdir"
+    os.chdir("/home/newdir")
+</code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwnZILRz1P" id="content12-ix">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>getcwd() - </strong>The getcwd() method displays the current working directory.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    import os
+    print(os.getcwd())
+</code></pre></div>
+    <section class="mbr-section article content1 cid-rwnZO0oWls" id="content1-iz">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <div class="container">
+  <pre><code class="language-python">
+    /home
+  </code></pre></div>
+    <section class="mbr-section article content12 cid-rwo03vRXJP" id="content12-j1">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>rmdir() - </strong>The rmdir() method deletes the directory, which is passed as an
+                            argument in the method.
+                            Before removing a directory, all the contents in it should be removed</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+    import os
+    # This would remove "/home/apkzube" directory.
+    os.rmdir( "/home/apkzube" )
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwo0d6uBL4" id="content1-j3">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>result :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+    <pre><code class="language-python">
+        apkzube dir will be removed.
+    </code></pre></div>
+
+
+
+    <script src="plugin/prism.js"></script>
+    <script src="assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="assets/popper/popper.min.js"></script>
+    <script src="assets/tether/tether.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+    <script src="assets/datatables/jquery.data-tables.min.js"></script>
+    <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+    <script src="assets/theme/js/script.js"></script>
+
+
+    <input name="animation" type="hidden">
+</body>
+
+</html>

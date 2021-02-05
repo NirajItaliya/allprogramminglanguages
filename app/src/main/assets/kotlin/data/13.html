@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin when Expression</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rLH77wxPAq" id="content1-ar" data-rv-view="5403">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin when Expression</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/e">website building software</a></section><section class="mbr-section article content1 cid-rLH7rZfp1B" id="content1-as" data-rv-view="5404">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The when construct in Kotlin can be thought of as a replacement for <a href="https://play.google.com/store/apps/details?id=com.apkzube.learnjavaprogramming" target="_blank">Java switch Statement</a>. It evaluates a section of code among many alternatives.Kotlin, when expression works as a switch statement of other language (Java, C++, C)</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLH7LUfbEJ" id="content1-at" data-rv-view="5405">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Using when as an Expression</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLH7PWphUK" id="content1-au" data-rv-view="5406">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Let's see a simple example of when expression.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var number = 4
+    var numberProvided = when(number) {
+        1 -> "One"
+        2 -> "Two"
+        3 -> "Three"
+        4 -> "Four"
+        5 -> "Five"
+        else -> "invalid number"
+    }
+    println("You provide $numberProvided")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLH7Rc9xxE" id="content1-aw" data-rv-view="5408">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">You provide Four
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rLH8324zTm" id="content1-ay" data-rv-view="5410">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Using when Without Expression</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLH83wqn8E" id="content1-az" data-rv-view="5411">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">It is not mandatory to use when as an expression, it can be used as normally as it used in other language.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var number = 4
+    when(number) {
+        1 -> println("One")
+        2 -> println("Two")
+        3 -> println("Three")
+        4 -> println("Four")
+        5 -> println("Five")
+        else -> println("invalid number")
+    }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLH85x0QB1" id="content1-b1" data-rv-view="5413">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Four
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLH87o1am2" id="content1-b3" data-rv-view="5415">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Multiple Statement of when Using Braces</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLH88vJ3aX" id="content1-b4" data-rv-view="5416">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">We can use multiple statement enclosed within block of condition.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var number = 1
+    when(number) {
+        1 -> {
+            println("Monday")
+            println("First day of the week")
+        }
+        7 -> println("Sunday")
+        else -> println("Other days")
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rLH89lD3nx" id="content1-b6" data-rv-view="5418">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Monday
+First day of the week
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLH8bSq47o" id="content1-b8" data-rv-view="5420">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Multiple branches of when</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLH8ch4yee" id="content1-b9" data-rv-view="5421">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">We can use multiple branches of condition separated with a comma. It is used, when we need to run a same logic for <strong>multiple choices</strong>.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var number = 8
+    when(number) {
+        3, 4, 5, 6 ->
+            println("It is summer season")
+        7, 8, 9 ->
+            println("It is rainy season")
+        10, 11 ->
+            println("It is autumn season")
+        12, 1, 2 ->
+            println("It is winter season")
+        else -> println("invalid input")
+    }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLH8dktfpc" id="content1-bb" data-rv-view="5423">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">It is rainy season
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLH8QnYFbW" id="content1-bd" data-rv-view="5425">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Using when in the range</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLH8QE81sz" id="content1-be" data-rv-view="5426">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The when expression also check the ranges of input provided in when condition. A range is created using .. (double dot) operator. The in operator is used to check if a value belongs to a range.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var number = 7
+    when(number) {
+        in 1..5 -> println("Input is provided in the range 1 to 5")
+        in 6..10 -> println("Input is provided in the range 6 to 10")
+        else -> println("none of the above")
+    }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLH8RQbHHH" id="content1-bg" data-rv-view="5428">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var number = 7
+    when(number) {
+        in 1..5 -> println("Input is provided in the range 1 to 5")
+        in 6..10 -> println("Input is provided in the range 6 to 10")
+        else -> println("none of the above")
+    }
+}
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

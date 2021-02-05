@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin Interface</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPVdDM4KDL" id="content1-19r" data-rv-view="8035">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin Interface
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/q">bootstrap carousel</a></section><section class="mbr-section article content1 cid-rPVdHYj4EQ" id="content1-19s" data-rv-view="8036">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">An <strong>interface</strong> is a blueprint of class.Kotlin interface is similar to Java 8. It contains abstract method declarations as well as implementation of method.
+<div>
+</div><div><strong>Defining Interface
+ :&nbsp;</strong><span style="font-size: 1rem;">An interface is defined using the keyword interface. For example:&nbsp;</span></div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">interface MyInterface {
+val id: Int // abstract property
+    fun absMethod()// abstract method
+    fun doSomthing() {
+      // optional body
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPVdSA7rOD" id="content1-19t" data-rv-view="8038">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The methods which are only declared without their method body are abstract by default.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPVdZL0zWx" id="content1-19v" data-rv-view="8039">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Why use Kotlin interface?
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPVe4h3fSz" id="content1-19w" data-rv-view="8040">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Following are the reasons to use interface :</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content11 cid-rPVe4CJFVU" id="content11-19x" data-rv-view="8041">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ol>
+                    <li>Using interface supports functionality of multiple inheritance.
+</li><li>It can be used achieve to loose coupling.
+</li><li>It is used to achieve abstraction.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPVecikT8i" id="content1-19y" data-rv-view="8042">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Subclass extends only one super class but implements multiple interfaces. Extension of parent class or interface implementation are done using (<strong>:</strong>) operator in their subclass.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPVehorD06" id="content1-19z" data-rv-view="8043">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Implementing Interfaces
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPVei05pDL" id="content1-1a0" data-rv-view="8044">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><div>In this example, we are implementing the interface MyInterface in InterfaceImp class. InterfaceImp class provides the implementation of property id and abstract method absMethod() declared in MyInterface interface.
+</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">interface MyInterface {
+var id: Int // abstract property
+    fun absMethod():String // abstract method
+    fun doSomthing() {
+println("MyInterface doing some work")
+    }
+}
+class InterfaceImp : MyInterface {
+    override var id: Int = 101
+    override fun absMethod(): String{
+return "Implementing abstract method.."
+    }
+}
+fun main(args: Array&lt;String&gt;) {
+val obj = InterfaceImp()
+println("Calling overriding id value = ${obj.id}")
+obj.doSomthing()
+println(obj.absMethod())
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPVek8Ypa3" id="content1-1a2" data-rv-view="8046">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Calling overriding id value = 101
+MyInterface doing some work
+Implementing abstract method..
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPVemzH7aS" id="content1-1a4" data-rv-view="8048">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Implementing multiple interface
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPVeoyym1B" id="content1-1a5" data-rv-view="8049">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">We can implement multiple abstract methods of different interfaces in same class. All the abstract methods must be implemented in subclass. The other non-abstract methods of interface can be called from derived class.
+<div>
+</div><div>For example, creating two interface MyInterface1 and MyInterface2 with abstract methods doSomthing() and absMethod() respectively. These abstract methods are overridden in derive class MyClass.</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">interface MyInterface1 {
+    fun doSomthing()
+}
+
+interface MyInterface2 {
+    fun absMethod()
+}
+
+class MyClass : MyInterface1, MyInterface2 {
+    override fun doSomthing() {
+        println("overriding doSomthing() of MyInterface1")
+    }
+
+    override fun absMethod() {
+        println("overriding absMethod() of MyInterface2")
+    }
+}
+
+fun main(args: Array&lt;String&gt;) {
+    val myClass = MyClass()
+    myClass.doSomthing()
+    myClass.absMethod()
+}
+
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPVeslTGmH" id="content1-1a7" data-rv-view="8051">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">overriding doSomthing() of MyInterface1
+overriding absMethod() of MyInterface2
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPVeTePDgj" id="content12-1a9" data-rv-view="8053">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Resolving different Interfaces having same method overriding conflicts
+ : </strong>Let's see an example in which interface MyInterface1 and interface MyInterface2 both contains same non-abstract method. A class MyClass provides the implementation of these interfaces. Calling the method of interface using object of MyClass generates an error.
+</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">interface MyInterface1 {
+    fun doSomthing(){
+println("overriding doSomthing() of MyInterface1")
+    }
+}
+interface MyInterface2 {
+    fun doSomthing(){
+println("overriding doSomthing() of MyInterface2")
+    }
+}
+class MyClass : MyInterface1, MyInterface2 {
+
+}
+fun main(args: Array&lt;String&gt;) {
+val myClass = MyClass()
+myClass.doSomthing()
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPVeYNKTuF" id="content1-1ab" data-rv-view="8055">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Kotlin: Class 'MyClass' must override public open fun doSomthing(): Unit defined in MyInterface1 because it
+inherits multiple interface methods of it
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPVf8KOfe2" id="content1-1ad" data-rv-view="8057">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">To solve the above problem we need to specify particular method of interface which we are calling. Let's see an example below.
+<div>
+</div><div>In below example, two interfaces MyInterface1 and MyInterface2 contain two abstract methodsadsMethod() and absMethod(name: String) and non-abstract method doSomthing() in both respectively. A class MyClass implements both interface and override abstract method absMethod() and absMethod(name: String) . To override the non-abstract method doSomthing() we need to specify interface name with method using super keyword as <strong>super&lt;interface_name&gt;.methodName()</strong></div></div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">interface MyInterface1 {
+    fun doSomthing() {
+        println("MyInterface 1 doing some work")
+    }
+
+    fun absMethod()
+}
+
+interface MyInterface2 {
+    fun doSomthing() {
+        println("MyInterface 2 doing some work")
+    }
+
+    fun absMethod(name: String)
+}
+
+class MyClass : MyInterface1, MyInterface2 {
+    override fun doSomthing() {
+        super&lt;MyInterface2&gt;.doSomthing()
+    }
+
+    override fun absMethod() {
+        println("Implements absMethod() of MyInterface1")
+    }
+
+    override fun absMethod(n: String) {
+        println("Implements absMethod(name) of MyInterface2 name is $n")
+    }
+}
+
+fun main(args: Array&lt;String&gt;) {
+    val myClass = MyClass()
+    myClass.doSomthing()
+    myClass.absMethod()
+    myClass.absMethod("Ashu")
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPVfq3EWLq" id="content1-1ag" data-rv-view="8059">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">MyInterface 2 doing some work
+Implements absMethod() of MyInterface1
+Implements absMethod(name) of MyInterface2 name is Ashu
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPVfzFrSId" id="content1-1ah" data-rv-view="8061">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">example :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">interface MyInterface1 {
+    fun doSomthing() {
+        println("MyInterface 1 doing some work")
+    }
+
+    fun absMethod()
+}
+
+interface MyInterface2 {
+    fun doSomthing() {
+        println("MyInterface 2 doing some work")
+    }
+
+    fun absMethod() {
+        println("MyInterface 2 absMethod")
+    }
+
+}
+
+class C : MyInterface1 {
+    override fun absMethod() {
+        println("MyInterface1 absMethod implementation")
+    }
+}
+
+class D : MyInterface1, MyInterface2 {
+    override fun doSomthing() {
+        super&lt;MyInterface1&gt;.doSomthing()
+        super&lt;MyInterface2&gt;.doSomthing()
+    }
+
+    override fun absMethod() {
+
+        super&lt;MyInterface2&gt;.absMethod()
+    }
+}
+
+fun main(args: Array&lt;String&gt;) {
+    val d = D()
+    val c = C()
+    d.doSomthing()
+    d.absMethod()
+    c.doSomthing()
+    c.absMethod()
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPVfAEa3SV" id="content1-1aj" data-rv-view="8063">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">MyInterface 1 doing some work
+MyInterface 2 doing some work
+MyInterface 2 absMethod
+MyInterface 1 doing some work
+MyInterface1 absMethod implementation
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

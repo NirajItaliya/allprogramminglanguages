@@ -1,0 +1,38 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic"> * C Program to Find the Sum of two Binary Numbers</span>
+    <span style="color: #999999; font-style: italic"> */</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdio.h&gt;</span>
+     
+    <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #447fcf">main</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+     
+        <span style="color: #6ab825; font-weight: bold">long</span> <span style="color: #d0d0d0">binary1,</span> <span style="color: #d0d0d0">binary2;</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">remainder</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">sum[</span><span style="color: #3677a9">20</span><span style="color: #d0d0d0">];</span>
+     
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter the first binary number: &quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%ld&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;binary1);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter the second binary number: &quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%ld&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;binary2);</span>
+        <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(binary1</span> <span style="color: #d0d0d0">!=</span> <span style="color: #3677a9">0</span> <span style="color: #d0d0d0">||</span> <span style="color: #d0d0d0">binary2</span> <span style="color: #d0d0d0">!=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">sum[i++]</span> <span style="color: #d0d0d0">=(binary1</span> <span style="color: #d0d0d0">%</span> <span style="color: #3677a9">10</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">binary2</span> <span style="color: #d0d0d0">%</span> <span style="color: #3677a9">10</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">remainder)</span> <span style="color: #d0d0d0">%</span> <span style="color: #3677a9">2</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #d0d0d0">remainder</span> <span style="color: #d0d0d0">=(binary1</span> <span style="color: #d0d0d0">%</span> <span style="color: #3677a9">10</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">binary2</span> <span style="color: #d0d0d0">%</span> <span style="color: #3677a9">10</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">remainder)</span> <span style="color: #d0d0d0">/</span> <span style="color: #3677a9">2</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #d0d0d0">binary1</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">binary1</span> <span style="color: #d0d0d0">/</span> <span style="color: #3677a9">10</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #d0d0d0">binary2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">binary2</span> <span style="color: #d0d0d0">/</span> <span style="color: #3677a9">10</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(remainder</span> <span style="color: #d0d0d0">!=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">)</span>
+            <span style="color: #d0d0d0">sum[i++]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">remainder;</span>
+        <span style="color: #d0d0d0">--i;</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Sum of two binary numbers: &quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">&gt;=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">)</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">sum[i--]);</span>
+        <span style="color: #6ab825; font-weight: bold">return</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #d0d0d0">}</span>
+    
+    <span style="color: #d0d0d0">&gt;&gt;Output:</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">first</span> <span style="color: #d0d0d0">binary</span> <span style="color: #d0d0d0">number:</span> <span style="color: #3677a9">100000</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">second</span> <span style="color: #d0d0d0">binary</span> <span style="color: #d0d0d0">number:</span> <span style="color: #3677a9">101010</span>
+    <span style="color: #d0d0d0">Sum</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">two</span> <span style="color: #d0d0d0">binary</span> <span style="color: #d0d0d0">numbers:</span> <span style="color: #3677a9">1001010</span>
+    </pre></div>

@@ -1,0 +1,328 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:7.1pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB>
+
+<div class=WordSection1>
+
+<h1 align=center style='text-align:center;line-height:150%'>25. TYPE CASTING</h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'>&nbsp;</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Type casting is a way to convert a
+variable from one data type to another data type. For example, if you want to
+store a ‘long’ value into a simple integer, then you can type cast ‘long’ to
+‘int’. You can convert the values from one type to another explicitly using the
+<b>cast operator </b>as follows: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>(type_name)
+expression </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Consider the following example where
+the cast operator causes the division of one integer variable by another to be
+performed as a floating-point operation: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#1F3864'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#1F3864;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;stdio.h&gt; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#1F3864;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>main() </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#1F3864;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#1F3864;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int sum = 17, count = 5; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#1F3864;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>double mean; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#1F3864;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>mean = (double) sum /
+count; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#1F3864;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf(&quot;Value of mean
+: %f\n&quot;, mean ); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#1F3864;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When the above code is compiled and
+executed, it produces the following result: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif;color:#00B0F0'>Value
+of mean : 3.400000 </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>It should be noted here that the cast
+operator has precedence over division, so the value of <b>sum </b>is first
+converted to type <b>double </b>and finally it gets divided by count yielding a
+double value. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Type conversions can be implicit which
+is performed by the compiler automatically, or it can be specified explicitly
+through the use of the <b>cast operator</b>. It is considered good programming
+practice to use the cast operator whenever type conversions are necessary.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span style='font-size:18.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>Integer Promotion</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Integer promotion is the process by
+which values of integer type &quot;smaller&quot; than <b>int </b>or <b>unsigned
+int </b>are converted either to <b>int </b>or <b>unsigned int</b>. Consider an
+example of adding a character with an integer: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#1F3864'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#1F3864;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;stdio.h&gt; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#1F3864;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>main() </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#1F3864;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#1F3864;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int i = 17; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#1F3864;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>char c = 'c'; /* ascii
+value is 99 */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#1F3864;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int sum; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#1F3864;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>sum = i + c; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#1F3864;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf(&quot;Value of sum
+: %d\n&quot;, sum ); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#1F3864;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When the above code is compiled and
+executed, it produces the following result: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif;color:#00B0F0'>Value
+of sum : 116 </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Here, the value of sum is 116 because
+the compiler is doing integer promotion and converting the value of 'c' to
+ASCII before performing the actual addition operation. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span style='font-size:18.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>Usual Arithmetic
+Conversion</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The <b>usual arithmetic conversions </b>are
+implicitly performed to cast their values to a common type. The compiler first
+performs <i>integer promotion</i>; if the operands still have different types,
+then they are converted to the type that appears highest in the following
+hierarchy:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'><img width=253 height=524
+id="Picture 1" src="25_files/image001.png"></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The usual arithmetic conversions are
+not performed for the assignment operators, nor for the logical operators
+&amp;&amp; and ||. Let us take the following example to understand the concept:
+</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#1F3864'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>#include &lt;stdio.h&gt; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>main() </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>{ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>int i = 17; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>char c = 'c'; /* ascii value is 99 */ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>float sum; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>sum = i + c; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>printf(&quot;Value of sum : %f\n&quot;, sum ); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#1F3864;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When the above code is compiled and
+executed, it produces the following result: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif;color:#00B0F0'>Value
+of sum : 116.000000 </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Here, it is simple to understand that
+first c gets converted to integer, but as the final value is double, usual
+arithmetic conversion applies and the compiler converts i and c into ‘float’
+and adds them yielding a ‘float’ result.</span></p>
+
+</div>
+
+</body>
+
+</html>

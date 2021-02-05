@@ -1,0 +1,967 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Century",serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.alt, li.alt, div.alt
+	{mso-style-name:alt;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.comment
+	{mso-style-name:comment;}
+span.keyword
+	{mso-style-name:keyword;}
+span.string
+	{mso-style-name:string;}
+span.testit
+	{mso-style-name:testit;}
+span.number
+	{mso-style-name:number;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Century",serif;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB link=blue vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'>&nbsp;</p>
+
+<p class=MsoNormal align=center style='margin-top:3.75pt;text-align:center;
+line-height:200%;background:white'><span style='font-size:20.0pt;line-height:
+200%;font-family:"Helvetica",sans-serif;color:#385723'>Method Overriding in
+Java</span></p>
+
+<p class=MsoNormal align=center style='margin-top:3.75pt;text-align:center;
+line-height:200%;background:white'><span style='font-size:20.0pt;line-height:
+200%;font-family:"Helvetica",sans-serif;color:#385723'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>If subclass (child class) has the same method as declared in the
+parent class, it is known as&nbsp;</span><b><span style='font-size:10.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:darkslategray'>method
+overriding in Java</span></b><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>In other words, If a subclass provides the specific implementation
+of the method that has been declared by one of its parent class, it is known as
+method overriding.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B'>Usage of Java Method Overriding</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B'>&nbsp;</span></p>
+
+<ul style='margin-top:0cm' type=circle>
+ <li class=MsoNormal style='color:black;margin-top:3.0pt;text-align:justify;
+     line-height:200%;background:white'><span style='font-size:10.0pt;
+     line-height:200%;font-family:"Verdana",sans-serif'>Method overriding is
+     used to provide the specific implementation of a method which is already
+     provided by its superclass.</span></li>
+ <li class=MsoNormal style='color:black;margin-top:3.0pt;text-align:justify;
+     line-height:200%;background:white'><span style='font-size:10.0pt;
+     line-height:200%;font-family:"Verdana",sans-serif'>Method overriding is
+     used for runtime polymorphism</span></li>
+</ul>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B'>Rules for Java Method Overriding</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:16.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B'>&nbsp;</span></p>
+
+<ol style='margin-top:0cm' start=1 type=1>
+ <li class=MsoNormal style='color:black;margin-top:3.0pt;text-align:justify;
+     line-height:200%;background:white'><span style='font-size:10.0pt;
+     line-height:200%;font-family:"Verdana",sans-serif'>The method must have
+     the same name as in the parent class</span></li>
+ <li class=MsoNormal style='color:black;margin-top:3.0pt;text-align:justify;
+     line-height:200%;background:white'><span style='font-size:10.0pt;
+     line-height:200%;font-family:"Verdana",sans-serif'>The method must have
+     the same parameter as in the parent class.</span></li>
+ <li class=MsoNormal style='color:black;margin-top:3.0pt;text-align:justify;
+     line-height:200%;background:white'><span style='font-size:10.0pt;
+     line-height:200%;font-family:"Verdana",sans-serif'>There must be an IS-A
+     relationship (inheritance).</span></li>
+</ol>
+
+<p class=MsoNormal style='margin-top:3.0pt;text-align:justify;line-height:200%;
+background:white'><span style='font-size:10.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman",serif'><img
+width=276 height=206 id="Picture 2" src="10_files/image001.jpg"
+alt="Java Rules for Method Overriding"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='line-height:200%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B'>Understanding the problem without method overriding</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Let's understand the problem that we may face in the program if we
+don't use method overriding.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:white'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>//Java&nbsp;Program&nbsp;to&nbsp;demonstrate&nbsp;why&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>              we&nbsp;need&nbsp;method&nbsp;overriding</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>//Here,&nbsp;we&nbsp;are&nbsp;calling&nbsp;the&nbsp;method&nbsp;of
+</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>              &nbsp;parent&nbsp;class&nbsp;with&nbsp;child</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>//class&nbsp;object.</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>//Creating&nbsp;a&nbsp;parent&nbsp;class</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Vehicle{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>void</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;run(){System.out.println(</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Vehicle&nbsp;is&nbsp;running&quot;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>);}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>//Creating&nbsp;a&nbsp;child&nbsp;class</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Bike&nbsp;</span><b><span style='font-size:9.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:#006699'>extends</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Vehicle{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>public</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>static</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>void</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;main(String&nbsp;args[]){&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#008200'>//creating&nbsp;an&nbsp;instance&nbsp;of&nbsp;child&nbsp;class</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;Bike&nbsp;obj&nbsp;=&nbsp;</span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>new</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;Bike();&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#008200'>//calling&nbsp;the&nbsp;method&nbsp;with&nbsp;child&nbsp;class&nbsp;instance</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;obj.run();&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black;background:white'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Output:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Courier New";color:black'>Vehicle
+is running</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Problem is that I have to provide a specific implementation of
+run() method in subclass that is why we use method overriding.</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman",serif'>
+
+<hr size=1 width="100%" noshade style='color:#D4D4D4' align=center>
+
+</span></div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:16.5pt;line-height:200%;font-family:"Tahoma",sans-serif;
+color:#610B4B'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:16.5pt;line-height:200%;font-family:"Tahoma",sans-serif;
+color:#610B4B'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Tahoma",sans-serif;
+color:#610B4B'>Example of method overriding</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>In this example, we have defined the run method in the subclass as
+defined in the parent class but it has some specific implementation. The name
+and parameter of the method are the same, and there is IS-A relationship
+between the classes, so there is method overriding.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:white'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>//Java&nbsp;Program&nbsp;to&nbsp;illustrate&nbsp;the&nbsp;use&nbsp;of&nbsp;Java&nbsp;Method&nbsp;Overriding</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>//Creating&nbsp;a&nbsp;parent&nbsp;class.</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Vehicle{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#008200'>//defining&nbsp;a&nbsp;method</span><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>void</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;run(){System.out.println(</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Vehicle&nbsp;is&nbsp;running&quot;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>);}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>//Creating&nbsp;a&nbsp;child&nbsp;class</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Bike2&nbsp;</span><b><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>extends</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Vehicle{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#008200'>//defining&nbsp;the&nbsp;same&nbsp;method&nbsp;as&nbsp;in&nbsp;the&nbsp;parent&nbsp;class</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>void</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;run(){System.out.println(</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Bike&nbsp;is&nbsp;running&nbsp;safely&quot;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>);}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>public</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>static</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>void</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;main(String&nbsp;args[]){&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;Bike2&nbsp;obj&nbsp;=&nbsp;</span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>new</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;Bike2();</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#008200'>//creating&nbsp;object</span><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;obj.run();</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#008200'>//calling&nbsp;method</span><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black;background:white'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Output:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Courier New";color:black'>Bike
+is running safely</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman",serif'>
+
+<hr size=1 width="100%" noshade style='color:#D4D4D4' align=center>
+
+</span></div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:19.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>A real example of Java Method Overriding</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Consider a scenario where Bank is a class that provides
+functionality to get the rate of interest. However, the rate of interest varies
+according to banks. For example, SBI, ICICI and AXIS banks could provide 8%,
+7%, and 9% rate of interest.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman",serif'><img
+width=324 height=113 id="Picture 1" src="10_files/image002.png"
+alt="Java method overriding example of bank"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<div style='border:solid pink 1.0pt;border-left:solid orange 2.25pt;padding:
+11.0pt 11.0pt 11.0pt 30.0pt;background:white'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:10.5pt;line-height:200%;
+font-family:"Arial",sans-serif;color:green'>Java method overriding is mostly
+used in Runtime Polymorphism which we will learn in next pages.</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:white'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>//Java&nbsp;Program&nbsp;to&nbsp;demonstrate&nbsp;the&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>real&nbsp;scenario&nbsp;of&nbsp;Java&nbsp;Method&nbsp;Overriding</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>//where&nbsp;three&nbsp;classes&nbsp;are&nbsp;overriding&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>the&nbsp;method&nbsp;of&nbsp;a&nbsp;parent&nbsp;class.</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>//Creating&nbsp;a&nbsp;parent&nbsp;class.</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Bank{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>int</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;getRateOfInterest(){</span><b><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>return</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#C00000'>0</span><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>;}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>//Creating&nbsp;child&nbsp;classes.</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;SBI&nbsp;</span><b><span style='font-size:9.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:#006699'>extends</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Bank{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>int</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;getRateOfInterest(){</span><b><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>return</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#C00000'>8</span><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>;}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;ICICI&nbsp;</span><b><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>extends</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Bank{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>int</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;getRateOfInterest(){</span><b><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>return</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#C00000'>7</span><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>;}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;AXIS&nbsp;</span><b><span style='font-size:9.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:#006699'>extends</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Bank{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>int</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;getRateOfInterest(){</span><b><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>return</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#C00000'>9</span><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>;}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>//Test&nbsp;class&nbsp;to&nbsp;create&nbsp;objects&nbsp;and&nbsp;call&nbsp;the&nbsp;methods</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Test2{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>public</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>static</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>void</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;main(String&nbsp;args[]){&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>SBI&nbsp;s=</span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>new</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;SBI();&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>ICICI&nbsp;i=</span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>new</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;ICICI();&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>AXIS&nbsp;a=</span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>new</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;AXIS();&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>System.out.println(</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;SBI&nbsp;Rate&nbsp;of&nbsp;Interest:&nbsp;&quot;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>+</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>s.getRateOfInterest());&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>System.out.println(</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;ICICI&nbsp;Rate&nbsp;of&nbsp;Interest:&nbsp;&quot;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>+</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>i.getRateOfInterest());&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>System.out.println(</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;AXIS&nbsp;Rate&nbsp;of&nbsp;Interest:&nbsp;&quot;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>+</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>a.getRateOfInterest());&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}&nbsp;&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black;background:white'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Courier New";color:black'>Output:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Courier New";color:black'>SBI
+Rate of Interest: 8</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Courier New";color:black'>ICICI
+Rate of Interest: 7</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Courier New";color:black'>AXIS
+Rate of Interest: 9</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:16.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:16.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B'>Can we override static method?</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>No, a static method cannot be overridden. It can be proved by
+runtime polymorphism, so we will learn it later.</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman",serif'>
+
+<hr size=1 width="100%" noshade style='color:#D4D4D4' align=center>
+
+</span></div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B'>Why can we not override static method?</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>It is because the static method is bound with class whereas
+instance method is bound with an object. Static belongs to the class area, and
+an instance belongs to the heap area.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman",serif'>
+
+<hr size=1 width="100%" noshade style='color:#D4D4D4' align=center>
+
+</span></div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:16.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:16.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B4B'>Can we override java main method?</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>No, because the main is a static method.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

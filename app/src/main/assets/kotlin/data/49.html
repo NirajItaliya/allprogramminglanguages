@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin HashSet class
+</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPSK13Jn4v" id="content1-125" data-rv-view="7638">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>HashSet class
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/h">how to make your own website</a></section><section class="mbr-section article content1 cid-rPSKg9ZxDk" id="content1-126" data-rv-view="7639">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin <strong>HashSet</strong> is class of collection which extends <strong>AbstractMutableSet</strong> class and implements <strong>Set interface</strong>. The HashSet class store elements using hashing mechanism. It support both read and write functionality. It does not support duplicate value and does not make guarantees about the order sequence of element.
+<div>
+</div><div><strong>HashSet class declaration :</strong></div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">open class HashSet&lt;E&gt; : AbstractMutableSet&lt;E&gt; (source)
+</code></pre></div>
+
+<section class="section-table cid-rPSKw4j8q0" id="table1-128" data-rv-view="7641">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5"><strong>Constructor of HashSet class
+</strong></h2>
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Constructor</th><th class="head-item mbr-fonts-style display-7">Descriptions</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">HashSet()&nbsp;</td><td class="body-item mbr-fonts-style display-7">It constructs an empty HashSet instance
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">HashSet(initialCapacity: Int, loadFactor: Float = 0f)&nbsp;</td><td class="body-item mbr-fonts-style display-7">It is used to constructs a HashSet of specified capacity.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">HashSet(elements: Collection&lt;E&gt;)&nbsp;</td><td class="body-item mbr-fonts-style display-7">It constructs a HashSet instance using elements of specified collection.
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="section-table cid-rPSKOgGbSE" id="table1-129" data-rv-view="7671">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5"><strong>Functions of HashSet class
+</strong></h2>
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Functions</th><th class="head-item mbr-fonts-style display-7">Descriptions</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun add(element: E): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It adds the given element to the collection.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open operator fun contains(element: E): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It checks the specified element is present in current collection.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun isEmpty(): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It checks the current collection is empty (not contain any element). If found collection is empty returns true otherwise false.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun iterator(): MutableIterator&lt;E&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns an iterator over the elements of current object.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun remove(element: E): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It removes the mention element if present in current collection. It returns true if it removes otherwise false.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun clear()&nbsp;</td><td class="body-item mbr-fonts-style display-7">It deletes all the elements from this collection.
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="section-table cid-rPSLdR8ITR" id="table1-12a" data-rv-view="7722">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5"><strong>Property of HashSet class
+</strong></h2>
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Functions</th><th class="head-item mbr-fonts-style display-7">Descriptions</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open val size: Int&nbsp;</td><td class="body-item mbr-fonts-style display-7">This property is used to return the size of HashSet collection.
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPSLq3PB2c" id="content12-12b" data-rv-view="7738">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 1- capacity
+ :&nbsp;</strong>Let's create an example of HashSet defining it capacity. Capacity defines the total number of element to be added in the HashSet. It can be increase of decrease later according to need.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var hashSet = HashSet&lt;Int&gt;(6)
+    hashSet.add(2)
+    hashSet.add(13)
+    hashSet.add(6)
+    hashSet.add(5)
+    hashSet.add(2)
+    hashSet.add(8)
+    println("......traversing hashSet......")
+    for (element in hashSet){
+        println(element)
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSLqSOcUe" id="content1-12d" data-rv-view="7740">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traversing hashSet......
+8
+2
+13
+5
+6
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPSLsCghyU" id="content12-12f" data-rv-view="7742">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 2 - generic
+ :&nbsp;</strong>For more specific we can provide the generic types of HashSet class using its method hashSetOf&lt;T&gt;().</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var hashSetOf1 = hashSetOf&lt;Int&gt;(2,13,6,5,2,8)
+    var hashSetOf2: HashSet&lt;String&gt; = hashSetOf&lt;String&gt;("Vijay","Ashu" ,"Vijay","Roshan")
+    println("......traversing hashSetOf1......")
+    for (element in hashSetOf1){
+        println(element)
+    }
+    println("......traversing hashSetOf2......")
+    for (element in hashSetOf2){
+        println(element)
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSLu3Nldq" id="content1-12h" data-rv-view="7744">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traversing hashSetOf1......
+8
+2
+13
+5
+6
+......traversing hashSetOf2......
+Ashu
+Roshan
+Vijay
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPSLvui71m" id="content12-12j" data-rv-view="7746">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 3 - add() and addAll()
+ :&nbsp;</strong>The add() function is used to add the element in the HashSet instance whereas addAll() function add all the elements of specified collection to HashSet.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var hashSet = HashSet&lt;Int&gt;(3)
+    val intSet = setOf(6,4,29)
+    hashSet.add(2)
+    hashSet.add(13)
+    hashSet.add(6)
+    hashSet.add(5)
+    hashSet.add(2)
+    hashSet.add(8)
+    println("......traversing hashSet......")
+    for (element in hashSet){
+        println(element)
+    }
+    hashSet.addAll(intSet)
+    println("......traversing hashSet after hashSet.addAll(intSet)......")
+    for (element in hashSet){
+        println(element)
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSLwpsQ55" id="content1-12l" data-rv-view="7748">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traversing hashSet......
+8
+2
+13
+5
+6
+......traversing hashSet after hashSet.addAll(intSet)......
+2
+4
+5
+6
+8
+13
+29
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPSLy8C0R1" id="content12-12n" data-rv-view="7750">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 4 - size, contains() and containsAll()
+ :&nbsp;</strong>The size property returns a total elements present in HashMap. The contains() function returns true if the mention element in it is contained in collection whereas containsAll() function checks all the elements of specified collection is contained in this collection.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var hashSetOf1: HashSet&lt;Int&gt; = hashSetOf&lt;Int&gt;(2,6,13,4,29,15)
+    val mySet = setOf(6,4,29)
+
+    println("......traversing hashSetOf1......")
+    for (element in hashSetOf1){
+        println(element)
+    }
+    println(".....hashSetOf1.size.....")
+    println(hashSetOf1.size)
+    println(".....hashSetOf1.contains(13).....")
+    println(hashSetOf1.contains(13))
+    println("....hashSetOf1.containsAll(mySet)...")
+    println(hashSetOf1.containsAll(mySet))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSLyZjgH8" id="content1-12p" data-rv-view="7752">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traversing hashSetOf1......
+2
+4
+13
+29
+6
+15
+.....hashSetOf1.size.....
+6
+.....hashSetOf1.contains(13).....
+true
+....hashSetOf1.containsAll(mySet)...
+true
+</code></pre></div>
+<section class="mbr-section article content12 cid-rPSLzSWF7R" id="content12-12r" data-rv-view="7754">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 5 - remove() and removeAll()
+ :&nbsp;</strong>The remove() function removes the specified element from the collection if it is present whereas removeAll() function removes all the specified elements from current collection if they are present.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var hashSetOf1: HashSet&lt;Int&gt; = hashSetOf&lt;Int&gt;(2,6,13,4,29,15)
+    val mySet = setOf(6,4,29)
+
+    println("......traversing hashSetOf1......")
+    for (element in hashSetOf1){
+        println(element)
+    }
+    println(".....hashSetOf1.remove(6)......")
+    println(hashSetOf1.remove(6))
+    println("......traversing hashSetOf1 after remove(6)......")
+    for (element in hashSetOf1){
+        println(element)
+    }
+    println("......hashSetOf1.removeAll(mySet)......")
+    println(hashSetOf1.removeAll(mySet))
+    println("......traversing hashSetOf1 after removeAll(mySet)......")
+    for (element in hashSetOf1){
+        println(element)
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSLB9FrSz" id="content1-12t" data-rv-view="7756">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traversing hashSetOf1......
+2
+4
+13
+29
+6
+15
+.....hashSetOf1.remove(6)......
+true
+......traversing hashSetOf1 after remove(6)......
+2
+4
+13
+29
+15
+......hashSetOf1.removeAll(mySet)......
+true
+......traversing hashSetOf1 after removeAll(mySet)......
+2
+13
+15
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPSLCbrOgx" id="content12-12v" data-rv-view="7758">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 6 - isEmpty() and isNotEmpty()
+ :&nbsp;</strong>The isEmpty() function checks the current collection is empty whereas isNotEmpty() function checks the current collection is not empty.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var hashSetOf1: HashSet&lt;Int&gt; = hashSetOf&lt;Int&gt;(2,6,13,4,29,15)
+
+    println("......traversing hashSetOf1......")
+    for (element in hashSetOf1){
+        println(element)
+    }
+    println(".....hashSetOf1.isEmpty()....")
+    if(hashSetOf1.isEmpty()){
+        println("hash set is empty")
+    }
+    else{
+        println("hash set is not empty")
+    }
+    println(".....hashSetOf1.isNotEmpty()....")
+    if(hashSetOf1.isNotEmpty()){
+        println("hash set is not empty")
+    }
+    else{
+        println("hash set is empty")
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSLD1TFtm" id="content1-12x" data-rv-view="7760">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traversing hashSetOf1......
+2
+4
+13
+29
+6
+15
+.....hashSetOf1.isEmpty()....
+hash set is not empty
+.....hashSetOf1.isNotEmpty()....
+hash set is not empty
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/datatables/jquery.data-tables.min.js"></script>
+  <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

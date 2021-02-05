@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin MutableList</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPAOhKmMmT" id="content1-sm" data-rv-view="6288">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin MutableList</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/q">bootstrap slideshow</a></section><section class="mbr-section article content1 cid-rPAOlOccwh" id="content1-sn" data-rv-view="6289">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin MutableList is an interface and generic collection of elements. <strong>MutableList</strong> interface is mutable in nature. It inherits form Collection&lt;T&gt; class. The methods of MutableList interface supports both read and write functionalities. Once the elements in MutableList have declared, it can be added more elements in it or removed, so it has no fixed size length.<span style="font-size: 1rem;">To use the MutableList interface we use its function called </span><strong>mutableListOf()</strong><span style="font-size: 1rem;"> or </span><strong>mutableListOf&lt;E&gt;().&nbsp;</strong><span style="font-size: 1rem;">The elements of MutableList follow the sequence of insertion order and contains index number same as array.</span><div><br></div><div><strong>MutableList Interface Declaration:</strong></div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">interface MutableList&lt;E&gt; : List&lt;E&gt;, MutableCollection&lt;E&gt; (source)
+</code></pre></div>
+
+
+<section class="section-table cid-rPAOHL5uEQ" id="table1-sp" data-rv-view="6291">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5"><strong>Function of MutableList
+</strong></h2>
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Functions</th><th class="head-item mbr-fonts-style display-7">Descriptions</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun add(element: E): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It adds the given element to the collection.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun add(index: Int, element: E)&nbsp;</td><td class="body-item mbr-fonts-style display-7">It adds the element at specified index.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun addAll(elements: Collection&lt;E&gt;): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It adds all the elements of given collection to current collection.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun clear()&nbsp;</td><td class="body-item mbr-fonts-style display-7">It removes all the elements from this collection.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun listIterator(): MutableListIterator&lt;E&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns a list iterator over the elements in proper sequence in current list.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun listIterator(index: Int): MutableListIterator&lt;E&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns a list iterator starting from specified index over the elements in list in proper sequence.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun remove(element: E): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It removes the specified element if it present in current collection.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun removeAll(elements: Collection&lt;E&gt;): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It removes all the elements from the current list which are also present in the specified collection.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun removeAt(index: Int): E&nbsp;</td><td class="body-item mbr-fonts-style display-7">It removes element at given index from the list.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun retainAll(elements: Collection&lt;E&gt;): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It retains all the elements within the current collection which are present in given collection.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract operator fun set(index: Int, element: E): E&nbsp;</td><td class="body-item mbr-fonts-style display-7">It replaces the element and add new at given index with specified element.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun subList(
+<br>fromIndex: Int,
+<br>toIndex: Int
+<br>): MutableList&lt;E&gt;</td><td class="body-item mbr-fonts-style display-7">It returns part of list from specified fromIndex (inclusive) to toIndex (exclusive) from current list. The returned list is backed by current list, so non-structural changes in the returned list are reflected in current list, and vice-versa.
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPAPS98d1Y" id="content12-sq" data-rv-view="6384">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 1
+:&nbsp;</strong><span style="font-size: 1rem;">Let's see an example of MutableList using mutableListOf() function and traverse its elements.</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var mutableList = mutableListOf("Ajay","Vijay","Prakash","Vijay")
+
+    for(element in mutableList){
+        println(element)
+    }
+    println()
+    for(index in 0..mutableList.size-1){
+        println(mutableList[index])
+    }
+}
+
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPAPSSfCPj" id="content1-ss" data-rv-view="6386">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Ajay
+Vijay
+Prakash
+Vijay
+Ajay
+Vijay
+Prakash
+Vijay
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rPAQ3USrt8" id="content12-su" data-rv-view="6388">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 2
+:&nbsp;</strong><span style="font-size: 1rem;">The function mutableListOf() of MutableList interface provides facilities to add elements after its declaration. MutableList can also be declared as empty and added elements later but in this situation we need to define its generic type. For example:</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var mutableList1 = mutableListOf("Ajay","Vijay")
+    mutableList1.add("Prakash")
+    mutableList1.add("Vijay")
+
+    var mutableList2 = mutableListOf&lt;String&gt;()
+    mutableList2.add("Ajeet")
+    mutableList2.add("Amit")
+    mutableList2.add("Akash")
+
+    for(element in mutableList1){
+        println(element)
+    }
+    println()
+    for(element in mutableList2){
+        println(element)
+    }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPAQ4DpcGO" id="content1-sw" data-rv-view="6390">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Ajay
+Vijay
+Prakash
+Vijay
+Ajeet
+Amit
+Akash
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rPAQeSAQiH" id="content12-sy" data-rv-view="6392">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 3
+:&nbsp;</strong><span style="font-size: 1rem;">For more specific we can provide the generic types of MutableList interface such as mutableListOf&lt;Int&gt;(), mutableListOf&lt;String&gt;(), mutableListOf&lt;Any&gt;(). The mutableListOf&lt;Int&gt;() takes only integer value, mutableListOf&lt;String&gt;() takes only String value and mutableListOf&lt;Any&gt;() takes different data types value at the same time. Let's see the example.</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    var mutableListInt: MutableList&lt;Int&gt; = mutableListOf&lt;Int&gt;()
+    var mutableListString: MutableList&lt;String&gt; = mutableListOf&lt;String&gt;()
+    var mutableListAny: MutableList&lt;Any&gt; = mutableListOf&lt;Any&gt;()
+
+    mutableListInt.add(5)
+    mutableListInt.add(7)
+    mutableListInt.add(10)
+    mutableListInt.add(2, 15) //add element 15 at index 2
+
+    mutableListString.add("Ajeet")
+    mutableListString.add("Ashu")
+    mutableListString.add("Mohan")
+
+    mutableListAny.add("Sunil")
+    mutableListAny.add(2)
+    mutableListAny.add(5)
+    mutableListAny.add("Raj")
+
+    println(".....print Int type.....")
+    for (element in mutableListInt) {
+        println(element)
+    }
+    println()
+    println(".....print String type.....")
+    for (element in mutableListString) {
+        println(element)
+    }
+    println()
+    println(".....print Any type.....")
+    for (element in mutableListAny) {
+        println(element)
+    }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPAQfBAfGH" id="content1-t0" data-rv-view="6394">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">.....print Int type.....
+5
+7
+15
+10
+.....print String type.....
+Ajeet
+Ashu
+Mohan
+.....print Any type.....
+Sunil
+2
+5
+Raj
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rPAQw10XoX" id="content12-t2" data-rv-view="6396">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 4:&nbsp;</strong>Let's see the use of different function of MutableList interface using mutableListOf&lt;T&gt;() function.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    var mutableList = mutableListOf&lt;String&gt;()
+
+    mutableList.add("Ajay") // index 0
+    mutableList.add("Vijay") // index 1
+    mutableList.add("Prakash") // index 2
+
+    var mutableList2 = mutableListOf&lt;String&gt;("Rohan", "Raj")
+    var mutableList3 = mutableListOf&lt;String&gt;("Dharmesh", "Umesh")
+    var mutableList4 = mutableListOf&lt;String&gt;("Ajay", "Dharmesh", "Ashu")
+
+    println(".....mutableList.....")
+    for (element in mutableList) {
+        println(element)
+    }
+    println(".....mutableList[2].....")
+    println(mutableList[2])
+    mutableList.add(2, "Rohan")
+    println("......mutableList.add(2,\"Rohan\")......")
+    for (element in mutableList) {
+        println(element)
+    }
+    mutableList.add("Ashu")
+    println(".....mutableList.add(\"Ashu\")......")
+    for (element in mutableList) {
+        println(element)
+    }
+    mutableList.addAll(1, mutableList3)
+    println("... mutableList.addAll(1,mutableList3)....")
+    for (element in mutableList) {
+        println(element)
+    }
+    mutableList.addAll(mutableList2)
+    println("...mutableList.addAll(mutableList2)....")
+    for (element in mutableList) {
+        println(element)
+    }
+    mutableList.remove("Vijay")
+    println("...mutableList.remove(\"Vijay\")....")
+    for (element in mutableList) {
+        println(element)
+    }
+    mutableList.removeAt(2)
+    println("....mutableList.removeAt(2)....")
+    for (element in mutableList) {
+        println(element)
+    }
+    mutableList.removeAll(mutableList2)
+    println(".... mutableList.removeAll(mutableList2)....")
+    for (element in mutableList) {
+        println(element)
+    }
+
+    println("....mutableList.set(2,\"Ashok\")....")
+    mutableList.set(2, "Ashok")
+    for (element in mutableList) {
+        println(element)
+    }
+
+    println(".... mutableList.retainAll(mutableList4)....")
+    mutableList.retainAll(mutableList4)
+    for (element in mutableList) {
+        println(element)
+    }
+    println(".... mutableList2.clear()....")
+    mutableList2.clear()
+
+    for (element in mutableList2) {
+        println(element)
+    }
+    println(".... mutableList2 after mutableList2.clear()....")
+    println(mutableList2)
+
+    println("....mutableList.subList(1,2)....")
+    println(mutableList.subList(1, 2))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPAQwZTwQ0" id="content1-t4" data-rv-view="6398">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">.....mutableList.....
+Ajay
+Vijay
+Prakash
+.....mutableList[2].....
+Prakash
+......mutableList.add(2,"Rohan")......
+Ajay
+Vijay
+Rohan
+Prakash
+.....mutableList.add("Ashu")......
+Ajay
+Vijay
+Rohan
+Prakash
+Ashu
+... mutableList.addAll(1,mutableList3)....
+Ajay
+Dharmesh
+Umesh
+Vijay
+Rohan
+Prakash
+Ashu
+...mutableList.addAll(mutableList2)....
+Ajay
+Dharmesh
+Umesh
+Vijay
+Rohan
+Prakash
+Ashu
+Rohan
+Raj
+...mutableList.remove("Vijay")....
+Ajay
+Dharmesh
+Umesh
+Rohan
+Prakash
+Ashu
+Rohan
+Raj
+....mutableList.removeAt(2)....
+Ajay
+Dharmesh
+Rohan
+Prakash
+Ashu
+Rohan
+Raj
+.... mutableList.removeAll(mutableList2)....
+Ajay
+Dharmesh
+Prakash
+Ashu
+....mutableList.set(2,"Ashok")....
+Ajay
+Dharmesh
+Ashok
+Ashu
+.... mutableList.retainAll(mutableList4)....
+Ajay
+Dharmesh
+Ashu
+.... mutableList2.clear()....
+.... mutableList2 after mutableList2.clear()....
+[]
+....mutableList.subList(1,2)....
+[Dharmesh]
+</code></pre></div>
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/datatables/jquery.data-tables.min.js"></script>
+  <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

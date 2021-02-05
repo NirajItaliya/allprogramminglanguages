@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin Exception Handling</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPuUcgSjlE" id="content1-lr" data-rv-view="5914">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin Exception Handling</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/o">bootstrap buttons</a></section><section class="mbr-section article content1 cid-rPuUiYh85t" id="content1-ls" data-rv-view="5915">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Exception</strong> is a runtime problem which occurs in the program and leads to program termination. This may be occure due to running out of memory space, array out of bond, condition like divided by zero. To handle this type of problem during program execution the technique of exception handling is used.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPuUnZaQLA" id="content1-lt" data-rv-view="5916">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Exception handling is a technique which handles the runtime problems and maintains the flow of <strong>program execution.</strong></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPuUo9K43m" id="content1-lu" data-rv-view="5917">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In Kotlin, all exception classes are descendants of class <strong>Throwable</strong>. To throw an exception object, Kotlin uses the <strong>throw</strong> <strong>expression.</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">throw MyException("this throws an exception")
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPuUPfbEpr" id="content1-lw" data-rv-view="5919">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">There are four different keywords used in exception handling. These are:</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content11 cid-rPuUPxkQ5I" id="content11-lx" data-rv-view="5920">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ol>
+                    <li>try
+</li><li>catch
+</li><li>finally
+</li><li>throw</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPuV0x5RIe" id="content12-lz" data-rv-view="5921">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>try: </strong>try block contains set of statements which might generate an exception. It must be followed by either catch or finally or both.
+</li><li><strong>catch: </strong>catch block is used to catch the exception thrown from try block.
+</li><li><strong>finally: </strong>finally block always execute whether exception is handled or not. So it is used to execute important code statement.
+</li><li><strong>throw: </strong>throw keyword is used to throw an exception explicitly.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPuVjZqDDP" id="content1-m0" data-rv-view="5922">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Unchecked Exception</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPuVs7y8jV" id="content1-m1" data-rv-view="5923">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Unchecked exception is that exception which is thrown due to <strong>mistakes in our code. </strong>This exception type extends RuntimeException class. The Unchecked exception is checked at run time. Following are some example of unchecked exception:</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPuVBvzuK0" id="content12-m2" data-rv-view="5924">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>ArithmeticException:</strong> thrown when we divide a number by zero.
+</li><li><strong>ArrayIndexOutOfBoundExceptions:</strong> thrown when an array has been tried to access with incorrect index value.
+</li><li><strong>SecurityException: </strong>thrown by the security manager to indicate a security violation.
+</li><li><strong>NullPointerException: </strong>thrown when invoking a method or property on a null object.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPuVLZAcdE" id="content1-m3" data-rv-view="5925">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Checked Exception in Java</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPuVNRwRWR" id="content1-m4" data-rv-view="5926">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Checked exception is checked at compile time. This exception type extends the <strong>Throwable</strong> class.
+&nbsp;<span style="font-size: 1rem;">Following are some example of unchecked exception:</span></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPuVWOKsLw" id="content12-m6" data-rv-view="5927">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li>IOException.
+</li><li>SQLException etc.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPuW2kH4ye" id="content12-m7" data-rv-view="5928">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7"><strong>Note: Kotlin does not support checked exception.</strong></div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

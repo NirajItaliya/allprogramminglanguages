@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Nested class and Inner class
+</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPTv53XhiQ" id="content1-159" data-rv-view="7878">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Nested class and Inner class</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co">Mobirise</a></section><section class="mbr-section article content1 cid-rPTvdUssin" id="content1-15a" data-rv-view="7879">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>1. Kotlin Nested class
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPTvhuxseo" id="content1-15b" data-rv-view="7880">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Nested</strong> class is such class which is created inside <strong>another class.</strong> In Kotlin, nested class is by default static, so its data member and member function can be accessed without creating an object of class. Nested class cannot be able to access the data member of outer class.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">class outerClass{
+   //outer class code
+    class nestedClass{
+      //nested class code
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPTvxd3xDq" id="content12-15d" data-rv-view="7882">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Kotlin Nested Class Example
+ :</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">class outerClass{
+    private var name: String = "Ashu"
+    class nestedClass{
+var description: String = "code inside nested class"
+        private var id: Int = 101
+        fun foo(){
+          // print("name is ${name}") // cannot access the outer class member
+println("Id is ${id}")
+        }
+    }
+}
+fun main(args: Array&lt;String&gt;){
+// nested class must be initialize
+println(outerClass.nestedClass().description) // accessing property
+var obj = outerClass.nestedClass() // object creation
+    obj.foo() // access member function
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPTvI8uFg8" id="content1-15f" data-rv-view="7884">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">code inside nested class
+Id is 101
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPTvN5VJcX" id="content1-15h" data-rv-view="7886">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>2. Kotlin Inner class
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPTvZhhqFM" id="content1-15j" data-rv-view="7887">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Inner class is a class which is created inside another class with keyword inner. In other words, we can say that a nested class which is marked as <strong>"inner"</strong> is called inner class.
+<div>
+</div><div>Inner class cannot be declared inside <strong>interfaces</strong> or <strong>non-inner </strong>nested classes.</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">class outerClass{
+   //outer class code
+    inner class innerClass{
+      //nested class code
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPTwcqMWSw" id="content1-15k" data-rv-view="7889">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The advantage of inner class over nested class is that, it is able to access members of outer class even it is private. Inner class keeps a reference to an object of outer class.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPTwiSVFlU" id="content12-15l" data-rv-view="7890">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Kotlin Inner Class Example
+ :</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">class outerClass{
+     private var name: String = "Ashu"
+     inner class innerClass{
+     var description: String = "code inside inner class"
+     private var id: Int = 101
+     fun foo(){
+        println("name is ${name}") // access the outer class member even private
+        println("Id is ${id}")
+        }
+    }
+}
+    fun main(args: Array&lt;String&gt;){
+    println(outerClass().innerClass().description) // accessing property
+    var obj = outerClass().innerClass() // object creation
+    obj.foo() // access member function
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPTwtXPuwI" id="content1-15n" data-rv-view="7892">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">code inside inner class
+name is Ashu
+Id is 101
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

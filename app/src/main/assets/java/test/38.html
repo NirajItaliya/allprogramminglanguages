@@ -1,0 +1,44 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #272822; overflow:auto;width:auto;font-size:10px">
+    <table>
+        <tr>
+            <td><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">java.util.Scanner</span><span style="color: #f92672">;</span>
+   <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">class</span> <span style="color: #a6e22e">JavaExample</span> 
+   <span style="color: #f92672">{</span>
+       <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">main</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">args</span><span style="color: #f92672">[])</span>
+       <span style="color: #f92672">{</span>
+           <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">num1</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">num2</span><span style="color: #f92672">;</span>
+           <span style="color: #f8f8f2">Scanner</span> <span style="color: #f8f8f2">scanner</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #f8f8f2">Scanner</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">in</span><span style="color: #f92672">);</span>
+           <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">print</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;Enter first number:&quot;</span><span style="color: #f92672">);</span>
+           <span style="color: #f8f8f2">num1</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">scanner</span><span style="color: #f92672">.</span><span style="color: #a6e22e">nextInt</span><span style="color: #f92672">();</span>
+           <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">print</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;Enter second number:&quot;</span><span style="color: #f92672">);</span>
+           <span style="color: #f8f8f2">num2</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">scanner</span><span style="color: #f92672">.</span><span style="color: #a6e22e">nextInt</span><span style="color: #f92672">();</span>
+           <span style="color: #75715e">/* To make you understand, lets assume I am going</span>
+   <span style="color: #75715e">         * to enter value of first number as 10 and second </span>
+   <span style="color: #75715e">         * as 5. Binary equivalent of 10 is 1010 and 5 is</span>
+   <span style="color: #75715e">         * 0101</span>
+   <span style="color: #75715e">         */</span>
+           
+           <span style="color: #75715e">//num1 becomes 1111 = 15</span>
+           <span style="color: #f8f8f2">num1</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">num1</span> <span style="color: #f92672">^</span> <span style="color: #f8f8f2">num2</span><span style="color: #f92672">;</span>
+           <span style="color: #75715e">//num2 becomes 1010 = 10</span>
+           <span style="color: #f8f8f2">num2</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">num1</span> <span style="color: #f92672">^</span> <span style="color: #f8f8f2">num2</span><span style="color: #f92672">;</span>
+           <span style="color: #75715e">//num1 becomes 0101 = 5</span>
+           <span style="color: #f8f8f2">num1</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">num1</span> <span style="color: #f92672">^</span> <span style="color: #f8f8f2">num2</span><span style="color: #f92672">;</span>
+           <span style="color: #f8f8f2">scanner</span><span style="color: #f92672">.</span><span style="color: #a6e22e">close</span><span style="color: #f92672">();</span>
+           <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;The First number after swapping:&quot;</span><span style="color: #f92672">+</span><span style="color: #f8f8f2">num1</span><span style="color: #f92672">);</span>
+           <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;The Second number after swapping:&quot;</span><span style="color: #f92672">+</span><span style="color: #f8f8f2">num2</span><span style="color: #f92672">);</span>
+       <span style="color: #f92672">}</span>
+   <span style="color: #f92672">}</span>
+   
+   
+   <span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">Output:</span>
+   
+   <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">first</span> <span style="color: #f8f8f2">number:</span><span style="color: #ae81ff">10</span>
+   <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">second</span> <span style="color: #f8f8f2">number:</span><span style="color: #ae81ff">5</span>
+   <span style="color: #f8f8f2">The</span> <span style="color: #f8f8f2">First</span> <span style="color: #f8f8f2">number</span> <span style="color: #f8f8f2">after</span> <span style="color: #f8f8f2">swapping:</span><span style="color: #ae81ff">5</span>
+   <span style="color: #f8f8f2">The</span> <span style="color: #f8f8f2">Second</span> <span style="color: #f8f8f2">number</span> <span style="color: #f8f8f2">after</span> <span style="color: #f8f8f2">swapping:</span><span style="color: #ae81ff">10</span>
+   </pre></td>
+        </tr>
+    </table>
+</div>

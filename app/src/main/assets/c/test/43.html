@@ -1,0 +1,38 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic"> * C Program to Reverse the String using Recursion</span>
+    <span style="color: #999999; font-style: italic"> */</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdio.h&gt;</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;string.h&gt;</span>
+     
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">reverse</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">char</span> <span style="color: #d0d0d0">[],</span> <span style="color: #6ab825; font-weight: bold">int</span><span style="color: #d0d0d0">,</span> <span style="color: #6ab825; font-weight: bold">int</span><span style="color: #d0d0d0">);</span>
+    <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #447fcf">main</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">char</span> <span style="color: #d0d0d0">str1[</span><span style="color: #3677a9">20</span><span style="color: #d0d0d0">];</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">size;</span>
+     
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter a string to reverse: &quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%s&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">str1);</span>
+        <span style="color: #d0d0d0">size</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">strlen(str1);</span>
+        <span style="color: #d0d0d0">reverse(str1,</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">size</span> <span style="color: #d0d0d0">-</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;The string after reversing is: %s\n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">str1);</span>
+        <span style="color: #6ab825; font-weight: bold">return</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #d0d0d0">}</span>
+     
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">reverse</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">char</span> <span style="color: #d0d0d0">str1[],</span> <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">index,</span> <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">size)</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">char</span> <span style="color: #d0d0d0">temp;</span>
+        <span style="color: #d0d0d0">temp</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">str1[index];</span>
+        <span style="color: #d0d0d0">str1[index]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">str1[size</span> <span style="color: #d0d0d0">-</span> <span style="color: #d0d0d0">index];</span>
+        <span style="color: #d0d0d0">str1[size</span> <span style="color: #d0d0d0">-</span> <span style="color: #d0d0d0">index]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp;</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(index</span> <span style="color: #d0d0d0">==</span> <span style="color: #d0d0d0">size</span> <span style="color: #d0d0d0">/</span> <span style="color: #3677a9">2</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #6ab825; font-weight: bold">return</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">reverse(str1,</span> <span style="color: #d0d0d0">index</span> <span style="color: #d0d0d0">+</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">size);</span>
+    <span style="color: #d0d0d0">}</span>
+    
+    <span style="color: #d0d0d0">&gt;&gt;output:</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">a</span> <span style="color: #d0d0d0">string</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">reverse:</span> <span style="color: #d0d0d0">ApkZube</span>
+    <span style="color: #d0d0d0">The</span> <span style="color: #d0d0d0">string</span> <span style="color: #d0d0d0">after</span> <span style="color: #d0d0d0">reversing</span> <span style="color: #d0d0d0">is:</span> <span style="color: #d0d0d0">ebuZkpA</span>
+    </pre></div>

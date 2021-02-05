@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/idItem1"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Item1" />
+        <item
+            android:id="@+id/idItem2"
+            android:icon="@drawable/abc_vector_test"
+            android:title="Item2" />
+        <item
+            android:id="@+id/idItem3"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Item3" />
+        <item
+            android:id="@+id/idItem4"
+            android:icon="@drawable/abc_vector_test"
+            android:title="Item4" />
+        <item
+            android:id="@+id/idItem5"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Item5" />
+    </group>
+
+    <item android:title="Section2">
+        <menu>
+            <item
+                android:id="@+id/idItem6"
+                android:icon="@drawable/abc_vector_test"
+                android:title="Item6" />
+        </menu>
+    </item>
+    <item android:title="Section3">
+        <menu>
+            <item
+                android:id="@+id/idItem7"
+                android:icon="@drawable/ic_baseline_home_24"
+                android:title="Item7" />
+        </menu>
+    </item>
+</menu>

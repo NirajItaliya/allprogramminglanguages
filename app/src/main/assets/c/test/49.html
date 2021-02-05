@@ -1,0 +1,65 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic"> * C Program to Count the Number of Unique Words </span>
+    <span style="color: #999999; font-style: italic"> */</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdio.h&gt; </span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;string.h&gt;</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdlib.h&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #447fcf">main</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">e,</span> <span style="color: #d0d0d0">j,</span> <span style="color: #d0d0d0">d,</span> <span style="color: #d0d0d0">k,</span> <span style="color: #d0d0d0">space</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #6ab825; font-weight: bold">char</span> <span style="color: #d0d0d0">a[</span><span style="color: #3677a9">50</span><span style="color: #d0d0d0">],</span> <span style="color: #d0d0d0">b[</span><span style="color: #3677a9">15</span><span style="color: #d0d0d0">][</span><span style="color: #3677a9">20</span><span style="color: #d0d0d0">],</span> <span style="color: #d0d0d0">c[</span><span style="color: #3677a9">15</span><span style="color: #d0d0d0">][</span><span style="color: #3677a9">20</span><span style="color: #d0d0d0">];</span>
+     
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Read a string:\n&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">fflush(stdin);</span>
+        <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%[^\n]s&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">a);</span>
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;a[i]</span> <span style="color: #d0d0d0">!=</span> <span style="color: #ed9d13">&#39;\0&#39;</span><span style="color: #d0d0d0">;i++)</span>        <span style="color: #999999; font-style: italic">//loop to count no of words</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(a[i]</span> <span style="color: #d0d0d0">=</span>  <span style="color: #d0d0d0">=</span> <span style="color: #ed9d13">&#39; &#39;</span><span style="color: #d0d0d0">)</span>
+                <span style="color: #d0d0d0">space++;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(j</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;j&lt;(space</span> <span style="color: #d0d0d0">+</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">);i++,</span> <span style="color: #d0d0d0">j++)</span>    <span style="color: #999999; font-style: italic">//loop to store each word into an 2D array</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">k</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(a[i]</span> <span style="color: #d0d0d0">!=</span> <span style="color: #ed9d13">&#39;\0&#39;</span><span style="color: #d0d0d0">)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(a[i]</span> <span style="color: #d0d0d0">==</span> <span style="color: #ed9d13">&#39; &#39;</span><span style="color: #d0d0d0">)</span>
+                <span style="color: #d0d0d0">{</span>
+                    <span style="color: #6ab825; font-weight: bold">break</span><span style="color: #d0d0d0">;</span>
+                <span style="color: #d0d0d0">}</span>
+                <span style="color: #6ab825; font-weight: bold">else</span>
+                <span style="color: #d0d0d0">{</span>
+                    <span style="color: #d0d0d0">b[j][k++]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">a[i];</span>
+                    <span style="color: #d0d0d0">i++;</span>
+                <span style="color: #d0d0d0">}</span>
+            <span style="color: #d0d0d0">}</span>
+            <span style="color: #d0d0d0">b[j][k]</span> <span style="color: #d0d0d0">=</span> <span style="color: #ed9d13">&#39;\0&#39;</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">strcpy(c[i],</span> <span style="color: #d0d0d0">b[i]);</span>
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(e</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;e</span> <span style="color: #d0d0d0">&lt;=</span> <span style="color: #d0d0d0">j;e++)</span>        <span style="color: #999999; font-style: italic">//loop to check whether the string is already present in the 2D array or not</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(d</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;d</span> <span style="color: #d0d0d0">&lt;=</span> <span style="color: #d0d0d0">i;d++)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(strcmp(c[i],</span> <span style="color: #d0d0d0">b[e])</span> <span style="color: #d0d0d0">==</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">)</span>
+                    <span style="color: #6ab825; font-weight: bold">break</span><span style="color: #d0d0d0">;</span>
+                <span style="color: #6ab825; font-weight: bold">else</span>
+                <span style="color: #d0d0d0">{</span>
+                    <span style="color: #d0d0d0">i++;</span>
+                    <span style="color: #d0d0d0">strcpy(c[i],</span> <span style="color: #d0d0d0">b[e]);</span>
+                    <span style="color: #6ab825; font-weight: bold">break</span><span style="color: #d0d0d0">;</span>
+                <span style="color: #d0d0d0">}</span>
+            <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\nNumber of unique words in %s are:%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">a,</span> <span style="color: #d0d0d0">i);</span>
+        <span style="color: #6ab825; font-weight: bold">return</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #d0d0d0">}</span>
+    
+    <span style="color: #d0d0d0">&gt;&gt;Output:</span>
+    <span style="color: #d0d0d0">Read</span> <span style="color: #d0d0d0">a</span> <span style="color: #d0d0d0">string:</span>
+    <span style="color: #d0d0d0">Welcome</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">Sanfoundry</span><span style="color: #a61717; background-color: #e3d2d2">&#39;</span><span style="color: #d0d0d0">s</span> <span style="color: #d0d0d0">C-programming</span> <span style="color: #d0d0d0">class,</span>  <span style="color: #d0d0d0">Welcome</span> <span style="color: #d0d0d0">again</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">C</span> <span style="color: #d0d0d0">class!</span>
+    <span style="color: #d0d0d0">The</span> <span style="color: #d0d0d0">length</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">input</span> <span style="color: #d0d0d0">string</span> <span style="color: #d0d0d0">is:</span><span style="color: #3677a9">70</span>
+     
+    <span style="color: #d0d0d0">Number</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">unique</span> <span style="color: #d0d0d0">words</span> <span style="color: #d0d0d0">in</span> <span style="color: #d0d0d0">Welcome</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">Sanfoundry</span><span style="color: #a61717; background-color: #e3d2d2">&#39;</span><span style="color: #d0d0d0">s</span> <span style="color: #d0d0d0">C-programming</span> <span style="color: #d0d0d0">class,</span>  <span style="color: #d0d0d0">Welcome</span> <span style="color: #d0d0d0">again</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">C</span> <span style="color: #d0d0d0">class!</span> <span style="color: #d0d0d0">are:</span><span style="color: #3677a9">8</span>
+    </pre></div>

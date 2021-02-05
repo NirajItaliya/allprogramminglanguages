@@ -1,0 +1,24 @@
+<!-- HTML generated using hilite.me --><div style="background: #111111; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #fb660a; font-weight: bold">fun</span> <span style="color: #ff0086; font-weight: bold">main</span><span style="color: #ffffff">(args:</span> <span style="color: #ffffff">Array&lt;String&gt;)</span> <span style="color: #ffffff">{</span>
+    <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">numArray</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">doubleArrayOf(</span><span style="color: #0086f7; font-weight: bold">1.0</span><span style="color: #ffffff">,</span> <span style="color: #0086f7; font-weight: bold">2.0</span><span style="color: #ffffff">,</span> <span style="color: #0086f7; font-weight: bold">3.0</span><span style="color: #ffffff">,</span> <span style="color: #0086f7; font-weight: bold">4.0</span><span style="color: #ffffff">,</span> <span style="color: #0086f7; font-weight: bold">5.0</span><span style="color: #ffffff">,</span> <span style="color: #0086f7; font-weight: bold">6.0</span><span style="color: #ffffff">,</span> <span style="color: #0086f7; font-weight: bold">7.0</span><span style="color: #ffffff">,</span> <span style="color: #0086f7; font-weight: bold">8.0</span><span style="color: #ffffff">,</span> <span style="color: #0086f7; font-weight: bold">9.0</span><span style="color: #ffffff">,</span> <span style="color: #0086f7; font-weight: bold">10.0</span><span style="color: #ffffff">)</span>
+    <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">SD</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">calculateSD(numArray)</span>
+    <span style="color: #ffffff">System.</span><span style="color: #fb660a; font-weight: bold">out</span><span style="color: #ffffff">.format(</span><span style="color: #0086d2">&quot;Standard Deviation = %.6f&quot;</span><span style="color: #ffffff">,</span> <span style="color: #ffffff">SD)</span>
+<span style="color: #ffffff">}</span>
+<span style="color: #fb660a; font-weight: bold">fun</span> <span style="color: #ff0086; font-weight: bold">calculateSD</span><span style="color: #ffffff">(numArray:</span> <span style="color: #ffffff">DoubleArray):</span> <span style="color: #ffffff">Double</span> <span style="color: #ffffff">{</span>
+    <span style="color: #fb660a; font-weight: bold">var</span> <span style="color: #ffffff">sum</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">0.0</span>
+    <span style="color: #fb660a; font-weight: bold">var</span> <span style="color: #ffffff">standardDeviation</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">0.0</span>
+    <span style="color: #fb660a; font-weight: bold">for</span> <span style="color: #ffffff">(num</span> <span style="color: #fb660a; font-weight: bold">in</span> <span style="color: #ffffff">numArray)</span> <span style="color: #ffffff">{</span>
+        <span style="color: #ffffff">sum</span> <span style="color: #ffffff">+=</span> <span style="color: #ffffff">num</span>
+    <span style="color: #ffffff">}</span>
+    <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">mean</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">sum</span> <span style="color: #ffffff">/</span> <span style="color: #0086f7; font-weight: bold">10</span>
+    <span style="color: #fb660a; font-weight: bold">for</span> <span style="color: #ffffff">(num</span> <span style="color: #fb660a; font-weight: bold">in</span> <span style="color: #ffffff">numArray)</span> <span style="color: #ffffff">{</span>
+        <span style="color: #ffffff">standardDeviation</span> <span style="color: #ffffff">+=</span> <span style="color: #ffffff">Math.pow(num</span> <span style="color: #ffffff">-</span> <span style="color: #ffffff">mean,</span> <span style="color: #0086f7; font-weight: bold">2.0</span><span style="color: #ffffff">)</span>
+    <span style="color: #ffffff">}</span>
+    <span style="color: #fb660a; font-weight: bold">return</span> <span style="color: #ffffff">Math.sqrt(standardDeviation</span> <span style="color: #ffffff">/</span> <span style="color: #0086f7; font-weight: bold">10</span><span style="color: #ffffff">)</span>
+<span style="color: #ffffff">}</span>
+
+
+
+<span style="color: #ffffff">&gt;&gt;</span> <span style="color: #ffffff">output</span> <span style="color: #ffffff">will</span> <span style="color: #ffffff">be:</span>
+
+<span style="color: #ffffff">Standard</span> <span style="color: #ffffff">Deviation</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">2.872281</span>
+</pre></div>

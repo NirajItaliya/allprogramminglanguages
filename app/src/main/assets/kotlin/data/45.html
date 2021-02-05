@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>HashMap: hashMapOf()</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPEBo8umzT" id="content1-xm" data-rv-view="7024">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>HashMap: hashMapOf()</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/m">bootstrap table</a></section><section class="mbr-section article content1 cid-rPEBvi5Xgs" id="content1-xn" data-rv-view="7025">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">A <strong>hashMapOf()</strong> is a function of HashMap class. It returns a new HashMap with the specified contents. It contains pairs of data in the form of key and value. <strong>HashMap</strong> is <strong>mutable</strong> collection which provides both read am write functionalities.
+<div>
+</div><div><strong>Syntax of hashMapOf() function
+:</strong></div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">inline fun &lt;K, V&gt; hashMapOf(): HashMap&lt;K, V&gt; (source)
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPEBHCdiiG" id="content1-xp" data-rv-view="7027">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">and</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun &lt;K, V&gt; hashMapOf(vararg pairs: Pair&lt;K, V&gt;): HashMap&lt;K, V&gt; (source)
+</code></pre></div>
+
+<section class="section-table cid-rPEBX1Blkg" id="table1-xr" data-rv-view="7029">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5"><strong>Functions of HashMap</strong></h2>
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Functions</th><th class="head-item mbr-fonts-style display-7">Descriptions</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun put(key: K, value: V): V?&nbsp;</td><td class="body-item mbr-fonts-style display-7">It puts the specified key and value in the map
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open operator fun get(key: K): V?&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns the value of specified key, or null if no such specified key is available in map.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun containsKey(key: K): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns true if map contains specifies key.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun containsValue(value: V): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns true if map maps one of more keys to specified value.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun clear()&nbsp;</td><td class="body-item mbr-fonts-style display-7">It removes all elements from map.
+<br></td></tr><tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun remove(key: K): V?&nbsp;</td><td class="body-item mbr-fonts-style display-7">It removes the specified key and its corresponding value from map
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPECuSflc4" id="content12-xs" data-rv-view="7080">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 1
+:&nbsp;</strong>The hashMapOf() function of HashMap can be declared as different generic types such as hashMapOf&lt;Int, String&gt;(), hashMapOf&lt;String, String&gt;(), hashMapOf&lt;Any, Any&gt;() etc.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val intMap: HashMap&lt;Int, String> = hashMapOf&lt;Int,String>(1 to "Ashu",4 to "Rohan", 2 to "Ajeet", 3 to "Vijay")
+
+    val stringMap: HashMap&lt;String,String> = hashMapOf&lt;String,String>("name" to "Ashu")
+    stringMap.put("city", "Delhi")
+    stringMap.put("department", "Development")
+    stringMap.put("hobby", "Playing")
+    val anyMap: HashMap&lt;Any, Any> = hashMapOf&lt;Any, Any>(1 to "Ashu", "name" to "Rohsan", 2 to 200)
+    println(".....traverse intMap........")
+    for(key in intMap.keys){
+        println(intMap[key])
+    }
+    println("......traverse stringMap.......")
+    for(key in stringMap.keys){
+        println(stringMap[key])
+    }
+    println("......traverse anyMap.......")
+    for(key in anyMap.keys){
+        println(anyMap[key])
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPECwtkmP2" id="content1-xu" data-rv-view="7082">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">.....traverse intMap........
+Ashu
+Ajeet
+Vijay
+Rohan
+......traverse stringMap.......
+Ashu
+Development
+Delhi
+Playing
+......traverse anyMap.......
+Rohsan
+Ashu
+200
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPECxoNppY" id="content12-xw" data-rv-view="7084">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 2 - containsKey()
+:&nbsp;</strong>The containsKey() function returns true if it contains the mention key in the HashMap, otherwise it returns false.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val stringMap: HashMap&lt;String,String> = hashMapOf&lt;String,String>()
+    stringMap.put("name", "Ashu")
+    stringMap.put("city", "Delhi")
+    stringMap.put("department", "Development")
+    stringMap.put("hobby", "Playing")
+
+    println("......traverse stringMap.......")
+    for(key in stringMap.keys){
+        println("Key = ${key} , value = ${stringMap[key]}")
+    }
+
+    println("......stringMap.containsKey(\"name\").......")
+    println(stringMap.containsKey("name"))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPECyeJbiR" id="content1-xy" data-rv-view="7086">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traverse stringMap.......
+Key = city , value = Delhi
+Key = name , value = Ashu
+Key = department , value = Development
+Key = hobby , value = Playing
+......stringMap.containsKey("name").......
+true
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPECz1DDux" id="content12-y0" data-rv-view="7088">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 3 - containsValue()
+:&nbsp;</strong>The containsValue() function returns true if it contains the mention value in the HashMap, otherwise it returns false.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val stringMap: HashMap&lt;String,String> = hashMapOf&lt;String,String>()
+    stringMap.put("name", "Ashu")
+    stringMap.put("city", "Delhi")
+    stringMap.put("department", "Development")
+    stringMap.put("hobby", "Playing")
+
+    println("......traverse stringMap.......")
+    for(key in stringMap.keys){
+        println("Key = ${key} , value = ${stringMap[key]}")
+    }
+
+    println(".......stringMap.containsValue(\"Delhi\")......")
+    println(stringMap.containsValue("Delhi"))
+    println(stringMap.containsValue("Mumbai"))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPECzLHw5k" id="content1-y2" data-rv-view="7090">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traverse stringMap.......
+Key = city , value = Delhi
+Key = name , value = Ashu
+Key = department , value = Development
+Key = hobby , value = Playing
+.......stringMap.containsValue("Delhi")......
+true
+false
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPECADkGCU" id="content12-y4" data-rv-view="7092">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 4 - contains()
+:&nbsp;</strong>The contains() function returns true if it contains the mention key in the HashMap, otherwise it returns false.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val stringMap: HashMap&lt;String,String> = hashMapOf&lt;String,String>()
+    stringMap.put("name", "Ashu")
+    stringMap.put("city", "Delhi")
+    stringMap.put("department", "Development")
+    stringMap.put("hobby", "Playing")
+
+    println("......traverse stringMap.......")
+    for(key in stringMap.keys){
+        println("Key = ${key} , value = ${stringMap[key]}")
+    }
+
+    println("......stringMap.contains(\"city\").......")
+    println(stringMap.contains("city"))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPECBxrPQM" id="content1-y6" data-rv-view="7094">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">......traverse stringMap.......
+Key = city , value = Delhi
+Key = name , value = Ashu
+Key = department , value = Development
+Key = hobby , value = Playing
+......stringMap.contains("city").......
+true
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPECCihWa0" id="content12-y8" data-rv-view="7096">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 5 - replace(key, value)
+:&nbsp;</strong>The replace(key, value) function is used to replace the existing value at specified key with new specified value. The replace(key, value) function returns the replaced value.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val stringMap: HashMap&lt;String,String> = hashMapOf&lt;String,String>()
+    stringMap.put("name", "Ashu")
+    stringMap.put("city", "Delhi")
+    stringMap.put("department", "Development")
+    stringMap.put("hobby", "Playing")
+
+    println("......traverse stringMap.......")
+    for(key in stringMap.keys){
+        println("Key = ${key} , value = ${stringMap[key]}")
+    }
+
+    println("......stringMap.replace(\"city\",\"Mumbai\").......")
+    println(stringMap.replace("city","Mumbai"))
+    println("......traverse stringMap after stringMap.replace(\"city\",\"Mumbai\").......")
+    for(key in stringMap.keys){
+        println("Key = ${key} , value = ${stringMap[key]}")
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPECD9qYY2" id="content1-ya" data-rv-view="7098">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traverse stringMap.......
+Key = city , value = Delhi
+Key = name , value = Ashu
+Key = department , value = Development
+Key = hobby , value = Playing
+......stringMap.replace("city","Mumbai").......
+Delhi
+......traverse stringMap after stringMap.replace("city","Mumbai").......
+Key = city , value = Mumbai
+Key = name , value = Ashu
+Key = department , value = Development
+Key = hobby , value = Playing
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPECE7KEE4" id="content12-yc" data-rv-view="7100">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 6 - replace(key, oldValue, newValue)
+:&nbsp;</strong>The replace(key, oldValue, newValue) function is used to replace the existing old value at specified key with new specified value. The replace(key, newValue, oldValue) function returns true if it replace old value with new else it returns false</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val stringMap: HashMap&lt;String,String> = hashMapOf&lt;String,String>()
+    stringMap.put("name", "Ashu")
+    stringMap.put("city", "Delhi")
+    stringMap.put("department", "Development")
+    stringMap.put("hobby", "Playing")
+
+    println("......traverse stringMap.......")
+    for(key in stringMap.keys){
+        println("Key = ${key} , value = ${stringMap[key]}")
+    }
+
+    println(".......stringMap.replace(\"department\", \"Development\",\"Management\")......")
+    println(stringMap.replace("department", "Development","Management"))
+    println("......traverse stringMap after stringMap.replace(\"department\", \"Development\",\"Management\").......")
+    for(key in stringMap.keys){
+        println("Key = ${key} , value = ${stringMap[key]}")
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPECETOnmO" id="content1-ye" data-rv-view="7102">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">......traverse stringMap.......
+Key = city , value = Delhi
+Key = name , value = Ashu
+Key = department , value = Development
+Key = hobby , value = Playing
+.......stringMap.replace("department", "Development","Management")......
+true
+......traverse stringMap after stringMap.replace("department", "Development","Management").......
+Key = city , value = Delhi
+Key = name , value = Ashu
+Key = department , value = Management
+Key = hobby , value = Playing
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPECGJxzNd" id="content12-yg" data-rv-view="7104">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 7 - hashMapOf().size, hashMapOf().key
+:&nbsp;</strong>The size property of hashMapOf() function returns total size of HashMap and the key property returns all keys of HashMap.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val stringMap: HashMap&lt;String,String> = hashMapOf&lt;String,String>()
+    stringMap.put("name", "Ashu")
+    stringMap.put("city", "Delhi")
+    stringMap.put("department", "Development")
+    stringMap.put("hobby", "Playing")
+
+    println("......traverse stringMap.......")
+    for(key in stringMap.keys){
+        println("Key = ${key} , value = ${stringMap[key]}")
+    }
+
+    println(".....stringMap.size........")
+    println(stringMap.size)
+
+    println(".......stringMap.keys......")
+    println(stringMap.keys)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPECIr6LJb" id="content1-yj" data-rv-view="7106">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traverse stringMap.......
+Key = city , value = Delhi
+Key = name , value = Ashu
+Key = department , value = Development
+Key = hobby , value = Playing
+.....stringMap.size........
+4
+.......stringMap.keys......
+[city, name, department, hobby]
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPECMfYv4F" id="content12-yl" data-rv-view="7108">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 8 - getValue(key), getOrDefault(key, defaultValue)
+:&nbsp;</strong>The getValue() function returns value of specified key of the HashMap. Whereas getOrDefault() function returns corresponding value of specified key if it exist in the HashMap or it returns mentioned default value if no such key exists in HashMap.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val stringMap: HashMap&lt;String,String> = hashMapOf&lt;String,String>()
+    stringMap.put("name", "Ashu")
+    stringMap.put("city", "Delhi")
+    stringMap.put("department", "Development")
+    stringMap.put("hobby", "Playing")
+
+    println("......traverse stringMap.......")
+    for(key in stringMap.keys){
+        println("Key = ${key} , value = ${stringMap[key]}")
+    }
+
+    println(".......stringMap.getValue(\"department\")......")
+    println(stringMap.getValue("department"))
+
+    println(".......stringMap.getOrDefault(\"name\", \"Default Value\")......")
+    println(stringMap.getOrDefault("name", "Default Value"))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPECMWs1LK" id="content1-yn" data-rv-view="7110">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traverse stringMap.......
+Key = city , value = Delhi
+Key = name , value = Ashu
+Key = department , value = Development
+Key = hobby , value = Playing
+.......stringMap.getValue("department")......
+Development
+.......stringMap.getOrDefault("name", "Default Value")......
+Ashu
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPECOrYNH7" id="content12-yp" data-rv-view="7112">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 9 - remove(key)
+:&nbsp;</strong>The remove(key) function is used to remove the specified key along with its corresponding value. The remove(key) function returns the removed value.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val stringMap: HashMap&lt;String,String> = hashMapOf&lt;String,String>()
+    stringMap.put("name", "Ashu")
+    stringMap.put("city", "Delhi")
+    stringMap.put("department", "Development")
+    stringMap.put("hobby", "Playing")
+
+    println("......traverse stringMap.......")
+    for(key in stringMap.keys){
+        println("Key = ${key} , value = ${stringMap[key]}")
+    }
+
+        println("......stringMap.remove(\"city\").......")
+        println(stringMap.remove("city"))
+        println("......traverse stringMap after stringMap.remove(\"city\").......")
+        for(key in stringMap.keys){
+        println("Key = ${key} , value = ${stringMap[key]}")
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPECPgdxlt" id="content1-yr" data-rv-view="7114">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traverse stringMap.......
+Key = city , value = Delhi
+Key = name , value = Ashu
+Key = department , value = Development
+Key = hobby , value = Playing
+......stringMap.remove("city").......
+Delhi
+......traverse stringMap after stringMap.remove("city").......
+Key = name , value = Ashu
+Key = department , value = Development
+Key = hobby , value = Playing
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPEEERyIgf" id="content12-yt" data-rv-view="7116">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 10 - remove(key, value)
+:&nbsp;</strong>The remove(key, value) function is used to remove the specified key along with its corresponding value. The remove(key, value) function returns true if it remove the specified key along with its value else it returns false.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val stringMap: HashMap&lt;String,String> = hashMapOf&lt;String,String>()
+    stringMap.put("name", "Ashu")
+    stringMap.put("city", "Delhi")
+    stringMap.put("department", "Development")
+    stringMap.put("hobby", "Playing")
+
+    println("......traverse stringMap.......")
+    for(key in stringMap.keys){
+        println("Key = ${key} , value = ${stringMap[key]}")
+    }
+        println(".......stringMap.remove(\"hobby\",\"Playing\")......")
+        println(stringMap.remove("hobby","Playing"))
+    println("......traverse stringMap after stringMap.remove(\"hobby\",\"Playing\").......")
+    for(key in stringMap.keys){
+        println("Key = ${key} , value = ${stringMap[key]}")
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPEEFTuCyV" id="content1-yv" data-rv-view="7118">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traverse stringMap.......
+Key = city , value = Delhi
+Key = name , value = Ashu
+Key = department , value = Development
+Key = hobby , value = Playing
+.......stringMap.remove("hobby","Playing")......
+true
+......traverse stringMap after stringMap.remove("hobby","Playing").......
+Key = city , value = Delhi
+Key = name , value = Ashu
+Key = department , value = Development
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPEEH4vbtj" id="content12-yx" data-rv-view="7120">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 11 - set(key, value)
+:&nbsp;</strong>The set(key, value) function is used to set the given value at specified key if it exist. If the key does not exist in the HashMap it will add new key and set the given value corresponding to it.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val stringMap: HashMap&lt;String,String> = hashMapOf&lt;String,String>()
+    stringMap.put("name", "Ashu")
+    stringMap.put("city", "Delhi")
+    stringMap.put("department", "Development")
+    stringMap.put("hobby", "Playing")
+
+    println("......traverse stringMap.......")
+    for(key in stringMap.keys){
+        println("Key = ${key} , value = ${stringMap[key]}")
+    }
+
+    stringMap.set("name","Ashutosh")
+    stringMap.set("skill","Kotlin")
+    println("......traverse stringMap after stringMap.set(\"name\",\"Ashutosh\") and stringMap.set(\"skill\",\"Kotlin\").......")
+    for(key in stringMap.keys){
+        println("Key = ${key} , value = ${stringMap[key]}")
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPEEHTZTin" id="content1-yz" data-rv-view="7122">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">......traverse stringMap.......
+Key = city , value = Delhi
+Key = name , value = Ashu
+Key = department , value = Development
+Key = hobby , value = Playing
+......stringMap.set("name","Ashutosh").......
+......traverse stringMap after stringMap.set("name","Ashutosh") and stringMap.set("skill","Kotlin").......
+Key = city , value = Delhi
+Key = skill , value = Kotlin
+Key = name , value = Ashutosh
+Key = department , value = Development
+Key = hobby , value = Playing
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPEFa6LiIs" id="content12-z1" data-rv-view="7124">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>&nbsp;Example 12 - clear()
+:&nbsp;</strong>The clear() function is used to clear (or remove) all the key, value pair from the HashMap.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val stringMap: HashMap&lt;String,String> = hashMapOf&lt;String,String>()
+    stringMap.put("name", "Ashu")
+    stringMap.put("city", "Delhi")
+    stringMap.put("department", "Development")
+    stringMap.put("hobby", "Playing")
+
+    println("......traverse stringMap.......")
+    for(key in stringMap.keys){
+        println("Key = ${key} , value = ${stringMap[key]}")
+    }
+
+    println("......stringMap.clear().......")
+    println(stringMap.clear())
+    println(stringMap)
+
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPEFaKjabE" id="content1-z3" data-rv-view="7126">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......traverse stringMap.......
+Key = city , value = Delhi
+Key = name , value = Ashu
+Key = department , value = Development
+Key = hobby , value = Playing
+......stringMap.clear().......
+kotlin.Unit
+{}
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/datatables/jquery.data-tables.min.js"></script>
+  <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

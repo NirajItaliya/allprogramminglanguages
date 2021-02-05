@@ -1,0 +1,129 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic"> * C Program to Implement a Queue using an Array</span>
+    <span style="color: #999999; font-style: italic"> */</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdio.h&gt;</span>
+     
+    <span style="color: #cd2828; font-weight: bold">#define MAX 50</span>
+    <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">queue_array[MAX];</span>
+    <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">rear</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">-</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">front</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">-</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #d0d0d0">main()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">choice;</span>
+        <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(</span><span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;1.Insert element to queue \n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;2.Delete element from queue \n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;3.Display all elements of queue \n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;4.Quit \n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter your choice : &quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;choice);</span>
+            <span style="color: #6ab825; font-weight: bold">switch</span> <span style="color: #d0d0d0">(choice)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #6ab825; font-weight: bold">case</span> <span style="color: #3677a9">1</span>:
+                <span style="color: #d0d0d0">insert();</span>
+                <span style="color: #6ab825; font-weight: bold">break</span><span style="color: #d0d0d0">;</span>
+                <span style="color: #6ab825; font-weight: bold">case</span> <span style="color: #3677a9">2</span>:
+                <span style="color: #d0d0d0">delete();</span>
+                <span style="color: #6ab825; font-weight: bold">break</span><span style="color: #d0d0d0">;</span>
+                <span style="color: #6ab825; font-weight: bold">case</span> <span style="color: #3677a9">3</span>:
+                <span style="color: #d0d0d0">display();</span>
+                <span style="color: #6ab825; font-weight: bold">break</span><span style="color: #d0d0d0">;</span>
+                <span style="color: #6ab825; font-weight: bold">case</span> <span style="color: #3677a9">4</span>:
+                <span style="color: #d0d0d0">exit(</span><span style="color: #3677a9">1</span><span style="color: #d0d0d0">);</span>
+                <span style="color: #d0d0d0">default:</span>
+                <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Wrong choice \n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">}</span> <span style="color: #999999; font-style: italic">/*End of switch*/</span>
+        <span style="color: #d0d0d0">}</span> <span style="color: #999999; font-style: italic">/*End of while*/</span>
+    <span style="color: #d0d0d0">}</span> <span style="color: #999999; font-style: italic">/*End of main()*/</span>
+    <span style="color: #d0d0d0">insert()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">add_item;</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(rear</span> <span style="color: #d0d0d0">==</span> <span style="color: #d0d0d0">MAX</span> <span style="color: #d0d0d0">-</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Queue Overflow \n&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #6ab825; font-weight: bold">else</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(front</span> <span style="color: #d0d0d0">==</span> <span style="color: #d0d0d0">-</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span>
+            <span style="color: #999999; font-style: italic">/*If queue is initially empty */</span>
+            <span style="color: #d0d0d0">front</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Inset the element in queue : &quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;add_item);</span>
+            <span style="color: #d0d0d0">rear</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">rear</span> <span style="color: #d0d0d0">+</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #d0d0d0">queue_array[rear]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">add_item;</span>
+        <span style="color: #d0d0d0">}</span>
+    <span style="color: #d0d0d0">}</span> <span style="color: #999999; font-style: italic">/*End of insert()*/</span>
+     
+    <span style="color: #d0d0d0">delete()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(front</span> <span style="color: #d0d0d0">==</span> <span style="color: #d0d0d0">-</span> <span style="color: #3677a9">1</span> <span style="color: #d0d0d0">||</span> <span style="color: #d0d0d0">front</span> <span style="color: #d0d0d0">&gt;</span> <span style="color: #d0d0d0">rear)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Queue Underflow \n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #6ab825; font-weight: bold">return</span> <span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">else</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Element deleted from queue is : %d\n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">queue_array[front]);</span>
+            <span style="color: #d0d0d0">front</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">front</span> <span style="color: #d0d0d0">+</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+    <span style="color: #d0d0d0">}</span> <span style="color: #999999; font-style: italic">/*End of delete() */</span>
+    <span style="color: #d0d0d0">display()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">i;</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(front</span> <span style="color: #d0d0d0">==</span> <span style="color: #d0d0d0">-</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Queue is empty \n&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #6ab825; font-weight: bold">else</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Queue is : \n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">front;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&lt;=</span> <span style="color: #d0d0d0">rear;</span> <span style="color: #d0d0d0">i++)</span>
+                <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;%d &quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">queue_array[i]);</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">}</span>
+    <span style="color: #d0d0d0">}</span> <span style="color: #999999; font-style: italic">/*End of display() */</span>
+    
+    
+    
+    <span style="color: #d0d0d0">&gt;&gt;Runtime</span> <span style="color: #d0d0d0">Test</span> <span style="color: #d0d0d0">Cases</span>
+    <span style="color: #3677a9">1.</span><span style="color: #d0d0d0">Insert</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">queue</span>
+    <span style="color: #3677a9">2.</span><span style="color: #d0d0d0">Delete</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">from</span> <span style="color: #d0d0d0">queue</span>
+    <span style="color: #3677a9">3.</span><span style="color: #d0d0d0">Display</span> <span style="color: #d0d0d0">all</span> <span style="color: #d0d0d0">elements</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">queue</span>
+    <span style="color: #3677a9">4.</span><span style="color: #d0d0d0">Quit</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">your</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">Inset</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">in</span> <span style="color: #d0d0d0">queue</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">10</span>
+    <span style="color: #3677a9">1.</span><span style="color: #d0d0d0">Insert</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">queue</span>
+    <span style="color: #3677a9">2.</span><span style="color: #d0d0d0">Delete</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">from</span> <span style="color: #d0d0d0">queue</span>
+    <span style="color: #3677a9">3.</span><span style="color: #d0d0d0">Display</span> <span style="color: #d0d0d0">all</span> <span style="color: #d0d0d0">elements</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">queue</span>
+    <span style="color: #3677a9">4.</span><span style="color: #d0d0d0">Quit</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">your</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">Inset</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">in</span> <span style="color: #d0d0d0">queue</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">15</span>
+    <span style="color: #3677a9">1.</span><span style="color: #d0d0d0">Insert</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">queue</span>
+    <span style="color: #3677a9">2.</span><span style="color: #d0d0d0">Delete</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">from</span> <span style="color: #d0d0d0">queue</span>
+    <span style="color: #3677a9">3.</span><span style="color: #d0d0d0">Display</span> <span style="color: #d0d0d0">all</span> <span style="color: #d0d0d0">elements</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">queue</span>
+    <span style="color: #3677a9">4.</span><span style="color: #d0d0d0">Quit</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">your</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">Inset</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">in</span> <span style="color: #d0d0d0">queue</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">20</span>
+    <span style="color: #3677a9">1.</span><span style="color: #d0d0d0">Insert</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">queue</span>
+    <span style="color: #3677a9">2.</span><span style="color: #d0d0d0">Delete</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">from</span> <span style="color: #d0d0d0">queue</span>
+    <span style="color: #3677a9">3.</span><span style="color: #d0d0d0">Display</span> <span style="color: #d0d0d0">all</span> <span style="color: #d0d0d0">elements</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">queue</span>
+    <span style="color: #3677a9">4.</span><span style="color: #d0d0d0">Quit</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">your</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">Inset</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">in</span> <span style="color: #d0d0d0">queue</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">30</span>
+    <span style="color: #3677a9">1.</span><span style="color: #d0d0d0">Insert</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">queue</span>
+    <span style="color: #3677a9">2.</span><span style="color: #d0d0d0">Delete</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">from</span> <span style="color: #d0d0d0">queue</span>
+    <span style="color: #3677a9">3.</span><span style="color: #d0d0d0">Display</span> <span style="color: #d0d0d0">all</span> <span style="color: #d0d0d0">elements</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">queue</span>
+    <span style="color: #3677a9">4.</span><span style="color: #d0d0d0">Quit</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">your</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">2</span>
+    <span style="color: #d0d0d0">Element</span> <span style="color: #d0d0d0">deleted</span> <span style="color: #d0d0d0">from</span> <span style="color: #d0d0d0">queue</span> <span style="color: #d0d0d0">is</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">10</span>
+    <span style="color: #3677a9">1.</span><span style="color: #d0d0d0">Insert</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">queue</span>
+    <span style="color: #3677a9">2.</span><span style="color: #d0d0d0">Delete</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">from</span> <span style="color: #d0d0d0">queue</span>
+    <span style="color: #3677a9">3.</span><span style="color: #d0d0d0">Display</span> <span style="color: #d0d0d0">all</span> <span style="color: #d0d0d0">elements</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">queue</span>
+    <span style="color: #3677a9">4.</span><span style="color: #d0d0d0">Quit</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">your</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">3</span>
+    <span style="color: #d0d0d0">Queue</span> <span style="color: #d0d0d0">is</span> <span style="color: #d0d0d0">:</span>
+    <span style="color: #3677a9">15</span> <span style="color: #3677a9">20</span> <span style="color: #3677a9">30</span>
+    <span style="color: #3677a9">1.</span><span style="color: #d0d0d0">Insert</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">queue</span>
+    <span style="color: #3677a9">2.</span><span style="color: #d0d0d0">Delete</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">from</span> <span style="color: #d0d0d0">queue</span>
+    <span style="color: #3677a9">3.</span><span style="color: #d0d0d0">Display</span> <span style="color: #d0d0d0">all</span> <span style="color: #d0d0d0">elements</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">queue</span>
+    <span style="color: #3677a9">4.</span><span style="color: #d0d0d0">Quit</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">your</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">4</span>
+    </pre></div>

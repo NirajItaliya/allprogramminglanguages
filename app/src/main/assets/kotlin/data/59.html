@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Data class
+</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rQ1tyAMYZt" id="content1-1al" data-rv-view="8065">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin Data class
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/c">web maker</a></section><section class="mbr-section article content1 cid-rQ1tC8Vv79" id="content1-1am" data-rv-view="8066">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Data class </strong>is a simple class which is used to hold data/state and contains standard functionality. A data keyword is used to declare a class as a data class.
+</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">data class User(val name: String, val age: Int)
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1tDA1mXQ" id="content1-1ao" data-rv-view="8068">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Declaring a data class must contains at least one primary constructor with property argument (val or var).
+<div>
+</div><div>Data class internally contains the following functions:
+</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rQ1tOQ6vVn" id="content12-1ap" data-rv-view="8069">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li>equals(): Boolean
+</li><li>hashCode(): Int
+</li><li>toString(): String
+</li><li>component() functions corresponding to the properties
+</li><li>copy()</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1tTAqkmf" id="content1-1aq" data-rv-view="8070">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Due to presence of above functions internally in data class, the data class eliminates the boilerplate code.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1u03T0fg" id="content1-1ar" data-rv-view="8071">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Java data class VS Kotlin data class
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1u7kfPYJ" id="content1-1as" data-rv-view="8072">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">If we want to create a User entry in Java using data class, it require lots of boilerplate code.
+</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-java">import java.util.Objects;
+
+public class User {
+    private String name;
+    private int id;
+    private String email;
+
+    public User(String name, int id, String email) {
+        this.name = name;
+        this.id = id;
+        this.email = email;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public intgetId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof User)) return false;
+        User user = (User) o;
+        return getId() == user.getId() &&
+                Objects.equals(getName(), user.getName()) &&
+                Objects.equals(getEmail(), user.getEmail());
+    }
+
+    @Override
+    public inthashCode() {
+
+        return Objects.hash(getName(), getId(), getEmail());
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", email='" + email + '\'' +
+                '}';
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1ui6LIvo" id="content1-1au" data-rv-view="8074">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Calling the constructor of above Java data class using the object of User class as
+</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-java">class MyClass{
+    public static void main(String agrs[]){
+        User u = new User("Ashu",101,"mymail@mail.com");
+        System.out.println(u);
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1ujS4bYX" id="content1-1aw" data-rv-view="8076">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-java">User{name='Ashu', id=101, email='mymail@mail.com'}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1uus4sJZ" id="content1-1ay" data-rv-view="8078">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The above Java data class code is rewritten in Kotlin data code in single line as
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-java">data class User(var name: String, var id: Int, var email: String)
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1uw2vILQ" id="content1-1b0" data-rv-view="8080">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Calling the constructor of above Kotlin data class using the object of User class as
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(agrs: Array&lt;String&gt;) {
+    val u = User("Ashu", 101, "mymail@mail.com")
+    println(u)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1uI1D1ls" id="content1-1b2" data-rv-view="8082">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">User(name=Ashu, id=101, email=mymail@mail.com)
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1uMtsGRl" id="content1-1b4" data-rv-view="8084">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Requirements of data class
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1uPC6WQh" id="content1-1b5" data-rv-view="8085">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In order to create a data class, we need to fulfill the following requirements:
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rQ1uQzRGgX" id="content12-1b6" data-rv-view="8086">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li>Contain primary constructor with at least one parameter.
+</li><li>Parameters of primary constructor marked as val or var.
+</li><li>Data class cannot be abstract, inner, open or sealed.
+</li><li>Before 1.1,data class may only implements interface. After that data classes may extend other classes.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1uXhL3mm" id="content1-1b7" data-rv-view="8087">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>1. data class toString() methods
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1v1ESxt7" id="content1-1b8" data-rv-view="8088">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin data class only focuses on data rather than code implementation.
+&nbsp;<span style="font-size: 1rem;">Let's see a simple program without data class. In this class, we are trying to print the reference of Product class using its object</span></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">class Product(varitem: String, var price: Int)
+fun main(agrs: Array&lt;String&gt;) {
+    val p = Product("laptop", 25000)
+    println(p)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1vbqDR5v" id="content1-1ba" data-rv-view="8090">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">While printing the reference of Product class, it displays the hashCode() with class name of Product. It does not print the data.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1vfr0xj1" id="content1-1bb" data-rv-view="8091">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">Product@266474c2
+</code></pre></div>
+<section class="mbr-section article content1 cid-rQ1vjjlmZ3" id="content1-1bd" data-rv-view="8093">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The above program is rewritten using data class and printing the reference of Product class and displaying the data of object. It happens because the data class internally contains the toString() which display the string representation of object .
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">data class Product(varitem: String, var price: Int)
+fun main(agrs: Array&lt;String&gt;) {
+    val p = Product("laptop", 25000)
+    println(p)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1vId5oJk" id="content1-1bf" data-rv-view="8095">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Product(name=laptop, price=25000)
+</code></pre></div>
+<section class="mbr-section article content1 cid-rQ1vNa8zBR" id="content1-1bh" data-rv-view="8097">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>2. data classequals() and hashCode()
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1vQRIbdi" id="content1-1bi" data-rv-view="8098">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The <strong>equal()</strong> method is used to check other object is "equal to" current object. While doing comparison between two or more <strong>hashCode(), equals() </strong>method returns true if the hashCode() are equal, else it returns a false.
+<div>
+</div><div>For example, let's see an example in which a normal class comparing the two references of same class Product having same data.</div></div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">class Product(varitem: String, var price: Int)
+fun main(agrs: Array&lt;String&gt;) {
+    val p1 = Product("laptop", 25000)
+    val p2 = Product("laptop", 25000)
+    println(p1==p2)
+    println(p1.equals(p2))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1w11GvPG" id="content1-1bk" data-rv-view="8100">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p>In above program, reference p1 and reference p2 has different references. Due to different reference values in p1 and p2, doing comparison displays false.
+</p><p><strong>Output :</strong></p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">false
+false
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1w9AHIYy" id="content1-1bm" data-rv-view="8102">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The above program is rewritten using data class, printing the reference of Product class and displaying the data of object.
+<div>
+</div><div>The hashCode() method returns hash code for the object. The hashCode() produce same integer result, if two objects are equal.</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">data class Product(varitem: String, var price: Int)
+    fun main(agrs: Array&lt;String&gt;) {
+    val p1 = Product("laptop", 25000)
+    val p2 = Product("laptop", 25000)
+    println(p1==p2)
+    println(p1.equals(p2))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1wasJYk7" id="content1-1bo" data-rv-view="8104">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">true
+true
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1wiE3UW1" id="content1-1bq" data-rv-view="8106">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>3. data class copy() method
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1wuqwGON" id="content1-1br" data-rv-view="8107">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The data class provides a <strong>copy()</strong> method which is used to create a copy (or colon) of object. Using copy() method, some or all properties of object can be altered.
+<div>
+</div><div><strong>For example:</strong></div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">data class Product(var item: String, var price: Int)
+fun main(agrs: Array&lt;String&gt;) {
+    val p1 = Product("laptop", 25000)
+    println("p1 object contain data : $p1")
+    val p2 = p1.copy()
+    println("p2 copied object contains default data of p1: $p2")
+    val p3 = p1.copy(price = 20000)
+    println("p3 contain altered data of p1 : $p3")
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1ww9SYqe" id="content1-1bt" data-rv-view="8109">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">p1 object contain data : Product(item=laptop, price=25000)
+p2 copied object contains default data of p1: Product(item=laptop, price=25000)
+p3 contain altered data of p1 : Product(item=laptop, price=20000)
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1wF8bna0" id="content1-1bv" data-rv-view="8111">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Default and named arguments in data class
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1wK6adGX" id="content1-1bw" data-rv-view="8112">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">We can also assign the default arguments in primary constructor of data class. These default values can be changed later on program if required.
+<div>
+</div><div><strong>For example:</strong></div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">data class Product(var item: String = "laptop", var price: Int = 25000)
+fun main(agrs: Array&lt;String&gt;) {
+    val p1 = Product(price = 20000)
+    println(p1)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1wLsVvna" id="content1-1by" data-rv-view="8114">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">Product(item=laptop, price=20000)
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

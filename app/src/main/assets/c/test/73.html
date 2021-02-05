@@ -1,0 +1,463 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic"> * C Program to Implement a Doubly Linked List &amp; provide Insertion, Deletion &amp; Display Operations</span>
+    <span style="color: #999999; font-style: italic"> */</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdio.h&gt;</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdlib.h&gt;</span>
+     
+    <span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">node</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">*prev;</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">n;</span>
+        <span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">*next;</span>
+    <span style="color: #d0d0d0">}*h,*temp,*temp1,*temp2,*temp4;</span>
+     
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">insert1</span><span style="color: #d0d0d0">();</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">insert2</span><span style="color: #d0d0d0">();</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">insert3</span><span style="color: #d0d0d0">();</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">traversebeg</span><span style="color: #d0d0d0">();</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">traverseend</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">int</span><span style="color: #d0d0d0">);</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">sort</span><span style="color: #d0d0d0">();</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">search</span><span style="color: #d0d0d0">();</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">update</span><span style="color: #d0d0d0">();</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">delete</span><span style="color: #d0d0d0">();</span>
+     
+    <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">count</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+     
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">main</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">ch;</span>
+     
+        <span style="color: #d0d0d0">h</span> <span style="color: #d0d0d0">=</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">temp</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp1</span> <span style="color: #d0d0d0">=</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">;</span>
+     
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n 1 - Insert at beginning&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n 2 - Insert at end&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n 3 - Insert at position i&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n 4 - Delete at i&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n 5 - Display from beginning&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n 6 - Display from end&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n 7 - Search for element&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n 8 - Sort the list&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n 9 - Update an element&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n 10 - Exit&quot;</span><span style="color: #d0d0d0">);</span>
+     
+        <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(</span><span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Enter choice : &quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;ch);</span>
+            <span style="color: #6ab825; font-weight: bold">switch</span> <span style="color: #d0d0d0">(ch)</span>
+            <span style="color: #d0d0d0">{</span>
+            <span style="color: #6ab825; font-weight: bold">case</span> <span style="color: #3677a9">1</span>:
+                <span style="color: #d0d0d0">insert1();</span>
+                <span style="color: #6ab825; font-weight: bold">break</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #6ab825; font-weight: bold">case</span> <span style="color: #3677a9">2</span>:
+                <span style="color: #d0d0d0">insert2();</span>
+                <span style="color: #6ab825; font-weight: bold">break</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #6ab825; font-weight: bold">case</span> <span style="color: #3677a9">3</span>:
+                <span style="color: #d0d0d0">insert3();</span>
+                <span style="color: #6ab825; font-weight: bold">break</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #6ab825; font-weight: bold">case</span> <span style="color: #3677a9">4</span>:
+                <span style="color: #d0d0d0">delete();</span>
+                <span style="color: #6ab825; font-weight: bold">break</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #6ab825; font-weight: bold">case</span> <span style="color: #3677a9">5</span>:
+                <span style="color: #d0d0d0">traversebeg();</span>
+                <span style="color: #6ab825; font-weight: bold">break</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #6ab825; font-weight: bold">case</span> <span style="color: #3677a9">6</span>:
+                <span style="color: #d0d0d0">temp2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">h;</span>
+                <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(temp2</span> <span style="color: #d0d0d0">==</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">)</span>
+                    <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Error : List empty to display &quot;</span><span style="color: #d0d0d0">);</span>
+                <span style="color: #6ab825; font-weight: bold">else</span>
+                <span style="color: #d0d0d0">{</span>
+                    <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Reverse order of linked list is : &quot;</span><span style="color: #d0d0d0">);</span>
+                    <span style="color: #d0d0d0">traverseend(temp2-&gt;n);</span>
+                <span style="color: #d0d0d0">}</span>
+                <span style="color: #6ab825; font-weight: bold">break</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #6ab825; font-weight: bold">case</span> <span style="color: #3677a9">7</span>:
+                <span style="color: #d0d0d0">search();</span>
+                <span style="color: #6ab825; font-weight: bold">break</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #6ab825; font-weight: bold">case</span> <span style="color: #3677a9">8</span>:
+                <span style="color: #d0d0d0">sort();</span>
+                <span style="color: #6ab825; font-weight: bold">break</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #6ab825; font-weight: bold">case</span> <span style="color: #3677a9">9</span>:
+                <span style="color: #d0d0d0">update();</span>
+                <span style="color: #6ab825; font-weight: bold">break</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #6ab825; font-weight: bold">case</span> <span style="color: #3677a9">10</span>:
+                <span style="color: #d0d0d0">exit(</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">default:</span>
+                <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Wrong choice menu&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">}</span>
+    <span style="color: #d0d0d0">}</span>
+     
+    <span style="color: #999999; font-style: italic">/* TO create an empty node */</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">create</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">data;</span>
+     
+        <span style="color: #d0d0d0">temp</span> <span style="color: #d0d0d0">=(</span><span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">*)malloc(</span><span style="color: #3677a9">1</span><span style="color: #d0d0d0">*</span><span style="color: #6ab825; font-weight: bold">sizeof</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">node));</span>
+        <span style="color: #d0d0d0">temp-&gt;prev</span> <span style="color: #d0d0d0">=</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">temp-&gt;next</span> <span style="color: #d0d0d0">=</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Enter value to node : &quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;data);</span>
+        <span style="color: #d0d0d0">temp-&gt;n</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">data;</span>
+        <span style="color: #d0d0d0">count++;</span>
+    <span style="color: #d0d0d0">}</span>
+     
+    <span style="color: #999999; font-style: italic">/*  TO insert at beginning */</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">insert1</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(h</span> <span style="color: #d0d0d0">==</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">create();</span>
+            <span style="color: #d0d0d0">h</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp;</span>
+            <span style="color: #d0d0d0">temp1</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">h;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">else</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">create();</span>
+            <span style="color: #d0d0d0">temp-&gt;next</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">h;</span>
+            <span style="color: #d0d0d0">h-&gt;prev</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp;</span>
+            <span style="color: #d0d0d0">h</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp;</span>
+        <span style="color: #d0d0d0">}</span>
+    <span style="color: #d0d0d0">}</span>
+     
+    <span style="color: #999999; font-style: italic">/* To insert at end */</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">insert2</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(h</span> <span style="color: #d0d0d0">==</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">create();</span>
+            <span style="color: #d0d0d0">h</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp;</span>
+            <span style="color: #d0d0d0">temp1</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">h;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">else</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">create();</span>
+            <span style="color: #d0d0d0">temp1-&gt;next</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp;</span>
+            <span style="color: #d0d0d0">temp-&gt;prev</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp1;</span>
+            <span style="color: #d0d0d0">temp1</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp;</span>
+        <span style="color: #d0d0d0">}</span>
+    <span style="color: #d0d0d0">}</span>
+     
+    <span style="color: #999999; font-style: italic">/* To insert at any position */</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">insert3</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">pos,</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">2</span><span style="color: #d0d0d0">;</span>
+     
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Enter position to be inserted : &quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;pos);</span>
+        <span style="color: #d0d0d0">temp2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">h;</span>
+     
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">((pos</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">||</span> <span style="color: #d0d0d0">(pos</span> <span style="color: #d0d0d0">&gt;=</span> <span style="color: #d0d0d0">count</span> <span style="color: #d0d0d0">+</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">))</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Position out of range to insert&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #6ab825; font-weight: bold">return</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">((h</span> <span style="color: #d0d0d0">==</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">&amp;&amp;</span> <span style="color: #d0d0d0">(pos</span> <span style="color: #d0d0d0">!=</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">))</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Empty list cannot insert other than 1st position&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #6ab825; font-weight: bold">return</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">((h</span> <span style="color: #d0d0d0">==</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">&amp;&amp;</span> <span style="color: #d0d0d0">(pos</span> <span style="color: #d0d0d0">==</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">))</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">create();</span>
+            <span style="color: #d0d0d0">h</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp;</span>
+            <span style="color: #d0d0d0">temp1</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">h;</span>
+            <span style="color: #6ab825; font-weight: bold">return</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">else</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">pos)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #d0d0d0">temp2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp2-&gt;next;</span>
+                <span style="color: #d0d0d0">i++;</span>
+            <span style="color: #d0d0d0">}</span>
+            <span style="color: #d0d0d0">create();</span>
+            <span style="color: #d0d0d0">temp-&gt;prev</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp2;</span>
+            <span style="color: #d0d0d0">temp-&gt;next</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp2-&gt;next;</span>
+            <span style="color: #d0d0d0">temp2-&gt;next-&gt;prev</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp;</span>
+            <span style="color: #d0d0d0">temp2-&gt;next</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp;</span>
+        <span style="color: #d0d0d0">}</span>
+    <span style="color: #d0d0d0">}</span>
+     
+    <span style="color: #999999; font-style: italic">/* To delete an element */</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">delete</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">pos;</span>
+     
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Enter position to be deleted : &quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;pos);</span>
+        <span style="color: #d0d0d0">temp2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">h;</span>
+     
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">((pos</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">||</span> <span style="color: #d0d0d0">(pos</span> <span style="color: #d0d0d0">&gt;=</span> <span style="color: #d0d0d0">count</span> <span style="color: #d0d0d0">+</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">))</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Error : Position out of range to delete&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #6ab825; font-weight: bold">return</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(h</span> <span style="color: #d0d0d0">==</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Error : Empty list no elements to delete&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #6ab825; font-weight: bold">return</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">else</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">pos)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #d0d0d0">temp2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp2-&gt;next;</span>
+                <span style="color: #d0d0d0">i++;</span>
+            <span style="color: #d0d0d0">}</span>
+            <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">==</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(temp2-&gt;next</span> <span style="color: #d0d0d0">==</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">)</span>
+                <span style="color: #d0d0d0">{</span>
+                    <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Node deleted from list&quot;</span><span style="color: #d0d0d0">);</span>
+                    <span style="color: #d0d0d0">free(temp2);</span>
+                    <span style="color: #d0d0d0">temp2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">h</span> <span style="color: #d0d0d0">=</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">;</span>
+                    <span style="color: #6ab825; font-weight: bold">return</span><span style="color: #d0d0d0">;</span>
+                <span style="color: #d0d0d0">}</span>
+            <span style="color: #d0d0d0">}</span>
+            <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(temp2-&gt;next</span> <span style="color: #d0d0d0">==</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #d0d0d0">temp2-&gt;prev-&gt;next</span> <span style="color: #d0d0d0">=</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">;</span>
+                <span style="color: #d0d0d0">free(temp2);</span>
+                <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Node deleted from list&quot;</span><span style="color: #d0d0d0">);</span>
+                <span style="color: #6ab825; font-weight: bold">return</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #d0d0d0">}</span>
+            <span style="color: #d0d0d0">temp2-&gt;next-&gt;prev</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp2-&gt;prev;</span>
+            <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">!=</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span>
+                <span style="color: #d0d0d0">temp2-&gt;prev-&gt;next</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp2-&gt;next;</span>    <span style="color: #999999; font-style: italic">/* Might not need this statement if i == 1 check */</span>
+            <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">==</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span>
+                <span style="color: #d0d0d0">h</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp2-&gt;next;</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Node deleted&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">free(temp2);</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">count--;</span>
+    <span style="color: #d0d0d0">}</span>
+     
+    <span style="color: #999999; font-style: italic">/* Traverse from beginning */</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">traversebeg</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #d0d0d0">temp2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">h;</span>
+     
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(temp2</span> <span style="color: #d0d0d0">==</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;List empty to display \n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #6ab825; font-weight: bold">return</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Linked list elements from begining : &quot;</span><span style="color: #d0d0d0">);</span>
+     
+        <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(temp2-&gt;next</span> <span style="color: #d0d0d0">!=</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot; %d &quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">temp2-&gt;n);</span>
+            <span style="color: #d0d0d0">temp2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp2-&gt;next;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot; %d &quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">temp2-&gt;n);</span>
+    <span style="color: #d0d0d0">}</span>
+     
+    <span style="color: #999999; font-style: italic">/* To traverse from end recursively */</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">traverseend</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">i)</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(temp2</span> <span style="color: #d0d0d0">!=</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp2-&gt;n;</span>
+            <span style="color: #d0d0d0">temp2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp2-&gt;next;</span>
+            <span style="color: #d0d0d0">traverseend(i);</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot; %d &quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">i);</span>
+        <span style="color: #d0d0d0">}</span>
+    <span style="color: #d0d0d0">}</span>
+     
+    <span style="color: #999999; font-style: italic">/* To search for an element in the list */</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">search</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">data,</span> <span style="color: #d0d0d0">count</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">temp2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">h;</span>
+     
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(temp2</span> <span style="color: #d0d0d0">==</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Error : List empty to search for data&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #6ab825; font-weight: bold">return</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Enter value to search : &quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;data);</span>
+        <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(temp2</span> <span style="color: #d0d0d0">!=</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(temp2-&gt;n</span> <span style="color: #d0d0d0">==</span> <span style="color: #d0d0d0">data)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Data found in %d position&quot;</span><span style="color: #d0d0d0">,count</span> <span style="color: #d0d0d0">+</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">);</span>
+                <span style="color: #6ab825; font-weight: bold">return</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #d0d0d0">}</span>
+            <span style="color: #6ab825; font-weight: bold">else</span>
+                 <span style="color: #d0d0d0">temp2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp2-&gt;next;</span>
+                <span style="color: #d0d0d0">count++;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Error : %d not found in list&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">data);</span>
+    <span style="color: #d0d0d0">}</span>
+     
+    <span style="color: #999999; font-style: italic">/* To update a node value in the list */</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">update</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">data,</span> <span style="color: #d0d0d0">data1;</span>
+     
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Enter node data to be updated : &quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;data);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Enter new data : &quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;data1);</span>
+        <span style="color: #d0d0d0">temp2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">h;</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(temp2</span> <span style="color: #d0d0d0">==</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Error : List empty no node to update&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #6ab825; font-weight: bold">return</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(temp2</span> <span style="color: #d0d0d0">!=</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(temp2-&gt;n</span> <span style="color: #d0d0d0">==</span> <span style="color: #d0d0d0">data)</span>
+            <span style="color: #d0d0d0">{</span>
+     
+                <span style="color: #d0d0d0">temp2-&gt;n</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">data1;</span>
+                <span style="color: #d0d0d0">traversebeg();</span>
+                <span style="color: #6ab825; font-weight: bold">return</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #d0d0d0">}</span>
+            <span style="color: #6ab825; font-weight: bold">else</span>
+                <span style="color: #d0d0d0">temp2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp2-&gt;next;</span>
+        <span style="color: #d0d0d0">}</span>
+     
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Error : %d not found in list to update&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">data);</span>
+    <span style="color: #d0d0d0">}</span>
+     
+    <span style="color: #999999; font-style: italic">/* To sort the linked list */</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">sort</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">i,</span> <span style="color: #d0d0d0">j,</span> <span style="color: #d0d0d0">x;</span>
+     
+        <span style="color: #d0d0d0">temp2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">h;</span>
+        <span style="color: #d0d0d0">temp4</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">h;</span>
+     
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(temp2</span> <span style="color: #d0d0d0">==</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n List empty to sort&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #6ab825; font-weight: bold">return</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+     
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(temp2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">h;</span> <span style="color: #d0d0d0">temp2</span> <span style="color: #d0d0d0">!=</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">temp2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp2-&gt;next)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(temp4</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp2-&gt;next;</span> <span style="color: #d0d0d0">temp4</span> <span style="color: #d0d0d0">!=</span> <span style="color: #24909d">NULL</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">temp4</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp4-&gt;next)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(temp2-&gt;n</span> <span style="color: #d0d0d0">&gt;</span> <span style="color: #d0d0d0">temp4-&gt;n)</span>
+                <span style="color: #d0d0d0">{</span>
+                    <span style="color: #d0d0d0">x</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp2-&gt;n;</span>
+                    <span style="color: #d0d0d0">temp2-&gt;n</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp4-&gt;n;</span>
+                    <span style="color: #d0d0d0">temp4-&gt;n</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">x;</span>
+                <span style="color: #d0d0d0">}</span>
+            <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">traversebeg();</span>
+    <span style="color: #d0d0d0">}</span>
+    
+    
+    <span style="color: #d0d0d0">&gt;&gt;Output:</span>
+    <span style="color: #3677a9">1</span> <span style="color: #d0d0d0">-</span> <span style="color: #d0d0d0">Insert</span> <span style="color: #d0d0d0">at</span> <span style="color: #d0d0d0">beginning</span>
+    <span style="color: #3677a9">2</span> <span style="color: #d0d0d0">-</span> <span style="color: #d0d0d0">Insert</span> <span style="color: #d0d0d0">at</span> <span style="color: #d0d0d0">end</span>
+    <span style="color: #3677a9">3</span> <span style="color: #d0d0d0">-</span> <span style="color: #d0d0d0">Insert</span> <span style="color: #d0d0d0">at</span> <span style="color: #d0d0d0">position</span> <span style="color: #d0d0d0">i</span>
+    <span style="color: #3677a9">4</span> <span style="color: #d0d0d0">-</span> <span style="color: #d0d0d0">Delete</span> <span style="color: #d0d0d0">at</span> <span style="color: #d0d0d0">i</span>
+    <span style="color: #3677a9">5</span> <span style="color: #d0d0d0">-</span> <span style="color: #d0d0d0">Display</span> <span style="color: #d0d0d0">from</span> <span style="color: #d0d0d0">beginning</span>
+    <span style="color: #3677a9">6</span> <span style="color: #d0d0d0">-</span> <span style="color: #d0d0d0">Display</span> <span style="color: #d0d0d0">from</span> <span style="color: #d0d0d0">end</span>
+    <span style="color: #3677a9">7</span> <span style="color: #d0d0d0">-</span> <span style="color: #d0d0d0">Search</span> <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">element</span>
+    <span style="color: #3677a9">8</span> <span style="color: #d0d0d0">-</span> <span style="color: #d0d0d0">Sort</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">list</span>
+    <span style="color: #3677a9">9</span> <span style="color: #d0d0d0">-</span> <span style="color: #d0d0d0">Update</span> <span style="color: #d0d0d0">an</span> <span style="color: #d0d0d0">element</span>
+    <span style="color: #3677a9">10</span> <span style="color: #d0d0d0">-</span> <span style="color: #d0d0d0">Exit</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">1</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">value</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">10</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">2</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">value</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">50</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">4</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">position</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">be</span> <span style="color: #d0d0d0">deleted</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">1</span>
+     
+    <span style="color: #d0d0d0">Node</span> <span style="color: #d0d0d0">deleted</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">1</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">value</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">34</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">3</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">position</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">be</span> <span style="color: #d0d0d0">inserted</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">2</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">value</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">13</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">4</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">position</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">be</span> <span style="color: #d0d0d0">deleted</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">4</span>
+     
+    <span style="color: #d0d0d0">Error</span> <span style="color: #d0d0d0">:</span> <span style="color: #d0d0d0">Position</span> <span style="color: #d0d0d0">out</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">range</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">delete</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">1</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">value</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">15</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">1</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">value</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">67</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">3</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">position</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">be</span> <span style="color: #d0d0d0">inserted</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">2</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">value</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">34</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">4</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">position</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">be</span> <span style="color: #d0d0d0">deleted</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">3</span>
+     
+    <span style="color: #d0d0d0">Node</span> <span style="color: #d0d0d0">deleted</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">7</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">value</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">search</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">15</span>
+     
+    <span style="color: #d0d0d0">Error</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">15</span> <span style="color: #d0d0d0">not</span> <span style="color: #d0d0d0">found</span> <span style="color: #d0d0d0">in</span> <span style="color: #d0d0d0">list</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">8</span>
+     
+    <span style="color: #d0d0d0">Linked</span> <span style="color: #d0d0d0">list</span> <span style="color: #d0d0d0">elements</span> <span style="color: #d0d0d0">from</span> <span style="color: #d0d0d0">begining</span> <span style="color: #d0d0d0">:</span>  <span style="color: #3677a9">13</span>  <span style="color: #3677a9">34</span>  <span style="color: #3677a9">34</span>  <span style="color: #3677a9">50</span>  <span style="color: #3677a9">67</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">9</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">data</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">be</span> <span style="color: #d0d0d0">updated</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">45</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">new</span> <span style="color: #d0d0d0">data</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">89</span>
+     
+    <span style="color: #d0d0d0">Error</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">45</span> <span style="color: #d0d0d0">not</span> <span style="color: #d0d0d0">found</span> <span style="color: #d0d0d0">in</span> <span style="color: #d0d0d0">list</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">update</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">9</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">data</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">be</span> <span style="color: #d0d0d0">updated</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">50</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">new</span> <span style="color: #d0d0d0">data</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">90</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">5</span>
+     
+    <span style="color: #d0d0d0">Linked</span> <span style="color: #d0d0d0">list</span> <span style="color: #d0d0d0">elements</span> <span style="color: #d0d0d0">from</span> <span style="color: #d0d0d0">begining</span> <span style="color: #d0d0d0">:</span>  <span style="color: #3677a9">13</span>  <span style="color: #3677a9">34</span>  <span style="color: #3677a9">34</span>  <span style="color: #3677a9">90</span>  <span style="color: #3677a9">67</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">6</span>
+     
+    <span style="color: #d0d0d0">Reverse</span> <span style="color: #d0d0d0">order</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">linked</span> <span style="color: #d0d0d0">list</span> <span style="color: #d0d0d0">is</span> <span style="color: #d0d0d0">:</span>  <span style="color: #3677a9">67</span>  <span style="color: #3677a9">90</span>  <span style="color: #3677a9">34</span>  <span style="color: #3677a9">34</span>  <span style="color: #3677a9">13</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">7</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">value</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">search</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">90</span>
+     
+    <span style="color: #d0d0d0">Data</span> <span style="color: #d0d0d0">found</span> <span style="color: #d0d0d0">in</span> <span style="color: #3677a9">4</span> <span style="color: #d0d0d0">position</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">8</span>
+     
+    <span style="color: #d0d0d0">Linked</span> <span style="color: #d0d0d0">list</span> <span style="color: #d0d0d0">elements</span> <span style="color: #d0d0d0">from</span> <span style="color: #d0d0d0">begining</span> <span style="color: #d0d0d0">:</span>  <span style="color: #3677a9">13</span>  <span style="color: #3677a9">34</span>  <span style="color: #3677a9">34</span>  <span style="color: #3677a9">67</span>  <span style="color: #3677a9">90</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">7</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">value</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">search</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">90</span>
+     
+    <span style="color: #d0d0d0">Data</span> <span style="color: #d0d0d0">found</span> <span style="color: #d0d0d0">in</span> <span style="color: #3677a9">5</span> <span style="color: #d0d0d0">position</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">9</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">node</span> <span style="color: #d0d0d0">data</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">be</span> <span style="color: #d0d0d0">updated</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">34</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">new</span> <span style="color: #d0d0d0">data</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">56</span>
+     
+    <span style="color: #d0d0d0">Linked</span> <span style="color: #d0d0d0">list</span> <span style="color: #d0d0d0">elements</span> <span style="color: #d0d0d0">from</span> <span style="color: #d0d0d0">begining</span> <span style="color: #d0d0d0">:</span>  <span style="color: #3677a9">13</span>  <span style="color: #3677a9">56</span>  <span style="color: #3677a9">34</span>  <span style="color: #3677a9">67</span>  <span style="color: #3677a9">90</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">choice</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">10</span>
+    </pre></div>

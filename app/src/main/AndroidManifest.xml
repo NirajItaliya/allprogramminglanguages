@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.makecoding">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Makecoding">
+        <activity android:name=".setting.Them" />
+        <activity android:name=".makecoding.fragment.kotlin" />
+        <activity android:name=".Python.basiccs" />
+        <activity android:name=".Python.advance" />
+        <activity android:name=".java.javaC" />
+        <activity android:name=".java.javaB" />
+        <activity android:name=".java.javaA" />
+        <activity android:name=".WebView.webview" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".makecoding.fragment.JavaProgramming" />
+        <activity android:name=".makecoding.fragment.CppLanguage" />
+        <activity android:name=".makecoding.fragment.CLanguage" />
+        <activity android:name=".makecoding.fragment.Python" />
+        <activity android:name=".CLanguage.FragmentA" />
+        <activity android:name=".CLanguage.FragmentB" />
+        <activity android:name=".CLanguage.FragmentC" />
+        <activity android:name=".CPPanguage.FragmentCA" />
+        <activity android:name=".CPPanguage.FragmentCB" />
+        <activity android:name=".CPPanguage.FragmentCC" />
+        <activity android:name=".kotlin.kotlinCA" />
+        <activity android:name=".kotlin.kotlinCB" />
+        <activity android:name=".kotlin.kotlinCC" />
+    </application>
+
+</manifest>

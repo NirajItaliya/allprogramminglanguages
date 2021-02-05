@@ -1,0 +1,1080 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:7.1pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB>
+
+<div class=WordSection1>
+
+<h1 align=center style='text-align:center;line-height:150%'>17. STRUCTURES</h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Arrays allow to define type of
+variables that can hold several data items of the same kind. Similarly, <b>structure
+</b>is another user-defined data type available in C that allows to combine
+data items of different kinds. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Structures are used to represent a
+record. Suppose you want to keep track of your books in a library. You might
+want to track the following attributes about each book: </span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-indent:-18.0pt;
+line-height:150%'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Book Antiqua",serif'>Title </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-18.0pt;
+line-height:150%'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Book Antiqua",serif'>Author </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-18.0pt;
+line-height:150%'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Book Antiqua",serif'>Subject </span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-indent:-18.0pt;
+line-height:150%'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Book Antiqua",serif'>Book ID </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>Defining a Structure</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>To define a structure, you must use
+the <b>struct </b>statement. The struct statement defines a new data type, with
+more than one member. The format of the struct statement is as follows: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>struct [structure
+tag] </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>{ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>member definition; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>member definition; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>... </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>member definition; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>} [one or more
+structure variables]; </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The <b>structure tag </b>is optional
+and each member definition is a normal variable definition, such as int i; or
+float f; or any other valid variable definition. At the end of the structure's
+definition, before the final semicolon, you can specify one or more structure
+variables but it is optional. Here is the way you would declare the Book
+structure: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>struct Books </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>{ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>char title[50]; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>char author[50];</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>char subject[100]; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>int book_id; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>} book; </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span style='font-size:18.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>Accessing
+Structure Members</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>To access any member of a structure,
+we use the <b>member access operator (.)</b>. The member access operator is
+coded as a period between the structure variable name and the structure member
+that we wish to access. You would use the keyword <b>struct </b>to define
+variables of structure type. The following example shows how to use a structure
+in a program: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;stdio.h&gt; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;string.h&gt; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>struct Books </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>char title[50]; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>char author[50]; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>char subject[100]; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int book_id; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>}; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int main( ) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>struct Books Book1; /*
+Declare Book1 of type Book */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>struct Books Book2; /*
+Declare Book2 of type Book */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* book 1 specification */
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>strcpy( Book1.title,
+&quot;C Programming&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>strcpy( Book1.author,
+&quot;Nuha Ali&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>strcpy( Book1.subject,
+&quot;C Programming Tutorial&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>Book1.book_id = 6495407; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* book 2 specification */
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>strcpy( Book2.title,
+&quot;Telecom Billing&quot;);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>strcpy( Book2.author,
+&quot;Zara Ali&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>strcpy( Book2.subject,
+&quot;Telecom Billing Tutorial&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>Book2.book_id = 6495700; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* print Book1 info */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;Book 1 title
+: %s\n&quot;, Book1.title); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;Book 1
+author : %s\n&quot;, Book1.author); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;Book 1
+subject : %s\n&quot;, Book1.subject); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;Book 1 book_id
+: %d\n&quot;, Book1.book_id); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* print Book2 info */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;Book 2 title
+: %s\n&quot;, Book2.title); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;Book 2
+author : %s\n&quot;, Book2.author); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;Book 2
+subject : %s\n&quot;, Book2.subject); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;Book 2
+book_id : %d\n&quot;, Book2.book_id); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>return 0; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'> When the above code is compiled and
+executed, it produces the following result:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book 1 title : C
+Programming </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book 1 author :
+Nuha Ali </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book 1 subject : C
+Programming Tutorial </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book 1 book_id :
+6495407 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book 2 title :
+Telecom Billing </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book 2 author :
+Zara Ali </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book 2 subject :
+Telecom Billing Tutorial </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book 2 book_id :
+6495700 </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span style='font-size:18.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>Structures as
+Function Arguments</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>You can pass a structure as a function
+argument in the same way as you pass any other variable or pointer. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;stdio.h&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;string.h&gt; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>struct Books </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>char title[50]; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>char author[50]; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>char subject[100]; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int book_id; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>}; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* function declaration */
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>void printBook( struct
+Books book ); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int main( ) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>struct Books Book1; /*
+Declare Book1 of type Book */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>struct Books Book2; /*
+Declare Book2 of type Book */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* book 1 specification */
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>strcpy( Book1.title,
+&quot;C Programming&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>strcpy( Book1.author,
+&quot;Nuha Ali&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>strcpy( Book1.subject,
+&quot;C Programming Tutorial&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>Book1.book_id = 6495407; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* book 2 specification */
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>strcpy( Book2.title,
+&quot;Telecom Billing&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>strcpy( Book2.author,
+&quot;Zara Ali&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>strcpy( Book2.subject,
+&quot;Telecom Billing Tutorial&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>Book2.book_id = 6495700; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* print Book1 info */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printBook( Book1 ); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* Print Book2 info */</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printBook( Book2 ); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>return 0; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>void printBook( struct
+Books book ) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;Book title :
+%s\n&quot;, book.title); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;Book author
+: %s\n&quot;, book.author); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;Book subject
+: %s\n&quot;, book.subject); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;Book book_id
+: %d\n&quot;, book.book_id); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>                                                                                                                                         </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When the above code is compiled and
+executed, it produces the following result: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book title : C
+Programming </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book author : Nuha
+Ali </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book subject : C
+Programming Tutorial </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book book_id :
+6495407 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book title :
+Telecom Billing </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book author : Zara
+Ali </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book subject :
+Telecom Billing Tutorial </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book book_id :
+6495700 </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span style='font-size:18.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>Pointers to
+Structures</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>You can define pointers to structures
+in the same way as you define pointer to any other variable: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>struct Books
+*struct_pointer; </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Now, you can store the address of a
+structure variable in the above-defined pointer variable. To find the address
+of a structure variable, place the ‘&amp;’ operator before the structure's name
+as follows: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>struct_pointer =
+&amp;Book1; </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>To access the members of a structure
+using a pointer to that structure, you must use the -&gt; operator as follows: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>struct_pointer-&gt;title;</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Let us rewrite the above example using
+structure pointer. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;stdio.h&gt; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;string.h&gt; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>struct Books </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>char title[50]; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>char author[50]; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>char subject[100]; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int book_id; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>}; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* function declaration */
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>void printBook( struct
+Books *book ); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int main( ) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>struct Books Book1; /*
+Declare Book1 of type Book */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>struct Books Book2; /*
+Declare Book2 of type Book */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* book 1 specification */
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>strcpy( Book1.title,
+&quot;C Programming&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>strcpy( Book1.author,
+&quot;Nuha Ali&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>strcpy( Book1.subject,
+&quot;C Programming Tutorial&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>Book1.book_id = 6495407; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* book 2 specification */
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>strcpy( Book2.title,
+&quot;Telecom Billing&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>strcpy( Book2.author,
+&quot;Zara Ali&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>strcpy( Book2.subject,
+&quot;Telecom Billing Tutorial&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>Book2.book_id = 6495700; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* print Book1 info by
+passing address of Book1 */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printBook( &amp;Book1 );</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* print Book2 info by
+passing address of Book2 */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printBook( &amp;Book2 ); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>return 0; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>void printBook( struct
+Books *book ) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;Book title :
+%s\n&quot;, book-&gt;title); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;Book author
+: %s\n&quot;, book-&gt;author); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;Book subject
+: %s\n&quot;, book-&gt;subject); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;Book book_id
+: %d\n&quot;, book-&gt;book_id); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When the above code is compiled and
+executed, it produces the following result:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'> </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book title : C
+Programming </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book author : Nuha
+Ali </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book subject : C
+Programming Tutorial </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book book_id :
+6495407 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book title :
+Telecom Billing </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book author : Zara
+Ali </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book subject :
+Telecom Billing Tutorial </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Book book_id :
+6495700 </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span style='font-size:18.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>Bit Fields</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Bit Fields allow the packing of data
+in a structure. This is especially useful when memory or data storage is at a
+premium. Typical examples include: </span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-indent:-18.0pt;
+line-height:150%'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Book Antiqua",serif'>Packing several objects into a machine
+word, e.g. 1 bit flags can be compacted. </span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-indent:-18.0pt;
+line-height:150%'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Book Antiqua",serif'>Reading external file formats --
+non-standard file formats could be read in, e.g., 9-bit integers. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>C allows us to do this in a structure
+definition by putting :bit length after the variable. For example: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>struct packed_struct {</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>unsigned int f1:1; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>unsigned int f2:1; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>unsigned int f3:1; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>unsigned int f4:1; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>unsigned int type:4; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>unsigned int my_int:9; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>} pack; </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Here, the packed_struct contains 6
+members: Four 1 bit flags f1..f3, a 4-bit type, and a 9-bit my_int. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>C automatically packs the above bit
+fields as compactly as possible, provided that the maximum length of the field
+is less than or equal to the integer word length of the computer. If this is
+not the case, then some compilers may allow memory overlap for the fields,
+while others would store the next field in the next word.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

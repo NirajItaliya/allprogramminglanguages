@@ -1,0 +1,37 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #272822; overflow:auto;width:auto;font-size:10px">
+    <table>
+        <tr>
+
+            <td><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">java.net.InetAddress</span><span style="color: #f92672">;</span>
+   
+   <span style="color: #66d9ef">class</span> <span style="color: #a6e22e">GetMyIPAddress</span>
+   <span style="color: #f92672">{</span>
+      <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">main</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">args</span><span style="color: #f92672">[])</span> <span style="color: #66d9ef">throws</span> <span style="color: #f8f8f2">Exception</span>
+      <span style="color: #f92672">{</span>
+         <span style="color: #75715e">/* public static InetAddress getLocalHost()</span>
+   <span style="color: #75715e">       * throws UnknownHostException: Returns the address </span>
+   <span style="color: #75715e">       * of the local host. This is achieved by retrieving </span>
+   <span style="color: #75715e">       * the name of the host from the system, then resolving </span>
+   <span style="color: #75715e">       * that name into an InetAddress. Note: The resolved </span>
+   <span style="color: #75715e">       * address may be cached for a short period of time.</span>
+   <span style="color: #75715e">       */</span>
+         <span style="color: #f8f8f2">InetAddress</span> <span style="color: #f8f8f2">myIP</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">InetAddress</span><span style="color: #f92672">.</span><span style="color: #a6e22e">getLocalHost</span><span style="color: #f92672">();</span>
+    
+         <span style="color: #75715e">/* public String getHostAddress(): Returns the IP </span>
+   <span style="color: #75715e">       * address string in textual presentation.</span>
+   <span style="color: #75715e">       */</span>
+         <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;My IP Address is:&quot;</span><span style="color: #f92672">);</span>
+         <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">myIP</span><span style="color: #f92672">.</span><span style="color: #a6e22e">getHostAddress</span><span style="color: #f92672">());</span>
+     <span style="color: #f92672">}</span>
+   <span style="color: #f92672">}</span>
+   
+   
+   <span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">Output:</span>
+   
+   <span style="color: #f8f8f2">My</span> <span style="color: #f8f8f2">IP</span> <span style="color: #f8f8f2">Address</span> <span style="color: #f8f8f2">is:</span>
+   <span style="color: #ae81ff">115.242</span><span style="color: #f92672">.</span><span style="color: #ae81ff">7.243</span>
+   </pre></td>
+        </tr>
+    </table>
+</div>

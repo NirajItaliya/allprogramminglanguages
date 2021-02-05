@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Java Interoperability</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rQ44nqZi9N" id="content1-1g6" data-rv-view="8256">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Java Interoperability</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/k">bootstrap templates</a></section><section class="mbr-section article content1 cid-rQ44nS9wey" id="content1-1g7" data-rv-view="8257">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><div>Kotlin code is fully compatible with <strong>Java code. </strong>The existing Java code can be easily called form Kotlin code and Kotlin code is also called from Java code in normal way.
+</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ44x166Mq" id="content1-1g8" data-rv-view="8258">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>1. Calling Java code from Kotlin
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rQ44Eln4KC" id="content12-1g9" data-rv-view="8259">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Calling Java void method form Kotlin file
+ :&nbsp;</strong>While calling a java code from Kotlin whose return types is void, it will return Unit in Kotlin file. If someone wants to return that value, it will assign to Kotlin file by Kotlin compiler and return Unit. For example:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ44JWYXiG" id="content1-1ga" data-rv-view="8260">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>MyKotlinFile.kt
+</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val sum= MyJavaClass.add(5, 10)
+    println("printing sum inside Kotlin file: "+sum)
+ }
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ44L8jr5J" id="content1-1gc" data-rv-view="8262">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>MyJavaClass.java
+</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-java">public class MyJavaClass {
+    public static void main(String[] args){
+
+    }
+    public static void add(inta,int b){
+        int result = a + b;
+        System.out.println("printing inside Java class :"+result);
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ44LuYkAw" id="content1-1gd" data-rv-view="8264">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-java">printing inside Java class :15
+printing sum inside Kotlin file: kotlin.Unit
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rQ451TEDCm" id="content12-1gg" data-rv-view="8266">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Calling Java int method from Kotlin file
+ :&nbsp;</strong>While calling a java code of int type or other (rather than void) from Kotlin file, it returns the result in same types. For example, calling an area() method of Java class from Kotlin file returns result in int type.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ45eB0eFp" id="content1-1gm" data-rv-view="8267">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>MyKotlinFile.kt</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val area: Int = MyJavaClass.area(3, 4)
+    println("printing area from java insideKotlin file: "+area)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ452RYaIu" id="content1-1gi" data-rv-view="8269">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>MyJavaClass.java
+</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-java">public class MyJavaClass {
+    public static void main(String[] args){
+
+    }
+    public static int area(int l, int b){
+        int result = l * b;
+        return result;
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ453MnpNP" id="content1-1gk" data-rv-view="8271">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-java">printing area from java insideKotlinfile: 12
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rQ45vZ4odh" id="content12-1gn" data-rv-view="8273">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Kotlin code calling Java class present inside package
+ :&nbsp;</strong>If we want to call the Java codes from Kotlin file both present inside the different package, this requires to import the package name with Java class inside Kotlin file.&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ45wyPAvT" id="content1-1go" data-rv-view="8274">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p>
+<span style="font-size: 1rem;">For example, a Java class MyJavaClass.java is present inside a package myjavapackageand a Kotlin file MyKotlinFile.kt is present inside mykotlinpackage package. In such case calling Java code from Kotlin file needs to import myjavapackage.MyJavaClass inside Kotlin file.</span></p><p><span style="font-size: 1rem;"><strong>MyKotlinFile.kt</strong></span></p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">package mykotlinpackage
+import myjavapackage.MyJavaClass
+
+fun main(args: Array&lt;String&gt;) {
+    val area: Int = MyJavaClass.area(3, 4)
+    println("printing area from java inside Kotlin file: "+area)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ45xWIKwT" id="content1-1gq" data-rv-view="8276">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>MyJavaClass.java
+</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-java">package myjavapackage;
+
+public class MyJavaClass {
+    public static void main(String[] args){
+
+    }
+    public static int area(int l, int b){
+        int result = l * b;
+        return result;
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ45yKCHIh" id="content1-1gs" data-rv-view="8278">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-java">printing area from java inside Kotlin file: 12
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rQ4648PLX8" id="content12-1gu" data-rv-view="8280">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Kotlin code access Java getter and setter
+ :&nbsp;</strong>As Kotlin is completely interoperability with Java, we can access the getter and setter functionality of Java class (or POJO class). For example, create a getter and setter method in Java class MyJava.java with properties firstName and lastName. These properties are accessed from a Kotlin file MyKotlin.kt by creation object of MyJava.java in Kotlin file.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ466aPqtX" id="content1-1gv" data-rv-view="8281">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>MyJava.java
+</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-java">public class MyJava{
+    protected String firstName;
+    protected String lastName;
+
+    public String getfirstName() {
+        return firstName;
+    }
+    public void setfirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    public String getlastName() {
+        return lastName;
+    }
+    public void setlastName(String lastName) {
+        this.lastName = lastName;
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ467gT5px" id="content1-1gx" data-rv-view="8283">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>MyKotlin.kt
+</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val myJava = MyJava()
+
+    myJava.lastName = "Kumar"
+    myJava.setfirstName("Arjun")
+
+    println("accessing value using property: "+myJava.firstName)
+    println("accessing value using property: "+myJava.lastName)
+
+    println("accessing value using method: "+myJava.getfirstName())
+    println("accessing value using method: "+myJava.getlastName())
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ46872Cuf" id="content1-1gz" data-rv-view="8285">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">accessing value using property: Arjun
+accessing value using property: Kumar
+accessing value using method: Arjun
+accessing value using method: Kumar
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rQ46BFwtGb" id="content12-1h1" data-rv-view="8287">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Kotlin code access Java array
+ :&nbsp;</strong>We can simply call Java class method which takes array as an argument from Kotlin file. For example, create method sumValue() which takes array element as parameter in Java class MyJava.java calculating addition and returns result. This method is called from Kotlin file MyKotlin.kt by passing array as parameter.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ46CnJTXg" id="content1-1h2" data-rv-view="8288">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>MyJava.java
+</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-java">public class MyJava {
+      public intsumValues(int[] nums) {
+           int result = 0;
+            for (int x:nums) {
+                result+=x;
+            }
+            return result;
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ46D9gIWJ" id="content1-1h4" data-rv-view="8290">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>MyKotlin.kt
+</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val myJava = MyJava()
+    val numArray = intArrayOf(1, 2, 3,4,5)
+    val sum = myJava.sumValues(numArray)
+    println(sum)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ47ECwxq8" id="content1-1h6" data-rv-view="8292">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">sum of array element is 15
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rQ48b2IwBs" id="content12-1h8" data-rv-view="8294">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Kotlin code access Java Varargs
+ :</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ48bXvY7i" id="content1-1h9" data-rv-view="8295">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In the Java varags functionality, we can pass any number of arguments to a method. Java <strong>varargs</strong> parameter is defined using ellipsis i.e. <strong>three dots (...) </strong>after data type.
+<div>
+</div><div>Following points are to be kept while using the varargs parameter :</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rQ48dBlU5n" id="content12-1ha" data-rv-view="8296">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li>There is only one varargs parameter in a method.
+</li><li>Varargsagrument must be at the last argument.
+</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ48dYPxAg" id="content1-1hb" data-rv-view="8297">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p>While accessing the Java varargs from Kotlin we need to use spread <strong>operator *</strong> to pass the array.
+&nbsp;<span style="font-size: 1rem;">Let's see an example in which a Java method uses an int type varargs which is called from Kotlin file.&nbsp;</span></p><p><span style="font-size: 1rem;"><strong>MyJava.java
+</strong></span></p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-java">public class MyJava {
+    public void display(int... values) {
+        for (int s : values) {
+            System.out.println(s);
+        }
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ48gNBSR5" id="content1-1hd" data-rv-view="8299">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>MyKotlin.kt
+</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val myJava = MyJava()
+    val array = intArrayOf(0, 1, 2, 3)
+    myJava.display(*array)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ48hCSMHr" id="content1-1hf" data-rv-view="8301">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">0
+1
+2
+3
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ48iG7ST6" id="content1-1hh" data-rv-view="8303">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Let's see another example which takes two parameter in a Java method uses as parameters of String type and int type varargs called from Kotlin file.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ48Wr2jIP" id="content1-1hi" data-rv-view="8304">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>MyJava.java
+</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-java">public class MyJava {
+    public void display(String message,int... values) {
+       System.out.println("string is " + message);
+        for (int s : values) {
+           System.out.println(s);
+        }
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ48XsAcRi" id="content1-1hk" data-rv-view="8306">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>MyKotlin.kt
+</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val myJava = MyJava()
+    val array = intArrayOf(0, 1, 2, 3)
+    myJava.display("hello",*array)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ48Yngknx" id="content1-1hm" data-rv-view="8308">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">string is hello
+0
+1
+2
+3
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ49o7gaKd" id="content1-1hp" data-rv-view="8310">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Kotlin and Java Mapped types
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ49se7t4a" id="content1-1hq" data-rv-view="8311">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin and Java types are mapped differently, however they are mapped to corresponding types. Mapping of these types are matters only at compile time and run time remains unchanged.
+<div>
+</div><div><strong>Java's primitive types to corresponding Kotlin types :</strong></div></div>
+        </div>
+    </div>
+</section>
+
+<section class="section-table cid-rQ49zbuNMH" id="table1-1hr" data-rv-view="8312">
+
+  
+  
+  <div class="container container-table">
+      
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Java type&nbsp;</th><th class="head-item mbr-fonts-style display-7">Kotlin type
+<br></th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">byte</td><td class="body-item mbr-fonts-style display-7">kotlin.Byte
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">short</td><td class="body-item mbr-fonts-style display-7">kotlin.Short<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">int</td><td class="body-item mbr-fonts-style display-7">kotlin.Int</td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">long</td><td class="body-item mbr-fonts-style display-7">kotlin.Long<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">char</td><td class="body-item mbr-fonts-style display-7">kotlin.Char<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">double</td><td class="body-item mbr-fonts-style display-7">kotlin.Double</td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">boolean</td><td class="body-item mbr-fonts-style display-7">kotlin.Boolean<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rQ4alcB8OV" id="content12-1hs" data-rv-view="8370">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7"><strong>Java's non-primitive types to corresponding Kotlin types
+ :</strong></div>
+        </div>
+    </div>
+</section>
+
+<section class="section-table cid-rQ4alMyuNl" id="table1-1ht" data-rv-view="8371">
+
+  
+  
+  <div class="container container-table">
+      
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Java type&nbsp;</th><th class="head-item mbr-fonts-style display-7">Kotlin type
+<br></th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">java.lang.Object&nbsp;</td><td class="body-item mbr-fonts-style display-7">kotlin.Any!
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">java.lang.Cloneable&nbsp;</td><td class="body-item mbr-fonts-style display-7">kotlin.Cloneable!
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">java.lang.Comparable&nbsp;</td><td class="body-item mbr-fonts-style display-7">kotlin.Comparable!
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">java.lang.Enum&nbsp;</td><td class="body-item mbr-fonts-style display-7">kotlin.Enum!
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">java.lang.Annotation&nbsp;</td><td class="body-item mbr-fonts-style display-7">kotlin.Annotation!
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">java.lang.Deprecated</td><td class="body-item mbr-fonts-style display-7">kotlin.Deprecated!<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">java.lang.CharSequence</td><td class="body-item mbr-fonts-style display-7">kotlin.CharSequence!<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">java.lang.String</td><td class="body-item mbr-fonts-style display-7">kotlin.String!
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">java.lang.Number&nbsp;</td><td class="body-item mbr-fonts-style display-7">kotlin.Number!
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">java.lang.Throwable&nbsp;</td><td class="body-item mbr-fonts-style display-7">kotlin.Throwable!
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rQ4bb9CJtb" id="content12-1hu" data-rv-view="8450">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7"><strong>Java's boxed primitive types to corresponding nullableKotlin types
+ :</strong></div>
+        </div>
+    </div>
+</section>
+
+<section class="section-table cid-rQ4bbB1OvE" id="table1-1hv" data-rv-view="8451">
+
+  
+  
+  <div class="container container-table">
+      
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Java type&nbsp;</th><th class="head-item mbr-fonts-style display-7">Kotlin type
+<br></th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">java.lang.Byte</td><td class="body-item mbr-fonts-style display-7">kotlin.Byte?
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">java.lang.Short</td><td class="body-item mbr-fonts-style display-7">kotlin.Short?<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">java.lang.Integer</td><td class="body-item mbr-fonts-style display-7">kotlin.Int?</td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">java.lang.Long</td><td class="body-item mbr-fonts-style display-7">kotlin.Long?<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">java.lang.Character</td><td class="body-item mbr-fonts-style display-7">kotlin.Char?<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">java.lang.Float</td><td class="body-item mbr-fonts-style display-7">kotlin.Float?</td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">java.lang.Double</td><td class="body-item mbr-fonts-style display-7">kotlin.Double?
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">java.lang.Boolean</td><td class="body-item mbr-fonts-style display-7">kotlin.Boolean?
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rQ4bc2PxwE" id="content12-1hw" data-rv-view="8516">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7"><strong>&nbsp;Java's collection types to corresponding read-only or mutable Kotlin types
+ :</strong></div>
+        </div>
+    </div>
+</section>
+
+<section class="section-table cid-rQ4bcpAv76" id="table1-1hx" data-rv-view="8517">
+
+  
+  
+  <div class="container container-table">
+      
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Java type&nbsp;</th><th class="head-item mbr-fonts-style display-7">Kotlin read-only type&nbsp;</th><th class="head-item mbr-fonts-style display-7">Kotlin mutable type
+<br></th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">Iterator&lt;T&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">Iterator&lt;T&gt;</td><td class="body-item mbr-fonts-style display-7">MutableIterator&lt;T&gt;
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">Iterable&lt;T&gt;</td><td class="body-item mbr-fonts-style display-7">Iterable&lt;T&gt;</td><td class="body-item mbr-fonts-style display-7">MutableIterable&lt;T&gt;
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">Collection&lt;T&gt;</td><td class="body-item mbr-fonts-style display-7">Collection&lt;T&gt;</td><td class="body-item mbr-fonts-style display-7">MutableCollection&lt;T&gt;
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">Set&lt;T&gt;</td><td class="body-item mbr-fonts-style display-7">MutableSet&lt;T&gt;</td><td class="body-item mbr-fonts-style display-7">MutableSet&lt;T&gt;
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">List&lt;T&gt;</td><td class="body-item mbr-fonts-style display-7">MutableList&lt;T&gt;</td><td class="body-item mbr-fonts-style display-7">MutableList&lt;T&gt;<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">ListIterator&lt;T&gt;</td><td class="body-item mbr-fonts-style display-7">ListIterator&lt;T&gt;</td><td class="body-item mbr-fonts-style display-7">MutableListIterator&lt;T&gt;<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">Map&lt;K, V&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">Map&lt;K, V&gt;</td><td class="body-item mbr-fonts-style display-7">MutableMap&lt;K, V&gt;
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">Map.Entry&lt;K, V&gt;</td><td class="body-item mbr-fonts-style display-7">Map.Entry&lt;K, V&gt;</td><td class="body-item mbr-fonts-style display-7">MutableMap.MutableEntry&lt;K, V&gt;
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/datatables/jquery.data-tables.min.js"></script>
+  <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

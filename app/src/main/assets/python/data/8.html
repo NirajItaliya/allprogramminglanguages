@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Site made with Mobirise Website Builder v4.10.5, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.10.5, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/ic-logo-new-128x128.png" type="image/x-icon">
+    <meta name="description" content="ApkZube">
+
+    <title>SETTING PATH IN PYTHON</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="plugin/prism.css">
+
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
+
+</head>
+
+<body class="line-numbers">
+    <section class="mbr-section content4 cid-rw0sx6NZV7" id="content4-7m">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-2"><strong>SETTING PATH IN PYTHON</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="engine"><a href="https://mobirise.info/d">free website maker</a></section>
+    <section class="mbr-section article content1 cid-rw0sCVjnYZ" id="content1-7n">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>If you’ve installed Python in Windows using the default installation options, the path to the
+                        Python executable wasn’t added to the Windows <strong>Path variable</strong>. The Path variable
+                        lists the directories that will be searched for executables when you type a command in the
+                        command prompt. By adding the path to the Python executable, you will be able to access
+                        <strong>python.exe</strong> by typing the <strong>python keyword </strong>(you won’t need to
+                        specify the full path to the program).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+C:\>python
+'python' is not recognized as an internal or external command, operable program or batch file
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rw0sRossrj" id="content1-7p">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>As you can see from the output above, the command was not found. To run python.exe, you need to
+                        specify the full path to the executable:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+C:\>C:\Python34\python --version
+Python 3.4.3.
+</code></pre></div>
+    <section class="mbr-section article content1 cid-rw0sZRYx4F" id="content1-7r">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>To add the path to the python.exe file to the Path variable, start the Run box and enter
+                        <strong>sysdm.cpl</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cid-rw0t5y0l92" id="image2-7s">
+
+
+
+        <figure class="mbr-figure container">
+            <div class="image-block" style="width: 64%;">
+                <img src="assets/images/run-dialog-box-413x213.jpg" alt="Mobirise" title="">
+
+            </div>
+        </figure>
+    </section>
+
+    <section class="mbr-section article content1 cid-rw0tdAQsW6" id="content1-7t">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>This should open up the System Properties window. Go to the Advanced tab and click the
+                        Environment Variables button:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cid-rw0tg49fl3" id="image2-7u">
+
+
+
+        <figure class="mbr-figure container">
+            <div class="image-block" style="width: 64%;">
+                <img src="assets/images/2-426x475.jpg" alt="Mobirise" title="">
+
+            </div>
+        </figure>
+    </section>
+
+    <section class="mbr-section article content1 cid-rw0tkrAGAg" id="content1-7v">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>In the <strong>System variable</strong> window, find the <strong>Path variable</strong> and click
+                        Edit:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cid-rw0tr2XSN0" id="image2-7w">
+
+
+
+        <figure class="mbr-figure container">
+            <div class="image-block" style="width: 64%;">
+                <img src="assets/images/3-394x437.jpg" alt="Mobirise" title="">
+
+            </div>
+        </figure>
+    </section>
+
+    <section class="mbr-section article content1 cid-rw0tuECe3n" id="content1-7x">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Position your cursor at the end of the Variable value line and add the path to the python.exe
+                        file, preceeded with the semicolon character (;). In our example, we have added the following
+                        value: <strong>C:\Python34</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cid-rw0tE9niyR" id="image2-7y">
+
+
+
+        <figure class="mbr-figure container">
+            <div class="image-block" style="width: 64%;">
+                <img src="assets/images/4-357x154.jpg" alt="Mobirise" title="">
+
+            </div>
+        </figure>
+    </section>
+
+    <section class="mbr-section article content1 cid-rw0tHHyHfs" id="content1-7z">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Close all windows. Now you can run <strong>python.exe </strong>without specifying the full path
+                        to the file:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rw0tM37TWG" id="content1-80">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p><strong>NOTE : </strong>If you get the ‘python’ is not recognized as an internal or external
+                        command, operable program or batch file. error, there is something wrong with your Path
+                        variable. Note also that you will have to reopen all command prompt windows in order for changes
+                        to the Path variable take effect.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="plugin/prism.js"></script>
+    <script src="assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="assets/popper/popper.min.js"></script>
+    <script src="assets/tether/tether.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+    <script src="assets/theme/js/script.js"></script>
+
+
+    <input name="animation" type="hidden">
+</body>
+
+</html>

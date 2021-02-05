@@ -1,0 +1,40 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #272822; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #75715e">#include &lt;iostream&gt;</span>
+    <span style="color: #66d9ef">using</span> <span style="color: #66d9ef">namespace</span> <span style="color: #f8f8f2">std;</span>
+
+    <span style="color: #66d9ef">int</span> <span style="color: #a6e22e">main</span><span style="color: #f8f8f2">()</span>
+    <span style="color: #f8f8f2">{</span>
+         <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">n,</span> <span style="color: #f8f8f2">num,</span> <span style="color: #f8f8f2">digit,</span> <span style="color: #f8f8f2">rev</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span>
+    
+         <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;Enter a positive number: &quot;</span><span style="color: #f8f8f2">;</span>
+         <span style="color: #f8f8f2">cin</span> <span style="color: #f92672">&gt;&gt;</span> <span style="color: #f8f8f2">num;</span>
+    
+         <span style="color: #f8f8f2">n</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">num;</span>
+    
+         <span style="color: #66d9ef">do</span>
+         <span style="color: #f8f8f2">{</span>
+             <span style="color: #f8f8f2">digit</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">num</span> <span style="color: #f92672">%</span> <span style="color: #ae81ff">10</span><span style="color: #f8f8f2">;</span>
+             <span style="color: #f8f8f2">rev</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">(rev</span> <span style="color: #f92672">*</span> <span style="color: #ae81ff">10</span><span style="color: #f8f8f2">)</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">digit;</span>
+             <span style="color: #f8f8f2">num</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">num</span> <span style="color: #f92672">/</span> <span style="color: #ae81ff">10</span><span style="color: #f8f8f2">;</span>
+         <span style="color: #f8f8f2">}</span> <span style="color: #66d9ef">while</span> <span style="color: #f8f8f2">(num</span> <span style="color: #f92672">!=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">);</span>
+    
+         <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot; The reverse of the number is: &quot;</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">rev</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">endl;</span>
+    
+         <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(n</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">rev)</span>
+             <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot; The number is a palindrome.&quot;</span><span style="color: #f8f8f2">;</span>
+         <span style="color: #66d9ef">else</span>
+             <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot; The number is not a palindrome.&quot;</span><span style="color: #f8f8f2">;</span>
+    
+        <span style="color: #66d9ef">return</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span>
+    <span style="color: #f8f8f2">}</span>
+    <span style="color: #f92672">&gt;&gt;</span><span style="color: #f8f8f2">Output</span>
+    <span style="color: #ae81ff">1.</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">a</span> <span style="color: #f8f8f2">positive</span> <span style="color: #f8f8f2">number</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">12321</span>
+    <span style="color: #f8f8f2">The</span> <span style="color: #f8f8f2">reverse</span> <span style="color: #f8f8f2">of</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">number</span> <span style="color: #f8f8f2">is</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">12321</span>
+    <span style="color: #f8f8f2">The</span> <span style="color: #f8f8f2">number</span> <span style="color: #f8f8f2">is</span> <span style="color: #f8f8f2">a</span> <span style="color: #f8f8f2">palindrome.</span>
+    
+    <span style="color: #ae81ff">2.</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">a</span> <span style="color: #f8f8f2">positive</span> <span style="color: #f8f8f2">number</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">12331</span>
+    <span style="color: #f8f8f2">The</span> <span style="color: #f8f8f2">reverse</span> <span style="color: #f8f8f2">of</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">number</span> <span style="color: #f8f8f2">is</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">13321</span>
+    <span style="color: #f8f8f2">The</span> <span style="color: #f8f8f2">number</span> <span style="color: #f8f8f2">is</span> <span style="color: #f8f8f2">not</span> <span style="color: #f8f8f2">a</span> <span style="color: #f8f8f2">palindrome.</span>
+    </pre></div>

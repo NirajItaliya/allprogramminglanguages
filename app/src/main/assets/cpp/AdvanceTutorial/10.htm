@@ -1,0 +1,758 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Century",serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-link:"Footnote Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Century",serif;}
+span.MsoFootnoteReference
+	{vertical-align:super;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.alt, li.alt, div.alt
+	{mso-style-name:alt;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.preprocessor
+	{mso-style-name:preprocessor;}
+span.keyword
+	{mso-style-name:keyword;}
+span.datatypes
+	{mso-style-name:datatypes;}
+span.string
+	{mso-style-name:string;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.FootnoteTextChar
+	{mso-style-name:"Footnote Text Char";
+	mso-style-link:"Footnote Text";}
+.MsoChpDefault
+	{font-family:"Century",serif;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='margin-top:3.75pt;text-align:center;
+line-height:200%;background:white'><span style='font-size:18.0pt;line-height:
+200%;font-family:"Helvetica",sans-serif;color:#610B38'>C++ Inheritance</span></p>
+
+<p class=MsoNormal style='margin-top:3.75pt;line-height:200%;background:white'><span
+style='line-height:200%;font-family:"Helvetica",sans-serif;color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>In C++, inheritance is a process in which one object acquires all
+the properties and behaviors of its parent object automatically. In such way,
+you can reuse, extend or modify the attributes and behaviors which are defined
+in other class.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>In C++, the class which inherits the members of another class is
+called derived class and the class whose members are inherited is called base
+class. The derived class is the specialized class for the base class.</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='line-height:200%;font-family:"Times New Roman",serif'>
+
+<hr size=1 width="100%" noshade style='color:#D4D4D4' align=center>
+
+</span></div>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='line-height:200%;font-family:"Helvetica",sans-serif;color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>Advantage of C++ Inheritance</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white'><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:darkslategray'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:darkslategray'>Code reusability:</span></b><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;Now you
+can reuse the members of your parent class. So, there is no need to define the
+member again. So less code is required in the class.</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>C++ Single Level Inheritance Example: Inheriting Fields</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>When one class inherits another class, it is known as single level
+inheritance. Let's see the example of single level inheritance which inherits
+the fields only.</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:white'>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>#include&nbsp;&lt;iostream&gt;</span><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><b><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>using</span></b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>namespace</span></b><span style='font-size:8.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;std;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Account&nbsp;{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;</span><b><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>public</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>:&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;</span><b><span style='font-size:10.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:seagreen'>float</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;salary&nbsp;=&nbsp;60000;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;};&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;</span><b><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Programmer:&nbsp;</span><b><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>public</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Account&nbsp;{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;</span><b><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>public</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>:&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;</span><b><span style='font-size:10.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:seagreen'>float</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;bonus&nbsp;=&nbsp;5000;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;};&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><b><span style='font-size:10.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:seagreen'>int</span></b><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;main(</span><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>void</span></b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>)&nbsp;{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Programmer&nbsp;p1;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Salary:&nbsp;&quot;</span><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&lt;&lt;p1.salary&lt;&lt;endl;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;Bonus:&nbsp;&quot;</span><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&lt;&lt;p1.bonus&lt;&lt;endl;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>return</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;0;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>}&nbsp;&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#A6A6A6'>
+
+<p class=MsoNormal style='line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Output:</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Courier New";
+color:black'>Salary: 60000</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Courier New";
+color:black'>Bonus: 5000</span></p>
+
+</div>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>In the above example, Employee is the&nbsp;</span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:darkslategray'>base</span></b><span style='font-size:9.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;class and Programmer
+is the&nbsp;</span><b><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:darkslategray'>derived</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;class.</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:18.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>C++ Single Level Inheritance Example: Inheriting Methods</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Let's see another example of inheritance in C++ which inherits
+methods only.</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:white'>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>#include&nbsp;&lt;iostream&gt;</span><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><b><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>using</span></b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>namespace</span></b><span style='font-size:8.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;std;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Animal&nbsp;{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;</span><b><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>public</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>:&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>void</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;eat()&nbsp;{&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;</span><span style='font-size:
+8.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:blue'>&quot;Eating...&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&lt;&lt;endl;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;};&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;</span><b><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Dog:&nbsp;</span><b><span style='font-size:8.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:#006699'>public</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Animal&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>public</span></b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>:&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span style='font-size:
+8.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>void</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;bark(){&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;</span><span style='font-size:
+8.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:blue'>&quot;Barking...&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;};&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><b><span style='font-size:10.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:seagreen'>int</span></b><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;main(</span><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>void</span></b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>)&nbsp;{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;Dog&nbsp;d1;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;d1.eat();&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;d1.bark();&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>return</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;0;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>}&nbsp;&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#A6A6A6'>
+
+<p class=MsoNormal style='line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Output:</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Courier New";
+color:black'>Eating...</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Courier New";
+color:black'>Barking...</span></p>
+
+</div>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Times New Roman",serif'>
+
+<hr size=1 width="100%" noshade style='color:#D4D4D4' align=center>
+
+</span></div>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>C++ Multi Level Inheritance Example</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>When one class inherits another class which is further inherited
+by another class, it is known as multi level inheritance in C++. Inheritance is
+transitive so the last derived class acquires all the members of all its base
+classes.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Let's see the example of multi level inheritance in C++.</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:white'>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>#include&nbsp;&lt;iostream&gt;</span><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><b><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>using</span></b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>namespace</span></b><span style='font-size:8.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;std;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Animal&nbsp;{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;</span><b><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>public</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>:&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>void</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;eat()&nbsp;{&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;</span><span style='font-size:
+8.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:blue'>&quot;Eating...&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&lt;&lt;endl;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;};&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;</span><b><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Dog:&nbsp;</span><b><span style='font-size:8.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:#006699'>public</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Animal&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>public</span></b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>:&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span style='font-size:
+8.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>void</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;bark(){&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;</span><span style='font-size:
+8.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:blue'>&quot;Barking...&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&lt;&lt;endl;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;};&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;</span><b><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;BabyDog:&nbsp;</span><b><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>public</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;Dog&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>public</span></b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>:&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span style='font-size:
+8.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>void</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;weep()&nbsp;{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;</span><span style='font-size:
+8.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:blue'>&quot;Weeping...&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;};&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><b><span style='font-size:10.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:seagreen'>int</span></b><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;main(</span><b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>void</span></b><span style='font-size:8.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>)&nbsp;{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;BabyDog&nbsp;d1;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;d1.eat();&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;d1.bark();&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d1.weep();&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span style='font-size:
+8.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:#006699'>return</span></b><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;0;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>}&nbsp;&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#A6A6A6'>
+
+<p class=MsoNormal style='line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Output:</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Courier New";
+color:black'>Eating...</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Courier New";
+color:black'>Barking?</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#A6A6A6;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Courier New";
+color:black'>Weeping?</span></p>
+
+</div>
+
+<p class=MsoNormal style='line-height:200%'><span style='font-size:10.0pt;
+line-height:200%'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

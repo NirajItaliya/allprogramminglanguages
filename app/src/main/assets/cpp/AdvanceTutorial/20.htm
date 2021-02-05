@@ -1,0 +1,381 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Century",serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='margin-top:3.75pt;text-align:center;
+line-height:200%;background:white'><span style='font-size:18.0pt;line-height:
+200%;font-family:"Helvetica",sans-serif;color:#610B38'>C++ Exception Handling</span></p>
+
+<p class=MsoNormal align=center style='margin-top:3.75pt;text-align:center;
+line-height:200%;background:white'><span style='font-size:10.0pt;line-height:
+200%;font-family:"Helvetica",sans-serif;color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Exception Handling in C++ is a process to handle runtime errors.
+We perform exception handling so the normal flow of the application can be
+maintained even after runtime errors.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:7.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>In C++, exception is an event or object which is thrown at
+runtime. All exceptions are derived from std::exception class. It is a runtime
+error which can be handled. If we don't handle the exception, it prints
+exception message and terminates the program.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:5.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='line-height:200%;font-family:"Times New Roman",serif'>
+
+<hr size=1 width="100%" noshade style='color:#D4D4D4' align=center>
+
+</span></div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:7.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>Advantage</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:6.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>It maintains the normal flow of the application. In such case,
+rest of the code is executed even after exception.</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='line-height:200%;font-family:"Times New Roman",serif'>
+
+<hr size=1 width="100%" noshade style='color:#D4D4D4' align=center>
+
+</span></div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>C++ Exception Classes</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:6.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>In C++ standard exceptions are defined in &lt;exception&gt; class
+that we can use inside our programs. The arrangement of parent-child class
+hierarchy is shown below:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='line-height:200%;font-family:"Times New Roman",serif'><img width=224
+height=296 id="Picture 1" src="20_files/image001.png"
+alt="Cpp Exception handling 1"></span></p>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='line-height:200%;font-family:"Times New Roman",serif'>
+
+<hr size=1 width="100%" noshade style='color:#D4D4D4' align=center>
+
+</span></div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:7.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>All the exception classes in C++ are derived from std::exception
+class. Let's see the list of C++ common exception classes.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:2.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div align=center>
+
+<table class=MsoTable15Grid4Accent5 border=1 cellspacing=0 cellpadding=0
+ width=283 style='width:212.4pt;border-collapse:collapse;border:none'>
+ <tr style='height:20.6pt'>
+  <td width=135 valign=top style='width:101.5pt;border:solid #5B9BD5 1.0pt;
+  border-right:none;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:20.6pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:200%'><b><span
+  style='font-size:10.0pt;line-height:200%;font-family:"Times New Roman",serif;
+  color:black'>Exception</span></b></p>
+  </td>
+  <td width=148 valign=top style='width:110.9pt;border:solid #5B9BD5 1.0pt;
+  border-left:none;background:#5B9BD5;padding:0cm 5.4pt 0cm 5.4pt;height:20.6pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:200%'><b><span
+  style='font-size:10.0pt;line-height:200%;font-family:"Times New Roman",serif;
+  color:black'>Description</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:17.65pt'>
+  <td width=135 valign=top style='width:101.5pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%'>std::exception</span></p>
+  </td>
+  <td width=148 valign=top style='width:110.9pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:9.0pt;
+  line-height:200%'>It is an exception and parent class of all standard C++
+  exceptions.</span></p>
+  </td>
+ </tr>
+ <tr style='height:16.15pt'>
+  <td width=135 valign=top style='width:101.5pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:16.15pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%'>std::logic_failure</span></p>
+  </td>
+  <td width=148 valign=top style='width:110.9pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:16.15pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:9.0pt;
+  line-height:200%'>It is an exception that can be detected by reading a code.</span></p>
+  </td>
+ </tr>
+ <tr style='height:16.15pt'>
+  <td width=135 valign=top style='width:101.5pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:16.15pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%'>std::runtime_error</span></p>
+  </td>
+  <td width=148 valign=top style='width:110.9pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:16.15pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:9.0pt;
+  line-height:200%'>It is an exception that cannot be detected by reading a
+  code.</span></p>
+  </td>
+ </tr>
+ <tr style='height:17.65pt'>
+  <td width=135 valign=top style='width:101.5pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%'>std::bad_exception</span></p>
+  </td>
+  <td width=148 valign=top style='width:110.9pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:9.0pt;
+  line-height:200%'>It is used to handle the unexpected exceptions in a c++
+  program.</span></p>
+  </td>
+ </tr>
+ <tr style='height:16.15pt'>
+  <td width=135 valign=top style='width:101.5pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:16.15pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%'>std::bad_cast</span></p>
+  </td>
+  <td width=148 valign=top style='width:110.9pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:16.15pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:9.0pt;
+  line-height:200%'>This exception is generally be thrown by&nbsp;dynamic_cast.</span></p>
+  </td>
+ </tr>
+ <tr style='height:16.15pt'>
+  <td width=135 valign=top style='width:101.5pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:16.15pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%'>std::bad_typeid</span></p>
+  </td>
+  <td width=148 valign=top style='width:110.9pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:16.15pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:9.0pt;
+  line-height:200%'>This exception is generally be thrown by&nbsp;typeid.</span></p>
+  </td>
+ </tr>
+ <tr style='height:16.15pt'>
+  <td width=135 valign=top style='width:101.5pt;border:solid #9CC2E5 1.0pt;
+  border-top:none;background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:16.15pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:8.0pt;
+  line-height:200%'>std::bad_alloc</span></p>
+  </td>
+  <td width=148 valign=top style='width:110.9pt;border-top:none;border-left:
+  none;border-bottom:solid #9CC2E5 1.0pt;border-right:solid #9CC2E5 1.0pt;
+  background:#DEEAF6;padding:0cm 5.4pt 0cm 5.4pt;height:16.15pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-size:9.0pt;
+  line-height:200%'>This exception is generally be thrown by&nbsp;new.</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='line-height:200%;font-family:"Times New Roman",serif'>
+
+<hr size=1 width="100%" noshade style='color:#D4D4D4' align=center>
+
+</span></div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:3.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>C++ Exception Handling Keywords</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:5.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>In C++, we use 3 keywords to perform exception handling:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:7.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-left:18.0pt;text-align:justify;
+text-indent:-18.0pt;line-height:200%;background:white'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Courier New";color:black'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>try</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-left:18.0pt;text-align:justify;
+text-indent:-18.0pt;line-height:200%;background:white'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Courier New";color:black'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>catch, and</span></p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-left:18.0pt;text-align:justify;
+text-indent:-18.0pt;line-height:200%;background:white'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Courier New";color:black'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>throw</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Moreover, we can create user-defined exception which we will learn
+in next chapters.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

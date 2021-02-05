@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin Nested try-catch block</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPv49Bnapf" id="content1-nh" data-rv-view="5972">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin Nested try-catch block</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/d">free web page software</a></section><section class="mbr-section article content1 cid-rPv4djhlg8" id="content1-ni" data-rv-view="5973">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">We can also able to use <strong>nested try block</strong> whenever required. Nested try catch block is such block in which one try catch block is implemented into another try block.
+<div>
+</div><div>The requirement of nested try catch block is arises when a block of code generates an exception and within that block another code statements also generates another exception.</div><div><br></div><div><strong>Syntax of nested try block</strong></div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">..
+try
+{
+    // code block
+    try
+    {
+        // code block
+    }
+    catch(e: SomeException)
+    {
+    }
+}
+catch(e: SomeException)
+{
+}
+..
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPv4owkwnI" id="content1-nk" data-rv-view="5975">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p><span style="font-size: 1rem;">Kotlin nested try block example:</span><br></p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val nume = intArrayOf(4, 8, 16, 32, 64, 128, 256, 512)
+    val deno = intArrayOf(2, 0, 4, 4, 0, 8)
+    try {
+        for (i in nume.indices) {
+            try {
+                println(nume[i].toString() + " / " + deno[i] + " is " + nume[i] / deno[i])
+            } catch (exc: ArithmeticException) {
+                println("Can't divided by Zero!")
+            }
+
+        }
+    } catch (exc: ArrayIndexOutOfBoundsException) {
+        println("Element not found.")
+    }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPv4qQgn4W" id="content1-nm" data-rv-view="5977">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">4 / 2 is 2
+Can't divided by Zero!
+16 / 4 is 4
+32 / 4 is 8
+Can't divided by Zero!
+128 / 8 is 16
+Element not found.
+</code></pre></div>
+
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin finally Block</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPv4WlDMMZ" id="content1-np" data-rv-view="5979">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin finally Block</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co">Mobirise</a></section><section class="mbr-section article content1 cid-rPv51VBgvp" id="content1-nq" data-rv-view="5980">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Kotlin finally block</strong> such block which is always executes whether exception is handled or not. So it is used to execute important code statement.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPv565E6SD" id="content12-nr" data-rv-view="5981">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>&nbsp;Example 1:</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPv5bbiZTM" id="content1-ns" data-rv-view="5982">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Let's see an example of exception handling in which exception does not occur.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main (args: Array&lt;String&gt;){
+    try {
+        val data = 10 / 5
+        println(data)
+    } catch (e: NullPointerException) {
+        println(e)
+    } finally {
+        println("finally block always executes")
+    }
+    println("below codes...")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPv5c7JlXD" id="content1-nu" data-rv-view="5984">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">2
+finally block always executes
+below codes...
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPv5dj3nPH" id="content12-nw" data-rv-view="5986">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 2:</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPv5dPCBiK" id="content1-nx" data-rv-view="5987">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Let's see an example of exception handling in which exception occurs but not handled.</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main (args: Array&lt;String&gt;){
+    try {
+        val data = 5 / 0
+        println(data)
+    } catch (e: NullPointerException) {
+        println(e)
+    } finally {
+        println("finally block always executes")
+    }
+    println("below codes...")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPv5fbb7KI" id="content1-ny" data-rv-view="5989">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">finally block always executes
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rPv5Lk28Pw" id="content12-o1" data-rv-view="5991">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 3:</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPv5MmkDdl" id="content12-o2" data-rv-view="5992">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">Let's see an example of exception handling in which exception occurs and handled.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main (args: Array&lt;String&gt;){
+    try {
+        val data = 5 / 0
+        println(data)
+    } catch (e: ArithmeticException) {
+        println(e)
+    } finally {
+        println("finally block always executes")
+    }
+    println("below codes...")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPv5NqyNZ1" id="content1-o4" data-rv-view="5994">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">java.lang.ArithmeticException: / by zero
+finally block always executes
+below codes...
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rPv6clgyyb" id="content12-o6" data-rv-view="5996">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Note:</strong> The finally block will not be executed if program exits (either by calling exitProcess(Int) or any error that causes the process to abort).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

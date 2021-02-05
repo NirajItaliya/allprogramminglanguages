@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin Map Interface</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPErIutpsB" id="content1-v8" data-rv-view="6715">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin Map Interface</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/f">free bootstrap builder</a></section><section class="mbr-section article content1 cid-rPErOXL4Ul" id="content1-v9" data-rv-view="6716">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin <strong>Map</strong> is an interface and generic collection of elements. Map interface holds data in the form of key and value pair. Map key are unique and holds only one value for each key. The key and value may be of different pairs such as &lt;Int, Int&gt;,&lt;Int, String&gt;, &lt;Char, String&gt;etc. This interface is immutable, fixed size and its methods support read only access.
+<div>
+</div><div>To use the Map interface we need to use its function called <strong>mapOf() </strong>or <strong>mapOf&lt;k,v&gt;().</strong>
+</div><div>
+</div><div><strong>Map Interface Declaration:</strong></div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">interface Map&lt;K, out V&gt; (source)
+</code></pre></div>
+
+<section class="section-table cid-rPEs4jkQ2F" id="table1-vb" data-rv-view="6718">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5"><strong>Properties of Map Interface
+</strong></h2>
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Properties</th><th class="head-item mbr-fonts-style display-7">Descriptions</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract val entries: Set&lt;Entry&lt;K, V&gt;&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns only read all key and value pair of Set Interface in current map.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract val keys: Set&lt;K&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns only read all key of Set Interface in current map.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract val keys: Set&lt;K&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns the number of key and value pair in current map.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract val values: Collection&lt;V&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns only read Collection of all valued in current map. This collection may contain duplicate values.
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="section-table cid-rPEsttZnWs" id="table1-vc" data-rv-view="6755">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5"><strong>Functions of Map Interface
+</strong></h2>
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Functions</th><th class="head-item mbr-fonts-style display-7">Descriptions</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;K, V&gt; Map&lt;key, value&gt;.getValue(key: K): V&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns a value of given key or throws an exception if no such key is available in the map.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">operator fun &lt;V, V1 : V&gt; Map&lt;in String,
+<br>V&gt;.getValue(
+<br>thisRef: Any?,
+<br>property: KProperty&lt;*&gt;
+<br>): V1</td><td class="body-item mbr-fonts-style display-7">It returns the value of the property for the given object from current read- only map.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">operator fun &lt;K, V&gt; Map&lt;out K, V&gt;.contains(key: K): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It checks is the given key contains in map.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;K&gt; Map&lt;out K, *&gt;.containsKey(key: K): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">If map contains the specified key it returns true.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;K, V&gt; Map&lt;K, V&gt;.containsValue(value: V): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">If map maps one or more keys to specified value it returns true.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;K, V&gt; Map&lt;out K, V&gt;.getOrDefault(
+<br>key: K,
+<br>defaultValue: V
+<br>): V&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns the value which is given by key in mapped, or returns default value if map dose not contains mapping for the given key.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;K, V&gt; Map&lt;out K, V&gt;.asIterable(): Iterable&lt;Entry&lt;K, V&gt;&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It creates an instance of Iterable interface which wraps the original map returning its entries when being iterated.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;K, V&gt; Map&lt;out K, V&gt;.asSequence(): Sequence&lt;Entry&lt;K, V&gt;&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It creates a Sequence interface instance which wraps the current map and returning its entries when it has iterated.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">operator fun &lt;K, V&gt; Map&lt;out K, V&gt;.iterator(): Iterator&lt;Entry&lt;K, V&gt;&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns an Iterator over the entries in the Map.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">operator fun Map.minus(key: K): Map&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns a map which contains all the entries of original map except the entry of mention key.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">operator fun &lt;K, V&gt; Map&lt;out K, V&gt;.minus(
+<br>keys: Iterable&lt;K&gt;
+<br>): Map&lt;K, V&gt;</td><td class="body-item mbr-fonts-style display-7">It returns a map which contains all the entries of original map except those entries key which are contained in the mention key collection.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">operator fun &lt;K, V&gt; Map&lt;out K, V&gt;.minus(
+<br>keys: Sequence&lt;K&gt;
+<br>): Map&lt;K, V&gt;</td><td class="body-item mbr-fonts-style display-7">It returns a map which contains all the entries of original map except those entries key which are contained in the given key sequence.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">operator fun &lt;K, V&gt; Map&lt;out K, V&gt;.plus(
+<br>pair: Pair&lt;K, V&gt;
+<br>): Map&lt;K, V&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It creates a new read only map by adding or replacing an entry to current map from a given key-value pair.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">operator fun &lt;K, V&gt; Map&lt;out K, V&gt;.plus(
+<br>pairs: Iterable&lt;Pair&lt;K, V&gt;&gt;
+<br>): Map&lt;K, V&gt;</td><td class="body-item mbr-fonts-style display-7">It creates a new read only map by adding or replacing entries to current map from a given collection of key-value pairs.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">operator fun &lt;K, V&gt; Map&lt;out K, V&gt;.plus(
+<br>pairs: Sequence&lt;Pair&lt;K, V&gt;&gt;
+<br>): Map&lt;K, V&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It creates a new read only map by adding or replacing entries to current map from a given sequence of key-value pairs.
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPEtSi8LIW" id="content12-vd" data-rv-view="6869">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 1
+:&nbsp;</strong>Let's create an example of declaring and traversing the value of map using mapOf&lt;k,v&gt;() function. In this example, we create key of Int and value of String types.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val myMap = mapOf&lt;Int,String&gt;(1 to "Ajay", 4 to "Vijay", 3 to "Prakash")
+    for(key in myMap.keys){
+        println(myMap[key])
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPEtXTJMp0" id="content1-vg" data-rv-view="6871">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Ajay
+Vijay
+Prakash
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPEtZeX7L8" id="content12-vi" data-rv-view="6873">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 2 - generic
+:&nbsp;</strong>For more specific we can provide generic type Map such as myMap: Map&lt;k, v&gt; = mapOf&lt;k,v&gt;().</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val myMap: Map&lt;Int, String&gt; = mapOf&lt;Int,String&gt;(1 to "Ajay", 4 to "Vijay", 3 to "Prakash")
+    for(key in myMap.keys){
+        println("Element at key $key = ${myMap.get(key)}")
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPEu0yBxFk" id="content1-vk" data-rv-view="6875">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Element at key 1 = Ajay
+Element at key 4 = Vijay
+Element at key 3 = Prakash
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPEu1E5ybU" id="content12-vm" data-rv-view="6877">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 3 - non generic
+:&nbsp;</strong>If we cannot specify any types of key and value of Map Interface then it can take different types of key and value. This is because all class internally uses &lt;Any, Any&gt; types. For example:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val myMap = mapOf(1 to "Ajay", 4 to "Vijay", 3 to "Prakash","ram" to "Ram", "two" to 2)
+    for(key in myMap.keys){
+        println("Element at key $key = ${myMap.get(key)}")
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPEu6iFfIm" id="content1-vq" data-rv-view="6879">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Element at key 1 = Ajay
+Element at key 4 = Vijay
+Element at key 3 = Prakash
+Element at key ram = Ram
+Element at key two = 2
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPEu6MXGrB" id="content12-vr" data-rv-view="6881">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 4 - mapOf().getValue():</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val myMap: Map&lt;Int,String&gt; = mapOf&lt;Int, String&gt;(1 to "Ajay", 4 to "Vijay", 3 to "Prakash")
+
+    for(key in myMap.keys){
+        println("Element at key $key = ${myMap.get(key)}")
+    }
+    println(".....myMap.getValue(4).......")
+    println(myMap.getValue(4))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPEu7EpFHc" id="content1-vt" data-rv-view="6883">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">Element at key 1 = Ajay
+Element at key 4 = Vijay
+Element at key 3 = Prakash
+.....myMap.getValue(4).......
+Vijay
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPEu8GCqhv" id="content12-vv" data-rv-view="6885">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 5 - mapOf().contains():</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val myMap: Map&lt;Int,String&gt; = mapOf&lt;Int, String&gt;(1 to "Ajay", 4 to "Vijay", 3 to "Prakash")
+
+    for(key in myMap.keys){
+        println("Element at key $key = ${myMap.get(key)}")
+    }
+    println(".....myMap.contains(3).......")
+    println( myMap.contains(3))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPEu9KCvsr" id="content1-vx" data-rv-view="6887">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Element at key 1 = Ajay
+Element at key 4 = Vijay
+Element at key 3 = Prakash
+.....myMap.contains(3).......
+true
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPEuaD26M1" id="content12-vz" data-rv-view="6889">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 6 - mapOf().containsKey():</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val myMap: Map&lt;Int,String&gt; = mapOf&lt;Int, String&gt;(1 to "Ajay", 4 to "Vijay", 3 to "Prakash")
+
+    for(key in myMap.keys){
+        println("Element at key $key = ${myMap.get(key)}")
+    }
+    println("......myMap.containsKey(2)......")
+    println(myMap.containsKey(2))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPEubsM2uV" id="content1-w1" data-rv-view="6891">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Element at key 1 = Ajay
+Element at key 4 = Vijay
+Element at key 3 = Prakash
+......myMap.containsKey(2)......
+false
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPEucb6EN7" id="content12-w3" data-rv-view="6893">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 7 - mapOf().containsValue ():</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val myMap: Map&lt;Int,String&gt; = mapOf&lt;Int, String&gt;(1 to "Ajay", 4 to "Vijay", 3 to "Prakash")
+
+    for(key in myMap.keys){
+        println("Element at key $key = ${myMap.get(key)}")
+    }
+    println("......myMap.containsValue(\"Ajay\")......")
+    println(myMap.containsValue("Ajay"))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPEucQ3b72" id="content1-w5" data-rv-view="6895">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Element at key 1 = Ajay
+Element at key 4 = Vijay
+Element at key 3 = Prakash
+......myMap.containsValue("Ajay")......
+true
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPEvhL41ku" id="content12-w8" data-rv-view="6897">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 8 - mapOf().get()</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val myMap: Map&lt;Int,String&gt; = mapOf&lt;Int, String&gt;(1 to "Ajay", 4 to "Vijay", 3 to "Prakash")
+
+    for(key in myMap.keys){
+        println("Element at key $key = ${myMap.get(key)}")
+    }
+    println(".....myMap.get(1).......")
+    println(myMap.get(1))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPEvjeb18S" id="content1-wb" data-rv-view="6899">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Element at key 1 = Ajay
+Element at key 4 = Vijay
+Element at key 3 = Prakash
+.....myMap.get(1).......
+Ajay
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPEvjSugcs" id="content12-wd" data-rv-view="6901">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 9 - mapOf().getOrDefault ():</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val myMap: Map&lt;Int,String&gt; = mapOf&lt;Int, String&gt;(1 to "Ajay", 4 to "Vijay", 3 to "Prakash")
+
+    for(key in myMap.keys){
+        println("Element at key $key = ${myMap.get(key)}")
+    }
+
+   println("......myMap.getOrDefault(3, \"Vijay\")......")
+   println(myMap.getOrDefault(3, "Vijay"))
+}
+
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPEvkHgLso" id="content1-wf" data-rv-view="6903">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Element at key 1 = Ajay
+Element at key 4 = Vijay
+Element at key 3 = Prakash
+......myMap.getOrDefault(3, "Vijay")......
+Prakash
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPEvlM9Yum" id="content12-wi" data-rv-view="6905">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 10 - mapOf().asIterable ():</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val myMap: Map&lt;Int,String&gt; = mapOf&lt;Int, String&gt;(1 to "Ajay", 4 to "Vijay", 3 to "Prakash")
+
+    for(key in myMap.keys){
+        println("Element at key $key = ${myMap.get(key)}")
+    }
+      println(".......myMap.asIterable().....")
+      for(itr in myMap.asIterable()){
+          println("key = ${itr.key} value = ${itr.value}")
+      }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPEvmArlwF" id="content1-wk" data-rv-view="6907">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Element at key 1 = Ajay
+Element at key 4 = Vijay
+Element at key 3 = Prakash
+.......myMap.asIterable().....
+key = 1 value = Ajay
+key = 4 value = Vijay
+key = 3 value = Prakash
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPEvIQhcrP" id="content12-wm" data-rv-view="6909">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 11 - mapOf().iterator()</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val myMap: Map&lt;Int,String&gt; = mapOf&lt;Int, String&gt;(1 to "Ajay", 4 to "Vijay", 3 to "Prakash")
+
+    for(key in myMap.keys){
+        println("Element at key $key = ${myMap.get(key)}")
+    }
+    println("......myMap.iterator()......")
+    for(itr1 in myMap.iterator()){
+        println("key = ${itr1.key} value = ${itr1.value}")
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPEvJIIiy2" id="content1-wo" data-rv-view="6911">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Element at key 1 = Ajay
+Element at key 4 = Vijay
+Element at key 3 = Prakash
+......myMap.iterator()......
+key = 1 value = Ajay
+key = 4 value = Vijay
+key = 3 value = Prakash
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPEvKqHtQZ" id="content12-wq" data-rv-view="6913">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 12 - mapOf().minus()</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val myMap: Map&lt;Int,String&gt; = mapOf&lt;Int, String&gt;(1 to "Ajay", 4 to "Vijay", 3 to "Prakash")
+
+    for(key in myMap.keys){
+        println("Element at key $key = ${myMap.get(key)}")
+    }
+      println("......myMap.minus(4)......")
+      for(m in myMap.minus(4)){
+          println(myMap[m.key])
+      }
+}
+</code></pre></div>
+<section class="mbr-section article content1 cid-rPEvLhANpQ" id="content1-ws" data-rv-view="6915">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Element at key 1 = Ajay
+Element at key 4 = Vijay
+Element at key 3 = Prakash
+......myMap.minus(4)......
+Ajay
+Prakash
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPEw4M00rs" id="content12-wu" data-rv-view="6917">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 13 - mapOf().plus()</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val myMap: Map&lt;Int,String&gt; = mapOf&lt;Int, String&gt;(1 to "Ajay", 4 to "Vijay", 3 to "Prakash")
+
+    for(key in myMap.keys){
+        println("Element at key $key = ${myMap.get(key)}")
+    }
+    println("......myMap.plus(Pair(5, \"Rohan\"))......")
+    for(p in myMap.plus(Pair(5, "Rohan"))){
+         println("Element at key ${p.key} = ${p.value}")
+    }
+
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPEw5BG3dI" id="content1-ww" data-rv-view="6919">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Element at key 1 = Ajay
+Element at key 4 = Vijay
+Element at key 3 = Prakash
+......myMap.plus(Pair(5, "Rohan"))......
+Element at key 1 = Ajay
+Element at key 4 = Vijay
+Element at key 3 = Prakash
+Element at key 5 = Rohan
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/datatables/jquery.data-tables.min.js"></script>
+  <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

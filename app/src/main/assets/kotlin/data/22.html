@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin Lambda Function</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rP5yl2FHnG" id="content1-h2" data-rv-view="5618">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin Lambda Function</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/g">how to create your own website</a></section><section class="mbr-section article content1 cid-rP5yDbNRUR" id="content1-h3" data-rv-view="5619">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Lambda is a function which has no name. Lambda is defined with a curly braces {} which takes variable as a parameter (if any) and body of function. The body of function is written after variable (if any) followed by -&gt; operator.</div>
+        </div>
+    </div>
+</section>
+
+<section class="cid-rP7FMEkCq8" id="image2-jr" data-rv-view="5620">
+
+    
+
+    <figure class="mbr-figure container">
+        <div class="image-block" style="width: 36%;">
+            <img src="assets/images/kotlin-lambda-expression-279x134.jpg" alt="Mobirise" title="" media-simple="true">
+            <figcaption class="mbr-figure-caption mbr-figure-caption-over">
+                <div class="container pb-5 mbr-white align-center mbr-fonts-style display-1"></div>
+            </figcaption>
+        </div>
+    </figure>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">{ variable -> body_of_function}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5yIFJIRm" id="content1-h5" data-rv-view="5623">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Before we talk about lambda, let's see a simple example of addition of two numbers using normal function.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP5yZbVf5e" id="content1-h9" data-rv-view="5624">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In this example, we create a function <strong>addNumber()</strong> passing two arguments <strong>(a,b)</strong> calling from the main function.</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    addNumber(5,10)
+}
+fun addNumber(a: Int, b: Int){
+    val add = a + b
+    println(add)
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5z83W91w" id="content1-hb" data-rv-view="5626">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">15
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5ze5DHGA" id="content1-hd" data-rv-view="5628">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Lambda function: addition of two numbers</strong></div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val myLambda: (Int) -> Unit= {s: Int -> println(s) } //lambda function
+    addNumber(5,10,myLambda)
+}
+fun addNumber(a: Int, b: Int, mylambda: (Int) -> Unit ){ //high level function lambda as parameter
+    val add = a + b
+    mylambda(add) // println(add)
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5zkfmd2R" id="content1-hf" data-rv-view="5630">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">15
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rP5zu3ifvi" id="content1-hh" data-rv-view="5632">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In the above program we create a lambda expression {s: Int -&gt; println(s) } with its return type Unit. The lambda function is padded as an parameter in high level function <strong>addNumber(5,10,myLambda)</strong>. The variable mylambda in function definition is actually a lambda function. The functionality (body) of mylambda is already given in lambda function.</div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

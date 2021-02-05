@@ -1,0 +1,212 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic"> * C program to implement stack. Stack is a LIFO data structure.</span>
+    <span style="color: #999999; font-style: italic"> * Stack operations: PUSH(insert operation), POP(Delete operation)</span>
+    <span style="color: #999999; font-style: italic"> * and Display stack.</span>
+    <span style="color: #999999; font-style: italic"> */</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdio.h&gt;</span>
+    <span style="color: #cd2828; font-weight: bold">#define MAXSIZE 5</span>
+     
+    <span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">stack</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">stk[MAXSIZE];</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">top;</span>
+    <span style="color: #d0d0d0">};</span>
+    <span style="color: #6ab825; font-weight: bold">typedef</span> <span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">stack</span> <span style="color: #d0d0d0">STACK;</span>
+    <span style="color: #d0d0d0">STACK</span> <span style="color: #d0d0d0">s;</span>
+     
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">push</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">void</span><span style="color: #d0d0d0">);</span>
+    <span style="color: #6ab825; font-weight: bold">int</span>  <span style="color: #447fcf">pop</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">void</span><span style="color: #d0d0d0">);</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">display</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">void</span><span style="color: #d0d0d0">);</span>
+     
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">main</span> <span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">choice;</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">option</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">s.top</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">-</span><span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+     
+        <span style="color: #d0d0d0">printf</span> <span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;STACK OPERATION\n&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(option)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf</span> <span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;------------------------------------------\n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">printf</span> <span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;      1    --&gt;    PUSH               \n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">printf</span> <span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;      2    --&gt;    POP               \n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">printf</span> <span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;      3    --&gt;    DISPLAY               \n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">printf</span> <span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;      4    --&gt;    EXIT           \n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">printf</span> <span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;------------------------------------------\n&quot;</span><span style="color: #d0d0d0">);</span>
+     
+            <span style="color: #d0d0d0">printf</span> <span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;Enter your choice\n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">scanf</span>    <span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;choice);</span>
+            <span style="color: #6ab825; font-weight: bold">switch</span> <span style="color: #d0d0d0">(choice)</span>
+            <span style="color: #d0d0d0">{</span>
+            <span style="color: #6ab825; font-weight: bold">case</span> <span style="color: #3677a9">1</span>:
+                <span style="color: #d0d0d0">push();</span>
+                <span style="color: #6ab825; font-weight: bold">break</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #6ab825; font-weight: bold">case</span> <span style="color: #3677a9">2</span>:
+                <span style="color: #d0d0d0">pop();</span>
+                <span style="color: #6ab825; font-weight: bold">break</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #6ab825; font-weight: bold">case</span> <span style="color: #3677a9">3</span>:
+                <span style="color: #d0d0d0">display();</span>
+                <span style="color: #6ab825; font-weight: bold">break</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #6ab825; font-weight: bold">case</span> <span style="color: #3677a9">4</span>:
+                <span style="color: #6ab825; font-weight: bold">return</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #d0d0d0">}</span>
+            <span style="color: #d0d0d0">fflush</span> <span style="color: #d0d0d0">(stdin);</span>
+            <span style="color: #d0d0d0">printf</span> <span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;Do you want to continue(Type 0 or 1)?\n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">scanf</span>    <span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;option);</span>
+        <span style="color: #d0d0d0">}</span>
+    <span style="color: #d0d0d0">}</span>
+    <span style="color: #999999; font-style: italic">/*  Function to add an element to the stack */</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">push</span> <span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">num;</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(s.top</span> <span style="color: #d0d0d0">==</span> <span style="color: #d0d0d0">(MAXSIZE</span> <span style="color: #d0d0d0">-</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">))</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf</span> <span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;Stack is Full\n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #6ab825; font-weight: bold">return</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">else</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf</span> <span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;Enter the element to be pushed\n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">scanf</span> <span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;num);</span>
+            <span style="color: #d0d0d0">s.top</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">s.top</span> <span style="color: #d0d0d0">+</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #d0d0d0">s.stk[s.top]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">num;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">return</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #d0d0d0">}</span>
+    <span style="color: #999999; font-style: italic">/*  Function to delete an element from the stack */</span>
+    <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #447fcf">pop</span> <span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">num;</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(s.top</span> <span style="color: #d0d0d0">==</span> <span style="color: #d0d0d0">-</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf</span> <span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;Stack is Empty\n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #6ab825; font-weight: bold">return</span> <span style="color: #d0d0d0">(s.top);</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">else</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">num</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">s.stk[s.top];</span>
+            <span style="color: #d0d0d0">printf</span> <span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;poped element is = %dn&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">s.stk[s.top]);</span>
+            <span style="color: #d0d0d0">s.top</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">s.top</span> <span style="color: #d0d0d0">-</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">return</span><span style="color: #d0d0d0">(num);</span>
+    <span style="color: #d0d0d0">}</span>
+    <span style="color: #999999; font-style: italic">/*  Function to display the status of the stack */</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">display</span> <span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">i;</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(s.top</span> <span style="color: #d0d0d0">==</span> <span style="color: #d0d0d0">-</span><span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf</span> <span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;Stack is empty\n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #6ab825; font-weight: bold">return</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">else</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf</span> <span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;\n The status of the stack is \n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">s.top;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&gt;=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i--)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #d0d0d0">printf</span> <span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;%d\n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">s.stk[i]);</span>
+            <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">printf</span> <span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;\n&quot;</span><span style="color: #d0d0d0">);</span>
+    <span style="color: #d0d0d0">}</span>
+    
+    
+    <span style="color: #d0d0d0">&gt;&gt;Runtime</span> <span style="color: #d0d0d0">Test</span> <span style="color: #d0d0d0">Cases</span>
+    <span style="color: #d0d0d0">STACK</span> <span style="color: #d0d0d0">OPERATION</span>
+    <span style="color: #d0d0d0">------------------------------------------</span>
+          <span style="color: #3677a9">1</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">PUSH</span>
+          <span style="color: #3677a9">2</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">POP</span>
+          <span style="color: #3677a9">3</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">DISPLAY</span>
+          <span style="color: #3677a9">4</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">EXIT</span>
+    <span style="color: #d0d0d0">------------------------------------------</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">your</span> <span style="color: #d0d0d0">choice</span>
+    <span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">be</span> <span style="color: #d0d0d0">pushed</span>
+    <span style="color: #3677a9">34</span>
+    <span style="color: #d0d0d0">Do</span> <span style="color: #d0d0d0">you</span> <span style="color: #d0d0d0">want</span> <span style="color: #d0d0d0">to</span> <span style="color: #6ab825; font-weight: bold">continue</span><span style="color: #d0d0d0">(Type</span> <span style="color: #3677a9">0</span> <span style="color: #d0d0d0">or</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)?</span>
+    <span style="color: #3677a9">0</span>
+    <span style="color: #a61717; background-color: #e3d2d2">$</span> <span style="color: #d0d0d0">a.out</span>
+    <span style="color: #d0d0d0">STACK</span> <span style="color: #d0d0d0">OPERATION</span>
+    <span style="color: #d0d0d0">------------------------------------------</span>
+          <span style="color: #3677a9">1</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">PUSH</span>
+          <span style="color: #3677a9">2</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">POP</span>
+          <span style="color: #3677a9">3</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">DISPLAY</span>
+          <span style="color: #3677a9">4</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">EXIT</span>
+    <span style="color: #d0d0d0">------------------------------------------</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">your</span> <span style="color: #d0d0d0">choice</span>
+    <span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">be</span> <span style="color: #d0d0d0">pushed</span>
+    <span style="color: #3677a9">34</span>
+    <span style="color: #d0d0d0">Do</span> <span style="color: #d0d0d0">you</span> <span style="color: #d0d0d0">want</span> <span style="color: #d0d0d0">to</span> <span style="color: #6ab825; font-weight: bold">continue</span><span style="color: #d0d0d0">(Type</span> <span style="color: #3677a9">0</span> <span style="color: #d0d0d0">or</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)?</span>
+    <span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">------------------------------------------</span>
+          <span style="color: #3677a9">1</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">PUSH</span>
+          <span style="color: #3677a9">2</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">POP</span>
+          <span style="color: #3677a9">3</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">DISPLAY</span>
+          <span style="color: #3677a9">4</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">EXIT</span>
+    <span style="color: #d0d0d0">------------------------------------------</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">your</span> <span style="color: #d0d0d0">choice</span>
+    <span style="color: #3677a9">2</span>
+    <span style="color: #d0d0d0">poped</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">is</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">34</span>
+    <span style="color: #d0d0d0">Do</span> <span style="color: #d0d0d0">you</span> <span style="color: #d0d0d0">want</span> <span style="color: #d0d0d0">to</span> <span style="color: #6ab825; font-weight: bold">continue</span><span style="color: #d0d0d0">(Type</span> <span style="color: #3677a9">0</span> <span style="color: #d0d0d0">or</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)?</span>
+    <span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">------------------------------------------</span>
+          <span style="color: #3677a9">1</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">PUSH</span>
+          <span style="color: #3677a9">2</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">POP</span>
+          <span style="color: #3677a9">3</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">DISPLAY</span>
+          <span style="color: #3677a9">4</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">EXIT</span>
+    <span style="color: #d0d0d0">------------------------------------------</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">your</span> <span style="color: #d0d0d0">choice</span>
+    <span style="color: #3677a9">3</span>
+    <span style="color: #d0d0d0">Stack</span> <span style="color: #d0d0d0">is</span> <span style="color: #d0d0d0">empty</span>
+    <span style="color: #d0d0d0">Do</span> <span style="color: #d0d0d0">you</span> <span style="color: #d0d0d0">want</span> <span style="color: #d0d0d0">to</span> <span style="color: #6ab825; font-weight: bold">continue</span><span style="color: #d0d0d0">(Type</span> <span style="color: #3677a9">0</span> <span style="color: #d0d0d0">or</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)?</span>
+    <span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">------------------------------------------</span>
+          <span style="color: #3677a9">1</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">PUSH</span>
+          <span style="color: #3677a9">2</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">POP</span>
+          <span style="color: #3677a9">3</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">DISPLAY</span>
+          <span style="color: #3677a9">4</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">EXIT</span>
+    <span style="color: #d0d0d0">------------------------------------------</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">your</span> <span style="color: #d0d0d0">choice</span>
+    <span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">be</span> <span style="color: #d0d0d0">pushed</span>
+    <span style="color: #3677a9">50</span>
+    <span style="color: #d0d0d0">Do</span> <span style="color: #d0d0d0">you</span> <span style="color: #d0d0d0">want</span> <span style="color: #d0d0d0">to</span> <span style="color: #6ab825; font-weight: bold">continue</span><span style="color: #d0d0d0">(Type</span> <span style="color: #3677a9">0</span> <span style="color: #d0d0d0">or</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)?</span>
+    <span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">------------------------------------------</span>
+          <span style="color: #3677a9">1</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">PUSH</span>
+          <span style="color: #3677a9">2</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">POP</span>
+          <span style="color: #3677a9">3</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">DISPLAY</span>
+          <span style="color: #3677a9">4</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">EXIT</span>
+    <span style="color: #d0d0d0">------------------------------------------</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">your</span> <span style="color: #d0d0d0">choice</span>
+    <span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">element</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">be</span> <span style="color: #d0d0d0">pushed</span>
+    <span style="color: #3677a9">60</span>
+    <span style="color: #d0d0d0">Do</span> <span style="color: #d0d0d0">you</span> <span style="color: #d0d0d0">want</span> <span style="color: #d0d0d0">to</span> <span style="color: #6ab825; font-weight: bold">continue</span><span style="color: #d0d0d0">(Type</span> <span style="color: #3677a9">0</span> <span style="color: #d0d0d0">or</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)?</span>
+    <span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">------------------------------------------</span>
+          <span style="color: #3677a9">1</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">PUSH</span>
+          <span style="color: #3677a9">2</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">POP</span>
+          <span style="color: #3677a9">3</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">DISPLAY</span>
+          <span style="color: #3677a9">4</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">EXIT</span>
+    <span style="color: #d0d0d0">------------------------------------------</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">your</span> <span style="color: #d0d0d0">choice</span>
+    <span style="color: #3677a9">3</span>
+     
+    <span style="color: #d0d0d0">The</span> <span style="color: #d0d0d0">status</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">stack</span> <span style="color: #d0d0d0">is</span>
+    <span style="color: #3677a9">60</span>
+    <span style="color: #3677a9">50</span>
+     
+    <span style="color: #d0d0d0">Do</span> <span style="color: #d0d0d0">you</span> <span style="color: #d0d0d0">want</span> <span style="color: #d0d0d0">to</span> <span style="color: #6ab825; font-weight: bold">continue</span><span style="color: #d0d0d0">(Type</span> <span style="color: #3677a9">0</span> <span style="color: #d0d0d0">or</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)?</span>
+    <span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">------------------------------------------</span>
+          <span style="color: #3677a9">1</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">PUSH</span>
+          <span style="color: #3677a9">2</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">POP</span>
+          <span style="color: #3677a9">3</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">DISPLAY</span>
+          <span style="color: #3677a9">4</span>    <span style="color: #d0d0d0">--&gt;</span>    <span style="color: #d0d0d0">EXIT</span>
+    <span style="color: #d0d0d0">------------------------------------------</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">your</span> <span style="color: #d0d0d0">choice</span>
+    <span style="color: #3677a9">4</span>
+    </pre></div>

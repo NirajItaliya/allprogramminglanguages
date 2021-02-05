@@ -1,0 +1,3 @@
+include ':libraries'
+include ':app'
+rootProject.name = "makecoding"

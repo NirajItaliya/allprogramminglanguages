@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Site made with Mobirise Website Builder v4.10.5, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.10.5, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/ic-logo-new-128x128.png" type="image/x-icon">
+    <meta name="description" content="ApkZube">
+
+    <title>Python List</title>
+
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="plugin/prism.css">
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+    <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
+
+</head>
+
+<body class="line-numbers">
+    <section class="mbr-section content4 cid-rwgQJ4PSLc" id="content4-64">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-2"><strong>Python
+                            List</strong><strong><br></strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="engine"><a href="https://mobirise.info/x">free css templates</a></section>
+    <section class="mbr-section article content1 cid-rwgQP0KQfJ" id="content1-65">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Python list is a <strong>data structure</strong> which is used to store various types of data.In
+                        Python, lists are <strong>mutable </strong>i.e., Python will not create a new list if we modify
+                        an element of the list.
+                    </p>
+                    <p><span style="font-size: 1rem;"><br></span></p>
+                    <p><span style="font-size: 1rem;">It works as a container that holds other objects in a given order.
+                            We can perform various operations like insertion and deletion on list.A list can be composed
+                            by storing a <strong>sequence </strong>of different type of values <strong>separated by
+                                commas</strong>.&nbsp;</span></p>
+                    <p><br></p>
+                    <p>Python list is enclosed <strong>between square([])</strong> brackets and elements are stored in
+                        the index basis with starting index <strong>0.</strong></p>
+                    <p><strong><br></strong></p>
+                    <p><strong>Syantax :&nbsp;</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwgUNKgXB0" id="content1-6d">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p><strong>&lt;list_name&gt;=[value1,value2,value3,...,valuen]; &nbsp;</strong><br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cid-rwgT38vSaz" id="image2-66">
+
+
+
+        <figure class="mbr-figure container">
+            <div class="image-block" style="width: 64%;">
+                <img src="assets/images/t7.webp" alt="Mobirise" title="">
+
+            </div>
+        </figure>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+    list=['foo','bar','baz','quz','quux','corge']
+
+    print(list)
+    my_list=[1,2,3,4,4.5,'apkzube','X']
+    print(my_list)
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwgTcr6F6P" id="content1-68">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>A list can be created by putting the value inside the square bracket and separated by comma.</p>
+                    <p><strong>Output of above program :</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    ['foo', 'bar', 'baz', 'quz', 'quux', 'corge']
+    [1, 2, 3, 4, 4.5, 'apkzube', 'X'] 
+</code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwgVD32Ubt" id="content12-6i">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>Syntax to Access Python List&nbsp;</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwgVLiNoZV" id="content1-6j">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p><strong>&lt;list_name&gt;[index] &nbsp;</strong></p>
+                    <p>we can use slice operator to access list element.</p>
+                    <p><strong>&lt;list_name&gt;[start : stop : step]</strong> &nbsp;</p>
+                    <p>Example :&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <div class="container">
+ <pre><code class="language-python">
+    list=['foo','bar','baz','quz','quux','corge']
+
+    print(list[2])
+    print(list[4:6])
+    print(list[-4:-1])
+    print(list[1:5:2])
+    print(list[-1: :-1]) #reverse list
+ </code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwgVUVyTl1" id="content1-6l">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    baz
+    ['quux', 'corge']
+    ['baz', 'quz', 'quux']
+    ['bar', 'quz']
+    ['corge', 'quux', 'quz', 'baz', 'bar', 'foo']
+</code></pre></div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwgYq0TP8K" id="content1-6n">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p><strong>Note:</strong> Internal Memory Organization:
+                    </p>
+                    <p>List do not store the elements directly at the index. In fact a reference is stored at each index
+                        which subsequently refers to the object stored somewhere in the memory. This is due to the fact
+                        that some objects may be large enough than other objects and hence they are stored at some other
+                        memory location.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwhe9KLhSB" id="content12-81">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>Iteration of list : </strong>In Python, we can Iteration list using for loop is one
+                            of common way to Iteration list</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <div class="container">
+ <pre><code class="language-python">
+    list1=['a','b','c',1,2,3]
+    for x in list1 :
+        print(x)
+ </code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwhfyDx1aD" id="content1-83">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <div class="container">
+   <pre><code class="language-python">
+   a
+   b
+   c
+   1
+   2
+   3
+</code></pre></div>
+
+    <section class="mbr-section content4 cid-rwgYxVFARL" id="content4-6o">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Python List Operations</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwgYC2pc14" id="content1-6p">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Apart from creating and accessing elements from the list, Python allows us to perform various
+                        other operations on the list. Some common operations are given below</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwgYH7gzdh" id="content12-6q">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>Adding Python Lists</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwgYNOG35r" id="content1-6r">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>In Python, lists can be added by using the concatenation operator(<strong>+</strong>) to join two
+                        lists.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    list1=['a','b','c']
+    list2=['x','y','z']
+    list3=list1+list2
+    print(list3)
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwgYT9sKHx" id="content1-6t">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <div class="container">
+ <pre><code class="language-python">
+    ['a', 'b', 'c', 'x', 'y', 'z'] 
+ </code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwgZEJ6BRL" id="content1-6w">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p><strong>Note:</strong> '+'operator implies that both the operands passed must be list else error
+                        will be shown.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwgZNjtSkR" id="content1-6y">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>let's run example :&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    list1=['a','b','c']
+    a='x'
+    print(list1+a)
+</code></pre></div>\
+
+    <section class="mbr-section article content1 cid-rwh01RzEdW" id="content1-70">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+    Traceback (most recent call last):
+    File "main.py", line 11, in <module>
+      print(list1+a)
+    TypeError: can only concatenate list (not "str") to list 
+</code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwh0gGKsp0" id="content12-72">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>Python Replicating lists</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwh0oHSRRq" id="content1-73">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Replicating means repeating, It can be performed by using<strong> '*'</strong> operator by a
+                        specific number of time.</p>
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    list1=['a','b','c']
+    print(list1*3)
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwh0xtdqZH" id="content1-75">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    ['a', 'b', 'c', 'a', 'b', 'c', 'a', 'b', 'c']   
+</code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwh73glrLR" id="content12-78">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>Python List Slicing</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwh78jy70k" id="content1-79">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>A subpart of a list can be retrieved on the basis of index. This subpart is known as list slice.
+                        This feature allows us to get sub-list of specified start and end index.</p>
+                    <p><strong>&lt;list_name&gt;[start : stop : step] &nbsp;
+                        </strong></p>
+                    <p>Example :&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    list=['foo','bar','baz','quz','quux','corge']
+    print(list[4:6])
+    print(list[-4:-1])
+    print(list[1:5:2])
+    print(list[-1: :-1]) #reverse list
+</code></pre></div>\
+
+    <section class="mbr-section article content1 cid-rwh7mD3TQ5" id="content1-7b">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+    ['quux', 'corge']
+    ['baz', 'quz', 'quux']
+    ['bar', 'quz']
+    ['corge', 'quux', 'quz', 'baz', 'bar', 'foo']
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwh7HIgnuU" id="content1-7d">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p><strong>Note:</strong> If the index provided in the list slice is outside the list, then it
+                        raises an IndexError exception.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section content4 cid-rwh7TKxE6c" id="content4-7e">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Python List Other
+                            Operations</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwh7ZqZgXw" id="content1-7f">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Apart from above operations various other functions can also be performed on List such as
+                        <strong>Updating</strong>, <strong>Appending </strong>and <strong>Deleting </strong>elements
+                        from a List.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwh86x2kbE" id="content12-7g">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>Updating List - </strong>To update or change the value of particular index of a
+                            list, assign the value to that particular index of the List.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwh8fFb0FA" id="content1-7h">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    data1=[5,10,15,20,25]  
+    print("Values of list are: " )
+    print(data1)  
+    data1[2]="Multiple of 5"  
+    print("Values of list are: ")  
+    print(data1) 
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwh8FwEriM" id="content1-7j">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    Values of list are:
+    [5, 10, 15, 20, 25]
+    Values of list are:
+    [5, 10, 'Multiple of 5', 20, 25]
+</code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwh8QUbOyZ" id="content12-7l">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>Appending &nbsp;List - </strong>Python provides, <strong>append() </strong>method
+                            which is used to append i.e., add an element at the end of the existing elements.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwh92qdBId" id="content1-7m">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+    list1=['a','b','c']
+    list1.append(1.5)
+    list1.append('x')
+    list1.append(['y','z']) #append list into list as single object
+    print(list1)
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwh94sYvF7" id="content1-7o">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <div class="container">
+  <pre><code class="language-python">
+    ['a', 'b', 'c', 1.5, 'x', ['y', 'z']] 
+  </code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwhaKvRtJ3" id="content12-7q">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>Deleting Elements - </strong>In Python, <strong>del </strong>statement can be used
+                            to delete an element from the list. It can also be used to delete all items from startIndex
+                            to endIndex.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhb4WlbIu" id="content1-7s">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    list1=['a','b','c']
+    print("data in list : ",list1)   
+    del(list1[2])   
+    print("new data in list : ",list1)
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwhbfIEgkf" id="content1-7v">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    data in list : ['a', 'b', 'c']
+    new data in list : ['a', 'b']   
+</code></pre></div>
+
+    <section class="mbr-section content4 cid-rwhbR8Jpv9" id="content4-7x">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Python Lists Function &amp;
+                            Method</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhc8tsbMX" id="content1-7y">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Python provides various Built-in functions and methods for Lists that we can apply on the list.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-table cid-rwhcrahqEq" id="table1-7z">
+
+
+
+        <div class="container container-table">
+            <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-7">Following are the common list
+                functions.</h2>
+
+                <div class="container scroll">
+                    <table class="table" cellspacing="0">
+                        <thead>
+                            <tr class="table-heads ">
+
+
+
+
+                                <th class="head-item mbr-fonts-style display-4"><strong>fun</strong></th>
+                                <th class="head-item mbr-fonts-style display-4"><strong>Description</strong></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+
+
+
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">min(list)</td>
+                                <td class="body-item mbr-fonts-style display-7">It returns the minimum value from the
+                                    list given.</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">max(list)</td>
+                                <td class="body-item mbr-fonts-style display-7">It returns the largest value from the
+                                    given list.</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">len(list)</td>
+                                <td class="body-item mbr-fonts-style display-7">It returns number of elements in a list.
+                                </td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">cmp(list1,list2)</td>
+                                <td class="body-item mbr-fonts-style display-7">It compares the two list.<br>No longer
+                                    available in Python 3.</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">list(seq)</td>
+                                <td class="body-item mbr-fonts-style display-7">It takes sequence types and converts
+                                    them to lists</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container table-info-container">
+
+                </div>
+            </div>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwhdmufXBs" id="content12-80">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>min(list) - </strong>this method is used to get min value from the list. In Python3
+                            lists element's type should be same otherwise compiler throw ypeError.&nbsp;</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhh5mFyE6" id="content1-85">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    list1 = ['a','b','c']
+    list2 = [1,2,3]
+    list3=['a','b','c',1,2,3]
+
+    print(min(list1))  #a   
+    print(min(list2))  #1 
+    print(min(list3))  #typeError
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwhh8JuCnq" id="content1-87">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    a
+    1 
+    File "main.py", line 15, in <module>
+        print(min(list3))
+    TypeError: unorderable types: int() < str()
+</code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwhjKIZTJf" id="content12-89">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>max() - </strong>The max() method returns the elements from the list with maximum
+                            value.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhjPzyU3v" id="content1-8a">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <div class="container">
+  <pre><code class="language-python">
+    list1 = ['a','b','c']
+    list2 = [1,2,3]
+    list3=['a','b','c',1,2,3]
+
+    print(max(list1))  #c  
+    print(max(list2))  #3  
+    print(max(list3))  #typeEror
+  </code></pre></div>
+    <section class="mbr-section article content1 cid-rwhjSOWwiH" id="content1-8c">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    c
+    3
+    Traceback (most recent call last):
+      File "main.py", line 15, in <module>
+        print(max(list3))
+    TypeError: unorderable types: int() > str()  
+</code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwhku4RV6t" id="content12-8e">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>len() - </strong>The len() method returns the number of elements in the list.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhkGqDagp" id="content1-8f">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+list1 = ['a','b','c']
+list2 = []
+list3=['a','b','c',1,2,3] 
+
+print(len(list1))
+print(len(list2))
+print(len(list3))
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwhkI0Gp1T" id="content1-8h">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+3
+0
+6
+</code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwhkJxiJki" id="content12-8j">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>list() - </strong>The list() method takes sequence types and converts them to lists.
+                            This is used to convert a given tuple into list.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhkMX2qRr" id="content1-8k">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Tuple are very similar to lists with only difference that element values of a tuple can not be
+                        changed and tuple elements are put between parentheses instead of square bracket. This function
+                        also converts characters in a string into a list.</p>
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    t= (1997, 'C++', 'Java', 'Python')
+    list1 = list(t)
+    print ("List elements : ", list1)
+    str = "ApkZube"
+    list2 = list(str)
+    print ("List elements : ", list2)
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwhkOheyx6" id="content1-8m">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    List elements : [1997, 'C++', 'Java', 'Python']
+    List elements : ['A', 'p', 'k', 'Z', 'u', 'b', 'e']
+</code></pre></div>
+
+    <section class="section-table cid-rwhp4xkZEZ" id="table1-8o">
+
+
+
+        <div class="container container-table">
+            <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-7">Python includes the following list
+                methods&nbsp;</h2>
+
+    
+
+                <div class="container scroll">
+                    <table class="table" cellspacing="0">
+                        <thead>
+                            <tr class="table-heads ">
+
+
+
+
+                                <th class="head-item mbr-fonts-style display-7">
+                                    method</th>
+                                <th class="head-item mbr-fonts-style display-7">
+                                    description</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+
+
+
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">list.count(obj)</td>
+                                <td class="body-item mbr-fonts-style display-7">Returns count of how many times obj
+                                    occurs in list</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">list.extend(seq)</td>
+                                <td class="body-item mbr-fonts-style display-7">Appends the contents of seq to list</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">list.append(obj)</td>
+                                <td class="body-item mbr-fonts-style display-7">Appends object obj to list</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">list.index(obj)</td>
+                                <td class="body-item mbr-fonts-style display-7">Returns the lowest index in list that
+                                    obj appears</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">list.insert(index, obj)</td>
+                                <td class="body-item mbr-fonts-style display-7">Inserts object obj into list at offset
+                                    index</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">list.pop(obj = list[-1])</td>
+                                <td class="body-item mbr-fonts-style display-7">Removes and returns last object or obj
+                                    from list</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">list.remove(obj)</td>
+                                <td class="body-item mbr-fonts-style display-7">Removes object obj from list</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">list.reverse()</td>
+                                <td class="body-item mbr-fonts-style display-7">Reverses objects of list in place</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">list.sort([func])</td>
+                                <td class="body-item mbr-fonts-style display-7">Sorts objects of list, use compare func
+                                    if given</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container table-info-container">
+
+                </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwhqectU4Z" id="content12-8p">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>count() - </strong>The count() method returns count of how many times obj occurs in
+                            list.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhqgIfwFF" id="content1-8q">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <div class="container">
+ <pre><code class="language-python">
+    list1 =[1,2,3,'a','b','c',1,2,3]
+
+    print(list1.count(1))
+    print(list1.count('b'))
+    print(list1.count(4))
+ </code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwhqknXs9O" id="content1-8s">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+2
+1
+0
+</code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwhqlQiRmD" id="content12-8u">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>append() - </strong>The append() method appends a passed obj into the existing list.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhqmtxke7" id="content1-8v">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    list1 =[1,2,3]
+    list1.append(4)
+    list1.append('apkzube')
+    list1.append(['a','b','c']) #append as single object
+    print(list1)
+</code></pre></div>
+    <section class="mbr-section article content1 cid-rwhqoeIsV3" id="content1-8x">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    [1, 2, 3, 4, 'apkzube', ['a', 'b', 'c']]
+</code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwhqqVU9aj" id="content12-8z">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>extend() - </strong>The extend() method appends the contents of seq to list.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhquBAu5d" id="content1-91">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p><strong>list.extend([seq])</strong></p>
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    list1 =[1,2,3]
+    list1.extend([4])
+    list1.extend('apkzube')
+    list1.extend(['a','b','c'])
+    print(list1)
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwhqwnzCpO" id="content1-93">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <div class="container">
+ <pre><code class="language-python">
+    [1, 2, 3, 4, 'a', 'p', 'k', 'z', 'u', 'b', 'e', 'a', 'b', 'c'] 
+ </code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwhqxCoe5O" id="content12-95">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>index() -</strong> The index() method returns the lowest index in list that obj
+                            appears.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhqyiXjvb" id="content1-96">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    list1 =['apkzube','python','java','c++',1,2,3]
+    print("index of java : ",list1.index('java'))
+    print("index of 2 : ",list1.index(2))
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwhqzBrCjb" id="content1-98">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    index of java : 2
+    index of 2 : 5
+</code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwhqAN183q" id="content12-9a">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>insert() - </strong>The insert() method inserts object obj into list at offset
+                            index.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhqE0VQNO" id="content1-9c">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p><strong>list.insert(index, obj)</strong></p>
+                    <p><strong>
+                        </strong><span style="font-size: 1rem;"><strong>index − </strong>This is the Index where the
+                            object obj need to be inserted.&nbsp;</span></p>
+                    <p><span style="font-size: 1rem;"><strong>obj −</strong> This is the Object to be inserted into the
+                            given list.&nbsp;</span></p>
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    list1 =['apkzube','python','java','c++',1,2,3]
+    list1.insert(3,'C#')
+    print(list1)
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwhqFLzzmC" id="content1-9e">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    ['apkzube', 'python', 'java', 'C#', 'c++', 1, 2, 3] 
+</code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwhEvh5gdJ" id="content12-9g">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <p></p>
+                    <p></p>
+                    <ul>
+                        <li><strong>pop() - </strong>The pop() method removes and returns last object or obj from the
+                            list.</li>
+                    </ul>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhExN3wke" id="content1-9h">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p><strong>list.pop(index)</strong></p>
+                    <p><strong>index−</strong> This is an optional parameter, index of the object to be removed from the
+                        list. by default its -1 [last element]</p>
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    list1 =['apkzube','python','java','c++',1,2,3]
+    list1.pop() # 3 is pop
+    print(list1)
+    list1.pop(2) # list[2] = "java" pop
+    print(list1)
+</code></pre></div>
+    <section class="mbr-section article content1 cid-rwhEzL7kv7" id="content1-9j">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+    ['apkzube', 'python', 'java', 'c++', 1, 2]
+    ['apkzube', 'python', 'c++', 1, 2] 
+</code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwhEBj6AWo" id="content12-9l">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>remove(obj) -</strong>&nbsp;object to be removed from the list.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhEC1PEN2" id="content1-9m">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    list1 =['apkzube','python','java','c++',1,2,3]
+    list1.remove("java")  
+    print(list1)    
+    list1.remove(2)     
+    print(list1)
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwhEEfzqHU" id="content1-9o">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    ['apkzube', 'python', 'c++', 1, 2, 3]
+    ['apkzube', 'python', 'c++', 1, 3]
+</code></pre></div>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwhEFT3w21" id="content12-9q">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>reverse() - </strong>The reverse() method reverses objects of list in place.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhEGxFl1Y" id="content1-9r">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+    list1 =['apkzube','python','java','c++',1,2,3]
+    list1.reverse()
+    print(list1)
+</code></pre></div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhEI0Icj2" id="content1-9t">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    [3, 2, 1, 'c++', 'java', 'python', 'apkzube'] 
+</code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwhHggqX7u" id="content12-9v">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>sort() - </strong>The sort() method sorts objects of list, use compare function if
+                            given. but type of element in list should be same otherwise compiler throw typeError.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhHhBeYw5" id="content1-9w">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example 1 :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    list1 =[22,30,100,300,399]
+    list2=['z','ab','abc','a','b']
+    list1.sort()
+    list2.sort()  
+    print(list1)
+    print(list2)
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwhHjthUBi" id="content1-9y">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    [22, 30, 100, 300, 399]
+    ['a', 'ab', 'abc', 'b', 'z']
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwhIsFwlzu" id="content1-a0">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example 2:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    list3=['a','b',1,2]
+    list3.sort()
+    print(list3)
+</code></pre></div>
+
+
+    <section class="mbr-section article content1 cid-rwhIuFlrZv" id="content1-a2">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+    <pre><code class="language-python">
+        Traceback (most recent call last):
+        File "main.py", line 9, in <module>
+          list3.sort()
+          TypeError: unorderable types: int() &lt; str()
+    </code></pre></div>
+
+
+    <script src="plugin/prism.js"></script>
+    <script src="assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="assets/popper/popper.min.js"></script>
+    <script src="assets/tether/tether.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+    <script src="assets/datatables/jquery.data-tables.min.js"></script>
+    <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+    <script src="assets/theme/js/script.js"></script>
+
+
+    <input name="animation" type="hidden">
+</body>
+
+</html>

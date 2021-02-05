@@ -1,0 +1,47 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #272822; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #75715e">#include &lt;iostream&gt;</span>
+    <span style="color: #75715e">#include &lt;cmath&gt;</span>
+    <span style="color: #66d9ef">using</span> <span style="color: #66d9ef">namespace</span> <span style="color: #f8f8f2">std;</span>
+    
+    <span style="color: #66d9ef">int</span> <span style="color: #a6e22e">main</span><span style="color: #f8f8f2">()</span> <span style="color: #f8f8f2">{</span>
+    
+        <span style="color: #66d9ef">float</span> <span style="color: #f8f8f2">a,</span> <span style="color: #f8f8f2">b,</span> <span style="color: #f8f8f2">c,</span> <span style="color: #f8f8f2">x1,</span> <span style="color: #f8f8f2">x2,</span> <span style="color: #f8f8f2">discriminant,</span> <span style="color: #f8f8f2">realPart,</span> <span style="color: #f8f8f2">imaginaryPart;</span>
+        <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;Enter coefficients a, b and c: &quot;</span><span style="color: #f8f8f2">;</span>
+        <span style="color: #f8f8f2">cin</span> <span style="color: #f92672">&gt;&gt;</span> <span style="color: #f8f8f2">a</span> <span style="color: #f92672">&gt;&gt;</span> <span style="color: #f8f8f2">b</span> <span style="color: #f92672">&gt;&gt;</span> <span style="color: #f8f8f2">c;</span>
+        <span style="color: #f8f8f2">discriminant</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">b</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">b</span> <span style="color: #f92672">-</span> <span style="color: #ae81ff">4</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">a</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">c;</span>
+        
+        <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(discriminant</span> <span style="color: #f92672">&gt;</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">{</span>
+            <span style="color: #f8f8f2">x1</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">(</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">b</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">sqrt(discriminant))</span> <span style="color: #f92672">/</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">2</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">a);</span>
+            <span style="color: #f8f8f2">x2</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">(</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">b</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">sqrt(discriminant))</span> <span style="color: #f92672">/</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">2</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">a);</span>
+            <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;Roots are real and different.&quot;</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">endl;</span>
+            <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;x1 = &quot;</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">x1</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">endl;</span>
+            <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;x2 = &quot;</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">x2</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">endl;</span>
+        <span style="color: #f8f8f2">}</span>
+        
+        <span style="color: #66d9ef">else</span> <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(discriminant</span> <span style="color: #f92672">==</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">{</span>
+            <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;Roots are real and same.&quot;</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">endl;</span>
+            <span style="color: #f8f8f2">x1</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">(</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">b</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">sqrt(discriminant))</span> <span style="color: #f92672">/</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">2</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">a);</span>
+            <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;x1 = x2 =&quot;</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">x1</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">endl;</span>
+        <span style="color: #f8f8f2">}</span>
+    
+        <span style="color: #66d9ef">else</span> <span style="color: #f8f8f2">{</span>
+            <span style="color: #f8f8f2">realPart</span> <span style="color: #f92672">=</span> <span style="color: #f92672">-</span><span style="color: #f8f8f2">b</span><span style="color: #f92672">/</span><span style="color: #f8f8f2">(</span><span style="color: #ae81ff">2</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">a);</span>
+            <span style="color: #f8f8f2">imaginaryPart</span> <span style="color: #f92672">=</span><span style="color: #f8f8f2">sqrt(</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">discriminant)</span><span style="color: #f92672">/</span><span style="color: #f8f8f2">(</span><span style="color: #ae81ff">2</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">a);</span>
+            <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;Roots are complex and different.&quot;</span>  <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">endl;</span>
+            <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;x1 = &quot;</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">realPart</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;+&quot;</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">imaginaryPart</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;i&quot;</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">endl;</span>
+            <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;x2 = &quot;</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">realPart</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;-&quot;</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">imaginaryPart</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;i&quot;</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">endl;</span>
+        <span style="color: #f8f8f2">}</span>
+    
+        <span style="color: #66d9ef">return</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span>
+    <span style="color: #f8f8f2">}</span>
+    
+    
+    <span style="color: #f92672">&gt;&gt;</span><span style="color: #f8f8f2">Output</span>
+    
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">coefficients</span> <span style="color: #f8f8f2">a,</span> <span style="color: #f8f8f2">b</span> <span style="color: #f8f8f2">and</span> <span style="color: #f8f8f2">c</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">4</span>
+    <span style="color: #ae81ff">5</span>
+    <span style="color: #ae81ff">1</span>
+    <span style="color: #f8f8f2">Roots</span> <span style="color: #f8f8f2">are</span> <span style="color: #f8f8f2">real</span> <span style="color: #f8f8f2">and</span> <span style="color: #f8f8f2">different.</span>
+    <span style="color: #f8f8f2">x1</span> <span style="color: #f92672">=</span> <span style="color: #f92672">-</span><span style="color: #ae81ff">0.25</span>
+    <span style="color: #f8f8f2">x2</span> <span style="color: #f92672">=</span> <span style="color: #f92672">-</span><span style="color: #ae81ff">1</span>
+    </pre></div>

@@ -1,0 +1,45 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #272822; overflow:auto;width:auto;font-size:10px">
+    <table>
+        <tr>
+            <td><pre style="margin: 0; line-height: 125%"><span style="color: #75715e">/*Before we go through the program, lets see what is an Armstrong number. A number is called Armstrong number if the following equation holds true for that number:</span>
+   
+   <span style="color: #75715e">xy..z = xn + yn+.....+ zn</span>
+   <span style="color: #75715e">where n denotes the number of digits in the number</span>
+   
+   <span style="color: #75715e">For example this is a 3 digit Armstrong number</span>
+   
+   <span style="color: #75715e">370 = 33 + 73 + o3</span>
+   <span style="color: #75715e">         = 27 + 343 + 0</span>
+   <span style="color: #75715e">         = 370</span>
+   <span style="color: #75715e">Let’s write this in a program:*/</span>
+   
+   <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">class</span> <span style="color: #a6e22e">JavaExample</span> <span style="color: #f92672">{</span>
+   
+       <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">main</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">String</span><span style="color: #f92672">[]</span> <span style="color: #f8f8f2">args</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
+   
+           <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">num</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">370</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">number</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">temp</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">total</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f92672">;</span>
+   
+           <span style="color: #f8f8f2">number</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">num</span><span style="color: #f92672">;</span>
+           <span style="color: #66d9ef">while</span> <span style="color: #f92672">(</span><span style="color: #f8f8f2">number</span> <span style="color: #f92672">!=</span> <span style="color: #ae81ff">0</span><span style="color: #f92672">)</span>
+           <span style="color: #f92672">{</span>
+               <span style="color: #f8f8f2">temp</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">number</span> <span style="color: #f92672">%</span> <span style="color: #ae81ff">10</span><span style="color: #f92672">;</span>
+               <span style="color: #f8f8f2">total</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">total</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">temp</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">temp</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">temp</span><span style="color: #f92672">;</span>
+               <span style="color: #f8f8f2">number</span> <span style="color: #f92672">/=</span> <span style="color: #ae81ff">10</span><span style="color: #f92672">;</span>
+           <span style="color: #f92672">}</span>
+   
+           <span style="color: #66d9ef">if</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">total</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">num</span><span style="color: #f92672">)</span>
+               <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">num</span> <span style="color: #f92672">+</span> <span style="color: #e6db74">&quot; is an Armstrong number&quot;</span><span style="color: #f92672">);</span>
+           <span style="color: #66d9ef">else</span>
+               <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">num</span> <span style="color: #f92672">+</span> <span style="color: #e6db74">&quot; is not an Armstrong number&quot;</span><span style="color: #f92672">);</span>
+       <span style="color: #f92672">}</span>
+   <span style="color: #f92672">}</span>
+   
+   
+   <span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">Output:</span>
+   
+   <span style="color: #ae81ff">370</span> <span style="color: #f8f8f2">is</span> <span style="color: #f8f8f2">an</span> <span style="color: #f8f8f2">Armstrong</span> <span style="color: #f8f8f2">number</span>
+   </pre></td>
+        </tr>
+    </table>
+</div>

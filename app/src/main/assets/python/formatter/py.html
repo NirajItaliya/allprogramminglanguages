@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code Editor</title>
+    <script src='js/beautify.min.js'></script>
+
+</head>
+<body>
+<script>
+     function formateCode(code){
+      var str = atob(code);
+        //alert(editor.getValue());
+        t = js_beautify(str, {
+            indent_size: "2",
+            indent_char: " ",
+            other: " ",
+            indent_level: 0,
+            indent_with_tabs: !1,
+            preserve_newlines: !0,
+            max_preserve_newlines: 2,
+            jslint_happy: !0,
+            indent_handlebars: !0
+         });
+
+        JsInterface.getCode(t);
+     }
+    </script>
+</body>
+</html>

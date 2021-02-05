@@ -1,0 +1,1071 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:0cm 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'>&nbsp;</p>
+
+<h1 align=center style='text-align:center;line-height:150%'>12. FUNCTIONS</h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'>&nbsp;</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>A function is a group of statements
+that together perform a task. Every C program has at least one function, which
+is <b>main()</b>, and all the most trivial programs can define additional
+functions. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>You can divide up your code into
+separate functions. How you divide up your code among different functions is up
+to you, but logically the division is such that each function performs a
+specific task. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>A function <b>declaration </b>tells
+the compiler about a function's name, return type, and parameters. A function <b>definition
+</b>provides the actual body of the function. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The C standard library provides
+numerous built-in functions that your program can call. For example, <b>strcat()
+</b>to concatenate two strings, <b>memcpy() </b>to copy one memory location to
+another location, and many more functions. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>A function can also be referred as a
+method or a sub-routine or a procedure, etc. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>Defining aFunction</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The general form of a function
+definition in C programming language is as follows: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>return_type function_name( parameter list ) </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>{ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>body of the function </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>A function definition in C programming
+consists of a <i>function header </i>and a <i>function body</i>. Here are all
+the parts of a function:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-indent:-18.0pt;
+line-height:150%'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-family:"Book Antiqua",serif'>Return Type</span></b><span
+style='font-family:"Book Antiqua",serif'>: A function may return a value. The <b>return_type
+</b>is the data type of the value the function returns. Some functions perform
+the desired operations without returning a value. In this case, the return_type
+is the keyword <b>void</b>. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-18.0pt;
+line-height:150%'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-family:"Book Antiqua",serif'>Function Name: </span></b><span
+style='font-family:"Book Antiqua",serif'>This is the actual name of the
+function. The function name and the parameter list together constitute the
+function signature.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'> </span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-indent:-18.0pt;
+line-height:150%'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-family:"Book Antiqua",serif'>Parameters: </span></b><span
+style='font-family:"Book Antiqua",serif'>A parameter is like a placeholder.
+When a function is invoked, you pass a value to the parameter. This value is
+referred to as actual parameter or argument. The parameter list refers to the
+type, order, and number of the parameters of a function. Parameters are
+optional; that is, a function may contain no parameters. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-indent:-18.0pt;
+line-height:150%'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='font-family:"Book Antiqua",serif'>Function Body: </span></b><span
+style='font-family:"Book Antiqua",serif'>The function body contains a
+collection of statements that define what the function does. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>Example </span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Given below is the source code for a
+function called <b>max()</b>. This function takes two parameters num1 and num2
+and returns the maximum value between the two: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>/* function returning the max between two numbers */ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>int max(int num1, int num2) </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>{ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>/* local variable declaration */ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>int result; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>if (num1 &gt; num2) </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>result = num1; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>else </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>result = num2; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>return result; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span style='font-size:18.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>Function
+Declarations</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>A function <b>declaration </b>tells
+the compiler about a function name and how to call the function. The actual
+body of the function can be defined separately. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>A function declaration has the
+following parts: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>return_type
+function_name( parameter list ); </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>For the above defined function
+max(),the function declaration is as follows: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>int max(int num1,
+int num2); </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Parameter names are not important in
+function declaration, only their type is required, so the following is also a
+valid declaration: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>int max(int, int); </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Function declaration is required when
+you define a function in one source file and you call that function in another
+file. In such case, you should declare the function at the top of the file
+calling the function.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span style='font-size:18.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>Calling a Function</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>While creating a C function, you give
+a definition of what the function has to do. To use a function, you will have
+to call that function to perform the defined task. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When a program calls a function, the
+program control is transferred to the called function. A called function
+performs a defined task and when its return statement is executed or when its
+function-ending closing brace is reached, it returns the program control back
+to the main program. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>To call a function, you simply need to
+pass the required parameters along with the function name, and if the function
+returns a value, then you can store the returned value. For example: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;stdio.h&gt; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* function declaration */
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int max(int num1, int
+num2); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int main () </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* local variable
+definition */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int a = 100; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int b = 200; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int ret; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* calling a function to
+get max value */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>ret = max(a, b); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;Max value is
+: %d\n&quot;, ret ); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>return 0; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* function returning the
+max between two numbers */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int max(int num1, int
+num2) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* local variable
+declaration */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int result; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>if (num1 &gt; num2) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>result = num1; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>else </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>result = num2; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>return result; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>We
+have kept max()along with main() and compiled the source code. While running
+the final executable, it would produce the following result:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>Max value is : 200</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%'><span style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>Function Arguments</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-size:18.0pt;line-height:150%;
+font-family:"Book Antiqua",serif;color:red'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>If a
+function is to use arguments, it must declare variables that accept the values
+of the arguments. These variables are called the formal parameters of the
+function.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>Formal
+parameters behave like other local variables inside the function and are
+created upon entry into the function and destroyed upon exit.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>While
+calling a function, there are two ways in which arguments can be passed to a
+function:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div align=center>
+
+<table class=MsoTable15Grid4Accent1 border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:8.0pt'>
+  <td width=185 valign=top style='width:138.5pt;border:solid #4472C4 1.0pt;
+  border-right:none;background:#4472C4;padding:0cm 5.4pt 0cm 5.4pt;height:8.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-family:"Book Antiqua",serif;
+  color:white'>Call Type </span></b></p>
+  </td>
+  <td width=185 valign=top style='width:138.5pt;border:solid #4472C4 1.0pt;
+  border-left:none;background:#4472C4;padding:0cm 5.4pt 0cm 5.4pt;height:8.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-family:"Book Antiqua",serif;
+  color:white'>Description </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:40.4pt'>
+  <td width=185 valign=top style='width:138.5pt;border:solid #8EAADB 1.0pt;
+  border-top:none;background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt;height:40.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-family:"Book Antiqua",serif'>Call
+  by value </span></b></p>
+  </td>
+  <td width=185 valign=top style='width:138.5pt;border-top:none;border-left:
+  none;border-bottom:solid #8EAADB 1.0pt;border-right:solid #8EAADB 1.0pt;
+  background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt;height:40.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>This
+  method copies the actual value of an argument into the formal parameter of
+  the function. In this case, changes made to the parameter inside the function
+  have no effect on the argument. </span></p>
+  </td>
+ </tr>
+ <tr style='height:51.15pt'>
+  <td width=185 valign=top style='width:138.5pt;border:solid #8EAADB 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:51.15pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-family:"Book Antiqua",serif'>Call
+  by reference </span></b></p>
+  </td>
+  <td width=185 valign=top style='width:138.5pt;border-top:none;border-left:
+  none;border-bottom:solid #8EAADB 1.0pt;border-right:solid #8EAADB 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:51.15pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>This
+  method copies the address of an argument into the formal parameter. Inside
+  the function, the address is used to access the actual argument used in the
+  call. This means that changes made to the parameter affect the argument </span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%'><b><span style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>Call by Value</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-size:18.0pt;line-height:150%;
+font-family:"Book Antiqua",serif;color:red'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>The <b>call
+by value </b>method of passing arguments to a function copies the actual value
+of an argument into the formal parameter of the function. In this case, changes
+made to the parameter inside the function have no effect on the argument. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>By
+default, C programming uses <i>call by value </i>to pass arguments. In general,
+it means the code within a function cannot alter the arguments used to call the
+function. Consider the function <b>swap() </b>definition as follows. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>/*
+function definition to swap the values */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>void swap(int x, int y) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int temp; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>temp = x; /* save the
+value of x */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>x = y; /* put y into x */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>y = temp; /* put temp into
+y */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>return; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>Now,
+let us call the function <b>swap() </b>by passing actual values as in the
+following example</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;stdio.h&gt; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* function declaration */
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>void swap(int x, int y); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int main () </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* local variable
+definition */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int a = 100; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int b = 200; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf(&quot;Before swap,
+value of a : %d\n&quot;, a ); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf(&quot;Before swap,
+value of b : %d\n&quot;, b );</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* calling a function to
+swap the values */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>swap(a, b); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf(&quot;After swap,
+value of a : %d\n&quot;, a ); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf(&quot;After swap,
+value of b : %d\n&quot;, b ); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>return 0; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>Let us
+put the above code in a single C file, compile and execute it, it will produce
+the following result: </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>Before swap, value of a :100 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>Before swap, value of b :200 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>After swap, value of a :100 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>After swap, value of b :200 </span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>It
+shows that there are no changes in the values, though they had been changed
+inside the function.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%'><b><span style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>Call by Reference</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>The <b>call
+by reference </b>method of passing arguments to a function copies the address
+of an argument into the formal parameter. Inside the function, the address is
+used to access the actual argument used in the call. It means the changes made
+to the parameter affect the passed argument. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>To
+pass a value by reference, argument pointers are passed to the functions just
+like any other value. So accordingly, you need to declare the function
+parameters as pointer types as in the following function <b>swap()</b>, which
+exchanges the values of the two integer variables pointed to, by their
+arguments. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>/*
+function definition to swap the values */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>void swap(int *x, int *y) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int temp; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>temp = *x; /* save the
+value at address x */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>*x = *y; /* put y into x
+*/</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>*y = temp; /* put temp
+into y */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>return; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>Let us now call the
+function <b>swap() </b>by passing values by reference as in the following
+example: </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;stdio.h&gt; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* function declaration */
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>void swap(int *x, int *y);
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int main () </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* local variable definition
+*/ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int a = 100; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int b = 200; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf(&quot;Before swap,
+value of a : %d\n&quot;, a ); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf(&quot;Before swap,
+value of b : %d\n&quot;, b ); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* calling a function to
+swap the values. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>* &amp;a indicates pointer
+to a i.e. address of variable a and </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>* &amp;b indicates pointer
+to b i.e. address of variable b. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>*/ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>swap(&amp;a, &amp;b); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf(&quot;After swap,
+value of a : %d\n&quot;, a ); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf(&quot;After swap,
+value of b : %d\n&quot;, b ); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>return 0; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>Let us
+put the above code in a single C file, compile and execute it, to produce the
+following result: </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>Before swap, value of a :100 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>Before swap, value of b :200 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>After swap, value of a :200 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>After swap, value of b :100</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>It
+shows that the change has reflected outside the function as well, unlike call
+by value where the changes do not reflect outside the function. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>By
+default, C uses <b>call by value </b>to pass arguments. In general, it means
+the code within a function cannot alter the arguments used to call the
+function.</span></p>
+
+</div>
+
+</body>
+
+</html>

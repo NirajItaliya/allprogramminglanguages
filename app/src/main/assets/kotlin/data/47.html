@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin Set Interface</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+
+<section class="mbr-section article content1 cid-rPPPJq7Q9w" id="content1-z5" data-rv-view="7128">
+
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin Set Interface</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/f">bootstrap builder</a></section><section class="mbr-section article content1 cid-rPPVYar0cD" id="content1-10k" data-rv-view="7313">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin <strong>Set interface </strong>is a generic unordered collection of elements. Set interface does not support duplicate elements. This interface is immutable in nature its methods supports read-only functionality of the set.
+<div>
+</div><div>Set interface uses <strong>setOf() </strong>function to create the list of object of set interface which contains list of elements.
+</div><div>
+</div><div><strong>Set Interface declaration:</strong></div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">interface Set&lt;out E&gt;: Collection&lt;E&gt; (source)
+</code></pre></div>
+
+<section class="section-table cid-rPPWdTSpDF" id="table1-10m" data-rv-view="7315">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5"><strong>Properties of Set Interface
+</strong></h2>
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Properties</th><th class="head-item mbr-fonts-style display-7">Descriptions</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract val size: Int&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns the size of collection.
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="section-table cid-rPPWrnZalj" id="table1-10n" data-rv-view="7331">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5"><strong>Functions of Set Interface
+</strong></h2>
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Functions</th><th class="head-item mbr-fonts-style display-7">Descriptions</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun contains(element: E): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It checks the mention element is present in this collection. If it contains element, it returns true else returns false.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun containsAll(elements: Collection&lt;E&gt;): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It checks all the mention elements of specified collection are present in this collection. If it contains element, it returns true else returns false.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun isEmpty(): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns true if the collection is empty (contains no elements) otherwise it returns false.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun iterator(): Iterator&lt;E&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns an iterator over the elements of set object.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;T&gt; Iterable&lt;T&gt;.all(predicate: (T) -&gt; Boolean): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns true if all the elements matches with given predicate.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;T&gt; Iterable&lt;T&gt;.any(): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns true if the collection contains at least one element.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;T&gt; Iterable&lt;T&gt;.count(predicate: (T) -&gt; Boolean): Int&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns the total number of elements matching with given predicate.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;T&gt; Iterable&lt;T&gt;.distinct(): List&lt;T&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns a list which contains only distinct elements from the given collection.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;T&gt; Iterable&lt;T&gt;.drop(n: Int): List&lt;T&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns a list which contains all elements except first n elements.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun &lt;T&gt; Iterable&lt;T&gt;.elementAtOrElse(
+<br>index: Int,
+<br>defaultValue: (Int) -&gt; T
+<br>): T</td><td class="body-item mbr-fonts-style display-7">It returns an element at given index or result of calling the defaultValue function if the index is out bounds in current collection.
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPPXxyF1ZA" id="content12-10o" data-rv-view="7410">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 1
+:&nbsp;</strong>Let create an example of declaring and traversing set element using setOf() function. In this example we create a set of Int type non generic and another generic set of Any type</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val intSet = setOf(2,6,4,29,4,5)
+    val mySet: Set&lt;Any&gt; = setOf(2,6,4,29,4,5,"Ashu","Ajay")
+    println(".......print Int set.........")
+    for(element in intSet){
+        println(element)
+    }
+    println(".......print Any set.........")
+    for(element in mySet){
+        println(element)
+    }
+
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPPXypIgFG" id="content1-10q" data-rv-view="7412">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">.......print Int set.........
+2
+6
+4
+29
+5
+.......print Any set.........
+2
+6
+4
+29
+5
+Ashu
+Ajay
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPPXSFVY9l" id="content1-114" data-rv-view="7414">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In the above example we declare element 4 twice in both intSet and mySet but while traversing them they print the element 4 only once. This is because the set interface does not support duplicate elements.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPPXyVfOKm" id="content12-10r" data-rv-view="7415">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 2 - contains() and containsAll()
+:&nbsp;</strong>The contains() function checks the given element is present in current set or not. If it is contains in the set, the set returns true else returns false. Whereas containsAll() function checks all the elements of collection type are present in the current set or not. If the set contains all elements of collection type it returns true else false.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val mySet: Set&lt;Any&gt; = setOf(2,6,4,29,5,"Ashu","Ajay")
+    val intSet = setOf(6,4,29)
+    println(".......print Any set.........")
+    for(element in mySet){
+        println(element)
+    }
+    println("...mySet.contains\"Ashu\"...")
+    println(mySet.contains("Ashu"))
+    println("...mySet.contains(20)...")
+    println(mySet.contains(20))
+    println("...mySet.containsAll(intSet)...")
+    println(mySet.containsAll(intSet))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPPXBSehXX" id="content1-10u" data-rv-view="7417">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">.......print Any set.........
+2
+6
+4
+29
+5
+Ashu
+Ajay
+...mySet.contains"Ashu"...
+true
+...mySet.contains(20)...
+false
+...mySet.containsAll(intSet)...
+true
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPPXCO0KPf" id="content12-10w" data-rv-view="7419">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 3 - isEmpty() and isNotEmpty()
+:&nbsp;</strong>The isEmpty() function checks the current set is empty. If the set is empty the isEmpty() function returns true otherwise it returns false. And isNotEmpty() checks the current set is not empty. If the set is not empty the isNotEmpty() function returns true else return false.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val mySet: Set&lt;Any&gt; = setOf(2,6,4,29,5,"Ashu","Ajay")
+    println(".......print Any set.........")
+    for(element in mySet){
+        println(element)
+    }
+    println("...mySet.isEmpty()...")
+    println(mySet.isEmpty())
+
+    println("...mySet.isNotEmpty()...")
+    println(mySet.isNotEmpty())
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPPXDXp0Oh" id="content1-10y" data-rv-view="7421">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">.......print Any set.........
+2
+6
+4
+29
+5
+Ashu
+Ajay
+...mySet.isEmpty()...
+false
+...mySet.isNotEmpty()...
+true
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPPXH3sLJr" id="content12-110" data-rv-view="7423">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 4 - drop()
+:</strong> The drop() function returns all the element except the first n elements of collection.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val mySet: Set&lt;Any&gt; = setOf(2,6,4,29,4,5,"Ajay","Ashu","Ajay")
+    println(".......print Any set.........")
+    for(element in mySet){
+        println(element)
+    }
+    val remainList= mySet.drop(4)
+    println(".......print Set after mySet.drop(4).........")
+    for(element in remainList){
+        println(element)
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPPXHMrj4D" id="content1-112" data-rv-view="7425">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">.......print Any set.........
+2
+6
+4
+29
+5
+Ajay
+Ashu
+.......print Set after mySet.drop(4).........
+5
+Ajay
+Ashu
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPPYqRBGxr" id="content12-115" data-rv-view="7427">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 5 - elementAt() and elementAtOrNull()
+:&nbsp;</strong>The elementAt() function return element at given index and elementAtOrNull() function also return the element at given index , but if specified index does not contain element it returns null.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val mySet: Set&lt;Any&gt; = setOf(2,6,4,29,4,5,"Ajay","Ashu","Ajay")
+    println(".......print Any set.........")
+    for(element in mySet){
+        println(element)
+    }
+
+    println(".......print mySet.elementAt(3).........")
+    println(mySet.elementAt(3))
+
+    println(".......print mySet.elementAtOrNull(5).........")
+    println(mySet.elementAtOrNull(5))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPPYryVbiq" id="content1-117" data-rv-view="7429">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">.......print Any set.........
+2
+6
+4
+29
+5
+Ajay
+Ashu
+.......print mySet.elementAt(3).........
+29
+.......print mySet.elementAtOrNull(5).........
+Ajay
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/datatables/jquery.data-tables.min.js"></script>
+  <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

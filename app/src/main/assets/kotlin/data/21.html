@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin Default and Named Argument
+</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rP5vw3Bf8y" id="content1-g9" data-rv-view="5589">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin Default and Named Argument
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/q">bootstrap carousel</a></section><section class="mbr-section article content1 cid-rP5vAzyfZD" id="content1-ga" data-rv-view="5590">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Kotlin Default Argument</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP5vEjK1Qg" id="content1-gb" data-rv-view="5591">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin provides a facility to assign <strong>default argument </strong>(parameter) in a function definition.
+&nbsp;<span style="font-size: 1rem;">If a function is called without passing any argument than default argument are used as parameter of function definition. And when a function is called using argument, than the passing argument is used as parameter in function definition.</span></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP5vR842GT" id="content1-gc" data-rv-view="5592">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>1 . Passing no argument in function call</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    run()
+}
+fun run(num:Int= 5, latter: Char ='x'){
+    print("parameter in function definition $num and $latter")
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rP5w0tpArW" id="content1-ge" data-rv-view="5594">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">parameter in function definition 5 and x
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5w5Ze3qv" id="content1-gg" data-rv-view="5596">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In the above program, <strong>run()</strong> function calls with no argument, the default parameter are used in function definition.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP5wcOyNNf" id="content1-gh" data-rv-view="5597">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>2. Passing some argument in function call</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    run(3)
+}
+fun run(num:Int= 5, latter: Char ='x'){
+    print("parameter in function definition $num and $latter")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5wlX7dks" id="content1-gj" data-rv-view="5599">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">parameter in function definition 3 and x
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5wsKgBwW" id="content1-gl" data-rv-view="5601">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In the above program, run() function calls with one (first) argument, the first parameter of the function definition is uses the <strong>value passed</strong> to the function. And the second parameter is uses as a default argument.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP5wH4Nh2x" id="content1-gm" data-rv-view="5602">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>3. Passing all argument in function call</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    run(3,'a')
+}
+fun run(num:Int= 5, latter: Char ='x'){
+    print("parameter in function definition $num and $latter")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5wPN7ANe" id="content1-go" data-rv-view="5604">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">parameter in function definition 3 and a
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5wURmwRZ" id="content1-gq" data-rv-view="5606">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">As all the arguments are passed in <strong>run()</strong> function call, the parameters of function definition uses the argument passed in function call.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP5x1FRJSn" id="content1-gr" data-rv-view="5607">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Kotlin Named Argument</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP5x6rnHkc" id="content1-gs" data-rv-view="5608">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Before we will discuss about the named parameter, let's do some modify in the above program.
+<div>
+</div><div><strong>For example:</strong></div></div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    run('a')
+}
+fun run(num:Int= 5, latter: Char ='x'){
+    print("parameter in function definition $num and $latter")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5x7wsAF2" id="content1-gu" data-rv-view="5610">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Error: Kotlin: The character literal does not conform to the expected type Int
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5xmA22SM" id="content1-gw" data-rv-view="5612">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Here, we are try to pass parameter <strong>'a'</strong> from function call to function definition in the second argument. But compiler assumes that the parameter 'a' (Char type) passed for first argument (Int type) this causes error in program.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP5xtpGVDB" id="content1-gx" data-rv-view="5613">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Named Argument</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP5xx93wjz" id="content1-gy" data-rv-view="5614">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">To solve the above problem a named argument is used.
+<div>
+</div><div>A named argument is an argument in which we define the name of argument in the function call. The <strong>name defined</strong> to argument of function call checks the name in the function definition and assign to it.
+</div><div>
+</div><div><strong>Example:</strong></div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    run(latter='a')
+}
+fun run(num:Int= 5, latter: Char ='x'){
+    print("parameter in function definition $num and $latter")
+}  
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5xLePM2H" id="content1-h0" data-rv-view="5616">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">parameter in function definition 5 and a
+</code></pre></div>
+
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

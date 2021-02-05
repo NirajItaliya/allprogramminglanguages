@@ -1,0 +1,64 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic"> * C Program to Implement Insertion Sort</span>
+    <span style="color: #999999; font-style: italic"> */</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdio.h&gt;</span>
+    <span style="color: #cd2828; font-weight: bold">#define MAX 7</span>
+     
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">insertion_sort</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">*);</span>
+     
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">main</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">a[MAX],</span> <span style="color: #d0d0d0">i;</span>
+     
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;enter elements to be sorted:&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">MAX;i++)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;a[i]);</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">insertion_sort(a);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;sorted elements:\n&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">MAX;</span> <span style="color: #d0d0d0">i++)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot; %d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">a[i]);</span>
+        <span style="color: #d0d0d0">}</span>
+    <span style="color: #d0d0d0">}</span>
+     
+    <span style="color: #999999; font-style: italic">/* sorts the input */</span>
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">insertion_sort</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">*</span> <span style="color: #d0d0d0">x)</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">temp,</span> <span style="color: #d0d0d0">i,</span> <span style="color: #d0d0d0">j;</span>
+     
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">MAX;i++)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">temp</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">x[i];</span>
+            <span style="color: #d0d0d0">j</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">-</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(temp</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">x[j]</span> <span style="color: #d0d0d0">&amp;&amp;</span> <span style="color: #d0d0d0">j</span> <span style="color: #d0d0d0">&gt;=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #d0d0d0">x[j</span> <span style="color: #d0d0d0">+</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">x[j];</span>
+                <span style="color: #d0d0d0">j</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">j</span> <span style="color: #d0d0d0">-</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #d0d0d0">}</span>
+            <span style="color: #d0d0d0">x[j</span> <span style="color: #d0d0d0">+</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp;</span>
+        <span style="color: #d0d0d0">}</span>
+    <span style="color: #d0d0d0">}</span>
+    
+    
+    <span style="color: #d0d0d0">&gt;&gt;Output:</span>
+    <span style="color: #999999; font-style: italic">/* Average case */</span>
+    <span style="color: #a61717; background-color: #e3d2d2">$</span> <span style="color: #d0d0d0">a.out</span>
+    <span style="color: #d0d0d0">enter</span> <span style="color: #d0d0d0">elements</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">be</span> <span style="color: #d0d0d0">sorted:</span><span style="color: #3677a9">8</span> <span style="color: #3677a9">2</span> <span style="color: #3677a9">4</span> <span style="color: #3677a9">9</span> <span style="color: #3677a9">3</span> <span style="color: #3677a9">6</span> <span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">sorted</span> <span style="color: #d0d0d0">elements:</span>
+     <span style="color: #3677a9">1</span> <span style="color: #3677a9">2</span> <span style="color: #3677a9">3</span> <span style="color: #3677a9">4</span> <span style="color: #3677a9">6</span> <span style="color: #3677a9">8</span> <span style="color: #3677a9">9</span>
+     
+    <span style="color: #999999; font-style: italic">/* Best case */</span>
+    <span style="color: #a61717; background-color: #e3d2d2">$</span> <span style="color: #d0d0d0">a.out</span>
+    <span style="color: #d0d0d0">enter</span> <span style="color: #d0d0d0">elements</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">be</span> <span style="color: #d0d0d0">sorted:</span><span style="color: #3677a9">1</span> <span style="color: #3677a9">2</span> <span style="color: #3677a9">3</span> <span style="color: #3677a9">4</span> <span style="color: #3677a9">5</span> <span style="color: #3677a9">6</span> <span style="color: #3677a9">7</span>
+    <span style="color: #d0d0d0">sorted</span> <span style="color: #d0d0d0">elements:</span>
+     <span style="color: #3677a9">1</span> <span style="color: #3677a9">2</span> <span style="color: #3677a9">3</span> <span style="color: #3677a9">4</span> <span style="color: #3677a9">5</span> <span style="color: #3677a9">6</span> <span style="color: #3677a9">7</span>
+     
+    <span style="color: #999999; font-style: italic">/* Worst case */</span>
+    <span style="color: #a61717; background-color: #e3d2d2">$</span> <span style="color: #d0d0d0">a.out</span>
+    <span style="color: #d0d0d0">enter</span> <span style="color: #d0d0d0">elements</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">be</span> <span style="color: #d0d0d0">sorted:</span><span style="color: #3677a9">7</span> <span style="color: #3677a9">6</span> <span style="color: #3677a9">5</span> <span style="color: #3677a9">4</span> <span style="color: #3677a9">3</span> <span style="color: #3677a9">2</span> <span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">sorted</span> <span style="color: #d0d0d0">elements:</span>
+     <span style="color: #3677a9">1</span> <span style="color: #3677a9">2</span> <span style="color: #3677a9">3</span> <span style="color: #3677a9">4</span> <span style="color: #3677a9">5</span> <span style="color: #3677a9">6</span> <span style="color: #3677a9">7</span>
+    </pre></div>

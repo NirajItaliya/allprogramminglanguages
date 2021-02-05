@@ -1,0 +1,30 @@
+<!-- HTML generated using hilite.me --><div style="background: #111111; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #fb660a; font-weight: bold">fun</span> <span style="color: #ff0086; font-weight: bold">main</span><span style="color: #ffffff">(args:</span> <span style="color: #ffffff">Array&lt;String&gt;)</span> <span style="color: #ffffff">{</span>
+    <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #cdcaa9; font-weight: bold">decimal</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">78</span>
+    <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">octal</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">convertDecimalToOctal(</span><span style="color: #cdcaa9; font-weight: bold">decimal</span><span style="color: #ffffff">)</span>
+    <span style="color: #ffffff">println(</span><span style="color: #0086d2">&quot;$decimal in decimal = $octal in octal&quot;</span><span style="color: #ffffff">)</span>
+<span style="color: #ffffff">}</span>
+<span style="color: #fb660a; font-weight: bold">fun</span> <span style="color: #ff0086; font-weight: bold">convertDecimalToOctal</span><span style="color: #ffffff">(</span><span style="color: #cdcaa9; font-weight: bold">decimal</span><span style="color: #ffffff">:</span> <span style="color: #ffffff">Int):</span> <span style="color: #ffffff">Int</span> <span style="color: #ffffff">{</span>
+    <span style="color: #fb660a; font-weight: bold">var</span> <span style="color: #cdcaa9; font-weight: bold">decimal</span> <span style="color: #ffffff">=</span> <span style="color: #cdcaa9; font-weight: bold">decimal</span>
+    <span style="color: #fb660a; font-weight: bold">var</span> <span style="color: #ffffff">octalNumber</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">0</span>
+    <span style="color: #fb660a; font-weight: bold">var</span> <span style="color: #ffffff">i</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">1</span>
+    <span style="color: #fb660a; font-weight: bold">while</span> <span style="color: #ffffff">(</span><span style="color: #cdcaa9; font-weight: bold">decimal</span> <span style="color: #ffffff">!=</span> <span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">)</span> <span style="color: #ffffff">{</span>
+        <span style="color: #ffffff">octalNumber</span> <span style="color: #ffffff">+=</span> <span style="color: #cdcaa9; font-weight: bold">decimal</span> <span style="color: #ffffff">%</span> <span style="color: #0086f7; font-weight: bold">8</span> <span style="color: #ffffff">*</span> <span style="color: #ffffff">i</span>
+        <span style="color: #cdcaa9; font-weight: bold">decimal</span> <span style="color: #ffffff">/=</span> <span style="color: #0086f7; font-weight: bold">8</span>
+        <span style="color: #ffffff">i</span> <span style="color: #ffffff">*=</span> <span style="color: #0086f7; font-weight: bold">10</span>
+    <span style="color: #ffffff">}</span>
+    <span style="color: #fb660a; font-weight: bold">return</span> <span style="color: #ffffff">octalNumber</span>
+<span style="color: #ffffff">}</span>
+
+<span style="color: #ffffff">&gt;&gt;</span> <span style="color: #ffffff">output</span> <span style="color: #ffffff">will</span> <span style="color: #ffffff">be:</span>
+
+<span style="color: #0086f7; font-weight: bold">78</span> <span style="color: #fb660a; font-weight: bold">in</span> <span style="color: #cdcaa9; font-weight: bold">decimal</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">116</span> <span style="color: #fb660a; font-weight: bold">in</span> <span style="color: #ffffff">octal</span>
+
+
+<span style="color: #ffffff">This</span> <span style="color: #ffffff">conversion</span> <span style="color: #ffffff">takes</span> <span style="color: #ffffff">place</span> <span style="color: #fb660a; font-weight: bold">as</span><span style="color: #ffffff">:</span>
+
+<span style="color: #0086f7; font-weight: bold">8</span> <span style="color: #ffffff">|</span> <span style="color: #0086f7; font-weight: bold">78</span>
+<span style="color: #0086f7; font-weight: bold">8</span> <span style="color: #ffffff">|</span> <span style="color: #0086f7; font-weight: bold">9</span> <span style="color: #ffffff">--</span> <span style="color: #0086f7; font-weight: bold">6</span>
+<span style="color: #0086f7; font-weight: bold">8</span> <span style="color: #ffffff">|</span> <span style="color: #0086f7; font-weight: bold">1</span> <span style="color: #ffffff">--</span> <span style="color: #0086f7; font-weight: bold">1</span>
+<span style="color: #0086f7; font-weight: bold">8</span> <span style="color: #ffffff">|</span> <span style="color: #0086f7; font-weight: bold">0</span> <span style="color: #ffffff">--</span> <span style="color: #0086f7; font-weight: bold">1</span>
+<span style="color: #ffffff">(</span><span style="color: #0086f7; font-weight: bold">116</span><span style="color: #ffffff">)</span>
+</pre></div>

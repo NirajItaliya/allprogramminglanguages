@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Site made with Mobirise Website Builder v4.10.5, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.10.5, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/ic-logo-new-128x128.png" type="image/x-icon">
+    <meta name="description" content="ApkZube">
+
+    <title>Python Variables</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="plugin/prism.css">
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
+</head>
+<body class="line-numbers">
+<section class="mbr-section content4 cid-rw0HBf1ySy" id="content4-8e">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-2"><strong>Python
+                    Variables</strong></h2>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.info/t">free amp templates</a></section>
+<section class="mbr-section article content1 cid-rw0HF6Cvwl" id="content1-8f">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>
+            </p>
+                <div><span style="font-size: 1rem;"><strong>Variable </strong>is a name which is used to refer <strong>memory location.</strong> Variable also known as <strong>identifier </strong>and used to hold value.In Python, we don't need to specify the type of variable because Python is a<strong> type infer language</strong> and smart enough to get variable type.&nbsp;</span>
+                </div>
+                <div><br></div>
+                <div>
+                </div>
+                <div><strong>Variable</strong> names can be a group of both
+                    <strong>letters </strong>and <strong>digits</strong>, but they have to begin
+                    with a letter or an underscore.It is recomended to use lowercase letters for
+                    variable name. Rahul and rahul both are <strong>two different variables</strong>.
+                </div>
+                <div><br></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section content4 cid-rw0HVS3mdT" id="content4-8g">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Variable
+                    Assignment</strong></h2>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rw0I0HnCXn" id="content1-8h">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>Think of a variable
+                as a name attached to a particular object. In Python, variables need not be declared
+                or defined in advance, as is the case in many other programming languages. To create
+                a variable, you just assign it a value and then start using it. Assignment is done
+                with a single equals sign <strong>(=)</strong>:</p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-python">
+
+>>>n=300
+
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rw0I5dJTt3" id="content1-8j">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>This is read or
+                <strong>interpreted </strong>as “n is assigned the value 300.” Once this is done, n
+                can be used in a statement or expression, and its value will be substituted:</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-python">
+
+
+
+>>> print(n)
+300
+
+
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rw0IiqTPm2" id="content1-8l">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>Just as a literal
+                value can be displayed directly from the interpreter prompt in a <strong>REPL
+                    session </strong>without the need for <strong>print()</strong>, so can a
+                variable:</p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-python">
+>>>n
+300
+
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rw0IBFKxb9" id="content1-8n">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>Later, if you change
+                the value of n and use it again, the new value will be <strong>substituted </strong>instead
+            </p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-python">
+
+
+
+>>> n = 1000
+>>> print(n)
+1000
+
+>>> n
+1000
+
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rw0INaj4QG" id="content1-8p">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>Python also allows
+                <strong>chained </strong>assignment, which makes it possible to assign the same
+                value to several variables simultaneously:</p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-python">
+>>> a = b = c = 300
+>>> print(a, b, c)
+300 300 300
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rw0IZlPGo8" id="content1-8r">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>The chained
+                assignment above assigns 300 to the variables a, b, and c simultaneously.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section content4 cid-rw0J6E1SS7" id="content4-8s">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Variable Types in
+                    Python</strong></h2>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rw0J9NLKiL" id="content1-8t">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>
+            </p>
+                <div><span
+                        style="font-size: 1rem;">In many programming languages, variables are <strong>statically typed</strong>. That means a variable is initially <strong>declared </strong>to have a specific data type, and any value assigned to it during its <strong>lifetime </strong>must always have that <strong>type</strong>.&nbsp;</span>
+                </div>
+                <div><span style="font-size: 1rem;"><br></span></div>
+                <div>Variables in Python are not subject to this restriction. In Python, a variable
+                    may be assigned a value of one type and then later re-assigned a value of a
+                    different type:
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-python">
+
+
+
+>>> var = 23.5
+>>> print(var)
+23.5
+
+>>> var = "Now I'm a string"
+>>> print(var)
+Now I'm a string
+
+
+</code></pre></div>
+
+
+<section class="mbr-section content4 cid-rw0JtPetNb" id="content4-8v">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Object
+                    References</strong></h2>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rw0JyPSOzb" id="content1-8w">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>
+            </p>
+                <div><span
+                        style="font-size: 1rem;">What is actually happening when you make a <strong>variable assignment?</strong> This is an important question in Python, because the answer differs some what from what you’d find in many other programming languages.&nbsp;</span>
+                </div>
+                <div><span style="font-size: 1rem;"><br></span></div>
+                <div>Python is a highly <strong>object-oriented language</strong>. In fact,
+                    virtually every item of data in a Python program is an <strong>object of a
+                        specific type or class</strong>. (This point will be reiterated many times
+                    over the course of these tutorials.)
+                </div>
+                <div><br></div>
+                <div>Consider this code:
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-python">
+
+
+
+>>> print(300)
+    300
+
+
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rw0JSqMFiG" id="content1-8y">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>When presented with
+                the statement print(300), the interpreter does the following:</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rw0JVyWWQK" id="content12-8z">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Creates an integer object&nbsp;</strong></li>
+                    <li><span
+                            style="font-size: 1rem;"><strong>Gives it the value 300 </strong></span>
+                    </li>
+                    <li><strong>Displays it to the console</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rw0KbrJKdL" id="content1-90">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>You can see that an
+                integer object is created using the <strong>built-in type()</strong> function:</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-python">
+
+>>>type(300)
+< class 'int'>
+
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rw0KkShWyC" id="content1-92">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>
+            </p>
+                <div><span
+                        style="font-size: 1rem;">A Python variable is a symbolic name that is a <strong>reference or pointer</strong> to an object. Once an object is assigned to a variable, you can refer to the object by that name. But the data itself is still contained within the object.&nbsp;</span><br>
+                </div>
+                <div>
+                </div>
+                <div>For example:
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-python">
+
+&gt;&gt;&gt;n = 300
+
+</code></pre></div>
+
+
+
+<section class="mbr-section article content1 cid-rw0KtNulp7" id="content1-94">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>This assignment
+                creates an integer object with the value 300 and assigns the variable n to point to
+                that object.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="cid-rw0KwZGhnc" id="image2-95">
+
+
+    <figure class="mbr-figure container">
+        <div class="image-block" style="width: 42%;">
+            <img src="assets/images/t.webp" alt="Mobirise" title="">
+
+        </div>
+    </figure>
+</section>
+
+<section class="mbr-section article content1 cid-rw0KBprG3V" id="content1-96">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>The following code
+                verifies that n points to an integer object:</p></div>
+        </div>
+    </div>
+</section>
+
+
+
+<div class="container">
+<pre><code class="language-python">
+>>> print(n)
+300
+>>> type(n)
+< class 'int'>
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rw0KNhKXya" id="content1-98">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>Now consider the
+                following statement:</p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-python">
+
+m=n
+
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rw0KS5JMMx" id="content1-9a">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-10"><p>What happens when it
+                is executed? Python does not create another object. It simply creates a new symbolic
+                name or reference, m, which points to the same object that n points to.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="cid-rw0KXvFInx" id="image2-9b">
+
+
+    <figure class="mbr-figure container">
+        <div class="image-block" style="width: 54%;">
+            <img src="assets/images/t2.webp" alt="Mobirise" title="">
+
+        </div>
+    </figure>
+</section>
+
+<section class="mbr-section article content1 cid-rw0LdlA4iB" id="content1-9d">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>Next, suppose you do
+                this:</p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-python">
+    >>>m=400
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rw0Ll72IfF" id="content1-9f">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>Now Python creates a
+                new integer object with the value 400, and m becomes a reference to it.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="cid-rw0LoBXUMi" id="image2-9g">
+
+
+    <figure class="mbr-figure container">
+        <div class="image-block" style="width: 52%;">
+            <img src="assets/images/t3.webp" alt="Mobirise" title="">
+
+        </div>
+    </figure>
+</section>
+
+<section class="mbr-section article content1 cid-rw0Lu65Z9l" id="content1-9h">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>Lastly, suppose this
+                statement is executed next:</p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-python">
+
+>>>n="foo"
+
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rw0LBTn1KS" id="content1-9j">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>Now Python creates a
+                string object with the value "foo" and makes n reference that.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="cid-rw0LKa5e5F" id="image2-9k">
+
+
+    <figure class="mbr-figure container">
+        <div class="image-block" style="width: 52%;">
+            <img src="assets/images/t4.webp" alt="Mobirise" title="">
+
+        </div>
+    </figure>
+</section>
+
+<section class="mbr-section article content1 cid-rw0LLdHoex" id="content1-9l">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>
+            </p>
+                <div><span
+                        style="font-size: 1rem;">There is <strong>no longer any reference</strong> to the integer object 300. It is orphaned, and there is no way to access it.&nbsp;</span>
+                </div>
+                <div><span style="font-size: 1rem;"><br></span></div>
+                <div>When the number of references to an object drops to zero, it is no longer
+                    accessible. At that point, its lifetime is over. Python will eventually notice
+                    that it is <strong>inaccessible </strong>and <strong>reclaim</strong> the
+                    allocated memory so it can be used for something else. In computer lingo, this
+                    process is referred to as <strong>garbage collection.
+                    </strong></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section content4 cid-rw0Lc9a9lK" id="content4-9c">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Variable
+                    Names</strong></h2>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rw0M4u1m4m" id="content1-9m">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>
+            </p>
+                <div><span
+                        style="font-size: 1rem;">The examples you have seen so far have used <strong>short</strong>, terse variable names like m and n. But variable names can be more <strong>verbose</strong>. In fact, it is usually beneficial if they are because it makes the purpose of the variable more evident at first glance.&nbsp;</span>
+                </div>
+                <div><span style="font-size: 1rem;"><br></span><span
+                        style="font-size: 1rem;"></span></div>
+                <div>Officially, variable names in Python can be any length and can consist of
+                    <strong>uppercase </strong>and <strong>lowercase letters (A-Z, a-z), digits
+                        (0-9), </strong>and the <strong>underscore character (_)</strong>. An
+                    additional restriction is that, although a variable name can contain digits, the
+                    first character of a variable name cannot be a digit.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rw0MhijYUT" id="content12-9n">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Note:</strong> One of the additions to Python 3 was full Unicode
+                        support, which allows for <strong>Unicode </strong>characters in a variable
+                        name as well. You will learn about Unicode in greater depth in a future
+                        tutorial.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rw0Mp4N8qy" id="content1-9o">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>For example, all of
+                the following are valid variable names:</p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-python">
+
+>>> name = "Bob"
+>>> Age = 54
+>>> has_W2 = True
+>>> print(name, Age, has_W2)
+Bob 54 True
+
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rw0MBY3Y46" id="content1-9q">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>But this one is not,
+                because a variable name can’t begin with a digit:</p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-python">
+
+>>> 1099_filed = False
+SyntaxError: invalid token
+
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rw0MLD4Ftr" id="content1-9s">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>Note that case is
+                <strong>significant</strong>. Lowercase and uppercase letters are not the same. Use
+                of the underscore character is significant as well. Each of the following defines a
+                different variable:</p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-python">
+
+>>> age = 1
+>>> Age = 2
+>>> aGe = 3
+>>> AGE = 4
+>>> a_g_e = 5
+>>> _age = 6
+>>> age_ = 7
+>>> _AGE_ = 8
+>>> print(age, Age, aGe, AGE, a_g_e, _age, age_, _AGE_)
+1 2 3 4 5 6 7 8
+
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rw0MXezNYW" id="content1-9u">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>There is nothing
+                stopping you from creating two different variables in the same program called age
+                and Age, or for that matter agE. But it is probably <strong>ill-advised</strong>. It
+                would certainly be likely to confuse anyone trying to read your code, and even you
+                yourself, after you’d been away from it awhile.</p></div>
+        </div>
+    </div>
+</section>
+
+
+<script src="plugin/prism.js"></script>
+<script src="assets/web/assets/jquery/jquery.min.js"></script>
+<script src="assets/popper/popper.min.js"></script>
+
+<script src="assets/tether/tether.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/smoothscroll/smooth-scroll.js"></script>
+<script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+<script src="assets/theme/js/script.js"></script>
+
+
+<input name="animation" type="hidden">
+</body>
+</html>

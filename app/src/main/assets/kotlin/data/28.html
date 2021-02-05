@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin try catch</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPuX335HGP" id="content1-m8" data-rv-view="5929">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin try catch</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/e">website builder software</a></section><section class="mbr-section article content1 cid-rPuX6hKmy0" id="content1-m9" data-rv-view="5930">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin <strong>try-catch</strong> block is used for exception handling in the code. The try block encloses the code which may throw an exception and the catch block is used to handle the exception. This block must be written within the method. Kotlin try block must be followed by either catch block or finally block or both.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPuXdEINIq" id="content1-ma" data-rv-view="5931">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Syntax of try with catch block:</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">try{
+    //code that may throw exception
+}catch(e: SomeException){
+    //code that handles exception
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPuXmuAcIL" id="content1-mc" data-rv-view="5933">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Syntax of try with finally block:</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">try{
+    //code that may throw exception
+}finally{
+    // code finally block
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPuXppTb6N" id="content1-me" data-rv-view="5935">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Syntax of try catch with finally block:</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">try {
+    // some code
+}
+catch (e: SomeException) {
+    // handler
+}
+finally {
+    // optional finally block
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPuXHNEnG5" id="content1-mh" data-rv-view="5937">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Problem without Exception Handling</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPuXX9jzoB" id="content1-mi" data-rv-view="5938">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Lets's see an example which causes exception which is not handled.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val data = 20 / 0 //may throw exception
+    println("code below exception ...")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPuYK4aOaI" id="content1-mk" data-rv-view="5940">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">This above program generates an exception, which causes rest of code below the exception not executable.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPuYKh2aW2" id="content1-ml" data-rv-view="5941">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Exception in thread "main" java.lang.ArithmeticException: / by zero
+ at ExceptionHandlingKt.main(ExceptionHandling.kt:2)
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPuYQE06Qx" id="content1-mn" data-rv-view="5943">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Solution by exception handling</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPuYXXgRtw" id="content1-mo" data-rv-view="5944">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Let's see the solution of above problem by using try-catch block.</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    try {
+        val data = 20 / 0 //may throw exception
+    } catch (e: ArithmeticException) {
+        println(e)
+    }
+    println("code below exception...")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPuZ8oqt6K" id="content1-mq" data-rv-view="5946">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">java.lang.ArithmeticException: / by zero
+code below exception...
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPuZcVJ4fP" id="content1-ms" data-rv-view="5948">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In the above program after implementing try - catch block, rest of code below exception executes.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPuZia4uCj" id="content1-mt" data-rv-view="5949">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Kotlin try block as an Expression</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPuZj6TjgK" id="content1-mu" data-rv-view="5950">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">We can use try block as an expression which <strong>returns a value. </strong>The value returned by try expression is either the last expression of try block or the last expression of catch. Contents of the finally block do not affect the result of the expression.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPuZsU7m89" id="content1-mv" data-rv-view="5951">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Let's see an example of try-catch block as an expression which returns a value. In this example String value to Int which does not generate any exception and returns last statement of try block.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val str = getNumber("10")
+        println(str)
+    }
+    fun getNumber(str: String): Int{
+        return try {
+            Integer.parseInt(str)
+        } catch (e: ArithmeticException) {
+            0
+        }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPuZCXGMaX" id="content1-mx" data-rv-view="5953">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">10
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPuZFNWMeu" id="content1-mz" data-rv-view="5955">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Let's modify the above code which generate an exception and return the last statement of catch block.</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val str = getNumber("10.5")
+        println(str)
+    }
+    fun getNumber(str: String): Int{
+        return try {
+            Integer.parseInt(str)
+        } catch (e: NumberFormatException) {
+            0
+        }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPuZH9OGmh" id="content1-n1" data-rv-view="5957">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">0
+</code></pre></div>
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+</body>
+</html>

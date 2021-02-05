@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin Utility Functions</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rQ1MHeoXPG" id="content1-1f6" data-rv-view="8224">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin Utility Functions
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/a">web builder</a></section><section class="mbr-section article content1 cid-rQ1MLsm2Ko" id="content1-1f7" data-rv-view="8225">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin <strong>range utility </strong>functions have several standard library functions which are used in Kotlin ranges. These utility functions are as follow:</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rQ1N0Z88Dm" id="content12-1fa" data-rv-view="8226">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li>rangeTo()
+</li><li>downTo()
+</li><li>reversed()
+</li><li>step()</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1NbdBvv6" id="content1-1fc" data-rv-view="8227">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>1. rangeTo()
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1Nfb2ifd" id="content1-1fd" data-rv-view="8228">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The <strong>rangeTo()</strong> function is used to return the value from start to end in increasing order mentioned in a range. The rangeTo() function is integral types which calls the constructors of Range class.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    var range: IntRange = 1.rangeTo(5)
+    println("Printing value: 1.rangeTo(5)")
+    for (x in range){
+        print("$x ")
+    }
+    println("")
+    var range2: IntRange = IntRange(1,5)
+    println("Printing value: IntRange(1,5)")
+    for (x in range2){
+        print("$x ")
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1NhnX5PA" id="content1-1ff" data-rv-view="8230">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Printing value: 1.rangeTo(5)
+1 2 3 4 5
+Printing value: IntRange(1,5)
+1 2 3 4 5
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1NLVmOqF" id="content1-1fh" data-rv-view="8232">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The data types (or types) which are floating point like Double, Float are not define in rangeTo operator.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1NQuPRv6" id="content1-1fi" data-rv-view="8233">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>2. downTo()
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1NWOUkzR" id="content1-1fj" data-rv-view="8234">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The <strong>downTo()</strong> extension function is used to return the value in decreasing order mention from higher order to lower order. The downTo() function is defined for pair of integral types.
+<div>
+</div><div><strong>Syntax:
+</strong></div></div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun Long.downTo(other: Int): LongProgression {
+    return LongProgression.fromClosedRange(this, other.toLong(), -1L)
+}
+
+fun Byte.downTo(other: Int): IntProgression {
+    return IntProgression.fromClosedRange(this.toInt(), other, -1)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1NYxyuew" id="content1-1fl" data-rv-view="8236">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Example of downTo() function
+ :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    println("Range 1")
+    var range1 = 5 downTo 1
+    for (x in range1) {
+        print("$x ")
+    }
+    println()
+    println("Range 2")
+    var range2: IntProgression = 5.downTo(1)
+    for (x in range2) {
+        print("$x ")
+    }
+    println()
+    println("Range 3")
+    var range3: IntProgression = IntProgression.fromClosedRange(5, 1, -1)
+    for (x in range3) {
+        print("$x ")
+    }
+
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1NZPayZS" id="content1-1fn" data-rv-view="8238">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Range 1
+5 4 3 2 1
+Range 2
+5 4 3 2 1
+Range 3
+5 4 3 2 1
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1Olqa7gl" id="content1-1fq" data-rv-view="8240">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>3. reversed()
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1OqeBYRf" id="content1-1fr" data-rv-view="8241">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The <strong>reversed()</strong> function is used to return the reversed order of the given range type.
+<div>
+</div><div><strong>Syntax:
+</strong></div></div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun IntProgression.reversed(): IntProgression {
+    return IntProgression.fromClosedRange(last, first, -step)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1OzArtoG" id="content1-1ft" data-rv-view="8243">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Example of reversed() function :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    println("Reversed 1")
+    var range1 = 1..5
+    for (x in range1.reversed()) {
+        print("$x ")
+    }
+    println()
+    println("Reversed 2")
+    var range2: IntRange = IntRange(1, 5)
+    for (x in range2.reversed()) {
+        print("$x ")
+    }
+    println()
+    println("Reversed 3")
+    var range3 = IntProgression.fromClosedRange(5, 1, -1)
+    for (x in range3.reversed()) {
+        print("$x ")
+    }
+    println()
+    println("Reversed 4")
+    var range4: IntProgression = IntProgression.fromClosedRange(5, 1, -2)
+    for (x in range4.reversed()) {
+        print("$x ")
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1OAui4Yu" id="content1-1fv" data-rv-view="8245">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Reversed 1
+5 4 3 2 1
+Reversed 2
+5 4 3 2 1
+Reversed 3
+1 2 3 4 5
+Reversed 4
+1 3 5
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1TArXSjB" id="content1-1fx" data-rv-view="8247">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>4. step()
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1TI7p2Gr" id="content1-1fy" data-rv-view="8248">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The <strong>step()</strong> function ( or step operator) is used to return the range value in interval of given step value. A step value always takes a positive parameter. The negative step value generates the <strong>IllegalArgumentException</strong> exception.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val range: IntRange = 1..10
+    println("Print range value with step 2:")
+    for (x in range step (2)) {
+        print("$x ")
+    }
+    println("")
+    println("Print range value with step 3:")
+    for (x in range step 3) {
+        print("$x ")
+    }
+    val first = ((range step 2).first)
+    val last = ((range step 2).last)
+    println("")
+    println("First value of interval: $first")
+    println("Last value of interval: $last ")
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1TJnOpVX" id="content1-1g0" data-rv-view="8250">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Print range value with step 2:
+1 3 5 7 9
+Print range value with step 3:
+1 4 7 10
+First value of interval: 1
+Last value of interval: 9
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1TKrEGmX" id="content1-1g2" data-rv-view="8252">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">If we provide step value as a negative integer it throws an exception.
+</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val range: IntRange = IntRange(1,10)
+    for (x in range step -2){
+        print("$x ")
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1TVKo3jV" id="content1-1g4" data-rv-view="8254">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Exception in thread "main" java.lang.IllegalArgumentException: Step must be positive, was: -2.
+ at kotlin.ranges.RangesKt__RangesKt.checkStepIsPositive(Ranges.kt:130)
+ at kotlin.ranges.RangesKt___RangesKt.step(_Ranges.kt:432)
+ at TestKt.main(Test.kt:63)
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

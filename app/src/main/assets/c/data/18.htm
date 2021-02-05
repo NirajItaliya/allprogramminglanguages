@@ -1,0 +1,539 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:7.1pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB>
+
+<div class=WordSection1>
+
+<h1 align=center style='text-align:center;line-height:150%'>18. UNIONS</h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'>&nbsp;</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>A <b>union </b>is a special data type
+available in C that allows to store different data types in the same memory
+location. You can define a union with many members, but only one member can
+contain a value at any given time. Unions provide an efficient way of using the
+same memory location for multiple purpose. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>Defining a Union</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>To define a union, you must use the <b>union
+</b>statement in the same way as you did while defining a structure. The union
+statement defines a new data type with more than one member for your program. The
+format of the union statement is as follows: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>union [union tag] </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>{ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>member definition; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>member definition; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>... </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>member definition; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>} [one or more union variables]; </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The <b>union tag </b>is optional and
+each member definition is a normal variable definition, such as int i; or float
+f; or any other valid variable definition. At the end of the union's
+definition, before the final semicolon, you can specify one or more union
+variables, but it is optional. Here is the way you would define a union type
+named Data having three members i, f, and str: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>union Data </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>{ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>int i; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>float f; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>char str[20]; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>} data; </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Now, a variable of <b>Data </b>type
+can store an integer, a floating-point number, or a string of characters. It
+means a single variable, i.e., same memory location, can be used to store
+multiple types of data. You can use any built-in or user-defined data types
+inside a union based on your requirement. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The memory occupied by a union will be
+large enough to hold the largest member of the union. For example, in the above
+example, Data type will occupy 20 bytes of memory space because this is the
+maximum space which can be occupied by a character string. The following
+example displays the total memory size occupied by the above union: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>#include &lt;stdio.h&gt; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>#include &lt;string.h&gt; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>union Data </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>{ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>int i; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>float f; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>char str[20]; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>}; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>int main( ) </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>{ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>union Data data; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>printf( &quot;Memory size occupied by data : %d\n&quot;,
+sizeof(data)); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>return 0; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When the above code is compiled and
+executed, it produces the following result: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Memory size
+occupied by data : 20 </span></p>
+
+</div>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><b><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></b></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>Accessing Union Members</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>To access any member of a union, we
+use the <b>member access operator (.)</b>. The member access operator is coded
+as a period between the union variable name and the union member that we wish
+to access. You would use the keyword <b>union </b>to define variables of union
+type. The following example shows how to use unions in a program: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;stdio.h&gt;</span></p>
+
+<span style='font-size:11.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:white'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%;background:#222A35;border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;string.h&gt; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>union Data </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int i; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>float f; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>char str[20]; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>}; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int main( ) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>union Data data; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>data.i = 10; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>data.f = 220.5; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>strcpy( data.str, &quot;C
+Programming&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;data.i :
+%d\n&quot;, data.i); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;data.f :
+%f\n&quot;, data.f); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;data.str :
+%s\n&quot;, data.str); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>return 0; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When the above code is compiled and
+executed, it produces the following result: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>data.i : 1917853763
+</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>data.f :
+4122360580327794860452759994368.000000 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>data.str : C
+Programming </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Here, we can see that the values of <b>i
+</b>and <b>f </b>members of union got corrupted because the final value
+assigned to the variable has occupied the memory location and this is the
+reason that the value of <b>str </b>member is getting printed very well. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Now let's look into the same example
+once again where we will use one variable at a time which is the main purpose
+of having unions: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;stdio.h&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;string.h&gt; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>union Data </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int i; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>float f; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>char str[20]; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>}; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int main( ) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>union Data data; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>data.i = 10; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;data.i :
+%d\n&quot;, data.i); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>data.f = 220.5; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;data.f :
+%f\n&quot;, data.f); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>strcpy( data.str, &quot;C
+Programming&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;data.str :
+%s\n&quot;, data.str); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>return 0; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When the above code is compiled and
+executed, it produces the following result: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>data.i : 10 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>data.f : 220.500000
+</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>data.str : C
+Programming </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Here, all the members are getting
+printed very well because one member is being used at a time.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

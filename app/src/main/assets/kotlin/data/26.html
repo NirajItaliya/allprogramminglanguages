@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin String</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
+
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPswFUDPW0" id="content1-js" data-rv-view="5708">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin String</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/c">website maker</a></section><section class="mbr-section article content1 cid-rPsxoshaWa" id="content1-jt" data-rv-view="5709">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The <strong>String</strong> class represents an array of char types. Strings are immutable which means the length and elements cannot be changed after their creation.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">val ch = charArrayOf('h', 'e', 'l', 'l', 'o')
+val st = String(ch)
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPsxCey081" id="content1-jv" data-rv-view="5711">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Unlike Java, Kotlin does not require a new keyword to instantiate an object of a <strong>String</strong> class. A String can be simply declared within double quote (" ") known as escaped string or triple quote(""" """) known as raw string.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">val str1 = "Hello, ApkZube"
+val str2 = """Welcome To ApkZube"""
+</code></pre></div>
+
+
+<section class="section-table cid-rPsxRFUBV5" id="table1-jy" data-rv-view="5713">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5"><strong>String Property</strong></h2>
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Property</th><th class="head-item mbr-fonts-style display-7">Description</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">length: Int</td><td class="body-item mbr-fonts-style display-7">It returns the length of string sequence.</td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">indices: IntRange&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns the ranges of valid character indices from current char sequence.</td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">lastIndex: Int&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns the index of last character from char sequence.</td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="section-table cid-rPsyr6AHS4" id="table1-jz" data-rv-view="5743">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5"><font color="#2d63cd"><strong>String Function</strong></font></h2>
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Functions</th><th class="head-item mbr-fonts-style display-7">Description</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">compareTo(other: String): Int</td><td class="body-item mbr-fonts-style display-7">It compares the current object with specified object for order. It returns zero if current is equals to specified other object.</td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">get(index: Int): Char</td><td class="body-item mbr-fonts-style display-7">It returns the character at given index from the current character sequence.</td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">plus(other: Any?): String</td><td class="body-item mbr-fonts-style display-7">It returns the concatenate string with the string representation of the given other string.</td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">subSequence(startIndex: Int,endIndex: Int): CharSequence</td><td class="body-item mbr-fonts-style display-7">It returns the new character sequence from current character sequence, starting from startIndex to endIndex.</td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">CharSequence.contains(other: <br>CharSequence, ignoreCase: Boolean = false):Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns true if the character sequence contains the other specified character sequence.</td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">CharSequence.count(): Int</td><td class="body-item mbr-fonts-style display-7">It returns the length of char sequence.</td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">String.drop(n: Int): String</td><td class="body-item mbr-fonts-style display-7">It returns a string after removing the first n character.</td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">String.dropLast(n: Int): String</td><td class="body-item mbr-fonts-style display-7">It returns a string after removing the last n character.</td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">String.dropWhile
+<br>(predicate: (Char) -&gt; Boolean
+<br>): String</td><td class="body-item mbr-fonts-style display-7">It returns a character sequence which contains all the characters, except first characters which satisfy the given predicate.</td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">CharSequence.elementAt(index: Int): Char</td><td class="body-item mbr-fonts-style display-7">It returns a character at the given index or throws an IndexOutOfBoundsException if the index does not exist in character sequence.</td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">CharSequence.indexOf(char: Char, <br>startIndex: Int = 0,
+<br>ignoreCase: Boolean = false
+<br>): Int</td><td class="body-item mbr-fonts-style display-7">It returns the index of first occurrence of the given character, starting from the given index value.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">CharSequence.indexOfFirst(
+<br>predicate: (Char) -&gt; Boolean
+<br>): Int</td><td class="body-item mbr-fonts-style display-7">It returns the index of first character which match the given predicate, or -1 if the character sequence not contains any such character.</td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">CharSequence.indexOfLast(
+<br>predicate: (Char) -&gt; Boolean
+<br>): Int</td><td class="body-item mbr-fonts-style display-7">It returns the index of last character which match the given predicate, or -1 if the character sequence not contains any such character.</td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">CharSequence.getOrElse(index: Int, <br>defaultValue: (Int) -&gt;Char): Char</td><td class="body-item mbr-fonts-style display-7">It returns the character at specified index or the result of calling the defaultValue function if the index is out of bound of current character sequence.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">CharSequence.getOrNull(index: Int): <br>Char?</td><td class="body-item mbr-fonts-style display-7">It returns a character at the given index or returns null if the index is out of bound from character sequence.</td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<br/>
+
+<section class="mbr-section article content1 cid-rPsA9N8QVy" id="content1-k1" data-rv-view="5857">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>String elements</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPsAgGiVRa" id="content1-k2" data-rv-view="5858">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The characters which are present in string are known as elements of string. Element of string are accessed by indexing operation string[index]. String's index value starts from 0 and ends at one less than the size of string string[string.length-1]. Index 0 represent first element, index 1 represent second element and so on.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">val str ="Hello, ApkZube"
+println(str[0]) //prints H
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rPsAlJHuYN" id="content12-k4" data-rv-view="5860">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example of accessing string element
+</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val str = "Hello, ApkZube!"
+    println(str[0])
+    println(str[1])
+    println(str[str.length-1])
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPsAn0CpPJ" id="content1-k6" data-rv-view="5862">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">H
+e
+!
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPsAFEQA8L" id="content1-k8" data-rv-view="5864">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>String templates</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPsAKUsBuG" id="content1-k9" data-rv-view="5865">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">String template expression is a piece of code which is evaluated and its result is returned into string. Both string types (escaped and raw string) contain <strong>template</strong> <strong>expressions</strong>. String templates starts with a dollar sign $ which consists either a variable name or an arbitrary expression in curly braces.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPsB84wOCD" id="content12-kf" data-rv-view="5866">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>String template as variable name:</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">val i =10
+print("i = $i") //i=10
+fun main(args: Array&lt;String&gt;) {
+    val i =10
+    print("i = $i")//i=10
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPsAPKvROG" id="content1-kc" data-rv-view="5868">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">i=10
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rPsB7lkggd" id="content12-ke" data-rv-view="5870">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>String template as arbitrary expression in curly braces:</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPsBehwl1i" id="content1-kg" data-rv-view="5871">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">String template is also used in arbitrary expression in curly braces to evaluate a string expression. This is done by using dollar sign <strong>$</strong>.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val str = "abc"
+    println("$str is a string which length is ${str.length}")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPsBfDkkvh" id="content1-ki" data-rv-view="5873">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">abc is a string which length is 3
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rPsBpT5HR8" id="content12-kk" data-rv-view="5875">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>String template in raw string:</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val a = 10
+    val b = 5
+
+    val myString = """value $a
+            |is greater than value $b
+        """.trimMargin()
+    println("${myString.trimMargin()}")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPsBtQepPu" id="content1-km" data-rv-view="5877">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">value 10
+is greater than value 5
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPsBKBczXB" id="content1-ko" data-rv-view="5879">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Kotlin String Literals</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPsC1Ih6UQ" id="content1-kr" data-rv-view="5880">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin has two types of string literals:</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content11 cid-rPsBPcIURL" id="content11-kp" data-rv-view="5881">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ol>
+                    <li>Escaped String
+</li><li>Raw String</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPsBVS1M56" id="content12-kq" data-rv-view="5882">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Escaped String</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPsC2OCnYE" id="content1-ks" data-rv-view="5883">
+
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p>Escape String is declared within double quote (" ") and may contain escape characters like <strong>'\n', '\t', '\b' ,'\r','
+
+</strong>etc.</p><p>Here is a list of escape characters supported in Kotlin:</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPv1LB30z7" id="content12-n3" data-rv-view="5884">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>\t</strong> - Inserts tab
+</li><li><strong>\b</strong> - Inserts backspace
+</li><li><strong>\n</strong> - Inserts newline
+</li><li><strong>\r</strong> - Inserts carriage return
+</li><li><strong>\'</strong> - Inserts single quote character
+</li><li><strong>\"</strong> - Inserts double quote character
+</li><li><strong>\\</strong> - Inserts backslash
+</li><li><strong>\$</strong> - Inserts dollar character</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">val text1 ="Hello, ApkZube"
+//or
+val text2 ="Hello, ApkZube\n"
+//or
+val text3 ="Hello, \nApkZube"
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rPsCn7juT2" id="content12-ku" data-rv-view="5886">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Raw String</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPsCq8B0oG" id="content12-kv" data-rv-view="5887">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <div>Row String is declared within <strong>triple quote (""" """).</strong>It provides facility to declare String in new lines and contain multiple lines. Row String cannot contain any escape character.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">val text1 ="""
+             Welcome
+                 To
+            ApkZube
+    """
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPsCxUh3rT" id="content1-kx" data-rv-view="5889">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">While using raw string with new line, it generates a | as margin prefix. For example:</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val text = """Kotlin is official language
+            |announce by Google for
+            |android application development
+        """
+    println(text)
+}
+
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPsCFuh2Gz" id="content1-kz" data-rv-view="5891">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Kotlin is official language
+        |announce by Google for
+        |android application development
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPsCPmoHJZ" id="content1-l2" data-rv-view="5893">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>String trimMargin() function</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPsCUxmyEp" id="content1-l3" data-rv-view="5894">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Leading whitespace can be removed with trimMargin() function. By default, <strong>trimMargin()</strong> function uses | as margin <strong>prefix.
+</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val text = """Kotlin is official language
+            |announce by Google for
+            |android application development
+        """.trimMargin()
+
+    println(text)
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPsCWfolxs" id="content1-l5" data-rv-view="5896">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p>Output:</p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Kotlin is official language
+announce by Google for
+android application development
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPsCWRGQGQ" id="content1-l7" data-rv-view="5898">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">However, it can be change by passing a new string inside <strong>trimMargin()</strong> function.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val text = """Kotlin is official language
+            #announce by Google for
+            #android application development
+        """.trimMargin("#")
+    println(text)
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPsDfQNwHD" id="content1-l9" data-rv-view="5900">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Kotlin is official language
+announce by Google for
+android application development
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPsDql3H0Y" id="content1-lb" data-rv-view="5902">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Kotlin String Equality</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPsDBDGJ8f" id="content1-lg" data-rv-view="5903">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In Kotlin, strings equality comparisons are done on the basis of <strong>structural equality</strong> (==) and <strong>referential equality</strong> (===).
+&nbsp;<span style="font-size: 1rem;">In structural equality two objects have separate instances in memory but contain same value.&nbsp;</span><span style="font-size: 1rem;">Referential equality specifies that two different references point the same instance in memory.</span></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPsDMiwDb5" id="content12-lh" data-rv-view="5904">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Structural equality (==)</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPsDRRpFxX" id="content1-li" data-rv-view="5905">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">To check the two objects containing the same value, we use == operator or != operator for negation. It is equivalent to equals() in java.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val str1 = "Hello, World!"
+    val str2 = "Hello, World!"
+    println(str1==str2) //true
+    println(str1!=str2) //false
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPsDSLRlTu" id="content1-lk" data-rv-view="5907">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">true
+false
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rPsE4Qsd0r" id="content12-lm" data-rv-view="5909">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Referential equality (===)</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPsE7Ls0Vs" id="content1-ln" data-rv-view="5910">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">To check the two different references point to the same instance, we use <strong>===</strong> operator. The <strong>!== </strong>operator is used for negation. <strong>a === b</strong> specifies true if and only if a and b both point to the same object.
+<div>
+</div><div>Let's see an example of referential equality to check different reference contains same instance or not. For creating string we are using a helper method buildString rather than using quotes.</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array<String>) {  
+	val str1 = buildString { "string value" }  
+	val str2 = buildString { "string value" }  
+	println(str1===str2)  
+	println(str1!==str2)  
+}  
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPsEi5EfWe" id="content1-lp" data-rv-view="5912">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">false
+true
+</code></pre></div>
+
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/datatables/jquery.data-tables.min.js"></script>
+  <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

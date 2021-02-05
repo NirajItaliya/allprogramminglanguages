@@ -1,0 +1,54 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #272822; overflow:auto;width:auto;font-size:10px">
+    <table>
+        <tr>
+            <td><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">java.util.Scanner</span><span style="color: #f92672">;</span>
+   <span style="color: #66d9ef">class</span> <span style="color: #a6e22e">JavaExample</span>
+   <span style="color: #f92672">{</span>
+      <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">main</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">String</span><span style="color: #f92672">[</span> <span style="color: #f92672">]</span> <span style="color: #f8f8f2">arg</span><span style="color: #f92672">)</span>
+      <span style="color: #f92672">{</span>
+       <span style="color: #66d9ef">boolean</span> <span style="color: #f8f8f2">isVowel</span><span style="color: #f92672">=</span><span style="color: #66d9ef">false</span><span style="color: #f92672">;;</span>
+       <span style="color: #f8f8f2">Scanner</span> <span style="color: #f8f8f2">scanner</span><span style="color: #f92672">=</span><span style="color: #66d9ef">new</span> <span style="color: #f8f8f2">Scanner</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">in</span><span style="color: #f92672">);</span>
+       <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;Enter a character : &quot;</span><span style="color: #f92672">);</span>
+       <span style="color: #66d9ef">char</span> <span style="color: #f8f8f2">ch</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">scanner</span><span style="color: #f92672">.</span><span style="color: #a6e22e">next</span><span style="color: #f92672">().</span><span style="color: #a6e22e">charAt</span><span style="color: #f92672">(</span><span style="color: #ae81ff">0</span><span style="color: #f92672">);</span> 
+       <span style="color: #f8f8f2">scanner</span><span style="color: #f92672">.</span><span style="color: #a6e22e">close</span><span style="color: #f92672">();</span>
+       <span style="color: #66d9ef">switch</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">ch</span><span style="color: #f92672">)</span>
+       <span style="color: #f92672">{</span>
+          <span style="color: #66d9ef">case</span> <span style="color: #e6db74">&#39;a&#39;</span> <span style="color: #f92672">:</span>
+          <span style="color: #66d9ef">case</span> <span style="color: #e6db74">&#39;e&#39;</span> <span style="color: #f92672">:</span>
+              <span style="color: #66d9ef">case</span> <span style="color: #e6db74">&#39;i&#39;</span> <span style="color: #f92672">:</span>
+          <span style="color: #66d9ef">case</span> <span style="color: #e6db74">&#39;o&#39;</span> <span style="color: #f92672">:</span>
+          <span style="color: #66d9ef">case</span> <span style="color: #e6db74">&#39;u&#39;</span> <span style="color: #f92672">:</span>
+          <span style="color: #66d9ef">case</span> <span style="color: #e6db74">&#39;A&#39;</span> <span style="color: #f92672">:</span>
+          <span style="color: #66d9ef">case</span> <span style="color: #e6db74">&#39;E&#39;</span> <span style="color: #f92672">:</span>
+          <span style="color: #66d9ef">case</span> <span style="color: #e6db74">&#39;I&#39;</span> <span style="color: #f92672">:</span>
+          <span style="color: #66d9ef">case</span> <span style="color: #e6db74">&#39;O&#39;</span> <span style="color: #f92672">:</span>
+          <span style="color: #66d9ef">case</span> <span style="color: #e6db74">&#39;U&#39;</span> <span style="color: #f92672">:</span> <span style="color: #f8f8f2">isVowel</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">true</span><span style="color: #f92672">;</span>
+       <span style="color: #f92672">}</span>
+       <span style="color: #66d9ef">if</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">isVowel</span> <span style="color: #f92672">==</span> <span style="color: #66d9ef">true</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
+          <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">ch</span><span style="color: #f92672">+</span><span style="color: #e6db74">&quot; is  a Vowel&quot;</span><span style="color: #f92672">);</span>
+       <span style="color: #f92672">}</span>
+       <span style="color: #66d9ef">else</span> <span style="color: #f92672">{</span>
+          <span style="color: #66d9ef">if</span><span style="color: #f92672">((</span><span style="color: #f8f8f2">ch</span><span style="color: #f92672">&gt;=</span><span style="color: #e6db74">&#39;a&#39;</span><span style="color: #f92672">&amp;&amp;</span><span style="color: #f8f8f2">ch</span><span style="color: #f92672">&lt;=</span><span style="color: #e6db74">&#39;z&#39;</span><span style="color: #f92672">)||(</span><span style="color: #f8f8f2">ch</span><span style="color: #f92672">&gt;=</span><span style="color: #e6db74">&#39;A&#39;</span><span style="color: #f92672">&amp;&amp;</span><span style="color: #f8f8f2">ch</span><span style="color: #f92672">&lt;=</span><span style="color: #e6db74">&#39;Z&#39;</span><span style="color: #f92672">))</span>
+           <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">ch</span><span style="color: #f92672">+</span><span style="color: #e6db74">&quot; is a Consonant&quot;</span><span style="color: #f92672">);</span>
+          <span style="color: #66d9ef">else</span>
+           <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;Input is not an alphabet&quot;</span><span style="color: #f92672">);</span>		
+           <span style="color: #f92672">}</span>
+      <span style="color: #f92672">}</span>
+   <span style="color: #f92672">}</span>
+   
+   
+   <span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">Output</span> <span style="color: #ae81ff">1</span><span style="color: #f92672">:</span>
+   
+   <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">a</span> <span style="color: #f8f8f2">character</span> <span style="color: #f92672">:</span> 
+   <span style="color: #f8f8f2">A</span>
+   <span style="color: #f8f8f2">A</span> <span style="color: #f8f8f2">is</span>  <span style="color: #f8f8f2">a</span> <span style="color: #f8f8f2">Vowel</span>
+   <span style="color: #f8f8f2">Output</span> <span style="color: #ae81ff">2</span><span style="color: #f92672">:</span>
+   
+   <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">a</span> <span style="color: #f8f8f2">character</span> <span style="color: #f92672">:</span> 
+   <span style="color: #f8f8f2">P</span>
+   <span style="color: #f8f8f2">P</span> <span style="color: #f8f8f2">is</span> <span style="color: #f8f8f2">a</span> <span style="color: #f8f8f2">Consonant</span>
+   </pre></td>
+        </tr>
+    </table>
+</div>

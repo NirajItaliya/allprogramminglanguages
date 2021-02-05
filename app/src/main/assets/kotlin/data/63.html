@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin Ranges
+</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rQ1JAVM63a" id="content1-1e2" data-rv-view="8185">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin Ranges
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/a">site builder</a></section><section class="mbr-section article content1 cid-rQ1JF1CNSV" id="content1-1e3" data-rv-view="8186">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin <strong>range</strong> is defined as an interval from <strong>start value </strong>to the <strong>end value. </strong>Range expressions are created with operator (. .) which is complemented by in and !in. The value which is equal or greater than start value and smaller or equal to end value comes inside the defined range.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">val aToZ = 'a'..'z'
+val oneToNine = 1..9
+</code></pre></div>
+<section class="mbr-section article content1 cid-rQ1JHlDfGh" id="content1-1e5" data-rv-view="8188">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">While evaluating the above code val aToZ = 'a'..'z'as 'a'in aToZ returns true, 'b' in aToZ returns true and so on. The code val oneToNine = 1..9 evaluates as 1 in oneToNine returns true, but the evaluation 10 in oneToNine returns false.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1JThXXqR" id="content1-1e6" data-rv-view="8189">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>1. Integral Type Ranges
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1JWROZB4" id="content1-1e7" data-rv-view="8190">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Integral</strong> type ranges (IntRange, LongRange, CharRange) are the ability to use in for loop. The compiler converts this integral type in simple analogue of Java's index for-loop.
+</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+
+   for (a in 1..5){
+        print(a )
+    }
+    println()
+    for(x in 'a'..'f'){
+            print(x )
+        }
+    println()
+    val range = 1.0..5.0
+    println(range)
+    println("3.14 in range is ${3.14 in range}")
+}
+</code></pre></div>
+<section class="mbr-section article content1 cid-rQ1JXMbZLW" id="content1-1e9" data-rv-view="8192">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">12345
+abcdef
+1.0..5.0
+3.14 in range is true
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1K6gCUqg" id="content1-1eb" data-rv-view="8194">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">What happened when we try to iterate a r range in decreasing order using . . operator ? This will print nothing.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin"> for (a in 5..1){
+        print(a )// print nothing
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1K8pWpNI" id="content1-1ed" data-rv-view="8196">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">To iterate the element in decreasing order, use the standard library downTo() function or downTo keyword.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">for (a in 5 downTo 1){
+        print(a )// 54321
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1KaZshx8" id="content1-1ef" data-rv-view="8198">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>2. until range</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rQ1KbpP3Tb" id="content12-1eg" data-rv-view="8199">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">The <strong>until() </strong>function or until keyword in range is used to exclude the last element. It iterates range from start to 1 less than end.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">for (a in 1 until 5){
+        print(a ) // print 1234
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1KcCbi2f" id="content1-1ei" data-rv-view="8201">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The above range excludes 5 and iterate from 1 to 4.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1Kxvnd2g" id="content1-1ek" data-rv-view="8202">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>3. range of integer
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1KA8b16e" id="content1-1el" data-rv-view="8203">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Let's see an example of integer range using downTo(), downTo, and <strong>rangeTo()</strong> methods.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    for (x in 1..5)
+        print(x)
+    println()
+    for (x in 5 downTo 1)
+        print(x)
+    println()
+    for (x in 1.rangeTo(5))
+        print(x)
+    println()
+    for (x in 5.downTo(1))
+        print(x)
+    println()
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1KAUDcPM" id="content1-1en" data-rv-view="8205">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">12345
+54321
+12345
+54321
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1KQkFi3G" id="content1-1ep" data-rv-view="8207">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>4. range of characters
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1KYvLVL6" id="content1-1eq" data-rv-view="8208">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Example of Kotlin ranges using char data types :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    (x in 'a'..'e')
+    print("$x ")
+    ntln()
+    for (x in 'e' downTo 'a')
+        print("$x ")
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1KZiYPuB" id="content1-1es" data-rv-view="8210">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">a bcde
+edcba
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1L1gYxxP" id="content1-1eu" data-rv-view="8212">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>5. range step
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1L1ER4mY" id="content1-1ev" data-rv-view="8213">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin step keyword in range is used to iterate the range in the interval of given step value (int value).</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+        for (x in 1..10 step 2)
+            print("$x ")
+        println()
+        for (x in 10 downTo 1 step 3)
+            print("$x ")
+    }
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1L2qOZKw" id="content1-1ex" data-rv-view="8215">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">1 3 5 7 9
+10 7 4 1
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1LjVIKMp" id="content1-1ez" data-rv-view="8217">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>6. range iterator</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1LkgJKDa" id="content1-1f0" data-rv-view="8218">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">An <strong>iterator() </strong>method is also be used to iterate the range value. It uses hasNext() method which checks the next element in the range and next() method returns the next element of the range.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+val chars = ('a'..'e')
+val it = chars.iterator()
+    while (it.hasNext()) {
+        val x = it.next()
+        print("$x ")
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1LkXIHnQ" id="content1-1f2" data-rv-view="8220">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">a b c d e
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,512 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Century",serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.alt, li.alt, div.alt
+	{mso-style-name:alt;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.keyword
+	{mso-style-name:keyword;}
+span.comment
+	{mso-style-name:comment;}
+span.number
+	{mso-style-name:number;}
+span.string
+	{mso-style-name:string;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Century",serif;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB link=blue vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'><span
+style='font-size:4.0pt;line-height:200%'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-top:3.75pt;text-align:center;
+line-height:200%;background:white'><span style='font-size:20.0pt;line-height:
+200%;font-family:"Helvetica",sans-serif;color:#610B38'>Wrapper class in Java</span></p>
+
+<p class=MsoNormal align=center style='margin-top:3.75pt;text-align:center;
+line-height:200%;background:white'><span style='font-size:20.0pt;line-height:
+200%;font-family:"Helvetica",sans-serif;color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><b><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:darkslategray'>Wrapper class in java</span></b><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;provides
+the mechanism&nbsp;<i>to convert primitive into object and object into
+primitive</i>.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Since J2SE 5.0,&nbsp;</span><b><span style='font-size:10.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:darkslategray'>autoboxing</span></b><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;and&nbsp;</span><b><span style='font-size:10.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:darkslategray'>unboxing</span></b><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;feature converts primitive into object and object into
+primitive automatically. The automatic conversion of primitive into object is
+known as autoboxing and vice-versa unboxing.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>The eight classes of&nbsp;<i>java.lang</i>&nbsp;package are known
+as wrapper classes in java. The list of eight wrapper classes are given below:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<div align=center>
+
+<table class=MsoTable15Grid4Accent2 border=1 cellspacing=0 cellpadding=0
+ width=283 style='width:212.4pt;border-collapse:collapse;border:none'>
+ <tr style='height:20.9pt'>
+  <td width=132 valign=top style='width:99.0pt;border:solid #ED7D31 1.0pt;
+  border-right:none;background:#ED7D31;padding:0cm 5.4pt 0cm 5.4pt;height:20.9pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:8.0pt;font-family:"Times New Roman",serif;color:black'>Primitive
+  Type</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border:solid #ED7D31 1.0pt;
+  border-left:none;background:#ED7D31;padding:0cm 5.4pt 0cm 5.4pt;height:20.9pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:8.0pt;font-family:"Times New Roman",serif;color:black'>Wrapper
+  class</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.25pt'>
+  <td width=132 valign=top style='width:99.0pt;border:solid #F4B083 1.0pt;
+  border-top:none;background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:21.25pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify'><span
+  style='font-size:8.0pt;font-family:"Verdana",sans-serif;color:black'>boolean</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:21.25pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify'><span
+  style='font-size:8.0pt;font-family:"Verdana",sans-serif;color:black'>Boolean</span></p>
+  </td>
+ </tr>
+ <tr style='height:20.85pt'>
+  <td width=132 valign=top style='width:99.0pt;border:solid #F4B083 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:20.85pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify'><span
+  style='font-size:8.0pt;font-family:"Verdana",sans-serif;color:black'>char</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.85pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify'><span
+  style='font-size:8.0pt;font-family:"Verdana",sans-serif;color:black'>Character</span></p>
+  </td>
+ </tr>
+ <tr style='height:20.4pt'>
+  <td width=132 valign=top style='width:99.0pt;border:solid #F4B083 1.0pt;
+  border-top:none;background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:20.4pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify'><span
+  style='font-size:8.0pt;font-family:"Verdana",sans-serif;color:black'>byte</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:20.4pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify'><span
+  style='font-size:8.0pt;font-family:"Verdana",sans-serif;color:black'>Byte</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.4pt'>
+  <td width=132 valign=top style='width:99.0pt;border:solid #F4B083 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:21.4pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify'><span
+  style='font-size:8.0pt;font-family:"Verdana",sans-serif;color:black'>short</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.4pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify'><span
+  style='font-size:8.0pt;font-family:"Verdana",sans-serif;color:black'>Short</span></p>
+  </td>
+ </tr>
+ <tr style='height:27.45pt'>
+  <td width=132 valign=top style='width:99.0pt;border:solid #F4B083 1.0pt;
+  border-top:none;background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:27.45pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify'><span
+  style='font-size:8.0pt;font-family:"Verdana",sans-serif;color:black'>int</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:27.45pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify'><span
+  style='font-size:8.0pt;font-family:"Verdana",sans-serif;color:black'>Integer</span></p>
+  </td>
+ </tr>
+ <tr style='height:20.05pt'>
+  <td width=132 valign=top style='width:99.0pt;border:solid #F4B083 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:20.05pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify'><span
+  style='font-size:8.0pt;font-family:"Verdana",sans-serif;color:black'>long</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.05pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify'><span
+  style='font-size:8.0pt;font-family:"Verdana",sans-serif;color:black'>Long</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.75pt'>
+  <td width=132 valign=top style='width:99.0pt;border:solid #F4B083 1.0pt;
+  border-top:none;background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:21.75pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify'><span
+  style='font-size:8.0pt;font-family:"Verdana",sans-serif;color:black'>float</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:21.75pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify'><span
+  style='font-size:8.0pt;font-family:"Verdana",sans-serif;color:black'>Float</span></p>
+  </td>
+ </tr>
+ <tr style='height:20.6pt'>
+  <td width=132 valign=top style='width:99.0pt;border:solid #F4B083 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:20.6pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify'><span
+  style='font-size:8.0pt;font-family:"Verdana",sans-serif;color:black'>double</span></p>
+  </td>
+  <td width=151 valign=top style='width:4.0cm;border-top:none;border-left:none;
+  border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.6pt'>
+  <p class=MsoNormal style='margin-left:15.0pt;text-align:justify'><span
+  style='font-size:8.0pt;font-family:"Verdana",sans-serif;color:black'>Double</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:19.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:19.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>Wrapper class Example: Primitive to Wrapper</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:white'>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><b><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>public</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>class</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;WrapperExample1{&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><b><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>public</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>static</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>void</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;main(String&nbsp;args[]){&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#008200'>//Converting&nbsp;int&nbsp;into&nbsp;Integer</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><b><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>int</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;a=</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#C00000'>20</span><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Integer&nbsp;i=Integer.valueOf(a);</span><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:#008200'>//converting&nbsp;int&nbsp;into&nbsp;Integer</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Integer&nbsp;j=a;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#008200'>//autoboxing,&nbsp;now&nbsp;compiler&nbsp;will&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#008200'>   write&nbsp;Integer.valueOf(a)&nbsp;internally</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>System.out.println(a+</span><span style='line-height:200%;
+font-family:"Verdana",sans-serif;color:blue'>&quot;&nbsp;&quot;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>+i+</span><span style='line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;&nbsp;&quot;</span><span style='font-size:9.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:black'>+j);&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:white;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>}}&nbsp;&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Output:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Courier New";color:black'>20
+20 20</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:19.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>Wrapper class Example: Wrapper to Primitive</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Helvetica",sans-serif;
+color:#610B38'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:white'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>public</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>class</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;WrapperExample2{&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>public</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>static</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>void</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;main(String&nbsp;args[]){&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>//Converting&nbsp;Integer&nbsp;to&nbsp;int&nbsp;&nbsp;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>Integer&nbsp;a=</span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#006699'>new</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;Integer(</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#C00000'>3</span><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>);&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>int</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;i=a.intValue();</span><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#008200'>//converting&nbsp;Integer&nbsp;to&nbsp;int</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#006699'>int</span></b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;j=a;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>//unboxing,&nbsp;now&nbsp;compiler</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:#008200'>  &nbsp;will&nbsp;write&nbsp;a.intValue()&nbsp;internally&nbsp;&nbsp;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>System.out.println(a+</span><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:blue'>&quot;&nbsp;&quot;</span><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>+i+</span><span style='line-height:200%;font-family:"Verdana",sans-serif;
+color:blue'>&quot;&nbsp;&quot;</span><span style='font-size:9.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:black'>+j);&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>}}&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:white'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Output:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F9FBF9'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Courier New";color:black'>3
+3 3</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

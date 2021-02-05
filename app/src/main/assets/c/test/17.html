@@ -1,0 +1,47 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic"> * C Program to Add two Complex Numbers</span>
+    <span style="color: #999999; font-style: italic"> */</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdio.h&gt;</span>
+     
+    <span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">complex</span>
+    <span style="color: #d0d0d0">{</span>
+       <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">realpart,</span> <span style="color: #d0d0d0">imaginary;</span>
+    <span style="color: #d0d0d0">};</span>
+     
+    <span style="color: #d0d0d0">main()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">struct</span> <span style="color: #d0d0d0">complex</span> <span style="color: #d0d0d0">a,</span> <span style="color: #d0d0d0">b,</span> <span style="color: #d0d0d0">c;</span>
+     
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter value of a and b complex number a + ib.\n&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;value of complex number a is = &quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;a.realpart);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;value of complex number b is = &quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;a.imaginary);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter value of c and d complex number c + id.\n&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;value of complex number c is = &quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;b.realpart);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;value of complex number d is = &quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;b.imaginary);</span>
+        <span style="color: #d0d0d0">c.realpart</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">a.realpart</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">b.realpart;</span>
+        <span style="color: #d0d0d0">c.imaginary</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">a.imaginary</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">b.imaginary;</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(c.imaginary</span> <span style="color: #d0d0d0">&gt;=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">)</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;complex numbers sum is = %d + %di\n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">c.realpart,</span> <span style="color: #d0d0d0">c.imaginary);</span>
+        <span style="color: #6ab825; font-weight: bold">else</span>
+            <span style="color: #447fcf">printf</span><span style="color: #d0d0d0">(</span><span style="color: #ed9d13">&quot;complex numbers sum = %d %di\n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">c.realpart,</span> <span style="color: #d0d0d0">c.imaginary);</span>
+        <span style="color: #6ab825; font-weight: bold">return</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #d0d0d0">}</span>
+    
+    
+    
+    <span style="color: #d0d0d0">&gt;&gt;Output</span> <span style="color: #d0d0d0">:</span>
+    <span style="color: #a61717; background-color: #e3d2d2">$</span> <span style="color: #d0d0d0">cc</span> <span style="color: #d0d0d0">pgm55.c</span>
+    <span style="color: #a61717; background-color: #e3d2d2">$</span> <span style="color: #d0d0d0">a.out</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">value</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">a</span> <span style="color: #d0d0d0">and</span> <span style="color: #d0d0d0">b</span> <span style="color: #d0d0d0">complex</span> <span style="color: #d0d0d0">number</span> <span style="color: #d0d0d0">a</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">ib.</span>
+    <span style="color: #d0d0d0">value</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">complex</span> <span style="color: #d0d0d0">number</span> <span style="color: #d0d0d0">a</span> <span style="color: #d0d0d0">is</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">10</span>
+    <span style="color: #d0d0d0">value</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">complex</span> <span style="color: #d0d0d0">number</span> <span style="color: #d0d0d0">b</span> <span style="color: #d0d0d0">is</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">12</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">value</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">c</span> <span style="color: #d0d0d0">and</span> <span style="color: #d0d0d0">d</span> <span style="color: #d0d0d0">complex</span> <span style="color: #d0d0d0">number</span> <span style="color: #d0d0d0">c</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">id.</span>
+    <span style="color: #d0d0d0">value</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">complex</span> <span style="color: #d0d0d0">number</span> <span style="color: #d0d0d0">c</span> <span style="color: #d0d0d0">is</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">15</span>
+    <span style="color: #d0d0d0">value</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">complex</span> <span style="color: #d0d0d0">number</span> <span style="color: #d0d0d0">d</span> <span style="color: #d0d0d0">is</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">22</span>
+    <span style="color: #d0d0d0">complex</span> <span style="color: #d0d0d0">numbers</span> <span style="color: #d0d0d0">sum</span> <span style="color: #d0d0d0">is</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">25</span> <span style="color: #d0d0d0">+</span> <span style="color: #3677a9">34</span><span style="color: #d0d0d0">i</span>
+    </pre></div>

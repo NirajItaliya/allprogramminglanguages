@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Extension Function</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rQ1BW76SJy" id="content1-1ci" data-rv-view="8131">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Extension Function</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/m">bootstrap table</a></section><section class="mbr-section article content1 cid-rQ1C0LPLls" id="content1-1cj" data-rv-view="8132">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin extension function provides a facility to <strong>"add"</strong> methods to class without inheriting a class or using any type of design pattern. The created extension functions are used as a regular function inside that class.
+<div>
+</div><div>The extension function is declared with a <strong>prefix</strong> <strong>receiver</strong> <strong>type</strong> with method name.</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun &lt;class_name&gt;.&lt;method_name&gt;()
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1Cen6SIE" id="content1-1cl" data-rv-view="8134">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In the above declaration, &lt;class_name&gt; is a receiver type and the &lt;method_name&gt;() is an extension function.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rQ1CfOL0Kv" id="content12-1cm" data-rv-view="8135">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example of extension function declaration and its use :</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1CsnOnJ2" id="content1-1cn" data-rv-view="8136">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In general, we call all methods from outside the class which are already defined inside the class.In below example, a Student class declares a method is <strong>Passed() </strong>which is called from <strong>main()</strong> function by creating the object student of Student class.
+<div>
+</div><div>Suppose that we want to call a method (say isExcellent()) of Student class which is not defined in class. In such situation, we create a function (isExcellent()) outside the Student class as Student.isExcellent() and call it from the main() function. The declare Student.isExcellent() function is known as extension function, where Student class is known as receiver type.</div></div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">class Student{
+    fun isPassed(mark: Int): Boolean{
+        return mark>40
+    }
+}
+    fun Student.isExcellent(mark: Int): Boolean{
+        return mark > 90
+    }
+    fun main(args: Array&lt;String&gt;){
+        val student = Student()
+        val passingStatus = student.isPassed(55)
+        println("student passing status is $passingStatus")
+
+        val excellentStatus = student.isExcellent(95)
+        println("student excellent status is $excellentStatus")
+    }
+</code></pre></div>
+<section class="mbr-section article content1 cid-rQ1CC8Zi0c" id="content1-1cp" data-rv-view="8138">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">student passing status is true
+student excellent status is true
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1CLBLoN2" id="content1-1cr" data-rv-view="8140">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The above example only demonstrates about how to declare an extension function.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rQ1CQd0PXD" id="content12-1cs" data-rv-view="8141">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>extension function example :</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1CVbD3Ii" id="content1-1ct" data-rv-view="8142">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Let's see the real example of extension function. In this example, we are swapping the elements of <strong>MutableList&lt;&gt;</strong> using <strong>swap() </strong>method. However, MutableList&lt;&gt;class does not provide the swap() method internally which swap the elements of it. For doing this we create an extension function for MutableList&lt;&gt; with swap() function.
+<div>
+</div><div>The list object call the extension function (MutableList&lt;Int&gt;.swap(index1: Int, index2: Int):MutableList&lt;Int&gt;) using list.swap(0,2) function call. The swap(0,2) function pass the index value of list inside MutableList&lt;Int&gt;.swap(index1: Int, index2: Int):MutableList&lt;Int&gt;) sxtension function.</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun MutableList&lt;Int&gt;.swap(index1: Int, index2: Int):MutableList&lt;Int&gt; {
+val tmp = this[index1] // 'this' represents to the list
+    this[index1] = this[index2]
+    this[index2] = tmp
+    return this
+}
+fun main(args: Array&lt;String&gt;) {
+    val list = mutableListOf(5,10,15)
+    println("before swapping the list :$list")
+    val result = list.swap(0, 2)
+    println("after swapping the list :$result")
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1CWuJqlg" id="content1-1cv" data-rv-view="8144">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">before swapping the list :[5, 10, 15]
+after swapping the list :[15, 10, 5]
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1D9u2hba" id="content1-1cx" data-rv-view="8146">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Extension Function as Nullable Receiver</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1DdFXJiI" id="content1-1cy" data-rv-view="8147">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The extension function can be defined as nullable receiver type. This nullable extension function is called through object variable even the object value is null. The nullability of object is checked using <strong>this == null </strong>inside the body.
+<div>
+</div><div>Let's rewrite the above program using extension function as nullable receiver.</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">funMutableList&lt;Int&gt;?.swap(index1: Int, index2: Int): Any {
+    if (this == null) return "null"
+    else {
+        val tmp = this[index1] // 'this' represents to the list
+        this[index1] = this[index2]
+        this[index2] = tmp
+        return this
+    }
+}
+fun main(args: Array&lt;String&gt;) {
+    val list = mutableListOf(5,10,15)
+    println("before swapping the list :$list")
+    val result = list.swap(0, 2)
+    println("after swapping the list :$result")
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1DgDX7hA" id="content1-1d0" data-rv-view="8149">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">before swapping the list :[5, 10, 15]
+after swapping the list :[15, 10, 5]
+</code></pre></div>
+<section class="mbr-section article content1 cid-rQ1DrenrSw" id="content1-1d2" data-rv-view="8151">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Companion Object Extensions
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1Dx8GlEp" id="content1-1d3" data-rv-view="8152">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">A companion object is an object which is declared inside a class and marked with the companion keyword. Companion object is used to call the member function of class directly using the class name (like static in java).
+<div>
+</div><div>A class which contains companion object can also be defined as extension function and property for the companion object.</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rQ1DGMuBtI" id="content12-1d4" data-rv-view="8153">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example of companion object
+ : </strong>In this example, we call a create() function declared inside companion object using class name (MyClass) as qualifier.
+</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">class MyClass {
+    companion object {
+        fun create():String{
+            return "calls create method of companion object"
+        }
+    }
+}
+fun main(args: Array&lt;String&gt;){
+val instance = MyClass.create()
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1DIyLCNI" id="content1-1d6" data-rv-view="8155">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">calls create method of companion object
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rQ1DV3pWJF" id="content12-1d8" data-rv-view="8157">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Companion object extensions example
+ :&nbsp;</strong>Let's see an example of companion object extensions. The companion object extension is also being called using the class name as the qualifier.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">class MyClass {
+    companion object {
+        fun create(): String {
+            return "calling create method of companion object"
+        }
+    }
+}
+fun MyClass.Companion.helloWorld() {
+    println("executing extension of companion object")
+}
+fun main(args: Array&lt;String&gt;) {
+    MyClass.helloWorld() //extension function declared upon the companion object
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1DVPKZBT" id="content1-1d9" data-rv-view="8159">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">executing extension of companion object
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

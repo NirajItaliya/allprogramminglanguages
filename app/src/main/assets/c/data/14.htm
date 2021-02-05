@@ -1,0 +1,1635 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Verdana",sans-serif;
+	color:black;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:7.1pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB>
+
+<div class=WordSection1>
+
+<h1 align=center style='text-align:center;line-height:150%'>14. ARRAYS</h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'>&nbsp;</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Arrays a kind of data structure that
+can store a fixed-size sequential collection of elements of the same type. An
+array is used to store a collection of data, but it is often more useful to
+think of an array as a collection of variables of the same type. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Instead of declaring individual
+variables, such as number0, number1, ..., and number99, you declare one array
+variable such as numbers and use numbers[0], numbers[1], and ..., numbers[99]
+to represent individual variables. A specific element in an array is accessed
+by an index. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>All arrays consist of contiguous
+memory locations. The lowest address corresponds to the first element and the
+highest address to the last element.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'><img width=284 height=68 id="Picture 1"
+src="14_files/image001.png"></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-size:18.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>Declaring Arrays</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>To declare an array in C, a programmer
+specifies the type of the elements and the number of elements required by an
+array as follows:</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>type arrayName [
+arraySize ];</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>This is called a single-dimensional
+array. The arraySize must be an integer constant greater than zero and type can
+be any valid C data type. For example, to declare a 10-element array called
+balance of type double, use this statement:</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>double balance[10];</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Here, balance is a variable array
+which is sufficient to hold up to 10 double numbers.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-size:18.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>Initializing
+Arrays</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>You can initialize an array in C
+either one by one or using a single statement as follows:</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>double balance[5] =
+{1000.0, 2.0, 3.4, 7.0, 50.0};</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The number of values between braces {
+} cannot be larger than the number of elements that we declare for the array
+between square brackets [ ]. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>If you omit the size of the array, an
+array just big enough to hold the initialization is created. Therefore, if you
+write: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>double balance[] =
+{1000.0, 2.0, 3.4, 7.0, 50.0}; </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>You will create exactly the same array
+as you did in the previous example. Following is an example to assign a single
+element of the array: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>balance[4] = 50.0; </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The above statement assigns the 5th
+element in the array with a value of 50.0. All arrays have 0 as the index of
+their first element which is also called the base index and the last index of
+an array will be total size of the array minus 1. Shown below is the pictorial
+representation of the array we discussed above:<br>
+<br>
+</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'><img width=264 height=37 id="Picture 2"
+src="14_files/image002.png"></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span style='font-size:18.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>Accessing Array
+Elements</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>An element is accessed by indexing the
+array name. This is done by placing the index of the element within square
+brackets after the name of the array. For example: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>double salary =
+balance[9]; </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The above statement will take the 10th
+element from the array and assign the value to salary variable. The following
+example shows how to use all the three above-mentioned concepts viz.
+declaration, assignment, and accessing arrays: </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;stdio.h&gt; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int main () </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int n[ 10 ]; /* n is an
+array of 10 integers */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int i,j; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* initialize elements of
+array n to 0 */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>for ( i = 0; i &lt; 10; i++
+) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* output each array
+element's value */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>for (j = 0; j &lt; 10; j++
+) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf(&quot;Element[%d] =
+%d\n&quot;, j, n[j] ); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>return 0; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>When
+the above code is compiled and executed, it produces the following result: </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>Element[0] = 100 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>Element[1] = 101 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>Element[2] = 102 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>Element[3] = 103 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>Element[4] = 104 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>Element[5] = 105 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>Element[6] = 106 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>Element[7] = 107 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>Element[8] = 108 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>Element[9] = 109</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><b><span style='font-size:18.0pt;line-height:150%;
+font-family:"Book Antiqua",serif;color:red'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%'><b><span style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>Arrays in Detail</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>Arrays
+are important to C and should need a lot more attention. The following important
+concepts related to array should be clear to a C programmer:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div align=center>
+
+<table class=MsoTable15Grid4Accent2 border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:4.15pt'>
+  <td width=179 valign=top style='width:134.6pt;border:solid #ED7D31 1.0pt;
+  border-right:none;background:#ED7D31;padding:0cm 5.4pt 0cm 5.4pt;height:4.15pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-family:"Book Antiqua",serif;
+  color:white'>&nbsp;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-family:"Book Antiqua",serif;
+  color:white'>Concept</span></b></p>
+  </td>
+  <td width=179 valign=top style='width:134.6pt;border:solid #ED7D31 1.0pt;
+  border-left:none;background:#ED7D31;padding:0cm 5.4pt 0cm 5.4pt;height:4.15pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><span style='font-family:"Book Antiqua",serif;
+  color:white'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-family:"Book Antiqua",serif;
+  color:white'>Description</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:15.4pt'>
+  <td width=179 valign=top style='width:134.6pt;border:solid #F4B083 1.0pt;
+  border-top:none;background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:15.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-family:"Book Antiqua",serif'>Multidimensional
+  arrays </span></b></p>
+  </td>
+  <td width=179 valign=top style='width:134.6pt;border-top:none;border-left:
+  none;border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:15.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>C
+  supports multidimensional arrays. The simplest form of the multidimensional
+  array is the two-dimensional array. </span></p>
+  </td>
+ </tr>
+ <tr style='height:4.15pt'>
+  <td width=179 valign=top style='width:134.6pt;border:solid #F4B083 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:4.15pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-family:"Book Antiqua",serif'>Passing
+  arrays to functions </span></b></p>
+  </td>
+  <td width=179 valign=top style='width:134.6pt;border-top:none;border-left:
+  none;border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:4.15pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>You
+  can pass to the function a pointer to an </span>array by specifying the
+  array's name without an index. </p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:4.15pt'>
+  <td width=179 valign=top style='width:134.6pt;border:solid #F4B083 1.0pt;
+  border-top:none;background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:4.15pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-family:"Book Antiqua",serif'>Return
+  array from a function </span></b></p>
+  </td>
+  <td width=179 valign=top style='width:134.6pt;border-top:none;border-left:
+  none;border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  background:#FBE4D5;padding:0cm 5.4pt 0cm 5.4pt;height:4.15pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>C
+  allows a function to return an array. </span></p>
+  </td>
+ </tr>
+ <tr style='height:4.15pt'>
+  <td width=179 valign=top style='width:134.6pt;border:solid #F4B083 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:4.15pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-family:"Book Antiqua",serif'>Pointer
+  to an array </span></b></p>
+  </td>
+  <td width=179 valign=top style='width:134.6pt;border-top:none;border-left:
+  none;border-bottom:solid #F4B083 1.0pt;border-right:solid #F4B083 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:4.15pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>You
+  can generate a pointer to the first element of an array by simply specifying
+  the array name, without any index. </span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span style='font-size:18.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>Multidimensional
+Arrays</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>C programming language allows
+multidimensional arrays. Here is the general form of a multidimensional array
+declaration: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>type
+name[size1][size2]...[sizeN]; </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>For example, the following declaration
+creates a three-dimensional integer array: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>int
+threedim[5][10][4]; </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span style='font-size:18.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>Two-dimensional
+Arrays</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The simplest form of multidimensional
+array is the two-dimensional array. A two-dimensional array is, in essence, a
+list of one-dimensional arrays. To declare a two-dimensional integer array of
+size [x][y], you would write something as follows: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>type arrayName [ x
+][ y ]; </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Where <b>type </b>can be any valid C
+data type and <b>arrayName </b>will be a valid C identifier. A two-dimensional
+array can be considered as a table which will have x number of rows and y
+number of columns. A two-dimensional array <b>a</b>, which contains three rows
+and four columns can be shown as follows:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'><img width=277 height=80 id="Picture 3"
+src="14_files/image003.png"></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Thus, every element in the array <b>a </b>is
+identified by an element name of the form <b>a[ i ][ j ]</b>, where ‘a’ is the
+name of the array, and ‘i' and ‘j’ are the subscripts that uniquely identify
+each element in ‘a’.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span style='font-size:14.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>Initializing
+Two-Dimensional Arrays</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Multidimensional arrays may be
+initialized by specifying bracketed values for each row. Following is an array
+with 3 rows and each row has 4 columns. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>int a[3][4] = { </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>{0, 1, 2, 3} , /* initializers for row indexed by 0 */ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>{4, 5, 6, 7} , /* initializers for row indexed by 1 */ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>{8, 9, 10, 11} /* initializers for row indexed by 2 */ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>}; </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The nested braces, which indicate the
+intended row, are optional. The following initialization is equivalent to the
+previous example: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>int a[3][4] =
+{0,1,2,3,4,5,6,7,8,9,10,11}; </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span style='font-size:14.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>Accessing
+Two-Dimensional Array Elements</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>An element in a two-dimensional array
+is accessed by using the subscripts, i.e., row index and column index of the
+array. For example: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>int val = a[2][3]; </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The above statement will take the 4th
+element from the 3rd row of the array. You can verify it in the above figure.
+Let us check the following program where we have used a nested loop to handle a
+two-dimensional array: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;stdio.h&gt; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int main () </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* an array with 5 rows
+and 2 columns*/ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int a[5][2] = { {0,0},
+{1,2}, {2,4}, {3,6},{4,8}}; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int i, j; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* output each array
+element's value */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>for ( i = 0; i &lt; 5; i++
+) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>for ( j = 0; j &lt; 2; j++
+) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf(&quot;a[%d][%d] =
+%d\n&quot;, i,j, a[i][j] );</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>return 0; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When the above code is compiled and
+executed, it produces the following result: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>a[0][0]: 0 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>a[0][1]: 0 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>a[1][0]: 1 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>a[1][1]: 2 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>a[2][0]: 2 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>a[2][1]: 4 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>a[3][0]: 3 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>a[3][1]: 6 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>a[4][0]: 4 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>a[4][1]: 8 </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>As explained above, you can have
+arrays with any number of dimensions, although it is likely that most of the
+arrays you create will be of one or two dimensions. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span style='font-size:18.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>Passing Arrays to
+Functions</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>If you want to pass a single-dimension
+array as an argument in a function, you would have to declare a formal
+parameter in one of following three ways and all three declaration methods
+produce similar results because each tells the compiler that an integer pointer
+is going to be received. Similarly, you can pass multi-dimensional arrays as
+formal parameters. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>Way-1 </span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Formal parameters as a pointer: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>void myFunction(int
+*param) </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>{ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>Way-2 </span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Formal parameters as a sized array: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>void myFunction(int
+param[10]) </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>{ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>Way-3 </span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Formal parameters as an unsized array:
+</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>void myFunction(int
+param[]) </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>{ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>Example </span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Now, consider the following function,
+which takes an array as an argument along with another argument and based on
+the passed arguments, it returns the average of the numbers passed through the
+array as follows: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>double getAverage(int
+arr[], int size) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int i; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>double avg; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>double sum; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>for (i = 0; i &lt; size;
+++i) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>sum += arr[i]; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>avg = sum / size; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>return avg; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>Now, let us call the above
+function as follows: </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;stdio.h&gt; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* function declaration */
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>double getAverage(int
+arr[], int size); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int main () </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* an int array with 5
+elements */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int balance[5] = {1000, 2,
+3, 17, 50}; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>double avg; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* pass pointer to the
+array as an argument */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>avg = getAverage( balance,
+5 ) ; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* output the returned
+value */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;Average
+value is: %f &quot;, avg ); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>return 0; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When the above code is compiled
+together and executed, it produces the following result: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Average value is:
+214.400000 </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>As you can see, the length of the
+array doesn't matter as far as the function is concerned because C performs no
+bounds checking for formal parameters. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span style='font-size:18.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>Return Array froma
+Function</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>C programming does not allow to return
+an entire array as an argument to a function. However, you can return a pointer
+to an array by specifying the array's name without an index.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>If you want to return a
+single-dimension array from a function, you would have to declare a function
+returning a pointer as in the following example:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'> </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>int * myFunction() </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>{ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:white'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Second point to remember is that C
+does not advocate to return the address of a local variable to outside of the
+function, so you would have to define the local variable as <b>static </b>variable.
+</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Now, consider the following function
+which will generate 10 random numbers and return them using an array and call
+this function as follows: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;stdio.h&gt; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* function to generate
+and return random numbers */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int * getRandom( ) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>static int r[10]; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int i; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* set the seed */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>srand( (unsigned)time(
+NULL ) ); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>for ( i = 0; i &lt; 10;
+++i) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>r[i] = rand(); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;r[%d] =
+%d\n&quot;, i, r[i]); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>return r; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* main function to call
+above defined function */</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int main () </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* a pointer to an int */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int *p; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int i; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>p = getRandom(); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>for ( i = 0; i &lt; 10;
+i++ ) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;*(p + %d) :
+%d\n&quot;, i, *(p + i)); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>return 0; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When the above code is compiled
+together and executed, it produces the following result: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>r[0] = 313959809 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>r[1] = 1759055877 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>r[2] = 1113101911 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>r[3] = 2133832223 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>r[4] = 2073354073 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>r[5] = 167288147 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>r[6] = 1827471542 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>r[7] = 834791014 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>r[8] = 1901409888 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>r[9] = 1990469526 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>*(p + 0) :
+313959809 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>*(p + 1) :
+1759055877 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>*(p + 2) :
+1113101911 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>*(p + 3) :
+2133832223 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>*(p + 4) :
+2073354073 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>*(p + 5) :
+167288147 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>*(p + 6) :
+1827471542</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>*(p + 7) :
+834791014 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>*(p + 8) :
+1901409888 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>*(p + 9) :
+1990469526 </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span style='font-size:18.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>Pointer to an
+Array</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>It is most likely that you would not
+understand this section until you are through with the chapter ‘Pointers’. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Assuming you have some understanding
+of pointers in C, let us start: An array name is a constant pointer to the
+first element of the array. Therefore, in the declaration: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>double balance[50];
+</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>balance </span></b><span
+style='font-family:"Book Antiqua",serif'>is a pointer to &amp;balance[0], which
+is the address of the first element of the array balance. Thus, the following
+program fragment assigns <b>p </b>as the address of the first element of <b>balance</b>:
+</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>double *p; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>double balance[10];
+</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>p = balance; </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>It is legal to use array names as
+constant pointers, and vice versa. Therefore, *(balance + 4) is a legitimate
+way of accessing the data at balance[4]. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Once you store the address of the
+first element in ‘p’, you can access the array elements using *p, *(p+1),
+*(p+2), and so on. Given below is the example to show all the concepts
+discussed above: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>#include &lt;stdio.h&gt; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int main () </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* an array with 5
+elements */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>double balance[5] =
+{1000.0, 2.0, 3.4, 17.0, 50.0}; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>double *p; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>int i; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>p = balance;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>/* output each array
+element's value */ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;Array values
+using pointer\n&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>for ( i = 0; i &lt; 5; i++
+) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf(&quot;*(p + %d) :
+%f\n&quot;, i, *(p + i) ); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf( &quot;Array values
+using balance as address\n&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>for ( i = 0; i &lt; 5; i++
+) </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>printf(&quot;*(balance +
+%d) : %f\n&quot;, i, *(balance + i) ); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>return 0; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:white'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When the above code is compiled and
+executed, it produces the following result: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Array values using
+pointer </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>*(p + 0) :
+1000.000000 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>*(p + 1) : 2.000000
+</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>*(p + 2) : 3.400000
+</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>*(p + 3) :
+17.000000 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>*(p + 4) :
+50.000000 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>Array values using
+balance as address </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>*(balance + 0) :
+1000.000000 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>*(balance + 1) :
+2.000000 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>*(balance + 2) :
+3.400000 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>*(balance + 3) :
+17.000000 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>*(balance + 4) :
+50.000000 </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>In the above example, p is a pointer
+to double, which means it can store the address of a variable of double type.
+Once we have the address in p, <b>*p </b>will give us the value available at
+the address stored in p, as we have shown in the above example.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

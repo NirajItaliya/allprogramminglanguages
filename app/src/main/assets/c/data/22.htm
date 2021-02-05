@@ -1,0 +1,594 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Verdana",sans-serif;
+	color:black;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:14.2pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB>
+
+<div class=WordSection1>
+
+<h1 align=center style='text-align:center;line-height:150%'>22. FILE I/O</h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'>&nbsp;</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The last chapter explained the
+standard input and output devices handled by C programming language. This
+chapter covers how C programmers can create, open, close text or binary files
+for their data storage. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>A file represents a sequence of bytes,
+regardless of it being a text file or a binary file. C programming language
+provides access on high-level functions as well as low-level (OS level) calls
+to handle file on your storage devices. This chapter will take you through the
+important calls for file management. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>Opening Files</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>You can use the <b>fopen( ) </b>function
+to create a new file or to open an existing file. This call will initialize an
+object of the type <b>FILE</b>, which contains all the information necessary to
+control the stream. The prototype of this function call is as follows: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif;color:#00B0F0'>FILE
+*fopen( const char * filename, const char * mode ); </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Here, <b>filename </b>is a string
+literal, which you will use to name your file, and access <b>mode </b>can have
+one of the following values:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div align=center>
+
+<table class=MsoTable15Grid5DarkAccent1 border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:5.05pt'>
+  <td width=56 valign=top style='width:42.3pt;border:solid white 1.0pt;
+  border-right:none;background:#4472C4;padding:0cm 5.4pt 0cm 5.4pt;height:5.05pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:150%'><b><span style='font-family:"Book Antiqua",serif;
+  color:white'>Mode</span></b></p>
+  </td>
+  <td width=244 valign=top style='width:182.75pt;border:solid white 1.0pt;
+  border-left:none;background:#4472C4;padding:0cm 5.4pt 0cm 5.4pt;height:5.05pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:150%'><b><span style='font-family:"Book Antiqua",serif;
+  color:white'>Description</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:5.05pt'>
+  <td width=56 valign=top style='width:42.3pt;border:solid white 1.0pt;
+  border-top:none;background:#4472C4;padding:0cm 5.4pt 0cm 5.4pt;height:5.05pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-size:9.0pt;line-height:150%;
+  font-family:"Book Antiqua",serif;color:white'>r </span></b></p>
+  </td>
+  <td width=244 valign=top style='width:182.75pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#B4C6E7;padding:0cm 5.4pt 0cm 5.4pt;height:5.05pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><span style='font-size:9.0pt;line-height:150%;
+  font-family:"Book Antiqua",serif'>Opens an existing text file for reading
+  purpose. </span></p>
+  </td>
+ </tr>
+ <tr style='height:18.8pt'>
+  <td width=56 valign=top style='width:42.3pt;border:solid white 1.0pt;
+  border-top:none;background:#4472C4;padding:0cm 5.4pt 0cm 5.4pt;height:18.8pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-size:9.0pt;line-height:150%;
+  font-family:"Book Antiqua",serif;color:white'>w </span></b></p>
+  </td>
+  <td width=244 valign=top style='width:182.75pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt;height:18.8pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><span style='font-size:9.0pt;line-height:150%;
+  font-family:"Book Antiqua",serif'>Opens a text file for writing. If it does
+  not exist, then a new file is created. Here your program will start writing
+  content from the beginning of the file. </span></p>
+  </td>
+ </tr>
+ <tr style='height:18.8pt'>
+  <td width=56 valign=top style='width:42.3pt;border:solid white 1.0pt;
+  border-top:none;background:#4472C4;padding:0cm 5.4pt 0cm 5.4pt;height:18.8pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-size:9.0pt;line-height:150%;
+  font-family:"Book Antiqua",serif;color:white'>a </span></b></p>
+  </td>
+  <td width=244 valign=top style='width:182.75pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#B4C6E7;padding:0cm 5.4pt 0cm 5.4pt;height:18.8pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><span style='font-size:9.0pt;line-height:150%;
+  font-family:"Book Antiqua",serif'>Opens a text file for writing in appending
+  mode. If it does not exist, then a new file is created. Here your program
+  will start appending content in the existing file content. </span></p>
+  </td>
+ </tr>
+ <tr style='height:5.05pt'>
+  <td width=56 valign=top style='width:42.3pt;border:solid white 1.0pt;
+  border-top:none;background:#4472C4;padding:0cm 5.4pt 0cm 5.4pt;height:5.05pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-size:9.0pt;line-height:150%;
+  font-family:"Book Antiqua",serif;color:white'>r+ </span></b></p>
+  </td>
+  <td width=244 valign=top style='width:182.75pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt;height:5.05pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><span style='font-size:9.0pt;line-height:150%;
+  font-family:"Book Antiqua",serif'>Opens a text file for both reading and
+  writing. </span></p>
+  </td>
+ </tr>
+ <tr style='height:11.9pt'>
+  <td width=56 valign=top style='width:42.3pt;border:solid white 1.0pt;
+  border-top:none;background:#4472C4;padding:0cm 5.4pt 0cm 5.4pt;height:11.9pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-size:9.0pt;line-height:150%;
+  font-family:"Book Antiqua",serif;color:white'>w+ </span></b></p>
+  </td>
+  <td width=244 valign=top style='width:182.75pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#B4C6E7;padding:0cm 5.4pt 0cm 5.4pt;height:11.9pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><span style='font-size:9.0pt;line-height:150%;
+  font-family:"Book Antiqua",serif'>Opens a text file for both reading and
+  writing. It first truncates the file to zero length if it exists, otherwise
+  creates a file if it does not exist. </span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><span style='font-size:9.0pt;line-height:150%;
+  font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:11.9pt'>
+  <td width=56 valign=top style='width:42.3pt;border:solid white 1.0pt;
+  border-top:none;background:#4472C4;padding:0cm 5.4pt 0cm 5.4pt;height:11.9pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-size:9.0pt;line-height:150%;
+  font-family:"Book Antiqua",serif;color:white'>a+ </span></b></p>
+  </td>
+  <td width=244 valign=top style='width:182.75pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#D9E2F3;padding:0cm 5.4pt 0cm 5.4pt;height:11.9pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><span style='font-size:9.0pt;line-height:150%;
+  font-family:"Book Antiqua",serif'>Opens a text file for both reading and
+  writing. It creates the file if it does not exist. The reading will start
+  from the beginning but writing can only be appended. </span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>If you are going to handle binary
+files, then you will use the following access modes instead of the
+above-mentioned ones: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><b><span style='font-family:"Book Antiqua",serif;color:#00B0F0'>&quot;rb&quot;,
+&quot;wb&quot;, &quot;ab&quot;, &quot;rb+&quot;, &quot;r+b&quot;,
+&quot;wb+&quot;, &quot;w+b&quot;, &quot;ab+&quot;, &quot;a+b&quot; </span></b></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>Closing a File</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>To close a file, use the fclose( )
+function. The prototype of this function is: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif;color:#00B0F0'>int
+fclose( FILE *fp ); </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The <b>fclose() </b>function returns
+zero on success, or <b>EOF </b>if there is an error in closing the file. This
+function actually flushes any data still pending in the buffer to the file,
+closes the file, and releases any memory used for the file. The EOF is a
+constant defined in the header file <b>stdio.h</b>. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>There are various functions provided
+by C standard library to read and write a file, character by character, or in
+the form of a fixed length string. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>Writing a File</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Following is the simplest function to
+write individual characters to a stream: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif;color:#00B0F0'>int
+fputc( int c, FILE *fp ); </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The function <b>fputc() </b>writes the
+character value of the argument c to the output stream referenced by fp. It
+returns the written character written on success otherwise <b>EOF </b>if there
+is an error. You can use the following functions to write a null-terminated
+string to a stream: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif;color:#00B0F0'>int
+fputs( const char *s, FILE *fp ); </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The function <b>fputs() </b>writes the
+string <b>s </b>to the output stream referenced by fp. It returns a
+non-negative value on success, otherwise <b>EOF </b>is returned in case of any
+error. You can use <b>int fprintf(FILE *fp,const char *format, ...) </b>function
+as well to write a string into a file. Try the following example. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Make sure you have <b>/tmp </b>directory
+available. If it is not, then before proceeding, you must create this directory
+on your machine. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:#00B0F0'>#include &lt;stdio.h&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:#00B0F0'>main() </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:#00B0F0'>{ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:#00B0F0'>FILE *fp; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:#00B0F0'>fp =
+fopen(&quot;/tmp/test.txt&quot;, &quot;w+&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:#00B0F0'>fprintf(fp, &quot;This
+is testing for fprintf...\n&quot;); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:#00B0F0'>fputs(&quot;This is
+testing for fputs...\n&quot;, fp); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:#00B0F0'>fclose(fp); </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;background:#222A35;border:none;padding:0cm'><span
+style='font-family:"Book Antiqua",serif;color:#00B0F0'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When the above code is compiled and
+executed, it creates a new file <b>test.txt </b>in /tmp directory and writes
+two lines using two different functions. Let us read this file in the next
+section. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>Reading a File</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Given below is the simplest function
+to read a single character from a file: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif;color:#00B0F0'>int
+fgetc( FILE * fp ); </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The <b>fgetc() </b>function reads a
+character from the input file referenced by fp. The return value is the
+character read, or in case of any error, it returns <b>EOF</b>. The following
+function allows to read a string from a stream: </span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif;color:#00B0F0'>char
+*fgets( char *buf, int n, FILE *fp ); </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The functions <b>fgets() </b>reads up
+to n - 1 characters from the input stream referenced by fp. It copies the read
+string into the buffer <b>buf</b>, appending a <b>null </b>character to
+terminate the string. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>If this function encounters a newline
+character '\n' or the end of the file EOF before they have read the maximum
+number of characters, then it returns only the characters read up to that point
+including the new line character. You can also use <b>int fscanf(FILE *fp,
+const char *format, ...) </b>function to read strings from a file, but it stops
+reading after encountering the first space character. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#222A35'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>#include &lt;stdio.h&gt; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>main() </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>{ </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>FILE *fp; </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>char buff[255];</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>fp = fopen(&quot;/tmp/test.txt&quot;, &quot;r&quot;); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>fscanf(fp, &quot;%s&quot;, buff); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>printf(&quot;1 : %s\n&quot;, buff ); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>fgets(buff, 255, (FILE*)fp); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>printf(&quot;2: %s\n&quot;, buff ); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>fgets(buff, 255, (FILE*)fp); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>printf(&quot;3: %s\n&quot;, buff ); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>fclose(fp); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35;
+border:none;padding:0cm'><span style='font-family:"Book Antiqua",serif;
+color:#00B0F0'>} </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When the above code is compiled and
+executed, it reads the file created in the previous section and produces the
+following result: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>1 : This </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>2: is testing for
+fprintf... </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>3: This is testing
+for fputs... </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Let's see a little more in detail
+about what happened here. First, <b>fscanf() </b>reads just <b>This </b>because
+after that, it encountered a space, second call is for <b>fgets() </b>which
+reads the remaining line till it encountered end of line. Finally, the last
+call <b>fgets() </b>reads the second line completely. </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:18.0pt;line-height:150%;font-family:"Book Antiqua",serif;
+color:red'>Binary I/O Functions</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>There are two functions that can be
+used for binary input and output: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif;color:#00B0F0'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif;color:#00B0F0'>size_t
+fread(void *ptr, size_t size_of_elements, </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif;color:#00B0F0'>size_t
+number_of_elements, FILE *a_file); </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif;color:#00B0F0'>size_t
+fwrite(const void *ptr, size_t size_of_elements, </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif;color:#00B0F0'>size_t
+number_of_elements, FILE *a_file); </span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Both of these functions should be used
+to read or write blocks of memories - usually arrays or structures.</span></p>
+
+</div>
+
+</body>
+
+</html>

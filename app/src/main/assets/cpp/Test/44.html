@@ -1,0 +1,187 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #272822; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #75715e">#include &lt;iostream&gt;</span>
+ 
+    <span style="color: #66d9ef">using</span> <span style="color: #66d9ef">namespace</span> <span style="color: #f8f8f2">std;</span>
+ 
+    <span style="color: #75715e">// A structure to represent a node.</span>
+    <span style="color: #66d9ef">struct</span> <span style="color: #f8f8f2">Node</span>
+    <span style="color: #f8f8f2">{</span>
+        <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">value;</span>
+        <span style="color: #66d9ef">struct</span> <span style="color: #f8f8f2">Node</span><span style="color: #f92672">*</span> <span style="color: #f8f8f2">next;</span>
+    <span style="color: #f8f8f2">};</span>
+     
+    <span style="color: #75715e">// A structure to represent a Head Bucket Node of the bucket list.</span>
+    <span style="color: #66d9ef">struct</span> <span style="color: #f8f8f2">Bucket</span>
+    <span style="color: #f8f8f2">{</span>
+        <span style="color: #75715e">// Pointer to head node of Bucket.</span>
+        <span style="color: #66d9ef">struct</span> <span style="color: #f8f8f2">Node</span> <span style="color: #f92672">*</span><span style="color: #f8f8f2">head;</span>  
+    <span style="color: #f8f8f2">};</span>
+     
+    <span style="color: #66d9ef">struct</span> <span style="color: #f8f8f2">BucketList</span>
+    <span style="color: #f8f8f2">{</span>
+        <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">V;</span>
+        <span style="color: #66d9ef">struct</span> <span style="color: #f8f8f2">Bucket</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">array;</span>
+    <span style="color: #f8f8f2">};</span>
+     
+     
+    <span style="color: #75715e">// A utility function to create a new node for a particular entry in a bucket.</span>
+    <span style="color: #66d9ef">struct</span> <span style="color: #f8f8f2">Node</span><span style="color: #f92672">*</span> <span style="color: #a6e22e">newNode</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">value)</span>
+    <span style="color: #f8f8f2">{</span>
+        <span style="color: #66d9ef">struct</span> <span style="color: #f8f8f2">Node</span><span style="color: #f92672">*</span> <span style="color: #f8f8f2">newnode</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #f8f8f2">Node;</span>
+        <span style="color: #f8f8f2">newnode</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">value</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">value;</span>
+        <span style="color: #f8f8f2">newnode</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">next</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">NULL;</span>
+        <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">newnode;</span>
+    <span style="color: #f8f8f2">}</span>
+     
+    <span style="color: #75715e">// A utility function that creates a list of the bucket over the range of input data.</span>
+    <span style="color: #66d9ef">struct</span> <span style="color: #f8f8f2">BucketList</span><span style="color: #f92672">*</span> <span style="color: #a6e22e">createBucket</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">V)</span>
+    <span style="color: #f8f8f2">{</span>
+        <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">i;</span>
+        <span style="color: #66d9ef">struct</span> <span style="color: #f8f8f2">BucketList</span><span style="color: #f92672">*</span> <span style="color: #f8f8f2">bl</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #f8f8f2">BucketList;</span>
+     
+        <span style="color: #f8f8f2">bl</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">V</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">V;</span>
+        <span style="color: #f8f8f2">bl</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">array</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #f8f8f2">Bucket[V];</span>   
+     
+     
+        <span style="color: #75715e">// Initialize each Bucket list as empty by making head as NULL.</span>
+        <span style="color: #66d9ef">for</span><span style="color: #f8f8f2">(i</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">V;</span> <span style="color: #f8f8f2">i</span><span style="color: #f92672">++</span><span style="color: #f8f8f2">)</span>
+            <span style="color: #f8f8f2">bl</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">array[i].head</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">NULL;</span>
+     
+        <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">bl;</span>
+    <span style="color: #f8f8f2">}</span>
+     
+    <span style="color: #75715e">// A function to Insert the nodes to corresponding Buckets.</span>
+    <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">addNode</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">struct</span> <span style="color: #f8f8f2">BucketList</span><span style="color: #f92672">*</span> <span style="color: #f8f8f2">bl,</span> <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">bckt,</span> <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">value)</span>
+    <span style="color: #f8f8f2">{</span>
+        <span style="color: #75715e">// Creating new data node.</span>
+        <span style="color: #66d9ef">struct</span> <span style="color: #f8f8f2">Node</span> <span style="color: #f92672">*</span><span style="color: #f8f8f2">newnode</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">newNode(value);</span>
+        <span style="color: #66d9ef">struct</span> <span style="color: #f8f8f2">Node</span> <span style="color: #f92672">*</span><span style="color: #f8f8f2">temp</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #f8f8f2">Node;</span>
+     
+        <span style="color: #66d9ef">if</span><span style="color: #f8f8f2">(bl</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">array[bckt].head</span> <span style="color: #f92672">!=</span> <span style="color: #f8f8f2">NULL)</span>
+        <span style="color: #f8f8f2">{</span>
+            <span style="color: #f8f8f2">temp</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">bl</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">array[bckt].head;</span>
+     
+            <span style="color: #75715e">// Sorting.</span>
+            <span style="color: #75715e">// If the head node value is lesser than the newnode value, then add node at beginning.</span>
+            <span style="color: #66d9ef">if</span><span style="color: #f8f8f2">(temp</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">value</span> <span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">newnode</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">value)</span>
+            <span style="color: #f8f8f2">{</span>
+                <span style="color: #f8f8f2">newnode</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">next</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">bl</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">array[bckt].head;</span>
+                <span style="color: #f8f8f2">bl</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">array[bckt].head</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">newnode;</span>
+            <span style="color: #f8f8f2">}</span>
+            <span style="color: #66d9ef">else</span>
+            <span style="color: #f8f8f2">{</span>
+                <span style="color: #75715e">// Search for the node whose value is more than the newnode value.</span>
+                <span style="color: #66d9ef">while</span><span style="color: #f8f8f2">(temp</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">next</span> <span style="color: #f92672">!=</span> <span style="color: #f8f8f2">NULL)</span>
+                <span style="color: #f8f8f2">{</span>
+                    <span style="color: #66d9ef">if</span><span style="color: #f8f8f2">((temp</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">next)</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">value</span> <span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">newnode</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">value)</span>
+                        <span style="color: #66d9ef">break</span><span style="color: #f8f8f2">;</span>
+     
+                    <span style="color: #f8f8f2">temp</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">temp</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">next;</span>
+                <span style="color: #f8f8f2">}</span>
+     
+                <span style="color: #75715e">// Insert newnode after temp node.</span>
+                <span style="color: #f8f8f2">newnode</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">next</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">temp</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">next;</span>
+                <span style="color: #f8f8f2">temp</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">next</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">newnode;</span>
+            <span style="color: #f8f8f2">}</span>
+        <span style="color: #f8f8f2">}</span>
+        <span style="color: #66d9ef">else</span>
+        <span style="color: #f8f8f2">{</span>
+            <span style="color: #75715e">// Assign head of the Bucket as newnode since bucket head is NULL.</span>
+            <span style="color: #f8f8f2">bl</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">array[bckt].head</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">newnode;</span>
+        <span style="color: #f8f8f2">}</span>
+    <span style="color: #f8f8f2">}</span>
+     
+    <span style="color: #75715e">// A function to print the result as sorted Data.</span>
+    <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">printBuckets</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">struct</span> <span style="color: #f8f8f2">BucketList</span> <span style="color: #f92672">*</span><span style="color: #f8f8f2">bl)</span>
+    <span style="color: #f8f8f2">{</span>
+        <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">v;</span>
+        <span style="color: #66d9ef">struct</span> <span style="color: #f8f8f2">Node</span><span style="color: #f92672">*</span> <span style="color: #f8f8f2">pCrawl</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #f8f8f2">Node;</span>
+     
+        <span style="color: #66d9ef">for</span><span style="color: #f8f8f2">(v</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">v</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">bl</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">V;</span> <span style="color: #f8f8f2">v</span><span style="color: #f92672">++</span><span style="color: #f8f8f2">)</span>
+        <span style="color: #f8f8f2">{</span>
+            <span style="color: #75715e">// To view the data in individual bucket remove next line from comment.</span>
+            <span style="color: #75715e">// cout&lt;&lt;&quot;\n\t bucket &quot;&lt;&lt;v+1;</span>
+     
+            <span style="color: #f8f8f2">pCrawl</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">bl</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">array[v].head;</span>
+            <span style="color: #66d9ef">while</span> <span style="color: #f8f8f2">(pCrawl</span> <span style="color: #f92672">!=</span> <span style="color: #f8f8f2">NULL)</span>
+            <span style="color: #f8f8f2">{</span>
+                <span style="color: #f8f8f2">cout</span><span style="color: #f92672">&lt;&lt;</span><span style="color: #e6db74">&quot;-&gt;&quot;</span><span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">pCrawl</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">value;</span>
+                <span style="color: #f8f8f2">pCrawl</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">pCrawl</span><span style="color: #f92672">-&gt;</span><span style="color: #f8f8f2">next;</span>
+            <span style="color: #f8f8f2">}</span>
+        <span style="color: #f8f8f2">}</span>
+    <span style="color: #f8f8f2">}</span>
+     
+     
+    <span style="color: #66d9ef">int</span> <span style="color: #a6e22e">main</span><span style="color: #f8f8f2">()</span>
+    <span style="color: #f8f8f2">{</span>
+        <span style="color: #75715e">// Create the BucketLists for the data and set 10 as default number of Buckets.</span>
+        <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">V</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">10</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">range,</span> <span style="color: #f8f8f2">NOE,</span> <span style="color: #f8f8f2">i;</span>
+        <span style="color: #66d9ef">struct</span> <span style="color: #f8f8f2">BucketList</span><span style="color: #f92672">*</span> <span style="color: #f8f8f2">mybucket</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">createBucket(V);</span>
+     
+     
+        <span style="color: #f8f8f2">cout</span><span style="color: #f92672">&lt;&lt;</span><span style="color: #e6db74">&quot;</span><span style="color: #ae81ff">\n\n</span><span style="color: #e6db74">Enter the upper limit in the power of 10 (10 or 100 or 1000 ..) to create Bucket: &quot;</span><span style="color: #f8f8f2">;</span>
+        <span style="color: #f8f8f2">cin</span><span style="color: #f92672">&gt;&gt;</span><span style="color: #f8f8f2">range;</span>
+     
+        <span style="color: #75715e">// Dividing range into 10 parts so it will have 10 buckets as default.</span>
+        <span style="color: #f8f8f2">range</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">range</span><span style="color: #f92672">/</span><span style="color: #ae81ff">10</span><span style="color: #f8f8f2">;</span>
+     
+        <span style="color: #f8f8f2">cout</span><span style="color: #f92672">&lt;&lt;</span><span style="color: #e6db74">&quot;</span><span style="color: #ae81ff">\n</span><span style="color: #e6db74">Enter the number of data element to be sorted: &quot;</span><span style="color: #f8f8f2">;</span>
+        <span style="color: #f8f8f2">cin</span><span style="color: #f92672">&gt;&gt;</span><span style="color: #f8f8f2">NOE;</span>
+        <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">arr[NOE];</span>
+     
+        <span style="color: #66d9ef">for</span><span style="color: #f8f8f2">(i</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">NOE;</span> <span style="color: #f8f8f2">i</span><span style="color: #f92672">++</span><span style="color: #f8f8f2">)</span>
+        <span style="color: #f8f8f2">{</span>
+            <span style="color: #f8f8f2">cout</span><span style="color: #f92672">&lt;&lt;</span><span style="color: #e6db74">&quot;Enter element &quot;</span><span style="color: #f92672">&lt;&lt;</span><span style="color: #f8f8f2">i</span><span style="color: #f92672">+</span><span style="color: #ae81ff">1</span><span style="color: #f92672">&lt;&lt;</span><span style="color: #e6db74">&quot; : &quot;</span><span style="color: #f8f8f2">;</span>
+            <span style="color: #f8f8f2">cin</span><span style="color: #f92672">&gt;&gt;</span><span style="color: #f8f8f2">arr[i];</span>
+            <span style="color: #f8f8f2">addNode(mybucket,</span> <span style="color: #f8f8f2">arr[i]</span><span style="color: #f92672">/</span><span style="color: #f8f8f2">range,</span> <span style="color: #f8f8f2">arr[i]);</span>
+        <span style="color: #f8f8f2">}</span>
+     
+        <span style="color: #75715e">// Print the adjacency list representation of the BucketList i.e the sorted Output.</span>
+        <span style="color: #f8f8f2">cout</span><span style="color: #f92672">&lt;&lt;</span><span style="color: #e6db74">&quot;</span><span style="color: #ae81ff">\n</span><span style="color: #e6db74">Sorted Data &quot;</span><span style="color: #f8f8f2">;</span>
+        <span style="color: #f8f8f2">printBuckets(mybucket);</span>
+     
+        <span style="color: #66d9ef">return</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span>
+    <span style="color: #f8f8f2">}</span>
+    
+    <span style="color: #f92672">&gt;&gt;</span><span style="color: #f8f8f2">Runtime</span> <span style="color: #f8f8f2">Test</span> <span style="color: #f8f8f2">Cases</span>
+    <span style="color: #f8f8f2">Case</span> <span style="color: #ae81ff">1</span><span style="color: #f92672">:</span><span style="color: #f8f8f2">(average</span> <span style="color: #66d9ef">case</span><span style="color: #f8f8f2">)</span>
+     
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">upper</span> <span style="color: #f8f8f2">limit</span> <span style="color: #f8f8f2">in</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">power</span> <span style="color: #f8f8f2">of</span> <span style="color: #ae81ff">10</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">10</span> <span style="color: #f8f8f2">or</span> <span style="color: #ae81ff">100</span> <span style="color: #f8f8f2">or</span> <span style="color: #ae81ff">1000</span> <span style="color: #f8f8f2">..)</span> <span style="color: #f8f8f2">to</span> <span style="color: #f8f8f2">create</span> <span style="color: #f8f8f2">Bucket</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">100</span>
+     
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">number</span> <span style="color: #f8f8f2">of</span> <span style="color: #f8f8f2">data</span> <span style="color: #f8f8f2">element</span> <span style="color: #f8f8f2">to</span> <span style="color: #f8f8f2">be</span> <span style="color: #f8f8f2">sorted</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">5</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">1</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">1</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">2</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">99</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">3</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">83</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">4</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">94</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">5</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">33</span>
+     
+    <span style="color: #f8f8f2">Sorted</span> <span style="color: #f8f8f2">Data</span> <span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">1</span><span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">33</span><span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">83</span><span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">94</span><span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">99</span>
+     
+     
+    <span style="color: #f8f8f2">Case</span> <span style="color: #ae81ff">2</span><span style="color: #f92672">:</span><span style="color: #f8f8f2">(best</span> <span style="color: #66d9ef">case</span><span style="color: #f8f8f2">)</span>
+     
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">upper</span> <span style="color: #f8f8f2">limit</span> <span style="color: #f8f8f2">in</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">power</span> <span style="color: #f8f8f2">of</span> <span style="color: #ae81ff">10</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">10</span> <span style="color: #f8f8f2">or</span> <span style="color: #ae81ff">100</span> <span style="color: #f8f8f2">or</span> <span style="color: #ae81ff">1000</span> <span style="color: #f8f8f2">..)</span> <span style="color: #f8f8f2">to</span> <span style="color: #f8f8f2">create</span> <span style="color: #f8f8f2">Bucket</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">1000</span>
+     
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">number</span> <span style="color: #f8f8f2">of</span> <span style="color: #f8f8f2">data</span> <span style="color: #f8f8f2">element</span> <span style="color: #f8f8f2">to</span> <span style="color: #f8f8f2">be</span> <span style="color: #f8f8f2">sorted</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">5</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">1</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">1</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">2</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">444</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">3</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">631</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">4</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">483</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">5</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">989</span>
+     
+    <span style="color: #f8f8f2">Sorted</span> <span style="color: #f8f8f2">Data</span> <span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">1</span><span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">444</span><span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">483</span><span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">631</span><span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">989</span>
+     
+     
+    <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">3</span>: <span style="color: #f8f8f2">(worst</span> <span style="color: #66d9ef">case</span><span style="color: #f8f8f2">)</span>
+     
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">upper</span> <span style="color: #f8f8f2">limit</span> <span style="color: #f8f8f2">in</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">power</span> <span style="color: #f8f8f2">of</span> <span style="color: #ae81ff">10</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">10</span> <span style="color: #f8f8f2">or</span> <span style="color: #ae81ff">100</span> <span style="color: #f8f8f2">or</span> <span style="color: #ae81ff">1000</span> <span style="color: #f8f8f2">..)</span> <span style="color: #f8f8f2">to</span> <span style="color: #f8f8f2">create</span> <span style="color: #f8f8f2">Bucket</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">100</span>
+     
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">number</span> <span style="color: #f8f8f2">of</span> <span style="color: #f8f8f2">data</span> <span style="color: #f8f8f2">element</span> <span style="color: #f8f8f2">to</span> <span style="color: #f8f8f2">be</span> <span style="color: #f8f8f2">sorted</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">5</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">1</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">99</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">2</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">85</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">3</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">43</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">4</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">21</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">5</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">11</span>
+     
+    <span style="color: #f8f8f2">Sorted</span> <span style="color: #f8f8f2">Data</span> <span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">11</span><span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">21</span><span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">43</span><span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">85</span><span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">99</span>
+    </pre></div>

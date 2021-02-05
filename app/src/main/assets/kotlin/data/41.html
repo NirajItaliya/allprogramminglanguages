@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin ArrayList</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPASCRORfF" id="content1-t6" data-rv-view="6400">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin ArrayList</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/f">bootstrap builder</a></section><section class="mbr-section article content1 cid-rPASKjdNb1" id="content1-t7" data-rv-view="6401">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin <strong>ArrayList</strong> class is used to create a <strong>dynamic</strong> <strong>array.</strong> Which means the size of ArrayList class can be increased or decreased according to requirement. ArrayList class provides both read and write functionalities.
+<div>
+</div><div>Kotlin ArrayList class follows the sequence of insertion order. ArrayList class is non synchronized and it may contains duplicate elements. The elements of ArrayList class are accessed randomly as it works on index basis.</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="section-table cid-rPASTAssdS" id="table1-t8" data-rv-view="6402">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5"><strong>Constructor of ArrayList
+</strong></h2>
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Constructor</th><th class="head-item mbr-fonts-style display-7">Descriptions</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">ArrayList&lt;E&gt;()&nbsp;</td><td class="body-item mbr-fonts-style display-7">It is used to create an empty ArrayList
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">ArrayList(capacity: Int)&nbsp;</td><td class="body-item mbr-fonts-style display-7">It is used to create an ArrayList of specified capacity.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">ArrayList(elements: Collection&lt;E&gt;)&nbsp;</td><td class="body-item mbr-fonts-style display-7">It is used to create an ArrayList filled from the elements of collection.
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="section-table cid-rPATfuJtAK" id="table1-t9" data-rv-view="6432">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5"><strong>Functions of ArrayList
+</strong></h2>
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Functions</th><th class="head-item mbr-fonts-style display-7">Descriptions</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun add(element: E): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It is used to add the specific element into the collection.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun add(index: Int, element: E)&nbsp;</td><td class="body-item mbr-fonts-style display-7">It is used to insert an element at specific index.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun addAll(elements: Collection&lt;E&gt;): Boolean</td><td class="body-item mbr-fonts-style display-7">It is used to add all the elements in the specified collection to current collection.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun clear()&nbsp;</td><td class="body-item mbr-fonts-style display-7">It is used to removes all elements from the collection.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun get(index: Int): E&nbsp;</td><td class="body-item mbr-fonts-style display-7">It is used to return the element at specified index in the list.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun indexOf(element: E): Int&nbsp;</td><td class="body-item mbr-fonts-style display-7">It is used to return the index of first occurrence of specified element in the list or return -1 if the specified element in not present in the list.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun lastIndexOf(element: E): Int&nbsp;</td><td class="body-item mbr-fonts-style display-7">It is used to return the last occurrence of given element from the list or it returns -1 if the given element is not present in the list.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun remove(element: E): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It is used to remove the specific index element from the list.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun removeAt(index: Int): E&nbsp;</td><td class="body-item mbr-fonts-style display-7">It is used to remove the specific index element from the list.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun removeRange(startIndex: Int, endIndex: Int)&nbsp;</td><td class="body-item mbr-fonts-style display-7">Its remove the range of elements starting from startIndex to endIndex in which endIndex is not includes.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun set(index: Int, element: E): E&nbsp;</td><td class="body-item mbr-fonts-style display-7">It is used to replaces the element from the specified position from current list with the specified element.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun toArray(): Array&lt;Any?&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It is used to return new array of type Array&lt;Any?&gt; with the elements of this collection.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">open fun toString(): String&nbsp;</td><td class="body-item mbr-fonts-style display-7">It is used to returns a string representation of the object.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">fun trimToSize()&nbsp;</td><td class="body-item mbr-fonts-style display-7">It does nothing in this ArrayList implementation.
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPB0MkAPVq" id="content12-ta" data-rv-view="6539">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 1- Empty ArrayList
+:&nbsp;</strong>Let's create a simple example of ArrayList class define with empty ArrayList of String and add elements later.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+
+    val arrayList = ArrayList&lt;String&gt;()//Creating an empty arraylist
+    arrayList.add("Ajay")//Adding object in arraylist
+    arrayList.add("Vijay")
+    arrayList.add("Prakash")
+    arrayList.add("Rohan")
+    arrayList.add("Vijay")
+    println(".......print ArrayList.......")
+    for (i in arrayList) {
+        println(i)
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPB0VA9dUC" id="content1-tc" data-rv-view="6541">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">......print ArrayList......
+Ajay
+Vijay
+Prakash
+Rohan
+Vijay
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPB15AsvxD" id="content12-te" data-rv-view="6543">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 2- Initialize ArrayList capacity
+:&nbsp;</strong>Let's create an ArrayList class with initialize its initial capacity. The capacity of ArrayList class is not fixed and it can be change later in program according to requirement.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+
+    val arrayList1 = ArrayList&lt;String&gt;(5)
+    arrayList1.add("Ajay")//Adding object in arraylist
+    arrayList1.add("Vijay")
+    arrayList1.add("Prakash")
+    arrayList1.add("Rohan")
+    arrayList1.add("Vijay")
+    println(".......print ArrayList1......")
+    for (i in arrayList1) {
+        println(i)
+    }
+    println("size of arrayList1 = "+arrayList1.size)
+    val arrayList2 = ArrayList&lt;Int&gt;(5)
+    arrayList2.add(14)
+    arrayList2.add(20)
+    arrayList2.add(80)
+    println("......print ArrayList2......")
+    for (i in arrayList2) {
+        println(i)
+    }
+    println("size of arrayList2 = "+arrayList2.size)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPB1eUwqT2" id="content1-tg" data-rv-view="6545">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">.......print ArrayList1......
+Ajay
+Vijay
+Prakash
+Rohan
+Vijay
+size of arrayList1 = 5
+......print ArrayList2......
+14
+20
+80
+size of arrayList2 = 3
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPB1npqH7I" id="content12-ti" data-rv-view="6547">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 3- filled elements in ArrayList using collection
+:&nbsp;</strong>The elements in Kotlin ArratList class can also be added using other collection. For more specific in ArrayList class it is declared by its generic types. Elements of ArrayList class also be traverse using iterator() function. For example:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+
+    val arrayList: ArrayList&lt;String&gt; = ArrayList&lt;String&gt;(5)
+    var list: MutableList&lt;String&gt; = mutableListOf&lt;String&gt;()
+
+    list.add("Ajay")
+    list.add("Vijay")
+    list.add("Prakash")
+
+    arrayList.addAll(list)
+    println("......print ArrayList......")
+    val itr = arrayList.iterator()
+    while (itr.hasNext()) {
+        println(itr.next())
+    }
+    println("size of arrayList = " + arrayList.size)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPB1o6YWGH" id="content1-tk" data-rv-view="6549">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">.......print ArrayList.......
+Ajay
+Vijay
+Prakash
+size of arrayList = 3
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPB1C97r2J" id="content12-to" data-rv-view="6551">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 4 - get()
+:&nbsp;</strong><span style="font-size: 1rem;">The get() function of ArrayList class is used to retrieve the element present at given specified index. For example:</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+
+    val arrayList: ArrayList&lt;String&gt; = ArrayList&lt;String&gt;(5)
+
+    arrayList.add("Ajay")
+    arrayList.add("Vijay")
+    arrayList.add("Prakash")
+    arrayList.add("Rohan")
+    arrayList.add("Vijay")
+    println(".......print ArrayList.......")
+    for (i in arrayList) {
+        println(i)
+    }
+    println(".......arrayList.get(2).......")
+    println( arrayList.get(2))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPB1pbPknl" id="content1-tm" data-rv-view="6553">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">.......print ArrayList.......
+Ajay
+Vijay
+Prakash
+Rohan
+Vijay
+.......arrayList.get(2).......
+Prakash
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPB1PhTng4" id="content12-tq" data-rv-view="6555">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 5 - set()
+:&nbsp;</strong>The set() function of ArrayList class is used to set the given element at specified index and replace if any element present at specified index. For example:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+
+    val arrayList: ArrayList&lt;String&gt; = ArrayList&lt;String&gt;(5)
+
+    arrayList.add("Ajay")
+    arrayList.add("Vijay")
+    arrayList.add("Prakash")
+    arrayList.add("Rohan")
+    arrayList.add("Vijay")
+    println(".......print ArrayList.......")
+    for (i in arrayList) {
+        println(i)
+    }
+    println(".......arrayList.set(2,\"Ashu\").......")
+    arrayList.set(2,"Ashu")
+    println(".......print ArrayList.......")
+    for (i in arrayList) {
+        println(i)
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPB1Q1UCHA" id="content1-ts" data-rv-view="6557">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">.......print ArrayList.......
+Ajay
+Vijay
+Prakash
+Rohan
+Vijay
+.......arrayList.set(2,"Ashu").......
+.......print ArrayList.......
+Ajay
+Vijay
+Ashu
+Rohan
+Vijay
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPB1QTV3zw" id="content12-tu" data-rv-view="6559">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 6 - indexOf()
+:&nbsp;</strong>The indexOf() function of ArrayList class is used to retrieve the index value of first occurrence of element or return -1 if the specified element in not present in the list. For example:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+
+    val arrayList: ArrayList&lt;String&gt; = ArrayList&lt;String&gt;(5)
+
+    arrayList.add("Ajay")
+    arrayList.add("Vijay")
+    arrayList.add("Prakash")
+    arrayList.add("Rohan")
+    arrayList.add("Vijay")
+    println(".......print ArrayList.......")
+    for (i in arrayList) {
+        println(i)
+    }
+        println(".......arrayList.indexOf(\"Vijay\").......")
+    println(arrayList.indexOf("Vijay"))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPB1Rzk91i" id="content1-tw" data-rv-view="6561">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">.......print ArrayList.......
+Ajay
+Vijay
+Prakash
+Rohan
+Vijay
+.......arrayList.indexOf("Vijay").......
+1
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPB1SgJPfd" id="content12-ty" data-rv-view="6563">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 7 - lastIndexOf()
+:&nbsp;</strong>The lastindexOf() function of ArrayList class is used to retrieve the index value of last occurrence of element or return -1 if the specified element in not present in the list. For example:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val arrayList: ArrayList&lt;String&gt; = ArrayList&lt;String&gt;(5)
+    arrayList.add("Ajay")
+    arrayList.add("Vijay")
+    arrayList.add("Prakash")
+    arrayList.add("Rohan")
+    arrayList.add("Vijay")
+    println(".......print ArrayList.......")
+    for (i in arrayList) {
+        println(i)
+    }
+    println(".......arrayList.lastIndexOf(\"Vijay\").......")
+    println(arrayList.lastIndexOf("Vijay"))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPB1SUKGZO" id="content1-u0" data-rv-view="6565">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">.......print ArrayList.......
+Ajay
+Vijay
+Prakash
+Rohan
+Vijay
+.......arrayList.lastIndexOf("Vijay").......
+4
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rPB1U1Re1i" id="content12-u2" data-rv-view="6567">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 8 - remove()
+:&nbsp;</strong>The remove () function of ArrayList class is used to remove the first occurrence of element if it is present in the list. For example:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val arrayList: ArrayList&lt;String&gt; = ArrayList&lt;String&gt;(5)
+    arrayList.add("Ajay")
+    arrayList.add("Vijay")
+    arrayList.add("Prakash")
+    arrayList.add("Rohan")
+    arrayList.add("Vijay")
+    println(".......print ArrayList.......")
+    for (i in arrayList) {
+        println(i)
+    }
+    println(".......arrayList.remove(\"Vijay\").......")
+    arrayList.remove("Vijay")
+    for (i in arrayList) {
+        println(i)
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPB1UKZpoC" id="content1-u4" data-rv-view="6569">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">.......print ArrayList.......
+Ajay
+Vijay
+Prakash
+Rohan
+Vijay
+.......arrayList.remove("Vijay").......
+Ajay
+Prakash
+Rohan
+Vijay
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPB1VPfOuW" id="content12-u6" data-rv-view="6571">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 9 - removeAt()
+:&nbsp;</strong>The removeAt() function of ArrayList class is used to remove the element of specified index from the list. For example:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val arrayList: ArrayList&lt;String&gt; = ArrayList&lt;String&gt;(5)
+    arrayList.add("Ajay")
+    arrayList.add("Vijay")
+    arrayList.add("Prakash")
+    arrayList.add("Rohan")
+    arrayList.add("Vijay")
+    println(".......print ArrayList.......")
+    for (i in arrayList) {
+        println(i)
+    }
+    println(".......arrayList.remove(3).......")
+    arrayList.removeAt(3)
+    for (i in arrayList) {
+        println(i)
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPB1WBYHaV" id="content1-u8" data-rv-view="6573">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+
+    val arrayList: ArrayList&lt;String&gt; = ArrayList&lt;String&gt;(5)
+
+    arrayList.add("Ajay")
+    arrayList.add("Vijay")
+    arrayList.add("Prakash")
+    arrayList.add("Rohan")
+    arrayList.add("Vijay")
+    println(".......print ArrayList.......")
+    for (i in arrayList) {
+        println(i)
+    }
+    println(".......arrayList.remove(3).......")
+    arrayList.removeAt(3)
+    for (i in arrayList) {
+        println(i)
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPB2TWfNSI" id="content12-ua" data-rv-view="6575">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 10 - clear()
+:&nbsp;</strong>The clear() function of ArrayList class is used to remove (clear) all the elements of list. For example:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+
+    val arrayList: ArrayList&lt;String&gt; = ArrayList&lt;String&gt;(5)
+
+    arrayList.add("Ajay")
+    arrayList.add("Vijay")
+    arrayList.add("Prakash")
+    arrayList.add("Rohan")
+    arrayList.add("Vijay")
+    println(".......print ArrayList.......")
+    for (i in arrayList) {
+        println(i)
+    }
+    println(".......arrayList.clear().......")
+    arrayList.clear()
+
+    for (i in arrayList) {
+        println(i)
+    }
+    println(".......arrayList.......")
+    println(arrayList)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPB2UBGh95" id="content1-uc" data-rv-view="6577">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+ <pre><code class="language-kotlin">.......print ArrayList.......
+Ajay
+Vijay
+Prakash
+Rohan
+Vijay
+.......arrayList.clear().......
+.......arrayList.......
+[]
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/datatables/jquery.data-tables.min.js"></script>
+  <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

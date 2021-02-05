@@ -1,0 +1,70 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #272822; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #75715e">#include&lt;iostream&gt;</span>
+ 
+    <span style="color: #66d9ef">using</span> <span style="color: #66d9ef">namespace</span> <span style="color: #f8f8f2">std;</span>
+ 
+    <span style="color: #75715e">// A function implementing Shell sort.</span>
+    <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">ShellSort</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">a[],</span> <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">n)</span>
+    <span style="color: #f8f8f2">{</span>
+        <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">i,</span> <span style="color: #f8f8f2">j,</span> <span style="color: #f8f8f2">k,</span> <span style="color: #f8f8f2">temp;</span>
+        <span style="color: #75715e">// Gap &#39;i&#39; between index of the element to be compared, initially n/2.</span>
+        <span style="color: #66d9ef">for</span><span style="color: #f8f8f2">(i</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">n</span><span style="color: #f92672">/</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">&gt;</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">i</span><span style="color: #f92672">/</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">)</span>
+        <span style="color: #f8f8f2">{</span>
+            <span style="color: #66d9ef">for</span><span style="color: #f8f8f2">(j</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">i;</span> <span style="color: #f8f8f2">j</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">n;</span> <span style="color: #f8f8f2">j</span><span style="color: #f92672">++</span><span style="color: #f8f8f2">)</span>
+            <span style="color: #f8f8f2">{</span>
+                <span style="color: #66d9ef">for</span><span style="color: #f8f8f2">(k</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">j</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">i;</span> <span style="color: #f8f8f2">k</span> <span style="color: #f92672">&gt;=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">k</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">k</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">i)</span>
+                <span style="color: #f8f8f2">{</span>
+                    <span style="color: #75715e">// If value at higher index is greater, then break the loop.</span>
+                    <span style="color: #66d9ef">if</span><span style="color: #f8f8f2">(a[k</span><span style="color: #f92672">+</span><span style="color: #f8f8f2">i]</span> <span style="color: #f92672">&gt;=</span> <span style="color: #f8f8f2">a[k])</span>
+                    <span style="color: #66d9ef">break</span><span style="color: #f8f8f2">;</span>
+                    <span style="color: #75715e">// Switch the values otherwise.</span>
+                    <span style="color: #66d9ef">else</span>
+                    <span style="color: #f8f8f2">{</span>
+                        <span style="color: #f8f8f2">temp</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">a[k];</span>
+                        <span style="color: #f8f8f2">a[k]</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">a[k</span><span style="color: #f92672">+</span><span style="color: #f8f8f2">i];</span>
+                        <span style="color: #f8f8f2">a[k</span><span style="color: #f92672">+</span><span style="color: #f8f8f2">i]</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">temp;</span>
+                    <span style="color: #f8f8f2">}</span>
+                <span style="color: #f8f8f2">}</span>
+            <span style="color: #f8f8f2">}</span>
+        <span style="color: #f8f8f2">}</span>
+    <span style="color: #f8f8f2">}</span>
+    <span style="color: #66d9ef">int</span> <span style="color: #a6e22e">main</span><span style="color: #f8f8f2">()</span>
+    <span style="color: #f8f8f2">{</span>	
+        <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">n,</span> <span style="color: #f8f8f2">i;</span>
+        <span style="color: #f8f8f2">cout</span><span style="color: #f92672">&lt;&lt;</span><span style="color: #e6db74">&quot;</span><span style="color: #ae81ff">\n</span><span style="color: #e6db74">Enter the number of data element to be sorted: &quot;</span><span style="color: #f8f8f2">;</span>
+        <span style="color: #f8f8f2">cin</span><span style="color: #f92672">&gt;&gt;</span><span style="color: #f8f8f2">n;</span>
+     
+        <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">arr[n];</span>
+        <span style="color: #66d9ef">for</span><span style="color: #f8f8f2">(i</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">n;</span> <span style="color: #f8f8f2">i</span><span style="color: #f92672">++</span><span style="color: #f8f8f2">)</span>
+        <span style="color: #f8f8f2">{</span>
+            <span style="color: #f8f8f2">cout</span><span style="color: #f92672">&lt;&lt;</span><span style="color: #e6db74">&quot;Enter element &quot;</span><span style="color: #f92672">&lt;&lt;</span><span style="color: #f8f8f2">i</span><span style="color: #f92672">+</span><span style="color: #ae81ff">1</span><span style="color: #f92672">&lt;&lt;</span><span style="color: #e6db74">&quot;: &quot;</span><span style="color: #f8f8f2">;</span>
+            <span style="color: #f8f8f2">cin</span><span style="color: #f92672">&gt;&gt;</span><span style="color: #f8f8f2">arr[i];</span>
+        <span style="color: #f8f8f2">}</span>
+     
+        <span style="color: #f8f8f2">ShellSort(arr,</span> <span style="color: #f8f8f2">n);</span>
+     
+        <span style="color: #75715e">// Printing the sorted data.</span>
+        <span style="color: #f8f8f2">cout</span><span style="color: #f92672">&lt;&lt;</span><span style="color: #e6db74">&quot;</span><span style="color: #ae81ff">\n</span><span style="color: #e6db74">Sorted Data &quot;</span><span style="color: #f8f8f2">;</span>
+        <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">(i</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">n;</span> <span style="color: #f8f8f2">i</span><span style="color: #f92672">++</span><span style="color: #f8f8f2">)</span>
+            <span style="color: #f8f8f2">cout</span><span style="color: #f92672">&lt;&lt;</span><span style="color: #e6db74">&quot;-&gt;&quot;</span><span style="color: #f92672">&lt;&lt;</span><span style="color: #f8f8f2">arr[i];</span>
+     
+        <span style="color: #66d9ef">return</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span>
+    <span style="color: #f8f8f2">}</span>
+    
+    <span style="color: #f92672">&gt;&gt;</span><span style="color: #f8f8f2">Runtime</span> <span style="color: #f8f8f2">Test</span> <span style="color: #f8f8f2">Cases</span>
+    <span style="color: #f8f8f2">Case</span> <span style="color: #ae81ff">1</span><span style="color: #f92672">:</span>
+     
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">number</span> <span style="color: #f8f8f2">of</span> <span style="color: #f8f8f2">data</span> <span style="color: #f8f8f2">element</span> <span style="color: #f8f8f2">to</span> <span style="color: #f8f8f2">be</span> <span style="color: #f8f8f2">sorted</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">10</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">1</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">9</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">2</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">3</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">3</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">4</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">4</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">6</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">5</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">8</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">6</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">5</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">7</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">1</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">8</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">2</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">9</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">7</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">element</span> <span style="color: #ae81ff">10</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">0</span>
+     
+    <span style="color: #f8f8f2">Sorted</span> <span style="color: #f8f8f2">Data</span> <span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">0</span><span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">1</span><span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">2</span><span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">3</span><span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">4</span><span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">5</span><span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">6</span><span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">7</span><span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">8</span><span style="color: #f92672">-&gt;</span><span style="color: #ae81ff">9</span>
+    </pre></div>

@@ -1,0 +1,106 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #272822; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #75715e">#include &lt;iostream&gt;</span>
+    <span style="color: #66d9ef">using</span> <span style="color: #66d9ef">namespace</span> <span style="color: #f8f8f2">std;</span>
+
+    <span style="color: #66d9ef">int</span> <span style="color: #a6e22e">main</span><span style="color: #f8f8f2">()</span>
+    <span style="color: #f8f8f2">{</span>
+        <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">a[</span><span style="color: #ae81ff">10</span><span style="color: #f8f8f2">][</span><span style="color: #ae81ff">10</span><span style="color: #f8f8f2">],</span> <span style="color: #f8f8f2">b[</span><span style="color: #ae81ff">10</span><span style="color: #f8f8f2">][</span><span style="color: #ae81ff">10</span><span style="color: #f8f8f2">],</span> <span style="color: #f8f8f2">mult[</span><span style="color: #ae81ff">10</span><span style="color: #f8f8f2">][</span><span style="color: #ae81ff">10</span><span style="color: #f8f8f2">],</span> <span style="color: #f8f8f2">r1,</span> <span style="color: #f8f8f2">c1,</span> <span style="color: #f8f8f2">r2,</span> <span style="color: #f8f8f2">c2,</span> <span style="color: #f8f8f2">i,</span> <span style="color: #f8f8f2">j,</span> <span style="color: #f8f8f2">k;</span>
+    
+        <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;Enter rows and columns for first matrix: &quot;</span><span style="color: #f8f8f2">;</span>
+        <span style="color: #f8f8f2">cin</span> <span style="color: #f92672">&gt;&gt;</span> <span style="color: #f8f8f2">r1</span> <span style="color: #f92672">&gt;&gt;</span> <span style="color: #f8f8f2">c1;</span>
+        <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;Enter rows and columns for second matrix: &quot;</span><span style="color: #f8f8f2">;</span>
+        <span style="color: #f8f8f2">cin</span> <span style="color: #f92672">&gt;&gt;</span> <span style="color: #f8f8f2">r2</span> <span style="color: #f92672">&gt;&gt;</span> <span style="color: #f8f8f2">c2;</span>
+    
+        <span style="color: #75715e">// If column of first matrix in not equal to row of second matrix,</span>
+        <span style="color: #75715e">// ask the user to enter the size of matrix again.</span>
+        <span style="color: #66d9ef">while</span> <span style="color: #f8f8f2">(c1</span><span style="color: #f92672">!=</span><span style="color: #f8f8f2">r2)</span>
+        <span style="color: #f8f8f2">{</span>
+            <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;Error! column of first matrix not equal to row of second.&quot;</span><span style="color: #f8f8f2">;</span>
+    
+            <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;Enter rows and columns for first matrix: &quot;</span><span style="color: #f8f8f2">;</span>
+            <span style="color: #f8f8f2">cin</span> <span style="color: #f92672">&gt;&gt;</span> <span style="color: #f8f8f2">r1</span> <span style="color: #f92672">&gt;&gt;</span> <span style="color: #f8f8f2">c1;</span>
+    
+            <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;Enter rows and columns for second matrix: &quot;</span><span style="color: #f8f8f2">;</span>
+            <span style="color: #f8f8f2">cin</span> <span style="color: #f92672">&gt;&gt;</span> <span style="color: #f8f8f2">r2</span> <span style="color: #f92672">&gt;&gt;</span> <span style="color: #f8f8f2">c2;</span>
+        <span style="color: #f8f8f2">}</span>
+    
+        <span style="color: #75715e">// Storing elements of first matrix.</span>
+        <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">endl</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;Enter elements of matrix 1:&quot;</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">endl;</span>
+        <span style="color: #66d9ef">for</span><span style="color: #f8f8f2">(i</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">r1;</span> <span style="color: #f92672">++</span><span style="color: #f8f8f2">i)</span>
+            <span style="color: #66d9ef">for</span><span style="color: #f8f8f2">(j</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">j</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">c1;</span> <span style="color: #f92672">++</span><span style="color: #f8f8f2">j)</span>
+            <span style="color: #f8f8f2">{</span>
+                <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;Enter element a&quot;</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">1</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">j</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">1</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot; : &quot;</span><span style="color: #f8f8f2">;</span>
+                <span style="color: #f8f8f2">cin</span> <span style="color: #f92672">&gt;&gt;</span> <span style="color: #f8f8f2">a[i][j];</span>
+            <span style="color: #f8f8f2">}</span>
+    
+        <span style="color: #75715e">// Storing elements of second matrix.</span>
+        <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">endl</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;Enter elements of matrix 2:&quot;</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">endl;</span>
+        <span style="color: #66d9ef">for</span><span style="color: #f8f8f2">(i</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">r2;</span> <span style="color: #f92672">++</span><span style="color: #f8f8f2">i)</span>
+            <span style="color: #66d9ef">for</span><span style="color: #f8f8f2">(j</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">j</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">c2;</span> <span style="color: #f92672">++</span><span style="color: #f8f8f2">j)</span>
+            <span style="color: #f8f8f2">{</span>
+                <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;Enter element b&quot;</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">1</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">j</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">1</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot; : &quot;</span><span style="color: #f8f8f2">;</span>
+                <span style="color: #f8f8f2">cin</span> <span style="color: #f92672">&gt;&gt;</span> <span style="color: #f8f8f2">b[i][j];</span>
+            <span style="color: #f8f8f2">}</span>
+    
+        <span style="color: #75715e">// Initializing elements of matrix mult to 0.</span>
+        <span style="color: #66d9ef">for</span><span style="color: #f8f8f2">(i</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">r1;</span> <span style="color: #f92672">++</span><span style="color: #f8f8f2">i)</span>
+            <span style="color: #66d9ef">for</span><span style="color: #f8f8f2">(j</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">j</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">c2;</span> <span style="color: #f92672">++</span><span style="color: #f8f8f2">j)</span>
+            <span style="color: #f8f8f2">{</span>
+                <span style="color: #f8f8f2">mult[i][j]</span><span style="color: #f92672">=</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span>
+            <span style="color: #f8f8f2">}</span>
+    
+        <span style="color: #75715e">// Multiplying matrix a and b and storing in array mult.</span>
+        <span style="color: #66d9ef">for</span><span style="color: #f8f8f2">(i</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">r1;</span> <span style="color: #f92672">++</span><span style="color: #f8f8f2">i)</span>
+            <span style="color: #66d9ef">for</span><span style="color: #f8f8f2">(j</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">j</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">c2;</span> <span style="color: #f92672">++</span><span style="color: #f8f8f2">j)</span>
+                <span style="color: #66d9ef">for</span><span style="color: #f8f8f2">(k</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">k</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">c1;</span> <span style="color: #f92672">++</span><span style="color: #f8f8f2">k)</span>
+                <span style="color: #f8f8f2">{</span>
+                    <span style="color: #f8f8f2">mult[i][j]</span> <span style="color: #f92672">+=</span> <span style="color: #f8f8f2">a[i][k]</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">b[k][j];</span>
+                <span style="color: #f8f8f2">}</span>
+    
+        <span style="color: #75715e">// Displaying the multiplication of two matrix.</span>
+        <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">endl</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;Output Matrix: &quot;</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">endl;</span>
+        <span style="color: #66d9ef">for</span><span style="color: #f8f8f2">(i</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">r1;</span> <span style="color: #f92672">++</span><span style="color: #f8f8f2">i)</span>
+        <span style="color: #66d9ef">for</span><span style="color: #f8f8f2">(j</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">j</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">c2;</span> <span style="color: #f92672">++</span><span style="color: #f8f8f2">j)</span>
+        <span style="color: #f8f8f2">{</span>
+            <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot; &quot;</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">mult[i][j];</span>
+            <span style="color: #66d9ef">if</span><span style="color: #f8f8f2">(j</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">c2</span><span style="color: #f92672">-</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)</span>
+                <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">endl;</span>
+        <span style="color: #f8f8f2">}</span>
+    
+        <span style="color: #66d9ef">return</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span>
+    <span style="color: #f8f8f2">}</span>
+    
+    
+    <span style="color: #f92672">&gt;&gt;</span><span style="color: #f8f8f2">Output</span>
+    
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">rows</span> <span style="color: #f8f8f2">and</span> <span style="color: #f8f8f2">column</span> <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">first</span> <span style="color: #f8f8f2">matrix</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">3</span>
+    <span style="color: #ae81ff">2</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">rows</span> <span style="color: #f8f8f2">and</span> <span style="color: #f8f8f2">column</span> <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">second</span> <span style="color: #f8f8f2">matrix</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">3</span>
+    <span style="color: #ae81ff">2</span>
+    <span style="color: #f8f8f2">Error</span><span style="color: #f92672">!</span> <span style="color: #f8f8f2">column</span> <span style="color: #f8f8f2">of</span> <span style="color: #f8f8f2">first</span> <span style="color: #f8f8f2">matrix</span> <span style="color: #f8f8f2">not</span> <span style="color: #f8f8f2">equal</span> <span style="color: #f8f8f2">to</span> <span style="color: #f8f8f2">row</span> <span style="color: #f8f8f2">of</span> <span style="color: #f8f8f2">second.</span>
+    
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">rows</span> <span style="color: #f8f8f2">and</span> <span style="color: #f8f8f2">column</span> <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">first</span> <span style="color: #f8f8f2">matrix</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">2</span>
+    <span style="color: #ae81ff">3</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">rows</span> <span style="color: #f8f8f2">and</span> <span style="color: #f8f8f2">column</span> <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">second</span> <span style="color: #f8f8f2">matrix</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">3</span>
+    <span style="color: #ae81ff">2</span>
+    
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">elements</span> <span style="color: #f8f8f2">of</span> <span style="color: #f8f8f2">matrix</span> <span style="color: #ae81ff">1</span><span style="color: #f92672">:</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">elements</span> <span style="color: #f8f8f2">a11</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">3</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">elements</span> <span style="color: #f8f8f2">a12</span><span style="color: #f92672">:</span> <span style="color: #f92672">-</span><span style="color: #ae81ff">2</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">elements</span> <span style="color: #f8f8f2">a13</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">5</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">elements</span> <span style="color: #f8f8f2">a21</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">3</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">elements</span> <span style="color: #f8f8f2">a22</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">0</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">elements</span> <span style="color: #f8f8f2">a23</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">4</span>
+    
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">elements</span> <span style="color: #f8f8f2">of</span> <span style="color: #f8f8f2">matrix</span> <span style="color: #ae81ff">2</span><span style="color: #f92672">:</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">elements</span> <span style="color: #f8f8f2">b11</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">2</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">elements</span> <span style="color: #f8f8f2">b12</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">3</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">elements</span> <span style="color: #f8f8f2">b21</span><span style="color: #f92672">:</span> <span style="color: #f92672">-</span><span style="color: #ae81ff">9</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">elements</span> <span style="color: #f8f8f2">b22</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">0</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">elements</span> <span style="color: #f8f8f2">b31</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">0</span>
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">elements</span> <span style="color: #f8f8f2">b32</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">4</span>
+    
+    <span style="color: #f8f8f2">Output</span> <span style="color: #f8f8f2">Matrix</span><span style="color: #f92672">:</span>
+    <span style="color: #ae81ff">24</span> <span style="color: #ae81ff">29</span>
+    <span style="color: #ae81ff">6</span>  <span style="color: #ae81ff">25</span>
+    </pre></div>

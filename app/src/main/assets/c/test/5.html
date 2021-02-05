@@ -1,0 +1,79 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #999999; font-style: italic">/*</span>
+
+    <span style="color: #999999; font-style: italic">     * C program to find the number of integers divisible by </span>
+
+    <span style="color: #999999; font-style: italic">     * 5 between the given range num1 and num2, where num1 &lt; num2.</span>
+    
+    <span style="color: #999999; font-style: italic">     *</span>
+    
+    <span style="color: #999999; font-style: italic">     * Also find the sum of all these integer numbers which are divisible</span>
+    
+    <span style="color: #999999; font-style: italic">     * by 5 and display the total.</span>
+    
+    <span style="color: #999999; font-style: italic">     */</span>
+    
+        <span style="color: #a61717; background-color: #e3d2d2">#</span><span style="color: #d0d0d0">include</span> <span style="color: #d0d0d0">&lt;stdio.h&gt;</span>
+    
+         
+    
+        <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #d0d0d0">main()</span>
+    
+        <span style="color: #d0d0d0">{</span>
+    
+            <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">i,</span> <span style="color: #d0d0d0">num1,</span> <span style="color: #d0d0d0">num2,</span> <span style="color: #d0d0d0">count</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">sum</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+    
+         
+    
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter the value of num1 and num2 \n&quot;</span><span style="color: #d0d0d0">);</span>
+    
+            <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d %d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;num1,</span> <span style="color: #d0d0d0">&amp;num2);</span>
+    
+            <span style="color: #999999; font-style: italic">/* Count the number and compute their sum*/</span>
+    
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Integers divisible by 5 are \n&quot;</span><span style="color: #d0d0d0">);</span>
+    
+            <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">num1;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">num2;</span> <span style="color: #d0d0d0">i++)</span>
+    
+            <span style="color: #d0d0d0">{</span>
+    
+                <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">%</span> <span style="color: #3677a9">5</span> <span style="color: #d0d0d0">==</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">)</span>
+    
+                <span style="color: #d0d0d0">{</span>
+    
+                    <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;%3d,&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">i);</span>
+    
+                    <span style="color: #d0d0d0">count++;</span>
+    
+                    <span style="color: #d0d0d0">sum</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">sum</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">i;</span>
+    
+                <span style="color: #d0d0d0">}</span>
+    
+            <span style="color: #d0d0d0">}</span>
+    
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n Number of integers divisible by 5 between %d and %d =</span>
+    
+         <span style="color: #d0d0d0">%d</span><span style="color: #a61717; background-color: #e3d2d2">\</span><span style="color: #d0d0d0">n</span><span style="color: #ed9d13">&quot;, num1, num2, count);</span>
+    
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Sum of all integers that are divisible by 5 = %d\n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">sum);</span>
+    
+        <span style="color: #d0d0d0">}</span>
+    
+    <span style="color: #d0d0d0">&gt;&gt;Runtime</span> <span style="color: #d0d0d0">Test</span> <span style="color: #d0d0d0">Cases</span>
+    
+    <span style="color: #d0d0d0">Case:</span><span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">value</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">num1</span> <span style="color: #d0d0d0">and</span> <span style="color: #d0d0d0">num2</span>
+    <span style="color: #3677a9">12</span> <span style="color: #3677a9">17</span>
+    <span style="color: #d0d0d0">Integers</span> <span style="color: #d0d0d0">divisible</span> <span style="color: #d0d0d0">by</span> <span style="color: #3677a9">5</span> <span style="color: #d0d0d0">are</span>
+     <span style="color: #3677a9">15</span><span style="color: #d0d0d0">,</span>
+    <span style="color: #d0d0d0">Number</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">integers</span> <span style="color: #d0d0d0">divisible</span> <span style="color: #d0d0d0">by</span> <span style="color: #3677a9">5</span> <span style="color: #d0d0d0">between</span> <span style="color: #3677a9">12</span> <span style="color: #d0d0d0">and</span> <span style="color: #3677a9">17</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">Sum</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">all</span> <span style="color: #d0d0d0">integers</span> <span style="color: #d0d0d0">that</span> <span style="color: #d0d0d0">are</span> <span style="color: #d0d0d0">divisible</span> <span style="color: #d0d0d0">by</span> <span style="color: #3677a9">5</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">15</span>
+     
+    <span style="color: #d0d0d0">Case:</span><span style="color: #3677a9">2</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">value</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">num1</span> <span style="color: #d0d0d0">and</span> <span style="color: #d0d0d0">num2</span>
+    <span style="color: #3677a9">1</span> <span style="color: #3677a9">10</span>
+    <span style="color: #d0d0d0">Integers</span> <span style="color: #d0d0d0">divisible</span> <span style="color: #d0d0d0">by</span> <span style="color: #3677a9">5</span> <span style="color: #d0d0d0">are</span>
+     <span style="color: #3677a9">5</span><span style="color: #d0d0d0">,</span><span style="color: #3677a9">10</span>
+    <span style="color: #d0d0d0">Number</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">integers</span> <span style="color: #d0d0d0">divisible</span> <span style="color: #d0d0d0">by</span> <span style="color: #3677a9">5</span> <span style="color: #d0d0d0">between</span> <span style="color: #3677a9">1</span> <span style="color: #d0d0d0">and</span> <span style="color: #3677a9">10</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">2</span>
+    <span style="color: #d0d0d0">Sum</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">all</span> <span style="color: #d0d0d0">integers</span> <span style="color: #d0d0d0">that</span> <span style="color: #d0d0d0">are</span> <span style="color: #d0d0d0">divisible</span> <span style="color: #d0d0d0">by</span> <span style="color: #3677a9">5</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">15</span>
+    </pre></div>

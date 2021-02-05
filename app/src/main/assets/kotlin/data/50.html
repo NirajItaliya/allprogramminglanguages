@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Annotations
+</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPSOE6QrDI" id="content1-12z" data-rv-view="7762">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin Annotations
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/b">web creator</a></section><section class="mbr-section article content1 cid-rPSOIHdweP" id="content1-130" data-rv-view="7763">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Annotations</strong> are used to attach metadata to classes, interface, parameters, and so on at compile time. Annotation can be used by compiler which reflects at runtime. We can change the meaning of the data or program according to annotation values.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPSOV1rcYl" id="content1-131" data-rv-view="7764">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Meta-annotations
+ :&nbsp;</strong><span style="font-size: 1rem;">We can add meta-info while declaring annotation. Following are some meta-annotations:</span></div>
+        </div>
+    </div>
+</section>
+
+<section class="section-table cid-rPSP2l7rCz" id="table1-132" data-rv-view="7765">
+
+  
+  
+  <div class="container container-table">
+      
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7"><span style="font-weight: normal;">Annotation Name&nbsp;</span></th><th class="head-item mbr-fonts-style display-7">Usage</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">@Target&nbsp;</td><td class="body-item mbr-fonts-style display-7">It targets all the possible kinds of elements which can be annotated with the annotation.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">@Retention&nbsp;</td><td class="body-item mbr-fonts-style display-7">It specifies whether the annotation is stored in the compiled class files or whether it is visible through reflection at run time.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">@Repeatable&nbsp;</td><td class="body-item mbr-fonts-style display-7">This meta-annotation determines that an annotation is applicable twice or more on a single code element.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">@MustBeDocumented&nbsp;</td><td class="body-item mbr-fonts-style display-7">This meta-document specifies that the annotation is the part of the public API and should be included in the class or method.
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPSSJ6D1F0" id="content1-133" data-rv-view="7802">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Example of using annotation
+ :</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">@Target(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION,
+AnnotationTarget.VALUE_PARAMETER, AnnotationTarget.EXPRESSION)
+@Retention(AnnotationRetention.SOURCE)
+@MustBeDocumented
+annotation class MyClass
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPSSSQLER9" id="content12-135" data-rv-view="7804">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Declaring an annotation
+ :&nbsp;</strong>Annotation is declared by placing annotation modifier in front of a class.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">annotation class MyClass
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPST5zYf6j" id="content12-137" data-rv-view="7806">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Annotate a constructor
+ : </strong>It is also possible to annotate the constructor of a class. This is done by adding the constructor keyword for constructor declaration and placing the annotation before it.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">class MyClass@Inject constructor( dependency: MyDependency){
+//. . .
+}
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPSTe3U4NA" id="content12-139" data-rv-view="7808">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Annotate property assessors
+</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">class MyClass{
+var a: MyDependency? = null
+                    @Inject set
+}
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPSTflI2kD" id="content12-13b" data-rv-view="7810">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Using constructor as annotation
+ : </strong>We can also use constructor as an annotation. Using constructor as annotation takes parameters.
+</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">annotation class MyClass(val why: String)
+@MyClass("parameter") class Foo{
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSTHWnRD2" id="content1-13d" data-rv-view="7812">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The parameters which are used as an annotation cannot be nullable types. This is because the JVM does not support null as a value for an annotation attribute.
+<div>
+</div><div>We can also use one annotation as a parameter to another annotation, at such situation it cannot takes the prefix <strong>@</strong> character. Forexample:</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">annotation class ReplaceWith(val expression: String)
+annotation class Deprecated(
+val message: String,
+val replaceWith: ReplaceWith = ReplaceWith(""))
+@Deprecated("This function is deprecated, use === instead", ReplaceWith("this === other"))
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSTU1XfHo" id="content1-13f" data-rv-view="7814">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin also specifies that a class can takean argument of an annotation by using a KClass. The Kotlin compiler automatically converts it into java class, which leads to see the annotations and arguments normally.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">import kotlin.reflect.KClass
+annotation class MyClass(val arg1: KClass<*>, val arg2: KClass&lt;out Any&gt;)
+@MyClass(String::class, Int::class) class Foo
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPSUeuyW4H" id="content12-13h" data-rv-view="7816">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example of using TYPE annotation
+ : </strong>Creating a java annotation interface Ann.java
+</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+@Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@interface Ann{
+    int value();
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSUy2VGeW" id="content1-13j" data-rv-view="7818">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Create a MyClass.kt class which uses the annotation interface Ann.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">@Ann(value = 10)
+class MyClass{
+
+}
+fun main (args: Array&lt;String&gt;){
+var c = MyClass()
+var x = c.javaClass.getAnnotation(Ann::class.java)
+    if(x!=null){
+println("Value:"+x?.value)
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSUCC9bsX" id="content1-13l" data-rv-view="7820">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Value: 10
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/datatables/jquery.data-tables.min.js"></script>
+  <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

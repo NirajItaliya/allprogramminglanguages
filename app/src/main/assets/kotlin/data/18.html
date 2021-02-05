@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin continue Jump Structure</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rOQ1hhvfg6" id="content1-dn" data-rv-view="5498">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin continue Jump Structure</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/o">bootstrap buttons</a></section><section class="mbr-section article content1 cid-rOQ1nlSGF0" id="content1-do" data-rv-view="5499">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin, <strong>continue statement</strong> is used to repeat the loop. It continues the current flow of the program and skips the remaining code at specified condition.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rOQ1xiDS3y" id="content1-dp" data-rv-view="5500">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The continue statement within a nested loop only affects the inner loop.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">for(..){
+       //body of for above if
+       if(checkCondition){
+           continue
+       }
+//body of for below if
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rOQ1Elro6E" id="content12-dq" data-rv-view="5502">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7"><p>In the above example, for loop repeat its loop when if condition <strong>execute continue</strong>. The continue statement makes repetition of loop without executing the below code of if condition.</p><p><strong>Kotlin continue example.</strong></p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+        for (i in 1..3) {
+            println("i = $i")
+            if (j == 2) {
+                continue
+            }
+            println("this is below if")
+        }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rOQ1XA8yEb" id="content1-dt" data-rv-view="5504">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">i = 1
+this is below if
+i = 2
+i = 3
+this is below if
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rOQ2cB9HO8" id="content1-dw" data-rv-view="5506">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Kotlin Labeled continue Expression</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rOQ2fLshZh" id="content1-dx" data-rv-view="5507">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Labeled is the form of identifier followed by the <strong>@</strong> sign, for example <strong>abc@</strong>, <strong>test@</strong>. To make an expression as label, we just put a label in front of expression.
+<div>
+</div><div>Kotlin, labeled continue expression is used for repetition of <strong>specific loop</strong> (labeled loop). This is done by using continue expression with @ sign followed by label name (continue@labelname).</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rOQ2pCt2JK" id="content12-dy" data-rv-view="5508">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li>Kotlin labeled continue example</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">i = 1
+this is below if
+i = 2
+i = 3
+this is below if
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rOQ2Bktugk" id="content1-e0" data-rv-view="5510">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">i = 1 and j = 1
+this is below if
+i = 1 and j = 2
+this is below if
+i = 1 and j = 3
+this is below if
+i = 2 and j = 1
+i = 3 and j = 1
+this is below if
+i = 3 and j = 2
+this is below if
+i = 3 and j = 3
+this is below if
+</code></pre></div>
+
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

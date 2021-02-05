@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin String</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rLAunqf0N9" id="content1-4x" data-rv-view="4737">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin String</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/n">bootstrap modal</a></section><section class="mbr-section article content1 cid-rLAutUHI4N" id="content1-4y" data-rv-view="4738">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">String is an array of characters. Kotlin Strings are more or less similar to the Java Strings, but with some new add-ons. Following is the syntax to define a string.</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">var str: String = "Hello"
+//or
+var str = "Hello"
+var newString: String = 'A' //ERROR
+var newString: String = 2 //ERROR
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rLAvaPfrk1" id="content1-51" data-rv-view="4740">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">String in Kotlin is implemented using the String class. Like Java String, Kotlin Strings are <strong>immutable</strong>.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">var str = "Hello"
+str += "Kotlin Strings"
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLAvyxjwHD" id="content1-53" data-rv-view="4742">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The above declaration changes the reference of the variable str in the second line to the newly created string(“Hello Kotlin Strings”) in the <strong>String</strong> <strong>Pool</strong>.
+<div>
+</div><div><strong>Creating an empty String
+ :</strong></div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">var s = String() //creates an empty string.
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLAvNHN32W" id="content1-55" data-rv-view="4744">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Unlike Java, Kotlin doesn’t require a new keyword to instantiate an object of a class.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLAvVZpqoW" id="content1-57" data-rv-view="4745">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Important Properties and Functions of Kotlin String</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rLAw3l3ePx" id="content12-5a" data-rv-view="4746">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>length :</strong> This is a property that can be accessed using the dot operator on the String. Returns the number of characters present in a string</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">val str = "Hello Kotlin Strings"
+println(str.length) //prints 20
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rLAwhozlwv" id="content12-5c" data-rv-view="4748">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>get(index) :</strong> Returns the character specified at the particular index</li><li><strong>subSequence(startIndex, endIndex) :</strong> Returns the substring between the <strong>startIndex</strong> and the endIndex but excluding the endIndex character.</li><li><strong>subSequence(startIndex, endIndex) :</strong> Returns the substring between the startIndex and the endIndex but excluding the endIndex character.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">val str = "Hello Kotlin Strings"
+println(str.subSequence(0,5)) //prints Hello
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rLATtC6cgQ" id="content12-5j" data-rv-view="4750">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>a.compareTo(b) :</strong> If a is equal to b, it returns 0, if a&lt;b it returns positive number. compareTo accepts another argument too, namely ignoreCase.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">var str = "Hello Kotlin Strings"
+var s = String()
+s = "Hello KOTLIN Strings"
+println(s.compareTo(str)) //prints -32
+println(s.compareTo(str,true)) //prints 0
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLATJiDUL6" id="content1-5l" data-rv-view="4752">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Accessing Characters in a String</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLATSLQWg7" id="content1-5m" data-rv-view="4753">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">To access individual characters of a String, Kotlin supports the index access operator(Unlike Java) as shown below.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rLATWEpXmW" id="content12-5n" data-rv-view="4754">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Using Index Operator</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">var str = "Hello, Kotlin"
+print(str[0]) //prints H
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rLAU5QawqI" id="content12-5p" data-rv-view="4756">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Using the get method</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">val str = "Hello Kotlin Strings"
+println(str.get(4)) //prints o
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rLAUitPSUY" id="content12-5s" data-rv-view="4758">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Iterating through a String</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLAUtegclA" id="content1-5t" data-rv-view="4759">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">We can loop through a string to access each character using a <strong>for-in loop</strong> as shown below.</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">for(element in str){
+      println(element)
+   }
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLAUFkUkSE" id="content1-5w" data-rv-view="4761">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Escape characters in Kotlin Strings</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rLAUQfDmke" id="content12-5x" data-rv-view="4762">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <div>Following are the escape characters that when used with a backslash behave differently.
+</div><div><br></div><ul>
+                    <li><strong>\n</strong> newline.
+</li><li><strong>\r</strong> carriage return.
+</li><li><strong>\t </strong>tab.
+</li><li><strong>\b </strong>backspace
+</li><li><strong>\" </strong>double quote
+</li><li><strong>\'</strong> single quote
+</li><li><strong>\\ </strong>backslash
+</li><li><strong>\$</strong> dollar – Dollar symbol is used in String templates that we’ll be seeing next</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLAVjQeUsJ" id="content1-5y" data-rv-view="4763">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>String Templates</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLAVnh1uS3" id="content1-5z" data-rv-view="4764">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Instead of concatenating an expression in a string, Strings can contain expressions/statements following a dollar symbol as shown below.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">var len = str.length
+var newStr = "Length of str is ${str.length}"
+//or
+var newStr = "Length of str is $len"
+println(Length of str is ${str.length})
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLAVyksSPV" id="content1-61" data-rv-view="4766">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Using string <strong>templates</strong>, we can insert variables and expressions in a string. String Templates are commonly used in <strong>print</strong> statements.
+<div>To use the $ symbol in a string we need to escape the character.</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLAVGRKHPF" id="content1-62" data-rv-view="4767">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>String Equality</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rLAVSKww0k" id="content12-63" data-rv-view="4768">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <div>There are two types of equality checkers.</div><div><br></div><ul>
+                    <li><strong>Referential Equality:</strong> Checks if the pointers for two objects are the same. === operator is used.
+</li><li><strong>Structural Equality : </strong>Checks if the contents of both the objects are equal. == is used</li></ul><p>Following code snippet demonstrates the above checkers</p><ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">var a = "Hello"
+var b = "Hello again"
+var c = "Hello"
+var d1 = "Hel"
+var d2 ="lo"
+var d = d1 + d2
+println(a===c) // true since a and c objects point to the same String in the StringPool
+println(a==c) //true since contents are equal
+println(a===b) //false
+println(a==b) //false
+println(a===d) //false since d is made up of two different Strings. Hence a and d point to different set of strings
+println(a==d) //true since the contents are equal
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLAWnjuzY9" id="content1-66" data-rv-view="4770">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Note: The negation of <strong>===</strong> and == are <strong>!===</strong> and <strong>!== </strong>respectively.
+</div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

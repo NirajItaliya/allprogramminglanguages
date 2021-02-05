@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Abstract class</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPV9JXHzhV" id="content1-19a" data-rv-view="8018">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Abstract class</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/q">bootstrap slideshow</a></section><section class="mbr-section article content1 cid-rPV9Ni06jI" id="content1-19b" data-rv-view="8019">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p>A class which is declared with <strong>abstract</strong> keyword is known as <strong>abstract class</strong>. An abstract class cannot be instantiated. Means, we cannot create object of abstract class. The method and properties of abstract class are non-abstract unless they are explicitly declared as abstract.
+</p><p><strong><br></strong></p><p><strong>Declaration of abstract class :</strong></p></div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">abstract class A {
+var x = 0
+    abstract fun doSomething()
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPVa1Z5Kki" id="content1-19d" data-rv-view="8021">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Abstract classes are partially defined classes, methods and properties which are no implementation but must be implemented into derived class. If the derived class does not implement the properties of base class then is also meant to be an abstract class.
+<div>
+</div><div>Abstract class or abstract function does not need to annotate with open keyword as they are open by default. Abstract member function does not contain its body. The member function cannot be declared as abstract if it contains in body in abstract class.</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPVa6K4h5S" id="content12-19e" data-rv-view="8022">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example of abstract class that has abstract method
+ :&nbsp;</strong>In this example, there is an abstract class Car that contains an abstract function run(). The implementation of run() function is provided by its subclass Honda.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">abstract class Car{
+    abstract fun run()
+}
+class Honda: Car(){
+   override fun run(){
+println("Honda is running safely..")
+   }
+}
+fun main(args: Array&lt;String&gt;){
+val obj = Honda()
+obj.run();
+}
+
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPVa7xbExB" id="content1-19g" data-rv-view="8024">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Honda is running safely..
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPVa9E5Fil" id="content1-19i" data-rv-view="8026">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">A non-abstract open member function can be over ridden in an abstract class.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">open class Car {
+    open fun run() {
+        println("Car is running..")
+    }
+}
+    abstract class Honda : Car() {
+        override abstract fun run()
+    }
+    class City: Honda(){
+        override fun run() {
+          // TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        println("Honda City is running..")
+        }
+    }
+    fun main(args: Array&lt;String&gt;){
+    val car = Car()
+    car.run()
+    val city = City()
+    city.run()
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPVab5KFVW" id="content1-19k" data-rv-view="8028">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Car is running..
+Honda City is running..
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPVadTukJd" id="content1-19m" data-rv-view="8030">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In above example, An abstract class Honda extends the class Car and its function run(). Honda class override the run() function of Car class. The Honda class did not give the implementation of run() function as it is also declared as abstract. The implementation of abstract function run() of Honda class is provided by City class.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPVaet7J1t" id="content12-19n" data-rv-view="8031">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example of real scenario of abstract class
+ :&nbsp;</strong>In this example, an abstract class Bank that contains an abstract function simpleInterest() accepts three parameters p,r,and t. The class SBI and PNB provides the implementation of simpleInterest() function and returns the result.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">abstract class Bank {
+    abstract fun simpleInterest(p: Int, r: Double, t: Int): Double
+}
+
+class SBI : Bank() {
+    override fun simpleInterest(p: Int, r: Double, t: Int): Double {
+        return (p * r * t) / 100
+    }
+}
+
+class PNB : Bank() {
+    override fun simpleInterest(p: Int, r: Double, t: Int): Double {
+        return (p * r * t) / 100
+    }
+}
+
+fun main(args: Array&lt;String&gt;) {
+    var sbi: Bank = SBI()
+    val sbiint = sbi.simpleInterest(1000, 5.0, 3)
+    println("SBI interest is $sbiint")
+    var pnb: Bank = PNB()
+    val pnbint = pnb.simpleInterest(1000, 4.5, 3)
+    println("PNB interest is $pnbint")
+}  
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPVdvRy62p" id="content1-19p" data-rv-view="8033">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">SBI interest is 150.0
+PNB interest is 135.0
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

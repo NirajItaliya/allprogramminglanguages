@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin Constructor
+</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPTxzKajXT" id="content1-15p" data-rv-view="7894">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin Constructor
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/o">bootstrap buttons</a></section><section class="mbr-section article content1 cid-rPTAEHPXkf" id="content1-15q" data-rv-view="7895">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In Kotlin, <strong>Constructor</strong> is a block of code similar to method. Constructor is declared with the same name as the class followed by parenthesis '()'. Constructor is used to initialize the variables at the time of object creation.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPTAR7GfRS" id="content12-15r" data-rv-view="7896">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Types of Kotlin constructors :</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPTB0AGhyY" id="content1-15s" data-rv-view="7897">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">There are two types of constructors in Kotlin :
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPTB7Av7cv" id="content12-15t" data-rv-view="7898">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li>Primary constructor
+</li><li>Secondary constructor
+</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPTBbATp5A" id="content1-15u" data-rv-view="7899">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">There is only one primary constructor in a Kotlin class whereas secondary constructor may be one or more.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPTBhmrVyG" id="content1-15v" data-rv-view="7900">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Kotlin primary constructor
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPTBttO1rF" id="content1-15w" data-rv-view="7901">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Primary constructor</strong> is used to initialize the class. It is declared at class header. Primary constructor code is surrounded by parentheses with optional parameter.
+<div>
+</div><div>Let's see an example of declaration of primary constructor. In the below code, we declare a constructor myClass with two parameter name and id. Parameter name is only read property whereas id is read and write property.</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">class myClass(valname: String,varid: Int) {
+    // class body
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPTBEUGF26" id="content1-15x" data-rv-view="7903">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">When the object of myClasss is created, it initializes name and id with "Ashu" and "101" respectively.
+</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">class myClass(val name: String, var id: Int) {
+}
+fun main(args: Array&lt;String&gt;){
+    val myclass = myClass ("Ashu", 101)
+
+    println("Name = ${ myclass.name}")
+    println("Id = ${ myclass.id}")
+}
+</code></pre></div>
+<section class="mbr-section article content1 cid-rPTBTxknxU" id="content1-160" data-rv-view="7905">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Name = Ashu
+Id = 101
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPTC2QntT1" id="content12-162" data-rv-view="7907">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Primary constructor with initializer block
+ :&nbsp;</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPTCbEheP8" id="content1-163" data-rv-view="7908">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The <strong>primary constructor</strong> does not contain any code. Initializer blocks are used to initialization of code. This block is prefixed with init keyword. At the period of instance initialization, the initialized blocks are executed in the same order as they appear in class body.
+<div>
+</div><div>Let's rewrite the above code using initialize block:
+</div></div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">class myClass(name: String, id: Int) {
+    val e_name: String
+    var e_id: Int
+
+    init {
+        e_name = name.capitalize()
+        e_id = id
+
+        println("Name = ${e_name}")
+        println("Id = ${e_id}")
+    }
+}
+
+fun main(args: Array&lt;String&gt;) {
+    val myclass = myClass("Ashu", 101)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPTCoCGmUV" id="content1-165" data-rv-view="7910">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Name = Ashu
+Id = 101
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPTCwS6ony" id="content1-167" data-rv-view="7912">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In above code, parameters name and id accept values "Ashu" and "101" when myclass object is created. The properties name and id are used without "val" or "var", so they are not properties of myClass class.
+<div>
+</div><div>When object of myClass class is created, it executes initializer block which initializese_name and e_id.</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPTCDBj8hS" id="content1-168" data-rv-view="7913">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Kotlin secondary constructor
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPTCLsHb3k" id="content1-169" data-rv-view="7914">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In Kotlin, <strong>secondary constructor</strong> can be created one or more in class. The secondary constructor is created using <strong>"constructor"</strong> keyword.
+<div>
+</div><div>Let's see an example of declaration of secondary constructor. In the below code, we declare two constructor of myClass with two parameter name and id.
+</div></div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">class myClass{
+    constructor(id: Int){
+        //code
+    }
+    constructor(name: String, id: Int){
+        //code
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPTCXsxBqu" id="content1-16b" data-rv-view="7916">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Let's see an example of secondary constructor assigning the value while object of class is created.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">class myClass{
+
+    constructor(name: String, id: Int){
+    println("Name = ${name}")
+    println("Id = ${id}")
+    }
+}
+    fun main(args: Array&lt;String&gt;){
+    val myclass = myClass ("Ashu", 101)
+
+
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPTDesy64K" id="content1-16d" data-rv-view="7918">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Name = Ashu
+Id = 101
+</code></pre></div>
+<section class="mbr-section article content1 cid-rPTDiUa2CX" id="content1-16f" data-rv-view="7920">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">We can also use both primary as well as secondary constructor in a same class. By using primary as well secondary constructor in same class, secondary constructor needs to authorize to primary constructor. Authorization to another constructor in same class is done using this() keyword.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">class myClass(password: String){
+
+    constructor(name: String, id: Int, password: String): this(password){
+    println("Name = ${name}")
+    println("Id = ${id}")
+    println("Password = ${password}")
+    }
+}
+    fun main(args: Array&lt;String&gt;){
+    val myclass = myClass ("Ashu", 101, "mypassword")
+
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPTDCEhhsG" id="content1-16h" data-rv-view="7922">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Name = Ashu
+Id = 101
+Password = mypassword
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPTDGZHVdp" id="content12-16j" data-rv-view="7924">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Calling one secondary constructor from another secondary constructor of same class</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPTDM1T5sT" id="content1-16k" data-rv-view="7925">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In Kotlin, one secondary constructor can call another secondary constructor of same class. This is done by using <strong>this()</strong> keyword.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">class myClass{
+
+    constructor(name: String, id: Int): this(name,id, "mypassword"){
+    println("this executes next")
+    println("Name = ${name}")
+    println("Id = ${id}")
+    }
+
+    constructor(name: String, id: Int,pass: String){
+    println("this executes first")
+    println("Name = ${name}")
+    println("Id = ${id}")
+    println("Password = ${pass}")
+    }
+}
+    fun main(args: Array&lt;String&gt;){
+    val myclass = myClass ("Ashu", 101)
+
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPTDQVAz7h" id="content1-16m" data-rv-view="7927">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">this executes first
+Name = Ashu
+Id = 101
+Password = mypassword
+this executes next
+Name = Ashu
+Id = 101
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPTDZw1gP8" id="content12-16o" data-rv-view="7929">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Calling supper class secondary constructor from derived class secondary constructor
+ : </strong>In Kotlin, one derived class secondary constructor can call the base class secondary constructor. This is done using super keyword, this is the concept of inheritance.
+</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">
+open class Parent {
+
+    constructor(name: String, id: Int) {
+        println("this executes first")
+        println("Name = ${name}")
+        println("Id = ${id}")
+    }
+
+    constructor(name: String, id: Int, pass: String) {
+        println("this executes third")
+        println("Name = ${name}")
+        println("Id = ${id}")
+        println("Password = ${pass}")
+    }
+}
+
+class Child : Parent {
+    constructor(name: String, id: Int) : super(name, id) {
+        println("this executes second")
+        println("Name = ${name}")
+        println("Id = ${id}")
+    }
+
+    constructor(name: String, id: Int, pass: String) : super(name, id, "password") {
+        println("this executes forth")
+        println("Name = ${name}")
+        println("Id = ${id}")
+        println("Password = ${pass}")
+    }
+}
+
+fun main(args: Array&lt;String&gt;) {
+    val obj1 = Child("Ashu", 101)
+    val obj2 = Child("Ashu", 101, "mypassword")
+}  
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPTEde6uCb" id="content1-16q" data-rv-view="7931">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">this executes first
+Name = Ashu
+Id = 101
+this executes second
+Name = Ashu
+Id = 101
+this executes third
+Name = Ashu
+Id = 101
+Password = password
+this executes forth
+Name = Ashu
+Id = 101
+Password = mypassword
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

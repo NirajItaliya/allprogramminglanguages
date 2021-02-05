@@ -1,0 +1,39 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #272822; overflow:auto;width:auto;font-size:10px">
+    <table>
+        <tr>
+
+            <td><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">public</span> <span style="color: #66d9ef">class</span> <span style="color: #a6e22e">GCDExample1</span> <span style="color: #f92672">{</span>
+   
+       <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">main</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">String</span><span style="color: #f92672">[]</span> <span style="color: #f8f8f2">args</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
+   
+           <span style="color: #75715e">//Lets take two numbers 55 and 121 and find their GCD</span>
+           <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">num1</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">55</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">num2</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">121</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">gcd</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">1</span><span style="color: #f92672">;</span>
+   
+           <span style="color: #75715e">/* loop is running from 1 to the smallest of both numbers</span>
+   <span style="color: #75715e">         * In this example the loop will run from 1 to 55 because 55</span>
+   <span style="color: #75715e">         * is the smaller number. All the numbers from 1 to 55 will be </span>
+   <span style="color: #75715e">         * checked. A number that perfectly divides both numbers would</span>
+   <span style="color: #75715e">         * be stored in variable &quot;gcd&quot;. By doing this, at the end, the </span>
+   <span style="color: #75715e">         * variable gcd will have the largest number that divides both</span>
+   <span style="color: #75715e">         * numbers without remainder.</span>
+   <span style="color: #75715e">         */</span>
+           <span style="color: #66d9ef">for</span><span style="color: #f92672">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">1</span><span style="color: #f92672">;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">&lt;=</span> <span style="color: #f8f8f2">num1</span> <span style="color: #f92672">&amp;&amp;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">&lt;=</span> <span style="color: #f8f8f2">num2</span><span style="color: #f92672">;</span> <span style="color: #f8f8f2">i</span><span style="color: #f92672">++)</span>
+           <span style="color: #f92672">{</span>
+               <span style="color: #66d9ef">if</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">num1</span><span style="color: #f92672">%</span><span style="color: #f8f8f2">i</span><span style="color: #f92672">==</span><span style="color: #ae81ff">0</span> <span style="color: #f92672">&amp;&amp;</span> <span style="color: #f8f8f2">num2</span><span style="color: #f92672">%</span><span style="color: #f8f8f2">i</span><span style="color: #f92672">==</span><span style="color: #ae81ff">0</span><span style="color: #f92672">)</span>
+                   <span style="color: #f8f8f2">gcd</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">i</span><span style="color: #f92672">;</span>
+           <span style="color: #f92672">}</span>
+   
+           <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">printf</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;GCD of %d and %d is: %d&quot;</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">num1</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">num2</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">gcd</span><span style="color: #f92672">);</span>
+       <span style="color: #f92672">}</span>
+   
+   <span style="color: #f92672">}</span>
+   
+   
+   <span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">Output:</span>
+   
+   <span style="color: #f8f8f2">GCD</span> <span style="color: #f8f8f2">of</span> <span style="color: #ae81ff">55</span> <span style="color: #f8f8f2">and</span> <span style="color: #ae81ff">121</span> <span style="color: #f8f8f2">is:</span> <span style="color: #ae81ff">11</span>
+   </pre></td>
+        </tr>
+    </table>
+</div>

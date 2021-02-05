@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin Basic Input/Output</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rLFYzUdpoy" id="content1-89" data-rv-view="5314">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Basic Input/Output</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/o">bootstrap buttons</a></section><section class="mbr-section article content1 cid-rLFYHxksKo" id="content1-8b" data-rv-view="5315">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin standard input output operations are performed to flow byte stream from <strong>input device</strong> (keyboard) to main memory and from main memory to output device (screen).</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLFYC2CS24" id="content1-8a" data-rv-view="5316">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Kotlin Output</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLFYWd2DUG" id="content1-8c" data-rv-view="5317">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">You can use <strong>println()</strong> and <strong>print()</strong> functions to send output to the standard output (screen). Let's take an example:</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args : Array&lt;String&gt;) {
+    println("Kotlin is interesting.")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLFYXqW0zi" id="content1-8e" data-rv-view="5319">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Kotlin is interesting.
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLFZ7wvj88" id="content1-8g" data-rv-view="5321">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Here, <strong>println()</strong> outputs the string (inside quotes). The methods print() and println() are internally call <strong>System.out.print()</strong> and <strong>System.out.println()</strong> respectively.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLFZmd7qWY" id="content1-8h" data-rv-view="5322">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Difference between print() and println() methods:</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rLFZq4Hc87" id="content12-8i" data-rv-view="5323">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>print():</strong> print() method is used to print values provided inside the method "()".
+</li><li><strong>println():</strong> println() method is used to print values provided inside the method "()" and moves cursor to the beginning of next line.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLFZvqUqBy" id="content1-8j" data-rv-view="5324">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Example:</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    println(10)
+    println("Welcome to ApkZube")
+    print(20)
+    print("VIshal")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLFZwvwU3C" id="content1-8l" data-rv-view="5326">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">10
+Welcome to ApkZube
+20Vishal
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLG19hdFrX" id="content1-8n" data-rv-view="5328">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Kotlin Input</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLG1fFfI2I" id="content1-8o" data-rv-view="5329">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin has standard library function <strong>readLine()</strong> which is used for reads line of string input from standard input stream. It returns the <strong>line read </strong>or<strong> null</strong>. Let's see an example:</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    println("Enter your name")
+    val name = readLine()
+    println("Enter your age")
+    var age: Int =Integer.valueOf(readLine())
+    println("Your name is $name and your age is $age")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLG1qGpgmQ" id="content1-8q" data-rv-view="5331">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Enter your name
+Ashutosh
+Enter your age
+25
+Your name is Ashutosh and your age is 25
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rLG1AMeNZy" id="content1-8s" data-rv-view="5333">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">While using the <strong>readLine()</strong> function, input lines other than String are explicitly converted into their <strong>corresponding types</strong>.
+<div>
+</div><div>To input other data type rather than String, we need to use Scanner object of <strong>java.util.Scanner</strong> class from Java standard library.</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rLG1KDqVhl" id="content1-8t" data-rv-view="5334">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Example Getting Integer Input</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">import java.util.Scanner
+fun main(args: Array&lt;String&gt;) {
+    val read = Scanner(System.`in`)
+    println("Enter your age")
+    var age = read.nextInt()
+    println("Your input age is "+age)
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLG1LnNQWj" id="content1-8v" data-rv-view="5336">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Enter your age
+25
+Your input age is 25
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rLG1TE7EOR" id="content1-8x" data-rv-view="5338">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Here <strong>nextInt()</strong> is a method which takes integer input and stores in integer variable. The other data types Boolean, Float, Long and Double uses <strong>nextBoolean(), nextFloat(), nextLong() </strong>and<strong> nextDouble()</strong> to get input from user.
+</div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

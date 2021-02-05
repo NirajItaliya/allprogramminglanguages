@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Site made with Mobirise Website Builder v4.10.5, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.10.5, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/ic-logo-new-128x128.png" type="image/x-icon">
+    <meta name="description" content="ApkZube">
+
+    <title>Python Tuple</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="plugin/prism.css">
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+    <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
+
+</head>
+
+<body class="line-numbers">
+    <section class="mbr-section content4 cid-rwhLxZ8BUN" id="content4-a4">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-2"><strong>Python Tuple</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="engine"><a href="https://mobirise.info/n">free simple website templates</a></section>
+    <section class="mbr-section article content1 cid-rwhLGdUMQm" id="content1-a5">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>A tuple is a <strong>sequence of immutable </strong>Python objects. Tuples are sequences, just
+                        like lists. The main difference between the tuples and the lists is that the tuples cannot be
+                        changed unlike lists. Tuples use <strong>parentheses ()</strong>, whereas lists use
+                        <strong>square []</strong> brackets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhLVfmU17" id="content1-a6">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Tuple is similar to list. Only the difference is that list is enclosed between square bracket,
+                        tuple between parenthesis and List has <strong>mutable </strong>objects whereas Tuple&nbsp;<span
+                            style="font-size: 1rem;">has </span><strong>immutable </strong><span
+                            style="font-size: 1rem;">objects.</span></p>
+                    <p><strong><br></strong></p>
+                    <p><strong>tuple=()</strong> &nbsp;#empty tuple</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhMjsqi7w" id="content1-a7">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example : Creating a tuple is as simple as putting different comma-separated values. Optionally,
+                        you can put these comma-separated values between parentheses also.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <div class="container">
+ <pre><code class="language-python">
+    t1=('a','b',1,2,3.14,"ApkZube")
+    t2="a", "b", "c", "d"
+
+    #tuple contain other list and tuple
+    t3 =(1,2,3,['a','b','c'],('z',26))
+    
+    print(t1)
+    print(t2)
+    print(t3)
+ </code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwhMlKy68F" id="content1-a9">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    ('a', 'b', 1, 2, 3.14, 'ApkZube')
+    ('a', 'b', 'c', 'd')
+    (1, 2, 3, ['a', 'b', 'c'], ('z', 26))
+</code></pre></div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhNcIIrdH" id="content1-ab">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>For a single valued tuple, there must be a comma at the end of the value.&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    t1=(5,)
+    print(t1)
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwhNx4NQiZ" id="content1-ad">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+    (5,)
+</code></pre></div>
+
+    <section class="mbr-section content4 cid-rwhNGW4TIl" id="content4-af">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Accessing Values in Tuples</strong>
+                    </h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhNJOTS2I" id="content1-ag">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>To access values in tuple, use the square brackets for slicing along with the index or indices to
+                        obtain the value available at that index. For example -&nbsp;</p>
+                    <p><strong>tuple[index]</strong></p>
+                    <p>slice operator syntax :</p>
+                    <p><strong>tuple[start : stop : step]</strong></p>
+                    <p>by default step is +1</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cid-rwhPnAloed" id="image2-ak">
+
+
+
+        <figure class="mbr-figure container">
+            <div class="image-block" style="width: 64%;">
+                <img src="assets/images/tuple-855x246.png" alt="Mobirise" title="">
+
+            </div>
+        </figure>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    t=(3,7,4,2)
+
+    print(t[2])
+    print(t[1:3])
+    print(t[-4:-2])
+    print(t[-1 :  : -1])  #start from -1 and step =-1 so its basicly return reverse tuple
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwhPhTaV0p" id="content1-ai">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+     4
+    (7, 4)
+    (3, 7)
+    (2, 4, 7, 3)
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwhRPwWBBD" id="content1-al">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>interation tuple using for loop is same as list :&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    t=("apkzube",'xyz',1,2,3)
+    for x in t:
+        print(x)
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwhS1FaNtX" id="content1-an">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>ouput :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    apkzube
+    xyz
+    1
+    2
+    3
+</code></pre></div>
+    </section>
+
+    <section class="mbr-section content4 cid-rwhTlat82Q" id="content4-ap">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Tuple Operations</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhTL2C8uZ" id="content1-aq">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Python allows us to perform various operations on the tuple. Following are the common tuple
+                        operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwhTQ4EAE8" id="content12-ar">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>Adding Tuples</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhTVGBfqj" id="content1-as">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Tuple can be added by using the concatenation operator(+) to join two tuples this create new
+                        tuple.</p>
+                    <p><strong>Note: </strong>The new sequence formed is a new Tuple.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhTWKIIA8" id="content1-at">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    t1=(1,2,3)  
+    t2=('x','y','z')  
+    t3=t1+t2  
+    print(t3)
+</code></pre></div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhTYdMuCV" id="content1-av">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    (1, 2, 3, 'x', 'y', 'z')
+</code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwhUxNofkv" id="content12-ax">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>Replicating Tuple</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhUP9GBPj" id="content1-ay">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Replicating means repeating. It can be performed by using <strong>'*'</strong> operator by a
+                        specific number of time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwhUTbwvGc" id="content1-az">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    t1=(1,2,3)  
+    t2=('x','y','z')  
+    print(t1*2)
+    print(t2*3)
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwhUUG3rtj" id="content1-b1">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+    (1, 2, 3, 1, 2, 3)
+    ('x', 'y', 'z', 'x', 'y', 'z', 'x', 'y', 'z')
+</code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwic2GB6IC" id="content12-b3">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>Updating Tuples</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwicIGFkTJ" id="content1-b8">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Tuples are <strong>immutable</strong>, which means you <strong>cannot update </strong>or
+                        <strong>change </strong>the values of tuple elements. You are able to take portions of the
+                        existing tuples to create new tuples as the following example -&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    t1 = (1, 2,3)
+    t2 = ('abc', 'xyz')
+
+    # Following action is not valid for tuples
+    # t1[0] = 4;
+    # So let's create a new tuple as follows
+    t3 = t1 + t2
+    
+    print (t3)
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwicbC8Uvu" id="content1-b5">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    (1, 2, 3, 'abc', 'xyz') 
+</code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwicDbPoxH" id="content12-b7">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>Delete Tuple Elements</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwicS25AYo" id="content1-b9">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Removing individual tuple elements is not possible. There is, of course, nothing wrong with
+                        putting together another tuple with the undesired elements discarded.To explicitly remove an
+                        entire tuple, just use the del statement. For example −</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+    t = ('apkZube', 'python', 1, 2);
+
+    print (t)
+    del t;
+    print ("After deleting t :")
+    print (t)
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwicTsDXdB" id="content1-bb">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    ('apkZube', 'python', 1, 2)
+    After deleting t :
+    Traceback (most recent call last):
+      File "main.py", line 15, in <module>
+        print (t)
+    NameError: name 't' is not defined
+</code></pre></div>
+
+    <section class="mbr-section content4 cid-rwidqc2Exw" id="content4-bd">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Built-in Tuple Functions</strong>
+                    </h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-table cid-rwidwIUvJ0" id="table1-be">
+
+
+
+        <div class="container container-table">
+
+
+            <div class="table-wrapper">
+                <div class="container">
+
+                </div>
+
+                <div class="container scroll">
+                    <table class="table" cellspacing="0">
+                        <thead>
+                            <tr class="table-heads ">
+
+
+
+
+                                <th class="head-item mbr-fonts-style display-7">
+                                    fun</th>
+                                <th class="head-item mbr-fonts-style display-7">
+                                    Description</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+
+
+
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">cmp(t1, t2)</td>
+                                <td class="body-item mbr-fonts-style display-7">Compares elements of both tuples (py
+                                    2.x).<br>In Python 3 the cmp built-in function was removed</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">len(tuple)</td>
+                                <td class="body-item mbr-fonts-style display-7">Gives the total length of the tuple.
+                                </td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">max(tuple)</td>
+                                <td class="body-item mbr-fonts-style display-7">Returns item from the tuple with max
+                                    value.</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">min(tuple)</td>
+                                <td class="body-item mbr-fonts-style display-7">Returns item from the tuple with min
+                                    value.</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7">tuple(seq)</td>
+                                <td class="body-item mbr-fonts-style display-7">Converts a sequence into tuple.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container table-info-container">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwieucuJ0z" id="content12-bf">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>len(tuple) - </strong>The len() method returns the number of elements in the tuple.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwif9UQ9MI" id="content1-c4">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    t1= (1,2,3,4,5)
+    t2 = ('x','y','z',[1,2],3)
+    print(len(t1))
+    print(len(t2))
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwiezBKZQx" id="content1-bi">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+5
+5
+</code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwieB4JZR7" id="content12-bk">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>max(tuple) - </strong>The max() method returns the elements from the tuple with
+                            maximum value. Type of element should be same otherwise complier throw TypeError.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwieBOG2jW" id="content1-bl">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <div class="container">
+ <pre><code class="language-python">
+    t1= (1,2,3,4,5)
+    t2 = ('x','y','z')
+    print(max(t1))
+    print(max(t2))
+ </code></pre></div>
+    <section class="mbr-section article content1 cid-rwieD57Cv9" id="content1-bn">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+5
+z
+</code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwieEcIdWm" id="content12-bp">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>min(tuple) - </strong>The min() method returns the elements from the tuple with
+                            minimum value. Type of element should be same otherwise complier throw TypeError.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwieEJIXvU" id="content1-bq">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+    t1= (1,2,3,4,5)
+    t2 = ('x','y','z')
+    print(min(t1))
+    print(min(t2))
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwieGd0HpJ" id="content1-bs">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+1
+x
+</code></pre></div>
+
+    <section class="mbr-section article content12 cid-rwieHaq1xY" id="content12-bu">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>tuple(seq) - </strong>The tuple() method converts a list of items into
+                            tuples.<strong>&nbsp;</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwieHyJ5V7" id="content1-bv">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+    s="apkzube"
+    t1=tuple(s)
+    list=[1,2,3]
+    t2=tuple(list)
+
+    print(t1)
+    print(t2)
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwieIF2MNy" id="content1-bx">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+    ('a', 'p', 'k', 'z', 'u', 'b', 'e')
+    (1, 2, 3)
+</code></pre></div>
+
+    <section class="mbr-section content4 cid-rwij85AQpD" id="content4-c6">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Why should wee use Tuple?
+                            (Advantages of Tuple)</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwijcRQbrA" id="content12-c7">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li>Processing of Tuples are <strong>faster </strong>than Lists.&nbsp;<br></li>
+                        <li>It makes the data <strong>safe </strong>as Tuples are <strong>immutable </strong>and hence
+                            cannot be changed.
+                        </li>
+                        <li>&nbsp; Tuples are used for <strong>string</strong> <strong>formatting</strong>.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="plugin/prism.js"></script>
+    <script src="assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="assets/popper/popper.min.js"></script>
+    <script src="assets/tether/tether.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+    <script src="assets/datatables/jquery.data-tables.min.js"></script>
+    <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+    <script src="assets/theme/js/script.js"></script>
+
+
+    <input name="animation" type="hidden">
+</body>
+
+</html>

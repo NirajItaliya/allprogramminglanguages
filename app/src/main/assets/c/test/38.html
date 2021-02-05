@@ -1,0 +1,53 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic"> * C program to read a string and check if it&#39;s a palindrome, without</span>
+    <span style="color: #999999; font-style: italic"> * using library functions. Display the result.</span>
+    <span style="color: #999999; font-style: italic"> */</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdio.h&gt;</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;string.h&gt;</span>
+     
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">main</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">char</span> <span style="color: #d0d0d0">string[</span><span style="color: #3677a9">25</span><span style="color: #d0d0d0">],</span> <span style="color: #d0d0d0">reverse_string[</span><span style="color: #3677a9">25</span><span style="color: #d0d0d0">]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">{</span><span style="color: #ed9d13">&#39;\0&#39;</span><span style="color: #d0d0d0">};</span>
+        <span style="color: #6ab825; font-weight: bold">int</span>  <span style="color: #d0d0d0">i,</span> <span style="color: #d0d0d0">length</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">flag</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+     
+        <span style="color: #d0d0d0">fflush(stdin);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter a string \n&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">gets(string);</span>
+        <span style="color: #999999; font-style: italic">/*  keep going through each character of the string till its end */</span>
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">string[i]</span> <span style="color: #d0d0d0">!=</span> <span style="color: #ed9d13">&#39;\0&#39;</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i++)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">length++;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">length</span> <span style="color: #d0d0d0">-</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&gt;=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i--)</span>
+        <span style="color: #d0d0d0">{</span>
+           <span style="color: #d0d0d0">reverse_string[length</span> <span style="color: #d0d0d0">-</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">-</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">string[i];</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic">     * Compare the input string and its reverse. If both are equal</span>
+    <span style="color: #999999; font-style: italic">     * then the input string is palindrome.</span>
+    <span style="color: #999999; font-style: italic">     */</span>
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">length;</span> <span style="color: #d0d0d0">i++)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(reverse_string[i]</span> <span style="color: #d0d0d0">==</span> <span style="color: #d0d0d0">string[i])</span>
+                <span style="color: #d0d0d0">flag</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+            <span style="color: #6ab825; font-weight: bold">else</span>
+                <span style="color: #d0d0d0">flag</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(flag</span> <span style="color: #d0d0d0">==</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;%s is a palindrome \n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">string);</span>
+        <span style="color: #6ab825; font-weight: bold">else</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;%s is not a palindrome \n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">string);</span>
+    <span style="color: #d0d0d0">}</span>
+    
+    <span style="color: #d0d0d0">&gt;&gt;Runtime</span> <span style="color: #d0d0d0">Test</span> <span style="color: #d0d0d0">Cases</span>
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">a</span> <span style="color: #d0d0d0">string</span>
+    <span style="color: #d0d0d0">sanfoundry</span>
+    <span style="color: #d0d0d0">sanfoundry</span> <span style="color: #d0d0d0">is</span> <span style="color: #d0d0d0">not</span> <span style="color: #d0d0d0">a</span> <span style="color: #d0d0d0">palindrome</span>
+     
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">a</span> <span style="color: #d0d0d0">string</span>
+    <span style="color: #d0d0d0">malayalam</span>
+    <span style="color: #d0d0d0">malayalam</span> <span style="color: #d0d0d0">is</span> <span style="color: #d0d0d0">a</span> <span style="color: #d0d0d0">palindrome</span>
+    </pre></div>

@@ -1,0 +1,30 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #272822; overflow:auto;width:auto;font-size:10px">
+    <table>
+        <tr>
+
+            <td><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">public</span> <span style="color: #66d9ef">class</span> <span style="color: #a6e22e">JavaExample</span> <span style="color: #f92672">{</span>
+   
+       <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">main</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">String</span><span style="color: #f92672">[]</span> <span style="color: #f8f8f2">args</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
+           <span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">str</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;Welcome to Beginnersbook&quot;</span><span style="color: #f92672">;</span>
+           <span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">reversed</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">reverseString</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">str</span><span style="color: #f92672">);</span>
+           <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;The reversed string is: &quot;</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">reversed</span><span style="color: #f92672">);</span>
+       <span style="color: #f92672">}</span>
+   
+       <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #f8f8f2">String</span> <span style="color: #a6e22e">reverseString</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">str</span><span style="color: #f92672">)</span>
+       <span style="color: #f92672">{</span>
+           <span style="color: #66d9ef">if</span> <span style="color: #f92672">(</span><span style="color: #f8f8f2">str</span><span style="color: #f92672">.</span><span style="color: #a6e22e">isEmpty</span><span style="color: #f92672">())</span>
+               <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">str</span><span style="color: #f92672">;</span>
+           <span style="color: #75715e">//Calling Function Recursively</span>
+           <span style="color: #66d9ef">return</span> <span style="color: #a6e22e">reverseString</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">str</span><span style="color: #f92672">.</span><span style="color: #a6e22e">substring</span><span style="color: #f92672">(</span><span style="color: #ae81ff">1</span><span style="color: #f92672">))</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">str</span><span style="color: #f92672">.</span><span style="color: #a6e22e">charAt</span><span style="color: #f92672">(</span><span style="color: #ae81ff">0</span><span style="color: #f92672">);</span>
+       <span style="color: #f92672">}</span>
+   <span style="color: #f92672">}</span>
+   
+   
+   <span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">Output:</span>
+   
+   <span style="color: #f8f8f2">The</span> <span style="color: #f8f8f2">reversed</span> <span style="color: #f8f8f2">string</span> <span style="color: #f8f8f2">is:</span> <span style="color: #f8f8f2">koobsrennigeB</span> <span style="color: #f8f8f2">ot</span> <span style="color: #f8f8f2">emocleW</span>
+   </pre></td>
+        </tr>
+    </table>
+</div>

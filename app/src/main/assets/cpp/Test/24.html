@@ -1,0 +1,45 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #272822; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #75715e">/*</span>
+    <span style="color: #75715e">A positive integer is called an Armstrong</span>
+    <span style="color: #75715e">number if the sum of cubes of individual </span>
+    <span style="color: #75715e">digit is equal to that number itself. For </span>
+    <span style="color: #75715e">example:</span>
+    
+    <span style="color: #75715e">153 = 1 * 1 * 1 + 5 * 5 * 5 + 3 * 3 * 3  // </span>
+    <span style="color: #75715e">153 is an Armstrong number.</span>
+    <span style="color: #75715e">12 is not equal to 1 * 1 * 1 + 2 * 2 * 2  // </span>
+    <span style="color: #75715e">12 is not an Armstrong number.</span>
+    <span style="color: #75715e">*/</span>
+    
+    <span style="color: #75715e">#include &lt;iostream&gt;</span>
+    <span style="color: #66d9ef">using</span> <span style="color: #66d9ef">namespace</span> <span style="color: #f8f8f2">std;</span>
+    
+    <span style="color: #66d9ef">int</span> <span style="color: #a6e22e">main</span><span style="color: #f8f8f2">()</span>
+    <span style="color: #f8f8f2">{</span>
+      <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">origNum,</span> <span style="color: #f8f8f2">num,</span> <span style="color: #f8f8f2">rem,</span> <span style="color: #f8f8f2">sum</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span>
+      <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;Enter a positive  integer: &quot;</span><span style="color: #f8f8f2">;</span>
+      <span style="color: #f8f8f2">cin</span> <span style="color: #f92672">&gt;&gt;</span> <span style="color: #f8f8f2">origNum;</span>
+    
+      <span style="color: #f8f8f2">num</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">origNum;</span>
+    
+      <span style="color: #66d9ef">while</span><span style="color: #f8f8f2">(num</span> <span style="color: #f92672">!=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">)</span>
+      <span style="color: #f8f8f2">{</span>
+          <span style="color: #f8f8f2">rem</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">num</span> <span style="color: #f92672">%</span> <span style="color: #ae81ff">10</span><span style="color: #f8f8f2">;</span>
+          <span style="color: #f8f8f2">sum</span> <span style="color: #f92672">+=</span> <span style="color: #f8f8f2">rem</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">rem</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">rem;</span>
+          <span style="color: #f8f8f2">num</span> <span style="color: #f92672">/=</span> <span style="color: #ae81ff">10</span><span style="color: #f8f8f2">;</span>
+      <span style="color: #f8f8f2">}</span>
+    
+      <span style="color: #66d9ef">if</span><span style="color: #f8f8f2">(sum</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">origNum)</span>
+        <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">origNum</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot; is an Armstrong number.&quot;</span><span style="color: #f8f8f2">;</span>
+      <span style="color: #66d9ef">else</span>
+        <span style="color: #f8f8f2">cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #f8f8f2">origNum</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot; is not an Armstrong number.&quot;</span><span style="color: #f8f8f2">;</span>
+    
+      <span style="color: #66d9ef">return</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span>
+    <span style="color: #f8f8f2">}</span>
+    
+    
+    <span style="color: #f92672">&gt;&gt;</span><span style="color: #f8f8f2">Output</span>
+    
+    <span style="color: #f8f8f2">Enter</span> <span style="color: #f8f8f2">a</span> <span style="color: #f8f8f2">positive</span> <span style="color: #f8f8f2">integer</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">371</span>
+    <span style="color: #ae81ff">371</span> <span style="color: #f8f8f2">is</span> <span style="color: #f8f8f2">an</span> <span style="color: #f8f8f2">Armstrong</span> <span style="color: #f8f8f2">number.</span>
+    </pre></div>

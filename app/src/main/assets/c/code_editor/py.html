@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code Editor</title>
+    <link rel='stylesheet' href='lib/codemirror.css'/>
+    <link rel='stylesheet'  href='theme/tomorrow-night-bright.css'/>
+
+
+    <script src='lib/codemirror.js'></script>
+    <script src='mode/python/python.js'></script>
+    <script src='addon/edit/closebrackets.js'></script>
+    <script src='addon/edit/matchbrackets.js'></script>
+
+
+</head>
+<body style="background-color:black">
+<textarea id="editor">
+
+// do not change class name and defination
+// Author : ApkZube
+// Email : apkzube@gmail.com
+// gcc 7.4.0
+
+#include  <stdio.h>
+
+int main(void)
+{
+    printf("Hello, world!\n");
+    return 0;
+}
+
+    </textarea>
+<!--<button onclick="getCode()">Click me</button>-->
+
+<script>
+    
+        var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
+        lineNumbers: true,
+        theme: 'tomorrow-night-bright',
+        lineWrapping: false,
+        mode:'text/x-python',
+        scanForBracket:true,
+        autoCloseBrackets:true,
+        matchBrackets:true,
+        findMatchingBracket:true,
+        foldGutter: true,
+        lineWiseCopyCut:true,
+        tabMode: 'indent',
+        lineNumbers: true,
+        lineWrapping: true,
+        autoCloseTags: true
+
+     });
+
+     CodeMirror.defineMIME("text/x-python", "python")
+
+     editor.setSize("100%","100%");
+
+
+     function getCode(){
+        //alert(editor.getValue());
+        var code=editor.getValue();
+        JsInterface.getCode(code);
+     }
+
+       function copyCode(){
+        //alert(editor.getValue());
+        var code=editor.getValue();
+        JsInterface.copyCode(code);
+     }
+
+    function addSymbol(symbol) {
+          editor.save();
+          insertTextAtCursor(editor,symbol);
+    }
+
+    function insertTextAtCursor(editor, str) {
+       var doc = editor.getDoc();
+       var cursor = doc.getCursor();
+       doc.replaceRange(text, cursor);
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #272822; overflow:auto;width:auto;font-size:10px">
+    <table>
+        <tr>
+
+            <td><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">java.util.HashMap</span><span style="color: #f92672">;</span>
+   <span style="color: #f92672">import</span> <span style="color: #f8f8f2">java.util.Map</span><span style="color: #f92672">;</span>
+   <span style="color: #f92672">import</span> <span style="color: #f8f8f2">java.util.Set</span><span style="color: #f92672">;</span>
+    
+   <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">class</span> <span style="color: #a6e22e">Details</span> <span style="color: #f92672">{</span>
+    
+     <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">countDupChars</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">str</span><span style="color: #f92672">){</span>
+    
+       <span style="color: #75715e">//Create a HashMap </span>
+       <span style="color: #f8f8f2">Map</span><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">Character</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">Integer</span><span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">map</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #f8f8f2">HashMap</span><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">Character</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">Integer</span><span style="color: #f92672">&gt;();</span> 
+    
+       <span style="color: #75715e">//Convert the String to char array</span>
+       <span style="color: #66d9ef">char</span><span style="color: #f92672">[]</span> <span style="color: #f8f8f2">chars</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">str</span><span style="color: #f92672">.</span><span style="color: #a6e22e">toCharArray</span><span style="color: #f92672">();</span>
+    
+       <span style="color: #75715e">/* logic: char are inserted as keys and their count</span>
+   <span style="color: #75715e">     * as values. If map contains the char already then</span>
+   <span style="color: #75715e">     * increase the value by 1</span>
+   <span style="color: #75715e">     */</span>
+       <span style="color: #66d9ef">for</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">Character</span> <span style="color: #f8f8f2">ch:chars</span><span style="color: #f92672">){</span>
+         <span style="color: #66d9ef">if</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">map</span><span style="color: #f92672">.</span><span style="color: #a6e22e">containsKey</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">ch</span><span style="color: #f92672">)){</span>
+            <span style="color: #f8f8f2">map</span><span style="color: #f92672">.</span><span style="color: #a6e22e">put</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">ch</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">map</span><span style="color: #f92672">.</span><span style="color: #a6e22e">get</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">ch</span><span style="color: #f92672">)+</span><span style="color: #ae81ff">1</span><span style="color: #f92672">);</span>
+         <span style="color: #f92672">}</span> <span style="color: #66d9ef">else</span> <span style="color: #f92672">{</span>
+            <span style="color: #f8f8f2">map</span><span style="color: #f92672">.</span><span style="color: #a6e22e">put</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">ch</span><span style="color: #f92672">,</span> <span style="color: #ae81ff">1</span><span style="color: #f92672">);</span>
+           <span style="color: #f92672">}</span>
+       <span style="color: #f92672">}</span>
+    
+       <span style="color: #75715e">//Obtaining set of keys</span>
+       <span style="color: #f8f8f2">Set</span><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">Character</span><span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">keys</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">map</span><span style="color: #f92672">.</span><span style="color: #a6e22e">keySet</span><span style="color: #f92672">();</span>
+    
+       <span style="color: #75715e">/* Display count of chars if it is</span>
+   <span style="color: #75715e">     * greater than 1. All duplicate chars would be </span>
+   <span style="color: #75715e">     * having value greater than 1.</span>
+   <span style="color: #75715e">     */</span>
+       <span style="color: #66d9ef">for</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">Character</span> <span style="color: #f8f8f2">ch:keys</span><span style="color: #f92672">){</span>
+         <span style="color: #66d9ef">if</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">map</span><span style="color: #f92672">.</span><span style="color: #a6e22e">get</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">ch</span><span style="color: #f92672">)</span> <span style="color: #f92672">&gt;</span> <span style="color: #ae81ff">1</span><span style="color: #f92672">){</span>
+           <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;Char &quot;</span><span style="color: #f92672">+</span><span style="color: #f8f8f2">ch</span><span style="color: #f92672">+</span><span style="color: #e6db74">&quot; &quot;</span><span style="color: #f92672">+</span><span style="color: #f8f8f2">map</span><span style="color: #f92672">.</span><span style="color: #a6e22e">get</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">ch</span><span style="color: #f92672">));</span>
+         <span style="color: #f92672">}</span>
+       <span style="color: #f92672">}</span>
+     <span style="color: #f92672">}</span>
+    
+     <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">main</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">a</span><span style="color: #f92672">[]){</span>
+       <span style="color: #f8f8f2">Details</span> <span style="color: #f8f8f2">obj</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #f8f8f2">Details</span><span style="color: #f92672">();</span>
+       <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;String: BeginnersBook.com&quot;</span><span style="color: #f92672">);</span>
+       <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;-------------------------&quot;</span><span style="color: #f92672">);</span>
+       <span style="color: #f8f8f2">obj</span><span style="color: #f92672">.</span><span style="color: #a6e22e">countDupChars</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;BeginnersBook.com&quot;</span><span style="color: #f92672">);</span>
+     
+       <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;\nString: ChaitanyaSingh&quot;</span><span style="color: #f92672">);</span>
+       <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;-------------------------&quot;</span><span style="color: #f92672">);</span>
+       <span style="color: #f8f8f2">obj</span><span style="color: #f92672">.</span><span style="color: #a6e22e">countDupChars</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;ChaitanyaSingh&quot;</span><span style="color: #f92672">);</span>
+    
+       <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;\nString: #@$@!#$%!!%@&quot;</span><span style="color: #f92672">);</span>
+       <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;-------------------------&quot;</span><span style="color: #f92672">);</span>
+       <span style="color: #f8f8f2">obj</span><span style="color: #f92672">.</span><span style="color: #a6e22e">countDupChars</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;#@$@!#$%!!%@&quot;</span><span style="color: #f92672">);</span>
+     <span style="color: #f92672">}</span>
+   <span style="color: #f92672">}</span>
+   
+   
+   <span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">Output:</span>
+   
+   <span style="color: #f8f8f2">String:</span> <span style="color: #f8f8f2">BeginnersBook</span><span style="color: #f92672">.</span><span style="color: #a6e22e">com</span>
+   <span style="color: #f92672">-------------------------</span>
+   <span style="color: #f8f8f2">Char</span> <span style="color: #f8f8f2">e</span> <span style="color: #ae81ff">2</span>
+   <span style="color: #f8f8f2">Char</span> <span style="color: #f8f8f2">B</span> <span style="color: #ae81ff">2</span>
+   <span style="color: #f8f8f2">Char</span> <span style="color: #f8f8f2">n</span> <span style="color: #ae81ff">2</span>
+   <span style="color: #f8f8f2">Char</span> <span style="color: #f8f8f2">o</span> <span style="color: #ae81ff">3</span>
+   
+   <span style="color: #f8f8f2">String:</span> <span style="color: #f8f8f2">ChaitanyaSingh</span>
+   <span style="color: #f92672">-------------------------</span>
+   <span style="color: #f8f8f2">Char</span> <span style="color: #f8f8f2">a</span> <span style="color: #ae81ff">3</span>
+   <span style="color: #f8f8f2">Char</span> <span style="color: #f8f8f2">n</span> <span style="color: #ae81ff">2</span>
+   <span style="color: #f8f8f2">Char</span> <span style="color: #f8f8f2">h</span> <span style="color: #ae81ff">2</span>
+   <span style="color: #f8f8f2">Char</span> <span style="color: #f8f8f2">i</span> <span style="color: #ae81ff">2</span>
+   
+   <span style="color: #f8f8f2">String:</span> <span style="color: #960050; background-color: #1e0010">#@</span><span style="color: #f8f8f2">$</span><span style="color: #960050; background-color: #1e0010">@</span><span style="color: #f92672">!</span><span style="color: #960050; background-color: #1e0010">#</span><span style="color: #f8f8f2">$</span><span style="color: #f92672">%!!%</span><span style="color: #960050; background-color: #1e0010">@</span>
+   <span style="color: #f92672">-------------------------</span>
+   <span style="color: #f8f8f2">Char</span> <span style="color: #960050; background-color: #1e0010">#</span> <span style="color: #ae81ff">2</span>
+   <span style="color: #f8f8f2">Char</span> <span style="color: #f92672">!</span> <span style="color: #ae81ff">3</span>
+   <span style="color: #f8f8f2">Char</span> <span style="color: #960050; background-color: #1e0010">@</span> <span style="color: #ae81ff">3</span>
+   <span style="color: #f8f8f2">Char</span> <span style="color: #f8f8f2">$</span> <span style="color: #ae81ff">2</span>
+   <span style="color: #f8f8f2">Char</span> <span style="color: #f92672">%</span> <span style="color: #ae81ff">2</span>
+   </pre></td>
+        </tr>
+    </table>
+</div>

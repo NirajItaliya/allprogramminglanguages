@@ -1,0 +1,63 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic"> * C Program to Check whether two Strings are Anagrams</span>
+    <span style="color: #999999; font-style: italic"> */</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdio.h&gt;</span>
+     
+    <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #447fcf">find_anagram</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">char</span> <span style="color: #d0d0d0">[],</span> <span style="color: #6ab825; font-weight: bold">char</span> <span style="color: #d0d0d0">[]);</span>
+     
+    <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #447fcf">main</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">char</span> <span style="color: #d0d0d0">array1[</span><span style="color: #3677a9">100</span><span style="color: #d0d0d0">],</span> <span style="color: #d0d0d0">array2[</span><span style="color: #3677a9">100</span><span style="color: #d0d0d0">];</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">flag;</span>
+     
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter the string\n&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">gets(array1);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter another string\n&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">gets(array2);</span>
+        <span style="color: #d0d0d0">flag</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">find_anagram(array1,</span> <span style="color: #d0d0d0">array2);</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(flag</span> <span style="color: #d0d0d0">==</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;&quot;</span><span style="color: #d0d0d0">%s</span><span style="color: #ed9d13">&quot; and &quot;</span><span style="color: #d0d0d0">%s</span><span style="color: #ed9d13">&quot; are anagrams.\n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">array1,</span> <span style="color: #d0d0d0">array2);</span>
+        <span style="color: #6ab825; font-weight: bold">else</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;&quot;</span><span style="color: #d0d0d0">%s</span><span style="color: #ed9d13">&quot; and &quot;</span><span style="color: #d0d0d0">%s</span><span style="color: #ed9d13">&quot; are not anagrams.\n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">array1,</span> <span style="color: #d0d0d0">array2);</span>
+        <span style="color: #6ab825; font-weight: bold">return</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #d0d0d0">}</span>
+     
+    <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #447fcf">find_anagram</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">char</span> <span style="color: #d0d0d0">array1[],</span> <span style="color: #6ab825; font-weight: bold">char</span> <span style="color: #d0d0d0">array2[])</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">num1[</span><span style="color: #3677a9">26</span><span style="color: #d0d0d0">]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">{</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">},</span> <span style="color: #d0d0d0">num2[</span><span style="color: #3677a9">26</span><span style="color: #d0d0d0">]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">{</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">},</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+     
+        <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(array1[i]</span> <span style="color: #d0d0d0">!=</span> <span style="color: #ed9d13">&#39;\0&#39;</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">num1[array1[i]</span> <span style="color: #d0d0d0">-</span> <span style="color: #ed9d13">&#39;a&#39;</span><span style="color: #d0d0d0">]++;</span>
+            <span style="color: #d0d0d0">i++;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(array2[i]</span> <span style="color: #d0d0d0">!=</span> <span style="color: #ed9d13">&#39;\0&#39;</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">num2[array2[i]</span> <span style="color: #d0d0d0">-</span><span style="color: #ed9d13">&#39;a&#39;</span><span style="color: #d0d0d0">]++;</span>
+            <span style="color: #d0d0d0">i++;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #3677a9">26</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i++)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(num1[i]</span> <span style="color: #d0d0d0">!=</span> <span style="color: #d0d0d0">num2[i])</span>
+                <span style="color: #6ab825; font-weight: bold">return</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">return</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #d0d0d0">}</span>
+    
+    
+    <span style="color: #d0d0d0">&gt;&gt;output:</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">string</span>
+    <span style="color: #d0d0d0">abll</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">another</span> <span style="color: #d0d0d0">string</span>
+    <span style="color: #d0d0d0">ball</span>
+    <span style="color: #ed9d13">&quot;abll&quot;</span> <span style="color: #d0d0d0">and</span> <span style="color: #ed9d13">&quot;ball&quot;</span> <span style="color: #d0d0d0">are</span> <span style="color: #d0d0d0">anagrams.</span>
+     
+     
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">string</span>
+    <span style="color: #d0d0d0">tall</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">another</span> <span style="color: #d0d0d0">string</span>
+    <span style="color: #d0d0d0">all</span>
+    <span style="color: #ed9d13">&quot;tall&quot;</span> <span style="color: #d0d0d0">and</span> <span style="color: #ed9d13">&quot;all&quot;</span> <span style="color: #d0d0d0">are</span> <span style="color: #d0d0d0">not</span> <span style="color: #d0d0d0">anagrams.</span>
+    </pre></div>

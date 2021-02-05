@@ -1,0 +1,64 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic">     * C program to accept an array of 10 elements and swap 3rd element</span>
+    <span style="color: #999999; font-style: italic">     * with 4th element using pointers and display the results.</span>
+    <span style="color: #999999; font-style: italic">     */</span>
+     
+        <span style="color: #a61717; background-color: #e3d2d2">#</span><span style="color: #d0d0d0">include</span> <span style="color: #d0d0d0">&lt;stdio.h&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #d0d0d0">swap34(</span><span style="color: #6ab825; font-weight: bold">float</span> <span style="color: #d0d0d0">*ptr1,</span> <span style="color: #6ab825; font-weight: bold">float</span> <span style="color: #d0d0d0">*ptr2);</span>
+        <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">main</span><span style="color: #d0d0d0">()</span>
+        <span style="color: #d0d0d0">{</span>
+     
+            <span style="color: #6ab825; font-weight: bold">float</span> <span style="color: #d0d0d0">x[</span><span style="color: #3677a9">10</span><span style="color: #d0d0d0">];</span>
+            <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">i,</span> <span style="color: #d0d0d0">n;</span>
+     
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;How many Elements...\n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;n);</span>
+     
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter Elements one by one\n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">n;</span> <span style="color: #d0d0d0">i++)</span> 
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%f&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">x</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">i);</span>
+            <span style="color: #d0d0d0">}</span>
+     
+            <span style="color: #999999; font-style: italic">/*  Function call:Interchanging 3rd element by 4th */</span>
+     
+            <span style="color: #d0d0d0">swap34(x</span> <span style="color: #d0d0d0">+</span> <span style="color: #3677a9">2</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">x</span> <span style="color: #d0d0d0">+</span> <span style="color: #3677a9">3</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\nResultant Array...\n&quot;</span><span style="color: #d0d0d0">);</span>
+     
+            <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">n;</span> <span style="color: #d0d0d0">i++)</span> 
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;X[%d] = %f\n&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">i,</span> <span style="color: #d0d0d0">x[i]);</span>
+            <span style="color: #d0d0d0">}</span>
+     
+        <span style="color: #d0d0d0">}</span>
+     
+        <span style="color: #999999; font-style: italic">/*  Function to swap the 3rd element with the 4th element in the array */</span>
+     
+        <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">swap34</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">float</span> <span style="color: #d0d0d0">*ptr1,</span> <span style="color: #6ab825; font-weight: bold">float</span> <span style="color: #d0d0d0">*ptr2</span> <span style="color: #d0d0d0">)</span> 
+        <span style="color: #d0d0d0">{</span>
+     
+            <span style="color: #6ab825; font-weight: bold">float</span> <span style="color: #d0d0d0">temp;</span>
+            <span style="color: #d0d0d0">temp</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">*ptr1;</span>
+            <span style="color: #d0d0d0">*ptr1</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">*ptr2;</span>
+            <span style="color: #d0d0d0">*ptr2</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">temp;</span>
+     
+        <span style="color: #d0d0d0">}</span>
+    
+    
+    
+    <span style="color: #d0d0d0">&gt;&gt;Output:</span>
+    <span style="color: #d0d0d0">How</span> <span style="color: #d0d0d0">many</span> <span style="color: #d0d0d0">Elements...</span>
+    <span style="color: #3677a9">4</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">Elements</span> <span style="color: #d0d0d0">one</span> <span style="color: #d0d0d0">by</span> <span style="color: #d0d0d0">one</span>
+    <span style="color: #3677a9">23</span>
+    <span style="color: #3677a9">67</span>
+    <span style="color: #3677a9">45</span>
+    <span style="color: #3677a9">15</span>
+     
+    <span style="color: #d0d0d0">Resultant</span> <span style="color: #d0d0d0">Array...</span>
+    <span style="color: #d0d0d0">X[</span><span style="color: #3677a9">0</span><span style="color: #d0d0d0">]</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">23.000000</span>
+    <span style="color: #d0d0d0">X[</span><span style="color: #3677a9">1</span><span style="color: #d0d0d0">]</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">67.000000</span>
+    <span style="color: #d0d0d0">X[</span><span style="color: #3677a9">2</span><span style="color: #d0d0d0">]</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">15.000000</span>
+    <span style="color: #d0d0d0">X[</span><span style="color: #3677a9">3</span><span style="color: #d0d0d0">]</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">45.000000</span>
+    </pre></div>

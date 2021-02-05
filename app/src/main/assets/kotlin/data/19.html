@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin Function</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rOQ3HrAVtS" id="content1-e2" data-rv-view="5512">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin Function</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/j">design your own website</a></section><section class="mbr-section article content1 cid-rOQ3LtWuHg" id="content1-e3" data-rv-view="5513">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Function</strong> is a group of inter related block of code which performs a <strong>specific task.</strong> Function is used to break a program into different sub module. It makes <strong>reusability</strong> of code and makes program more manageable.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rOQ3UIE8ag" id="content1-e4" data-rv-view="5514">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In Kotlin, functions are declared using <strong>fun</strong> keyword. There are two types of functions depending on whether it is available in standard library or defined by user.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rOQ41RdCrS" id="content12-e5" data-rv-view="5515">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Standard library function
+</strong></li><li><strong>User defined function</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rOQ5cZNWxc" id="content1-e6" data-rv-view="5516">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Standard Library Function</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rOQ5gij6Wc" id="content1-e7" data-rv-view="5517">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p>Kotlin Standard library function is <strong>built-in library</strong> functions which are implicitly present in library and available for use.</p><p><strong>For example.</strong></p></div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var number = 25
+    var result = Math.sqrt(number.toDouble())
+    print("Square root of $number is $result")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rOQ5ziH0J7" id="content1-e9" data-rv-view="5519">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Square root of 25 is 5.0
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rOQ5EexOr4" id="content12-eb" data-rv-view="5521">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li>Here, <strong>sqrt()</strong> is a library function which returns square root of a number (Double value).
+</li><li><strong>print()</strong> library function which prints a message to standard output stream.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rOQ5PLSpNw" id="content1-ed" data-rv-view="5522">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>User defined Function</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rOQ5XE9nNH" id="content1-ee" data-rv-view="5523">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p>User defined function is a function which is created by user. User defined function takes the <strong>parameter(s)</strong>, perform an action and return the result of that action as a value.</p><p>Kotlin functions are declared using the <strong>fun</strong> keyword. For example:</p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun functionName(){
+// body of function
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rOQ6f4JFWM" id="content1-eh" data-rv-view="5525">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">We have to call the function to run codes inside the body of the <strong>function.</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">functionName()
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rOQ6uqOYKC" id="content1-ek" data-rv-view="5527">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin simple function example :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    sum()
+    print("code after sum")
+}
+fun sum(){
+    var num1 =5
+    var num2 = 6
+    println("sum = "+(num1+num2))
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rOQ6GD8McS" id="content12-em" data-rv-view="5529">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">output:</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">sum = 11
+code after sum
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rOQ6MwupXG" id="content1-eo" data-rv-view="5531">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Kotlin Parameterize Function and Return Value
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rOQ6RBkH8M" id="content1-ep" data-rv-view="5532">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Functions are also takes parameter as arguments and return value. Kotlin functions are defined using <strong>Pascal notation</strong>, i.e. <strong>name:type</strong> (name of parameter and its type). Parameters in function are separated using commas.
+<div>
+</div><div>If a function does not returns any value than its return type is Unit. It is optional to specify the return type of function definition which does not returns any value.</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun functionName(number1: Int, number2: Int){
+.. .. ..
+}
+.. .. ..
+functionName(value1, value2)
+.. .. ..
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rOQ7h7Uvgw" id="content1-er" data-rv-view="5534">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin parameterize function example</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+   val result = sum(5, 6)
+    print(result)
+}
+fun sum(number1: Int, number2:Int): Int{
+    val add = number1+number2
+    return add
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rOQ7rOQxBI" id="content1-et" data-rv-view="5536">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">11
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rOQ7CyM2mH" id="content1-ev" data-rv-view="5538">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Example: Add Two Numbers Using Function :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun addNumbers(n1: Double, n2: Double): Int {
+    val sum = n1 + n2
+    val sumInteger = sum.toInt()
+    return sumInteger
+}
+fun main(args: Array&lt;String&gt;) {
+    val number1 = 12.2
+    val number2 = 3.4
+    val result: Int
+    result = addNumbers(number1, number2)
+    println("result = $result")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rOQ7UhTSB3" id="content1-ex" data-rv-view="5540">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">result = 15
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rOQ86rAtxF" id="content1-ez" data-rv-view="5542">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>How functions with arguments and return value work?</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rOQ89MkF3x" id="content1-f0" data-rv-view="5543">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Here, two arguments <strong>number1</strong> and <strong>number2</strong> of type Double are passed to the addNumbers() function during function call. These arguments are called actual arguments.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">result = addNumbers(number1, number2)
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rOQ8hQ3ix2" id="content1-f2" data-rv-view="5545">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The parameters <strong>n1</strong> and <strong>n2</strong> accepts the passed arguments (in the function definition). These arguments are called formal arguments (or parameters).
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="cid-rOQ8Fe6Ty7" id="image2-f3" data-rv-view="5546">
+
+    
+
+    <figure class="mbr-figure container">
+        <div class="image-block" style="width: 42%;">
+            <img src="assets/images/passing-arguments-function-kotlin-500x255.jpg" alt="Mobirise" title="" media-simple="true">
+            <figcaption class="mbr-figure-caption mbr-figure-caption-over">
+                <div class="container pb-5 mbr-white align-center mbr-fonts-style display-1"></div>
+            </figcaption>
+        </div>
+    </figure>
+</section>
+
+<section class="mbr-section article content1 cid-rOQ93XdCSz" id="content1-f4" data-rv-view="5548">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p>In Kotlin, arguments are separated using commas. Also, the type of the formal argument must be explicitly typed.</p><p>Note that, the data type of actual and formal <strong>arguments should match</strong>, i.e., the data type of first actual argument should match the type of first formal argument. Similarly, the type of second actual argument must match the type of second formal argument and so on.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rOQ9m59ro2" id="content1-f5" data-rv-view="5549">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p>is the <strong>return</strong> statement. This code terminates the addNumbers() function, and control of the program jumps to the <strong>main() </strong>function.</p><p>In the program, sumInteger is returned from <strong>addNumbers()</strong> function. This value is assigned to the variable result.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="cid-rOQ9ApgTZB" id="image2-f6" data-rv-view="5550">
+
+    
+
+    <figure class="mbr-figure container">
+        <div class="image-block" style="width: 44%;">
+            <img src="assets/images/return-value-function-kotlin-475x257.jpg" alt="Mobirise" title="" media-simple="true">
+            <figcaption class="mbr-figure-caption mbr-figure-caption-over">
+                <div class="container pb-5 mbr-white align-center mbr-fonts-style display-1"></div>
+            </figcaption>
+        </div>
+    </figure>
+</section>
+
+<section class="mbr-section article content11 cid-rOQ9N5ELdn" id="content11-f7" data-rv-view="5552">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ol>
+                    <li>both <strong>sumInteger</strong> and result are of type <strong>Int</strong>.
+</li><li>the return type of the function is specified in the function definition.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">// return type is Int
+fun addNumbers(n1: Double, n2: Double): Int {
+    ... .. ...
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rOQa0sOurb" id="content1-f9" data-rv-view="5554">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">If the function doesn't return any value, its return type is Unit. It is optional to specify the return type in the function definition if the return type is Unit.</div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

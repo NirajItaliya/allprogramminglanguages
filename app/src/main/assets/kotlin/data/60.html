@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Sealed Class
+</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rQ1yLBufbV" id="content1-1c1" data-rv-view="8116">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin Sealed Class</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/i">build a website for free</a></section><section class="mbr-section article content1 cid-rQ1yPJ2U9w" id="content1-1c2" data-rv-view="8117">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Sealed</strong> class is a class which restricts the class hierarchy. A class can be declared as sealed class using <strong>"sealed"</strong> keyword before the class name. It is used to represent restricted class hierarchy.
+<div>
+</div><div></br>Sealed class is used when the object have one of the types from limited set, but cannot have any other type.The constructors of sealed classes are private in default and cannot be allowed as non-private.
+&nbsp;</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rQ1z0TqsJY" id="content12-1c3" data-rv-view="8118">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Declaration of sealed class
+</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">sealed class MyClass
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1z8qU73U" id="content1-1c6" data-rv-view="8120">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The subclasses of sealed classes must be declared in the same file in which sealed class itself.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">sealed class Shape{
+    class Circle(var radius: Float): Shape()
+    class Square(var length: Int): Shape()
+    class Rectangle(var length: Int, var breadth: Int): Shape()
+    object NotAShape : Shape()
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1zaoKHfT" id="content1-1c9" data-rv-view="8122">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Sealed class ensures the important of type-safety by restricting the set of types at compile time only.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">sealed class A{
+    class B : A(){
+        class E : A() //this works.
+    }
+    class C : A()init {
+        println("sealed class A")
+    }
+}
+
+class D : A() //this works{
+class F: A() //This won't work,because sealed class is defined in another scope.
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1ztlhMsh" id="content1-1cb" data-rv-view="8124">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">A sealed class is implicitly an abstract class which cannot be instantiated.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">sealed class MyClass
+fun main(args: Array&lt;String&gt;){
+var myClass = MyClass() //compiler error. sealed types cannot be instantiated.
+}
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rQ1zB2yZaP" id="content12-1cd" data-rv-view="8126">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Sealed class with when
+</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1zExlKNv" id="content1-1ce" data-rv-view="8127">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Sealed classes are commonly used with when expression. As the sub classes of sealed classes have their own types act as a case. Due to this, when <strong>expression</strong> in sealed class covers all the cases and avoid to add else clause.
+</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">
+sealed class Shape {
+    class Circle(var radius: Float) : Shape()
+    class Square(var length: Int) : Shape()
+    class Rectangle(var length: Int, var breadth: Int) : Shape()
+    // object NotAShape : Shape()
+}
+
+fun eval(e: Shape) =
+        when (e) {
+            is Shape.Circle -> println("Circle area is ${3.14 * e.radius * e.radius}")
+            is Shape.Square -> println("Square area is ${e.length * e.length}")
+            is Shape.Rectangle -> println("Rectagle area is ${e.length * e.breadth}")
+            //else -> "else case is not require as all case is covered above"
+            // Shape.NotAShape ->Double.NaN
+        }
+
+fun main(args: Array&lt;String&gt;) {
+
+    var circle = Shape.Circle(5.0f)
+    var square = Shape.Square(5)
+    var rectangle = Shape.Rectangle(4, 5)
+
+    eval(circle)
+    eval(square)
+    eval(rectangle)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1zLQDj09" id="content1-1cg" data-rv-view="8129">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Circle area is 78.5
+Square area is 25
+Rectagle area is 20
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

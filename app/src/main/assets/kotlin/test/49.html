@@ -1,0 +1,26 @@
+<!-- HTML generated using hilite.me --><div style="background: #111111; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-style: italic; background-color: #0f140f">//Here&#39;s the content of test.txt</span>
+    <span style="color: #ffffff">=====================================</span>
+    <span style="color: #ffffff">This</span> <span style="color: #fb660a; font-weight: bold">is</span> <span style="color: #ffffff">a</span>
+    <span style="color: #ffffff">Test</span> <span style="color: #ffffff">file.</span>
+    <span style="color: #ffffff">=====================================</span>
+    
+    <span style="color: #ffffff">Example</span> <span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">:</span> <span style="color: #ffffff">Create</span> <span style="color: #ffffff">String</span> <span style="color: #ffffff">from</span> <span style="color: #ffffff">file</span>
+    
+        <span style="color: #ffffff">import</span> <span style="color: #ffffff">java.nio.charset.Charset</span>
+        <span style="color: #ffffff">import</span> <span style="color: #ffffff">java.nio.file.Files</span>
+        <span style="color: #ffffff">import</span> <span style="color: #ffffff">java.nio.file.Paths</span>
+        <span style="color: #fb660a; font-weight: bold">fun</span> <span style="color: #ff0086; font-weight: bold">main</span><span style="color: #ffffff">(args:</span> <span style="color: #ffffff">Array&lt;String&gt;)</span> <span style="color: #ffffff">{</span>
+            <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">path</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">System.getProperty(</span><span style="color: #0086d2">&quot;user.dir&quot;</span><span style="color: #ffffff">)</span> <span style="color: #ffffff">+</span> <span style="color: #0086d2">&quot;\\src\\test.txt&quot;</span>
+            <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">encoding</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">Charset.defaultCharset();</span>
+            <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">lines</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">Files.readAllLines(Paths.</span><span style="color: #fb660a; font-weight: bold">get</span><span style="color: #ffffff">(path),</span> <span style="color: #ffffff">encoding)</span>
+            <span style="color: #ffffff">println(lines)</span>
+        <span style="color: #ffffff">}</span>
+    
+    
+    
+    
+    <span style="color: #ffffff">&gt;&gt;</span> <span style="color: #ffffff">output</span> <span style="color: #ffffff">will</span> <span style="color: #ffffff">be:</span>
+    
+    <span style="color: #ff0086; font-weight: bold">[This is a, Test file.]</span>
+    </pre></div>
+    

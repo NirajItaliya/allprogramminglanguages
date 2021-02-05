@@ -1,0 +1,116 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic">     * Develop functions to read a matrix, display a matrix and compute</span>
+    <span style="color: #999999; font-style: italic">     * product of two matrices.</span>
+    <span style="color: #999999; font-style: italic">     * Use these functions to read two MxN matrices and compute their</span>
+    <span style="color: #999999; font-style: italic">     * product &amp; display the result</span>
+    <span style="color: #999999; font-style: italic">     */</span>
+     
+        <span style="color: #a61717; background-color: #e3d2d2">#</span><span style="color: #d0d0d0">include</span> <span style="color: #d0d0d0">&lt;stdio.h&gt;</span>
+        <span style="color: #a61717; background-color: #e3d2d2">#</span><span style="color: #d0d0d0">define</span> <span style="color: #d0d0d0">MAXROWS</span> <span style="color: #3677a9">10</span>
+        <span style="color: #a61717; background-color: #e3d2d2">#</span><span style="color: #d0d0d0">define</span> <span style="color: #d0d0d0">MAXCOLS</span> <span style="color: #3677a9">10</span>
+     
+        <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #d0d0d0">readMatrix(</span><span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">arr[][MAXCOLS],</span> <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">m,</span> <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">n);</span>
+        <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">printMatrix</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">arr[][MAXCOLS],</span> <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">m,</span> <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">n);</span>
+        <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">productMatrix</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">array1[][MAXCOLS],</span> <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">array2[][MAXCOLS],</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">array3[][MAXCOLS],</span> <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">m,</span> <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">n);</span>
+     
+        <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">main</span><span style="color: #d0d0d0">()</span>
+        <span style="color: #d0d0d0">{</span>
+     
+            <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">array1[MAXROWS][MAXCOLS],</span> <span style="color: #d0d0d0">array2[MAXROWS][MAXCOLS],</span>
+            <span style="color: #d0d0d0">array3[MAXROWS][MAXCOLS];</span>
+            <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">m,</span> <span style="color: #d0d0d0">n;</span>
+     
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter the value of m and n \n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d %d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;m,</span> <span style="color: #d0d0d0">&amp;n);</span>
+     
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter Matrix array1 \n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">readMatrix(array1,</span> <span style="color: #d0d0d0">m,</span> <span style="color: #d0d0d0">n);</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Matrix array1 \n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">printMatrix(array1,</span> <span style="color: #d0d0d0">m,</span> <span style="color: #d0d0d0">n);</span>
+     
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter Matrix array2 \n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">readMatrix(array2,</span> <span style="color: #d0d0d0">m,</span> <span style="color: #d0d0d0">n);</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Matrix B \n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">printMatrix(array2,</span> <span style="color: #d0d0d0">m,</span> <span style="color: #d0d0d0">n);</span>
+     
+            <span style="color: #d0d0d0">productMatrix(array1,</span> <span style="color: #d0d0d0">array2,</span> <span style="color: #d0d0d0">array3,</span> <span style="color: #d0d0d0">m,</span> <span style="color: #d0d0d0">n);</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;The product matrix is \n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">printMatrix(array3,</span> <span style="color: #d0d0d0">m,</span> <span style="color: #d0d0d0">n);</span>
+     
+        <span style="color: #d0d0d0">}</span>
+     
+        <span style="color: #999999; font-style: italic">/*  Input Matrix array1 */</span>
+     
+        <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">readMatrix</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">arr[][MAXCOLS],</span> <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">m,</span> <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">n)</span>
+        <span style="color: #d0d0d0">{</span>
+     
+            <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">i,</span> <span style="color: #d0d0d0">j;</span>
+            <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">m;</span> <span style="color: #d0d0d0">i++)</span> 
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(j</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">j</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">n;</span> <span style="color: #d0d0d0">j++)</span> 
+                <span style="color: #d0d0d0">{</span>
+                    <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;arr[i][j]);</span>
+                <span style="color: #d0d0d0">}</span>
+            <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">}</span>
+     
+        <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">printMatrix</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">arr[][MAXCOLS],</span> <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">m,</span> <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">n)</span>
+        <span style="color: #d0d0d0">{</span>
+     
+            <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">i,</span> <span style="color: #d0d0d0">j;</span>
+            <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">m;</span> <span style="color: #d0d0d0">i++)</span> 
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(j</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">j</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">n;</span> <span style="color: #d0d0d0">j++)</span>
+                <span style="color: #d0d0d0">{</span>
+                    <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;%3d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">arr[i][j]);</span>
+                <span style="color: #d0d0d0">}</span>
+                <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n&quot;</span><span style="color: #d0d0d0">);</span>
+            <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">}</span>
+     
+        <span style="color: #999999; font-style: italic">/*  Multiplication of matrices */</span>
+     
+        <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">productMatrix</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">array1[][MAXCOLS],</span> <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">array2[][MAXCOLS],</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">array3[][MAXCOLS],</span> <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">m,</span> <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">n)</span>
+        <span style="color: #d0d0d0">{</span>
+     
+            <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">i,</span> <span style="color: #d0d0d0">j,</span> <span style="color: #d0d0d0">k;</span>
+            <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">m;</span> <span style="color: #d0d0d0">i++)</span> 
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(j</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">j</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">n;</span> <span style="color: #d0d0d0">j++)</span> 
+                <span style="color: #d0d0d0">{</span>
+                    <span style="color: #d0d0d0">array3[i][j]</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+                    <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(k</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">k</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">n;</span> <span style="color: #d0d0d0">k++)</span> 
+                    <span style="color: #d0d0d0">{</span>
+                        <span style="color: #d0d0d0">array3[i][j]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">array3[i][j]</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">array1[i][k]</span> <span style="color: #d0d0d0">*</span> <span style="color: #d0d0d0">array2[k][j];</span>
+                    <span style="color: #d0d0d0">}</span>
+                <span style="color: #d0d0d0">}</span>
+            <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">}</span>
+    
+    <span style="color: #d0d0d0">&gt;&gt;Output:</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">value</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">m</span> <span style="color: #d0d0d0">and</span> <span style="color: #d0d0d0">n</span>
+    <span style="color: #3677a9">3</span> <span style="color: #3677a9">3</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">matrix</span> <span style="color: #d0d0d0">array1</span>
+    <span style="color: #3677a9">4</span> <span style="color: #3677a9">5</span> <span style="color: #3677a9">6</span>
+    <span style="color: #3677a9">1</span> <span style="color: #3677a9">2</span> <span style="color: #3677a9">3</span>
+    <span style="color: #3677a9">3</span> <span style="color: #3677a9">7</span> <span style="color: #3677a9">8</span>
+    <span style="color: #d0d0d0">Matrix</span> <span style="color: #d0d0d0">array1</span>
+      <span style="color: #3677a9">4</span>  <span style="color: #3677a9">5</span>  <span style="color: #3677a9">6</span>
+      <span style="color: #3677a9">1</span>  <span style="color: #3677a9">2</span>  <span style="color: #3677a9">3</span>
+      <span style="color: #3677a9">3</span>  <span style="color: #3677a9">7</span>  <span style="color: #3677a9">8</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">matrix</span> <span style="color: #d0d0d0">array2</span>
+    <span style="color: #3677a9">5</span> <span style="color: #3677a9">6</span> <span style="color: #3677a9">9</span>
+    <span style="color: #3677a9">8</span> <span style="color: #3677a9">5</span> <span style="color: #3677a9">3</span>
+    <span style="color: #3677a9">2</span> <span style="color: #3677a9">9</span> <span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">Matrix</span> <span style="color: #d0d0d0">array2</span>
+      <span style="color: #3677a9">5</span>  <span style="color: #3677a9">6</span>  <span style="color: #3677a9">9</span>
+      <span style="color: #3677a9">8</span>  <span style="color: #3677a9">5</span>  <span style="color: #3677a9">3</span>
+      <span style="color: #3677a9">2</span>  <span style="color: #3677a9">9</span>  <span style="color: #3677a9">1</span>
+    <span style="color: #d0d0d0">The</span> <span style="color: #d0d0d0">product</span> <span style="color: #d0d0d0">matrix</span> <span style="color: #d0d0d0">is</span>
+     <span style="color: #3677a9">72103</span> <span style="color: #3677a9">57</span>
+     <span style="color: #3677a9">27</span> <span style="color: #3677a9">43</span> <span style="color: #3677a9">18</span>
+     <span style="color: #3677a9">87125</span> <span style="color: #3677a9">56</span>
+    </pre></div>

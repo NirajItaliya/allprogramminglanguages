@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Site made with Mobirise Website Builder v4.10.5, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.10.5, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/ic-logo-new-128x128.png" type="image/x-icon">
+    <meta name="description" content="ApkZube">
+
+    <title>Exceptions Handling</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="plugin/prism.css">
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
+
+</head>
+
+<body class="line-numbers">
+    <section class="mbr-section content4 cid-rwt4wqX1GV" id="content4-r9">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-2"><strong>Exceptions Handling</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="engine"><a href="https://mobirise.info/w">free html5 templates</a></section>
+    <section class="mbr-section article content1 cid-rwt4GoszP2" id="content1-ra">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>An <strong>exception </strong>is an event, which occurs during the execution of a program that
+                        disrupts the normal flow of the program's instructions. In general, when a Python script
+                        encounters a situation that it cannot cope with, it raises an exception. An exception is a
+                        Python object that &nbsp;<strong>represents an error.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwt4GAg7KY" id="content1-rb">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>When a Python script raises an exception, it must either handle the exception immediately
+                        otherwise it <strong>terminates </strong>and <strong>quits</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwt4SLs2rW" id="content12-rc">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><strong>Handling an exception</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwt4XC7EVj" id="content1-rd">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>If you have some suspicious code that may raise an exception, you can defend your program by
+                        placing the suspicious code in a try: block. After the try: block, include an except: statement,
+                        followed by a block of code which handles the problem as elegantly as possible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <div class="container">
+   <pre><code class="language-python">
+ try:
+    You do your operations here
+    ......................
+ except ExceptionI:
+    If there is ExceptionI, then execute this block.
+ except ExceptionII:
+    If there is ExceptionII, then execute this block.
+    ......................
+ else:
+ 
+    If there is no exception then execute this block. 
+   </code></pre></div>
+    <section class="mbr-section article content1 cid-rwt5w2QhOD" id="content1-rh">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>With our “Hello, World!” program written, we are ready to run the program. We’ll use the python3
+                        command along with the name of our program file. Let’s run the program:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwt5sqwIQh" id="content12-rg">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li>A single try statement can have multiple except statements. This is useful when the
+                            <strong>try block </strong>contains statements that may throw different types of exceptions.
+                        </li>
+                        <li>You can also provide a <strong>generic except </strong>clause, which handles any
+                            exception.&nbsp;</li>
+                        <li>After the <strong>except </strong>clause(s), you can include an else-clause. The code in the
+                            else-block executes if the code in the try: block does not raise an exception.&nbsp;<br>
+                        </li>
+                        <li>The <strong>else-block</strong> is a good place for code that does not need the try: block's
+                            protection.<br></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwt5Rj42st" id="content1-ri">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+ try:
+    fh = open("testfile", "w")
+    fh.write("This is my test file for exception handling!!")
+ except IOError:
+    print ("Error: can\'t find file or read data")
+ else:
+    print ("Written content in the file successfully")
+    fh.close()
+</code></pre></div>
+    <section class="mbr-section article content1 cid-rwt5SlXivz" id="content1-rk">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cid-rwt6pCZtSM" id="image2-rm">
+
+
+
+        <figure class="mbr-figure container">
+            <div class="image-block" style="width: 64%;">
+                <img src="assets/images/exception-464x117.jpg" alt="Mobirise" title="">
+
+            </div>
+        </figure>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    Written content in the file successfully 
+</code></pre></div>
+
+    <section class="mbr-section content4 cid-rwt6JMA3OY" id="content4-rn">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>The except Clause with No
+                            Exceptions</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwt6MLScV6" id="content1-ro">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>You can also use the except statement with no exceptions defined as follows</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <div class="container">
+   <pre><code class="language-python">
+ try:
+    You do your operations here
+    ......................
+ except:
+    If there is any exception, then execute this block.
+    ......................
+ else:
+    If there is no exception then execute this block
+   </code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwt6OvNkfD" id="content1-rq">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>This kind of a <strong>try-except</strong> statement catches all the exceptions that occur. Using
+                        this kind of try-except statement is not considered a good programming practice though, because
+                        it catches all exceptions but does not make the programmer identify the root cause of the
+                        problem that may occur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section content4 cid-rwt76CgYx5" id="content4-rr">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>The except Clause with Multiple
+                            Exceptions</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwt77It4nx" id="content1-rs">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>You can also use the same except statement to handle multiple exceptions as follows −</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <div class="container">
+   <pre><code class="language-python">
+ try:
+    You do your operations here
+    ......................
+ except(Exception1[, Exception2[,...ExceptionN]]]):
+    If there is any exception from the given exception list,
+    then execute this block.
+    ......................
+ else:
+    If there is no exception then execute this block. 
+   </code></pre></div>
+
+    <section class="mbr-section content4 cid-rwt79zXmL3" id="content4-ru">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>The try-finally Clause</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwt7aoNpwG" id="content1-rv">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>You can use a <strong>finally: block</strong> along with a try: block. The finally: block is a
+                        place to put any code that must execute, whether the <strong>try-block</strong> raised an
+                        exception or not. The syntax of the <strong>try-finally</strong> statement is this −</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+ try:
+    You do your operations here;
+     ......................
+    Due to any exception, this may be skipped.
+ finally:
+    This would always be executed.
+    ......................
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwt7crFAd4" id="content1-rw">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p><strong>Note −</strong> You can provide except clause(s), or a finally clause, but not both. You
+                        cannot use else clause as well along with a <strong>finally clause</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwt7gvANOx" id="content1-ry">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+ try: 
+    fh = open("testfile", "w")
+    fh.write("This is my test file for exception handling!!")
+ finally:
+    print ("Error: can\'t find file or read data")
+    fh.close()
+</code></pre></div>
+    <section class="mbr-section article content1 cid-rwt7i6Giot" id="content1-s0">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>If you do not have permission to open the file in writing mode, then this will produce the
+                        following result −</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    Error: can't find file or read data
+</code></pre></div>
+
+    <section class="mbr-section content4 cid-rwt7mwggg3" id="content4-s2">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Argument of an Exception</strong>
+                    </h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwt7n9L0NU" id="content1-s3">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>An exception can have an <strong>argument</strong>, which is a value that gives additional
+                        information about the problem. The contents of the argument vary by exception. You capture an
+                        exception's argument by supplying a variable in the except clause as follows −</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwt8kkieRA" id="content1-s4">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    # Define a function here.
+    def temp_convert(var):
+       try:
+          return int(var)
+       except ValueError as Argument:
+          print ("The argument does not contain numbers\n", Argument)
+    
+    # Call above function here.
+    temp_convert("xyz")
+</code></pre></div>
+    <section class="mbr-section article content1 cid-rwt8ms02Dx" id="content1-s6">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    The argument does not contain numbers
+    invalid literal for int() with base 10: 'xyz'
+</code></pre></div>
+
+    <section class="mbr-section content4 cid-rwt8DcX6Uq" id="content4-s8">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Raising an Exception</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwt8EvPDuo" id="content1-s9">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>You can raise exceptions in several ways by using the raise statement. The general syntax for the
+                        <strong>raise </strong>statement is as follows&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    raise [Exception [, args [, traceback]]]
+</code></pre></div>
+
+
+    <section class="mbr-section article content1 cid-rwt8GPjWGU" id="content1-sb">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Here, Exception is the type of exception (for example, <strong>NameError</strong>) and argument
+                        is a value for the exception argument. The argument is optional; if not supplied, the exception
+                        argument is None.
+                    </p>
+                    <p><br></p>
+                    <p>The final argument, traceback, is also optional (and rarely used in practice), and if present, is
+                        the traceback object used for the exception.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwt8Iwp5OF" id="content1-sc">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    def functionName( level ):
+    if level < 1:
+       raise Exception(level)
+       # The code below to this would not be executed
+       # if we raise the exception
+    return level
+ 
+ try:
+    l = functionName(-10)
+    print ("level = ",l)
+ except Exception as e:
+    print ("error in level argument",e.args[0])
+</code></pre></div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwt8JRS9Gt" id="content1-se">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+    error in level argument -10
+</code></pre></div>
+    <section class="mbr-section content4 cid-rwt9keIT4m" id="content4-sg">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Writing the “Hello, World!”
+                            Program</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwt9kWHlqc" id="content1-sh">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Python also allows you to create your own exceptions by deriving classes from the standard
+                        <strong>built-in exceptions</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwt9lRBC2h" id="content1-si">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Here is an example related to <strong>RuntimeError</strong>. Here, a class is created that is
+                        subclassed from RuntimeError. This is useful when you need to display more <strong>specific
+                            information </strong>when an exception is caught.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwt9mCORL7" id="content1-sj">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>In the try block, the user-defined exception is raised and caught in the except block. The
+                        variable e is used to create an instance of the class <strong>Networkerror.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+class Networkerror(RuntimeError):
+    def __init__(self, arg):
+       self.args = arg
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwt9oImCi0" id="content1-sl">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>So once you have defined the above class, you can raise the exception as follows −</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container">
+    <pre><code class="language-python">
+     try:
+        raise Networkerror("Bad hostname")
+     except Networkerror,e:
+        print(e.args)
+    </code></pre></div>
+
+    <script src="plugin/prism.js"></script>
+    <script src="assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="assets/popper/popper.min.js"></script>
+    <script src="assets/tether/tether.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+    <script src="assets/theme/js/script.js"></script>
+
+
+    <input name="animation" type="hidden">
+</body>
+
+</html>

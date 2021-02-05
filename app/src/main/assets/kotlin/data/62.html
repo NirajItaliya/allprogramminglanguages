@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin Generics</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rQ1GrrLBeK" id="content1-1dc" data-rv-view="8161">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin Generics
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/i">build a website for free</a></section><section class="mbr-section article content1 cid-rQ1Gve6cMR" id="content1-1dd" data-rv-view="8162">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Generics</strong> are the powerful features that allow to define classes, methods, and properties etc. which can be accessed using different types. The type differences of classes, methods, etc. are checked at compile-time.
+<div>
+</div><div>The generic type class or method is declared as parameterized type. A parameterized type is an instance of generic type with actual type arguments. The parameterized types are declared using angle <strong>brackets &lt;&gt;</strong> Generics are mostly used in collections.</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1GwlVo6a" id="content1-1de" data-rv-view="8163">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Advantage of Generics
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1GwO8W1t" id="content1-1df" data-rv-view="8164">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Following are the key advantages of using generics:
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rQ1GxYukCE" id="content12-1dg" data-rv-view="8165">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Type-safety: </strong>Generic allows to hold only single type of object. Generic does not allow to store other object.
+</li><li><strong>Type casting is not required: </strong>There is no need to typecast the object.
+</li><li><strong>Compile time checking:</strong> Generics code is checked at compile time so that it can avoid any problems at runtime.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rQ1GO0YBlL" id="content1-1dh" data-rv-view="8166">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Let's see a problem without using the generics.
+<div>
+</div><div>In this example, we create a Person class with primary constructor having single parameter. Now, we want to pass the different type of data in object of Person class (say Int type as Person(30) and String type as Person("40")). The primary constructor of Person class accept Int type Person(30) and regrets String type Person("40"). It generates a compile time error as type mismatch.</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">class Person (age:Int){
+    var age: Int = age
+    init {
+        this.age= age
+        println(age)
+    }
+}
+    fun main(args: Array&lt;String&gt;){
+    var ageInt: Person = Person(30)
+    var ageString: Person = Person("30")// compile time error
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1GSnNuGZ" id="content1-1dj" data-rv-view="8168">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">To solve the above problem, we use a generic type class which is a user defined class that accepts different type of parametersin single class.
+<div>
+</div><div>Let's rewrite the above code using generic type. A class Person of type <strong>&lt;T&gt; </strong>is a general type class that accepts both Int and String types of parameter.
+</div><div>
+</div><div>In other words, the type parameter <strong>&lt;T&gt;</strong> is a place holder that will be replaced by type argument. It will be replaced when the generic type is instantiated.</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">class Person&lt;T&gt;(age: T){
+    var age: T = age
+    init {
+        this.age= age
+        println(age)
+    }
+}
+    fun main(args: Array&lt;String&gt;){
+    var ageInt: Person&lt;Int&gt; = Person&lt;Int&gt;(30)
+    var ageString: Person&lt;String&gt; = Person&lt;String&gt;("40")
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1H4fS8G9" id="content1-1dl" data-rv-view="8170">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">30
+40
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1H8SdlId" id="content1-1dn" data-rv-view="8172">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In above example, when the object of Person class is created using type Int as Person&lt;Int&gt;(30) and Person&lt;String&gt;("40"), it replaces the Person class of type <strong>T </strong>with Int and String respectively.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rQ1HbBjz16" id="content12-1do" data-rv-view="8173">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Syntax of generic class
+ :</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">class_or_interface&lt;Type&gt;
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rQ1HcLRH2g" id="content12-1dq" data-rv-view="8175">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Syntax of generic method
+ :</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">&lt;Type&gt;methodName(parameter: classType&lt;Type&gt;)
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rQ1HwGeYhg" id="content12-1dt" data-rv-view="8177">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>generic example
+ : </strong>Let's see an example of generic method. In this example, we are accessing the generic method of collection type <strong>(ArrayList).</strong> For doing this, we create two different objectsof ArrayList class arrayListOf&lt;String&gt;("Ashu","Ajay") and arrayListOf&lt;Float&gt;(10.5f,5.0f,25.5f) of String and Float types respectively. When we call the generic method &lt;T&gt; printValue(list: ArrayList&lt;T&gt;) using printValue(stringList), the type T of method &lt;T&gt;printValue(list: ArrayList&lt;T&gt;)will be replaced by String type. Similarly, when we call the generic method using printValue(floatList), the type T of method &lt;T&gt;printValue(list: ArrayList&lt;T&gt;) will replace by Float type.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val stringList: ArrayList&lt;String&gt; = arrayListOf&lt;String&gt;("Ashu", "Ajay")
+    val s: String = stringList[0]
+    println("printing the string value of stringList: $s")
+    printValue(stringList)
+    val floatList: ArrayList&lt;Float&gt; = arrayListOf&lt;Float&gt;(10.5f, 5.0f, 25.5f)
+    printValue(floatList)
+}
+
+fun &lt;T&gt; printValue(list: ArrayList&lt;T&gt;) {
+    for (element in list) {
+        println(element)
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1HAk5uyp" id="content1-1dw" data-rv-view="8179">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">printing the string value of stringList: Ashu
+Ashu
+Ajay
+10.5
+5.0
+25.5
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rQ1I2T1gn0" id="content12-1dy" data-rv-view="8181">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>generic extension function example
+ :&nbsp;</strong>As extension function allows to add methods to class without inherit a class or any design pattern.
+ In this example, we add a method printValue()to ArrayList class of generic type. This method is called form stringList.printValue() and floatList.printValue()of String and Float types respectively. As <strong>"this"</strong> keyword in extension function represent the current calling instance. When we call the extension function using stringList.printValue(), the this represents stringList instance containing String type values. Similarly, calling the extension function using floatList.printValue(), the this represents floatList instance containing Float type values.&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val stringList: ArrayList&lt;String&gt; = arrayListOf&lt;String&gt;("Ashu","Ajay")
+    stringList.printValue()
+    val floatList: ArrayList&lt;Float&gt; = arrayListOf&lt;Float&gt;(10.5f,5.0f,25.5f)
+    floatList.printValue()
+}
+fun &lt;T&gt;ArrayList&lt;T&gt;.printValue(){
+    for(element in this){
+        println(element)
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rQ1Is9HNRU" id="content1-1e0" data-rv-view="8183">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">Ashu
+Ajay
+10.5
+5.0
+25.5
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

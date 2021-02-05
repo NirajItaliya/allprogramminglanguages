@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Site made with Mobirise Website Builder v4.10.5, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.10.5, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/ic-logo-new-128x128.png" type="image/x-icon">
+    <meta name="description" content="ApkZube">
+
+    <title>Python Inheritance</title>
+
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="plugin/prism.css">
+
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+    <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
+
+</head>
+
+<body class="line-numbers">
+    <section class="mbr-section content4 cid-rwsO09oyRj" id="content4-ou">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-2"><strong>Python Inheritance</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="engine"><a href="https://mobirise.info/e">how to make your own site</a></section>
+    <section class="mbr-section article content1 cid-rwsO0fqHl3" id="content1-oz">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Instead of starting from a scratch, you can create a class by deriving it from a<strong>
+                            pre-existing class </strong>by listing the parent class in parentheses after the new class
+                        name.
+                    </p>
+                    <p><br></p>
+                    <p>The child class inherits the attributes of its parent class, and you can use those attributes as
+                        if they were defined in the child class. A child class can also override data members and
+                        methods from the parent.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cid-rwsRB9SJwD" id="image2-py">
+
+
+
+        <figure class="mbr-figure container">
+            <div class="image-block" style="width: 43%;">
+                <img src="assets/images/inheri-367x302.jpg" alt="Mobirise" title="">
+
+            </div>
+        </figure>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwsO0gg2gh" id="content1-p0">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p><strong>Syntax :</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+class SubClassName (ParentClass1[, ParentClass2, ...]):
+    'Optional class documentation string'
+    class_suite
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwsO0isl3l" id="content1-p2">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p><strong>example :</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <div class="container">
+   <pre><code class="language-python">
+class Parent: # define parent class
+    parentAttr = 100
+ 
+    def __init__(self):
+       print ("Calling parent constructor")
+ 
+    def parentMethod(self):
+       print ('Calling parent method')
+ 
+    def setAttr(self, attr):
+       Parent.parentAttr = attr
+       
+    def getAttr(self):
+       print ("Parent attribute :", Parent.parentAttr)
+ 
+ class Child(Parent): # define child class
+    def __init__(self):
+       print ("Calling child constructor")
+       
+    def childMethod(self):
+       print ('Calling child method')
+ 
+c = Child() # instance of child
+c.childMethod() # child calls its method
+c.parentMethod() # calls parent's method
+c.setAttr(200) # again call parent's method
+c.getAttr() # again call parent's method
+   </code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwsO0kgHeO" id="content1-p4">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+    Calling child constructor
+    Calling child method
+    Calling parent method
+    Parent attribute : 200
+</code></pre></div>
+    <section class="mbr-section article content1 cid-rwsO0mbhAQ" id="content1-p6">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>In a similar way, you can drive a class from multiple parent classes. multiple inheritance we
+                        will learn in next tutorial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwsO0nZbMe" id="content1-p8">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>You can use issubclass() or isinstance() functions to check a relationships of two classes and
+                        instances.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content12 cid-rwsO0oYjJf" id="content12-p9">
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ul>
+                        <li><span style="font-size: 1rem;"><strong>issubclass(sub, sup)</strong> boolean function
+                                returns True, if the given subclass sub is indeed a subclass of the superclass
+                                sup.&nbsp;</span><br></li>
+                        <li><span style="font-size: 1rem;"><strong>isinstance(obj, Class) </strong>boolean function
+                                returns True, if obj is an instance of class Class or is an instance of a subclass of
+                                Class&nbsp;</span><br></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwsO0pSXU9" id="content1-pa">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-5 col-md-8">
+                    <p><strong>Overriding Methods</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwsO0qNzFN" id="content1-pb">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>You can always <strong>override</strong> your parent class methods. One reason for overriding
+                        parent's methods is that you may want <strong>special </strong>or <strong>different
+                            functionality </strong>in your subclass.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwsO0rIiDi" id="content1-pc">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+ class Parent: # define parent class
+    def myMethod(self):
+       print ('Calling parent method')
+ 
+ 
+ class Child(Parent): # define child class
+    def myMethod(self):
+       print ('Calling child method')
+ 
+ 
+ c = Child() # instance of child
+ c.myMethod() # child calls overridden method
+</code></pre></div>
+    <section class="mbr-section article content1 cid-rwsO0tu9rA" id="content1-pe">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+    Calling child method
+</code></pre></div>
+
+    <section class="mbr-section content4 cid-rwsO0wIIig" id="content4-pg">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Base Overloading Methods</strong>
+                    </h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-table cid-rwsO0xTs0N" id="table1-ph">
+
+
+
+        <div class="container container-table">
+            <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-7">The following table lists some
+                generic functionality that you can override in your own classes −</h2>
+
+                <div class="container scroll">
+                    <table class="table" cellspacing="0">
+                        <thead>
+                            <tr class="table-heads ">
+
+
+
+
+                                <th class="head-item mbr-fonts-style display-7">
+                                    Method</th>
+                                <th class="head-item mbr-fonts-style display-7">Description&nbsp;</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+
+
+
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7"><strong>__init__ ( self [,args...]
+                                        )</strong></td>
+                                <td class="body-item mbr-fonts-style display-7">Constructor (with any optional
+                                    arguments)
+                                    <br>
+                                    <br>Sample Call : obj = className(args)</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7"><strong>__del__( self )</strong></td>
+                                <td class="body-item mbr-fonts-style display-7">Destructor, deletes an object
+                                    <br>
+                                    <br>Sample Call : del obj</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7"><strong>__repr__( self )</strong></td>
+                                <td class="body-item mbr-fonts-style display-7">Evaluatable string representation
+                                    <br>
+                                    <br>Sample Call : repr(obj)</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7"><strong>&nbsp;
+                                        <br>
+                                        <br>__str__( self )</strong></td>
+                                <td class="body-item mbr-fonts-style display-7">Printable string representation
+                                    <br>
+                                    <br>Sample Call : str(obj)</td>
+                            </tr>
+                            <tr>
+
+
+
+
+                                <td class="body-item mbr-fonts-style display-7"><strong>__cmp__ ( self, x )</strong>
+                                </td>
+                                <td class="body-item mbr-fonts-style display-7">Object comparison
+                                    <br>
+                                    <br>Sample Call : cmp(obj, x)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container table-info-container">
+
+                </div>
+            </div>
+    </section>
+
+    <section class="mbr-section content4 cid-rwsO0zLTKn" id="content4-pi">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Overloading Operators</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwsO0AKYRK" id="content1-pj">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Suppose you have created a Vector class to represent two-dimensional vectors. What happens when
+                        you use the plus operator to add them? Most likely Python will yell at you.
+                    </p>
+                    <p><br></p>
+                    <p>You could, however, define the <strong>__add__</strong> method in your class to perform vector
+                        addition and then the plus operator would behave as per expectation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwsO0BJBDc" id="content1-pk">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+ class Vector:
+    def __init__(self, a, b):
+       self.a = a
+       self.b = b
+ 
+    def __str__(self):
+       return 'Vector (%d, %d)' % (self.a, self.b)
+ 
+    def __add__(self,other):
+       return Vector(self.a + other.a, self.b + other.b)
+ 
+ v1 = Vector(2,10)
+ v2 = Vector(5,-2)
+ print (v1 + v2)
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwsO0EA9Cy" id="content1-pm">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    Vector(7,8)
+</code></pre></div>
+
+    <section class="mbr-section content4 cid-rwsO0GvI7q" id="content4-po">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Data Hiding</strong></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwsO0HvcX6" id="content1-pp">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>An object's attributes may or may not be visible outside the class definition. You need to name
+                        attributes with a double underscore prefix, and those attributes then will not be directly
+                        <strong>visible </strong>to outsiders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-rwsO0IsaVJ" id="content1-pq">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Example :</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+ class JustCounter:
+    __secretCount = 0
+ 
+    def count(self):
+       self.__secretCount += 1
+       print (self.__secretCount)
+ 
+ counter = JustCounter()
+ counter.count()
+ counter.count()
+ print (counter.__secretCount)
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwsO0KB9UC" id="content1-ps">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+<pre><code class="language-python">
+    1
+    2
+    Traceback (most recent call last):
+       File "test.py", line 12, in <module>
+          print counter.__secretCount
+    AttributeError: JustCounter instance has no attribute '__secretCount'
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwsO0Mu0Do" id="content1-pu">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>Python protects those members by internally changing the name to include the class name. You can
+                        access such attributes as object._className__attrName. If you would replace your last line as
+                        following, then it works for you −</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+    .........................
+    print (counter._JustCounter__secretCount)
+</code></pre></div>
+
+    <section class="mbr-section article content1 cid-rwsO0OpnmJ" id="content1-pw">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8">
+                    <p>output of above example &nbsp;:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container">
+<pre><code class="language-python">
+1
+2
+2
+</code></pre></div>
+
+
+    <script src="plugin/prism.js"></script>
+    <script src="assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="assets/popper/popper.min.js"></script>
+    <script src="assets/tether/tether.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+    <script src="assets/datatables/jquery.data-tables.min.js"></script>
+    <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+    <script src="assets/theme/js/script.js"></script>
+
+
+    <input name="animation" type="hidden">
+</body>
+
+</html>

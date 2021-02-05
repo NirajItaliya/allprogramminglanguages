@@ -1,0 +1,823 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Verdana",sans-serif;
+	color:black;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:7.1pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB>
+
+<div class=WordSection1>
+
+<h1 align=center style='text-align:center;line-height:150%'>6. VARIABLES</h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'>&nbsp;</p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>A variable is nothing but a name given
+to a storage area that our programs can manipulate. Each variable in C has a
+specific type, which determines the size and layout of the variable's memory;
+the range of values that can be stored within that memory; and the set of
+operations that can be applied to the variable.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The name of a variable can be composed
+of letters, digits, and the underscore character. It must begin with either a
+letter or an underscore. Upper and lowercase letters are distinct because C is
+case-sensitive. Based on the basic types explained in the previous chapter,
+there will be the following basic variable types:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Type    Description</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>            </span></p>
+
+<div align=center>
+
+<table class=MsoTable15Grid5DarkAccent6 border=1 cellspacing=0 cellpadding=0
+ width="79%" style='width:79.2%;border-collapse:collapse;border:none'>
+ <tr style='height:26.15pt'>
+  <td width="25%" valign=top style='width:25.12%;border:solid white 1.0pt;
+  border-right:none;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:26.15pt'>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:6.0pt;margin-bottom:.0001pt;text-align:justify;line-height:150%'><b><span
+  style='font-size:10.0pt;line-height:150%;font-family:"Verdana",sans-serif;
+  color:white'>Type</span></b></p>
+  </td>
+  <td width="74%" valign=top style='width:74.88%;border:solid white 1.0pt;
+  border-left:none;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:26.15pt'>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:5.0pt;margin-bottom:.0001pt;text-align:justify;line-height:150%'><b><span
+  style='font-size:10.0pt;line-height:150%;font-family:"Verdana",sans-serif;
+  color:white'>Description</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width="25%" valign=top style='width:25.12%;border:solid white 1.0pt;
+  border-top:none;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:7.45pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-size:10.0pt;line-height:150%;
+  color:white'>&nbsp;</span></b></p>
+  </td>
+  <td width="74%" valign=top style='width:74.88%;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#C5E0B3;padding:0cm 5.4pt 0cm 5.4pt;height:7.45pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><span style='font-size:10.0pt;line-height:150%'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:6.0pt'>
+  <td width="25%" valign=top style='width:25.12%;border:solid white 1.0pt;
+  border-top:none;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:6.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-size:10.0pt;line-height:150%;
+  color:white'>&nbsp;</span></b></p>
+  </td>
+  <td width="74%" valign=top style='width:74.88%;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:6.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><span style='font-size:10.0pt;line-height:150%'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:25.15pt'>
+  <td width="25%" valign=top style='width:25.12%;border:solid white 1.0pt;
+  border-top:none;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:25.15pt'>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:6.0pt;margin-bottom:.0001pt;text-align:justify;line-height:150%'><b><span
+  style='font-size:10.0pt;line-height:150%;font-family:"Verdana",sans-serif;
+  color:white'>char</span></b></p>
+  </td>
+  <td width="74%" valign=top style='width:74.88%;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#C5E0B3;padding:0cm 5.4pt 0cm 5.4pt;height:25.15pt'>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:5.0pt;margin-bottom:.0001pt;line-height:150%'><span
+  style='font-size:10.0pt;line-height:150%;font-family:"Verdana",sans-serif'>Typically
+  a single octet (one byte). This is an integer type.</span></p>
+  </td>
+ </tr>
+ <tr style='height:13.4pt'>
+  <td width="25%" valign=top style='width:25.12%;border:solid white 1.0pt;
+  border-top:none;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:13.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-size:10.0pt;line-height:150%;
+  color:white'>&nbsp;</span></b></p>
+  </td>
+  <td width="74%" valign=top style='width:74.88%;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:13.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%'><span style='font-size:10.0pt;line-height:150%'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:25.15pt'>
+  <td width="25%" valign=top style='width:25.12%;border:solid white 1.0pt;
+  border-top:none;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:25.15pt'>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:6.0pt;margin-bottom:.0001pt;text-align:justify;line-height:150%'><b><span
+  style='font-size:10.0pt;line-height:150%;font-family:"Verdana",sans-serif;
+  color:white'>int</span></b></p>
+  </td>
+  <td width="74%" valign=top style='width:74.88%;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#C5E0B3;padding:0cm 5.4pt 0cm 5.4pt;height:25.15pt'>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:5.0pt;margin-bottom:.0001pt;line-height:150%'><span
+  style='font-size:10.0pt;line-height:150%;font-family:"Verdana",sans-serif'>The
+  most natural size of integer for the machine.</span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td width="25%" valign=top style='width:25.12%;border:solid white 1.0pt;
+  border-top:none;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-size:10.0pt;line-height:150%;
+  color:white'>&nbsp;</span></b></p>
+  </td>
+  <td width="74%" valign=top style='width:74.88%;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%'><span style='font-size:10.0pt;line-height:150%'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:25.15pt'>
+  <td width="25%" valign=top style='width:25.12%;border:solid white 1.0pt;
+  border-top:none;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:25.15pt'>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:6.0pt;margin-bottom:.0001pt;text-align:justify;line-height:150%'><b><span
+  style='font-size:10.0pt;line-height:150%;font-family:"Verdana",sans-serif;
+  color:white'>float</span></b></p>
+  </td>
+  <td width="74%" valign=top style='width:74.88%;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#C5E0B3;padding:0cm 5.4pt 0cm 5.4pt;height:25.15pt'>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:5.0pt;margin-bottom:.0001pt;line-height:150%'><span
+  style='font-size:10.0pt;line-height:150%;font-family:"Verdana",sans-serif'>A
+  single-precision floating point value.</span></p>
+  </td>
+ </tr>
+ <tr style='height:13.4pt'>
+  <td width="25%" valign=top style='width:25.12%;border:solid white 1.0pt;
+  border-top:none;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:13.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-size:10.0pt;line-height:150%;
+  color:white'>&nbsp;</span></b></p>
+  </td>
+  <td width="74%" valign=top style='width:74.88%;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:13.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%'><span style='font-size:10.0pt;line-height:150%'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:25.15pt'>
+  <td width="25%" valign=top style='width:25.12%;border:solid white 1.0pt;
+  border-top:none;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:25.15pt'>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:6.0pt;margin-bottom:.0001pt;text-align:justify;line-height:150%'><b><span
+  style='font-size:10.0pt;line-height:150%;font-family:"Verdana",sans-serif;
+  color:white'>double</span></b></p>
+  </td>
+  <td width="74%" valign=top style='width:74.88%;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#C5E0B3;padding:0cm 5.4pt 0cm 5.4pt;height:25.15pt'>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:5.0pt;margin-bottom:.0001pt;line-height:150%'><span
+  style='font-size:10.0pt;line-height:150%;font-family:"Verdana",sans-serif'>A
+  double-precision floating point value.</span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td width="25%" valign=top style='width:25.12%;border:solid white 1.0pt;
+  border-top:none;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-size:10.0pt;line-height:150%;
+  color:white'>&nbsp;</span></b></p>
+  </td>
+  <td width="74%" valign=top style='width:74.88%;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:13.5pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  150%'><span style='font-size:10.0pt;line-height:150%'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:25.15pt'>
+  <td width="25%" valign=top style='width:25.12%;border:solid white 1.0pt;
+  border-top:none;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:25.15pt'>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:6.0pt;margin-bottom:.0001pt;text-align:justify;line-height:150%'><b><span
+  style='font-size:10.0pt;line-height:150%;font-family:"Verdana",sans-serif;
+  color:white'>void</span></b></p>
+  </td>
+  <td width="74%" valign=top style='width:74.88%;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#C5E0B3;padding:0cm 5.4pt 0cm 5.4pt;height:25.15pt'>
+  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+  margin-left:5.0pt;margin-bottom:.0001pt;line-height:150%'><span
+  style='font-size:10.0pt;line-height:150%;font-family:"Verdana",sans-serif'>Represents
+  the absence of type.</span></p>
+  </td>
+ </tr>
+ <tr style='height:13.4pt'>
+  <td width="25%" valign=top style='width:25.12%;border:solid white 1.0pt;
+  border-top:none;background:#70AD47;padding:0cm 5.4pt 0cm 5.4pt;height:13.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><b><span style='font-size:10.0pt;line-height:150%;
+  color:white'>&nbsp;</span></b></p>
+  </td>
+  <td width="74%" valign=top style='width:74.88%;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#E2EFD9;padding:0cm 5.4pt 0cm 5.4pt;height:13.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;line-height:150%'><span style='font-size:10.0pt;line-height:150%'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>            </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>C programming language also allows to
+define various other types of variables, which we will cover in subsequent
+chapters like Enumeration, Pointer, Array, Structure, Union, etc. For this
+chapter, let us study only basic variable types.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-size:18.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>Variable
+Definition in C</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>A variable definition tells the compiler
+where and how much storage to create for the variable. A variable definition
+specifies a data type and contains a list of one or more variables of that type
+as follows:</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:"Book Antiqua",serif'>type variable_list;</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Here, type must be a valid C data type
+including char, w_char, int, float, double, bool, or any user-defined object;
+and variable_list may consist of one or more identifier names separated by
+commas. Some valid declarations are shown here:</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+margin-left:7.0pt;margin-right:0cm'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:Consolas'>int</span><span
+style='font-size:10.0pt;line-height:150%'>           </span><span
+style='font-family:Consolas'>i, j, k;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:Consolas'>char   c, ch;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:Consolas'>float</span><span
+style='font-size:10.0pt;line-height:150%'>     </span><span style='font-size:
+10.5pt;line-height:150%;font-family:Consolas'>f, salary;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:Consolas'>double d;</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Verdana",sans-serif'>The line <b>int i, j, k;</b> declares
+and defines the variables i, j and k; which instruct the compiler to create
+variables named i, j, and k of type int.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:10.0pt;line-height:150%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Verdana",sans-serif'>Variables can be initialized (assigned
+an initial value) in their declaration. The initializer consists of an equal
+sign followed by a constant expression as follows:</span><span
+style='font-size:10.0pt;line-height:150%'> </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:10.0pt;line-height:150%'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+margin-left:7.0pt;margin-right:0cm'>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;border:none;
+padding:0cm'><span style='font-family:Consolas'>type variable_name = value;</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:10.0pt;line-height:150%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Verdana",sans-serif'>Some examples are:</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='margin-left:7.0pt;border-collapse:collapse'>
+ <tr style='height:12.9pt'>
+  <td width=85 colspan=3 valign=bottom style='width:64.0pt;border-top:solid windowtext 1.0pt;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
+  padding:0cm 0cm 0cm 0cm;height:12.9pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><span
+  style='font-family:Consolas'>extern int</span></p>
+  </td>
+  <td width=125 valign=bottom style='width:94.0pt;border:none;border-top:solid windowtext 1.0pt;
+  padding:0cm 0cm 0cm 0cm;height:12.9pt'>
+  <p class=MsoNormal style='margin-left:3.0pt;text-align:justify;line-height:
+  150%'><span style='font-family:Consolas'>d = 3, f = 5;</span></p>
+  </td>
+  <td width=329 valign=bottom style='width:247.0pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:none;border-right:solid windowtext 1.0pt;
+  padding:0cm 0cm 0cm 0cm;height:12.9pt'>
+  <p class=MsoNormal style='margin-left:12.0pt;text-align:justify;line-height:
+  150%'><span style='font-family:Consolas'>// declaration of d and f.</span></p>
+  </td>
+ </tr>
+ <tr style='height:19.9pt'>
+  <td width=85 colspan=3 valign=bottom style='width:64.0pt;border:none;
+  border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;height:19.9pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><span
+  style='font-family:Consolas'>int d = 3,</span></p>
+  </td>
+  <td width=125 valign=bottom style='width:94.0pt;padding:0cm 0cm 0cm 0cm;
+  height:19.9pt'>
+  <p class=MsoNormal style='margin-left:3.0pt;text-align:justify;line-height:
+  150%'><span style='font-family:Consolas'>f = 5;</span></p>
+  </td>
+  <td width=329 valign=bottom style='width:247.0pt;border:none;border-right:
+  solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;height:19.9pt'>
+  <p class=MsoNormal style='margin-left:12.0pt;text-align:justify;line-height:
+  150%'><span style='font-family:Consolas'>// definition and initializing d and
+  f.</span></p>
+  </td>
+ </tr>
+ <tr style='height:19.8pt'>
+  <td width=53 valign=bottom style='width:40.0pt;border:none;border-left:solid windowtext 1.0pt;
+  padding:0cm 0cm 0cm 0cm;height:19.8pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><span
+  style='font-family:Consolas'>byte z</span></p>
+  </td>
+  <td width=16 valign=bottom style='width:12.0pt;padding:0cm 0cm 0cm 0cm;
+  height:19.8pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><span
+  style='font-family:Consolas'>=</span></p>
+  </td>
+  <td width=141 colspan=2 valign=bottom style='width:106.0pt;padding:0cm 0cm 0cm 0cm;
+  height:19.8pt'>
+  <p class=MsoNormal style='margin-left:3.0pt;text-align:justify;line-height:
+  150%'><span style='font-family:Consolas'>22;</span></p>
+  </td>
+  <td width=329 valign=bottom style='width:247.0pt;border:none;border-right:
+  solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;height:19.8pt'>
+  <p class=MsoNormal style='margin-left:12.0pt;text-align:justify;line-height:
+  150%'><span style='font-family:Consolas'>// definition and initializes z.</span></p>
+  </td>
+ </tr>
+ <tr style='height:19.95pt'>
+  <td width=53 valign=bottom style='width:40.0pt;border-top:none;border-left:
+  solid windowtext 1.0pt;border-bottom:solid windowtext 1.0pt;border-right:
+  none;padding:0cm 0cm 0cm 0cm;height:19.95pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><span
+  style='font-family:Consolas'>char x</span></p>
+  </td>
+  <td width=16 valign=bottom style='width:12.0pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;height:19.95pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><span
+  style='font-family:Consolas'>=</span></p>
+  </td>
+  <td width=141 colspan=2 valign=bottom style='width:106.0pt;border:none;
+  border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;height:19.95pt'>
+  <p class=MsoNormal style='margin-left:3.0pt;text-align:justify;line-height:
+  150%'><span style='font-family:Consolas'>'x';</span></p>
+  </td>
+  <td width=329 valign=bottom style='width:247.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 0cm 0cm 0cm;height:19.95pt'>
+  <p class=MsoNormal style='margin-left:12.0pt;text-align:justify;line-height:
+  150%'><span style='font-family:Consolas'>// the variable x has the value 'x'.</span></p>
+  </td>
+ </tr>
+ <tr height=0>
+  <td width=53 style='border:none'></td>
+  <td width=16 style='border:none'></td>
+  <td width=16 style='border:none'></td>
+  <td width=125 style='border:none'></td>
+  <td width=329 style='border:none'></td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:10.0pt;line-height:150%'> </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Verdana",sans-serif'>For definition without an initializer:
+variables with static storage duration are implicitly initialized with NULL
+(all bytes have the value 0); the initial value of all other variables are
+undefined.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35'><span
+style='font-size:10.0pt;line-height:150%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:10.0pt;line-height:150%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span style='font-size:18.0pt;
+line-height:150%;font-family:"Arial",sans-serif;color:red'>Variable Declaration
+in C</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:10.0pt;line-height:150%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>A variable declaration provides
+assurance to the compiler that there exists a variable with the given type and
+name so that the compiler can proceed for further compilation without requiring
+the complete detail about the variable. A variable declaration has its meaning
+at the time of compilation only, the compiler needs actual variable declaration
+at the time of linking the program.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>A variable declaration is useful when
+you are using multiple files and you define your variable in one of the files
+which will be available at the time of linking the program. You will use the
+keyword extern to declare a variable at any place. Though you can declare a
+variable multiple times in your C program, it can be defined only once in a
+file, a function, or a block of code.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Example</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>Try the following example, where
+variables have been declared at the top, but they have been defined and
+initialized inside the main function:</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>#include &lt;stdio.h&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>// Variable declaration:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>extern int a, b;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>extern int c;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>extern float f;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>int main ()</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>/* variable definition: */</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>int a, b;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>int c;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>float f;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>/* actual initialization */</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>a = 10;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>b = 20;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>c = a + b;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>printf(&quot;value of c : %d \n&quot;, c);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>f = 70.0/3.0;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>printf(&quot;value of f : %f \n&quot;, f);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>return 0;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:10.0pt;line-height:150%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>When the above code is compiled and
+executed, it produces the following result:</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>value of c : 30</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>value of f : 23.333334</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>The same concept applies on function
+declaration where you provide a function name at the time of its declaration
+and its actual definition can be given anywhere else. For example:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>// function declaration</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>int func();</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>int main()</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>// function call</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>int i = func();</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>// function definition</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>int func()</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>return 0;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%;border:none;padding:0cm'><span style='font-family:
+"Book Antiqua",serif'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%;background:#222A35'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span style='font-size:18.0pt;
+line-height:150%;font-family:"Book Antiqua",serif;color:red'>Lvalues and
+Rvalues in C</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=Default style='margin-bottom:12.0pt;text-align:justify;line-height:
+150%'><span style='font-size:11.0pt;line-height:150%;font-family:"Book Antiqua",serif'>There
+are two kinds of expressions in C:</span></p>
+
+<p class=Default style='margin-bottom:12.0pt;text-align:justify;line-height:
+150%'><span style='font-size:11.0pt;line-height:150%;font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border-top:solid windowtext 1.0pt;border-left:none;border-bottom:
+solid windowtext 1.0pt;border-right:none;padding:1.0pt 0cm 1.0pt 0cm'>
+
+<p class=Default style='margin-bottom:12.0pt;text-align:justify;line-height:
+150%;border:none;padding:0cm'><span style='font-size:11.0pt;line-height:150%;
+font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=Default style='margin-bottom:12.0pt;text-align:justify;line-height:
+150%;border:none;padding:0cm'><span style='font-size:11.0pt;line-height:150%;
+font-family:"Book Antiqua",serif'>Lvalue : </span></p>
+
+<p class=Default style='margin-bottom:12.0pt;text-align:justify;line-height:
+150%;border:none;padding:0cm'><span style='font-size:11.0pt;line-height:150%;
+font-family:"Book Antiqua",serif'>Expressions that refer to a memory location
+are called &quot;lvalue&quot; expressions. An lvalue may appear as either the
+left-hand or right-hand side of an assignment.</span></p>
+
+<p class=Default style='margin-bottom:12.0pt;text-align:justify;line-height:
+150%;border:none;padding:0cm'><span style='font-size:11.0pt;line-height:150%;
+font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=Default style='margin-bottom:12.0pt;text-align:justify;line-height:
+150%;border:none;padding:0cm'><span style='font-size:11.0pt;line-height:150%;
+font-family:"Book Antiqua",serif'>Rvalue : </span></p>
+
+<p class=Default style='margin-bottom:12.0pt;text-align:justify;line-height:
+150%;border:none;padding:0cm'><span style='font-size:11.0pt;line-height:150%;
+font-family:"Book Antiqua",serif'>The term rvalue refers to a data value that
+is stored at some address in memory. An rvalue is an expression that cannot
+have a value assigned to it which means an rvalue may appear on the right-hand
+side but not on the left-hand side of an assignment.</span></p>
+
+<p class=Default style='margin-bottom:12.0pt;text-align:justify;line-height:
+150%;border:none;padding:0cm'><span style='font-size:11.0pt;line-height:150%;
+font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+</div>
+
+<p class=Default style='margin-bottom:12.0pt;text-align:justify;line-height:
+150%'><span style='font-size:11.0pt;line-height:150%;font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<p class=Default style='margin-bottom:12.0pt;text-align:justify;line-height:
+150%'><span style='font-size:11.0pt;line-height:150%;font-family:"Book Antiqua",serif'>Variables
+are lvalues and so they may appear on the left-hand side of an assignment.
+Numeric literals are rvalues and so they may not be assigned and cannot appear
+on the left-hand side. Take a look at the following valid and invalid
+statements:</span></p>
+
+<p class=Default style='margin-bottom:12.0pt;text-align:justify;line-height:
+150%'><span style='font-size:11.0pt;line-height:150%;font-family:"Book Antiqua",serif'>&nbsp;</span></p>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=Default style='margin-bottom:12.0pt;text-align:justify;line-height:
+150%;border:none;padding:0cm'><span style='font-size:11.0pt;line-height:150%;
+font-family:"Book Antiqua",serif'>int g = 20; // valid statement</span></p>
+
+<p class=Default style='margin-bottom:12.0pt;text-align:justify;line-height:
+150%;border:none;padding:0cm'><span style='font-size:11.0pt;line-height:150%;
+font-family:"Book Antiqua",serif'>10 = 20; // invalid statement; would generate
+compile-time error</span></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

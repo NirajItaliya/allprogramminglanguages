@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Higher order function</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rP5zWaevMe" id="content1-hi" data-rv-view="5633">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Higher order function</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/c">free web site maker</a></section><section class="mbr-section article content1 cid-rP5A0FPD2W" id="content1-hj" data-rv-view="5634">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p>High order function (Higher level function) is a function which <strong>accepts function as a parameter </strong>or returns a function or can do both. Means, instead of passing Int, String, or other types as a parameter in a function we can pass a function as a parameter in other function.Let's see the following example:</p><p>
+</p><div>
+</div><p></p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun myFun(org: String,portal: String, fn: (String,String) -> String): Unit {
+    val result = fn(org,portal)
+    println(result)
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5AcDZcLL" id="content1-hl" data-rv-view="5636">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In this above example, we defined a function <strong>myFun()</strong> with three parameters. The first and second parameter take String and the third parameter as a type of function from String to String. The parameter String to String type means function takes string as an input and returns output as string types.
+<div>
+</div><div>To call this above function, we can pass <strong>function literal</strong> or <strong>lambda</strong>. For example:</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun myFun(org: String,portal: String, fn: (String,String) -> String): Unit {
+    val result = fn(org,portal)
+    println(result)
+}
+
+fun main(args: Array&lt;String&gt;){
+    val fn:(String,String)->String={org,portal->"$org develop $portal"}
+    myFun("dev.org","apkzube.com",fn)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rP5Arbkq4R" id="content1-hn" data-rv-view="5638">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">dev.org develop apkzube.com
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5ArNg44g" id="content1-hp" data-rv-view="5640">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The above higher order function can also be called in another ways as below mention code in <strong>main() function</strong>:</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">myFun("dev.org","apkzube.com",{org,portal->"$org develop $portal"})
+</code></pre></div>
+
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

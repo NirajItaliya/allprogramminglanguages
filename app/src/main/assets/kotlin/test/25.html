@@ -1,0 +1,31 @@
+<!-- HTML generated using hilite.me --><div style="background: #111111; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #fb660a; font-weight: bold">fun</span> <span style="color: #ff0086; font-weight: bold">main</span><span style="color: #ffffff">(args:</span> <span style="color: #ffffff">Array&lt;String&gt;)</span> <span style="color: #ffffff">{</span>
+    <span style="color: #fb660a; font-weight: bold">var</span> <span style="color: #ffffff">num</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">121</span>
+    <span style="color: #fb660a; font-weight: bold">var</span> <span style="color: #ffffff">reversedInteger</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">0</span>
+    <span style="color: #fb660a; font-weight: bold">var</span> <span style="color: #ffffff">remainder:</span> <span style="color: #ffffff">Int</span>
+    <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">originalInteger:</span> <span style="color: #ffffff">Int</span>
+    <span style="color: #ffffff">originalInteger</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">num</span>
+    <span style="color: #008800; font-style: italic; background-color: #0f140f">// reversed integer is stored in variable</span>
+    <span style="color: #fb660a; font-weight: bold">while</span> <span style="color: #ffffff">(num</span> <span style="color: #ffffff">!=</span> <span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">)</span> <span style="color: #ffffff">{</span>
+        <span style="color: #ffffff">remainder</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">num</span> <span style="color: #ffffff">%</span> <span style="color: #0086f7; font-weight: bold">10</span>
+        <span style="color: #ffffff">reversedInteger</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">reversedInteger</span> <span style="color: #ffffff">*</span> <span style="color: #0086f7; font-weight: bold">10</span> <span style="color: #ffffff">+</span> <span style="color: #ffffff">remainder</span>
+        <span style="color: #ffffff">num</span> <span style="color: #ffffff">/=</span> <span style="color: #0086f7; font-weight: bold">10</span>
+    <span style="color: #ffffff">}</span>
+    <span style="color: #008800; font-style: italic; background-color: #0f140f">// palindrome if orignalInteger and reversedInteger are equal</span>
+    <span style="color: #fb660a; font-weight: bold">if</span> <span style="color: #ffffff">(originalInteger</span> <span style="color: #ffffff">==</span> <span style="color: #ffffff">reversedInteger)</span>
+        <span style="color: #ffffff">println(</span><span style="color: #0086d2">&quot;$originalInteger is a palindrome.&quot;</span><span style="color: #ffffff">)</span>
+    <span style="color: #fb660a; font-weight: bold">else</span>
+        <span style="color: #ff0086; font-weight: bold">println</span><span style="color: #ffffff">(</span><span style="color: #0086d2">&quot;$originalInteger is not a palindrome.&quot;</span><span style="color: #ffffff">)</span>
+<span style="color: #ffffff">}</span>
+
+
+
+<span style="color: #ffffff">&gt;&gt;</span> <span style="color: #ffffff">output</span> <span style="color: #ffffff">will</span> <span style="color: #ffffff">be:</span>
+
+<span style="color: #0086f7; font-weight: bold">121</span> <span style="color: #fb660a; font-weight: bold">is</span> <span style="color: #ffffff">a</span> <span style="color: #ffffff">palindrome.</span>
+
+<span style="color: #008800; font-style: italic; background-color: #0f140f">//Note: You can change the value of num </span>
+<span style="color: #008800; font-style: italic; background-color: #0f140f">//to say 11221, and when you run the </span>
+<span style="color: #008800; font-style: italic; background-color: #0f140f">//program, the output will be:</span>
+
+<span style="color: #0086f7; font-weight: bold">11221</span> <span style="color: #fb660a; font-weight: bold">is</span> <span style="color: #ffffff">not</span> <span style="color: #ffffff">a</span> <span style="color: #ffffff">palindrome.</span>
+</pre></div>

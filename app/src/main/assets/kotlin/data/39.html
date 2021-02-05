@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin List Interface</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPAJt4bE5P" id="content1-s1" data-rv-view="6189">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin List Interface</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/n">bootstrap modal form</a></section><section class="mbr-section article content1 cid-rPAJN8QUof" id="content1-s2" data-rv-view="6190">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin List is an interface and generic collection of elements. The List interface inherits form <strong>Collection&lt;T&gt;</strong> class. It is immutable and its methods supports only read functionalities.<span style="font-size: 1rem;">To use the List interface we need to use its function called </span><strong>listOf(), listOf&lt;E&gt;().</strong><div><strong>
+</strong></div><div><br></div><div>The elements of list follow the sequence of insertion order and contains index number same as array. let's see how list interface declaration:</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">public interface List&lt;out E&gt; : Collection&lt;E&gt; (source)
+</code></pre></div>
+
+
+<section class="section-table cid-rPAKv4B8Xw" id="table1-s4" data-rv-view="6192">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5"><strong>Function of List Interface</strong></h2>
+      
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <div class="container scroll">
+          <table class="table" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">Functions</th><th class="head-item mbr-fonts-style display-7">Descriptions</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun contains(element: E): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It checks specified element is contained in this collection.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun containsAll(elements: Collection&lt;E&gt;): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It checks all elements specified are contained in this collection.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract operator fun get(index: Int): E&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns the element at given index from the list.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun indexOf(element: E): Int&nbsp;</td><td class="body-item mbr-fonts-style display-7">Returns the index of first occurrence of specified element in the list, or -1 if specified element is not present in list.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun isEmpty(): Boolean&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns the true if list is empty, otherwise false.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun iterator(): Iterator&lt;E&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns an iterator over the elements of this list.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun lastIndexOf(element: E): Int&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns the index of last occurrence of specified element in the list, or return -1 if specified element is not present in list.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun listIterator(): ListIterator&lt;E&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns a list iterator over the elements in proper sequence in current list.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun listIterator(index: Int): ListIterator&lt;E&gt;&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns a list iterator over the elements in proper sequence in current list, starting at specified index.
+<br></td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">abstract fun subList(fromIndex: Int, toIndex: Int): List&nbsp;</td><td class="body-item mbr-fonts-style display-7">It returns a part of list between fromIndex (inclusive) to toIndex (exclusive).
+<br></td></tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPAMpJLc53" id="content12-s5" data-rv-view="6271">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 1: </strong>Let's see an example of list using listOf() function.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var list = listOf("Ajay","Vishal","Prakash")//read only, fix-size
+    for(element in list){
+        println(element)
+    }
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPAMyftbYL" id="content1-s7" data-rv-view="6273">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Ajay
+Vishal
+Prakash
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rPAMNd7okL" id="content12-s9" data-rv-view="6275">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 2: </strong>In the listOf() function we can pass the different types of data at the same time. List can also traverse the list using index range.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var list = listOf(1,2,3,"Ajay","Vishal","Prakash")//read only, fix-size
+    for(element in list){
+        println(element)
+    }
+    println()
+    for(index in 0..list.size-1){
+        println(list[index])
+    }
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPAMWMXgDd" id="content1-sb" data-rv-view="6277">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">1
+2
+3
+Ajay
+Vishal
+Prakash
+1
+2
+3
+Ajay
+Vishal
+Prakash
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rPAN6SXF9y" id="content12-sd" data-rv-view="6279">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 3
+:&nbsp;</strong>For more specific we can provide the generic types of list such as listOf&lt;Int&gt;(), listOf&lt;String&gt;(), listOf&lt;Any&gt;() Let's see the example.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var intList: List&lt;Int&gt; = listOf&lt;Int&gt;(1,2,3)
+    var stringList: List&lt;String&gt; = listOf&lt;String&gt;("Ajay","Vishal","Prakash")
+    var anyList: List&lt;Any&gt; = listOf&lt;Any&gt;(1,2,3,"Ajay","Vishal","Prakash")
+    println("print int list")
+    for(element in intList){
+        println(element)
+    }
+    println()
+    println("print string list")
+    for(element in stringList){
+        println(element)
+    }
+    println()
+    println("print any list")
+    for(element in anyList){
+        println(element)
+    }
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPAN8eOmgQ" id="content1-sf" data-rv-view="6281">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">
+print int list
+1
+2
+3
+print string list
+Ajay
+Vishal
+Prakash
+print any list
+1
+2
+3
+Ajay
+Vishal
+Prakash
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPANsEXqby" id="content12-sh" data-rv-view="6283">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 4:&nbsp;</strong>Let's see the use of different function of Kotlin list interface using listOf&lt;T&gt;() function.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var stringList: List&lt;String&gt; = listOf&lt;String&gt;("Ajay","Vishal","Prakash","Vishal","Rohan")
+    var list: List&lt;String&gt; = listOf&lt;String&gt;("Ajay","Vishal","Prakash")
+    for(element in stringList){
+        print(element+" ")
+    }
+    println()
+    println(stringList.get(0))
+    println(stringList.indexOf("Vishal"))
+    println(stringList.lastIndexOf("Vishal"))
+    println(stringList.size)
+    println(stringList.contains("Prakash"))
+    println(stringList.containsAll(list))
+    println(stringList.subList(2,4))
+    println(stringList.isEmpty())
+    println(stringList.drop(1))
+    println(stringList.dropLast(2))
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPANuh1MXU" id="content1-sj" data-rv-view="6285">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Ajay Vishal Prakash Vishal Rohan
+Ajay
+1
+3
+5
+true
+true
+[Prakash, Vishal]
+false
+[Vishal, Prakash, Vishal, Rohan]
+[Ajay, Vishal, Prakash]
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPANVOPWhn" id="content1-sl" data-rv-view="6287">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The limitation of List interface is that it is <strong>immutable</strong>. It cannot add more elements in list after its declaration. To solve this limitation Collection framework provide <strong>mutable</strong> list.
+</div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/datatables/jquery.data-tables.min.js"></script>
+  <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic"> * C Program to Check whether a given Number is Perfect Number</span>
+    <span style="color: #999999; font-style: italic">Perfect number is a number which is equal to</span>
+    <span style="color: #999999; font-style: italic">sum of its divisor. For eg,divisors of 6 are</span>
+    <span style="color: #999999; font-style: italic">1,2 and 3. The sum of these divisors is 6. </span>
+    <span style="color: #999999; font-style: italic">So 6 is called as perfect number.</span>
+    <span style="color: #999999; font-style: italic"> */</span>
+    <span style="color: #cd2828; font-weight: bold">#include &lt;stdio.h&gt;</span>
+     
+    <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #447fcf">main</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">number,</span> <span style="color: #d0d0d0">rem,</span> <span style="color: #d0d0d0">sum</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">i;</span>
+     
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter a Number\n&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;number);</span>
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&lt;=</span> <span style="color: #d0d0d0">(number</span> <span style="color: #d0d0d0">-</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">);</span> <span style="color: #d0d0d0">i++)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">rem</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">number</span> <span style="color: #d0d0d0">%</span> <span style="color: #d0d0d0">i;</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(rem</span> <span style="color: #d0d0d0">==</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #d0d0d0">sum</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">sum</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">i;</span>
+            <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(sum</span> <span style="color: #d0d0d0">==</span> <span style="color: #d0d0d0">number)</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Entered Number is perfect number&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #6ab825; font-weight: bold">else</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Entered Number is not a perfect number&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #6ab825; font-weight: bold">return</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #d0d0d0">}</span>
+    
+    
+    <span style="color: #d0d0d0">&gt;&gt;Output:</span>
+    <span style="color: #a61717; background-color: #e3d2d2">$</span> <span style="color: #d0d0d0">cc</span> <span style="color: #d0d0d0">pgm42.c</span>
+    <span style="color: #a61717; background-color: #e3d2d2">$</span> <span style="color: #d0d0d0">a.out</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">a</span> <span style="color: #d0d0d0">Number</span>
+    <span style="color: #3677a9">6</span>
+    <span style="color: #d0d0d0">Entered</span> <span style="color: #d0d0d0">Number</span> <span style="color: #d0d0d0">is</span> <span style="color: #d0d0d0">perfect</span> <span style="color: #d0d0d0">number</span>
+     
+    <span style="color: #a61717; background-color: #e3d2d2">$</span> <span style="color: #d0d0d0">a.out</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">a</span> <span style="color: #d0d0d0">Number</span>
+    <span style="color: #3677a9">100</span>
+    <span style="color: #d0d0d0">Entered</span> <span style="color: #d0d0d0">Number</span> <span style="color: #d0d0d0">is</span> <span style="color: #d0d0d0">not</span> <span style="color: #d0d0d0">a</span> <span style="color: #d0d0d0">perfect</span> <span style="color: #d0d0d0">number</span>
+    </pre></div>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Elvis Operator</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPyo4uzbX4" id="content1-q5" data-rv-view="6064">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Elvis Operator (?:)</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/p">bootstrap menu</a></section><section class="mbr-section article content1 cid-rPyo8CXSGF" id="content1-q6" data-rv-view="6065">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Elvis operator (?:)</strong> is used to return the not null value even the conditional expression is null. It is also used to check the null safety of values.
+<div>
+</div><div>In some cases, we can declare a variable which can hold a null reference. Suppose that a variable str which contains null reference, before using str in program we will check it nullability. If variable str found as not null then its property will use otherwise use some other non-null value.</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">var str: String? = null
+var str2: String? = "May be declare nullable string"
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPyoh5usmQ" id="content1-q8" data-rv-view="6067">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In above code, the String str contains a null value, before accessing the value of str we need to perform safety check, whether string contain value or not. In conventional method we perform this safety check using <strong>if ... else</strong> statement.</div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">var len1: Int = if (str != null) str.length else -1
+var len2: Int = if (str2 != null) str.length else -1
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPyotYEj1w" id="content1-qb" data-rv-view="6069">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Example:</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var str: String? = null
+    var str2: String? = "May be declare nullable string"
+    var len1: Int = if (str != null) str.length else -1
+    var len2: Int = if (str2 != null) str2.length else -1
+    println("Length of str is ${len1}")
+    println("Length of str2 is ${len2}")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPyozAzhRB" id="content1-qc" data-rv-view="6071">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Length of str is -1
+Length of str2 is 30
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPyoDZUIva" id="content1-qe" data-rv-view="6073">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin provides advance operator known as Elvis operator<strong>(?:)</strong> which return the not null value even the conditional expression is null. The above if . . . else operator can be expressed using Elvis operator as bellow:</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">var len1: Int = str?.length ?: -1
+var len2: Int = str2?.length ?: -1
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPyoNvC2r0" id="content1-qg" data-rv-view="6075">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Elvis operator returns expression left to ?: i.e -1. (str?. length) if it is not null otherwise it returns expression right to (?:)i.e(-1). The expression right side of Elvis operator evaluated only if the left side returns null.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPyoRQb2av" id="content12-qh" data-rv-view="6076">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example 1 :</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    var str: String? = null
+    var str2: String? = "May be declare nullable string"
+    var len1: Int = str ?.length ?: -1
+    var len2: Int = str2 ?.length ?: -1
+
+    println("Length of str is ${len1}")
+    println("Length of str2 is ${len2}")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPyp2bFUoZ" id="content1-qj" data-rv-view="6078">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Length of str is -1
+Length of str2 is 30
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPyp8twCLL" id="content1-ql" data-rv-view="6080">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">As Kotlin throw and return an expression, they can also be used on the right side of the Elvis operator. This can be used for checking functional arguments:</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">funfunctionName(node: Node): String? {
+    val parent = node.getParent() ?: return null
+    val name = node.getName() ?: throw IllegalArgumentException("name expected")
+     // ...
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content12 cid-rPyphJrGyf" id="content12-qn" data-rv-view="6082">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Elvis Operatorusing throw and return expression:</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    val fruitName: String = fruits()
+    println(fruitName)
+}
+
+fun fruits(): String {
+    val str: String? = "abc"
+    val strLength: Int = if (str != null) str.length else -1
+    val strLength2: Int = str?.length ?: -1
+    var string = "str = $str\n" +
+            "strLength = $strLength\n" +
+            "strLength2 = $strLength2\n\n"
+
+    fun check(textOne: String?, textTwo: String?): String? {
+        val textOne = textOne ?: return null
+        val textTwo = textTwo ?: IllegalArgumentException("text exception")
+
+        return "\ntextOne = $textOne\n" +
+                "textTwo = $textTwo\n"
+    }
+    string += "check(null,\"mango\") = ${check(null, "mango")}\n" +
+            "check(\"apple\",\"orange\") = ${check("apple", "orange")}\n"
+    return string
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPyps23o7s" id="content1-qp" data-rv-view="6084">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">str = abc
+strLength = 3
+strLength2 = 3
+check(null,"mango") = null
+check("apple","orange") =
+textOne = apple
+textTwo = orange
+</code></pre></div>
+
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

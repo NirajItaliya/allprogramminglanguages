@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin Reflection
+</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPSUTJyTN7" id="content1-13n" data-rv-view="7822">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin Reflection
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/h">make a website</a></section><section class="mbr-section article content1 cid-rPSUUpbIKG" id="content1-13o" data-rv-view="7823">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Reflection</strong> is a set of language and library features that examines the structure of program at runtime. Kotlin makes functions and properties as first-class citizen in the language and examine these functions and properties at runtime.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPSV4dXNNh" id="content1-13p" data-rv-view="7824">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><p><strong>Class Reference
+ :&nbsp;</strong><span style="font-size: 1rem;">Class reference is used to obtain the reference of KClass object. To obtain the reference of statically Kclass, we should use the class literal(i.e. use double colons).</span></p><p>Syntax of class reference:
+</p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">val c1 = String::class
+val c2 = MyClass::class
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSVhGgceQ" id="content1-13r" data-rv-view="7826">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The reference value is a class type of KClass. KClass class reference is not the same as a Java class reference. We obtain the Java class reference by using .java property on a KClass instance.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPSVi3DyZO" id="content1-13s" data-rv-view="7827">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Note :</strong> KClass represents a class and provides examination capabilities. To obtain the instance of this class use syntax ::class.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPSVkE7fio" id="content1-13t" data-rv-view="7828">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Functional Reference
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPSVnswyUt" id="content1-13u" data-rv-view="7829">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin functional is used to obtain the reference of function using double colons. The reference of function can be used in another function as a parameter. To use this reference in another function we use the <strong>::</strong> operator:
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun isPositive(x: Int) = x> 0
+fun isPositive(x: Int) = x> 0
+val number = listOf(-10,-5,0,5,10)
+print(number.filter(::isPositive))
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPSVJvjOy0" id="content12-13w" data-rv-view="7831">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>functional reference example
+ :&nbsp;</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    fun isPositive(x: Int) = x > 0
+    val numbers = listOf(-10, -5, 0, 5, 10)
+    println(numbers.filter(::isPositive))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSVRaZ4yl" id="content1-13y" data-rv-view="7833">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">[5,10]
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSW8AHTrP" id="content1-140" data-rv-view="7835">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In the above program ::isPositive is a value of function <strong>type (Int) -&gt; Boolean.
+</strong></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPSWdzeWne" id="content1-141" data-rv-view="7836">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Overloaded function reference operator (::)
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPSWi3eFCZ" id="content1-142" data-rv-view="7837">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The operator <strong>::</strong> can be used with overload function when the expected type is known from the context. For example:
+&nbsp;<span style="font-size: 1rem;">Create a function isPositive() which takes two different types Int and String and call this function with different type parameter.</span></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    fun isPositive(x: Int) = x > 0
+    fun isPositive(s: String) = s== "kotlin" || s == "Kotlin"
+
+    val numbers = listOf(-10,-5,0,5,10)
+    val strings = listOf("kotlin", "program")
+
+    println(numbers.filter(::isPositive))
+    println(strings.filter(::isPositive))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSWrGwNPH" id="content1-144" data-rv-view="7839">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">[5, 10]
+[kotlin]
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSWsVUch9" id="content1-146" data-rv-view="7841">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Property Reference
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPSWtQwqNX" id="content1-147" data-rv-view="7842">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">We can also access the properties as <strong>first-class</strong> object in Kotlin, to access object property we can use <strong>::</strong> operator:
+<div>
+</div><div>To evaluate the property object of type KProperty&lt;Int&gt; we use the expression ::variableName. The expression ::variableName allow to retrieve its property name by using name and readits value using <strong>get()</strong> function.
+</div><div>
+</div><div>To reset the value of mutable type property, reference property has <strong>set()</strong> method.</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    println(::x.get())
+    println(::x.name)
+    println(::y.set(10))
+}
+val x = 5
+var y = 5
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSWMjU0zo" id="content1-149" data-rv-view="7844">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">5
+x
+10
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSWV29Ip5" id="content1-14b" data-rv-view="7846">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Access the property of member class:
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPSWW05nZT" id="content1-14c" data-rv-view="7847">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Property reference also access the property of other member of class. For example:
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">class A(val x: Int)
+fun main(args: Array&lt;String&gt;) {
+    val prop = A::x
+    println(prop.get(A(5)))
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPSWXmf7oj" id="content1-14e" data-rv-view="7849">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">5
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

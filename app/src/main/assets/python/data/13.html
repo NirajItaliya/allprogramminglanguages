@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.10.5, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.10.5, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/ic-logo-new-128x128.png" type="image/x-icon">
+  <meta name="description" content="ApkZube">
+  
+  <title>Python Literals</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="plugin/prism.css">
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body class="line-numbers">
+  <section class="mbr-section content4 cid-rvYxHRIOqd" id="content4-t">
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-2"><strong>Python Literals</strong></h2>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.info/q">free responsive website templates</a></section><section class="mbr-section article content1 cid-rvYxOjPmDL" id="content1-u">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p><strong>Literal </strong>is a raw data given in a <strong>variable </strong>or <strong>constant</strong>. In Python, there are various types of literals they are as follows:</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section content4 cid-rvYxTxDuDp" id="content4-v">
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Numeric Literals</strong></h2>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rvYz1zDQAU" id="content1-w">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>Numeric Literals are <strong>immutable </strong>(<strong>unchangeable</strong>). Numeric literals can belong to 3 different numerical types <strong>Integer</strong>, <strong>Float </strong>and <strong>Complex</strong>.
+</p><p><strong>Example : How to use Numeric literals in Python?</strong></p></div>
+        </div>
+    </div>
+</section>
+
+  <div class="container">
+<pre><code class="language-python">
+
+a = 0b1010 #Binary Literals
+b = 100 #Decimal Literal
+c = 0o310 #Octal Literal
+d = 0x12c #Hexadecimal Literal
+
+
+#Float Literal
+float_1 = 10.5
+float_2 = 1.5e2
+
+
+#Complex Literal
+x = 3.14j
+
+print(a, b, c, d)
+print(float_1, float_2)
+print(x, x.imag, x.real)
+
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rvYzjqbR9e" id="content1-y">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>When you run the program, the output will be:</p></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-python">
+
+10 100 200 300
+
+10.5 150.0
+
+3.14j 3.14 0.0
+
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rvYzpAlVe9" id="content1-10">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>In the above program</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rvYzvBM9wo" id="content12-12">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul><li>We assigned integer literals into different variables. Here, <strong>a </strong>is <strong>binary </strong>literal, <strong>b </strong>is a <strong>decimal </strong>literal, <strong>c </strong>is an <strong>octal </strong>literal and <strong>d </strong>is a <strong>hexadecimal </strong>literal.
+</li><li>When we print the variables, all the literals are converted into <strong>decimal </strong>values. </li><li><strong>10.5</strong> and <strong>1.5e2 </strong>are <strong>floating</strong> <strong>point </strong>literals. <strong>1.5e2 </strong>is <strong>expressed </strong>with <strong>exponential </strong>and is <strong>equivalent </strong>to <strong>1.5 * 10</strong>^<strong>2</strong>.</li><li>We assigned a complex literal i.e <strong>3.14j</strong> in variable x. Then we use <strong>imaginary literal</strong> (x.imag) and <strong>real</strong> <strong>literal </strong>(x.real) to create imaginary and real part of <strong>complex number</strong>.&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section content4 cid-rvYAf3tNAc" id="content4-13">
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>String literals</strong></h2>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rvYAiX6s9a" id="content1-14">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>A <strong>string </strong>literal is a <strong>sequence of characters</strong> surrounded by <strong>quotes</strong>. We can use both <strong>single, double or triple</strong> quotes for a string. And, a <strong>character literal </strong>is a single character surrounded by single or double quotes.
+</p><p><strong>Example : How to use string literals in Python?</strong></p></div>
+        </div>
+    </div>
+</section>
+
+  <div class="container">
+<pre><code class="language-python">
+
+
+
+strings = "This is Python"
+char = "C"
+multiline_str = """This is a multiline string with more than one line code."""
+unicode = u"\u00dcnic\u00f6de"
+raw_str = r"raw \n string"
+
+print(strings)
+print(char)
+print(multiline_str)
+print(unicode)
+print(raw_str)
+
+
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rvYEfVv4uF" id="content1-16">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>When you run the program, the output will be:</p></div>
+        </div>
+    </div>
+</section>
+
+  <div class="container">
+<pre><code class="language-python">
+
+This is Python
+C
+This is a multiline string with more than one line code.
+Ünicöde
+raw \n string
+
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rvYEnpoCZj" id="content1-18">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>In the above program, This is Python is a string literal and <strong>C </strong>is a <strong>character literal</strong>. The value with <strong>triple-quote """</strong> assigned in the <strong>multiline_str </strong>is <strong>multi-line</strong> string literal. The <strong>u"\u00dcnic\u00f6de"</strong> is a <strong>unicode literal </strong>which supports characters other than English and <strong>r"raw \n string"</strong> is a raw string literal.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section content4 cid-rvYEK6KRbG" id="content4-1a">
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Boolean literals</strong></h2>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rvYEN0SufM" id="content1-1b">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>A Boolean literal can have any of the two values: <strong>True </strong>or <strong>False.</strong></p><p><strong>Example : How to use boolean literals in Python?</strong></p></div>
+        </div>
+    </div>
+</section>
+
+  <div class="container">
+<pre><code class="language-python">
+
+
+x = (1 == True)
+y = (1 == False)
+a = True + 4
+b = False + 10
+
+print("x is", x)
+print("y is", y)
+print("a:", a)
+print("b:", b)
+
+
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rvYEYBMNvi" id="content1-1d">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>When you run the program, the output will be:</p></div>
+        </div>
+    </div>
+</section>
+
+  <div class="container">
+<pre><code class="language-python">
+
+
+
+x is True
+
+y is False
+
+a: 5
+
+b: 10
+
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rvYF4IlL3X" id="content1-1f">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>In the above program, we use boolean literal <strong>True </strong>and <strong>False</strong>. In Python, True represents the value as <strong>1 and False as 0</strong>. The value of x is True because <strong>1 is equal to True</strong>. And, the value of y is False because <strong>1 is not equal to False</strong>.
+</p><p>Similarly, we can use the True and False in numeric expressions as the value. The value of <strong>a </strong>is <strong>5 </strong>because we add <strong>True </strong>which has value of <strong>1 with 4</strong>. Similarly, b is 10 because we add the <strong>False </strong>having value of <strong>0 with 10</strong>.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section content4 cid-rvYFoZ7rAe" id="content4-1g">
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-5"><div><strong>Special literals</strong></div></h2>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rvYFtmNjTQ" id="content1-1h">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>Python <strong>contains </strong>one special literal i.e. <strong>None</strong>. We use it to specify to that field that is not created.</p><p><strong>Example : How to use special literals in Python?</strong></p></div>
+        </div>
+    </div>
+</section>
+
+  <div class="container">
+<pre><code class="language-python">
+
+
+
+drink = "Available"
+food = None
+def menu(x):
+    if x == drink:
+        print(drink)
+    else:
+        print(food)
+menu(drink)
+menu(food)
+
+
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rvYFLELY4G" id="content1-1j">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>When you run the program, the output will be:</p></div>
+        </div>
+    </div>
+</section>
+
+  <div class="container">
+<pre><code class="language-python">
+
+
+
+Available
+None
+
+
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rvYFQzm0Kc" id="content1-1l">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>In the above program, we define a <strong>menu function</strong>. Inside menu, when we set parameter as drink then, it displays Available. And, when the parameter is <strong>food</strong>, it displays <strong>None</strong>.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section content4 cid-rvYG033baF" id="content4-1m">
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-5"><strong>Literal Collections</strong></h2>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rvYG2j2A5S" id="content1-1n">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>There are four different literal collections <strong>List literals, Tuple literals, Dict literals,</strong> and <strong>Set literals</strong>.</p><p><strong>Example : How to use literals collections in Python?</strong></p></div>
+        </div>
+    </div>
+</section>
+
+  <div class="container">
+<pre><code class="language-python">
+
+
+fruits = ["apple", "mango", "orange"] #list
+numbers = (1, 2, 3) #tuple
+alphabets = {'a':'apple', 'b':'ball', 'c':'cat'} #dictionary
+vowels = {'a', 'e', 'i' , 'o', 'u'} #set
+
+print(fruits)
+print(numbers)
+print(alphabets)
+print(vowels)
+
+
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rvYI9jtWuz" id="content1-1r">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>When you run the program, the output will be</p></div>
+        </div>
+    </div>
+</section>
+
+  <div class="container">
+<pre><code class="language-python">
+['apple', 'mango', 'orange']
+(1, 2, 3)
+{'a': 'apple', 'b': 'ball', 'c': 'cat'}
+{'e', 'a', 'o', 'i', 'u'}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rvYIPEPkAp" id="content1-1t">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-8"><p>In the above program, we created a list of <strong>fruits</strong>, <strong>tuple </strong>of <strong>numbers</strong>, <strong>dictionary dict </strong>having values with <strong>keys desginated</strong> to each value and <strong>set </strong>of <strong>vowels</strong>.</p><p>We will learn more about literal collections in <strong>Advance Tutorial</strong>.</p></div>
+        </div>
+    </div>
+</section>
+
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="plugin/prism.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+  <input name="animation" type="hidden">
+  </body>
+</html>

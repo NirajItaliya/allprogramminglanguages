@@ -1,0 +1,21 @@
+<!-- HTML generated using hilite.me --><div style="background: #111111; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #ffffff">mport</span> <span style="color: #ffffff">java.lang.Double.parseDouble</span>
+    <span style="color: #fb660a; font-weight: bold">fun</span> <span style="color: #ff0086; font-weight: bold">main</span><span style="color: #ffffff">(args:</span> <span style="color: #ffffff">Array&lt;String&gt;)</span> <span style="color: #ffffff">{</span>
+        <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">string</span> <span style="color: #ffffff">=</span> <span style="color: #0086d2">&quot;12345s15&quot;</span>
+        <span style="color: #fb660a; font-weight: bold">var</span> <span style="color: #ffffff">numeric</span> <span style="color: #ffffff">=</span> <span style="color: #fb660a; font-weight: bold">true</span>
+        <span style="color: #fb660a; font-weight: bold">try</span> <span style="color: #ffffff">{</span>
+            <span style="color: #fb660a; font-weight: bold">val</span> <span style="color: #ffffff">num</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">parseDouble(string)</span>
+        <span style="color: #ffffff">}</span> <span style="color: #fb660a; font-weight: bold">catch</span> <span style="color: #ffffff">(e:</span> <span style="color: #ffffff">NumberFormatException)</span> <span style="color: #ffffff">{</span>
+            <span style="color: #ffffff">numeric</span> <span style="color: #ffffff">=</span> <span style="color: #fb660a; font-weight: bold">false</span>
+        <span style="color: #ffffff">}</span>
+        <span style="color: #fb660a; font-weight: bold">if</span> <span style="color: #ffffff">(numeric)</span>
+            <span style="color: #ffffff">println(</span><span style="color: #0086d2">&quot;$string is a number&quot;</span><span style="color: #ffffff">)</span>
+        <span style="color: #fb660a; font-weight: bold">else</span>
+            <span style="color: #ff0086; font-weight: bold">println</span><span style="color: #ffffff">(</span><span style="color: #0086d2">&quot;$string is not a number&quot;</span><span style="color: #ffffff">)</span>
+    <span style="color: #ffffff">}</span>
+
+
+
+<span style="color: #ffffff">&gt;&gt;</span> <span style="color: #ffffff">output</span> <span style="color: #ffffff">will</span> <span style="color: #ffffff">be:</span>
+
+<span style="color: #0086f7; font-weight: bold">12345.15</span> <span style="color: #fb660a; font-weight: bold">is</span> <span style="color: #ffffff">a</span> <span style="color: #ffffff">number</span>
+</pre></div>

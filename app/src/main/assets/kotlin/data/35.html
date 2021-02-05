@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Unsafe and Safe Cast Operator</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPyiCsjeZK" id="content1-po" data-rv-view="6047">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Unsafe and Safe Cast Operator</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/b">free web site creator</a></section><section class="mbr-section article content1 cid-rPyiGRYX5d" id="content1-pp" data-rv-view="6048">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Unsafe cast operator: as</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPyiN4Oo3q" id="content1-pq" data-rv-view="6049">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Sometime it is not possible to cast variable and it throws an exception, this is called as unsafe cast. The unsafe cast is performed by the infix operator as.
+<div>
+</div><div>A <strong>nullable</strong> string (String?) cannot be cast to non <strong>nullabe string</strong> (String), this throw an exception.</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val obj: Any? = null
+    val str: String = obj as String
+    println(str)
+ }
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPyj1EwQv9" id="content1-ps" data-rv-view="6051">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">The above program throw an exception:
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Exception in thread "main" kotlin.TypeCastException: null cannot be cast to non-null type kotlin.String
+ at TestKt.main(Test.kt:3)
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPyj4kIrMx" id="content1-pu" data-rv-view="6053">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">While try to cast integer value of Any type into string type lead to generate a <strong>ClassCastException.</strong></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">val obj: Any = 123
+val str: String = obj as String
+// Throws java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPyj5i5t8u" id="content1-pw" data-rv-view="6055">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Source and target variable need to nullable for casting to work:</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val obj: String? = "String unsafe cast"
+    val str: String? = obj as String? // Works
+    println(str)
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPyjrpUlah" id="content1-py" data-rv-view="6057">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">String unsafe cast
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPyjwnMXT0" id="content1-q0" data-rv-view="6059">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Safe cast operator: as?</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPyjA6l3NO" id="content1-q1" data-rv-view="6060">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Kotlin provides a safe cast operator <strong>as?</strong> for safely cast to a type. It returns a null if casting is not possible rather than throwing an <strong>ClassCastException</strong> exception.
+<div>
+</div><div>Let's see an example, trying to cast Any type of string value which is initially known by programmer not by compiler into nullable string and nullable int. It cast the value if possible or return <strong>null</strong> instead of throwing exception even casting is not possible.</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;){
+    val location: Any = "Kotlin"
+    val safeString: String? = location as? String
+    val safeInt: Int? = location as? Int
+    println(safeString)
+    println(safeInt)
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rPyjUf1Omz" id="content1-q3" data-rv-view="6062">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Kotlin
+null
+</code></pre></div>
+
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

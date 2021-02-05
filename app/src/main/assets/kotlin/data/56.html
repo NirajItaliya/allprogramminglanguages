@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Kotlin Inheritance
+</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rPV4bYtuTX" id="content1-17h" data-rv-view="7955">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Kotlin Inheritance
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/c">free web maker</a></section><section class="mbr-section article content1 cid-rPV4iiij9U" id="content1-17i" data-rv-view="7956">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Inheritance</strong> is an important feature of object oriented programming language. Inheritance allows to inherit the feature of existing class (or base or parent class) to new class (or derived class or child class).
+<div>
+</div><div>The main class is called <strong>super class</strong> (or parent class) and the class which inherits the superclass is called <strong>subclass</strong> (or child class). The subclass contains features of superclass as well as its own.
+</div><div>
+</div><div>The concept of <strong>inheritance</strong> is allowed when two or more classes have same properties. It allows code reusability. A derived class has only one base class but may have multiple interfaces whereas a base class may have one or more derived classes.
+</div><div>
+</div><div>In Kotlin, the derived class inherits a base class using <strong>: </strong>operator in the class header (after the derive class name or constructor)</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">open class Base(p: Int){
+}
+class Derived(p: Int) : Base(p){
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPV4KKlwjL" id="content1-17k" data-rv-view="7958">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Suppose that,we have two different classes <strong>"Programmer"</strong> and <strong>"Salesman"</strong> having the common properties 'name','age', and 'salary' as well as their own separate functionalitiesdoProgram() and fieldWork(). The feature of inheritance allows that we can inherit (Employee) containing the common features.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">open class Employee(name: String, age: Int, salary: Float) {
+    // code of employee
+}
+
+class Programmer(name: String, age: Int, salary: Float): Employee(name,age,salary) {
+    // code of programmer
+}
+
+class Salesman(name: String, age: Int, salary: Float): Employee(name,age,salary) {
+    // code of salesman
+}
+</code></pre></div>
+<section class="mbr-section article content1 cid-rPV4XSVS7q" id="content1-17n" data-rv-view="7960">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">All Kotlin classes have a common superclass <strong>"Any"</strong>. It is a default superclass for a class with no supertypes explicitly specified.
+<div>
+</div><div>For example, a class Example is implicitly inherited from Any.</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">class Example
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPV51rAOEt" id="content1-17p" data-rv-view="7962">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>open keyword
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPV53o7glg" id="content1-17q" data-rv-view="7963">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">As Kotlin classes are final by default, they cannot be inherited simply. We use the <strong>open</strong> keyword before the class to inherit a class and make it to <strong>non-final,</strong>
+<div>
+</div><div><strong>For example :</strong></div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">open class Example{
+// I can now be extended!
+}
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPV5GBrVgX" id="content12-17s" data-rv-view="7965">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Kotlin Inheriting fields from a class
+ :</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPV5KRzUKW" id="content1-17t" data-rv-view="7966">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">When we inherit a class to derive class, all the fields and functionalities are inherited. We can use these fields and functionalities in derived class.
+</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">open class Base{
+val x = 10
+}
+class Derived: Base() {
+    fun foo() {
+println("x is equal to " + x)
+    }
+}
+fun main(args: Array&lt;String&gt;) {
+val derived = Derived()
+    derived.foo()
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPV5SGd1QL" id="content1-17v" data-rv-view="7968">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">x is equal to 10
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPV5Wtwc5O" id="content12-17x" data-rv-view="7970">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Kotlin Inheriting methods from a class
+ :</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">open class Bird {
+    fun fly() {
+        println("flying...")
+    }
+}
+
+class Duck : Bird() {
+    fun swim() {
+        println("swimming...")
+    }
+}
+
+fun main(args: Array&lt;String&gt;) {
+    val duck = Duck()
+    duck.fly()
+    duck.swim()
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPV67gSoWo" id="content1-17z" data-rv-view="7972">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">flying...
+swimming...
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPV6a2blGp" id="content12-181" data-rv-view="7974">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example
+ 1 :&nbsp;</strong>Here, we declare a class Employee is superclass and Programmer and Salesman are their subclasses. The subclasses inherit properties name, age and salary as well as subclasses containtheir own functionalitieslike doProgram() and fieldWork().</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">open class Employee(name: String, age: Int, salary: Float) {
+    init {
+        println("Name is $name.")
+        println("Age is $age")
+        println("Salary is $salary")
+    }
+}
+class Programmer(name: String, age: Int, salary: Float):Employee(name,age,salary){
+    fun doProgram() {
+        println("programming is my passion.")
+    }
+}
+class Salesman(name: String, age: Int, salary: Float):Employee(name,age,salary){
+    fun fieldWork() {
+        println("travelling is my hobby.")
+    }
+}
+fun main(args: Array&lt;String&gt;){
+    val obj1 = Programmer("Ashu", 25, 40000f)
+    obj1.doProgram()
+    val obj2 = Salesman("Ajay", 24, 30000f)
+    obj2.fieldWork()
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPV6hTucLi" id="content1-183" data-rv-view="7976">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Name is Ashu.
+Age is 25
+Salary is 40000.0
+programming is my passion.
+Name is Ajay.
+Age is 24
+Salary is 30000.0
+travelling is my hobby.
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPV6vLPcNj" id="content1-185" data-rv-view="7978">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Inheritance and primary constructor</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPV6CJPSTk" id="content1-186" data-rv-view="7979">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">If the base and derived class both having <strong>primary constructor </strong>in that case the parameters are initialized in the primary constructor of base class. In above example of inheritance, all classes contain three parameters "name", "age" and "salary" and all these parameters are initialized in primary constructor of base class.
+<div>
+</div><div>When a base and derived class both contains different numbers of parameters in their primary constructor then base class parameters are initialized form derived class object.
+</div><div>
+</div><div><strong>For example :</strong></div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">open class Employee(name: String, salary: Float) {
+    init {
+        println("Name is $name.")
+        println("Salary is $salary")
+    }
+}
+
+class Programmer(name: String, dept: String, salary: Float) : Employee(name, salary) {
+    init {
+        println("Name $name of department $dept with salary $salary.")
+    }
+
+    fun doProgram() {
+        println("Programming is my passion.")
+
+    }
+}
+
+class Salesman(name: String, dept: String, salary: Float) : Employee(name, salary) {
+    init {
+        println("Name $name of department $dept with salary $salary.")
+    }
+
+    fun fieldWork() {
+        println("Travelling is my hobby.")
+
+    }
+}
+
+fun main(args: Array&lt;String&gt;) {
+    val obj1 = Programmer("Ashu", "Development", 40000f)
+    obj1.doProgram()
+    println()
+    val obj2 = Salesman("Ajay", "Marketing", 30000f)
+    obj2.fieldWork()
+}
+</code></pre></div>
+<section class="mbr-section article content1 cid-rPV6EOXlrJ" id="content1-188" data-rv-view="7981">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Name is Ashu.
+Salary is 40000.0
+Name Ashu of department Development with salary 40000.0.
+Programming is my passion.
+Name is Ajay.
+Salary is 30000.0
+Name Ajay of department Marketing with salary 30000.0.
+Travelling is my hobby.
+</code></pre></div>
+<section class="mbr-section article content1 cid-rPV6Tp05We" id="content1-18a" data-rv-view="7983">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">When an object of derived class is created, it calls its superclass first and executes init block of base class followed by its own.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPV73b0BX7" id="content1-18b" data-rv-view="7984">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Inheritance and secondary constructor</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPV7aL1bQ2" id="content1-18c" data-rv-view="7985">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">If derived class does not contain any primary constructor then it is required to call the base class <strong>secondary constructor</strong> from derived class using super keyword.
+<div>
+</div><div><strong>For example,</strong></div></div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">open class Patent {
+
+    constructor(name: String, id: Int) {
+        println("execute super constructor $name: $id")
+    }
+}
+
+class Child : Patent {
+
+    constructor(name: String, id: Int, dept: String) : super(name, id) {
+        print("execute child class constructor with property $name, $id, $dept")
+    }
+}
+
+fun main(args: Array&lt;String&gt;) {
+    val child = Child("Ashu", 101, "Developer")
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPV7mjacwm" id="content1-18e" data-rv-view="7987">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">execute super constructor Ashu: 101
+execute child class constructor with property Ashu, 101, Developer
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPV7n0Hiah" id="content1-18g" data-rv-view="7989">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In above example, when object of Child class is created, it calls its constructor and initializes its parameters with values "Ashu", "101" and "Developer". At the same time Child class constructor calling its supper class constructor using super keyword with values of name and id. Due to the presence of super keyword thebody of superclass constructor executes first and returns to Child class constructor.</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPV7o3HgXi" id="content1-18h" data-rv-view="7990">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Method Overriding
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPV7yQD3K2" id="content1-18i" data-rv-view="7991">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7"><strong>Method overriding</strong> means providing the specific implementation of method of super (parent) class into its subclass (child) class.
+<div>
+</div><div>In other words, when subclass redefines or modifies the method of its superclass into subclass, it is known as method overriding. Method overriding is only possible in inheritance.
+</div><div>
+</div><div><strong>Rules of method overriding :</strong></div></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content11 cid-rPV7JLmm3x" id="content11-18j" data-rv-view="7992">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ol>
+                    <li>Parent class and its method or property which is to be overridden must be open (non-final).
+</li><li>Method name of base class and derived class must have same.
+</li><li>Method must have same parameter as in base class.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPV7OVtBtq" id="content1-18k" data-rv-view="7993">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Example of inheritance without overriding
+ :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">open class Bird {
+    open fun fly() {
+        println("Bird is flying...")
+    }
+}
+
+class Parrot : Bird() {
+
+}
+
+class Duck : Bird() {
+
+}
+
+fun main(args: Array&lt;String&gt;) {
+    val p = Parrot()
+    p.fly()
+    val d = Duck()
+    d.fly()
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPV7PY0JMu" id="content1-18m" data-rv-view="7995">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Bird is flying...
+Bird is flying...
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPV7Xodv22" id="content1-18o" data-rv-view="7997">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In above example, a program without overriding the method of base class we found that both derived classes Parrot and Duck perform the same common operation. To overcome with this problem we use the concept of method overriding.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rPV87ekMiA" id="content12-18u" data-rv-view="7998">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example of Kotlin method overriding
+ :</strong>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPV7YBPboS" id="content1-18q" data-rv-view="7999">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In this example, the method fly() of parent class Bird is overridden in its subclass Parrot and Duck. To override the method of parent class, the parent class and its method which is going to override must be declare as open. At the same time method which is overridden in child class must be prefaced with keyword <strong>override.
+</strong></div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">open class Bird {
+    open fun fly() {
+        println("Bird is flying...")
+    }
+}
+class Parrot: Bird() {
+    override fun fly() {
+        println("Parrot is flying...")
+    }
+}
+class Duck: Bird() {
+    override fun fly() {
+        println("Duck is flying...")
+    }
+}
+fun main(args: Array&lt;String&gt;) {
+    val p = Parrot()
+    p.fly()
+    val d = Duck()
+    d.fly()
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPV80MFkJB" id="content1-18s" data-rv-view="8001">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Parrot is flying...
+Duck is flying...
+</code></pre></div>
+
+<section class="mbr-section article content12 cid-rPV8hK44D6" id="content12-18v" data-rv-view="8003">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li><strong>Example of property overriding
+ :&nbsp;</strong>Property of superclass can also be overridden in its subclass as similar to method. A color property of Bird class is overridden in its subclass Parrot and Duck and modified</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">open class Bird {
+    open var color = "Black"
+    open fun fly() {
+        println("Bird is flying...")
+    }
+}
+
+class Parrot : Bird() {
+    override var color = "Green"
+    override fun fly() {
+        println("Parrot is flying...")
+    }
+}
+
+class Duck : Bird() {
+    override var color = "White"
+    override fun fly() {
+        println("Duck is flying...")
+    }
+}
+
+fun main(args: Array&lt;String&gt;) {
+    val p = Parrot()
+    p.fly()
+    println(p.color)
+    val d = Duck()
+    d.fly()
+    println(d.color)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPV8jtxZTV" id="content1-18x" data-rv-view="8005">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Parrot is flying...
+Green
+Duck is flying...
+White
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPV8xeZQhg" id="content1-18z" data-rv-view="8007">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">We can override the val property with var property in inheritance but vice-versa is not true.
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPV8BV02iP" id="content1-190" data-rv-view="8008">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>superclass implementation
+</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPV8IUSVYd" id="content1-191" data-rv-view="8009">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Derived class can also call its <strong>superclass methods</strong> and <strong>property</strong> using <strong>super </strong>keyword.
+&nbsp;<strong>For example:&nbsp;</strong></div>
+        </div>
+    </div>
+</section>
+<div class="container">
+<pre><code class="language-kotlin">open class Bird {
+    open var color = "Black"
+    open fun fly() {
+        println("Bird is flying...")
+    }
+}
+
+class Parrot : Bird() {
+    override var color = "Green"
+    override fun fly() {
+        super.fly()
+        println("Parrot is flying...")
+    }
+}
+
+fun main(args: Array&lt;String&gt;) {
+    val p = Parrot()
+    p.fly()
+    println(p.color)
+}
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPV8JIqPFT" id="content1-193" data-rv-view="8011">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Bird is flying...
+Parrot is flying...
+Green
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPV8L1QmDF" id="content1-195" data-rv-view="8013">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>multiple class implementation</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rPV8Mb1mhY" id="content1-196" data-rv-view="8014">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In Kotlin, derived class uses a <strong>supertype</strong> name in angle brackets, e.gsuper&lt;Base&gt; when it implements same function name provided in multiple classes.
+<div>
+</div><div>For example, a derived class Parrotextends its superclass Bird and implement Duck interface containing same function fly(). To call particular method of each class and interface we must be mention supertype name in angle brackets as super&lt;Bird&gt;.fly() and super&lt;Duck&gt;.fly() for each method</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">open class Bird {
+    open var color = "Black"
+    open fun fly() {
+        println("Bird is flying...")
+    }
+}
+
+interface Duck {
+    fun fly() {
+        println("Duck is flying...")
+    }
+}
+
+class Parrot : Bird(), Duck {
+    override var color = "Green"
+    override fun fly() {
+        super&lt;Bird&gt;.fly()
+        super&lt;Duck&gt;.fly()
+        println("Parrot is flying...")
+    }
+}
+
+fun main(args: Array&lt;String&gt;) {
+    val p = Parrot()
+    p.fly()
+    println(p.color)
+}  
+</code></pre></div>
+
+<section class="mbr-section article content1 cid-rPV8NarqUP" id="content1-198" data-rv-view="8016">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">Bird is flying...
+Duck is flying...
+Parrot is flying...
+</code></pre></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

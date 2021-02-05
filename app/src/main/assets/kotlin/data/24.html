@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.5.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.5.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>Inline Function</title>
+    <link rel="stylesheet" href="plugin/prism.css">
+    <script src="plugin/prism.js"></script>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section class="mbr-section article content1 cid-rP5AN1fhRK" id="content1-hs" data-rv-view="5642">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-2"><font color="#2d63cd"><strong>Inline Function</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://mobirise.co/m">bootstrap table</a></section><section class="mbr-section article content1 cid-rP5AOsFRqk" id="content1-ht" data-rv-view="5643">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">An <strong>inline function</strong> is declare with a keyword inline. The use of inline function enhances the performance of higher order function. The <strong>inline function</strong> tells the compiler to copy parameters and functions to the <strong>call site.</strong>
+<div>
+</div><div>The virtual function or local function cannot be declared as <strong>inline</strong>. Following are some expressions and declarations which are not supported anywhere inside the inline functions:</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-rP5B0I7LrF" id="content12-hu" data-rv-view="5644">
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <ul>
+                    <li>Declaration of local classes
+</li><li>Declaration of inner nested classes
+</li><li>Function expressions
+</li><li>Declarations of local function
+</li><li>Default value for optional parameters</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP5B3L3ioL" id="content1-hv" data-rv-view="5645">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Let's see the basic example of inline function:</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    inlineFunction({
+        println("calling inline functions")
+    })
+}
+
+inline fun inlineFunction(myFun: () -> Unit ) {
+    myFun()
+    print("code inside inline function")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5B4gq3cJ" id="content1-hx" data-rv-view="5647">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">calling inline functions
+code inside inline function
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5By5eKyz" id="content1-i5" data-rv-view="5649">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>Non local control flow</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP5BdFsgaa" id="content1-i0" data-rv-view="5650">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">From inline function, we can return from lambda expression itself. This will also lead to exit from the function in which inline function was called. The function literal is allowed to have non local return statements in such case</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    inlineFunction({
+        println("calling inline functions")
+        return
+    },{
+        println("next parameter in inline functions")
+    })
+}
+
+inline fun inlineFunction(myFun: () -> Unit, nxtFun: () -> Unit) {
+    myFun()
+    nxtFun()
+    print("code inside inline function")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5BerwFdu" id="content1-i2" data-rv-view="5652">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">calling inline functions
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5BEtvTpo" id="content1-i6" data-rv-view="5654">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>crossinline annotation</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP5BOweSYM" id="content1-i7" data-rv-view="5655">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">To prevent return from lambda expression and inline function itself, we can mark the lambda expression as crossinline. This will throw a compiler error if it found a return statement inside that <strong>lambda expression</strong>.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+inlineFunction({
+    println("calling inline functions")
+        return // compile time error
+},{
+    println("next parameter in inline functions")})
+}
+
+inline fun inlineFunction(crossline myFun: () -> Unit, nxtFun: () -> Unit) {
+    myFun()
+    nxtFun()
+    print("code inside inline function")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5BPLaKdg" id="content1-i9" data-rv-view="5657">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-5"><font color="#2960cc"><strong>noinline modifier</strong></font></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rP5C1OFAYq" id="content1-ia" data-rv-view="5658">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">In inline function, when we want some of lambdas passed in inline function to be an <strong>inlined</strong>, mark other function parameter with noinline modifier. This is used to set expressions not to be inlined in the call.</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+<pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
+    inlineFunctionExample({
+            println("calling inline functions")
+        },{
+            println("next parameter in inline functions")
+        } )
+
+        println("this is main function closing")
+}
+
+inline fun inlineFunctionExample(myFun: () -> Unit, noinline nxtFun: () -> Unit ) {
+    myFun()
+    nxtFun()
+    println("code inside inline function")
+}
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5Cfk6db7" id="content1-ic" data-rv-view="5660">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">Output :</div>
+        </div>
+    </div>
+</section>
+
+<<div class="container">
+<pre><code class="language-kotlin">calling inline functions
+next parameter in inline functions
+code inside inline function
+this is main function closing
+</code></pre></div>
+
+
+<section class="mbr-section article content1 cid-rP5CgRIFsh" id="content1-ie" data-rv-view="5662">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">If an inline function does not contain any <strong>noinline</strong> function parameter and no reified type parameters then compiler will generate a warning.</div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>

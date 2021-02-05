@@ -1,0 +1,106 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic"> * C Program to Perform Shell Sort without using Recursion</span>
+    <span style="color: #999999; font-style: italic"> */</span>
+    <span style="color: #cd2828; font-weight: bold">#include  &lt;stdio.h&gt;</span>
+    <span style="color: #cd2828; font-weight: bold">#define size 7</span>
+     
+    <span style="color: #999999; font-style: italic">/* Function Prototype */</span>
+    <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #447fcf">shell_sort</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">[]);</span>
+     
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">main</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">arr[size],</span> <span style="color: #d0d0d0">i;</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter the elements to be sorted:&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">size;i++)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">scanf(</span><span style="color: #ed9d13">&quot;%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">&amp;arr[i]);</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">shell_sort(arr);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;The array after sorting is:&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;i</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">size;i++)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;\n%d&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">arr[i]);</span>
+        <span style="color: #d0d0d0">}</span>
+    <span style="color: #d0d0d0">}</span>
+     
+    <span style="color: #999999; font-style: italic">/* Code to sort array using shell sort */</span>
+    <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #447fcf">shell_sort</span><span style="color: #d0d0d0">(</span><span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">array[])</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">j</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">k</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">mid</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(k</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">size</span> <span style="color: #d0d0d0">/</span> <span style="color: #3677a9">2</span><span style="color: #d0d0d0">;k</span> <span style="color: #d0d0d0">&gt;</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;k</span> <span style="color: #d0d0d0">/=</span> <span style="color: #3677a9">2</span><span style="color: #d0d0d0">)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(j</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">k;j</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">size;j++)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">j</span> <span style="color: #d0d0d0">-</span> <span style="color: #d0d0d0">k;i</span> <span style="color: #d0d0d0">&gt;=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;i</span> <span style="color: #d0d0d0">-=</span> <span style="color: #d0d0d0">k)</span>
+                <span style="color: #d0d0d0">{</span>
+                    <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(array[i</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">k]</span> <span style="color: #d0d0d0">&gt;=</span> <span style="color: #d0d0d0">array[i])</span>
+                    <span style="color: #d0d0d0">{</span>
+                        <span style="color: #6ab825; font-weight: bold">break</span><span style="color: #d0d0d0">;</span>
+                    <span style="color: #d0d0d0">}</span>
+                    <span style="color: #6ab825; font-weight: bold">else</span>
+                    <span style="color: #d0d0d0">{</span>
+                        <span style="color: #d0d0d0">mid</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">array[i];</span>
+                        <span style="color: #d0d0d0">array[i]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">array[i</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">k];</span>
+                        <span style="color: #d0d0d0">array[i</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">k]</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">mid;</span>
+                    <span style="color: #d0d0d0">}</span>
+                <span style="color: #d0d0d0">}</span>
+            <span style="color: #d0d0d0">}</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">return</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+    <span style="color: #d0d0d0">}</span>
+    
+    
+    <span style="color: #d0d0d0">&gt;&gt;Ouput:</span>
+    <span style="color: #d0d0d0">Average</span> <span style="color: #6ab825; font-weight: bold">case</span><span style="color: #d0d0d0">:</span>
+    <span style="color: #a61717; background-color: #e3d2d2">$</span> <span style="color: #d0d0d0">a.out</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">elements</span> <span style="color: #d0d0d0">to</span> <span style="color: #d0d0d0">be</span> <span style="color: #d0d0d0">sorted:</span><span style="color: #3677a9">57</span>
+    <span style="color: #3677a9">67</span>
+    <span style="color: #3677a9">48</span>
+    <span style="color: #3677a9">93</span>
+    <span style="color: #3677a9">42</span>
+    <span style="color: #3677a9">84</span>
+    <span style="color: #3677a9">95</span>
+    <span style="color: #d0d0d0">The</span> <span style="color: #d0d0d0">array</span> <span style="color: #d0d0d0">after</span> <span style="color: #d0d0d0">sorting</span> <span style="color: #d0d0d0">is:</span>
+    <span style="color: #3677a9">42</span>
+    <span style="color: #3677a9">48</span>
+    <span style="color: #3677a9">57</span>
+    <span style="color: #3677a9">67</span>
+    <span style="color: #3677a9">84</span>
+    <span style="color: #3677a9">93</span>
+    <span style="color: #3677a9">95</span>
+     
+    <span style="color: #d0d0d0">Best</span> <span style="color: #6ab825; font-weight: bold">case</span><span style="color: #d0d0d0">:</span>
+    <span style="color: #a61717; background-color: #e3d2d2">$</span> <span style="color: #d0d0d0">a.out</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">elements</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">array:</span><span style="color: #3677a9">22</span>
+    <span style="color: #3677a9">33</span>
+    <span style="color: #3677a9">74</span>
+    <span style="color: #3677a9">85</span>
+    <span style="color: #3677a9">86</span>
+    <span style="color: #3677a9">87</span>
+    <span style="color: #3677a9">98</span>
+    <span style="color: #d0d0d0">The</span> <span style="color: #d0d0d0">array</span> <span style="color: #d0d0d0">after</span> <span style="color: #d0d0d0">sorting</span> <span style="color: #d0d0d0">is:</span><span style="color: #3677a9">22</span>
+    <span style="color: #3677a9">33</span>
+    <span style="color: #3677a9">74</span>
+    <span style="color: #3677a9">85</span>
+    <span style="color: #3677a9">86</span>
+    <span style="color: #3677a9">87</span>
+    <span style="color: #3677a9">98</span>
+     
+    <span style="color: #d0d0d0">Worst</span> <span style="color: #6ab825; font-weight: bold">case</span><span style="color: #d0d0d0">:</span>
+    <span style="color: #a61717; background-color: #e3d2d2">$</span> <span style="color: #d0d0d0">a.out</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">the</span> <span style="color: #d0d0d0">elements</span> <span style="color: #d0d0d0">of</span> <span style="color: #d0d0d0">array:</span><span style="color: #3677a9">94</span>
+    <span style="color: #3677a9">92</span>
+    <span style="color: #3677a9">91</span>
+    <span style="color: #3677a9">89</span>
+    <span style="color: #3677a9">85</span>
+    <span style="color: #3677a9">80</span>
+    <span style="color: #3677a9">43</span>
+    <span style="color: #d0d0d0">The</span> <span style="color: #d0d0d0">array</span> <span style="color: #d0d0d0">after</span> <span style="color: #d0d0d0">sorting</span> <span style="color: #d0d0d0">is:</span><span style="color: #3677a9">43</span>
+    <span style="color: #3677a9">80</span>
+    <span style="color: #3677a9">85</span>
+    <span style="color: #3677a9">89</span>
+    <span style="color: #3677a9">91</span>
+    <span style="color: #3677a9">92</span>
+    <span style="color: #3677a9">94</span>
+    </pre></div>

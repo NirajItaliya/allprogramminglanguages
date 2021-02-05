@@ -1,0 +1,52 @@
+<!-- HTML generated using hilite.me -->
+<div style="background: #202020; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">/*</span>
+    <span style="color: #999999; font-style: italic"> * C program to accept a string and a substring and</span>
+    <span style="color: #999999; font-style: italic"> * check if the substring is present in the given string</span>
+    <span style="color: #999999; font-style: italic"> */</span>
+    <span style="color: #cd2828; font-weight: bold">#include&lt;stdio.h&gt;</span>
+     
+    <span style="color: #6ab825; font-weight: bold">void</span> <span style="color: #447fcf">main</span><span style="color: #d0d0d0">()</span>
+    <span style="color: #d0d0d0">{</span>
+        <span style="color: #6ab825; font-weight: bold">char</span> <span style="color: #d0d0d0">str[</span><span style="color: #3677a9">80</span><span style="color: #d0d0d0">],</span> <span style="color: #d0d0d0">search[</span><span style="color: #3677a9">10</span><span style="color: #d0d0d0">];</span>
+        <span style="color: #6ab825; font-weight: bold">int</span> <span style="color: #d0d0d0">count1</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">count2</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">i,</span> <span style="color: #d0d0d0">j,</span> <span style="color: #d0d0d0">flag;</span>
+     
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter a string:&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">gets(str);</span>
+        <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;Enter search substring:&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #d0d0d0">gets(search);</span>
+        <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(str[count1]</span> <span style="color: #d0d0d0">!=</span> <span style="color: #ed9d13">&#39;�&#39;</span><span style="color: #d0d0d0">)</span>
+            <span style="color: #d0d0d0">count1++;</span>
+        <span style="color: #6ab825; font-weight: bold">while</span> <span style="color: #d0d0d0">(search[count2]</span> <span style="color: #d0d0d0">!=</span> <span style="color: #ed9d13">&#39;�&#39;</span><span style="color: #d0d0d0">)</span>
+            <span style="color: #d0d0d0">count2++;</span>
+        <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(i</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">&lt;=</span> <span style="color: #d0d0d0">count1</span> <span style="color: #d0d0d0">-</span> <span style="color: #d0d0d0">count2;</span> <span style="color: #d0d0d0">i++)</span>
+        <span style="color: #d0d0d0">{</span>
+            <span style="color: #6ab825; font-weight: bold">for</span> <span style="color: #d0d0d0">(j</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">i;</span> <span style="color: #d0d0d0">j</span> <span style="color: #d0d0d0">&lt;</span> <span style="color: #d0d0d0">i</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">count2;</span> <span style="color: #d0d0d0">j++)</span>
+            <span style="color: #d0d0d0">{</span>
+                <span style="color: #d0d0d0">flag</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">;</span>
+                <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(str[j]</span> <span style="color: #d0d0d0">!=</span> <span style="color: #d0d0d0">search[j</span> <span style="color: #d0d0d0">-</span> <span style="color: #d0d0d0">i])</span>
+                <span style="color: #d0d0d0">{</span>
+                    <span style="color: #d0d0d0">flag</span> <span style="color: #d0d0d0">=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">;</span>
+                    <span style="color: #6ab825; font-weight: bold">break</span><span style="color: #d0d0d0">;</span>
+                <span style="color: #d0d0d0">}</span>
+            <span style="color: #d0d0d0">}</span>
+            <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(flag</span> <span style="color: #d0d0d0">==</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span>
+                <span style="color: #6ab825; font-weight: bold">break</span><span style="color: #d0d0d0">;</span>
+        <span style="color: #d0d0d0">}</span>
+        <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(flag</span> <span style="color: #d0d0d0">==</span> <span style="color: #3677a9">1</span><span style="color: #d0d0d0">)</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;SEARCH SUCCESSFUL!&quot;</span><span style="color: #d0d0d0">);</span>
+        <span style="color: #6ab825; font-weight: bold">else</span>
+            <span style="color: #d0d0d0">printf(</span><span style="color: #ed9d13">&quot;SEARCH UNSUCCESSFUL!&quot;</span><span style="color: #d0d0d0">);</span>
+    <span style="color: #d0d0d0">}</span>
+    
+    
+    <span style="color: #d0d0d0">&gt;&gt;Output:</span>
+    <span style="color: #6ab825; font-weight: bold">case</span><span style="color: #3677a9">1</span> :
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">a</span> <span style="color: #d0d0d0">string:</span> <span style="color: #d0d0d0">hello</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">search</span> <span style="color: #d0d0d0">substring:</span> <span style="color: #d0d0d0">world</span>
+    <span style="color: #d0d0d0">SEARCH</span> <span style="color: #d0d0d0">UNSUCCESSFUL!</span>
+    
+    <span style="color: #d0d0d0">Case</span> <span style="color: #3677a9">2</span><span style="color: #d0d0d0">:</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">a</span> <span style="color: #d0d0d0">string:</span> <span style="color: #d0d0d0">helloworld</span>
+    <span style="color: #d0d0d0">Enter</span> <span style="color: #d0d0d0">search</span> <span style="color: #d0d0d0">substring:ld</span>
+    <span style="color: #d0d0d0">SEARCH</span> <span style="color: #d0d0d0">SUCCESSFUL!</span>
+    </pre></div>
