@@ -2,16 +2,14 @@
 	
 		"food": [
 			{
-				"name": "Belgian Waffles",
+				"name": "niraj italiya",
 				"price": "$5.95",
-				"description": "Two of our famous Belgian Waffles with plenty of real maple syrup",
-				"calories": "650",
-				"isbest": "false"
+				"description": "Hi I Am niraj",
 			},
 			{
-				"name": "Strawberry Belgian Waffles",
+				"name": "Bhavy ",
 				"price": "$7.95",
-				"description": "Light Belgian waffles covered with strawberries and whipped cream",
+				"description": "Hi I am Bhavy",
 				"calories": "900",
 				"isbest": "true"
 			},
