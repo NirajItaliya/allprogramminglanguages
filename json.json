@@ -5,6 +5,8 @@
 				"name": "niraj italiya",
 				"price": "$5.95",
 				"description": "Hi I Am niraj",
+				"calories": "900",
+				"isbest": "true"
 			},
 			{
 				"name": "Bhavy ",
