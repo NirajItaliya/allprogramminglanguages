@@ -5,16 +5,10 @@
 				"name": "niraj italiya",
 				"price": "$5.95",
 				"description": "Hi I Am niraj",
-				"image": "https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80"
-				
-			},
-			{
-				"name": "bhavya",
-				"price": "$5.95",
-				"description": "Hi I Am bhavy",
-				"image": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80"
+				"image": "https://asset.kompas.com/crops/PLb0YSlbUoboimjTxwkjW1zYhps=/0x0:778x519/780x390/filters:watermark(data/photo/2020/03/10/5e6775c625c94.png,0,-0,1)/data/photo/2021/06/30/60dc289c5bebe.png"
 				
 			}
+			
 		]
 	
 }
