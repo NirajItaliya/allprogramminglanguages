@@ -6,14 +6,14 @@
 				"price": "$5.95",
 				"description": "Hi I Am niraj",
 				"image": "https://specials.priceless.com/mastercard/images/97d4a971-1ebb-4bc8-92e6-b18095feb13e.png"
-				"Button": "https://www.online.citibank.co.in/credit-card/fuel-card/citi-indianoil-card?eOfferCode=INCCCCTLNIOCP" 
+				"button": "https://www.online.citibank.co.in/credit-card/fuel-card/citi-indianoil-card?eOfferCode=INCCCCTLNIOCP" 
 			},
 			{
 				"name": "hi i there",
 				"price": "$5.96",
 				"description": "Hi I there",
 				"image": "https://specials.priceless.com/mastercard/images/97d4a971-1ebb-4bc8-92e6-b18095feb13e.png"
-				"Button": "https://www.online.citibank.co.in/credit-card/fuel-card/citi-indianoil-card?eOfferCode=INCCCCTLNIOCP" 
+				"button": "https://www.online.citibank.co.in/credit-card/fuel-card/citi-indianoil-card?eOfferCode=INCCCCTLNIOCP" 
 			}
 			
 		]
