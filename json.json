@@ -2,17 +2,35 @@
 	
 		"food": [
 			{
-				"name": "niraj italiya",
-				"price": "$5.95",
-				"description": "Hi I Am niraj",
-				"image": "https://specials.priceless.com/mastercard/images/97d4a971-1ebb-4bc8-92e6-b18095feb13e.png"
-			},
-			{
-				"name": "hi i there",
-				"price": "$5.96",
-				"description": "Hi I there",
-				"image": "https://specials.priceless.com/mastercard/images/97d4a971-1ebb-4bc8-92e6-b18095feb13e.png"
-			}
+      "name": "ADA",
+      "price": "3150706",
+      "description": "Hi I Am niraj",
+      "image": "https://specials.priceless.com/mastercard/images/97d4a971-1ebb-4bc8-92e6-b18095feb13e.png"
+    },
+    {
+      "name": "CN",
+      "price": "3150704",
+      "description": "Hi I there",
+      "image": "https://specials.priceless.com/mastercard/images/97d4a971-1ebb-4bc8-92e6-b18095feb13e.png"
+    },
+    {
+      "name": "PDS",
+      "price": "3150705",
+      "description": "Hi I there",
+      "image": "https://specials.priceless.com/mastercard/images/97d4a971-1ebb-4bc8-92e6-b18095feb13e.png"
+    },
+    {
+      "name": "SE",
+      "price": "3150707",
+      "description": "Hi I there",
+      "image": "https://specials.priceless.com/mastercard/images/97d4a971-1ebb-4bc8-92e6-b18095feb13e.png"
+    },
+    {
+      "name": "PE",
+      "price": "3150708",
+      "description": "Hi I there",
+      "image": "https://specials.priceless.com/mastercard/images/97d4a971-1ebb-4bc8-92e6-b18095feb13e.png"
+    }
 			
 		]
 	
